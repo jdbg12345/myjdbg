@@ -96,19 +96,7 @@ export const BusinessOverview = () => {
 
       {/* 一、本质问题与解法 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-8">
-          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-            <Zap className="w-5 h-5 text-white" />
-          </div>
-          <h2 className="text-3xl font-bold text-gray-800">一、本质问题与解法</h2>
-        </div>
-
-        <div className="bg-blue-50 rounded-xl p-6 mb-8">
-          <p className="text-lg text-blue-900 font-semibold">
-            风控中"人"是所有问题的根源，人员能力参差不齐（）
-
-          </p>
-        </div>
+      
         
         <div className="space-y-6">
           {problemSolutionPairs.map((pair, index) => {
