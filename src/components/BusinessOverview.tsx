@@ -94,52 +94,8 @@ export const BusinessOverview = () => {
         <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.0 系统与流程在风控演进中的核心作用</h1>
       </div>
 
-      {/* 一、本质问题与解法 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-      
-        
-        <div className="space-y-6">
-          {problemSolutionPairs.map((pair, index) => {
-            const ProblemIcon = pair.problem.icon;
-            const SolutionIcon = pair.solution.icon;
-            
-            return (
-              <div key={index} className="flex items-center space-x-6 bg-white rounded-xl p-6 shadow-sm">
-                {/* 问题部分 */}
-                <div className="flex-1 p-6 bg-red-50 rounded-lg">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                      <ProblemIcon className="w-4 h-4 text-white" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-red-700">{pair.problem.title}</h3>
-                  </div>
-                  <p className="text-gray-700 text-sm leading-relaxed">{pair.problem.description}</p>
-                </div>
-
-                {/* 箭头 */}
-                <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                    <ArrowRight className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-
-                {/* 解法部分 */}
-                <div className="flex-1 p-6 bg-green-50 rounded-lg">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                      <SolutionIcon className="w-4 h-4 text-white" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-green-700">{pair.solution.title}</h3>
-                  </div>
-                  <p className="text-gray-700 text-sm leading-relaxed">{pair.solution.description}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* 本质问题 */}
+      {/* 一、本质问题 */}
+     
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-8">
           <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
