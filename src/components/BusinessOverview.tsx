@@ -211,9 +211,9 @@ export const BusinessOverview = () => {
           <h3 className="text-2xl font-bold text-gray-800 mb-6">方向1：人员的风控能力参差不齐</h3>
 
           {/* 新派单规则效果图表 */}
+          <div className="mb-8">
+          <div className="bg-gray-50 rounded-lg p-6 mb-6">
           <div className="space-y-4">
-                        <h4 className="text-xl font-semibold text-gray-800 mb-4">1. 派单策略变革效果</h4>
-
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
               <p className="text-gray-700">只按照金额进行派单，导致一些风险较高、有难度的订单给到能力较差的深审核人员，导致错误</p>
