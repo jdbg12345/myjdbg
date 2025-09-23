@@ -69,7 +69,7 @@ export const BusinessOverview = () => {
       problem: {
         title: '内外人员进行勾结',
         icon: AlertCircle,
-        description: '策略参数、标签备注、出款放行等'
+        description: '风控策略、参数、标签及备注可能被泄露，甚至出现问题会员被直接放行的情况'
       },
       solution: {
         title: '流程化操作和预警',
