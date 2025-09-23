@@ -65,7 +65,7 @@ export const BusinessOverview = () => {
   const progressSchedule = [
     { time: '2025 Q1', stage: '梳理规划', work: '站点摸底，识别痛点，制定变革策略，明确方向与执行框架', current: false },
     { time: '2025 Q2', stage: '试点落地', work: '在部分关键环节实施标准化、策略多元化、内控强化及预警机制；配置局部策略参数、验证执行可行性', result: '局部环节完成初步落地，形成阶段性数据与经验', current: false },
-    { time: '2025 Q3', stage: '成果验证', work: '聚焦试点环节，收集定量和定性成果；评估策略有效性和风险可控性', result: '局部成果显现，为全站点推广提供依据', current: true },
+    { time: '2025 Q3', stage: '成果验证', work: '聚焦试点，收集成果并评估策略有效性，为全站推广提供依据', result: '局部成果显现，为全站点推广提供依据', current: true },
     { time: '2025 Q4', stage: '全站推广', work: '将验证通过的策略在全站点实施；统一跨平台流程与操作标准', result: '风控体系覆盖全站点，执行标准化，初步达到业务与风险平衡', current: false },
     { time: '2026 Q1', stage: '体系成熟', work: '完成全链路闭环治理；优化策略参数、流程与预警机制；建立持续迭代机制', result: '风控体系稳定运行，风险可控、业务受益最大化，具备可扩展性', current: false }
   ];
