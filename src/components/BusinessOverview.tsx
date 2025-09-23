@@ -48,7 +48,7 @@ export const BusinessOverview = () => {
       description: '降低无问题订单的平均出单时长',
       impact: '重要指标',
       problem: {
-        title: '人在时间压力下无法全部检查',
+        title: '时间压力下难以全面检查',
         icon: Users,
         description: '有些是新型高端作弊手段无法识别风险；'
       },
