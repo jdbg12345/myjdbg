@@ -375,7 +375,7 @@ export const BusinessOverview = () => {
           <div>
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">手段2、风险云顿分数</h4>
+            <h4 className="text-lg font-semibold text-gray-900 mb-4">手段2、云顿风险分数</h4>
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
               <p className="text-gray-700">风控体系没有一个标准来衡量提款的风险，如银行风控体系的分数，在各自场景中就无法实现一个统一执行标准；每月约15-20%的错误出款源于此，影响约100+万/月
