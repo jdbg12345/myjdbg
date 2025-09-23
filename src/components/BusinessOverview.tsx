@@ -382,7 +382,7 @@ export const BusinessOverview = () => {
           <div className="space-y-4">
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
-              <p className="text-gray-700">只按照金额进行派单，导致一些风险较高、有难度的订单给到能力较差的深审核人员，导致错误</p>
+              <p className="text-gray-700">风控体系没有一个标准来衡量提款的风险，如银行风控体系的分数，在各自场景中就无法实现一个统一执行标准</p>
             </div>
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">影响</h4>
@@ -390,7 +390,7 @@ export const BusinessOverview = () => {
             </div>
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
-              <p className="text-gray-700">引入订单风险分数机制，将原来的“仅按金额派单”升级为“按订单分数+金额派单”，以实现将合适的单子分配到合适的人，确保中高风险订单由经验丰富的审核员处理</p>
+              <p className="text-gray-700">所有的订单，系统都会基于策略计算分数，这个分数就代表风险程度</p>
             </div>
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
