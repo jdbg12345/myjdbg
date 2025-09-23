@@ -174,8 +174,8 @@ export const BusinessOverview = () => {
                 <tr>
                   <th className="p-4 text-center font-semibold">时间</th>
                   <th className="p-4 text-center font-semibold">阶段分类</th>
-                  <th className="p-4 text-left font-semibold">核心工作与目标</th>
-                  <th className="p-4 text-left font-semibold">成果预期</th>
+                  <th className="p-4 text-left font-semibold">工作与目标</th>
+                  <th className="p-4 text-left font-semibold">状态</th>
                 </tr>
               </thead>
               <tbody>
