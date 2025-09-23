@@ -517,7 +517,7 @@ export const BusinessOverview = () => {
                 <p className="text-gray-700">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，<span className="font-bold text-red-600">存在严重的数据安全隐患</span>。且操作效率低下，有效拦截率也不足。</p>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
+                <h4 className="font-semibold text-gray-800 mb-2">策略</h4>
                 <p className="text-gray-700">标准化关联下注工具</p>
               </div>
               <div>
