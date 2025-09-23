@@ -152,7 +152,7 @@ export const BusinessOverview = () => {
       </div>
 
 
-      {/* 二、体系变革的节奏 */}
+      {/* 二、风控变革的节奏 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-8">
           <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
