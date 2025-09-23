@@ -1249,7 +1249,7 @@ export const BusinessOverview = () => {
             <div className="bg-gray-50 rounded-lg p-6 mb-6">
               <div className="mb-4">
                 <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-                <div className="text-gray-700 mb-4">风控策略参数固定化，容易被外界摸清规律，缺乏动态调整机制</div>
+                <div className="text-gray-700 mb-4">风控策略参数固定化，容易被外界摸清规律，故意规避和绕过，缺乏动态调整机制</div>
               </div>
               <div>
                 <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
