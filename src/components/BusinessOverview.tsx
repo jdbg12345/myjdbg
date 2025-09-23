@@ -1303,9 +1303,9 @@ export const BusinessOverview = () => {
           </div>
         </div>
 
-        {/* 方向5：极端预防机制 */}
+        {/* 方向5：一些极端异常的预防机制 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向5：极端预防机制</h3>
+          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向5：一些极端异常的预防机制</h3>
           <p className="text-gray-700 mb-8 leading-relaxed">
             <span className="font-semibold">流程缺陷及策略局限导致异常资金风险</span>，针对场馆多钱、沉睡用户等极端情况建立预警和防御策略，确保资金安全。
           </p>
