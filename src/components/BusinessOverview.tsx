@@ -1097,9 +1097,9 @@ export const BusinessOverview = () => {
           </div>
         </div>
         
-        {/* 方向4：风控内控机制 */}
+        {/* 方向3：风控内控机制 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向4：风控内控机制</h3>
+          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向3：风控内控机制</h3>
           <p className="text-gray-700 mb-8 leading-relaxed">
             <span className="font-semibold">内控薄弱：敏感操作缺乏授权与审计，参数、标签泄露</span>，一些核心策略和参数外界已"知晓"，需要逐步实施参数分层、动态设置等机制。
           </p>
