@@ -106,7 +106,7 @@ export const BusinessOverview = () => {
 
         <div className="bg-blue-50 rounded-xl p-6 mb-8">
           <p className="text-lg text-blue-900 font-semibold">
-            风控中"人"是所有问题的根源，解决人的问题的核心在于：“不依赖人，不信任人”，有问题的人想搞事情成本和风险极高，几乎没有操作空间
+            在风控中，“人”是所有问题的根源。解决人的问题的核心在于去人性化：既不依赖人，也不盲目信任人，将人的操作比重和空间压缩，由系统主导操作与约束，整体提升风控质量，使违规者成本与风险极高，几乎无可操作空间。
           </p>
         </div>
         
