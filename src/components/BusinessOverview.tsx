@@ -518,6 +518,70 @@ export const BusinessOverview = () => {
           <h2 className="text-3xl font-bold text-gray-800">方向3：风控支持工具</h2>
         </div>
 
+      
+      {/* 方向1新增：出款未查看备注标签 */}
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-lg">+</span>
+          </div>
+          <h3 className="text-2xl font-bold text-gray-800">出款未查看备注标签</h3>
+          <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">已上线</span>
+        </div>
+
+        <div className="bg-gray-50 rounded-lg p-6 mb-6">
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
+              <p className="text-gray-700">出款时未查看备注标签（公告）导致套利出款错误</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">影响</h4>
+              <p className="text-gray-700">每月约<span className="font-bold text-red-600">15-20%</span>的错误出款源于此，影响约<span className="font-bold text-red-600">100+万/月</span></p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
+              <p className="text-gray-700">将查看备注设为出款流程中的强制环节</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
+              <p className="text-gray-700">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
+            </div>
+          </div>
+        </div>
+
+        {/* 图表 */}
+        <div className="bg-white rounded-lg p-6 border border-gray-200">
+          <div className="flex items-end justify-between h-64 mb-4">
+            <div className="flex flex-col items-center flex-1 mx-2">
+              <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '280px'}}>25%</div>
+              <div className="bg-red-400 w-full rounded-t transition-all duration-300" style={{height: '200px'}}></div>
+              <div className="text-sm text-gray-600 mt-2">调整前</div>
+              <div className="text-xs text-gray-500">错误率</div>
+            </div>
+            <div className="flex flex-col items-center flex-1 mx-2">
+              <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '200px'}}>8%</div>
+              <div className="bg-green-500 w-full rounded-t transition-all duration-300" style={{height: '64px'}}></div>
+              <div className="text-sm text-gray-600 mt-2">调整后</div>
+              <div className="text-xs text-gray-500">错误率</div>
+            </div>
+          </div>
+          <div className="text-center text-sm text-gray-600">
+            <div className="mb-2">统计周期：2025-04-01 ~ 2025-06-30</div>
+            <div className="flex items-center justify-center space-x-4">
+              <div className="flex items-center">
+                <span className="inline-block w-4 h-4 bg-red-400 mr-2"></span>
+                <span>调整前错误率</span>
+              </div>
+              <div className="flex items-center">
+                <span className="inline-block w-4 h-4 bg-green-500 mr-2"></span>
+                <span>调整后错误率</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
         {/* 关联下注工具 */}
         <div className="bg-white rounded-lg p-8 mb-8 border border-purple-200">
           <div className="flex items-center space-x-3 mb-6">
