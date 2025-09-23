@@ -14,7 +14,7 @@ export const BusinessOverview = () => {
       problem: {
         title: '人员的风控能力参差不齐',
         icon: AlertTriangle,
-        description: '依赖个人经验，小圈子文化，等导致大部分人尤其是新人无法得到技能有效提升'
+        description: '依赖个人经验，小圈子文化，等导致大部分人尤其是新人无法得到技能有效提升；审核存在时效考核，导致人员难以全面仔细检查，从而遗漏环节'
       },
       solution: {
         title: '标准化工具和规则',
@@ -38,24 +38,6 @@ export const BusinessOverview = () => {
         title: '核心环节强制执行',
         icon: Database,
         description: '系统负责自动识别与拦截；流程负责在关键环节嵌入约束，减少人为失误空间；'
-      }
-    },
-       {
-      id: 'efficiency',
-      title: '效率',
-      priority: 'P1',
-      icon: Clock,
-      description: '降低无问题订单的平均出单时长',
-      impact: '重要指标',
-      problem: {
-        title: '时间压力下难以全面检查',
-        icon: Users,
-        description: '审核存在时效考核，导致人员难以全面仔细检查，从而遗漏环节，引发出款错误，造成公司损失。'
-      },
-      solution: {
-        title: '自动化拦截和预警',
-        icon: Database,
-        description: '建立完善的策略库和规则引擎，将人工经验转化为系统能力'
       }
     },
     
