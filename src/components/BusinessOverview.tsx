@@ -609,7 +609,6 @@ export const BusinessOverview = () => {
             </div>
           </div>
         </div>
-      </div>
 
         {/* 方向2：风控核心策略 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
