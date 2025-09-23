@@ -375,7 +375,7 @@ export const BusinessOverview = () => {
           <div>
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">手段2、风险云顿分数效果</h4>
+            <h4 className="text-lg font-semibold text-gray-900 mb-4">手段2、风险云顿分数</h4>
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
               <p className="text-gray-700">风控体系没有一个标准来衡量提款的风险，如银行风控体系的分数，在各自场景中就无法实现一个统一执行标准；每月约15-20%的错误出款源于此，影响约100+万/月
@@ -509,7 +509,7 @@ export const BusinessOverview = () => {
 
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-800">关联下注工具</h3>
+              <h3 className="text-2xl font-bold text-gray-800">手段3、关联下注工具</h3>
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
                 <p className="text-gray-700">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，<span className="font-bold text-red-600">存在严重的数据安全隐患</span>。且操作效率低下，有效拦截率也不足。</p>
@@ -565,7 +565,7 @@ export const BusinessOverview = () => {
 
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <div className="space-y-4">
-                          <h3 className="text-2xl font-bold text-gray-800">提款流水工具</h3>
+                          <h3 className="text-2xl font-bold text-gray-800">手段4、提款流水工具</h3>
 
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
@@ -628,7 +628,7 @@ export const BusinessOverview = () => {
 
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <div className="space-y-4">
-                          <h3 className="text-2xl font-bold text-gray-800">体育打水工具</h3>
+                          <h3 className="text-2xl font-bold text-gray-800">手段5、体育打水工具</h3>
 
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
