@@ -671,11 +671,16 @@ export const BusinessOverview = () => {
         
         {/* 方向3：系统审核策略的维度缺失	 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向3：系统审核策略的维度缺失	</h3>
-          <p className="text-gray-700 mb-8 leading-relaxed">
+          <div className="flex items-center space-x-3 mb-8">
+          <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-lg">3</span>
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">系统审核策略的维度缺失</h2>
+        </div>
+            <p className="text-gray-700 mb-8 leading-relaxed">
             目前系统的策略主要集中在防御型，而非套利及作弊识别类型，导致直接出款错误，以及转人工后缺乏强有力的风险提醒。
-          </p>
-
+            </p>
+          
           {/* 1. 电子策略 */}
           <div className="mb-12">
             <div className="flex items-center space-x-3 mb-6">
