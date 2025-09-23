@@ -214,7 +214,7 @@ export const BusinessOverview = () => {
           <div className="mb-8">
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
           <div className="space-y-4">
-            <h4 className="text-xl font-semibold text-gray-800 mb-4">1. 派单策略变革效果</h4>
+            <h4 className="text-xl font-semibold text-gray-800 mb-4">手段1: 派单策略变革</h4>
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
               <p className="text-gray-700">只按照金额进行派单，导致一些风险较高、有难度的订单给到能力较差的深审核人员，导致错误；每月约15-20%的错误出款源于此，影响约100+万/月</p>
