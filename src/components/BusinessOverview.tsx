@@ -208,9 +208,7 @@ export const BusinessOverview = () => {
 
         {/* 方向1：人员的风控能力参差不齐 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向1：人员的风控能力参差不齐</h3>
-
- <div className="flex items-center space-x-3 mb-8">
+         <div className="flex items-center space-x-3 mb-8">
           <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-lg">1</span>
           </div>
