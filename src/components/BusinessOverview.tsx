@@ -573,7 +573,7 @@ export const BusinessOverview = () => {
           <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-lg">2</span>
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">方向2：人的审核不按照标准执行</h2>
+          <h2 className="text-3xl font-bold text-gray-800">人的审核不按照标准执行</h2>
         </div>
         
        
