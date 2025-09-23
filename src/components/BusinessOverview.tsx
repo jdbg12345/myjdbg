@@ -14,7 +14,7 @@ export const BusinessOverview = () => {
       problem: {
         title: '人员的风控能力参差不齐',
         icon: AlertTriangle,
-        description: '过度依赖个人经验与小圈子文化，资深人员不愿传授，大部分新人难以提升技能；审核存在时效考核，导致检查不全面，出现遗漏。'
+        description: '依赖个人经验与小圈子文化，资深人员不愿传授，大部分新人难以提升技能；审核存在时效考核，导致检查不全面，出现遗漏。'
       },
       solution: {
         title: '标准化工具和规则',
@@ -56,7 +56,7 @@ export const BusinessOverview = () => {
       solution: {
         title: '敏感信息隔离与操作预警',
         icon: Zap,
-        description: '权限隔离保护敏感信息至最小范围；风控参数动态化，表面参数可见，实际执行可能不同；对敏感操作进行预警，实现综合管控，提升内外串联成本，降低风险。'
+        description: '敏感信息至最小范围；参数动态化，表面可见，但实际执行不同；对敏感操作进行预警，实现综合管控，降低风险。'
       }
     }
   ];
