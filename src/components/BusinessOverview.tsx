@@ -584,15 +584,8 @@ export const BusinessOverview = () => {
        
       {/* 1、出款未查看备注标签 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-lg">1</span>
-          </div>
-          <h3 className="text-2xl font-bold text-gray-800">出款未查看备注标签</h3>
-          <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">已上线</span>
-        </div>
-
         <div className="bg-gray-50 rounded-lg p-6 mb-6">
+          <h3 className="text-2xl font-bold text-gray-800">出款未查看备注标签</h3>
           <div className="space-y-4">
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
@@ -648,8 +641,7 @@ export const BusinessOverview = () => {
         {/* 2. VIP禁用流程 */}
           <div className="mb-12">       
             <div className="bg-gray-50 rounded-lg p-6 mb-6">
-                              <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>            
-
+              <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>            
               <div className="mb-4">
                 <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
                 <div className="text-gray-700 mb-4">VIP用户禁用权限管理不够精细，缺乏分级审批机制，存在误禁和滥用风险</div>
