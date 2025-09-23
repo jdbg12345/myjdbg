@@ -509,7 +509,7 @@ export const BusinessOverview = () => {
 
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-800">手段3、关联下注工具</h3>
+              <h3 className="text-2xl font-bold text-gray-800">手段3、关联下注查询工具</h3>
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
                 <p className="text-gray-700">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，<span className="font-bold text-red-600">存在严重的数据安全隐患</span>。且操作效率低下，有效拦截率也不足。</p>
@@ -557,7 +557,62 @@ export const BusinessOverview = () => {
           </div>
         </div>
 
-        {/* 提款流水工具 */}
+      
+
+        {/* 体育打水工具 */}
+        <div className="bg-white rounded-lg p-8 mb-8 border border-purple-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold">3</span>
+            </div>
+          </div>
+
+          <div className="bg-gray-50 rounded-lg p-6 mb-6">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-gray-800">手段5、体育打水工具</h3>
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
+                <p className="text-gray-700">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
+                <p className="text-gray-700">通过B端百家赔率数据构建体育打水实时查询工具</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 图表 */}
+          <div className="bg-white rounded-lg p-6 border border-gray-200">
+            <div className="flex items-end justify-between h-64 mb-4">
+              <div className="flex flex-col items-center flex-1 mx-2">
+                <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '216px'}}>18%</div>
+                <div className="bg-red-400 w-full rounded-t transition-all duration-300" style={{height: '144px'}}></div>
+                <div className="text-sm text-gray-600 mt-2">调整前</div>
+                <div className="text-xs text-gray-500">错误率</div>
+              </div>
+              <div className="flex flex-col items-center flex-1 mx-2">
+                <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '196px'}}>13%</div>
+                <div className="bg-green-500 w-full rounded-t transition-all duration-300" style={{height: '104px'}}></div>
+                <div className="text-sm text-gray-600 mt-2">调整后</div>
+                <div className="text-xs text-gray-500">错误率</div>
+              </div>
+            </div>
+            <div className="text-center text-sm text-gray-600">
+              <div className="mb-2">统计周期：2025-04-01 ~ 2025-06-30 (以Y1为例)</div>
+              <div className="flex items-center justify-center space-x-4">
+                <div className="flex items-center">
+                  <span className="inline-block w-4 h-4 bg-red-400 mr-2"></span>
+                  <span>调整前错误率</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="inline-block w-4 h-4 bg-green-500 mr-2"></span>
+                  <span>调整后错误率</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>       
+              {/* 提款流水工具 */}
         <div className="bg-white rounded-lg p-8 mb-8 border border-purple-200">
           <div className="flex items-center space-x-3 mb-6">
         
@@ -617,61 +672,7 @@ export const BusinessOverview = () => {
             </div>
           </div>
         </div>
-
-        {/* 体育打水工具 */}
-        <div className="bg-white rounded-lg p-8 mb-8 border border-purple-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold">3</span>
-            </div>
-          </div>
-
-          <div className="bg-gray-50 rounded-lg p-6 mb-6">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-800">手段5、体育打水工具</h3>
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
-                <p className="text-gray-700">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
-                <p className="text-gray-700">通过B端百家赔率数据构建体育打水实时查询工具</p>
-              </div>
-            </div>
-          </div>
-
-          {/* 图表 */}
-          <div className="bg-white rounded-lg p-6 border border-gray-200">
-            <div className="flex items-end justify-between h-64 mb-4">
-              <div className="flex flex-col items-center flex-1 mx-2">
-                <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '216px'}}>18%</div>
-                <div className="bg-red-400 w-full rounded-t transition-all duration-300" style={{height: '144px'}}></div>
-                <div className="text-sm text-gray-600 mt-2">调整前</div>
-                <div className="text-xs text-gray-500">错误率</div>
-              </div>
-              <div className="flex flex-col items-center flex-1 mx-2">
-                <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '196px'}}>13%</div>
-                <div className="bg-green-500 w-full rounded-t transition-all duration-300" style={{height: '104px'}}></div>
-                <div className="text-sm text-gray-600 mt-2">调整后</div>
-                <div className="text-xs text-gray-500">错误率</div>
-              </div>
-            </div>
-            <div className="text-center text-sm text-gray-600">
-              <div className="mb-2">统计周期：2025-04-01 ~ 2025-06-30 (以Y1为例)</div>
-              <div className="flex items-center justify-center space-x-4">
-                <div className="flex items-center">
-                  <span className="inline-block w-4 h-4 bg-red-400 mr-2"></span>
-                  <span>调整前错误率</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="inline-block w-4 h-4 bg-green-500 mr-2"></span>
-                  <span>调整后错误率</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>       
-          </div>
+      </div>
 
 
 
