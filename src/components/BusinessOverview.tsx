@@ -54,7 +54,7 @@ export const BusinessOverview = () => {
         description: '风控策略、参数、标签及备注可能被泄露，甚至出现问题会员被直接放行的情况'
       },
       solution: {
-        title: '敏感信息隔离与操作预警',
+        title: '多维度组合手段内控',
         icon: Zap,
         description: '敏感信息至最小范围；参数动态化，表面可见，但实际执行不同；对敏感操作进行预警，实现综合管控，降低风险。'
       }
