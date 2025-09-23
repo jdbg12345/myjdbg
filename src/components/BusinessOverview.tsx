@@ -19,7 +19,7 @@ export const BusinessOverview = () => {
       solution: {
         title: '标准化工具和规则',
         icon: Shield,
-        description: '系统负责自动识别与拦截；流程负责在关键环节嵌入约束，减少人为操作空间；'
+        description: '将核心复杂经验工具化，使所有人即便缺乏丰富经验，也能通过工具一键获取结果，从而提升审核人员整体能力下限。'
       }
     },
     {
