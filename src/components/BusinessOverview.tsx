@@ -560,7 +560,7 @@ export const BusinessOverview = () => {
               </div>
         
               <div>
-                <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
+                <h4 className="font-semibold text-gray-800 mb-2">策略</h4>
                 <p className="text-gray-700"><span className="font-bold">阶段1：</span>实现流水自动统一计算，无需人工介入；<span className="font-bold">阶段2：</span>用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程（已提出需求，但收到无法实现的反馈）。</p>
               </div>
               <div>
