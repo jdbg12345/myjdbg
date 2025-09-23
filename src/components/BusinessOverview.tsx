@@ -545,7 +545,6 @@ export const BusinessOverview = () => {
               <div className="text-right text-xs text-gray-500 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
             </div>
           </div>
-        </div>
 
       {/* 方向1新增：出款查看备注标签 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
