@@ -1004,11 +1004,11 @@ export const BusinessOverview = () => {
         {/* 方向4：内外的人员进行勾结串联	*/}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
           <div className="flex items-center space-x-3 mb-8">
-          <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-lg">4</span>
+            <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-lg">4</span>
+            </div>
+              <h2 className="text-3xl font-bold text-gray-800">内外的人员进行勾结串联</h2>
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">内外的人员进行勾结串联</h2>
-        </div>
 
           {/* 2. 风控标签 */}
           <div className="mb-12">
@@ -1143,11 +1143,15 @@ export const BusinessOverview = () => {
 
         {/* 方向5：一些极端异常的预防机制 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向5：一些极端异常的预防机制</h3>
-          <p className="text-gray-700 mb-8 leading-relaxed">
+            <div className="flex items-center space-x-3 mb-8">
+            <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-lg">5</span>
+            </div>
+              <h2 className="text-3xl font-bold text-gray-800">一些极端异常的预防机制</h2>
+          </div>
+            <p className="text-gray-700 mb-8 leading-relaxed">
             <span className="font-semibold">流程缺陷及策略局限导致异常资金风险</span>，针对场馆多钱、沉睡用户等极端情况建立预警和防御策略，确保资金安全。
           </p>
-
           {/* 1. 钱包预警 */}
           <div className="mb-12">
             <div className="flex items-center space-x-3 mb-6">
