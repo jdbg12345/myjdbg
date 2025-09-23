@@ -19,7 +19,7 @@ export const BusinessOverview = () => {
       solution: {
         title: '标准化工具和规则',
         icon: Shield,
-        description: '将核心复杂经验工具化，使所有人即便缺乏丰富经验，也能通过工具一键获取结果，从而提升审核人员整体能力下限。'
+        description: '将核心复杂经验工具化和系统化，使所有人即便缺乏丰富经验，也能通过工具一键获取结果，从而提升审核人员整体能力下限。'
       }
     },
     {
