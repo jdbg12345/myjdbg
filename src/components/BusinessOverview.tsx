@@ -211,9 +211,6 @@ export const BusinessOverview = () => {
           <h3 className="text-2xl font-bold text-gray-800 mb-6">方向1：人员的风控能力参差不齐</h3>
 
           {/* 新派单规则效果图表 */}
-          <div className="mb-8">
-            <h4 className="text-xl font-semibold text-gray-800 mb-4">1. 派单策略变革效果</h4>
-                  <div className="bg-gray-50 rounded-lg p-6 mb-6">
           <div className="space-y-4">
                         <h4 className="text-xl font-semibold text-gray-800 mb-4">1. 派单策略变革效果</h4>
 
