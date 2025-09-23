@@ -488,13 +488,13 @@ export const BusinessOverview = () => {
             </div>
           </div>
 
-      {/* 方向1新增：出款查看备注标签 */}
+      {/* 方向1新增：出款未查看备注标签 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-lg">+</span>
           </div>
-          <h3 className="text-2xl font-bold text-gray-800">出款查看备注标签</h3>
+          <h3 className="text-2xl font-bold text-gray-800">出款未查看备注标签</h3>
           <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">已上线</span>
         </div>
 
