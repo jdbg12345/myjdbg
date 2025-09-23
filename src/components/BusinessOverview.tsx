@@ -923,7 +923,7 @@ export const BusinessOverview = () => {
                 <p className="text-gray-700">影响减少<span className="font-bold text-green-600">5%</span>；效率提升一倍；用户体验改善</p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg">
-                <p className="text-blue-700 text-sm">市场调研显示，主流平台已普遍实现用户前端直接查看剩余提款流水功能，这不仅优化了用户体验，还有效解决了流水反复咨询的冗余低效流程和计算错误导致的出款问题（虽已提出需求，但技术侧目前无法实现）</p>
+                <p className="text-blue-700 text-sm">市场调研显示，主流平台（6 尊龙凯时（AG）7 金宝博（188）8 竞博（IM）5 万博（ManbetX）3 竞技宝（JJB）2 雷竞技（Raybet）1 易游（M6)）已普遍实现用户前端直接查看剩余提款流水功能，这不仅优化了用户体验，还有效解决了流水反复咨询的冗余低效流程和计算错误导致的出款问题（虽已提出需求，但技术侧目前无法实现）</p>
               </div>
             </div>
           </div>
