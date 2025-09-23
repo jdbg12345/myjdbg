@@ -432,6 +432,122 @@ export const BusinessOverview = () => {
           </div>
         </div>
 
+        
+          {/* 风险分数效果图表 */}
+          <div>
+            <h4 className="text-lg font-semibold text-gray-900 mb-4">风险分数效果（细分区间）</h4>
+            <p className="text-sm text-gray-600 mb-6">此图表展示了在细分的风险分数区间内，订单的分布情况和相应的问题率。通过观察问题率随分数区间的变化趋势，验证风险分数模型的有效性和区分能力。</p>
+            
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <div className="relative h-80 mb-6">
+                {/* 双Y轴标签 */}
+                <div className="absolute -left-16 top-1/2 transform -translate-y-1/2 -rotate-90 text-sm font-medium text-gray-600">
+                  订单数量
+                </div>
+                <div className="absolute -right-16 top-1/2 transform -translate-y-1/2 rotate-90 text-sm font-medium text-orange-600">
+                  问题率 (%)
+                </div>
+                
+                {/* 图表主体 */}
+                <div className="mx-8 h-full relative">
+                  {/* 左Y轴刻度 */}
+                  <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+                    <span>400</span>
+                    <span>300</span>
+                    <span>200</span>
+                    <span>100</span>
+                    <span>0</span>
+                  </div>
+                  
+                  {/* 右Y轴刻度 */}
+                  <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
+                    <span>28%</span>
+                    <span>21%</span>
+                    <span>14%</span>
+                    <span>7%</span>
+                    <span>0%</span>
+                  </div>
+                  
+                  {/* 网格线 */}
+                  <div className="absolute left-8 right-8 h-full">
+                    {[0, 25, 50, 75, 100].map((percent) => (
+                      <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                    ))}
+                  </div>
+                  
+                  {/* 数据展示 */}
+                  <div className="absolute left-8 right-8 h-full flex items-end justify-around pb-4">
+                    {[
+                      { range: '0-29分', count: 400, percent: '33.9%', rate: 20.0, color: '#3B82F6' },
+                      { range: '30-59分', count: 350, percent: '29.7%', rate: 25.7, color: '#10B981' },
+                      { range: '60-89分', count: 280, percent: '23.7%', rate: 21.4, color: '#F59E0B' },
+                      { range: '90-100分', count: 150, percent: '12.7%', rate: 20.0, color: '#EF4444' }
+                    ].map((item, index) => (
+                      <div key={index} className="flex flex-col items-center relative">
+                        {/* 柱状图 */}
+                        <div 
+                          className="w-16 rounded-t relative"
+                          style={{ 
+                            height: `${(item.count / 400) * 240}px`,
+                            backgroundColor: item.color
+                          }}
+                        >
+                        </div>
+                        
+                        {/* 问题率点 */}
+                        <div 
+                          className="absolute w-3 h-3 bg-orange-500 rounded-full border-2 border-white"
+                          style={{bottom: `${20 + (item.rate / 28) * 240}px`}}
+                        >
+                          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs font-medium text-orange-600 whitespace-nowrap">
+                            {item.rate}%
+                          </div>
+                        </div>
+                        
+                        {/* 底部标签和数据 */}
+                        <div className="text-center">
+                          <div className="text-xs font-medium text-gray-700">{item.count}</div>
+                          <div className="text-xs text-gray-600">({item.percent})</div>
+                          <div className="text-sm text-gray-700 font-medium mt-1">{item.range}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  {/* 问题率连线 */}
+                  <svg className="absolute left-8 right-8 top-0 bottom-0 pointer-events-none" width="100%" height="100%">
+                    <path
+                      d={`M 12.5% ${100 - (20.0 / 28) * 85}% L 37.5% ${100 - (25.7 / 28) * 85}% L 62.5% ${100 - (21.4 / 28) * 85}% L 87.5% ${100 - (20.0 / 28) * 85}%`}
+                      stroke="#f97316"
+                      strokeWidth="2"
+                      fill="none"
+                      strokeDasharray="4,4"
+                    />
+                  </svg>
+                </div>
+              </div>
+              
+              {/* X轴标签 */}
+              <div className="text-center text-sm font-medium text-gray-600 mb-4">风险分数区间</div>
+              
+              {/* 图例 */}
+              <div className="flex justify-center space-x-8">
+                <div className="flex items-center space-x-2">
+                  <div className="w-4 h-4 bg-blue-500"></div>
+                  <span className="text-sm text-gray-600">订单数量及占比</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-4 h-4 bg-orange-500 rounded-full"></div>
+                  <span className="text-sm text-gray-600">问题率趋势</span>
+                </div>
+              </div>
+              
+              <div className="text-right text-xs text-gray-500 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* 方向1新增：出款查看备注标签 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
