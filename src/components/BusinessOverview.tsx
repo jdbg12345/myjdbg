@@ -56,7 +56,7 @@ export const BusinessOverview = () => {
       solution: {
         title: '敏感信息隔离与操作预警',
         icon: Zap,
-        description: ''
+        description: '权限隔离保护敏感信息至最小范围；风控参数动态化，表面参数可见，实际执行可能不同；对敏感操作进行预警，实现综合管控，提升内外串联成本，降低风险。'
       }
     }
   ];
