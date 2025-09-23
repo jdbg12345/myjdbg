@@ -771,7 +771,7 @@ export const BusinessOverview = () => {
         </div>
       </div>
 
-        {/* 2. VIP禁用 */}
+        {/* 2. VIP禁用流程 */}
           <div className="mb-12">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
@@ -791,49 +791,6 @@ export const BusinessOverview = () => {
               </div>
             </div>
             
-            {/* VIP禁用图表 */}
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h5 className="text-lg font-semibold text-gray-900 mb-4">VIP禁用管控效果</h5>
-              <div className="relative h-64">
-                <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                  <span>100</span>
-                  <span>75</span>
-                  <span>50</span>
-                  <span>25</span>
-                  <span>0</span>
-                </div>
-                <div className="ml-8 h-full relative">
-                  <div className="absolute left-0 right-0 h-full">
-                    {[0, 25, 50, 75, 100].map((percent) => (
-                      <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                    ))}
-                  </div>
-                  <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
-                    <div className="flex flex-col items-center relative">
-                      <div className="absolute -top-8 text-sm font-semibold text-indigo-600">80%</div>
-                      <div className="w-24 bg-indigo-500 rounded-t" style={{ height: '192px' }}></div>
-                      <div className="text-center mt-3">
-                        <div className="text-sm font-medium text-gray-700">85单</div>
-                        <div className="text-sm text-gray-600">VIP禁用</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                            
-              {/* 图例 */}
-              <div className="flex justify-center space-x-8">
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-indigo-500"></div>
-                  <span className="text-sm text-gray-600">管控订单数</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span className="text-sm text-gray-600">准确率: 80%</span>
-                </div>
-              </div>
-              
-              <div className="text-right text-xs text-gray-500 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-            </div>
           </div>
       </div>
 
