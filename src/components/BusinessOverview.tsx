@@ -230,7 +230,7 @@ export const BusinessOverview = () => {
         {/* 体系定义 */}
         <div className="bg-white rounded-xl p-6 mb-8 shadow-sm">
           <p className="text-lg text-gray-700 leading-relaxed">
-            风控体系是一套覆盖 <span className="font-bold text-blue-600">策略、流程、内控与预警</span> 的全链路治理框架，以 <span className="font-bold text-blue-600">多元化策略 + 精准特征识别 + 内控防线 + 全链路预警</span> 为核心支柱，通过 <span className="font-bold text-blue-600">可验证、可复制、可扩展</span> 的方式逐步落地，最终实现风险与业务平衡。
+            在风控中，“人”是所有问题的根源。长期目标是不依赖“人”，压缩人的操作比重与空间，由系统自动完成大部分判定，覆盖策略、流程、内控与预警。当人的执行结果与系统偏差超出预设范围时，会触发内控二次审核，提升风控质量与稳定性，构建高效可靠的防护体系，使违规者成本与风险极高、几乎无操作空间。
           </p>
         </div>
 
