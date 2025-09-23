@@ -161,7 +161,6 @@ export const BusinessOverview = () => {
         </div>
       </div>
 
-    
 
       {/* 三、试点成果呈现 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
