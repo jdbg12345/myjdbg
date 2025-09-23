@@ -1003,9 +1003,12 @@ export const BusinessOverview = () => {
         
         {/* 方向4：内外的人员进行勾结串联	*/}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向4：内外的人员进行勾结串联</h3>      
-
-         
+          <div className="flex items-center space-x-3 mb-8">
+          <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-lg">4</span>
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">内外的人员进行勾结串联</h2>
+        </div>
 
           {/* 2. 风控标签 */}
           <div className="mb-12">
