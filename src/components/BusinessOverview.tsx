@@ -512,7 +512,6 @@ export const BusinessOverview = () => {
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-gray-800">关联下注工具</h3>
-                <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">试运行中</span>
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
                 <p className="text-gray-700">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，<span className="font-bold text-red-600">存在严重的数据安全隐患</span>。且操作效率低下，有效拦截率也不足。</p>
