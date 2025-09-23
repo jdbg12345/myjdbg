@@ -63,10 +63,10 @@ export const BusinessOverview = () => {
 
   // 体系变革推进节奏数据
   const progressSchedule = [
-    { time: '2025 Q1', stage: '梳理规划', work: '站点摸底，识别痛点，制定变革策略，明确方向与执行框架', current: false },
+    { time: '2025 Q1', stage: '梳理规划', work: '站点摸底，识别痛点，制定变革策略，明确方向与执行框架', result: '已完成',current: false },
     { time: '2025 Q2', stage: '试点落地', work: '关键环节标准化、拦截策略多元化，推动研发与流程逐步落地', result: '已完成', current: false },
-    { time: '2025 Q3', stage: '成果验证', work: '聚焦试点，收集成果并评估策略有效性，为全站推广提供依据', result: '局部成果显现，为全站点推广提供依据', current: true },
-    { time: '2025 Q4', stage: '全站推广', work: '将验证通过的策略在全站点实施；统一跨平台流程与操作标准', result: '风控体系覆盖全站点，执行标准化，初步达到业务与风险平衡', current: false },
+    { time: '2025 Q3', stage: '成果验证', work: '聚焦试点，收集成果并评估策略有效性，为全站推广提供依据', result: '进行中', current: true },
+    { time: '2025 Q4', stage: '全站推广', work: '将验证通过的策略在全站点实施；统一跨平台流程与操作标准', result: '待开始', current: false },
   ];
 
   // 体系变化对比数据
