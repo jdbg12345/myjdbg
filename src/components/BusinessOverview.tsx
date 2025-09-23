@@ -37,7 +37,7 @@ export const BusinessOverview = () => {
       solution: {
         title: '自动化拦截和预警',
         icon: Database,
-        description: '建立完善的策略库和规则引擎，将人工经验转化为系统能力'
+        description: '系统负责自动识别与拦截；流程负责在关键环节嵌入约束，减少人为失误空间；'
       }
     },
        {
