@@ -32,7 +32,7 @@ export const BusinessOverview = () => {
       problem: {
         title: '人不按照标准执行',
         icon: Users,
-        description: '有些是新型高端作弊手段无法识别风险；'
+        description: '审核过程中的SOP缺乏有效监督和约束，导致审核环节的细节（如标签、备注、系统提醒等）经常被遗漏，从而引发出款错误，给公司造成损失。'
       },
       solution: {
         title: '自动化拦截和预警',
