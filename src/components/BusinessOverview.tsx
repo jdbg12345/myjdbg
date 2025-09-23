@@ -503,10 +503,7 @@ export const BusinessOverview = () => {
               
         {/* 关联下注工具 */}
         <div className="bg-white rounded-lg p-8 mb-8 border border-purple-200">
-          <div className="flex items-center space-x-3 mb-6">
-        
-          </div>
-
+         
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-gray-800">手段3、关联下注查询工具</h3>
@@ -557,19 +554,12 @@ export const BusinessOverview = () => {
           </div>
         </div>
 
-      
 
-        {/* 体育打水工具 */}
+        {/* 体育打水查询工具 */}
         <div className="bg-white rounded-lg p-8 mb-8 border border-purple-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold">3</span>
-            </div>
-          </div>
-
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-800">手段5、体育打水工具</h3>
+              <h3 className="text-2xl font-bold text-gray-800">手段4、体育打水工具</h3>
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
                 <p className="text-gray-700">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
@@ -612,16 +602,12 @@ export const BusinessOverview = () => {
             </div>
           </div>
         </div>       
-              {/* 提款流水工具 */}
+             
+        {/* 提款流水查询工具 */}
         <div className="bg-white rounded-lg p-8 mb-8 border border-purple-200">
-          <div className="flex items-center space-x-3 mb-6">
-        
-          </div>
-
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <div className="space-y-4">
-                          <h3 className="text-2xl font-bold text-gray-800">手段4、提款流水工具</h3>
-
+              <h3 className="text-2xl font-bold text-gray-800">手段5、提款流水查询工具</h3>
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
                 <p className="text-gray-700">系统逻辑<span className="font-bold text-red-600">多年来</span>存在错误（锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等），导致需要人工重新手动计算流水。但计算标准模糊且执行不一致，使风控和质检部门经常因流水计算产生争议。在跨部门协作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），不仅浪费时间，降低用户体验并导致出款错误。</p>
@@ -673,7 +659,6 @@ export const BusinessOverview = () => {
           </div>
         </div>
       </div>
-
 
 
       {/* 方向2：人的审核不按照标准执行	 */}
