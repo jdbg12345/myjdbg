@@ -507,8 +507,6 @@ export const BusinessOverview = () => {
             <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
               <span className="text-white font-bold">1</span>
             </div>
-            <h3 className="text-2xl font-bold text-gray-800">关联下注工具</h3>
-            <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">试运行中</span>
           </div>
 
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
