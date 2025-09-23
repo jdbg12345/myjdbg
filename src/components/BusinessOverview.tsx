@@ -628,8 +628,7 @@ export const BusinessOverview = () => {
 
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <div className="space-y-4">
-                          <h3 className="text-2xl font-bold text-gray-800">手段5、体育打水工具</h3>
-
+              <h3 className="text-2xl font-bold text-gray-800">手段5、体育打水工具</h3>
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
                 <p className="text-gray-700">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
