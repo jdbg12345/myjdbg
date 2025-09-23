@@ -105,8 +105,7 @@ export const BusinessOverview = () => {
 
         <div className="bg-blue-50 rounded-xl p-6 mb-8">
           <p className="text-lg text-blue-900 font-semibold">
-            风控中"人"是所有问题的根源，人员能力参差不齐（）
-
+            风控中"人"是所有问题的根源，解决人的问题的核心在于：“不依赖人，不信任人”，有问题的人想搞事情成本和风险极高，几乎没有操作空间
           </p>
         </div>
         
@@ -151,30 +150,6 @@ export const BusinessOverview = () => {
         </div>
       </div>
 
-      {/* 本质问题 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-8">
-          <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
-            <AlertTriangle className="w-5 h-5 text-white" />
-          </div>
-          <h2 className="text-3xl font-bold text-gray-800">本质问题</h2>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="bg-red-50 rounded-lg p-6 border border-red-200">
-            <h3 className="text-xl font-bold text-red-700 mb-4 text-center">系统审核能力不足</h3>
-            <p className="text-red-600 text-sm text-center">缺少作弊拦截策略，导致系统直接出款时出现错误，无法有效识别和拦截各类作弊行为</p>
-          </div>
-          <div className="bg-red-50 rounded-lg p-6 border border-red-200">
-            <h3 className="text-xl font-bold text-red-700 mb-4 text-center">人工审核依赖性强</h3>
-            <p className="text-red-600 text-sm text-center">风险识别及判定依赖人工，成本效率存在提升空间，质量方面错误频发且同类型错误不断重复</p>
-          </div>
-          <div className="bg-red-50 rounded-lg p-6 border border-red-200">
-            <h3 className="text-xl font-bold text-red-700 mb-4 text-center">流程机制不完善</h3>
-            <p className="text-red-600 text-sm text-center">派单机制不细分难度、单人审核过即可出款等核心流程不够严谨</p>
-          </div>
-        </div>
-      </div>
 
       {/* 二、体系变革的节奏 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
