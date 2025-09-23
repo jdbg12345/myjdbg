@@ -773,9 +773,9 @@ export const BusinessOverview = () => {
       </div>
 
         
-        {/* 方向4：风控核心策略 */}
+        {/* 方向3：系统审核策略的维度缺失	 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向4：风控核心策略</h3>
+          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向3：系统审核策略的维度缺失	</h3>
           <p className="text-gray-700 mb-8 leading-relaxed">
             目前系统的策略主要集中在防御型，而非套利及作弊识别类型，导致直接出款错误，以及转人工后缺乏强有力的风险提醒。
           </p>
