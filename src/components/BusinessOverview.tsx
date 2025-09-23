@@ -162,13 +162,13 @@ export const BusinessOverview = () => {
       </div>
 
 
-      {/* 二、试点成果呈现 */}
+      {/* 二、试点成果说明 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-8">
           <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
             <Target className="w-5 h-5 text-white" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">二、试点成果呈现</h2>
+          <h2 className="text-3xl font-bold text-gray-800">二、试点成果说明</h2>
         </div>
 
         {/* 体系定义 */}
