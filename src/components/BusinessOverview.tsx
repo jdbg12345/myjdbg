@@ -546,7 +546,6 @@ export const BusinessOverview = () => {
             </div>
           </div>
         </div>
-      </div>
 
       {/* 方向1新增：出款查看备注标签 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
@@ -609,6 +608,7 @@ export const BusinessOverview = () => {
             </div>
           </div>
         </div>
+      </div>
 
         {/* 方向2：风控核心策略 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
