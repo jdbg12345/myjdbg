@@ -577,7 +577,7 @@ export const BusinessOverview = () => {
               <span className="text-white font-bold">2</span>
             </div>
             <h3 className="text-2xl font-bold text-gray-800">提款流水工具</h3>
-            <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">开发中</span>
+            <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">待开发</span>
           </div>
 
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
