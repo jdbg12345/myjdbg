@@ -35,7 +35,7 @@ export const BusinessOverview = () => {
         description: '审核SOP缺乏有效监督和约束，导致关键细节（如标签备注、系统提醒等）经常被遗漏，引发出款错误，给公司造成损失。'
       },
       solution: {
-        title: '自动化拦截和预警',
+        title: '核心环节必须强制执行',
         icon: Database,
         description: '系统负责自动识别与拦截；流程负责在关键环节嵌入约束，减少人为失误空间；'
       }
