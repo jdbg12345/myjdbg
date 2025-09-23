@@ -208,7 +208,7 @@ export const BusinessOverview = () => {
 
         {/* 方向1：人工审核流程 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向1：人工审核流程变革</h3>
+          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向1：人员的风控能力参差不齐</h3>
           <p className="text-gray-700 mb-8 leading-relaxed">
             <span className="font-semibold">派单逻辑不够完善，现有派单机制以影响控制原则为主</span>，把低金额订单分配给经验较少的外包和一审人员，没有充分考虑<span className="font-semibold">审核难度与人员专业水平的匹配关系</span>，导致<span className="font-semibold">一些金额虽小但风险较高的订单可能被漏检。</span>
           </p>
