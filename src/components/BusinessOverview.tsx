@@ -538,8 +538,12 @@ export const BusinessOverview = () => {
                 <p className="text-gray-700">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
               </div>
               <div>
-                <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
+                <h4 className="font-semibold text-gray-800 mb-2">策略</h4>
                 <p className="text-gray-700">通过B端百家赔率数据构建体育打水实时查询工具</p>
+              </div>
+                <div>
+                <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
+                <p className="text-gray-700">影响减少<span className="font-bold text-green-600">30+%，120万/月</span>；节省人力成本至少<span className="font-bold text-green-600">40+万/月</span></p>
               </div>
             </div>
           </div>       
