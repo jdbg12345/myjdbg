@@ -504,9 +504,7 @@ export const BusinessOverview = () => {
         {/* 关联下注工具 */}
         <div className="bg-white rounded-lg p-8 mb-8 border border-purple-200">
           <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold">1</span>
-            </div>
+        
           </div>
 
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
@@ -626,20 +624,17 @@ export const BusinessOverview = () => {
             <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
               <span className="text-white font-bold">3</span>
             </div>
-            <h3 className="text-2xl font-bold text-gray-800">体育打水工具</h3>
-            <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">试运行</span>
           </div>
 
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
             <div className="space-y-4">
+                          <h3 className="text-2xl font-bold text-gray-800">体育打水工具</h3>
+
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
                 <p className="text-gray-700">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
               </div>
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-2">影响</h4>
-                <p className="text-gray-700">每月约<span className="font-bold text-red-600">5%</span>的错误出款源于此，影响约<span className="font-bold text-red-600">30+万/月</span></p>
-              </div>
+             
               <div>
                 <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
                 <p className="text-gray-700">通过B端百家赔率数据构建体育打水实时查询工具</p>
