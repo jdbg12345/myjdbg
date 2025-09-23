@@ -158,7 +158,7 @@ export const BusinessOverview = () => {
           <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
             <Calendar className="w-5 h-5 text-white" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">二、体系变革的节奏</h2>
+          <h2 className="text-3xl font-bold text-gray-800">二、风控变革的节奏</h2>
         </div>
 
         <div className="bg-blue-50 rounded-xl p-6 mb-8">
