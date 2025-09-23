@@ -562,9 +562,7 @@ export const BusinessOverview = () => {
         {/* 提款流水工具 */}
         <div className="bg-white rounded-lg p-8 mb-8 border border-purple-200">
           <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold">2</span>
-            </div>
+        
           </div>
 
           <div className="bg-gray-50 rounded-lg p-6 mb-6">
