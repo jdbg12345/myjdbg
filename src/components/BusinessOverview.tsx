@@ -12,7 +12,7 @@ export const BusinessOverview = () => {
       description: '降低出错的订单数量和订单金额',
       impact: '核心指标',
       problem: {
-        title: '人员能力参差不齐',
+        title: '人员的风控能力参差不齐',
         icon: AlertTriangle,
         description: '依赖个人经验，小圈子文化，等导致大部分人尤其是新人无法得到技能有效提升'
       },
@@ -30,7 +30,7 @@ export const BusinessOverview = () => {
       description: '降低无问题订单的平均出单时长',
       impact: '重要指标',
       problem: {
-        title: '人不按照标准执行',
+        title: '人的审核不按照标准执行',
         icon: Users,
         description: '审核SOP缺乏有效监督和约束，导致关键细节（如标签备注、系统提醒等）经常被遗漏，引发出款错误，给公司造成损失。'
       },
@@ -67,7 +67,7 @@ export const BusinessOverview = () => {
       description: '有人主观违规，即使剔除，也会不断有新的人进入。',
       impact: '优化指标',
       problem: {
-        title: '内外人员进行勾结',
+        title: '内外的人员进行勾结串联',
         icon: AlertCircle,
         description: '风控策略、参数、标签及备注可能被泄露，甚至出现问题会员被直接放行的情况'
       },
