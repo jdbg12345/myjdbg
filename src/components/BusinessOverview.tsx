@@ -1462,74 +1462,7 @@ export const BusinessOverview = () => {
             </div>
           </div>
 
-          {/* 4. 风险帐号 */}
-          <div className="mb-8">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-8 h-8 bg-slate-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">险</span>
-              </div>
-              <h4 className="text-xl font-bold text-gray-800">风险帐号</h4>
-            </div>
-            
-            <div className="bg-gray-50 rounded-lg p-6 mb-6">
-              <div className="mb-4">
-                <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-                <div className="text-gray-700 mb-4">高风险账号识别不够精准，缺乏综合风险评估和动态监控机制</div>
-              </div>
-              <div>
-                <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-                <div className="text-gray-700">建立风险账号综合评估体系，风险账号识别准确率达到88%，提前预防风险事件</div>
-              </div>
-            </div>
-            
-            {/* 风险帐号图表 */}
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h5 className="text-lg font-semibold text-gray-900 mb-4">风险帐号识别效果</h5>
-              <div className="relative h-64">
-                <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                  <span>250</span>
-                  <span>188</span>
-                  <span>125</span>
-                  <span>63</span>
-                  <span>0</span>
-                </div>
-                <div className="ml-8 h-full relative">
-                  <div className="absolute left-0 right-0 h-full">
-                    {[0, 25, 50, 75, 100].map((percent) => (
-                      <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                    ))}
-                  </div>
-                  <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
-                    <div className="flex flex-col items-center relative">
-                      <div className="absolute -top-8 text-sm font-semibold text-slate-600">88%</div>
-                      <div className="w-24 bg-slate-500 rounded-t" style={{ height: '176px' }}></div>
-                      <div className="text-center mt-3">
-                        <div className="text-sm font-medium text-gray-700">220单</div>
-                        <div className="text-sm text-gray-600">风险帐号</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* X轴标签 */}
-              <div className="text-center text-sm font-medium text-gray-600 mb-4">识别类型</div>
-              
-              {/* 图例 */}
-              <div className="flex justify-center space-x-8">
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-slate-500"></div>
-                  <span className="text-sm text-gray-600">识别订单数</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span className="text-sm text-gray-600">准确率: 88%</span>
-                </div>
-              </div>
-              
-              <div className="text-right text-xs text-gray-500 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-            </div>
-          </div>
-        </div>
+          
       </div>
       
       {/* Footer */}
