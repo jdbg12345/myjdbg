@@ -1462,7 +1462,6 @@ export const BusinessOverview = () => {
             </div>
           </div>
 
-      
         </div>
       </div>
       
