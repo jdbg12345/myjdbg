@@ -378,7 +378,7 @@ export const BusinessOverview = () => {
           {/* 风险分数效果图表 */}
           <div>
             <h4 className="text-lg font-semibold text-gray-900 mb-4">2、风险云顿分数效果</h4>
-                   <div className="bg-gray-50 rounded-lg p-6 mb-6">
+          <div className="bg-gray-50 rounded-lg p-6 mb-6">
           <div className="space-y-4">
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
@@ -390,7 +390,7 @@ export const BusinessOverview = () => {
             </div>
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
-              <p className="text-gray-700">所有的订单，系统都会基于策略计算分数，这个分数就代表风险程度</p>
+              <p className="text-gray-700">所有的订单都会有个分数引入订单风险分数机制，将原来的“仅按金额派单”升级为“按订单分数+金额派单”，以实现将合适的单子分配到合适的人，确保中高风险订单由经验丰富的审核员处理</p>
             </div>
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
@@ -507,7 +507,67 @@ export const BusinessOverview = () => {
             </div>
           </div>
 
-    
+      {/* 方向1新增：出款未查看备注标签 */}
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-lg">+</span>
+          </div>
+          <h3 className="text-2xl font-bold text-gray-800">出款未查看备注标签</h3>
+          <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">已上线</span>
+        </div>
+
+        <div className="bg-gray-50 rounded-lg p-6 mb-6">
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
+              <p className="text-gray-700">出款时未查看备注标签（公告）导致套利出款错误</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">影响</h4>
+              <p className="text-gray-700">每月约<span className="font-bold text-red-600">15-20%</span>的错误出款源于此，影响约<span className="font-bold text-red-600">100+万/月</span></p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
+              <p className="text-gray-700">将查看备注设为出款流程中的强制环节</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
+              <p className="text-gray-700">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
+            </div>
+          </div>
+        </div>
+
+        {/* 图表 */}
+        <div className="bg-white rounded-lg p-6 border border-gray-200">
+          <div className="flex items-end justify-between h-64 mb-4">
+            <div className="flex flex-col items-center flex-1 mx-2">
+              <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '280px'}}>25%</div>
+              <div className="bg-red-400 w-full rounded-t transition-all duration-300" style={{height: '200px'}}></div>
+              <div className="text-sm text-gray-600 mt-2">调整前</div>
+              <div className="text-xs text-gray-500">错误率</div>
+            </div>
+            <div className="flex flex-col items-center flex-1 mx-2">
+              <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '200px'}}>8%</div>
+              <div className="bg-green-500 w-full rounded-t transition-all duration-300" style={{height: '64px'}}></div>
+              <div className="text-sm text-gray-600 mt-2">调整后</div>
+              <div className="text-xs text-gray-500">错误率</div>
+            </div>
+          </div>
+          <div className="text-center text-sm text-gray-600">
+            <div className="mb-2">统计周期：2025-04-01 ~ 2025-06-30</div>
+            <div className="flex items-center justify-center space-x-4">
+              <div className="flex items-center">
+                <span className="inline-block w-4 h-4 bg-red-400 mr-2"></span>
+                <span>调整前错误率</span>
+              </div>
+              <div className="flex items-center">
+                <span className="inline-block w-4 h-4 bg-green-500 mr-2"></span>
+                <span>调整后错误率</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
         {/* 方向2：风控核心策略 */}
