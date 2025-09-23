@@ -290,7 +290,7 @@ export const BusinessOverview = () => {
 
           {/* 新派单规则效果图表 */}
           <div className="mb-8">
-            <h4 className="text-xl font-semibold text-gray-800 mb-4">1. 人工派单策略效果</h4>
+            <h4 className="text-xl font-semibold text-gray-800 mb-4">1. 派单策略变革效果</h4>
             <p className="text-sm text-gray-600 mb-6">引入风险分数机制，按【难度+金额】进行智能派单，确保高风险订单由经验丰富的审核员处理。</p>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200">
