@@ -54,9 +54,9 @@ export const BusinessOverview = () => {
         description: '风控策略、参数、标签及备注可能被泄露，甚至出现问题会员被直接放行的情况'
       },
       solution: {
-        title: '流程化操作和预警',
+        title: '敏感信息隔离与操作预警',
         icon: Zap,
-        description: '限和合规机制保证"人"无法绕过规则'
+        description: ''
       }
     }
   ];
