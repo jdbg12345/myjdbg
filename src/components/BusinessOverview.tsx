@@ -1131,10 +1131,7 @@ export const BusinessOverview = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* 风控支持工具 */}
-        
+        </div>        
       </div>
 
         {/* 方向4：风控内控机制 */}
