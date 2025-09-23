@@ -600,7 +600,7 @@ export const BusinessOverview = () => {
               <p className="text-gray-700">每月约<span className="font-bold text-red-600">15-20%</span>的错误出款源于此，影响约<span className="font-bold text-red-600">100+万/月</span></p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
+              <h4 className="font-semibold text-gray-800 mb-2">策略</h4>
               <p className="text-gray-700">将查看备注设为出款流程中的强制环节</p>
             </div>
             <div>
