@@ -378,8 +378,27 @@ export const BusinessOverview = () => {
           {/* 风险分数效果图表 */}
           <div>
             <h4 className="text-lg font-semibold text-gray-900 mb-4">2、风险云顿分数效果</h4>
-            <p className="text-sm text-gray-600 mb-6">此图表展示了在细分的风险分数区间内，订单的分布情况和相应的问题率。通过观察问题率随分数区间的变化趋势，验证风险分数模型的有效性和区分能力。</p>
-            
+                   <div className="bg-gray-50 rounded-lg p-6 mb-6">
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
+              <p className="text-gray-700">只按照金额进行派单，导致一些风险较高、有难度的订单给到能力较差的深审核人员，导致错误</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">影响</h4>
+              <p className="text-gray-700">每月约<span className="font-bold text-red-600">15-20%</span>的错误出款源于此，影响约<span className="font-bold text-red-600">100+万/月</span></p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
+              <p className="text-gray-700">引入订单风险分数机制，将原来的“仅按金额派单”升级为“按订单分数+金额派单”，以实现将合适的单子分配到合适的人，确保中高风险订单由经验丰富的审核员处理</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
+              <p className="text-gray-700">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
+            </div>
+          </div>
+        </div>
+                        
             <div className="bg-white p-6 rounded-lg border border-gray-200">
               <div className="relative h-80 mb-6">
                 {/* 双Y轴标签 */}
@@ -471,26 +490,7 @@ export const BusinessOverview = () => {
               
               {/* X轴标签 */}
               <div className="text-center text-sm font-medium text-gray-600 mb-4">风险分数区间</div>
-                     <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="space-y-4">
-            <div>
-              <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
-              <p className="text-gray-700">只按照金额进行派单，导致一些风险较高、有难度的订单给到能力较差的深审核人员，导致错误</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-800 mb-2">影响</h4>
-              <p className="text-gray-700">每月约<span className="font-bold text-red-600">15-20%</span>的错误出款源于此，影响约<span className="font-bold text-red-600">100+万/月</span></p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
-              <p className="text-gray-700">引入订单风险分数机制，将原来的“仅按金额派单”升级为“按订单分数+金额派单”，以实现将合适的单子分配到合适的人，确保中高风险订单由经验丰富的审核员处理</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
-              <p className="text-gray-700">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
-            </div>
-          </div>
-        </div>
+              
               {/* 图例 */}
               <div className="flex justify-center space-x-8">
                 <div className="flex items-center space-x-2">
