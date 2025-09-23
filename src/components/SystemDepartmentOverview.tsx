@@ -30,7 +30,7 @@ export const SystemDepartmentOverview = () => {
                 </tr>
               </thead>
               <tbody>
-                {/* 核心方向行 */}
+                {/* 优化方向行 */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-center">
                     <div className="font-bold text-gray-800">优化方向</div>
