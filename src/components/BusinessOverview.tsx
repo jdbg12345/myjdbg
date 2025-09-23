@@ -646,14 +646,8 @@ export const BusinessOverview = () => {
       </div>
 
         {/* 2. VIP禁用流程 */}
-          <div className="mb-12">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">2</span>
-              </div>
-              <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>
-            </div>
-            
+          <div className="mb-12">       
+              <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>            
             <div className="bg-gray-50 rounded-lg p-6 mb-6">
               <div className="mb-4">
                 <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
