@@ -647,8 +647,9 @@ export const BusinessOverview = () => {
 
         {/* 2. VIP禁用流程 */}
           <div className="mb-12">       
-              <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>            
             <div className="bg-gray-50 rounded-lg p-6 mb-6">
+                              <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>            
+
               <div className="mb-4">
                 <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
                 <div className="text-gray-700 mb-4">VIP用户禁用权限管理不够精细，缺乏分级审批机制，存在误禁和滥用风险</div>
