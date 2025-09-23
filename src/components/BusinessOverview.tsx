@@ -213,6 +213,26 @@ export const BusinessOverview = () => {
           {/* 新派单规则效果图表 */}
           <div className="mb-8">
             <h4 className="text-xl font-semibold text-gray-800 mb-4">1. 派单策略变革效果</h4>
+                  <div className="bg-gray-50 rounded-lg p-6 mb-6">
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
+              <p className="text-gray-700">出款时未查看备注标签（公告）导致套利出款错误</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">影响</h4>
+              <p className="text-gray-700">每月约<span className="font-bold text-red-600">15-20%</span>的错误出款源于此，影响约<span className="font-bold text-red-600">100+万/月</span></p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">目标</h4>
+              <p className="text-gray-700">将查看备注设为出款流程中的强制环节</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
+              <p className="text-gray-700">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
+            </div>
+          </div>
+        </div>
             <p className="text-sm text-gray-600 mb-6">引入订单风险分数机制，将原来的“仅按金额派单”升级为“按订单分数+金额派单”，以实现将合适的单子分配到合适的人，确保中高风险订单由经验丰富的审核员处理</p>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200">
