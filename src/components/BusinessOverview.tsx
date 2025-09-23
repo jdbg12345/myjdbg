@@ -240,7 +240,7 @@ export const BusinessOverview = () => {
             <table className="w-full">
               <thead className="bg-gray-900 text-white">
                 <tr>
-                  <th className="p-4 text-center font-semibold w-32 whitespace-nowrap">核心方向</th>
+                  <th className="p-4 text-center font-semibold w-32 whitespace-nowrap">优化方向</th>
                   <th className="p-4 text-left font-semibold w-48">业务痛点</th>
                   <th className="p-4 text-left font-semibold w-48">原来</th>
                   <th className="p-4 text-left font-semibold w-48">现在</th>
