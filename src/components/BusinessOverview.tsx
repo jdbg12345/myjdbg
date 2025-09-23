@@ -593,12 +593,9 @@ export const BusinessOverview = () => {
           <div className="space-y-4">
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
-              <p className="text-gray-700">出款时未查看备注标签（公告）导致套利出款错误</p>
+              <p className="text-gray-700">出款时未查看备注标签（公告）导致套利出款错误；每月约15-20%的错误出款源于此，影响约100+万/月</p>
             </div>
-            <div>
-              <h4 className="font-semibold text-gray-800 mb-2">影响</h4>
-              <p className="text-gray-700">每月约<span className="font-bold text-red-600">15-20%</span>的错误出款源于此，影响约<span className="font-bold text-red-600">100+万/月</span></p>
-            </div>
+      
             <div>
               <h4 className="font-semibold text-gray-800 mb-2">策略</h4>
               <p className="text-gray-700">将查看备注设为出款流程中的强制环节</p>
