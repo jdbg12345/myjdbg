@@ -50,7 +50,7 @@ export const BusinessOverview = () => {
       problem: {
         title: '时间压力下难以全面检查',
         icon: Users,
-        description: '有些是新型高端作弊手段无法识别风险；'
+        description: '审核存在时效考核，导致人员难以全面仔细检查，从而遗漏环节，引发出款错误，造成公司损失。'
       },
       solution: {
         title: '自动化拦截和预警',
