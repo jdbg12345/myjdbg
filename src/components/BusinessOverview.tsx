@@ -14,7 +14,7 @@ export const BusinessOverview = () => {
       problem: {
         title: '人员的风控能力参差不齐',
         icon: AlertTriangle,
-        description: '依赖个人经验，小圈子文化，等导致大部分人尤其是新人无法得到技能有效提升；审核存在时效考核，导致人员难以全面仔细检查，从而遗漏环节'
+        description: '过度依赖个人经验与小圈子文化，资深人员不愿传授，大部分新人难以提升技能；审核存在时效考核，导致检查不全面，出现遗漏。'
       },
       solution: {
         title: '标准化工具和规则',
