@@ -521,37 +521,6 @@ export const BusinessOverview = () => {
               </div>
             </div>
           </div>
-
-          {/* 图表 */}
-          <div className="bg-white rounded-lg p-6 border border-gray-200">
-            <div className="flex items-end justify-between h-64 mb-4">
-              <div className="flex flex-col items-center flex-1 mx-2">
-                <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '260px'}}>52%</div>
-                <div className="bg-red-400 w-full rounded-t transition-all duration-300" style={{height: '208px'}}></div>
-                <div className="text-sm text-gray-600 mt-2">调整前</div>
-                <div className="text-xs text-gray-500">错误率</div>
-              </div>
-              <div className="flex flex-col items-center flex-1 mx-2">
-                <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '176px'}}>22%</div>
-                <div className="bg-green-500 w-full rounded-t transition-all duration-300" style={{height: '88px'}}></div>
-                <div className="text-sm text-gray-600 mt-2">调整后</div>
-                <div className="text-xs text-gray-500">错误率</div>
-              </div>
-            </div>
-            <div className="text-center text-sm text-gray-600">
-              <div className="mb-2">统计周期：2025-04-01 ~ 2025-06-30 (以Y1为例)</div>
-              <div className="flex items-center justify-center space-x-4">
-                <div className="flex items-center">
-                  <span className="inline-block w-4 h-4 bg-red-400 mr-2"></span>
-                  <span>调整前错误率</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="inline-block w-4 h-4 bg-green-500 mr-2"></span>
-                  <span>调整后错误率</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
 
@@ -569,38 +538,7 @@ export const BusinessOverview = () => {
                 <p className="text-gray-700">通过B端百家赔率数据构建体育打水实时查询工具</p>
               </div>
             </div>
-          </div>
-
-          {/* 图表 */}
-          <div className="bg-white rounded-lg p-6 border border-gray-200">
-            <div className="flex items-end justify-between h-64 mb-4">
-              <div className="flex flex-col items-center flex-1 mx-2">
-                <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '216px'}}>18%</div>
-                <div className="bg-red-400 w-full rounded-t transition-all duration-300" style={{height: '144px'}}></div>
-                <div className="text-sm text-gray-600 mt-2">调整前</div>
-                <div className="text-xs text-gray-500">错误率</div>
-              </div>
-              <div className="flex flex-col items-center flex-1 mx-2">
-                <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '196px'}}>13%</div>
-                <div className="bg-green-500 w-full rounded-t transition-all duration-300" style={{height: '104px'}}></div>
-                <div className="text-sm text-gray-600 mt-2">调整后</div>
-                <div className="text-xs text-gray-500">错误率</div>
-              </div>
-            </div>
-            <div className="text-center text-sm text-gray-600">
-              <div className="mb-2">统计周期：2025-04-01 ~ 2025-06-30 (以Y1为例)</div>
-              <div className="flex items-center justify-center space-x-4">
-                <div className="flex items-center">
-                  <span className="inline-block w-4 h-4 bg-red-400 mr-2"></span>
-                  <span>调整前错误率</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="inline-block w-4 h-4 bg-green-500 mr-2"></span>
-                  <span>调整后错误率</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div>       
         </div>       
              
         {/* 提款流水查询工具 */}
@@ -623,37 +561,6 @@ export const BusinessOverview = () => {
               </div>
               <div className="bg-blue-50 p-4 rounded-lg">
                 <p className="text-blue-700 text-sm">市场调研显示，主流平台（6 尊龙凯时（AG）7 金宝博（188）8 竞博（IM）5 万博（ManbetX）3 竞技宝（JJB）2 雷竞技（Raybet）1 易游（M6)）已普遍实现用户前端直接查看剩余提款流水功能，这不仅优化了用户体验，还有效解决了流水反复咨询的冗余低效流程和计算错误导致的出款问题（虽已提出需求，但技术侧目前无法实现）</p>
-              </div>
-            </div>
-          </div>
-
-          {/* 图表 */}
-          <div className="bg-white rounded-lg p-6 border border-gray-200">
-            <div className="flex items-end justify-between h-64 mb-4">
-              <div className="flex flex-col items-center flex-1 mx-2">
-                <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '200px'}}>8小时</div>
-                <div className="bg-red-400 w-full rounded-t transition-all duration-300" style={{height: '160px'}}></div>
-                <div className="text-sm text-gray-600 mt-2">调整前</div>
-                <div className="text-xs text-gray-500">处理时长</div>
-              </div>
-              <div className="flex flex-col items-center flex-1 mx-2">
-                <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '100px'}}>4小时</div>
-                <div className="bg-green-500 w-full rounded-t transition-all duration-300" style={{height: '80px'}}></div>
-                <div className="text-sm text-gray-600 mt-2">调整后</div>
-                <div className="text-xs text-gray-500">处理时长</div>
-              </div>
-            </div>
-            <div className="text-center text-sm text-gray-600">
-              <div className="mb-2">统计周期：2025-04-01 ~ 2025-06-30</div>
-              <div className="flex items-center justify-center space-x-4">
-                <div className="flex items-center">
-                  <span className="inline-block w-4 h-4 bg-red-400 mr-2"></span>
-                  <span>调整前处理时长</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="inline-block w-4 h-4 bg-green-500 mr-2"></span>
-                  <span>调整后处理时长</span>
-                </div>
               </div>
             </div>
           </div>
