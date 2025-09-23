@@ -1102,75 +1102,9 @@ export const BusinessOverview = () => {
         
         {/* 方向4：内外的人员进行勾结串联	*/}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向4：内外的人员进行勾结串联</h3>
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            <span className="font-semibold">内控薄弱：敏感操作缺乏授权与审计，参数、标签泄露</span>，一些核心策略和参数外界已"知晓"，需要逐步实施参数分层、动态设置等机制。
-          </p>
+          <h3 className="text-2xl font-bold text-gray-800 mb-6">方向4：内外的人员进行勾结串联</h3>      
 
-          {/* 1. VIP禁用 */}
-          <div className="mb-12">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">V</span>
-              </div>
-              <h4 className="text-xl font-bold text-gray-800">VIP禁用</h4>
-            </div>
-            
-            <div className="bg-gray-50 rounded-lg p-6 mb-6">
-              <div className="mb-4">
-                <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-                <div className="text-gray-700 mb-4">VIP用户禁用权限管理不够精细，缺乏分级审批机制，存在误禁和滥用风险</div>
-              </div>
-              <div>
-                <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-                <div className="text-gray-700">建立VIP禁用分级审批机制，提升禁用操作的准确性和合规性，降低误禁率80%</div>
-              </div>
-            </div>
-            
-            {/* VIP禁用图表 */}
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h5 className="text-lg font-semibold text-gray-900 mb-4">VIP禁用管控效果</h5>
-              <div className="relative h-64">
-                <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                  <span>100</span>
-                  <span>75</span>
-                  <span>50</span>
-                  <span>25</span>
-                  <span>0</span>
-                </div>
-                <div className="ml-8 h-full relative">
-                  <div className="absolute left-0 right-0 h-full">
-                    {[0, 25, 50, 75, 100].map((percent) => (
-                      <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                    ))}
-                  </div>
-                  <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
-                    <div className="flex flex-col items-center relative">
-                      <div className="absolute -top-8 text-sm font-semibold text-indigo-600">80%</div>
-                      <div className="w-24 bg-indigo-500 rounded-t" style={{ height: '192px' }}></div>
-                      <div className="text-center mt-3">
-                        <div className="text-sm font-medium text-gray-700">85单</div>
-                        <div className="text-sm text-gray-600">VIP禁用</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                            
-              {/* 图例 */}
-              <div className="flex justify-center space-x-8">
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-indigo-500"></div>
-                  <span className="text-sm text-gray-600">管控订单数</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span className="text-sm text-gray-600">准确率: 80%</span>
-                </div>
-              </div>
-              
-              <div className="text-right text-xs text-gray-500 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-            </div>
-          </div>
+         
 
           {/* 2. 风控标签 */}
           <div className="mb-12">
