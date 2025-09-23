@@ -377,7 +377,7 @@ export const BusinessOverview = () => {
         
           {/* 风险分数效果图表 */}
           <div>
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">风险分数效果（细分区间）</h4>
+            <h4 className="text-lg font-semibold text-gray-900 mb-4">2、风险云顿分数效果</h4>
             <p className="text-sm text-gray-600 mb-6">此图表展示了在细分的风险分数区间内，订单的分布情况和相应的问题率。通过观察问题率随分数区间的变化趋势，验证风险分数模型的有效性和区分能力。</p>
             
             <div className="bg-white p-6 rounded-lg border border-gray-200">
