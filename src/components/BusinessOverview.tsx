@@ -30,7 +30,7 @@ export const BusinessOverview = () => {
       description: '降低无问题订单的平均出单时长',
       impact: '重要指标',
       problem: {
-        title: '超出既有人员能力',
+        title: '人不按照标准执行',
         icon: Users,
         description: '有些是新型高端作弊手段无法识别风险；'
       },
@@ -40,6 +40,25 @@ export const BusinessOverview = () => {
         description: '建立完善的策略库和规则引擎，将人工经验转化为系统能力'
       }
     },
+       {
+      id: 'efficiency',
+      title: '效率',
+      priority: 'P1',
+      icon: Clock,
+      description: '降低无问题订单的平均出单时长',
+      impact: '重要指标',
+      problem: {
+        title: '人在时间压力下无法全部检查',
+        icon: Users,
+        description: '有些是新型高端作弊手段无法识别风险；'
+      },
+      solution: {
+        title: '自动化拦截和预警',
+        icon: Database,
+        description: '建立完善的策略库和规则引擎，将人工经验转化为系统能力'
+      }
+    },
+    
     {
       id: 'cost',
       title: '成本',
