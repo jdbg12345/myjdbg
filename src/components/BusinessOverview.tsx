@@ -161,62 +161,7 @@ export const BusinessOverview = () => {
         </div>
       </div>
 
-      
-      {/* 二、本质问题与解法 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-8">
-          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-            <Zap className="w-5 h-5 text-white" />
-          </div>
-          <h2 className="text-3xl font-bold text-gray-800">二、本质问题与解法</h2>
-        </div>
-
-        <div className="bg-blue-50 rounded-xl p-6 mb-8">
-          <p className="text-lg text-blue-900 font-semibold">
-            在风控中，“人”是所有问题的根源。长期目标是不依赖“人”，压缩人的操作比重和空间，由系统主导操作与约束，提升风控质量与稳定性，使违规者成本与风险极高，几乎无可操作空间。系统可自动完成大部分判定，人工仅作为操作按钮；当人的执行结果与系统结果偏差超出预设范围时，将强制触发内控二次确认，仅对模糊或特殊行为进行干预，从而构建高效、可靠的防护体系。
-          </p>
-        </div>
-        
-        <div className="space-y-6">
-          {problemSolutionPairs.map((pair, index) => {
-            const ProblemIcon = pair.problem.icon;
-            const SolutionIcon = pair.solution.icon;
-            
-            return (
-              <div key={index} className="flex items-center space-x-6 bg-white rounded-xl p-6 shadow-sm">
-                {/* 问题部分 */}
-                <div className="flex-1 p-6 bg-red-50 rounded-lg">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                      <ProblemIcon className="w-4 h-4 text-white" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-red-700">{pair.problem.title}</h3>
-                  </div>
-                  <p className="text-gray-700 text-sm leading-relaxed">{pair.problem.description}</p>
-                </div>
-
-                {/* 箭头 */}
-                <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                    <ArrowRight className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-
-                {/* 解法部分 */}
-                <div className="flex-1 p-6 bg-green-50 rounded-lg">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                      <SolutionIcon className="w-4 h-4 text-white" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-green-700">{pair.solution.title}</h3>
-                  </div>
-                  <p className="text-gray-700 text-sm leading-relaxed">{pair.solution.description}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+    
 
       {/* 三、试点成果呈现 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
