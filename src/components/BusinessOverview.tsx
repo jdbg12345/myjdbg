@@ -1133,7 +1133,10 @@ export const BusinessOverview = () => {
           </div>
         </div>
 
-       
+        {/* 风控支持工具 */}
+        
+      </div>
+
         {/* 方向4：风控内控机制 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
           <h3 className="text-2xl font-bold text-gray-800 mb-6">方向4：风控内控机制</h3>
