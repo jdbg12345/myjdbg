@@ -1133,13 +1133,7 @@ export const BusinessOverview = () => {
           </div>
         </div>
 
-        {/* 风控支持工具 */}
-        <div className="bg-white rounded-xl p-8 shadow-sm">
-          <h3 className="text-xl font-bold text-gray-900 mb-6">方向3：风控支持工具</h3>
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            <span className="font-semibold">审核标准一致性及稳定性差，</span>审核过程高度依赖个人能力和状态，<span className="font-semibold">导致审核标准难以统一且不稳定。经验丰富的审核员虽能快速处理订单，但因出款时间考核压力而存在遗漏风险；同时，资深人员出于绩效考核因素不愿与新人分享经验，致使新手错误率持续居高不下，形成恶性循环。</span>
-          </p>
-
+       
         {/* 方向4：风控内控机制 */}
         <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
           <h3 className="text-2xl font-bold text-gray-800 mb-6">方向4：风控内控机制</h3>
