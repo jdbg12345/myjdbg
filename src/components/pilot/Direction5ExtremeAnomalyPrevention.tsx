@@ -144,7 +144,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
       </div>
 
       {/* 3. 沉睡用户 */}
-      <div className="mb-12">
+      <div className="mb-8">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">睡</span>
