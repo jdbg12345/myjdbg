@@ -73,7 +73,6 @@ export const PilotResultsPresentation = () => {
                       {item.direction}
                     </div>
                   </td>
-                  <td className="p-6 text-gray-700 font-medium">{item.pain}</td>
                   <td className="p-6 text-gray-700">{item.before}</td>
                   <td className="p-6 text-gray-700 font-medium">{item.now}</td>
                   <td className="p-6 text-gray-700">{item.example}</td>
