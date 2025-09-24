@@ -409,8 +409,6 @@ export const Direction1PersonnelCapability = () => {
             <h4 className="text-xl font-bold text-gray-800">手段5、提款流水查询工具</h4>
           </div>
         </div>
-        
-                  <h5 className="font-semibold text-orange-700 mb-2">用户体验较差</h5>
         {/* 核心问题模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="mb-6">
