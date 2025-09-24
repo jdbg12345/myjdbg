@@ -33,7 +33,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">风控标签查看权限过于宽泛，敏感信息容易泄露，缺乏访问记录和审计机制</p>
+              <p className="text-gray-700 text-sm leading-relaxed">风控标签和备注查看权限过于宽泛，敏感信息容易泄露，导致公司损失</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
