@@ -2,39 +2,58 @@ import React from 'react';
 
 export const Direction1PersonnelCapability = () => {
   return (
-    <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
+    <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl p-8 mb-8 shadow-lg border border-blue-100">
       <div className="flex items-center space-x-3 mb-8">
-        <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+        <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-purple-700 rounded-full flex items-center justify-center shadow-lg">
           <span className="text-white font-bold text-lg">1</span>
         </div>
-        <h2 className="text-3xl font-bold text-gray-800">人员的风控能力参差不齐</h2>
+        <div className="flex-1">
+          <h2 className="text-3xl font-bold text-gray-800">人员的风控能力参差不齐</h2>
+          <div className="w-full h-1 bg-gradient-to-r from-purple-600 to-transparent rounded-full mt-2"></div>
+        </div>
       </div>
       
       {/* 新派单规则效果图表 */}
       <div className="mb-12">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-blue-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
             <span className="text-white font-bold text-sm">派</span>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">手段1、派单策略变革</h4>
-        </div>
-        
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div>
-            <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
-            <p className="text-gray-700">当前派单机制仅以 金额维度 作为分配依据，未考虑订单的风险等级与审核人员能力差异。结果导致部分 高风险、复杂订单 被下发至远程/外包团队，其审核差错率明显高于总部（约为总部的 2–3 倍），每月因此造成 100 万元以上的潜在风险损失。</p>
-          </div>
-          <div>
-            <h4 className="font-semibold text-gray-800 mb-2">策略</h4>
-            <p className="text-gray-700">引入订单风险评分机制，将派单从"仅按金额"升级为"按风险分数+金额"，确保中高风险订单由经验丰富的审核员处理，实现人单匹配最优分配。</p>
-          </div>
-          <div>
-            <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
-            <p className="text-gray-700">错误率降低<span className="font-bold text-green-600">15%-20%</span></p>
+            <h4 className="text-xl font-bold text-gray-800">手段1、派单策略变革</h4>
           </div>
         </div>
         
-        <div className="bg-white p-6 rounded-lg border border-gray-200">
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">当前派单机制仅以 金额维度 作为分配依据，未考虑订单的风险等级与审核人员能力差异。结果导致部分 高风险、复杂订单 被下发至远程/外包团队，其审核差错率明显高于总部（约为总部的 2–3 倍），每月因此造成 100 万元以上的潜在风险损失。</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">引入订单风险评分机制，将派单从"仅按金额"升级为"按风险分数+金额"，确保中高风险订单由经验丰富的审核员处理，实现人单匹配最优分配。</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">错误率降低<span className="font-bold text-green-600">15%-20%</span></p>
+            </div>
+          </div>
+        </div>
+        
+        {/* 图表模块 */}
+        <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
           <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
             {/* Y轴标签 */}
             <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">

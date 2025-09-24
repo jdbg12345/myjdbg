@@ -2,36 +2,58 @@ import React from 'react';
 
 export const Direction4InternalCollusion = () => {
   return (
-    <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
+    <div className="bg-gradient-to-br from-white to-purple-50 rounded-xl p-8 mb-8 shadow-lg border border-purple-100">
       <div className="flex items-center space-x-3 mb-8">
-        <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+        <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-purple-700 rounded-full flex items-center justify-center shadow-lg">
           <span className="text-white font-bold text-lg">4</span>
         </div>
-        <h2 className="text-3xl font-bold text-gray-800">内外的人员进行勾结串联</h2>
+        <div className="flex-1">
+          <h2 className="text-3xl font-bold text-gray-800">内外的人员进行勾结串联</h2>
+          <div className="w-full h-1 bg-gradient-to-r from-purple-600 to-transparent rounded-full mt-2"></div>
+        </div>
       </div>
 
       {/* 2. 风控标签 */}
       <div className="mb-12">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center">
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-cyan-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center shadow-md">
             <span className="text-white font-bold text-sm">标</span>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">风控标签</h4>
-        </div>
-        
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="mb-4">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">风控标签查看权限过于宽泛，敏感信息容易泄露，缺乏访问记录和审计机制</div>
-          </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">实施标签分级查看机制，敏感信息访问减少60%，建立完整的访问审计链路</div>
+            <h4 className="text-xl font-bold text-gray-800">风控标签</h4>
           </div>
         </div>
         
-        {/* 风控标签图表 */}
-        <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">风控标签查看权限过于宽泛，敏感信息容易泄露，缺乏访问记录和审计机制</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">实施标签分级查看机制，建立完整的访问审计链路</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">敏感信息访问减少60%，建立完整的访问审计链路</p>
+            </div>
+          </div>
+        </div>
+        
+        {/* 图表模块 */}
+        <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
           <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               管控订单数

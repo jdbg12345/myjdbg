@@ -2,12 +2,15 @@ import React from 'react';
 
 export const Direction3SystemStrategies = () => {
   return (
-    <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
+    <div className="bg-gradient-to-br from-white to-green-50 rounded-xl p-8 mb-8 shadow-lg border border-green-100">
       <div className="flex items-center space-x-3 mb-8">
-        <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+        <div className="w-10 h-10 bg-gradient-to-r from-green-600 to-green-700 rounded-full flex items-center justify-center shadow-lg">
           <span className="text-white font-bold text-lg">3</span>
         </div>
-        <h2 className="text-3xl font-bold text-gray-800">系统审核策略的维度缺失</h2>
+        <div className="flex-1">
+          <h2 className="text-3xl font-bold text-gray-800">系统审核策略的维度缺失</h2>
+          <div className="w-full h-1 bg-gradient-to-r from-green-600 to-transparent rounded-full mt-2"></div>
+        </div>
       </div>
       <p className="text-gray-700 mb-8 leading-relaxed">
         目前系统的策略主要集中在防御型，而非套利及作弊识别类型，导致直接出款错误，以及转人工后缺乏强有力的风险提醒。
@@ -15,15 +18,46 @@ export const Direction3SystemStrategies = () => {
     
       {/* 1. 电子策略 */}
       <div className="mb-12">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-green-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-md">
             <span className="text-white font-bold text-sm">电</span>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">电子策略</h4>
+            <h4 className="text-xl font-bold text-gray-800">电子策略</h4>
+          </div>
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="mb-4">
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">电子游戏卡免费旋转等套利行为难以识别，系统缺乏有效的电子游戏异常行为监控机制</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立电子游戏异常行为识别机制，重点监控卡免费旋转等套利行为</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">电子卡免费策略拦截率达到25%，有效防范套利行为，显著提升电子游戏风控能力</p>
+            </div>
+          </div>
+        </div>
+        
+        {/* 图表模块 */}
+        <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
             <div className="text-gray-700 mb-4">电子游戏卡免费旋转等套利行为难以识别，系统缺乏有效的电子游戏异常行为监控机制</div>
           </div>
