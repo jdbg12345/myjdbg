@@ -22,8 +22,8 @@ export const Direction5ExtremeAnomalyPrevention = () => {
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-emerald-500">
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center shadow-md">
-            <span className="text-white font-bold text-sm">钱</span>
-          </div>
+              <span className="text-white font-bold text-sm">钱</span>
+            </div>
             <h4 className="text-xl font-bold text-gray-800">钱包预警</h4>
           </div>
         </div>
@@ -55,33 +55,21 @@ export const Direction5ExtremeAnomalyPrevention = () => {
           </div>
         </div>
         
-        {/* 图表模块 */}
-        <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-          <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">用户钱包异常变动缺乏实时监控，无法及时发现异常资金流动</div>
-          </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">建立钱包异常预警机制，异常资金发现率提升85%，响应时间缩短至分钟级</div>
-          </div>
-        </div>
-        
         {/* 钱包预警图表 */}
         <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
+          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
+            <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               预警订单数
             </div>
             
             <div className="mx-12 h-full relative">
               <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-              <span>300</span>
-              <span>225</span>
-              <span>150</span>
-              <span>75</span>
-              <span>0</span>
-            </div>
+                <span>300</span>
+                <span>225</span>
+                <span>150</span>
+                <span>75</span>
+                <span>0</span>
+              </div>
               
               <div className="absolute left-12 right-12 h-full">
                 {[0, 25, 50, 75, 100].map((percent) => (
@@ -148,24 +136,23 @@ export const Direction5ExtremeAnomalyPrevention = () => {
               <p className="text-gray-700 text-sm leading-relaxed">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</p>
             </div>
           </div>
-          </div>
         </div>
         
         {/* 场馆多钱图表 */}
         <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
+          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
+            <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               预警订单数
             </div>
             
             <div className="mx-12 h-full relative">
               <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-              <span>200</span>
-              <span>150</span>
-              <span>100</span>
-              <span>50</span>
-              <span>0</span>
-            </div>
+                <span>200</span>
+                <span>150</span>
+                <span>100</span>
+                <span>50</span>
+                <span>0</span>
+              </div>
               
               <div className="absolute left-12 right-12 h-full">
                 {[0, 25, 50, 75, 100].map((percent) => (
@@ -232,24 +219,23 @@ export const Direction5ExtremeAnomalyPrevention = () => {
               <p className="text-gray-700 text-sm leading-relaxed">沉睡用户活跃预警机制，异常账号识别率78%，有效防范账号盗用风险</p>
             </div>
           </div>
-          </div>
         </div>
         
         {/* 沉睡用户图表 */}
         <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-          <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
+          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
+            <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               预警订单数
             </div>
             
             <div className="mx-12 h-full relative">
               <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-              <span>150</span>
-              <span>113</span>
-              <span>75</span>
-              <span>38</span>
-              <span>0</span>
-            </div>
+                <span>150</span>
+                <span>113</span>
+                <span>75</span>
+                <span>38</span>
+                <span>0</span>
+              </div>
               
               <div className="absolute left-12 right-12 h-full">
                 {[0, 25, 50, 75, 100].map((percent) => (
