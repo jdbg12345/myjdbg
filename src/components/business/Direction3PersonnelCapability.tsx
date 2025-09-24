@@ -1,5 +1,4 @@
 import React from 'react';
-import { Settings, Play, Layers } from 'lucide-react';
 
 export const Direction3PersonnelCapability = () => {
   return (
@@ -13,7 +12,9 @@ export const Direction3PersonnelCapability = () => {
         <div className="bg-white rounded-lg p-6 border border-purple-200">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center">
-              <Play className="w-4 h-4" />
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 12l-4-4 1.41-1.41L10 9.17l2.59-2.58L14 8l-4 4z"/>
+              </svg>
             </div>
             <h4 className="text-lg font-bold text-gray-800">电子策略</h4>
           </div>
@@ -36,7 +37,9 @@ export const Direction3PersonnelCapability = () => {
         <div className="bg-white rounded-lg p-6 border border-purple-200">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center">
-              <Settings className="w-4 h-4" />
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
+              </svg>
             </div>
             <h4 className="text-lg font-bold text-gray-800">真人策略</h4>
           </div>
@@ -59,7 +62,9 @@ export const Direction3PersonnelCapability = () => {
         <div className="bg-white rounded-lg p-6 border border-purple-200">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center">
-              <Layers className="w-4 h-4" />
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 2L3 7v11a1 1 0 001 1h3v-8h6v8h3a1 1 0 001-1V7l-7-5z"/>
+              </svg>
             </div>
             <h4 className="text-lg font-bold text-gray-800">体育策略</h4>
           </div>
@@ -82,7 +87,9 @@ export const Direction3PersonnelCapability = () => {
         <div className="bg-white rounded-lg p-6 border border-purple-200">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center">
-              <Settings className="w-4 h-4" />
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
             </div>
             <h4 className="text-lg font-bold text-gray-800">彩票策略</h4>
           </div>
@@ -105,7 +112,9 @@ export const Direction3PersonnelCapability = () => {
         <div className="bg-white rounded-lg p-6 border border-purple-200">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center">
-              <Play className="w-4 h-4" />
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+              </svg>
             </div>
             <h4 className="text-lg font-bold text-gray-800">棋牌策略</h4>
           </div>

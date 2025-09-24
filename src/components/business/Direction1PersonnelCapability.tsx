@@ -1,5 +1,4 @@
 import React from 'react';
-import { BarChart3, CheckCircle, Clock, AlertCircle, Lightbulb } from 'lucide-react';
 
 export const Direction1PersonnelCapability = () => {
   return (

@@ -1,5 +1,4 @@
 import React from 'react';
-import { AlertCircle, CheckCircle } from 'lucide-react';
 
 export const Direction2PersonnelCapability = () => {
   return (
