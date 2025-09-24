@@ -296,7 +296,7 @@ export const Direction1PersonnelCapability = () => {
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-orange-500 rounded-full"></div>
-              <span className="text-sm text-gray-600">问题率趋势</span>
+              <span className="text-sm text-gray-600">拒单率</span>
             </div>
           </div>
           
