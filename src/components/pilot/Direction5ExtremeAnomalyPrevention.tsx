@@ -2,15 +2,12 @@ import React from 'react';
 
 export const Direction5ExtremeAnomalyPrevention = () => {
   return (
-    <div className="bg-gradient-to-br from-white to-red-50 rounded-xl p-8 mb-8 shadow-lg border border-red-100">
+    <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
-        <div className="w-10 h-10 bg-gradient-to-r from-red-600 to-red-700 rounded-full flex items-center justify-center shadow-lg">
+        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
           <span className="text-white font-bold text-lg">5</span>
         </div>
-        <div className="flex-1">
-          <h2 className="text-3xl font-bold text-gray-800">一些极端异常的预防机制</h2>
-          <div className="w-full h-1 bg-gradient-to-r from-red-600 to-transparent rounded-full mt-2"></div>
-        </div>
+        <h2 className="text-3xl font-bold text-gray-800">一些极端异常的预防机制</h2>
       </div>
       <p className="text-gray-700 mb-8 leading-relaxed">
         <span className="font-semibold">流程缺陷及策略局限导致异常资金风险</span>，针对场馆多钱、沉睡用户等极端情况建立预警和防御策略，确保资金安全。

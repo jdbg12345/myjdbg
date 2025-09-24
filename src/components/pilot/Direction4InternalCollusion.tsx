@@ -2,15 +2,12 @@ import React from 'react';
 
 export const Direction4InternalCollusion = () => {
   return (
-    <div className="bg-gradient-to-br from-white to-purple-50 rounded-xl p-8 mb-8 shadow-lg border border-purple-100">
+    <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
-        <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-purple-700 rounded-full flex items-center justify-center shadow-lg">
+        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
           <span className="text-white font-bold text-lg">4</span>
         </div>
-        <div className="flex-1">
-          <h2 className="text-3xl font-bold text-gray-800">内外的人员进行勾结串联</h2>
-          <div className="w-full h-1 bg-gradient-to-r from-purple-600 to-transparent rounded-full mt-2"></div>
-        </div>
+        <h2 className="text-3xl font-bold text-gray-800">内外的人员进行勾结串联</h2>
       </div>
 
       {/* 风控标签和备注独立权限 */}

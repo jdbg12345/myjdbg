@@ -2,15 +2,12 @@ import React from 'react';
 
 export const Direction2StandardExecution = () => {
   return (
-    <div className="bg-gradient-to-br from-white to-orange-50 rounded-xl p-8 mb-8 shadow-lg border border-orange-100">
+    <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
-        <div className="w-10 h-10 bg-gradient-to-r from-orange-600 to-orange-700 rounded-full flex items-center justify-center shadow-lg">
+        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
           <span className="text-white font-bold text-lg">2</span>
         </div>
-        <div className="flex-1">
-          <h2 className="text-3xl font-bold text-gray-800">人的审核不按照标准执行</h2>
-          <div className="w-full h-1 bg-gradient-to-r from-orange-600 to-transparent rounded-full mt-2"></div>
-        </div>
+        <h2 className="text-3xl font-bold text-gray-800">人的审核不按照标准执行</h2>
       </div>
       
       {/* 1、出款强制查看标签备注 */}
@@ -147,25 +144,40 @@ export const Direction2StandardExecution = () => {
 
       {/* 2. 会员禁用流程升级 */}
       <div className="mb-8">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">VIP</span>
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-purple-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">VIP</span>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800">会员禁用流程升级</h4>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">会员禁用流程升级</h4>
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="mb-4">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">当前会员禁用流程单人即可操作，权限管理不够精细，缺乏分级审批机制，存在高V用户误禁及权限滥用风险。</div>
-          </div>
-          <div className="mb-4">
-            <div className="text-lg font-semibold text-blue-700 mb-2">策略</div>
-            <div className="text-gray-700 mb-4">建立基于玩家等级的会员禁用分级审批机制，高V玩家的启禁用操作需提供审批人的 U 盾或谷歌验证码验证。</div>
-          </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">彻底解决禁用滥用问题</div>
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">当前会员禁用流程单人即可操作，权限管理不够精细，缺乏分级审批机制，存在高V用户误禁及权限滥用风险</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立基于玩家等级的会员禁用分级审批机制，高V玩家的启禁用操作需提供审批人的 U 盾或谷歌验证码验证</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">彻底解决禁用滥用问题</p>
+            </div>
           </div>
         </div>
       </div>

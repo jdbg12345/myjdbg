@@ -17,13 +17,13 @@ export const PilotResultsPresentation = () => {
         <h2 className="text-3xl font-bold text-gray-800">二、试点成果说明</h2>
       </div>
       {/* 体系定义 */}
-      <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 mb-8 border border-green-100 shadow-sm">
-        <p className="text-lg text-green-900 leading-relaxed font-medium">
+      <div className="bg-blue-50 rounded-lg p-6 mb-8 border border-blue-200">
+        <p className="text-gray-700 leading-relaxed">
           在风控中，"人"是所有问题的根源。长期目标是不依赖"人"，压缩人的操作比重与空间，由系统自动完成大部分判定，覆盖策略、流程、内控与预警。当人的执行结果与系统偏差超出预设范围时，会触发内控二次审核，提升风控质量与稳定性，构建高效可靠的防护体系，使违规者成本与风险极高、几乎无操作空间。
         </p>
       </div>
       {/* 体系变化对比表 */}
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-gray-100">
+      <div className="bg-white rounded-lg overflow-hidden mb-8 border border-blue-200">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-gradient-to-r from-gray-800 to-gray-900 text-white">
@@ -67,9 +67,9 @@ export const PilotResultsPresentation = () => {
                   example: "钱包异常、场馆多钱、沉睡用户预警"
                 }
               ].map((item, index) => (
-                <tr key={index} className="border-b border-gray-100 hover:bg-gradient-to-r hover:from-gray-50 hover:to-blue-50 transition-all duration-200 hover:shadow-sm">
+                <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                   <td className="p-6 text-center whitespace-nowrap">
-                    <div className="inline-block bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-full font-bold text-lg shadow-md">
+                    <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full font-bold text-lg">
                       {item.direction}
                     </div>
                   </td>

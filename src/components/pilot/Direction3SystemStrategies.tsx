@@ -2,15 +2,12 @@ import React from 'react';
 
 export const Direction3SystemStrategies = () => {
   return (
-    <div className="bg-gradient-to-br from-white to-green-50 rounded-xl p-8 mb-8 shadow-lg border border-green-100">
+    <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
-        <div className="w-10 h-10 bg-gradient-to-r from-green-600 to-green-700 rounded-full flex items-center justify-center shadow-lg">
+        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
           <span className="text-white font-bold text-lg">3</span>
         </div>
-        <div className="flex-1">
-          <h2 className="text-3xl font-bold text-gray-800">系统审核策略的维度缺失</h2>
-          <div className="w-full h-1 bg-gradient-to-r from-green-600 to-transparent rounded-full mt-2"></div>
-        </div>
+        <h2 className="text-3xl font-bold text-gray-800">系统审核策略的维度缺失</h2>
       </div>
       <p className="text-gray-700 mb-8 leading-relaxed">
         目前系统的策略主要集中在防御型，而非套利及作弊识别类型，导致直接出款错误，以及转人工后缺乏强有力的风险提醒。
