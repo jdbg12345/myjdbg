@@ -59,16 +59,13 @@ export const Direction5ExtremeAnomalyPrevention = () => {
                 <div className="flex flex-col items-center relative">
                   <div className="w-20 bg-emerald-600 rounded-t" style={{ height: '255px' }}></div>
                   <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">钱包预警</div>
                     <div className="text-xs text-gray-500 mt-1">255单 (85%)</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">预警类型</div>
-          
+                    
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-emerald-600 rounded"></div>
@@ -126,16 +123,13 @@ export const Direction5ExtremeAnomalyPrevention = () => {
                 <div className="flex flex-col items-center relative">
                   <div className="w-20 bg-rose-600 rounded-t" style={{ height: '230px' }}></div>
                   <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">场馆多钱</div>
                     <div className="text-xs text-gray-500 mt-1">184单 (92%)</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">监控类型</div>
-          
+                    
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-rose-600 rounded"></div>
@@ -193,16 +187,13 @@ export const Direction5ExtremeAnomalyPrevention = () => {
                 <div className="flex flex-col items-center relative">
                   <div className="w-20 bg-amber-600 rounded-t" style={{ height: '195px' }}></div>
                   <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">沉睡用户</div>
                     <div className="text-xs text-gray-500 mt-1">117单 (78%)</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">监控类型</div>
-          
+                    
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-amber-600 rounded"></div>
