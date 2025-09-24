@@ -35,18 +35,18 @@ export const Direction2StandardExecution = () => {
         </div>
 
         {/* 图表 */}
-        <div className="bg-white rounded-lg p-6 border border-gray-200">
-          <h5 className="text-lg font-semibold text-gray-900 mb-4">出款备注标签查看效果</h5>
-          <div className="relative h-80 mb-6">
+        <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+          <h5 className="text-lg font-semibold text-gray-900 mb-6 text-center bg-gradient-to-r from-red-50 to-green-50 py-3 rounded-lg">出款备注标签查看效果对比</h5>
+          <div className="relative h-96 mb-8 bg-gradient-to-br from-gray-50 to-white rounded-lg p-6">
             {/* Y轴标签 */}
-            <div className="absolute -left-16 top-1/2 transform -translate-y-1/2 -rotate-90 text-sm font-medium text-gray-600">
+            <div className="absolute -left-20 top-1/2 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700 bg-white px-2 rounded shadow">
               错误率 (%)
             </div>
             
             {/* 图表主体 */}
-            <div className="mx-12 h-full relative">
+            <div className="mx-16 h-full relative">
               {/* Y轴刻度 */}
-              <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+              <div className="absolute left-0 h-full flex flex-col justify-between text-xs font-medium text-gray-600">
                 <span>30%</span>
                 <span>22.5%</span>
                 <span>15%</span>
@@ -55,28 +55,28 @@ export const Direction2StandardExecution = () => {
               </div>
               
               {/* 网格线 */}
-              <div className="absolute left-12 right-12 h-full">
+              <div className="absolute left-16 right-16 h-full">
                 {[0, 25, 50, 75, 100].map((percent) => (
-                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                  <div key={percent} className="absolute w-full border-t border-gray-300 opacity-50" style={{bottom: `${percent}%`}}></div>
                 ))}
               </div>
               
               {/* 柱状图数据 */}
-              <div className="absolute left-12 right-12 h-full flex items-end justify-around pb-4">
+              <div className="absolute left-16 right-16 h-full flex items-end justify-around pb-6">
                 <div className="flex flex-col items-center relative">
-                  <div className="absolute -top-8 text-sm font-semibold text-red-600">25%</div>
-                  <div className="w-20 bg-red-400 rounded-t transition-all duration-300" style={{height: `${(25/30) * 240}px`}}></div>
-                  <div className="text-center mt-3">
-                    <div className="text-sm text-gray-600">调整前</div>
-                    <div className="text-xs text-gray-500">错误率</div>
+                  <div className="absolute -top-10 text-sm font-semibold text-red-700 bg-red-50 px-3 py-1 rounded shadow">25%</div>
+                  <div className="w-24 bg-gradient-to-t from-red-500 to-red-400 rounded-t shadow-lg transition-all duration-300" style={{height: `${(25/30) * 280}px`}}></div>
+                  <div className="text-center mt-4">
+                    <div className="text-sm font-semibold text-gray-800 bg-gray-100 px-3 py-1 rounded">调整前</div>
+                    <div className="text-xs text-gray-500 mt-1">错误率</div>
                   </div>
                 </div>
                 <div className="flex flex-col items-center relative">
-                  <div className="absolute -top-8 text-sm font-semibold text-green-600">8%</div>
-                  <div className="w-20 bg-green-500 rounded-t transition-all duration-300" style={{height: `${(8/30) * 240}px`}}></div>
-                  <div className="text-center mt-3">
-                    <div className="text-sm text-gray-600">调整后</div>
-                    <div className="text-xs text-gray-500">错误率</div>
+                  <div className="absolute -top-10 text-sm font-semibold text-green-700 bg-green-50 px-3 py-1 rounded shadow">8%</div>
+                  <div className="w-24 bg-gradient-to-t from-green-500 to-green-400 rounded-t shadow-lg transition-all duration-300" style={{height: `${(8/30) * 280}px`}}></div>
+                  <div className="text-center mt-4">
+                    <div className="text-sm font-semibold text-gray-800 bg-gray-100 px-3 py-1 rounded">调整后</div>
+                    <div className="text-xs text-gray-500 mt-1">错误率</div>
                   </div>
                 </div>
               </div>
@@ -84,22 +84,22 @@ export const Direction2StandardExecution = () => {
           </div>
           
           {/* X轴标签 */}
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">调整前后对比</div>
+          <div className="text-center text-base font-semibold text-gray-700 mb-6 bg-gray-100 py-2 rounded">调整前后对比</div>
           
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-6">
+          <div className="text-center mb-4">
+            <div className="flex items-center justify-center space-x-6 bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
               <div className="flex items-center">
-                <span className="inline-block w-4 h-4 bg-red-400 mr-2"></span>
-                <span className="text-sm text-gray-600">调整前错误率</span>
+                <span className="inline-block w-4 h-4 bg-gradient-to-t from-red-500 to-red-400 rounded shadow mr-2"></span>
+                <span className="text-sm font-medium text-gray-700">调整前错误率</span>
               </div>
               <div className="flex items-center">
-                <span className="inline-block w-4 h-4 bg-green-500 mr-2"></span>
-                <span className="text-sm text-gray-600">调整后错误率</span>
+                <span className="inline-block w-4 h-4 bg-gradient-to-t from-green-500 to-green-400 rounded shadow mr-2"></span>
+                <span className="text-sm font-medium text-gray-700">调整后错误率</span>
               </div>
             </div>
           </div>
-          <div className="text-center mt-4">
-            <div className="text-xs text-gray-500">
+          <div className="text-center">
+            <div className="text-xs text-gray-500 bg-gray-50 px-3 py-1 rounded">
               统计周期：2025-04-01 ~ 2025-06-30
             </div>
           </div>
