@@ -6,11 +6,6 @@ import { Direction3SystemStrategies } from '../pilot/Direction3SystemStrategies'
 import { Direction4InternalCollusion } from '../pilot/Direction4InternalCollusion';
 import { Direction5ExtremeAnomalyPrevention } from '../pilot/Direction5ExtremeAnomalyPrevention';
 import { Award } from 'lucide-react';
-import { Direction1PersonnelCapability } from '../pilot/Direction1PersonnelCapability';
-import { Direction2StandardExecution } from '../pilot/Direction2StandardExecution';
-import { Direction3SystemStrategies } from '../pilot/Direction3SystemStrategies';
-import { Direction4InternalCollusion } from '../pilot/Direction4InternalCollusion';
-import { Direction5ExtremeAnomalyPrevention } from '../pilot/Direction5ExtremeAnomalyPrevention';
 
 export const PilotResultsPresentation = () => {
   return (
