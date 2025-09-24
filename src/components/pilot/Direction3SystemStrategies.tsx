@@ -35,7 +35,6 @@ export const Direction3SystemStrategies = () => {
         
         {/* 电子策略图表 */}
         <div className="bg-gray-50 rounded-lg p-6">
-          <h4 className="text-lg font-bold text-gray-800 mb-4">电子卡免费策略效果</h4>
           <div className="bg-white rounded-lg p-4 border border-gray-200">
             <div className="flex items-end justify-between h-64 mb-4">
               <div className="flex flex-col items-center flex-1 mx-2">
@@ -94,7 +93,6 @@ export const Direction3SystemStrategies = () => {
         
         {/* 真人策略图表 */}
         <div className="bg-white p-6 rounded-lg border border-gray-200">
-          <h5 className="text-lg font-semibold text-gray-900 mb-4">真人套利策略效果</h5>
           <div className="relative h-64">
             <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
               <span>500</span>
@@ -159,7 +157,6 @@ export const Direction3SystemStrategies = () => {
         
         {/* 体育策略图表 */}
         <div className="bg-white p-6 rounded-lg border border-gray-200">
-          <h5 className="text-lg font-semibold text-gray-900 mb-4">体育套利策略效果</h5>
           <div className="relative h-64">
             <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
               <span>400</span>
@@ -224,7 +221,6 @@ export const Direction3SystemStrategies = () => {
         
         {/* 彩票策略图表 */}
         <div className="bg-white p-6 rounded-lg border border-gray-200">
-          <h5 className="text-lg font-semibold text-gray-900 mb-4">彩票套利策略效果</h5>
           <div className="relative h-64">
             <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
               <span>300</span>
@@ -289,7 +285,6 @@ export const Direction3SystemStrategies = () => {
         
         {/* 棋牌策略图表 */}
         <div className="bg-white p-6 rounded-lg border border-gray-200">
-          <h5 className="text-lg font-semibold text-gray-900 mb-4">棋牌套利策略效果</h5>
           <div className="relative h-64">
             <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
               <span>250</span>
