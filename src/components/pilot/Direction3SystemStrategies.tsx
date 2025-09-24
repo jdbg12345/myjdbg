@@ -15,7 +15,7 @@ export const Direction3SystemStrategies = () => {
     
       {/* 1. 电子策略 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -46,10 +46,9 @@ export const Direction3SystemStrategies = () => {
               <p className="text-gray-700 text-sm leading-relaxed">电子卡免费策略拦截率达到25%，有效防范套利行为，显著提升电子游戏风控能力</p>
             </div>
           </div>
-        </div>       
         
-        {/* 电子策略图表 */}
-        <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+          {/* 电子策略图表 */}
+          <div className="mt-8">
           <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               拦截订单数
@@ -116,11 +115,12 @@ export const Direction3SystemStrategies = () => {
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
+        </div>
       </div>
 
       {/* 真人策略 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -151,10 +151,9 @@ export const Direction3SystemStrategies = () => {
               <p className="text-gray-700 text-sm leading-relaxed">真人套利策略问题率26.7%，精准识别异常行为，大幅提升真人游戏风控效果</p>
             </div>
           </div>
-        </div>
         
-        {/* 真人策略图表 */}
-        <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+          {/* 真人策略图表 */}
+          <div className="mt-8">
           <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               拦截订单数
@@ -221,11 +220,12 @@ export const Direction3SystemStrategies = () => {
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
+        </div>
       </div>
 
       {/* 体育策略 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -256,10 +256,9 @@ export const Direction3SystemStrategies = () => {
               <p className="text-gray-700 text-sm leading-relaxed">体育套利策略覆盖面广，问题率22.1%，有效拦截体育投注中的套利行为</p>
             </div>
           </div>
-        </div>
         
-        {/* 体育策略图表 */}
-        <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+          {/* 体育策略图表 */}
+          <div className="mt-8">
           <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               拦截订单数
@@ -326,11 +325,12 @@ export const Direction3SystemStrategies = () => {
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
+        </div>
       </div>
 
       {/* 彩票策略 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -367,7 +367,7 @@ export const Direction3SystemStrategies = () => {
 
       {/* 棋牌策略 */}
       <div className="mb-8">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -398,10 +398,9 @@ export const Direction3SystemStrategies = () => {
               <p className="text-gray-700 text-sm leading-relaxed">棋牌套利策略问题率23.8%，精准定位异常行为，有效提升棋牌游戏安全性</p>
             </div>
           </div>
-        </div>
         
-        {/* 棋牌策略图表 */}
-        <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+          {/* 棋牌策略图表 */}
+          <div className="mt-8">
           <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               拦截订单数
@@ -468,6 +467,7 @@ export const Direction3SystemStrategies = () => {
           </div>
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+        </div>
         </div>
       </div>
     </div>

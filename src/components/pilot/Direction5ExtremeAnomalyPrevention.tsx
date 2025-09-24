@@ -15,7 +15,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
       
       {/* 1. 钱包预警 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -52,7 +52,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
 
       {/* 2. 场馆多钱 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -89,7 +89,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
 
       {/* 3. 沉睡用户 */}
       <div className="mb-8">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -120,10 +120,9 @@ export const Direction5ExtremeAnomalyPrevention = () => {
               <p className="text-gray-700 text-sm leading-relaxed">沉睡用户活跃预警机制，异常账号识别率78%，有效防范账号盗用风险</p>
             </div>
           </div>
-        </div>
         
-        {/* 沉睡用户图表 */}
-        <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+          {/* 沉睡用户图表 */}
+          <div className="mt-8">
           <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               预警订单数
@@ -163,6 +162,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
           </div>
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+        </div>
         </div>
       </div>
     </div>

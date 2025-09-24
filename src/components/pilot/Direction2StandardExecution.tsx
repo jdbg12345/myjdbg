@@ -12,7 +12,7 @@ export const Direction2StandardExecution = () => {
       
       {/* 1、出款强制查看标签备注 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -43,10 +43,9 @@ export const Direction2StandardExecution = () => {
               <p className="text-gray-700 text-sm leading-relaxed">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
             </div>
           </div>
-        </div>
 
-        {/* 图表模块 */}
-        <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          {/* 图表模块 */}
+          <div className="mt-8">
           <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               错误率 (%)
@@ -136,11 +135,12 @@ export const Direction2StandardExecution = () => {
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
+        </div>
       </div>
 
       {/* 2. 会员禁用流程升级 */}
       <div className="mb-8">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">

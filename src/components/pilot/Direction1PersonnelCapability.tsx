@@ -12,7 +12,7 @@ export const Direction1PersonnelCapability = () => {
       
       {/* 新派单规则效果图表 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -43,10 +43,9 @@ export const Direction1PersonnelCapability = () => {
               <p className="text-gray-700 text-sm leading-relaxed">错误率降低<span className="font-bold text-green-600">15%-20%</span></p>
             </div>
           </div>
-        </div>
         
-        {/* 图表模块 */}
-        <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+          {/* 图表模块 */}
+          <div className="mt-8">
           <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
             {/* Y轴标签 */}
             <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
@@ -174,11 +173,12 @@ export const Direction1PersonnelCapability = () => {
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
+        </div>
       </div>
 
       {/* 风险分数效果图表 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -209,9 +209,9 @@ export const Direction1PersonnelCapability = () => {
               <p className="text-gray-700 text-sm leading-relaxed">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
             </div>
           </div>
-        </div>
                     
-        <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+          {/* 图表模块 */}
+          <div className="mt-8">
           <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               订单数量
@@ -305,11 +305,12 @@ export const Direction1PersonnelCapability = () => {
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
+        </div>
       </div>
               
       {/* 关联下注工具 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -345,7 +346,7 @@ export const Direction1PersonnelCapability = () => {
 
       {/* 体育打水查询工具 */}
       <div className="mb-12">
-        {/* 问题、策略、收益模块 */}
+        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -381,7 +382,7 @@ export const Direction1PersonnelCapability = () => {
              
       {/* 提款流水查询工具 */}
       <div className="mb-8">
-        {/* 核心问题模块 */}
+        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
@@ -429,8 +430,7 @@ export const Direction1PersonnelCapability = () => {
           </div>
         </div>
         
-        {/* 竞品情况模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          {/* 竞品情况模块 */}
           <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500">
             <h4 className="font-bold text-blue-700 mb-4 flex items-center text-lg">
               <span className="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
@@ -442,10 +442,8 @@ export const Direction1PersonnelCapability = () => {
 相比之下，我们仍停留在 用户需通过客服咨询或提款被拒后才能获知流水情况 的阶段，且 流水计算依赖风控人工手动处理，在效率与用户体验上明显落后于行业水平。
             </p>
           </div>
-        </div>
         
-        {/* 当前卡点模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          {/* 当前卡点模块 */}
           <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-gray-500">
             <h4 className="font-bold text-gray-700 mb-4 flex items-center text-lg">
               <span className="w-3 h-3 bg-gray-500 rounded-full mr-3"></span>
