@@ -14,7 +14,7 @@ export const SystemTransformationRhythm = () => {
       time: "Q2 2025",
       stage: "逐步推广",
       work: "基于试点经验，将成功验证的机制逐步推广到更大范围。同时继续完善系统功能，补充更多策略维度。",
-      result: "预计覆盖80%核心业务场景，系统化程度显著提升",
+      result: "已完成",
       current: false
     },
     {
@@ -26,7 +26,7 @@ export const SystemTransformationRhythm = () => {
     },
     {
       time: "Q4 2025",
-      stage: "全面落地",
+      stage: "全面推广",
       work: "完成所有核心功能的全面部署，建立完整的风控体系。实现人工审核向系统审核的根本性转变。",
       result: "预计实现90%+的系统化覆盖，人工依赖度降至最低",
       current: false
