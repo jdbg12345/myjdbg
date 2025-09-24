@@ -2,7 +2,8 @@ import React from 'react';
 
 export const Direction1PersonnelCapability = () => {
   return (
-    <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+    <>
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
         <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
           <span className="text-white font-bold text-lg">1</span>
@@ -446,6 +447,7 @@ export const Direction1PersonnelCapability = () => {
         </div>
       </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
