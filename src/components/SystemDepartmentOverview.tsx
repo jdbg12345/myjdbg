@@ -30,10 +30,10 @@ export const SystemDepartmentOverview = () => {
                 </tr>
               </thead>
               <tbody>
-                {/* 优化方向行 */}
+                {/* 核心方向行 */}
                 <tr className="border-b border-gray-200">
                   <td className="p-4 text-center">
-                    <div className="font-bold text-gray-800">优化方向</div>
+                    <div className="font-bold text-gray-800">核心方向</div>
                   </td>
                   <td className="p-4 text-center">
                     <div className="text-gray-700 text-sm">以较小人力成本和较高的审核效率，提升拦截质量</div>
