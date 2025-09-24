@@ -39,7 +39,7 @@ export const SystemTransformationRhythm = () => {
         <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center shadow-lg">
           <Calendar className="w-5 h-5 text-white" />
         </div>
-        <h2 className="text-3xl font-bold text-gray-800">一、体系变革的节奏</h2>
+        <h2 className="text-3xl font-bold text-gray-800">一、体系变革节奏</h2>
       </div>
 
       <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 mb-8 border border-blue-100 shadow-sm">
