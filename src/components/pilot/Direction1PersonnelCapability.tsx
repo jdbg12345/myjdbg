@@ -160,11 +160,11 @@ export const Direction1PersonnelCapability = () => {
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-              <span className="text-sm text-gray-600">调整前问题率</span>
+              <span className="text-sm text-gray-600">调整错误率</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-green-600 rounded-full"></div>
-              <span className="text-sm text-gray-600">调整后问题率</span>
+              <span className="text-sm text-gray-600">调整后错误率</span>
             </div>
           </div>
           
