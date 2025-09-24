@@ -54,7 +54,7 @@ export const Direction4InternalCollusion = () => {
     
       </div>
 
-      {/* 动态参数 */}
+      {/* 风控参数动态机制 */}
       <div className="mb-8">
         {/* 标题模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-teal-500">
@@ -62,7 +62,7 @@ export const Direction4InternalCollusion = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">参</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">动态参数</h4>
+            <h4 className="text-xl font-bold text-gray-800">风控参数动态机制</h4>
           </div>
         </div>
         
@@ -74,7 +74,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">风控策略参数固定化，容易被外界摸清规律，故意规避和绕过，缺乏动态调整机制</p>
+              <p className="text-gray-700 text-sm leading-relaxed">风控策略参数固定，易被外部摸清规律或内外勾结泄露，已经存在被故意规避和绕过的风险，且缺乏动态调整机制。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
