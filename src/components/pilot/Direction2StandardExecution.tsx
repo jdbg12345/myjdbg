@@ -13,7 +13,7 @@ export const Direction2StandardExecution = () => {
         </div>
       </div>
       
-      {/* 1、出款未查看备注标签 */}
+      {/* 1、出款强制查看标签备注 */}
       <div className="mb-12">
         {/* 标题模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-blue-500">
@@ -21,7 +21,7 @@ export const Direction2StandardExecution = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
             <span className="text-white font-bold text-sm">备</span>
           </div>
-            <h4 className="text-xl font-bold text-gray-800">出款未查看备注标签</h4>
+            <h4 className="text-xl font-bold text-gray-800">出款强制查看标签备注</h4>
           </div>
         </div>
         
@@ -33,7 +33,7 @@ export const Direction2StandardExecution = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">出款时未查看备注标签（公告）导致套利出款错误；每月约15-20%的错误出款源于此，影响约100+万/月</p>
+              <p className="text-gray-700 text-sm leading-relaxed">出款时未查看备注标签（公告）导致出款错误，每月约15-20%的错误出款源于此，影响约100+万/月</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
