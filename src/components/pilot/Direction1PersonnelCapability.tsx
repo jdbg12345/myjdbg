@@ -22,7 +22,7 @@ export const Direction1PersonnelCapability = () => {
         <div className="bg-gray-50 rounded-lg p-6 mb-6">
           <div>
             <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
-            <p className="text-gray-700">只按照金额进行派单，导致一些风险较高、有难度的订单给到能力较差的深审核人员，导致错误；每月约15-20%的错误出款源于此，影响约100+万/月</p>
+            <p className="text-gray-700">当前派单机制仅以 金额维度 作为分配依据，未考虑订单的风险等级与审核人员能力差异。结果导致部分 高风险、复杂订单 被下发至远程/外包团队，其审核差错率明显高于总部（约为总部的 2–3 倍），每月因此造成 100 万元以上的潜在风险损失。</p>
           </div>
           <div>
             <h4 className="font-semibold text-gray-800 mb-2">策略</h4>
