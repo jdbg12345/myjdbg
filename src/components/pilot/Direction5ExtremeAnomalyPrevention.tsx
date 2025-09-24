@@ -21,7 +21,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">钱</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">钱包预警</h4>
+            <h4 className="text-xl font-bold text-gray-800">中心钱包预警</h4>
           </div>
         </div>
         
@@ -104,7 +104,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-rose-500 to-rose-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">场</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">场馆多钱</h4>
+            <h4 className="text-xl font-bold text-gray-800">三方场馆多钱</h4>
           </div>
         </div>
         
