@@ -161,7 +161,7 @@ export const Direction2StandardExecution = () => {
           </div>
           <div className="mb-4">
             <div className="text-lg font-semibold text-blue-700 mb-2">策略</div>
-            <div className="text-gray-700 mb-4">建立VIP禁用分级审批机制，完善权限管理体系</div>
+            <div className="text-gray-700 mb-4">建立基于玩家等级的会员禁用分级审批机制，高V玩家的启禁用操作需提供审批人的 U 盾或谷歌验证码验证。</div>
           </div>
           <div>
             <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
