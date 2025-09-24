@@ -309,151 +309,142 @@ export const Direction1PersonnelCapability = () => {
       </div>
               
       {/* 关联下注工具 */}
-      <div className="mb-12">
-        {/* 整合的内容模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">关</span>
-            </div>
-            <h4 className="text-xl font-bold text-gray-800">手段3、关联下注查询工具</h4>
+      <div className="bg-white rounded-lg p-6 mb-12 shadow-md border border-gray-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+            <span className="text-white font-bold text-sm">关</span>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-              <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，<span className="font-bold text-red-600">存在严重的数据安全隐患</span>。且操作效率低下，有效拦截率也不足。</p>
-            </div>
-            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">标准化关联下注工具</p>
-            </div>
-            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-              <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">影响减少<span className="font-bold text-green-600">30+%，120万/月</span>；节省人力成本至少<span className="font-bold text-green-600">40+万/月</span></p>
-            </div>
+          <h4 className="text-xl font-bold text-gray-800">手段3、关联下注查询工具</h4>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+            <h4 className="font-bold text-red-700 mb-3 flex items-center">
+              <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+              问题
+            </h4>
+            <p className="text-gray-700 text-sm leading-relaxed">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，<span className="font-bold text-red-600">存在严重的数据安全隐患</span>。且操作效率低下，有效拦截率也不足。</p>
+          </div>
+          <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+            <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+              <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+              策略
+            </h4>
+            <p className="text-gray-700 text-sm leading-relaxed">标准化关联下注工具</p>
+          </div>
+          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+            <h4 className="font-bold text-green-700 mb-3 flex items-center">
+              <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+              收益
+            </h4>
+            <p className="text-gray-700 text-sm leading-relaxed">影响减少<span className="font-bold text-green-600">30+%，120万/月</span>；节省人力成本至少<span className="font-bold text-green-600">40+万/月</span></p>
           </div>
         </div>
       </div>
 
       {/* 体育打水查询工具 */}
-      <div className="mb-12">
-        {/* 整合的内容模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">体</span>
-            </div>
-            <h4 className="text-xl font-bold text-gray-800">手段4、体育打水查询工具</h4>
+      <div className="bg-white rounded-lg p-6 mb-12 shadow-md border border-gray-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+            <span className="text-white font-bold text-sm">体</span>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-              <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
-            </div>
-            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">通过B端百家赔率数据构建体育打水实时查询工具</p>
-            </div>
-            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-              <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">影响减少<span className="font-bold text-green-600">30+%，120万/月</span>；节省人力成本至少<span className="font-bold text-green-600">40+万/月</span></p>
-            </div>
+          <h4 className="text-xl font-bold text-gray-800">手段4、体育打水查询工具</h4>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+            <h4 className="font-bold text-red-700 mb-3 flex items-center">
+              <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+              问题
+            </h4>
+            <p className="text-gray-700 text-sm leading-relaxed">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
+          </div>
+          <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+            <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+              <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+              策略
+            </h4>
+            <p className="text-gray-700 text-sm leading-relaxed">通过B端百家赔率数据构建体育打水实时查询工具</p>
+          </div>
+          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+            <h4 className="font-bold text-green-700 mb-3 flex items-center">
+              <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+              收益
+            </h4>
+            <p className="text-gray-700 text-sm leading-relaxed">影响减少<span className="font-bold text-green-600">30+%，120万/月</span>；节省人力成本至少<span className="font-bold text-green-600">40+万/月</span></p>
           </div>
         </div>
       </div>
              
       {/* 提款流水查询工具 */}
-      <div className="mb-8">
-        {/* 整合的内容模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">流</span>
-            </div>
-            <h4 className="text-xl font-bold text-gray-800">手段5、提款流水查询工具</h4>
+      <div className="bg-white rounded-lg p-6 mb-8 shadow-md border border-gray-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+            <span className="text-white font-bold text-sm">流</span>
           </div>
-          <div className="mb-6">
-            <h4 className="text-2xl font-bold text-gray-800 mb-4">核心问题</h4>
-            <p className="text-gray-700 leading-relaxed text-lg">
-              系统逻辑长期存在缺陷（如锁定场馆流水双算、红利流水多算、输光后流水未达标等），导致流水计算结果不准确。
-            </p>
+          <h4 className="text-xl font-bold text-gray-800">手段5、提款流水查询工具</h4>
+        </div>
+        <div className="mb-6">
+          <h4 className="text-2xl font-bold text-gray-800 mb-4">核心问题</h4>
+          <p className="text-gray-700 leading-relaxed text-lg">
+            系统逻辑长期存在缺陷（如锁定场馆流水双算、红利流水多算、输光后流水未达标等），导致流水计算结果不准确。
+          </p>
+        </div>
+        
+        {/* 三个并列的子模块 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+            <h4 className="font-bold text-red-700 mb-3 flex items-center">
+              <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+              用户体验较差
+            </h4>
+            <p className="text-gray-700 text-sm leading-relaxed">提款延误、出款错误频发，用户满意度与信任度下降。</p>
           </div>
-          
-          {/* 三个并列的子模块 */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-              <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                用户体验较差
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">提款延误、出款错误频发，用户满意度与信任度下降。</p>
+          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+            <h4 className="font-bold text-orange-700 mb-3 flex items-center">
+              <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+              内部效率极低
+            </h4>
+            <div className="text-gray-700 text-sm space-y-2">
+              <p>• 审核人员清楚系统流水有误，只能人工反复计算</p>
+              <p>• 流水计算复杂且缺乏工具支持，风控与质检部门频繁产生争议</p>
+              <p>• 跨部门沟通链路冗长（用户–客服–运营–风控–运营–客服–用户），效率极低</p>
             </div>
-            <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
-              <h4 className="font-bold text-orange-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                内部效率极低
-              </h4>
-              <div className="text-gray-700 text-sm space-y-2">
-                <p>• 审核人员清楚系统流水有误，只能人工反复计算</p>
-                <p>• 流水计算复杂且缺乏工具支持，风控与质检部门频繁产生争议</p>
-                <p>• 跨部门沟通链路冗长（用户–客服–运营–风控–运营–客服–用户），效率极低</p>
-              </div>
-            </div>
-            <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
-              <h4 className="font-bold text-yellow-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>
-                公司损失增加
-              </h4>
-              <div className="text-gray-700 text-sm space-y-2">
-                <p>• 差错引发直接资金损失与风险纠纷</p>
-                <p>• 大量人力投入在低效重复工作中，增加额外成本</p>
-              </div>
+          </div>
+          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
+            <h4 className="font-bold text-yellow-700 mb-3 flex items-center">
+              <span className="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>
+              公司损失增加
+            </h4>
+            <div className="text-gray-700 text-sm space-y-2">
+              <p>• 差错引发直接资金损失与风险纠纷</p>
+              <p>• 大量人力投入在低效重复工作中，增加额外成本</p>
             </div>
           </div>
         </div>
-        
-          {/* 竞品情况模块 */}
-          <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500">
-            <h4 className="font-bold text-blue-700 mb-4 flex items-center text-lg">
-              <span className="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
-              竞品情况
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              市场调研显示，绝大部分主流平台（如尊龙凯时 AG、金宝博 188、竞博 IM、万博 ManbetX、竞技宝 JJB、雷竞技 Raybet、易游 M6 等）均已实现 用户可在前端直接查看剩余提款流水。
+      
+        {/* 竞品情况模块 */}
+        <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500 mb-6">
+          <h4 className="font-bold text-blue-700 mb-4 flex items-center text-lg">
+            <span className="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
+            竞品情况
+          </h4>
+          <p className="text-gray-700 leading-relaxed">
+            市场调研显示，绝大部分主流平台（如尊龙凯时 AG、金宝博 188、竞博 IM、万博 ManbetX、竞技宝 JJB、雷竞技 Raybet、易游 M6 等）均已实现 用户可在前端直接查看剩余提款流水。
 
 相比之下，我们仍停留在 用户需通过客服咨询或提款被拒后才能获知流水情况 的阶段，且 流水计算依赖风控人工手动处理，在效率与用户体验上明显落后于行业水平。
-            </p>
-          </div>
-        
-          {/* 当前卡点模块 */}
-          <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-gray-500">
-            <h4 className="font-bold text-gray-700 mb-4 flex items-center text-lg">
-              <span className="w-3 h-3 bg-gray-500 rounded-full mr-3"></span>
-              当前卡点
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              技术侧目前评估下来，流水相关的修正，难度较大，暂时处理不了；
-            </p>
-          </div>
+          </p>
         </div>
+      
+        {/* 当前卡点模块 */}
+        <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-gray-500">
+          <h4 className="font-bold text-gray-700 mb-4 flex items-center text-lg">
+            <span className="w-3 h-3 bg-gray-500 rounded-full mr-3"></span>
+            当前卡点
+          </h4>
+          <p className="text-gray-700 leading-relaxed">
+            技术侧目前评估下来，流水相关的修正，难度较大，暂时处理不了；
+          </p>
+        </div>
+      </div>
       </div>
     </div>
   );
