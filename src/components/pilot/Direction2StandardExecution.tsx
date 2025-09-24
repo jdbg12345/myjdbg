@@ -145,13 +145,13 @@ export const Direction2StandardExecution = () => {
         </div>
       </div>
 
-      {/* 2. 会员禁用流程 */}
+      {/* 2. 会员禁用流程升级 */}
       <div className="mb-8">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">VIP</span>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">会员禁用流程</h4>
+          <h4 className="text-xl font-bold text-gray-800">会员禁用流程升级</h4>
         </div>
         
         <div className="bg-gray-50 rounded-lg p-6 mb-6">
