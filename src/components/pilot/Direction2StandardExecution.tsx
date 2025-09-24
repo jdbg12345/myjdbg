@@ -165,7 +165,7 @@ export const Direction2StandardExecution = () => {
           </div>
           <div>
             <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">建立VIP禁用分级审批机制，提升禁用操作的准确性和合规性，降低误禁率80%</div>
+            <div className="text-gray-700">彻底解决禁用滥用问题</div>
           </div>
         </div>
       </div>
