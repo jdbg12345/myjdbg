@@ -58,7 +58,7 @@ export const Direction3SystemStrategies = () => {
                 </div>
                 <div className="flex items-center">
                   <span className="inline-block w-4 h-4 bg-green-500 mr-2"></span>
-                  <span className="text-sm text-gray-600">调整后问题率</span>
+                  <span className="text-sm text-gray-600">调整后错误率</span>
                 </div>
               </div>
             </div>
