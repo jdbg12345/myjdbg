@@ -81,7 +81,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                 策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">建立动态参数调整机制，定期更新策略参数，增加外界预测难度</p>
+              <p className="text-gray-700 text-sm leading-relaxed">建立动态参数调整机制，使表面显示参数与实际执行参数不完全一致，从而增加外界预测难度并降低泄漏风险。</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
