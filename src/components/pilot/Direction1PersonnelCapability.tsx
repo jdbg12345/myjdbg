@@ -451,7 +451,9 @@ export const Direction1PersonnelCapability = () => {
                 2. 竞品情况
               </h4>
               <p className="text-gray-700 leading-relaxed">
-                市场调研显示，主流平台（6 尊龙凯时（AG）7 金宝博（188）8 竞博（IM）5 万博（ManbetX）3 竞技宝（JJB）2 雷竞技（Raybet）1 易游（M6)）已普遍实现用户前端直接查看剩余提款流水功能。
+                市场调研显示，绝大部分主流平台（如尊龙凯时 AG、金宝博 188、竞博 IM、万博 ManbetX、竞技宝 JJB、雷竞技 Raybet、易游 M6 等）均已实现 用户可在前端直接查看剩余提款流水。
+
+相比之下，我们仍停留在 用户需通过客服咨询或提款被拒后才能获知流水情况 的阶段，且 流水计算依赖风控人工手动处理，在效率与用户体验上明显落后于行业水平。
               </p>
             </div>
           </div>
