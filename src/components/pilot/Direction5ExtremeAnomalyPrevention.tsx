@@ -52,7 +52,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
               </div>
               <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
                 <div className="flex flex-col items-center relative">
-                  <div className="absolute -top-8 text-sm font-semibold text-emerald-600">85%</div>
+                  <div className="absolute -top-10 text-sm font-semibold text-emerald-600">85%</div>
                   <div className="w-24 bg-emerald-500 rounded-t" style={{ height: '204px' }}></div>
                   <div className="text-center mt-3">
                     <div className="text-sm font-medium text-gray-700">255单</div>
@@ -117,7 +117,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
               </div>
               <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
                 <div className="flex flex-col items-center relative">
-                  <div className="absolute -top-8 text-sm font-semibold text-rose-600">92%</div>
+                  <div className="absolute -top-10 text-sm font-semibold text-rose-600">92%</div>
                   <div className="w-24 bg-rose-500 rounded-t" style={{ height: '184px' }}></div>
                   <div className="text-center mt-3">
                     <div className="text-sm font-medium text-gray-700">184单</div>
@@ -182,7 +182,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
               </div>
               <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
                 <div className="flex flex-col items-center relative">
-                  <div className="absolute -top-8 text-sm font-semibold text-amber-600">78%</div>
+                  <div className="absolute -top-10 text-sm font-semibold text-amber-600">78%</div>
                   <div className="w-24 bg-amber-500 rounded-t" style={{ height: '156px' }}></div>
                   <div className="text-center mt-3">
                     <div className="text-sm font-medium text-gray-700">117单</div>

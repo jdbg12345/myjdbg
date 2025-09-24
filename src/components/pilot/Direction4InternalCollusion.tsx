@@ -48,7 +48,7 @@ export const Direction4InternalCollusion = () => {
               </div>
               <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
                 <div className="flex flex-col items-center relative">
-                  <div className="absolute -top-8 text-sm font-semibold text-cyan-600">60%</div>
+                  <div className="absolute -top-10 text-sm font-semibold text-cyan-600">60%</div>
                   <div className="w-24 bg-cyan-500 rounded-t" style={{ height: '144px' }}></div>
                   <div className="text-center mt-3">
                     <div className="text-sm font-medium text-gray-700">120单</div>
@@ -112,7 +112,7 @@ export const Direction4InternalCollusion = () => {
               </div>
               <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
                 <div className="flex flex-col items-center relative">
-                  <div className="absolute -top-8 text-sm font-semibold text-teal-600">45%</div>
+                  <div className="absolute -top-10 text-sm font-semibold text-teal-600">45%</div>
                   <div className="w-24 bg-teal-500 rounded-t" style={{ height: '108px' }}></div>
                   <div className="text-center mt-3">
                     <div className="text-sm font-medium text-gray-700">90单</div>

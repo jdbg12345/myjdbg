@@ -37,20 +37,55 @@ export const Direction2StandardExecution = () => {
         {/* 图表 */}
         <div className="bg-white rounded-lg p-6 border border-gray-200">
           <h5 className="text-lg font-semibold text-gray-900 mb-4">出款备注标签查看效果</h5>
-          <div className="flex items-end justify-between h-64 mb-4">
-            <div className="flex flex-col items-center flex-1 mx-2">
-              <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '280px'}}>25%</div>
-              <div className="bg-red-400 w-full rounded-t transition-all duration-300" style={{height: '200px'}}></div>
-              <div className="text-sm text-gray-600 mt-2">调整前</div>
-              <div className="text-xs text-gray-500">错误率</div>
+          <div className="relative h-80 mb-6">
+            {/* Y轴标签 */}
+            <div className="absolute -left-16 top-1/2 transform -translate-y-1/2 -rotate-90 text-sm font-medium text-gray-600">
+              错误率 (%)
             </div>
-            <div className="flex flex-col items-center flex-1 mx-2">
-              <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '200px'}}>8%</div>
-              <div className="bg-green-500 w-full rounded-t transition-all duration-300" style={{height: '64px'}}></div>
-              <div className="text-sm text-gray-600 mt-2">调整后</div>
-              <div className="text-xs text-gray-500">错误率</div>
+            
+            {/* 图表主体 */}
+            <div className="mx-12 h-full relative">
+              {/* Y轴刻度 */}
+              <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+                <span>30%</span>
+                <span>22.5%</span>
+                <span>15%</span>
+                <span>7.5%</span>
+                <span>0%</span>
+              </div>
+              
+              {/* 网格线 */}
+              <div className="absolute left-12 right-12 h-full">
+                {[0, 25, 50, 75, 100].map((percent) => (
+                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                ))}
+              </div>
+              
+              {/* 柱状图数据 */}
+              <div className="absolute left-12 right-12 h-full flex items-end justify-around pb-4">
+                <div className="flex flex-col items-center relative">
+                  <div className="absolute -top-8 text-sm font-semibold text-red-600">25%</div>
+                  <div className="w-20 bg-red-400 rounded-t transition-all duration-300" style={{height: `${(25/30) * 240}px`}}></div>
+                  <div className="text-center mt-3">
+                    <div className="text-sm text-gray-600">调整前</div>
+                    <div className="text-xs text-gray-500">错误率</div>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center relative">
+                  <div className="absolute -top-8 text-sm font-semibold text-green-600">8%</div>
+                  <div className="w-20 bg-green-500 rounded-t transition-all duration-300" style={{height: `${(8/30) * 240}px`}}></div>
+                  <div className="text-center mt-3">
+                    <div className="text-sm text-gray-600">调整后</div>
+                    <div className="text-xs text-gray-500">错误率</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          
+          {/* X轴标签 */}
+          <div className="text-center text-sm font-medium text-gray-600 mb-4">调整前后对比</div>
+          
           <div className="text-center">
             <div className="flex items-center justify-center space-x-6">
               <div className="flex items-center">
