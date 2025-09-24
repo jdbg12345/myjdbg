@@ -13,7 +13,7 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
-      {/* 风控标签 */}
+      {/* 风控标签独立权限 */}
       <div className="mb-12">
         {/* 标题模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-cyan-500">
