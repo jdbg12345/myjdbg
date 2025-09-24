@@ -152,11 +152,11 @@ export const Direction1PersonnelCapability = () => {
           <div className="flex justify-center space-x-8">
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-blue-400"></div>
-              <span className="text-sm text-gray-600">调整前分配数</span>
+              <span className="text-sm text-gray-600">调整前派单数</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-green-500"></div>
-              <span className="text-sm text-gray-600">调整后分配数</span>
+              <span className="text-sm text-gray-600">调整后派单数</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
