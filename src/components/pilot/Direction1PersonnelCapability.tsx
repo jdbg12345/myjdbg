@@ -197,7 +197,6 @@ export const Direction1PersonnelCapability = () => {
         </div>
                     
         <div className="bg-white p-6 rounded-lg border border-gray-200">
-          <h5 className="text-lg font-semibold text-gray-900 mb-4">云顿风险分数效果</h5>
           <div className="relative h-80 mb-6">
             {/* 双Y轴标签 */}
             <div className="absolute -left-16 top-1/2 transform -translate-y-1/2 -rotate-90 text-sm font-medium text-gray-600">
