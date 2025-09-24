@@ -34,7 +34,7 @@ export const Direction2StandardExecution = () => {
           </div>
         </div>
 
-        {/* 图表 */}
+        {/* 趋势图表 */}
         <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
           <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
@@ -56,35 +56,70 @@ export const Direction2StandardExecution = () => {
                 ))}
               </div>
               
-              <div className="absolute left-12 right-12 h-full flex items-end justify-around pb-8">
-                <div className="flex flex-col items-center relative">
-                  <div className="w-16 bg-red-500 rounded-t" style={{height: `${(25/30) * 200}px`}}></div>
-                  <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">调整前</div>
-                    <div className="text-xs text-gray-500 mt-1">25%</div>
+              {/* 数据点和连线 */}
+              <div className="absolute left-12 right-12 h-full">
+                {/* 调整前数据点 */}
+                <div 
+                  className="absolute w-4 h-4 bg-red-500 rounded-full border-2 border-white shadow-lg"
+                  style={{left: '25%', bottom: `${(25/30) * 80 + 10}%`}}
+                >
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                    25%
                   </div>
                 </div>
-                <div className="flex flex-col items-center relative">
-                  <div className="w-16 bg-green-500 rounded-t" style={{height: `${(8/30) * 200}px`}}></div>
-                  <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">调整后</div>
-                    <div className="text-xs text-gray-500 mt-1">8%</div>
+                
+                {/* 调整后数据点 */}
+                <div 
+                  className="absolute w-4 h-4 bg-green-500 rounded-full border-2 border-white shadow-lg"
+                  style={{left: '75%', bottom: `${(8/30) * 80 + 10}%`}}
+                >
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                    8%
                   </div>
+                </div>
+                
+                {/* 连接线 */}
+                <svg className="absolute inset-0 w-full h-full pointer-events-none">
+                  <line
+                    x1="25%"
+                    y1={`${100 - ((25/30) * 80 + 10)}%`}
+                    x2="75%"
+                    y2={`${100 - ((8/30) * 80 + 10)}%`}
+                    stroke="#3B82F6"
+                    strokeWidth="3"
+                    strokeDasharray="5,5"
+                    opacity="0.8"
+                  />
+                </svg>
+                
+                {/* 底部标签 */}
+                <div className="absolute bottom-2 left-1/4 transform -translate-x-1/2 text-center">
+                  <div className="text-xs text-gray-800 font-medium">调整前</div>
+                </div>
+                <div className="absolute bottom-2 right-1/4 transform translate-x-1/2 text-center">
+                  <div className="text-xs text-gray-800 font-medium">调整后</div>
+                </div>
+                
+                {/* 变化率标签 */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                  ↓ 68% 改善
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">调整前后对比</div>
-          
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-red-500 rounded"></div>
+              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
               <span className="text-gray-700">调整前错误率</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-green-500 rounded"></div>
+              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
               <span className="text-gray-700">调整后错误率</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+              <span className="text-gray-700">改善趋势</span>
             </div>
           </div>
           
