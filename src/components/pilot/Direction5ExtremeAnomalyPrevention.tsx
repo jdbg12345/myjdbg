@@ -15,18 +15,14 @@ export const Direction5ExtremeAnomalyPrevention = () => {
       
       {/* 1. 钱包预警 */}
       <div className="mb-12">
-        {/* 标题模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-emerald-500">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center shadow-md">
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">钱</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">中心钱包预警</h4>
           </div>
-        </div>
-        
-        {/* 问题、策略、收益模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
@@ -56,18 +52,14 @@ export const Direction5ExtremeAnomalyPrevention = () => {
 
       {/* 2. 场馆多钱 */}
       <div className="mb-12">
-        {/* 标题模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-rose-500">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-to-r from-rose-500 to-rose-600 rounded-full flex items-center justify-center shadow-md">
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">场</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">三方场馆多钱</h4>
           </div>
-        </div>
-        
-        {/* 问题、策略、收益模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
@@ -97,18 +89,14 @@ export const Direction5ExtremeAnomalyPrevention = () => {
 
       {/* 3. 沉睡用户 */}
       <div className="mb-8">
-        {/* 标题模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-amber-500">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-to-r from-amber-500 to-amber-600 rounded-full flex items-center justify-center shadow-md">
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">睡</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">沉睡用户</h4>
           </div>
-        </div>
-        
-        {/* 问题、策略、收益模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">

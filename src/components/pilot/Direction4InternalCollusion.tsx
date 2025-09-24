@@ -12,18 +12,14 @@ export const Direction4InternalCollusion = () => {
 
       {/* 风控标签和备注独立权限 */}
       <div className="mb-12">
-        {/* 标题模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-cyan-500">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center shadow-md">
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">标</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">风控标签和备注独立权限</h4>
           </div>
-        </div>
-        
-        {/* 问题、策略、收益模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
@@ -53,18 +49,14 @@ export const Direction4InternalCollusion = () => {
 
       {/* 风控策略参数变化机制 */}
       <div className="mb-8">
-        {/* 标题模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-teal-500">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center shadow-md">
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">参</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">风控策略参数变化机制</h4>
           </div>
-        </div>
-        
-        {/* 问题、策略、收益模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">

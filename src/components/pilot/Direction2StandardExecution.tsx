@@ -12,18 +12,14 @@ export const Direction2StandardExecution = () => {
       
       {/* 1、出款强制查看标签备注 */}
       <div className="mb-12">
-        {/* 标题模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-blue-500">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-            <span className="text-white font-bold text-sm">备</span>
-          </div>
-            <h4 className="text-xl font-bold text-gray-800">出款强制查看标签备注</h4>
-          </div>
-        </div>
-        
         {/* 问题、策略、收益模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">备</span>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800">出款强制查看标签备注</h4>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
@@ -144,18 +140,14 @@ export const Direction2StandardExecution = () => {
 
       {/* 2. 会员禁用流程升级 */}
       <div className="mb-8">
-        {/* 标题模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-purple-500">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-md">
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">VIP</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">会员禁用流程升级</h4>
           </div>
-        </div>
-        
-        {/* 问题、策略、收益模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
