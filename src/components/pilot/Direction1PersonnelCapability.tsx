@@ -35,7 +35,6 @@ export const Direction1PersonnelCapability = () => {
         </div>
         
         <div className="bg-white p-6 rounded-lg border border-gray-200">
-          <h5 className="text-lg font-semibold text-gray-900 mb-4">派单策略变革效果</h5>
           {/* 图表容器 */}
           <div className="relative h-80 mb-6">
             {/* Y轴标签 - 左侧 */}
