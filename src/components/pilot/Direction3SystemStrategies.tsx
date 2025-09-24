@@ -72,10 +72,10 @@ export const Direction3SystemStrategies = () => {
                   
                   {/* 准确率数据点 */}
                   <div 
-                    className="absolute w-3 h-3 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 25}%`, right: '-20px'}}
+                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                    style={{top: `${100 - 25 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
                   >
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
                       25%
                     </div>
                   </div>
@@ -162,10 +162,10 @@ export const Direction3SystemStrategies = () => {
                   
                   {/* 准确率数据点 */}
                   <div 
-                    className="absolute w-3 h-3 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 26.7}%`, right: '-20px'}}
+                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                    style={{top: `${100 - 26.7 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
                   >
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
                       26.7%
                     </div>
                   </div>
@@ -252,10 +252,10 @@ export const Direction3SystemStrategies = () => {
                   
                   {/* 准确率数据点 */}
                   <div 
-                    className="absolute w-3 h-3 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 22.1}%`, right: '-20px'}}
+                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                    style={{top: `${100 - 22.1 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
                   >
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
                       22.1%
                     </div>
                   </div>
@@ -342,10 +342,10 @@ export const Direction3SystemStrategies = () => {
                   
                   {/* 准确率数据点 */}
                   <div 
-                    className="absolute w-3 h-3 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 25}%`, right: '-20px'}}
+                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                    style={{top: `${100 - 25 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
                   >
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
                       25.0%
                     </div>
                   </div>
@@ -431,10 +431,10 @@ export const Direction3SystemStrategies = () => {
                   
                   {/* 准确率数据点 */}
                   <div 
-                    className="absolute w-3 h-3 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 23.8}%`, right: '-20px'}}
+                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                    style={{top: `${100 - 23.8 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
                   >
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
                       23.8%
                     </div>
                   </div>
