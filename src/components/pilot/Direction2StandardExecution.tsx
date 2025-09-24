@@ -145,19 +145,19 @@ export const Direction2StandardExecution = () => {
         </div>
       </div>
 
-      {/* 2. VIP禁用流程 */}
+      {/* 2. 会员禁用流程 */}
       <div className="mb-8">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">VIP</span>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>
+          <h4 className="text-xl font-bold text-gray-800">会员禁用流程</h4>
         </div>
         
         <div className="bg-gray-50 rounded-lg p-6 mb-6">
           <div className="mb-4">
             <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">VIP用户禁用权限管理不够精细，缺乏分级审批机制，存在误禁和滥用风险</div>
+            <div className="text-gray-700 mb-4">当前会员禁用流程单人即可操作，权限管理不够精细，缺乏分级审批机制，存在高V用户误禁及权限滥用风险。</div>
           </div>
           <div className="mb-4">
             <div className="text-lg font-semibold text-blue-700 mb-2">策略</div>
