@@ -30,7 +30,7 @@ export const Direction1PersonnelCapability = () => {
           </div>
           <div>
             <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
-            <p className="text-gray-700">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
+            <p className="text-gray-700">错误率降低<span className="font-bold text-green-600">15%-20%</span></p>
           </div>
         </div>
         
