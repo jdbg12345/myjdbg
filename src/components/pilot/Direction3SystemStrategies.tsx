@@ -379,10 +379,7 @@ export const Direction3SystemStrategies = () => {
           </div>
         </div>
         
-        {/* 彩票策略图表 */}
-          
-          
-        </div>
+     
       </div>
 
       {/* 棋牌策略 */}
