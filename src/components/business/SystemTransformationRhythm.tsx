@@ -44,7 +44,7 @@ export const SystemTransformationRhythm = () => {
 
       <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 mb-8 border border-blue-100 shadow-sm">
         <p className="text-lg text-blue-900 leading-relaxed font-medium">
-          <span className="font-semibold">风控变革涉及多个部门与既得利益相关方，任何调整都可能影响会员体验、代理收益和业务稳定性。因此，我们先小范围试点，效果验证后逐步推广，避免一刀切的潜在的组织及业务风险。</span>
+          <span className="font-semibold">风控变革涉及多个部门与利益相关方，任何调整都可能影响会员体验、代理收益和业务稳定性。因此，采取先小范围试点，效果验证后逐步推广，避免一刀切的潜在的组织及业务风险。</span>
         </p>
       </div>
 
