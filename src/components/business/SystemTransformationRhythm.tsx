@@ -7,7 +7,7 @@ export const SystemTransformationRhythm = () => {
       time: "Q1 2025",
       stage: "梳理规划",
       work: "对全站业务和组织现状进行全链路梳理，识别问题并制定针对性解决策略",
-      result: "试点成功，各项指标达到预期，为全面推广奠定基础",
+      result: "已完成",
       current: false
     },
     {
