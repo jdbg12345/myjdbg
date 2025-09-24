@@ -32,7 +32,6 @@ export const Direction4InternalCollusion = () => {
         
         {/* 风控标签图表 */}
         <div className="bg-white p-6 rounded-lg border border-gray-200">
-          <h5 className="text-lg font-semibold text-gray-900 mb-4">风控标签管控效果</h5>
           <div className="relative h-64">
             <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
               <span>200</span>
@@ -97,7 +96,6 @@ export const Direction4InternalCollusion = () => {
         
         {/* 动态参数图表 */}
         <div className="bg-white p-6 rounded-lg border border-gray-200">
-          <h5 className="text-lg font-semibold text-gray-900 mb-4">动态参数管控效果</h5>
           <div className="relative h-64">
             <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
               <span>150</span>
