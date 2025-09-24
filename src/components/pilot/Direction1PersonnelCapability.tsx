@@ -412,30 +412,73 @@ export const Direction1PersonnelCapability = () => {
         
         {/* 问题、策略、收益模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-              <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
+          {/* 1. 核心根因 */}
+          <div className="mb-8">
+            <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-4 flex items-center text-lg">
+                <span className="w-3 h-3 bg-red-500 rounded-full mr-3"></span>
+                1. 核心根因
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">系统逻辑<span className="font-bold text-red-600">多年来</span>存在错误（锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等），导致需要人工重新手动计算流水。但计算标准模糊且执行不一致，使风控和质检部门经常因流水计算产生争议。在跨部门协作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），不仅浪费时间，降低用户体验并导致出款错误。</p>
+              <p className="text-gray-700 leading-relaxed">
+                系统逻辑长期存在缺陷（如锁定场馆流水双算、红利流水多算、输光后流水未达标等），导致流水计算结果不准确。
+              </p>
             </div>
-            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
+          </div>
+
+          {/* 2. 引发问题 */}
+          <div className="mb-8">
+            <div className="bg-orange-50 rounded-lg p-6 border-l-4 border-orange-500">
+              <h4 className="font-bold text-orange-700 mb-4 flex items-center text-lg">
+                <span className="w-3 h-3 bg-orange-500 rounded-full mr-3"></span>
+                2. 引发问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed"><span className="font-bold">阶段1：</span>实现流水自动统一计算，无需人工介入；<span className="font-bold">阶段2：</span>用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程（已提出需求，但收到无法实现的反馈）。</p>
-            </div>
-            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-              <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">影响减少<span className="font-bold text-green-600">5%</span>；效率提升一倍；用户体验改善</p>
-              <div className="bg-blue-50 p-3 rounded-lg mt-3">
-                <p className="text-blue-700 text-xs">市场调研显示，主流平台（6 尊龙凯时（AG）7 金宝博（188）8 竞博（IM）5 万博（ManbetX）3 竞技宝（JJB）2 雷竞技（Raybet）1 易游（M6)）已普遍实现用户前端直接查看剩余提款流水功能，这不仅优化了用户体验，还有效解决了流水反复咨询的冗余低效流程和计算错误导致的出款问题（虽已提出需求，但技术侧目前无法实现）</p>
+              <div className="space-y-4">
+                <div className="bg-white rounded-lg p-4 border border-orange-200">
+                  <h5 className="font-semibold text-orange-700 mb-2">用户体验较差</h5>
+                  <p className="text-gray-700 text-sm">提款延误、出款错误频发，用户满意度与信任度下降。</p>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-orange-200">
+                  <h5 className="font-semibold text-orange-700 mb-2">内部效率极低</h5>
+                  <div className="text-gray-700 text-sm space-y-2">
+                    <p>• 审核人员清楚系统流水有误，只能人工反复计算</p>
+                    <p>• 流水计算复杂且缺乏工具支持，风控与质检部门频繁产生争议</p>
+                    <p>• 跨部门沟通链路冗长（用户–客服–运营–风控–运营–客服–用户），效率极低</p>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-orange-200">
+                  <h5 className="font-semibold text-orange-700 mb-2">公司损失增加</h5>
+                  <div className="text-gray-700 text-sm space-y-2">
+                    <p>• 差错引发直接资金损失与风险纠纷</p>
+                    <p>• 大量人力投入在低效重复工作中，增加额外成本</p>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+
+          {/* 3. 竞品情况 */}
+          <div className="mb-8">
+            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-4 flex items-center text-lg">
+                <span className="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
+                3. 竞品情况
+              </h4>
+              <p className="text-gray-700 leading-relaxed">
+                市场调研显示，主流平台（6 尊龙凯时（AG）7 金宝博（188）8 竞博（IM）5 万博（ManbetX）3 竞技宝（JJB）2 雷竞技（Raybet）1 易游（M6)）已普遍实现用户前端直接查看剩余提款流水功能。
+              </p>
+            </div>
+          </div>
+
+          {/* 4. 当前卡点 */}
+          <div className="mb-6">
+            <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-gray-500">
+              <h4 className="font-bold text-gray-700 mb-4 flex items-center text-lg">
+                <span className="w-3 h-3 bg-gray-500 rounded-full mr-3"></span>
+                4. 当前卡点
+              </h4>
+              <p className="text-gray-700 leading-relaxed">
+                技术侧目前评估下来，流水相关的修正，难度较大，暂时处理不了。
+              </p>
             </div>
           </div>
         </div>
