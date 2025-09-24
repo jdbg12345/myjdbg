@@ -59,7 +59,6 @@ export const Direction3SystemStrategies = () => {
                 <div className="flex flex-col items-center relative">
                   <div className="w-20 bg-blue-600 rounded-t" style={{ height: '200px' }}></div>
                   <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">电子卡免费</div>
                     <div className="text-xs text-gray-500 mt-1">400单 (25%)</div>
                   </div>
                 </div>
@@ -124,7 +123,6 @@ export const Direction3SystemStrategies = () => {
                 <div className="flex flex-col items-center relative">
                   <div className="w-20 bg-blue-600 rounded-t" style={{ height: '225px' }}></div>
                   <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">真人套利</div>
                     <div className="text-xs text-gray-500 mt-1">450单 (26.7%)</div>
                   </div>
                 </div>
@@ -189,16 +187,13 @@ export const Direction3SystemStrategies = () => {
                 <div className="flex flex-col items-center relative">
                   <div className="w-20 bg-red-600 rounded-t" style={{ height: '190px' }}></div>
                   <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">体育套利</div>
                     <div className="text-xs text-gray-500 mt-1">380单 (22.1%)</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型</div>
-          
+                    
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-red-600 rounded"></div>
@@ -256,16 +251,12 @@ export const Direction3SystemStrategies = () => {
                 <div className="flex flex-col items-center relative">
                   <div className="w-20 bg-purple-600 rounded-t" style={{ height: '210px' }}></div>
                   <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">彩票套利</div>
                     <div className="text-xs text-gray-500 mt-1">280单 (25.0%)</div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型</div>
-          
+          </div>          
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-purple-600 rounded"></div>
@@ -323,7 +314,6 @@ export const Direction3SystemStrategies = () => {
                 <div className="flex flex-col items-center relative">
                   <div className="w-20 bg-yellow-600 rounded-t" style={{ height: '210px' }}></div>
                   <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">棋牌套利</div>
                     <div className="text-xs text-gray-500 mt-1">210单 (23.8%)</div>
                   </div>
                 </div>
