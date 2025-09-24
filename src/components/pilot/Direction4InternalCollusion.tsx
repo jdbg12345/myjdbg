@@ -88,7 +88,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                 收益
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">实施动态参数机制，策略有效性提升45%，外界预测难度大幅增加</p>
+              <p className="text-gray-700 text-sm leading-relaxed">策略参数泄漏风险降低</p>
             </div>
           </div>
         </div>
