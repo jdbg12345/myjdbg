@@ -139,21 +139,40 @@ export const Direction3SystemStrategies = () => {
 
       {/* 真人策略 */}
       <div className="mb-12">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">真</span>
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-blue-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">真</span>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800">真人策略</h4>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">真人策略</h4>
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="mb-4">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">真人游戏对打和算牌行为识别不足，缺乏对真人游戏异常投注模式的有效监控</div>
-          </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">真人套利策略问题率26.7%，精准识别异常行为，大幅提升真人游戏风控效果</div>
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">真人游戏对打和算牌行为识别不足，缺乏对真人游戏异常投注模式的有效监控</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立真人游戏异常行为识别机制，重点监控对打和算牌等套利行为</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">真人套利策略问题率26.7%，精准识别异常行为，大幅提升真人游戏风控效果</p>
+            </div>
           </div>
         </div>
         
@@ -229,21 +248,40 @@ export const Direction3SystemStrategies = () => {
 
       {/* 体育策略 */}
       <div className="mb-12">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">体</span>
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-red-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">体</span>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800">体育策略</h4>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">体育策略</h4>
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="mb-4">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">体育打水和对冲套利行为监控薄弱，无法有效识别跨平台套利和异常投注行为</div>
-          </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">体育套利策略覆盖面广，问题率22.1%，有效拦截体育投注中的套利行为</div>
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">体育打水和对冲套利行为监控薄弱，无法有效识别跨平台套利和异常投注行为</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立体育投注异常行为识别机制，重点监控打水和对冲套利行为</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">体育套利策略覆盖面广，问题率22.1%，有效拦截体育投注中的套利行为</p>
+            </div>
           </div>
         </div>
         
@@ -319,21 +357,40 @@ export const Direction3SystemStrategies = () => {
 
       {/* 彩票策略 */}
       <div className="mb-12">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">彩</span>
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-purple-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">彩</span>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800">彩票策略</h4>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">彩票策略</h4>
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="mb-4">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">彩票全包和异常投注模式缺乏有效拦截，无法识别彩票游戏中的套利行为</div>
-          </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">彩票套利策略问题率25%，有效识别全包行为，显著提升彩票游戏风控水平</div>
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">彩票全包和异常投注模式缺乏有效拦截，无法识别彩票游戏中的套利行为</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立彩票游戏异常投注识别机制，重点监控全包和套利行为</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">彩票套利策略问题率25%，有效识别全包行为，显著提升彩票游戏风控水平</p>
+            </div>
           </div>
         </div>
         
@@ -408,21 +465,40 @@ export const Direction3SystemStrategies = () => {
 
       {/* 棋牌策略 */}
       <div className="mb-8">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">棋</span>
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-yellow-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">棋</span>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800">棋牌策略</h4>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">棋牌策略</h4>
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="mb-4">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">棋牌游戏作弊和异常胜率难以监控，缺乏对棋牌游戏异常行为的有效识别</div>
-          </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">棋牌套利策略问题率23.8%，精准定位异常行为，有效提升棋牌游戏安全性</div>
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">棋牌游戏作弊和异常胜率难以监控，缺乏对棋牌游戏异常行为的有效识别</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立棋牌游戏异常行为识别机制，重点监控作弊和异常胜率行为</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">棋牌套利策略问题率23.8%，精准定位异常行为，有效提升棋牌游戏安全性</p>
+            </div>
           </div>
         </div>
         

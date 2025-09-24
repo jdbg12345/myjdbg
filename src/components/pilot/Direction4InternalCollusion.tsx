@@ -101,21 +101,41 @@ export const Direction4InternalCollusion = () => {
 
       {/* 3. 动态参数 */}
       <div className="mb-8">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">参</span>
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-teal-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">参</span>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800">动态参数</h4>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">动态参数</h4>
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="mb-4">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">风控策略参数固定化，容易被外界摸清规律，故意规避和绕过，缺乏动态调整机制</div>
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">风控策略参数固定化，容易被外界摸清规律，故意规避和绕过，缺乏动态调整机制</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立动态参数调整机制，定期更新策略参数，增加外界预测难度</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">实施动态参数机制，策略有效性提升45%，外界预测难度大幅增加</p>
+            </div>
           </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">实施动态参数机制，策略有效性提升45%，外界预测难度大幅增加</div>
           </div>
         </div>
         

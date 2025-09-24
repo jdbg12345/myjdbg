@@ -73,8 +73,24 @@ export const PilotResultsPresentation = () => {
                       {item.direction}
                     </div>
                   </td>
-                  <td className="p-6 text-gray-700">{item.before}</td>
-                  <td className="p-6 text-gray-700 font-medium">{item.now}</td>
+                  <td className="p-6">
+                    <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-lg">
+                      <div className="flex items-center mb-2">
+                        <div className="w-3 h-3 bg-red-400 rounded-full mr-2"></div>
+                        <span className="text-red-700 font-semibold text-sm">原来</span>
+                      </div>
+                      <p className="text-gray-700 text-sm leading-relaxed">{item.before}</p>
+                    </div>
+                  </td>
+                  <td className="p-6">
+                    <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-lg">
+                      <div className="flex items-center mb-2">
+                        <div className="w-3 h-3 bg-green-400 rounded-full mr-2"></div>
+                        <span className="text-green-700 font-semibold text-sm">现在</span>
+                      </div>
+                      <p className="text-gray-700 text-sm leading-relaxed font-medium">{item.now}</p>
+                    </div>
+                  </td>
                   <td className="p-6 text-gray-700">{item.example}</td>
                 </tr>
               ))}

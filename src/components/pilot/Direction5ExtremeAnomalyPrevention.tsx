@@ -113,21 +113,41 @@ export const Direction5ExtremeAnomalyPrevention = () => {
 
       {/* 2. 场馆多钱 */}
       <div className="mb-12">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-rose-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">场</span>
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-rose-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-rose-500 to-rose-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">场</span>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800">场馆多钱</h4>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">场馆多钱</h4>
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="mb-4">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">场馆账户异常增加资金，缺乏有效的监控和预警机制</div>
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">场馆账户异常增加资金，缺乏有效的监控和预警机制</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立场馆资金异常监控机制，实时预警异常资金变动</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</p>
+            </div>
           </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</div>
           </div>
         </div>
         
@@ -177,21 +197,41 @@ export const Direction5ExtremeAnomalyPrevention = () => {
 
       {/* 3. 沉睡用户 */}
       <div className="mb-8">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">睡</span>
+        {/* 标题模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-amber-500">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-gradient-to-r from-amber-500 to-amber-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">睡</span>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800">沉睡用户</h4>
           </div>
-          <h4 className="text-xl font-bold text-gray-800">沉睡用户</h4>
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <div className="mb-4">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">长期沉睡用户突然活跃，可能存在账号被盗或异常操作风险</div>
+        {/* 问题、策略、收益模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">长期沉睡用户突然活跃，可能存在账号被盗或异常操作风险</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立沉睡用户活跃预警机制，监控异常登录和操作行为</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">沉睡用户活跃预警机制，异常账号识别率78%，有效防范账号盗用风险</p>
+            </div>
           </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">沉睡用户活跃预警机制，异常账号识别率78%，有效防范账号盗用风险</div>
           </div>
         </div>
         
