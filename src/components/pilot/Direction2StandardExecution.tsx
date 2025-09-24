@@ -72,8 +72,6 @@ export const Direction2StandardExecution = () => {
         <div className="mb-8">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">VIP</span>
-            </div>
             <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>
           </div>
           
@@ -89,12 +87,6 @@ export const Direction2StandardExecution = () => {
             <div>
               <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
               <div className="text-gray-700">建立VIP禁用分级审批机制，提升禁用操作的准确性和合规性，降低误禁率80%</div>
-            </div>
-          </div>
-        </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
