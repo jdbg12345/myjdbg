@@ -174,6 +174,7 @@ export const Direction1PersonnelCapability = () => {
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
+        </div>
       </div>
 
       {/* 风险分数效果图表 */}
@@ -304,6 +305,7 @@ export const Direction1PersonnelCapability = () => {
           </div>
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+        </div>
         </div>
       </div>
               
@@ -443,7 +445,6 @@ export const Direction1PersonnelCapability = () => {
             技术侧目前评估下来，流水相关的修正，难度较大，暂时处理不了；
           </p>
         </div>
-      </div>
       </div>
       </div>
     </>
