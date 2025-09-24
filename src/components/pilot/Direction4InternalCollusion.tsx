@@ -51,67 +51,7 @@ export const Direction4InternalCollusion = () => {
             </div>
           </div>
         </div>
-        
-        {/* 图表模块 */}
-        <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
-              管控订单数
-            </div>
-            
-            <div className="mx-12 h-full relative">
-              <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                <span>200</span>
-                <span>150</span>
-                <span>100</span>
-                <span>50</span>
-                <span>0</span>
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full">
-                {[0, 25, 50, 75, 100].map((percent) => (
-                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                ))}
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                <div className="flex flex-col items-center relative">
-                  <div className="w-20 bg-cyan-600 rounded-t" style={{ height: '180px' }}></div>
-                  
-                  {/* 准确率数据点 */}
-                  <div 
-                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 60 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
-                  >
-                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
-                      60%
-                    </div>
-                  </div>
-                  
-                  <div className="text-center mt-4">
-                    <div className="text-xs text-gray-800 font-medium">标签管控</div>
-                    <div className="text-xs text-gray-500 mt-1">120单 (60%)</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">管控类型</div>
-          
-          <div className="flex justify-center space-x-6 text-sm">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-cyan-600 rounded"></div>
-              <span className="text-gray-700">管控订单数</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-              <span className="text-gray-700">准确率</span>
-            </div>
-          </div>
-          
-          <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-        </div>
+    
       </div>
 
       {/* 动态参数 */}
