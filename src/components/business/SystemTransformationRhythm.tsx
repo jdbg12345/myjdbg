@@ -13,7 +13,7 @@ export const SystemTransformationRhythm = () => {
     {
       time: "Q2 2025",
       stage: "逐步落地",
-      work: "推动技术及相关业务协同进行改造与优化",
+      work: "推动技术及相关业务协同，进行系统改造、流程优化、标准对齐",
       result: "已完成",
       current: false
     },
