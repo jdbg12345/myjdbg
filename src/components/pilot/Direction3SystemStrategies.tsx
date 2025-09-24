@@ -66,9 +66,7 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
           </div>
-          
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型</div>
-          
+                    
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-blue-600 rounded"></div>
@@ -133,9 +131,7 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
           </div>
-          
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型</div>
-          
+                    
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-blue-600 rounded"></div>
@@ -335,7 +331,6 @@ export const Direction3SystemStrategies = () => {
             </div>
           </div>
           
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型</div>
           
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
