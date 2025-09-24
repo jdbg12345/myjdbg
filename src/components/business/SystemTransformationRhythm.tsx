@@ -6,14 +6,14 @@ export const SystemTransformationRhythm = () => {
     {
       time: "Q1 2025",
       stage: "梳理规划",
-      work: "对全站业务和组织现状进行全链路梳理，识别问题并制定针对性解决策略",
+      work: "对业务和组织现状进行梳理，识别问题并制定针对性解决策略",
       result: "已完成",
       current: false
     },
     {
       time: "Q2 2025",
-      stage: "逐步推广",
-      work: "基于试点经验，将成功验证的机制逐步推广到更大范围。同时继续完善系统功能，补充更多策略维度。",
+      stage: "逐步落地",
+      work: "推动技术及相关业务协同进行改造与优化",
       result: "已完成",
       current: false
     },
@@ -26,7 +26,7 @@ export const SystemTransformationRhythm = () => {
     },
     {
       time: "Q4 2025",
-      stage: "全面推广",
+      stage: "全面推全",
       work: "完成所有核心功能的全面部署，建立完整的风控体系。实现人工审核向系统审核的根本性转变。",
       result: "预计实现90%+的系统化覆盖，人工依赖度降至最低",
       current: false
