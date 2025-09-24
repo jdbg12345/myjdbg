@@ -53,19 +53,7 @@ export const Direction3SystemStrategies = () => {
               <p className="text-gray-700 text-sm leading-relaxed">电子卡免费策略拦截率达到25%，有效防范套利行为，显著提升电子游戏风控能力</p>
             </div>
           </div>
-        </div>
-        
-        {/* 图表模块 */}
-        <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
-            <div className="text-gray-700 mb-4">电子游戏卡免费旋转等套利行为难以识别，系统缺乏有效的电子游戏异常行为监控机制</div>
-          </div>
-          <div>
-            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
-            <div className="text-gray-700">电子卡免费策略拦截率达到25%，有效防范套利行为，显著提升电子游戏风控能力</div>
-          </div>
-        </div>
+        </div>       
         
         {/* 电子策略图表 */}
         <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
