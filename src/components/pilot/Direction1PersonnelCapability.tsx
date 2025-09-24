@@ -6,7 +6,7 @@ export const Direction1PersonnelCapability = () => {
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
         <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-          <span className="text-white font-bold text-lg">方向1</span>
+          <span className="text-white font-bold text-lg">1</span>
         </div>
         <h2 className="text-3xl font-bold text-gray-800">人员的风控能力参差不齐</h2>
       </div>
@@ -17,9 +17,9 @@ export const Direction1PersonnelCapability = () => {
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">派</span>
+              <span className="text-white font-bold text-sm">1</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">手段1、派单策略变革</h4>
+            <h4 className="text-xl font-bold text-gray-800">派单策略变革</h4>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
