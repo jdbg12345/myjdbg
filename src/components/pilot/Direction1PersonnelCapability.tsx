@@ -411,26 +411,13 @@ export const Direction1PersonnelCapability = () => {
         </div>
         
         {/* 问题、策略、收益模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          {/* 1. 核心根因 */}
-          <div className="mb-8">
-            <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
-              <h4 className="font-bold text-red-700 mb-4 flex items-center text-lg">
-                <span className="w-3 h-3 bg-red-500 rounded-full mr-3"></span>
-                1. 核心根因
-              </h4>
-              <p className="text-gray-700 leading-relaxed">
-                系统逻辑长期存在缺陷（如锁定场馆流水双算、红利流水多算、输光后流水未达标等），导致流水计算结果不准确。
-              </p>
-            </div>
-          </div>
-
-          {/* 2. 引发问题 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">       
+          {/* 1. 核心问题 */}
           <div className="mb-8">
             <div className="bg-orange-50 rounded-lg p-6 border-l-4 border-orange-500">
               <h4 className="font-bold text-orange-700 mb-4 flex items-center text-lg">
                 <span className="w-3 h-3 bg-orange-500 rounded-full mr-3"></span>
-                2. 引发问题
+            系统逻辑长期存在缺陷（如锁定场馆流水双算、红利流水多算、输光后流水未达标等），导致流水计算结果不准确。引发问题：
               </h4>
               <div className="space-y-4">
                 <div className="bg-white rounded-lg p-4 border border-orange-200">
@@ -456,7 +443,7 @@ export const Direction1PersonnelCapability = () => {
             </div>
           </div>
 
-          {/* 3. 竞品情况 */}
+          {/* 2. 竞品情况 */}
           <div className="mb-8">
             <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-4 flex items-center text-lg">
@@ -469,12 +456,12 @@ export const Direction1PersonnelCapability = () => {
             </div>
           </div>
 
-          {/* 4. 当前卡点 */}
+          {/* 3. 当前卡点 */}
           <div className="mb-6">
             <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-gray-500">
               <h4 className="font-bold text-gray-700 mb-4 flex items-center text-lg">
                 <span className="w-3 h-3 bg-gray-500 rounded-full mr-3"></span>
-                4. 当前卡点
+                3. 当前卡点
               </h4>
               <p className="text-gray-700 leading-relaxed">
                 技术侧目前评估下来，流水相关的修正，难度较大，暂时处理不了。
