@@ -40,14 +40,14 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                 策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">实施标签分级查看机制，建立完整的访问审计链路</p>
+              <p className="text-gray-700 text-sm leading-relaxed">风控类标签和备注独立权限</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                 收益
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">敏感信息访问减少60%，建立完整的访问审计链路</p>
+              <p className="text-gray-700 text-sm leading-relaxed">减少被泄露风险</p>
             </div>
           </div>
         </div>
