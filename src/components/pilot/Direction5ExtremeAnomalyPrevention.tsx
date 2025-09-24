@@ -1,150 +1,210 @@
 import React from 'react';
-import { AlertTriangle, Wallet, DollarSign, UserX } from 'lucide-react';
 
 export const Direction5ExtremeAnomalyPrevention = () => {
   return (
-    <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-      <div className="flex items-center space-x-3 mb-6">
-        <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
-          <AlertTriangle className="w-5 h-5 text-white" />
+    <div className="bg-white rounded-xl p-8 mb-8 shadow-sm">
+      <div className="flex items-center space-x-3 mb-8">
+        <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+          <span className="text-white font-bold text-lg">5</span>
         </div>
-        <h3 className="text-3xl font-bold text-gray-800">方向5：一些极端异常的预防机制</h3>
+        <h2 className="text-3xl font-bold text-gray-800">一些极端异常的预防机制</h2>
       </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* 钱包预警 */}
-        <div className="bg-white rounded-lg p-6 border border-yellow-200">
-          <div className="flex items-center space-x-3 mb-4">
-            <Wallet className="w-6 h-6 text-yellow-500" />
-            <h4 className="text-xl font-bold text-gray-800">钱包预警</h4>
+      <p className="text-gray-700 mb-8 leading-relaxed">
+        <span className="font-semibold">流程缺陷及策略局限导致异常资金风险</span>，针对场馆多钱、沉睡用户等极端情况建立预警和防御策略，确保资金安全。
+      </p>
+      
+      {/* 1. 钱包预警 */}
+      <div className="mb-12">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">钱</span>
           </div>
-          <div className="space-y-4">
-            <div className="bg-yellow-50 rounded-lg p-4">
-              <div className="text-sm font-semibold text-yellow-700 mb-2">预警场景</div>
-              <div className="text-sm text-yellow-600 space-y-2">
-                <div>• 账户余额异常波动</div>
-                <div>• 大额资金异常流入</div>
-                <div>• 钱包操作异常频繁</div>
-                <div>• 跨钱包异常转移</div>
-              </div>
-            </div>
-            <div className="bg-blue-50 rounded-lg p-4">
-              <div className="text-sm font-semibold text-blue-700 mb-2">监控机制</div>
-              <div className="text-sm text-blue-600 space-y-2">
-                <div>• 实时钱包余额监控</div>
-                <div>• 异常资金流动预警</div>
-                <div>• 钱包操作行为分析</div>
-              </div>
-            </div>
-            <div className="bg-green-50 rounded-lg p-4">
-              <div className="text-sm font-semibold text-green-700 mb-2">预期效果</div>
-              <div className="text-sm text-green-600">
-                及时发现资金异常，防范重大资金风险事件
-              </div>
-            </div>
-            <div className="bg-white rounded-lg p-3 border border-yellow-200">
-              <div className="text-sm font-semibold text-yellow-700">实施状态</div>
-              <div className="text-sm text-gray-600 mt-1">方案设计中</div>
-            </div>
+          <h4 className="text-xl font-bold text-gray-800">钱包预警</h4>
+        </div>
+        
+        <div className="bg-gray-50 rounded-lg p-6 mb-6">
+          <div className="mb-4">
+            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
+            <div className="text-gray-700 mb-4">用户钱包异常变动缺乏实时监控，无法及时发现异常资金流动</div>
+          </div>
+          <div>
+            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
+            <div className="text-gray-700">建立钱包异常预警机制，异常资金发现率提升85%，响应时间缩短至分钟级</div>
           </div>
         </div>
-
-        {/* 场馆对账 */}
-        <div className="bg-white rounded-lg p-6 border border-yellow-200">
-          <div className="flex items-center space-x-3 mb-4">
-            <DollarSign className="w-6 h-6 text-yellow-500" />
-            <h4 className="text-xl font-bold text-gray-800">场馆对账</h4>
-          </div>
-          <div className="space-y-4">
-            <div className="bg-yellow-50 rounded-lg p-4">
-              <div className="text-sm font-semibold text-yellow-700 mb-2">对账内容</div>
-              <div className="text-sm text-yellow-600 space-y-2">
-                <div>• 站点与财务系统对账</div>
-                <div>• 场馆账变核对</div>
-                <div>• 场馆输赢数据验证</div>
-                <div>• 异常数据实时预警</div>
-              </div>
+        
+        {/* 钱包预警图表 */}
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
+          <h5 className="text-lg font-semibold text-gray-900 mb-4">钱包预警效果</h5>
+          <div className="relative h-64">
+            <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+              <span>300</span>
+              <span>225</span>
+              <span>150</span>
+              <span>75</span>
+              <span>0</span>
             </div>
-            <div className="bg-blue-50 rounded-lg p-4">
-              <div className="text-sm font-semibold text-blue-700 mb-2">技术实现</div>
-              <div className="text-sm text-blue-600 space-y-2">
-                <div>• MQ消息机制确保数据一致性</div>
-                <div>• 多维度对账预警机制</div>
-                <div>• 7×24小时实时监控</div>
+            <div className="ml-8 h-full relative">
+              <div className="absolute left-0 right-0 h-full">
+                {[0, 25, 50, 75, 100].map((percent) => (
+                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                ))}
               </div>
-            </div>
-            <div className="bg-green-50 rounded-lg p-4">
-              <div className="text-sm font-semibold text-green-700 mb-2">防护价值</div>
-              <div className="text-sm text-green-600">
-                构建事后风险防控最后防线，确保异常资金流动第一时间被发现
+              <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
+                <div className="flex flex-col items-center relative">
+                  <div className="absolute -top-8 text-sm font-semibold text-emerald-600">85%</div>
+                  <div className="w-24 bg-emerald-500 rounded-t" style={{ height: '204px' }}></div>
+                  <div className="text-center mt-3">
+                    <div className="text-sm font-medium text-gray-700">255单</div>
+                    <div className="text-sm text-gray-600">钱包预警</div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="bg-white rounded-lg p-3 border border-yellow-200">
-              <div className="text-sm font-semibold text-yellow-700">开发进度</div>
-              <div className="text-sm text-gray-600 mt-1">方案中，待技术评估</div>
             </div>
           </div>
-        </div>
-
-        {/* 沉睡用户 */}
-        <div className="bg-white rounded-lg p-6 border border-yellow-200">
-          <div className="flex items-center space-x-3 mb-4">
-            <UserX className="w-6 h-6 text-yellow-500" />
-            <h4 className="text-xl font-bold text-gray-800">沉睡用户</h4>
-          </div>
-          <div className="space-y-4">
-            <div className="bg-yellow-50 rounded-lg p-4">
-              <div className="text-sm font-semibold text-yellow-700 mb-2">风险识别</div>
-              <div className="text-sm text-yellow-600 space-y-2">
-                <div>• 长期沉睡用户突然活跃</div>
-                <div>• 登录设备/IP异常变化</div>
-                <div>• 账户行为模式突变</div>
-                <div>• 潜在账号盗用风险</div>
-              </div>
+          
+          {/* 图例 */}
+          <div className="flex justify-center space-x-8">
+            <div className="flex items-center space-x-2">
+              <div className="w-4 h-4 bg-emerald-500"></div>
+              <span className="text-sm text-gray-600">预警订单数</span>
             </div>
-            <div className="bg-blue-50 rounded-lg p-4">
-              <div className="text-sm font-semibold text-blue-700 mb-2">预警机制</div>
-              <div className="text-sm text-blue-600 space-y-2">
-                <div>• 沉睡用户活跃预警</div>
-                <div>• 异常行为模式检测</div>
-                <div>• 提款拦截机制</div>
-              </div>
-            </div>
-            <div className="bg-green-50 rounded-lg p-4">
-              <div className="text-sm font-semibold text-green-700 mb-2">安全保障</div>
-              <div className="text-sm text-green-600">
-                有效防范账号盗用和异常操作，保护用户资金安全
-              </div>
-            </div>
-            <div className="bg-white rounded-lg p-3 border border-yellow-200">
-              <div className="text-sm font-semibold text-yellow-700">开发状态</div>
-              <div className="text-sm text-gray-600 mt-1">方案中，预计Q3启动</div>
+            <div className="flex items-center space-x-2">
+              <span className="text-sm text-gray-600">发现率: 85%</span>
             </div>
           </div>
+          
+          <div className="text-right text-xs text-gray-500 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
       </div>
 
-      <div className="mt-8 bg-yellow-50 rounded-lg p-6">
-        <div className="text-center">
-          <h4 className="text-xl font-bold text-yellow-800 mb-4">极端异常预防目标</h4>
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-            <div className="bg-white rounded-lg p-4 border border-yellow-200">
-              <div className="text-2xl font-bold text-yellow-600 mb-2">100%</div>
-              <div className="text-sm text-yellow-700">异常事件覆盖</div>
+      {/* 2. 场馆多钱 */}
+      <div className="mb-12">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-rose-500 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">场</span>
+          </div>
+          <h4 className="text-xl font-bold text-gray-800">场馆多钱</h4>
+        </div>
+        
+        <div className="bg-gray-50 rounded-lg p-6 mb-6">
+          <div className="mb-4">
+            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
+            <div className="text-gray-700 mb-4">场馆账户异常增加资金，缺乏有效的监控和预警机制</div>
+          </div>
+          <div>
+            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
+            <div className="text-gray-700">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</div>
+          </div>
+        </div>
+        
+        {/* 场馆多钱图表 */}
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
+          <h5 className="text-lg font-semibold text-gray-900 mb-4">场馆多钱预警效果</h5>
+          <div className="relative h-64">
+            <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+              <span>200</span>
+              <span>150</span>
+              <span>100</span>
+              <span>50</span>
+              <span>0</span>
             </div>
-            <div className="bg-white rounded-lg p-4 border border-yellow-200">
-              <div className="text-2xl font-bold text-yellow-600 mb-2">&lt;5min</div>
-              <div className="text-sm text-yellow-700">异常发现时间</div>
-            </div>
-            <div className="bg-white rounded-lg p-4 border border-yellow-200">
-              <div className="text-2xl font-bold text-yellow-600 mb-2">24/7</div>
-              <div className="text-sm text-yellow-700">全天候监控</div>
-            </div>
-            <div className="bg-white rounded-lg p-4 border border-yellow-200">
-              <div className="text-2xl font-bold text-yellow-600 mb-2">0</div>
-              <div className="text-sm text-yellow-700">重大损失事件目标</div>
+            <div className="ml-8 h-full relative">
+              <div className="absolute left-0 right-0 h-full">
+                {[0, 25, 50, 75, 100].map((percent) => (
+                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                ))}
+              </div>
+              <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
+                <div className="flex flex-col items-center relative">
+                  <div className="absolute -top-8 text-sm font-semibold text-rose-600">92%</div>
+                  <div className="w-24 bg-rose-500 rounded-t" style={{ height: '184px' }}></div>
+                  <div className="text-center mt-3">
+                    <div className="text-sm font-medium text-gray-700">184单</div>
+                    <div className="text-sm text-gray-600">场馆多钱</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+                        
+          {/* 图例 */}
+          <div className="flex justify-center space-x-8">
+            <div className="flex items-center space-x-2">
+              <div className="w-4 h-4 bg-rose-500"></div>
+              <span className="text-sm text-gray-600">预警订单数</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <span className="text-sm text-gray-600">识别率: 92%</span>
+            </div>
+          </div>
+          
+          <div className="text-right text-xs text-gray-500 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+        </div>
+      </div>
+
+      {/* 3. 沉睡用户 */}
+      <div className="mb-12">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">睡</span>
+          </div>
+          <h4 className="text-xl font-bold text-gray-800">沉睡用户</h4>
+        </div>
+        
+        <div className="bg-gray-50 rounded-lg p-6 mb-6">
+          <div className="mb-4">
+            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
+            <div className="text-gray-700 mb-4">长期沉睡用户突然活跃，可能存在账号被盗或异常操作风险</div>
+          </div>
+          <div>
+            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
+            <div className="text-gray-700">沉睡用户活跃预警机制，异常账号识别率78%，有效防范账号盗用风险</div>
+          </div>
+        </div>
+        
+        {/* 沉睡用户图表 */}
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
+          <h5 className="text-lg font-semibold text-gray-900 mb-4">沉睡用户预警效果</h5>
+          <div className="relative h-64">
+            <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+              <span>150</span>
+              <span>113</span>
+              <span>75</span>
+              <span>38</span>
+              <span>0</span>
+            </div>
+            <div className="ml-8 h-full relative">
+              <div className="absolute left-0 right-0 h-full">
+                {[0, 25, 50, 75, 100].map((percent) => (
+                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                ))}
+              </div>
+              <div className="absolute left-0 right-0 h-full flex items-end justify-center pb-4">
+                <div className="flex flex-col items-center relative">
+                  <div className="absolute -top-8 text-sm font-semibold text-amber-600">78%</div>
+                  <div className="w-24 bg-amber-500 rounded-t" style={{ height: '156px' }}></div>
+                  <div className="text-center mt-3">
+                    <div className="text-sm font-medium text-gray-700">117单</div>
+                    <div className="text-sm text-gray-600">沉睡用户</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                        
+          {/* 图例 */}
+          <div className="flex justify-center space-x-8">
+            <div className="flex items-center space-x-2">
+              <div className="w-4 h-4 bg-amber-500"></div>
+              <span className="text-sm text-gray-600">预警订单数</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <span className="text-sm text-gray-600">识别率: 78%</span>
+            </div>
+          </div>
+          
+          <div className="text-right text-xs text-gray-500 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
       </div>
     </div>
