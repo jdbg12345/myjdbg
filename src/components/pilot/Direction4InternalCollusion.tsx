@@ -51,7 +51,7 @@ export const Direction4InternalCollusion = () => {
     
       </div>
 
-      {/* 风控参数动态机制 */}
+      {/* 风控策略参数变化机制 */}
       <div className="mb-8">
         {/* 标题模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-teal-500">
@@ -59,7 +59,7 @@ export const Direction4InternalCollusion = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">参</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">风控参数动态机制</h4>
+            <h4 className="text-xl font-bold text-gray-800">风控策略参数变化机制</h4>
           </div>
         </div>
         
