@@ -75,6 +75,31 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
+      {/* 2. VIP禁用流程 */}
+      <div className="mb-8">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">VIP</span>
+          </div>
+          <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>
+        </div>
+        
+        <div className="bg-gray-50 rounded-lg p-6 mb-6">
+          <div className="mb-4">
+            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
+            <div className="text-gray-700 mb-4">VIP用户禁用权限管理不够精细，缺乏分级审批机制，存在误禁和滥用风险</div>
+          </div>
+          <div className="mb-4">
+            <div className="text-lg font-semibold text-blue-700 mb-2">策略</div>
+            <div className="text-gray-700 mb-4">建立VIP禁用分级审批机制，完善权限管理体系</div>
+          </div>
+          <div>
+            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
+            <div className="text-gray-700">建立VIP禁用分级审批机制，提升禁用操作的准确性和合规性，降低误禁率80%</div>
+          </div>
+        </div>
+      </div>
+
       {/* 3. 动态参数 */}
       <div className="mb-8">
         <div className="flex items-center space-x-3 mb-6">

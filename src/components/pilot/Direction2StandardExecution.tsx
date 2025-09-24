@@ -11,27 +11,31 @@ export const Direction2StandardExecution = () => {
       </div>
       
       {/* 1、出款未查看备注标签 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <h3 className="text-2xl font-bold text-gray-800">出款未查看备注标签</h3>
-          <div className="space-y-4">
-            <div>
-              <h4 className="font-semibold text-gray-800 mb-2">问题</h4>
-              <p className="text-gray-700">出款时未查看备注标签（公告）导致套利出款错误；每月约15-20%的错误出款源于此，影响约100+万/月</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-800 mb-2">策略</h4>
-              <p className="text-gray-700">将查看备注设为出款流程中的强制环节</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-800 mb-2">收益</h4>
-              <p className="text-gray-700">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
-            </div>
+      <div className="mb-12">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">备</span>
+          </div>
+          <h4 className="text-xl font-bold text-gray-800">出款未查看备注标签</h4>
+        </div>
+        
+          <div className="mb-4">
+            <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
+            <div className="text-gray-700 mb-4">出款时未查看备注标签（公告）导致套利出款错误；每月约15-20%的错误出款源于此，影响约100+万/月</div>
+          </div>
+          <div className="mb-4">
+            <div className="text-lg font-semibold text-blue-700 mb-2">策略</div>
+            <div className="text-gray-700 mb-4">将查看备注设为出款流程中的强制环节</div>
+          </div>
+          <div>
+            <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
+            <div className="text-gray-700">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></div>
           </div>
         </div>
 
         {/* 图表 */}
         <div className="bg-white rounded-lg p-6 border border-gray-200">
+          <h5 className="text-lg font-semibold text-gray-900 mb-4">出款备注标签查看效果</h5>
           <div className="flex items-end justify-between h-64 mb-4">
             <div className="flex flex-col items-center flex-1 mx-2">
               <div className="text-sm font-semibold text-blue-600 mb-2" style={{marginBottom: '280px'}}>25%</div>
@@ -61,23 +65,32 @@ export const Direction2StandardExecution = () => {
           </div>
         </div>
       </div>
+      </div>
 
       {/* 2. VIP禁用流程 */}
-      <div className="mb-12">       
+      <div className="mb-8">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">VIP</span>
+          </div>
+          <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>
+        </div>
+        
         <div className="bg-gray-50 rounded-lg p-6 mb-6">
-          <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>            
           <div className="mb-4">
             <div className="text-lg font-semibold text-red-700 mb-2">问题</div>
             <div className="text-gray-700 mb-4">VIP用户禁用权限管理不够精细，缺乏分级审批机制，存在误禁和滥用风险</div>
           </div>
           <div className="mb-4">
-            <div className="text-lg font-semibold text-red-700 mb-2">策略</div>
-            <div className="text-gray-700 mb-4">VIP用户禁用权限管理不够精细，缺乏分级审批机制，存在误禁和滥用风险</div>
+            <div className="text-lg font-semibold text-blue-700 mb-2">策略</div>
+            <div className="text-gray-700 mb-4">建立VIP禁用分级审批机制，完善权限管理体系</div>
           </div>
           <div>
             <div className="text-lg font-semibold text-green-700 mb-2">收益</div>
             <div className="text-gray-700">建立VIP禁用分级审批机制，提升禁用操作的准确性和合规性，降低误禁率80%</div>
           </div>
+        </div>
+      </div>
         </div>
       </div>
     </div>
