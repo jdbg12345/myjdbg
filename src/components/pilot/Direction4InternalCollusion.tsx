@@ -13,7 +13,7 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
-      {/* 风控标签独立权限 */}
+      {/* 风控标签和备注独立权限 */}
       <div className="mb-12">
         {/* 标题模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border-l-4 border-cyan-500">
@@ -21,7 +21,7 @@ export const Direction4InternalCollusion = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">标</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">风控标签</h4>
+            <h4 className="text-xl font-bold text-gray-800">风控标签和备注独立权限</h4>
           </div>
         </div>
         
