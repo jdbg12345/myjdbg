@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Tag, Settings } from 'lucide-react';
+import { Shield, CheckCircle, Settings } from 'lucide-react';
 
 export const Direction4InternalCollusion = () => {
   return (
@@ -15,7 +15,7 @@ export const Direction4InternalCollusion = () => {
         {/* 风控标签 */}
         <div className="bg-white rounded-lg p-6 border border-red-200">
           <div className="flex items-center space-x-3 mb-4">
-            <Tag className="w-6 h-6 text-red-500" />
+            <CheckCircle className="w-6 h-6 text-red-500" />
             <h4 className="text-xl font-bold text-gray-800">风控标签</h4>
           </div>
           <div className="space-y-4">
