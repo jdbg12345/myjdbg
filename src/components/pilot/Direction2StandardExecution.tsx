@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertTriangle, CheckCircle, Clock } from 'lucide-react';
+import { AlertTriangle, Eye, Lock } from 'lucide-react';
 
 export const Direction2StandardExecution = () => {
   return (
@@ -15,7 +15,7 @@ export const Direction2StandardExecution = () => {
         {/* 出款未查看备注标签 */}
         <div className="bg-white rounded-lg p-6 border border-orange-200">
           <div className="flex items-center space-x-3 mb-4">
-            <CheckCircle className="w-6 h-6 text-orange-500" />
+            <Eye className="w-6 h-6 text-orange-500" />
             <h4 className="text-xl font-bold text-gray-800">出款未查看备注标签</h4>
           </div>
           <div className="space-y-4">
@@ -51,7 +51,7 @@ export const Direction2StandardExecution = () => {
         {/* VIP禁用流程 */}
         <div className="bg-white rounded-lg p-6 border border-orange-200">
           <div className="flex items-center space-x-3 mb-4">
-            <Clock className="w-6 h-6 text-orange-500" />
+            <Lock className="w-6 h-6 text-orange-500" />
             <h4 className="text-xl font-bold text-gray-800">VIP禁用流程</h4>
           </div>
           <div className="space-y-4">

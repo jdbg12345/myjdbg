@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Target, TrendingUp, Shield, Search, CheckCircle, Settings } from 'lucide-react';
+import { Users, Target, TrendingUp, Shield, Search } from 'lucide-react';
 
 export const Direction1PersonnelCapability = () => {
   return (
@@ -85,7 +85,7 @@ export const Direction1PersonnelCapability = () => {
         {/* 提款流水工具 */}
         <div className="bg-white rounded-lg p-6 border border-blue-200">
           <div className="flex items-center space-x-3 mb-4">
-            <CheckCircle className="w-6 h-6 text-blue-500" />
+            <TrendingUp className="w-6 h-6 text-blue-500" />
             <h4 className="text-lg font-bold text-gray-800">提款流水工具</h4>
           </div>
           <div className="space-y-3">
@@ -107,7 +107,7 @@ export const Direction1PersonnelCapability = () => {
         {/* 体育打水工具 */}
         <div className="bg-white rounded-lg p-6 border border-blue-200">
           <div className="flex items-center space-x-3 mb-4">
-            <Settings className="w-6 h-6 text-blue-500" />
+            <Target className="w-6 h-6 text-blue-500" />
             <h4 className="text-lg font-bold text-gray-800">体育打水工具</h4>
           </div>
           <div className="space-y-3">
