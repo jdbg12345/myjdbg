@@ -6,7 +6,7 @@ export const SystemTransformationRhythm = () => {
     {
       time: "Q1 2025",
       stage: "梳理规划",
-      work: "选择核心业务场景进行小范围试点，验证新机制的有效性和可行性。重点关注派单机制、风险分数体系、关键策略的落地效果。",
+      work: "对全站业务和组织现状进行全链路梳理，识别问题并制定针对性解决策略",
       result: "试点成功，各项指标达到预期，为全面推广奠定基础",
       current: false
     },
