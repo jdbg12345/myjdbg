@@ -448,7 +448,7 @@ export const Direction1PersonnelCapability = () => {
             <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-4 flex items-center text-lg">
                 <span className="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
-                3. 竞品情况
+                2. 竞品情况
               </h4>
               <p className="text-gray-700 leading-relaxed">
                 市场调研显示，主流平台（6 尊龙凯时（AG）7 金宝博（188）8 竞博（IM）5 万博（ManbetX）3 竞技宝（JJB）2 雷竞技（Raybet）1 易游（M6)）已普遍实现用户前端直接查看剩余提款流水功能。
