@@ -120,9 +120,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
               <p className="text-gray-700 text-sm leading-relaxed">沉睡用户活跃预警机制，异常账号识别率78%，有效防范账号盗用风险</p>
             </div>
           </div>
-        
-          {/* 沉睡用户图表 */}
-     
+           
         </div>
       </div>
     </div>
