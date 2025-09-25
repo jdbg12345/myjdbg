@@ -64,7 +64,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">一些高危参数修改无法做到实时监控，存在较大空间</p>
+              <p className="text-gray-700 text-sm leading-relaxed">高危参数（如代理佣金、存提费率、场馆费率、VIP体系）缺乏实时监控与审计，存在被误操作、滥用或配置异常导致的重大风险。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
