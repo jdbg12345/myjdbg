@@ -34,7 +34,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                 策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">敏感高危参数修改监控</p>
+              <p className="text-gray-700 text-sm leading-relaxed">风控类标签和备注独立权限</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
@@ -48,7 +48,7 @@ export const Direction4InternalCollusion = () => {
     
       </div>
       
-      {/* 风控标签和备注独立权限 */}
+      {/* 敏感高危参数修改监控 */}
       <div className="mb-12">
         {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
@@ -56,7 +56,7 @@ export const Direction4InternalCollusion = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">标</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">风控标签和备注独立权限</h4>
+            <h4 className="text-xl font-bold text-gray-800">敏感高危参数修改监控</h4>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -71,7 +71,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                 策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">风控类标签和备注独立权限</p>
+              <p className="text-gray-700 text-sm leading-relaxed">敏感高危参数修改监控</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
