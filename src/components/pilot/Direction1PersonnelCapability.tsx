@@ -215,3 +215,10 @@ export const Direction1PersonnelCapability = () => {
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">建立统一风险评估标准，提升审核准确性和一致性</p>
             </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </>
+  );
+};
