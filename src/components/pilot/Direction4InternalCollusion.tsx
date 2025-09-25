@@ -4,8 +4,8 @@ export const Direction4InternalCollusion = () => {
   return (
     <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
-        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-          <span className="text-white font-bold text-lg">方向4</span>
+        <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+          <span className="text-white font-bold text-sm">方向4</span>
         </div>
         <h2 className="text-3xl font-bold text-gray-800">方向4：内外的人员进行勾结串联</h2>
       </div>
@@ -19,8 +19,8 @@ export const Direction4InternalCollusion = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">标</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">风控标签和备注独立权限</h4>
-            <div className="flex items-center space-x-2 mb-4">
+            <h4 className="text-xl font-bold text-gray-800 flex-1">风控标签和备注独立权限</h4>
+            <div className="flex items-center space-x-2">
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
             </div>
           </div>
@@ -59,8 +59,8 @@ export const Direction4InternalCollusion = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">标</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">敏感高危参数修改监控</h4>
-            <div className="flex items-center space-x-2 mb-4">
+            <h4 className="text-xl font-bold text-gray-800 flex-1">敏感高危参数修改监控</h4>
+            <div className="flex items-center space-x-2">
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
             </div>
           </div>
@@ -99,8 +99,8 @@ export const Direction4InternalCollusion = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">参</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">风控策略参数变化机制</h4>
-            <div className="flex items-center space-x-2 mb-4">
+            <h4 className="text-xl font-bold text-gray-800 flex-1">风控策略参数变化机制</h4>
+            <div className="flex items-center space-x-2">
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
             </div>
           </div>

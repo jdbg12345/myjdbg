@@ -18,8 +18,8 @@ export const Direction2StandardExecution = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">备</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">出款强制查看标签备注</h4>
-            <div className="flex items-center space-x-2 mb-4">
+            <h4 className="text-xl font-bold text-gray-800 flex-1">出款强制查看标签备注</h4>
+            <div className="flex items-center space-x-2">
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
             </div>
           </div>
@@ -149,8 +149,8 @@ export const Direction2StandardExecution = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">VIP</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">会员禁用流程升级</h4>
-            <div className="flex items-center space-x-2 mb-4">
+            <h4 className="text-xl font-bold text-gray-800 flex-1">会员禁用流程升级</h4>
+            <div className="flex items-center space-x-2">
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
             </div>
           </div>

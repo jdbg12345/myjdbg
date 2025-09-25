@@ -70,8 +70,9 @@ export const PilotResultsPresentation = () => {
                 <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                   <td className="p-6 text-center whitespace-nowrap">
                     <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full font-bold text-lg">
-                      方向{index + 1}：{item.direction}
+                      方向{index + 1}
                     </div>
+                    <div className="text-sm text-gray-600 mt-2">{item.direction}</div>
                   </td>
                   <td className="p-6">
                     <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-lg">

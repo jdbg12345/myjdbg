@@ -4,8 +4,8 @@ export const Direction5ExtremeAnomalyPrevention = () => {
   return (
     <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
-        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-          <span className="text-white font-bold text-lg">方向5</span>
+        <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+          <span className="text-white font-bold text-sm">方向5</span>
         </div>
         <h2 className="text-3xl font-bold text-gray-800">方向5：一些极端异常的预防机制</h2>
       </div>
@@ -21,8 +21,8 @@ export const Direction5ExtremeAnomalyPrevention = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">钱</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">中心钱包多钱</h4>
-            <div className="flex items-center space-x-2 mb-4">
+            <h4 className="text-xl font-bold text-gray-800 flex-1">中心钱包多钱</h4>
+            <div className="flex items-center space-x-2">
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
             </div>
           </div>
@@ -61,8 +61,8 @@ export const Direction5ExtremeAnomalyPrevention = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">场</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">场馆钱包多钱</h4>
-            <div className="flex items-center space-x-2 mb-4">
+            <h4 className="text-xl font-bold text-gray-800 flex-1">场馆钱包多钱</h4>
+            <div className="flex items-center space-x-2">
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
             </div>
           </div>
@@ -101,8 +101,8 @@ export const Direction5ExtremeAnomalyPrevention = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">睡</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">沉睡用户活跃</h4>
-            <div className="flex items-center space-x-2 mb-4">
+            <h4 className="text-xl font-bold text-gray-800 flex-1">沉睡用户活跃</h4>
+            <div className="flex items-center space-x-2">
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
             </div>
           </div>
