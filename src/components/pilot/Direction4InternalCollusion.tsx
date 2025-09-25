@@ -64,14 +64,14 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">风控标签和备注权限未独立管理，大部分部门均可查看，敏感信息易泄露，存在潜在公司损失风险</p>
+              <p className="text-gray-700 text-sm leading-relaxed">一些高危参数修改无法做到实时监控，存在较大空间</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                 策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">敏感高危参数修改监控</p>
+              <p className="text-gray-700 text-sm leading-relaxed">一些影响到收益的关键参数的修改会触发实时触发</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
