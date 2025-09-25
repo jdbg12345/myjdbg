@@ -93,7 +93,47 @@ export const Direction5ExtremeAnomalyPrevention = () => {
                 
       </div>
 
-      {/* 3. 沉睡用户 */}
+       {/*  盈利监控 */}
+      <div className="mb-12">
+        {/* 整合的内容模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">场</span>
+            </div>
+            <h4 className="text-xl font-bold text-gray-800 flex-1">盈利监控</h4>
+            <div className="flex items-center space-x-2">
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">场馆、游戏、单笔、持续等盈利维度进行监控</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立场馆资金异常监控机制，实时预警异常资金变动</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</p>
+            </div>
+          </div>
+        </div>
+                
+      </div>
+      
+      {/* 4. 沉睡用户 */}
       <div className="mb-8">
         {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
