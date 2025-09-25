@@ -5,9 +5,9 @@ export const Direction4InternalCollusion = () => {
     <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
         <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-          <span className="text-white font-bold text-lg">4</span>
+          <span className="text-white font-bold text-lg">方向4</span>
         </div>
-        <h2 className="text-3xl font-bold text-gray-800">内外的人员进行勾结串联</h2>
+        <h2 className="text-3xl font-bold text-gray-800">方向4：内外的人员进行勾结串联</h2>
       </div>
 
       
@@ -20,6 +20,9 @@ export const Direction4InternalCollusion = () => {
               <span className="text-white font-bold text-sm">标</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">风控标签和备注独立权限</h4>
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -57,6 +60,9 @@ export const Direction4InternalCollusion = () => {
               <span className="text-white font-bold text-sm">标</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">敏感高危参数修改监控</h4>
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -94,6 +100,9 @@ export const Direction4InternalCollusion = () => {
               <span className="text-white font-bold text-sm">参</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">风控策略参数变化机制</h4>
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
