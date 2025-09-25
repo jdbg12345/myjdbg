@@ -91,15 +91,15 @@ export const Direction4InternalCollusion = () => {
     
       </div>
 
-         {/* 敏感高危参数修改监控 */}
+         {/* 关联查询使用密文查询 */}
       <div className="mb-12">
         {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">标</span>
+              <span className="text-white font-bold text-sm">密</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">敏感高危参数修改监控</h4>
+            <h4 className="text-xl font-bold text-gray-800 flex-1">关联查询使用密文查询</h4>
             <div className="flex items-center space-x-2">
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
             </div>
