@@ -122,47 +122,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
           </div>
         
           {/* 沉睡用户图表 */}
-          <div className="mt-8">
-          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
-              预警订单数
-            </div>
-            
-            <div className="mx-12 h-full relative">
-              <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                <span>150</span>
-                <span>113</span>
-                <span>75</span>
-                <span>38</span>
-                <span>0</span>
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full">
-                {[0, 25, 50, 75, 100].map((percent) => (
-                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                ))}
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                <div className="flex flex-col items-center relative">
-                  <div className="w-20 bg-amber-600 rounded-t" style={{ height: '195px' }}></div>
-                  <div className="text-center mt-4">
-                    <div className="text-xs text-gray-500 mt-1">117单 (78%)</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-                    
-          <div className="flex justify-center space-x-6 text-sm">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-amber-600 rounded"></div>
-              <span className="text-gray-700">预警订单数</span>
-            </div>
-          </div>
-          
-          <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-        </div>
+     
         </div>
       </div>
     </div>
