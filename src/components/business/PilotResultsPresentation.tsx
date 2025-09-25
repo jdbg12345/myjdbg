@@ -37,31 +37,31 @@ export const PilotResultsPresentation = () => {
             <tbody>
               {[
                 {
-                  direction: "方向1：人员的风控能力参差不齐",
+                  direction: "人员的风控能力参差不齐",
                   before: "仅按金额派单，新人可能接到高风险订单",
                   now: "按【风险分数+金额】派单，确保合适人员处理对应难度订单",
                   example: "高风险订单自动分配给经验丰富的审核员"
                 },
                 {
-                  direction: "方向2：人的审核不按照标准执行",
+                  direction: "人的审核不按照标准执行",
                   before: "审核人员可能忽略重要标签和备注",
                   now: "强制提醒机制，确保关键信息必须查看",
                   example: "高盈利标签强制弹窗提醒"
                 },
                 {
-                  direction: "方向3：系统审核策略的维度缺失",
+                  direction: "系统审核策略的维度缺失",
                   before: "主要是防御型策略，缺乏作弊识别",
                   now: "补充50+套利识别策略，覆盖各游戏类型",
                   example: "电子卡免费、真人算牌、体育对打等策略"
                 },
                 {
-                  direction: "方向4：内外的人员进行勾结串联",
+                  direction: "内外的人员进行勾结串联",
                   before: "敏感信息访问权限过于宽泛",
                   now: "分级权限管理，完整操作日志记录",
                   example: "标签查看需点击查询，记录完整日志"
                 },
                 {
-                  direction: "方向5：一些极端异常的预防机制",
+                  direction: "一些极端异常的预防机制",
                   before: "缺乏对极端异常情况的预警",
                   now: "建立多维度异常预警机制",
                   example: "钱包异常、场馆多钱、沉睡用户预警"
@@ -70,7 +70,7 @@ export const PilotResultsPresentation = () => {
                 <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                   <td className="p-6 text-center whitespace-nowrap">
                     <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full font-bold text-lg">
-                      {item.direction}
+                      方向{index + 1}：{item.direction}
                     </div>
                   </td>
                   <td className="p-6">

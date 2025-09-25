@@ -5,9 +5,9 @@ export const Direction2StandardExecution = () => {
     <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
         <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-          <span className="text-white font-bold text-lg">2</span>
+          <span className="text-white font-bold text-lg">方向2</span>
         </div>
-        <h2 className="text-3xl font-bold text-gray-800">人的审核不按照标准执行</h2>
+        <h2 className="text-3xl font-bold text-gray-800">方向2：人的审核不按照标准执行</h2>
       </div>
       
       {/* 1、出款强制查看标签备注 */}
@@ -19,6 +19,9 @@ export const Direction2StandardExecution = () => {
               <span className="text-white font-bold text-sm">备</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">出款强制查看标签备注</h4>
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -147,6 +150,9 @@ export const Direction2StandardExecution = () => {
               <span className="text-white font-bold text-sm">VIP</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">会员禁用流程升级</h4>
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -169,6 +175,38 @@ export const Direction2StandardExecution = () => {
                 收益
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">彻底解决禁用滥用问题</p>
+            </div>
+          </div>
+          
+          {/* VIP等级审批流程示意图 */}
+          <div className="mt-8">
+            <h5 className="text-lg font-bold text-gray-800 mb-4">VIP等级审批流程示意图</h5>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="bg-green-100 border-2 border-green-300 rounded-lg p-4 mb-2">
+                    <div className="text-green-700 font-bold">VIP 0-3</div>
+                    <div className="text-sm text-green-600">普通会员</div>
+                  </div>
+                  <div className="text-xs text-gray-600">单人审批即可</div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="bg-yellow-100 border-2 border-yellow-300 rounded-lg p-4 mb-2">
+                    <div className="text-yellow-700 font-bold">VIP 4-6</div>
+                    <div className="text-sm text-yellow-600">中级会员</div>
+                  </div>
+                  <div className="text-xs text-gray-600">需主管审批</div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="bg-red-100 border-2 border-red-300 rounded-lg p-4 mb-2">
+                    <div className="text-red-700 font-bold">VIP 7+</div>
+                    <div className="text-sm text-red-600">高级会员</div>
+                  </div>
+                  <div className="text-xs text-gray-600">需U盾/谷歌验证</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

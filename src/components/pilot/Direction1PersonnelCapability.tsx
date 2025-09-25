@@ -6,9 +6,9 @@ export const Direction1PersonnelCapability = () => {
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
       <div className="flex items-center space-x-3 mb-8">
         <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-          <span className="text-white font-bold text-lg">1</span>
+          <span className="text-white font-bold text-lg">方向1</span>
         </div>
-        <h2 className="text-3xl font-bold text-gray-800">人员的风控能力参差不齐</h2>
+        <h2 className="text-3xl font-bold text-gray-800">方向1：人员的风控能力参差不齐</h2>
       </div>
       
       {/* 新派单规则效果图表 */}
@@ -19,7 +19,10 @@ export const Direction1PersonnelCapability = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">1</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800">派单策略变革</h4>
+            <h4 className="text-xl font-bold text-gray-800">手段1、派单策略变革</h4>
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -186,6 +189,9 @@ export const Direction1PersonnelCapability = () => {
               <span className="text-white font-bold text-sm">云</span>
             </div>
             <h4 className="text-xl font-bold text-gray-800">手段2、云顿风险分数</h4>
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -316,6 +322,9 @@ export const Direction1PersonnelCapability = () => {
             <span className="text-white font-bold text-sm">关</span>
           </div>
           <h4 className="text-xl font-bold text-gray-800">手段3、关联下注查询工具</h4>
+          <div className="flex items-center space-x-2 mb-4">
+            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-600">开发中</span>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -349,6 +358,9 @@ export const Direction1PersonnelCapability = () => {
             <span className="text-white font-bold text-sm">体</span>
           </div>
           <h4 className="text-xl font-bold text-gray-800">手段4、体育打水查询工具</h4>
+          <div className="flex items-center space-x-2 mb-4">
+            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-600">开发中</span>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -382,6 +394,9 @@ export const Direction1PersonnelCapability = () => {
             <span className="text-white font-bold text-sm">流</span>
           </div>
           <h4 className="text-xl font-bold text-gray-800">手段5、提款流水查询工具</h4>
+          <div className="flex items-center space-x-2 mb-4">
+            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
+          </div>
         </div>
         <div className="mb-6">
           <h4 className="text-2xl font-bold text-gray-800 mb-4">核心问题</h4>
