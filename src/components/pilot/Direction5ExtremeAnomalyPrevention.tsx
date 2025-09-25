@@ -119,7 +119,7 @@ export const Direction5ExtremeAnomalyPrevention = () => {
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                 策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">建立场馆资金异常监控机制，实时预警异常资金变动</p>
+              <p className="text-gray-700 text-sm leading-relaxed">场馆、游戏、单笔、持续等盈利维度进行监控</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
