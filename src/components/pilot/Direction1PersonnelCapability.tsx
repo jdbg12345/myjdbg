@@ -201,4 +201,17 @@ export const Direction1PersonnelCapability = () => {
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">风控体系没有一个标准来衡量提款的风险，如银行风控体系的分数，在各自场景中就无法实现一个统一执行标准；每月约15-20%的错误出款源于此，影响约100+万/月</p>
             </div>
-            <div className="bg-blue-50 rounded-lg p-
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立统一的风险评分体系，为每个提款订单计算风险分数，实现标准化风险评估</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立统一风险评估标准，提升审核准确性和一致性</p>
+            </div>
