@@ -365,7 +365,7 @@ export const Direction3SystemStrategies = () => {
         
       </div>
 
-           {/* 体育策略 */}
+           {/* 套利兜底组合策略 */}
       <div className="mb-12">
         {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
