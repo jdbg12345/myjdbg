@@ -119,7 +119,6 @@ export const Direction4InternalCollusion = () => {
             </div>
           </div>
         
-      
         </div>
       </div>
     </div>
