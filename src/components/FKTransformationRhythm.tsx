@@ -101,7 +101,7 @@ export const FKTransformationRhythm = () => {
         <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6">
           <div className="flex items-center space-x-3">
             <Clock className="w-6 h-6" />
-            <h3 className="text-xl font-bold">项目时间轴</h3>
+            <h3 className="text-xl font-bold">落地策略：小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险。</h3>
           </div>
         </div>
         
