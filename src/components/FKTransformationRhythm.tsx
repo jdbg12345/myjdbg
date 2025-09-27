@@ -63,16 +63,9 @@ export const FKTransformationRhythm = () => {
           </div>
           <div className="flex-1">
             <h3 className="text-xl font-bold text-blue-800 mb-3">落地策略</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-3">
-                <div className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span className="text-blue-700">小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险</span>
-                </div>
-            
-              </div>
-           
-            </div>
+            <p className="text-amber-700 leading-relaxed">
+             小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险。
+            </p>
           </div>
         </div>
       </div>
