@@ -56,7 +56,7 @@ export const FKSystemOverview = () => {
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
                     <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-lg">系统拒绝：<strong className="text-gray-800 text-xl">0%（排除流水不足）</strong></span>
+                    <span className="text-lg">系统拒绝：<strong className="text-gray-800 text-xl">0%（排除流水）</strong></span>
                   </div>
                 </div>
               </div>
