@@ -49,8 +49,7 @@ export const FKTransformationRhythm = () => {
           <div className="flex-1">
             <h3 className="text-xl font-bold text-amber-800 mb-3">困难挑战</h3>
             <p className="text-amber-700 leading-relaxed">
-              FK变革涉及多个部门与利益相关方，任何调整都可能影响会员体验、代理收益和业务稳定性。
-              因此，采取先小范围试点，效果验证后逐步推广，避免一刀切的潜在的组织及业务风险。
+              FK变革横跨多个部门与利益相关方，任何策略或流程调整都可能影响会员体验、代理收益与业务稳定性；而核心流程的系统升级则对既有架构提出了巨大的挑战。
             </p>
           </div>
         </div>
