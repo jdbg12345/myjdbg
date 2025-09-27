@@ -21,7 +21,7 @@ const navigationItems: NavigationItem[] = [
   },
   {
     id: 'data',
-    title: '2. 风控整体数据',
+    title: '2. FK整体数据',
     icon: <BarChart3 className="w-4 h-4" />,
     children: [
       { id: 'prevention-data', title: '2.1 防范单量与金额' },
