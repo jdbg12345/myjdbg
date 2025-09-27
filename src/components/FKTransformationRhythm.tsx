@@ -58,6 +58,21 @@ export const FKTransformationRhythm = () => {
             </div>
           </div>
 
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-amber-600 font-bold text-sm">1</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-amber-800 mb-3">多部门协调挑战</h4>
+                <p className="text-amber-700 leading-relaxed">
+                  FK变革横跨多个部门与利益相关方，任何策略或流程调整都可能影响会员体验、代理收益与业务稳定性
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
