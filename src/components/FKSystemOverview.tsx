@@ -130,10 +130,6 @@ export const FKSystemOverview = () => {
           <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-8 border border-gray-200">
             <div className="flex items-center justify-between mb-8">
               <h4 className="text-2xl font-bold text-gray-800">智能FK流程</h4>
-              <div className="flex items-center space-x-2 text-sm text-gray-600">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span>实时运行中</span>
-              </div>
             </div>
             
             {/* SVG流程图 - 7个节点的横向流程 */}
