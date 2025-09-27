@@ -67,23 +67,11 @@ export const FKTransformationRhythm = () => {
               <div className="space-y-3">
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span className="text-blue-700">小范围试点，效果验证后逐步推广</span>
+                  <span className="text-blue-700">小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险</span>
                 </div>
-                <div className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span className="text-blue-700">避免一刀切的潜在组织及业务风险</span>
-                </div>
+            
               </div>
-              <div className="space-y-3">
-                <div className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span className="text-blue-700">平衡会员体验、代理收益和业务稳定性</span>
-                </div>
-                <div className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span className="text-blue-700">持续优化和迭代改进</span>
-                </div>
-              </div>
+           
             </div>
           </div>
         </div>
