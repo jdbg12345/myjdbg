@@ -41,7 +41,7 @@ const navigationItems: NavigationItem[] = [
     title: '3. FK工作总结',
     icon: <FileText className="w-4 h-4" />,
     children: [
-      { id: 'business-overview', title: '3.0 业务方向及提升策略概览' },
+      { id: 'business-overview', title: '3.0 FK变革节奏' },
       { id: 'audit-group', title: '3.1 审核组' },
       { id: 'internal-control', title: '3.2 内控组' },
       { id: 'audit-dept', title: '3.3 稽查组' },
