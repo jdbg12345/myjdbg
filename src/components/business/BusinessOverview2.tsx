@@ -5,6 +5,7 @@ import { PilotResultsPresentation } from './PilotResultsPresentation';
 
 export const BusinessOverview2 = () => {
   return (
+    <div>
     <div className="bg-white rounded-lg p-16 mb-10 relative">
            
         <div className="flex items-center space-x-3 mb-8">
