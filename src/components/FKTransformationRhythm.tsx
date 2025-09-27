@@ -40,6 +40,60 @@ export const FKTransformationRhythm = () => {
         <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.1 FK变革进度</h1>
       </div>
 
+      {/* 核心问题 */}
+      <div className="mb-8">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+            <AlertTriangle className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">核心问题</h2>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500 flex-1">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-red-600 font-bold text-sm">1</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-red-800 mb-3">人员的风控能力参差不齐</h4>
+                <p className="text-red-700 leading-relaxed">
+                  审核人员经验差异明显，新人和外包团队错误率高，缺乏统一的能力评估和培训体系
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500 flex-1">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-red-600 font-bold text-sm">2</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-red-800 mb-3">人的审核不按照标准执行</h4>
+                <p className="text-red-700 leading-relaxed">
+                  审核流程执行不规范，未严格按照SOP操作，导致错误出款和风险遗漏
+                </p>
+              </div>
+            </div>
+          </div>
+     
+          <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500 flex-1">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-red-600 font-bold text-sm">3</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-red-800 mb-3">系统审核策略的维度缺失</h4>
+                <p className="text-red-700 leading-relaxed">
+                  系统策略主要为防御型，缺乏套利和作弊识别能力，导致系统直接出款错误
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* 困难挑战 */}
       <div className="mb-8">    
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
