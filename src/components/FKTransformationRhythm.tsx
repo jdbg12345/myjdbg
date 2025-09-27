@@ -86,17 +86,11 @@ export const FKTransformationRhythm = () => {
           <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
             <Target className="w-6 h-6 text-blue-600" />
           </div>
-          <div className="flex-1">
-            <h3 className="text-xl font-bold text-blue-800 mb-3">落地策略</h3>
-            <p className="text-amber-700 leading-relaxed">
-             小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险。
-            </p>
-          </div>
         </div>
       </div>
 
 
-      {/* 项目时间轴 - 横向里程碑样式 */}
+      {/* 落地策略 - 横向里程碑样式 */}
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
         <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6">
           <div className="flex items-center space-x-3">
