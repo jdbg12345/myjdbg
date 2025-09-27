@@ -96,6 +96,12 @@ export const FKTransformationRhythm = () => {
 
       {/* 困难挑战 */}
       <div className="mb-8">    
+         <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+            <AlertTriangle className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">困难挑战</h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500 flex-1">
             <div className="flex items-start space-x-4">
