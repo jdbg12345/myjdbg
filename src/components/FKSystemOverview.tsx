@@ -99,7 +99,7 @@ export const FKSystemOverview = () => {
                     <h4 className="text-xl font-bold text-gray-800">理想状态</h4>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4">系统为绝对，且大部分订单直接系统做决策，人做决策的比例要大大降低</p>
+                <p className="text-gray-600 mb-4">系统为绝对，人做决策的比例要大大降低</p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
                     <Users className="w-4 h-4 mr-2 text-gray-400" />
