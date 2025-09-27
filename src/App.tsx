@@ -102,7 +102,7 @@ function App() {
         </div>
         
         {/* 3. FK工作总结 */}
-        {/* 3.1 FK变革节奏 */}
+        {/* 3.1 FK变革进度 */}
         <div data-section="fk-transformation">
           <FKTransformationRhythm />
         </div>
