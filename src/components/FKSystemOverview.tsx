@@ -73,17 +73,17 @@ export const FKSystemOverview = () => {
                 </div>
                 <p className="text-gray-600 mb-4">系统为绝对，但是还是人来做最后决策</p>
                 <div className="space-y-2">
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Users className="w-4 h-4 mr-2 text-blue-400" />
-                    <span>人工决策占比：<strong className="text-blue-800">20-30%</strong></span>
+                   <div className="flex items-center text-sm text-gray-600">
+                    <Users className="w-4 h-4 mr-2 text-gray-400" />
+                    <span>人工决策：<strong className="text-gray-800">90%+</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <Zap className="w-4 h-4 mr-2 text-blue-400" />
-                    <span>系统作用：<strong className="text-blue-800">核心判定</strong></span>
+                    <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
+                    <span>系统通过：<strong className="text-gray-800">90%+</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <BarChart3 className="w-4 h-4 mr-2 text-blue-400" />
-                    <span>效率：<strong className="text-blue-800">中高</strong></span>
+                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
+                    <span>系统拒绝：<strong className="text-gray-800">0%（排除流水不足）</strong></span>
                   </div>
                 </div>
               </div>
@@ -102,16 +102,16 @@ export const FKSystemOverview = () => {
                 <p className="text-gray-600 mb-4">系统为绝对，且大部分订单直接系统做决策，人做决策的比例要大大降低</p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
-                    <Users className="w-4 h-4 mr-2 text-green-400" />
-                    <span>人工决策占比：<strong className="text-green-800">＜5%</strong></span>
+                    <Users className="w-4 h-4 mr-2 text-gray-400" />
+                    <span>人工决策：<strong className="text-gray-800">90%+</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <Zap className="w-4 h-4 mr-2 text-green-400" />
-                    <span>系统作用：<strong className="text-green-800">完全自主</strong></span>
+                    <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
+                    <span>系统通过：<strong className="text-gray-800">90%+</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <BarChart3 className="w-4 h-4 mr-2 text-green-400" />
-                    <span>效率：<strong className="text-green-800">极高</strong></span>
+                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
+                    <span>系统拒绝：<strong className="text-gray-800">0%（排除流水不足）</strong></span>
                   </div>
                 </div>
               </div>
