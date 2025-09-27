@@ -1,31 +1,31 @@
 import React from 'react';
-import { Calendar, AlertTriangle, Target, CheckCircle, Clock, Users } from 'lucide-react';
+import { Calendar, AlertTriangle, Target, CheckCircle, Clock, Users, Shield, Award, BarChart3 } from 'lucide-react';
 
 export const FKTransformationRhythm = () => {
   const progressSchedule = [
     {
-      time: "Q1 2025",
+      time: "Q1",
       stage: "梳理规划",
       work: "对业务和组织现状进行梳理，识别问题并制定针对性解决策略",
       result: "已完成",
       status: "completed"
     },
     {
-      time: "Q2 2025", 
+      time: "Q2", 
       stage: "逐步落地",
       work: "推动技术及相关业务协同，进行系统改造、流程优化、标准对齐",
       result: "已完成",
       status: "completed"
     },
     {
-      time: "Q3 2025",
+      time: "Q3",
       stage: "试点验证", 
       work: "选择核心业务场景进行小范围试点，验证新机制的有效性和可行性",
       result: "进行中",
       status: "current"
     },
     {
-      time: "Q4 2025",
+      time: "Q4",
       stage: "全面推广",
       work: "完成核心功能的全面部署，实现人工审核向系统审核的根本性转变",
       result: "待开始", 
@@ -50,7 +50,7 @@ export const FKTransformationRhythm = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500 flex-1">
+          <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-red-600 font-bold text-sm">1</span>
@@ -64,7 +64,7 @@ export const FKTransformationRhythm = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500 flex-1">
+          <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-red-600 font-bold text-sm">2</span>
@@ -78,7 +78,7 @@ export const FKTransformationRhythm = () => {
             </div>
           </div>
      
-          <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500 flex-1">
+          <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-red-600 font-bold text-sm">3</span>
@@ -93,6 +93,115 @@ export const FKTransformationRhythm = () => {
           </div>
         </div>
       </div>
+
+      {/* 核心目标 */}
+      <div className="mb-8">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <Target className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">核心目标</h2>
+        </div>
+
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 mb-8">
+          <div className="text-center mb-8">
+            <p className="text-gray-700 text-lg leading-relaxed mb-4">
+              构建以系统为核心、人工为辅助的智能FK防护体系，实现全流程自动化风险识别与控制
+            </p>
+            <div className="bg-white/80 rounded-xl p-6 inline-block">
+              <p className="text-gray-800 text-lg leading-relaxed">
+                在FK中，<span className="font-bold text-red-600">"人"是所有问题的根源</span>。长期目标是不依赖"人"，压缩人的操作比重与空间，由系统自动完成大部分判定，覆盖策略、流程、内控与预警。当人的执行结果与系统偏差超出预设范围时，会触发内控二次审核，提升FK质量与稳定性，构建高效可靠的防护体系，使违规者成本与风险极高、几乎无操作空间。
+              </p>
+            </div>
+          </div>
+
+          {/* 人与系统关系演进 */}
+          <div className="mt-8">
+            <h4 className="text-xl font-bold text-gray-800 mb-6 text-center">人与系统关系演进</h4>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* 1.0阶段 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-gray-400">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <Clock className="w-6 h-6 text-gray-600" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-800">1.0阶段 过去状态</h4>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
+                <div className="space-y-2">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Users className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-2xl font-bold">人工决策：<strong className="text-gray-800 text-3xl">90%+</strong></span>
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-2xl font-bold">系统通过：<strong className="text-gray-800 text-3xl">90%+</strong></span>
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-2xl font-bold">系统拒绝：<strong className="text-gray-800 text-3xl">0%（排除流水）</strong></span>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2.0阶段 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Shield className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-800">2.0阶段 当前目标</h4>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
+                <div className="space-y-2">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Users className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-2xl font-bold">人工决策：<strong className="text-gray-800 text-3xl">50%</strong></span>
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-2xl font-bold">系统通过：<strong className="text-gray-800 text-3xl">70%</strong></span>
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-2xl font-bold">系统拒绝：<strong className="text-gray-800 text-3xl">30%</strong></span>
+                  </div>
+                </div>
+              </div>
+
+              {/* 3.0阶段 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <Award className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-800">3.0阶段 理想状态</h4>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
+                <div className="space-y-2">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Users className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-2xl font-bold">人工决策：<strong className="text-gray-800 text-3xl">10%</strong></span>
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-2xl font-bold">系统通过：<strong className="text-gray-800 text-3xl">40%</strong></span>
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-2xl font-bold">系统拒绝：<strong className="text-gray-800 text-3xl">60%</strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       {/* 困难挑战 */}
       <div className="mb-8">    
@@ -147,7 +256,6 @@ export const FKTransformationRhythm = () => {
         </div>
       </div>
 
-    
       {/* 落地策略 - 横向里程碑样式 */}
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
         <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6">
@@ -174,12 +282,12 @@ export const FKTransformationRhythm = () => {
                     'bg-gray-300 border-gray-300'
                   }`}>
                     <span className={`text-white font-bold ${item.status === 'current' ? 'text-lg' : 'text-sm'}`}>
-                      {item.time.split(' ')[0]}
+                      {item.time}
                     </span>
                   </div>
                   
                   {/* 内容卡片 */}
-                  <div className={`bg-white rounded-lg p-4 shadow-sm border border-gray-200 ${
+                  <div className={`bg-white rounded-lg p-4 shadow-sm border border-gray-200 text-center ${
                     item.status === 'current' ? 'bg-blue-50 border-blue-300 shadow-2xl ring-4 ring-blue-200 transform scale-105' : ''
                   }`}>
                     <div className="mb-2">
@@ -207,114 +315,4 @@ export const FKTransformationRhythm = () => {
       </div>
     </div>
   );
-      {/* 核心目标 */}
-      <div className="mb-8">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-            <Target className="w-5 h-5 text-white" />
-          </div>
-          <h2 className="text-3xl font-bold text-gray-800">核心目标</h2>
-        </div>
-
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 mb-8">
-          <div className="text-center mb-8">
-            <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              构建以系统为核心、人工为辅助的智能FK防护体系，实现全流程自动化风险识别与控制
-            </p>
-            <div className="bg-white/80 rounded-xl p-6 inline-block">
-              <p className="text-gray-800 text-lg leading-relaxed">
-                在FK中，<span className="font-bold text-red-600">"人"是所有问题的根源</span>。长期目标是不依赖"人"，压缩人的操作比重与空间，由系统自动完成大部分判定，覆盖策略、流程、内控与预警。当人的执行结果与系统偏差超出预设范围时，会触发内控二次审核，提升FK质量与稳定性，构建高效可靠的防护体系，使违规者成本与风险极高、几乎无操作空间。
-              </p>
-            </div>
-          </div>
-
-          {/* 人与系统关系演进 */}
-          <div className="mt-8">
-            <h4 className="text-xl font-bold text-gray-800 mb-6 text-center">人与系统关系演进</h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* 1.0阶段 */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-gray-400">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                    <Clock className="w-6 h-6 text-gray-600" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-800">1.0阶段 过去状态</h4>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
-                <div className="space-y-2">
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Users className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-xl">人工决策：<strong className="text-gray-800 text-2xl">90%+</strong></span>
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-xl">系统通过：<strong className="text-gray-800 text-2xl">90%+</strong></span>
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-xl">系统拒绝：<strong className="text-gray-800 text-2xl">0%（排除流水）</strong></span>
-                  </div>
-                </div>
-              </div>
-
-              {/* 2.0阶段 */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-blue-500">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-800">2.0阶段 当前目标</h4>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
-                <div className="space-y-2">
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Users className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-xl">人工决策：<strong className="text-gray-800 text-2xl">50%</strong></span>
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-xl">系统通过：<strong className="text-gray-800 text-2xl">70%</strong></span>
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-xl">系统拒绝：<strong className="text-gray-800 text-2xl">30%</strong></span>
-                  </div>
-                </div>
-              </div>
-
-              {/* 3.0阶段 */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-green-500">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Award className="w-6 h-6 text-green-600" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-800">3.0阶段 理想状态</h4>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
-                <div className="space-y-2">
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Users className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-xl">人工决策：<strong className="text-gray-800 text-2xl">10%</strong></span>
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-xl">系统通过：<strong className="text-gray-800 text-2xl">40%</strong></span>
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-xl">系统拒绝：<strong className="text-gray-800 text-2xl">60%</strong></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
 };
