@@ -250,13 +250,15 @@ export const FKSystemOverview = () => {
                   </div>
                   <div>
                     <h4 className="text-2xl font-bold text-gray-800">玩家风险防控</h4>
-                    <div className="flex items-center space-x-6">
-                      <span className="text-gray-600">完善度: 85%</span>
-                      <div className="flex items-center">
-                        <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
-                        <span className="text-sm text-green-600 font-medium">+12%</span>
-                      </div>
-                    </div>
+                    <p className="text-gray-600">全面监控玩家行为，防范异常操作与套利行为</p>
+                  </div>
+                </div>
+                <div className="text-right">
+                  <div className="text-3xl font-bold text-blue-600">85%</div>
+                  <div className="text-sm text-gray-500">完善度</div>
+                  <div className="flex items-center justify-end mt-2">
+                    <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
+                    <span className="text-sm text-green-600 font-medium">+12%</span>
                   </div>
                 </div>
               </div>
@@ -426,7 +428,6 @@ export const FKSystemOverview = () => {
                     <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>
                     关联网络分析
                   </h5>
-                  <p className="text-purple-700 text-sm mb-4">网络分析 · 关联风险</p>
                   
                   <div className="space-y-4">
                     <div className="bg-purple-50 rounded-lg p-4">
