@@ -38,7 +38,7 @@ const navigationItems: NavigationItem[] = [
   },
   {
     id: 'summary',
-    title: '3. 风控工作总结',
+    title: '3. FK工作总结',
     icon: <FileText className="w-4 h-4" />,
     children: [
       { id: 'business-overview', title: '3.0 业务方向及提升策略概览' },
