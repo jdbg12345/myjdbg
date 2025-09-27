@@ -112,7 +112,7 @@ function App() {
           <FKSystemOverview />
         </div>
         
-        {/* 3.3 试点成果说明 */}
+        {/* 3.3 FK试点成果 */}
         <div data-section="pilot-results">
           <PilotResults />
         </div>
