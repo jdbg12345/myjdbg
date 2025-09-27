@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavigationSidebar } from './components/shared/NavigationSidebar';
 import { CoverPage } from './components/CoverPage';
 import { TableOfContents } from './components/TableOfContents';
 import { OrganizationalStructure } from './components/OrganizationalStructure';
@@ -32,6 +33,7 @@ import { RiskReview } from './components/RiskReview';
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      <NavigationSidebar />
       <div className="max-w-7xl mx-auto p-5">
         <CoverPage />
         <TableOfContents />

@@ -3,11 +3,13 @@ import React from 'react';
 export const Direction5ExtremeAnomalyPrevention = () => {
   return (
     <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-      <div className="flex items-center space-x-3 mb-8">
-        <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-          <span className="text-white font-bold text-sm">方向5</span>
+      <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center space-x-3">
+          <div className="w-16 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+            <span className="text-white font-bold text-sm">方向5</span>
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">一些极端异常的预防机制</h2>
         </div>
-        <h2 className="text-3xl font-bold text-gray-800">方向5：一些极端异常的预防机制</h2>
       </div>
       <p className="text-gray-700 mb-8 leading-relaxed">
         <span className="font-semibold">流程缺陷及策略局限导致异常资金风险</span>，针对场馆多钱、沉睡用户等极端情况建立预警和防御策略，确保资金安全。
@@ -17,14 +19,14 @@ export const Direction5ExtremeAnomalyPrevention = () => {
       <div className="mb-12">
         {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">钱</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">中心钱包多钱</h4>
-            <div className="flex items-center space-x-2">
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
+              <h4 className="text-xl font-bold text-gray-800">中心钱包多钱</h4>
             </div>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -57,14 +59,14 @@ export const Direction5ExtremeAnomalyPrevention = () => {
       <div className="mb-12">
         {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">场</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">场馆钱包多钱</h4>
-            <div className="flex items-center space-x-2">
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
+              <h4 className="text-xl font-bold text-gray-800">场馆钱包多钱</h4>
             </div>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -97,14 +99,14 @@ export const Direction5ExtremeAnomalyPrevention = () => {
       <div className="mb-12">
         {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">场</span>
+              <span className="text-white font-bold text-sm">盈</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">盈利监控预警</h4>
-            <div className="flex items-center space-x-2">
+              <h4 className="text-xl font-bold text-gray-800">盈利监控预警</h4>
+            </div>
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
-            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -137,14 +139,14 @@ export const Direction5ExtremeAnomalyPrevention = () => {
       <div className="mb-8">
         {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">睡</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">沉睡用户活跃</h4>
-            <div className="flex items-center space-x-2">
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
+              <h4 className="text-xl font-bold text-gray-800">沉睡用户活跃</h4>
             </div>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">

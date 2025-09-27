@@ -3,11 +3,13 @@ import React from 'react';
 export const Direction3SystemStrategies = () => {
   return (
     <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-      <div className="flex items-center space-x-3 mb-8">
-        <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-          <span className="text-white font-bold text-sm">方向3</span>
+      <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center space-x-3">
+          <div className="w-16 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+            <span className="text-white font-bold text-sm">方向3</span>
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">系统审核策略的维度缺失</h2>
         </div>
-        <h2 className="text-3xl font-bold text-gray-800">方向3：系统审核策略的维度缺失</h2>
       </div>
       <p className="text-gray-700 mb-8 leading-relaxed">
         目前系统的策略主要集中在防御型，而非套利及作弊识别类型，导致直接出款错误，以及转人工后缺乏强有力的风险提醒。
@@ -15,12 +17,7 @@ export const Direction3SystemStrategies = () => {
 
       {/* 风控套利理解概览 */}
       <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">概</span>
-          </div>
-          <h3 className="text-2xl font-bold text-gray-800">风控套利理解概览</h3>
-        </div>
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">风控套利理解概览</h3>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="bg-white rounded-lg p-6 border-l-4 border-blue-600">
@@ -59,14 +56,14 @@ export const Direction3SystemStrategies = () => {
       <div className="mb-12">
         {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">电</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">电子策略</h4>
-            <div className="flex items-center space-x-2">
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+              <h4 className="text-xl font-bold text-gray-800">电子策略</h4>
             </div>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -167,14 +164,14 @@ export const Direction3SystemStrategies = () => {
       <div className="mb-12">
         {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">真</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">真人策略</h4>
-            <div className="flex items-center space-x-2">
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+              <h4 className="text-xl font-bold text-gray-800">真人策略</h4>
             </div>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -275,14 +272,14 @@ export const Direction3SystemStrategies = () => {
       <div className="mb-12">
         {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">体</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">体育策略</h4>
-            <div className="flex items-center space-x-2">
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+              <h4 className="text-xl font-bold text-gray-800">体育策略</h4>
             </div>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -379,58 +376,18 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
 
-      {/* 彩票策略 */}
+      {/* 棋牌策略 */}
       <div className="mb-12">
         {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">彩</span>
-            </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">彩票策略</h4>
-            <div className="flex items-center space-x-2">
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-              <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">彩票全包和异常投注模式缺乏有效拦截，无法识别彩票游戏中的套利行为</p>
-            </div>
-            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">建立彩票游戏异常投注识别机制，重点监控全包和套利行为</p>
-            </div>
-            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-              <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">彩票套利策略问题率25%，有效识别全包行为，显著提升彩票游戏风控水平</p>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      {/* 棋牌策略 */}
-      <div className="mb-12">
-        {/* 整合的内容和图表模块 */}
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">棋</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">棋牌策略</h4>
-            <div className="flex items-center space-x-2">
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+              <h4 className="text-xl font-bold text-gray-800">棋牌策略</h4>
             </div>
+            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -528,18 +485,18 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
 
-      {/* 套利兜底组合策略 */}
-      <div className="mb-8">
-        {/* 整合的内容和图表模块 */}
+      {/* 彩票策略 */}
+      <div className="mb-12">
+        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">套</span>
+              <span className="text-white font-bold text-sm">彩</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 flex-1">套利兜底组合策略</h4>
-            <div className="flex items-center space-x-2">
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+              <h4 className="text-xl font-bold text-gray-800">彩票策略</h4>
             </div>
+            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -547,21 +504,60 @@ export const Direction3SystemStrategies = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">体育打水和对冲套利行为监控薄弱，无法有效识别跨平台套利和异常投注行为</p>
+              <p className="text-gray-700 text-sm leading-relaxed">彩票全包和异常投注模式缺乏有效拦截，无法识别彩票游戏中的套利行为</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                 策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">建立体育投注异常行为识别机制，重点监控打水和对冲套利行为</p>
+              <p className="text-gray-700 text-sm leading-relaxed">建立彩票游戏异常投注识别机制，重点监控全包和套利行为</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                 收益
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">体育套利策略覆盖面广，问题率22.1%，有效拦截体育投注中的套利行为</p>
+              <p className="text-gray-700 text-sm leading-relaxed">彩票套利策略问题率25%，有效识别全包行为，显著提升彩票游戏风控水平</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 套利兜底组合策略 */}
+      <div className="mb-8">
+        {/* 整合的内容和图表模块 */}
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">套</span>
+            </div>
+              <h4 className="text-xl font-bold text-gray-800">套利兜底组合策略</h4>
+            </div>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                问题
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">单一策略无法覆盖所有套利手法，需要多特征组合进行兜底判定</p>
+            </div>
+            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                策略
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">建立多特征组合兜底机制，通过综合分析进行套利识别</p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                收益
+              </h4>
+              <p className="text-gray-700 text-sm leading-relaxed">套利兜底策略问题率22.1%，作为最后防线有效拦截漏网套利行为</p>
             </div>
           </div>
         
