@@ -168,7 +168,7 @@ export const NavigationSidebar = () => {
           <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
             <FileText className="w-5 h-5 text-white" />
           </div>
-          <h3 className="text-lg font-bold text-gray-800">目录导航</h3>
+          <h3 className="text-lg font-bold text-gray-800">目录</h3>
         </div>
         
         <div className="space-y-2">
