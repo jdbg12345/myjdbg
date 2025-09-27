@@ -90,9 +90,6 @@ export const FKTransformationRhythm = () => {
         </div>
       </div>
 
-      {/* 当前状态 */}
-      <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 mb-8 border-l-4 border-green-500">
-      
 
       {/* 项目时间轴 */}
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
