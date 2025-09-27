@@ -1,7 +1,5 @@
 import React from 'react';
 import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } from 'lucide-react';
-import { SystemTransformationRhythm } from './SystemTransformationRhythm';
-import { PilotResultsPresentation } from './PilotResultsPresentation';
 
 export const BusinessOverview2 = () => {
   return (
