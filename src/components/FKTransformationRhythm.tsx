@@ -92,29 +92,7 @@ export const FKTransformationRhythm = () => {
 
       {/* 当前状态 */}
       <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 mb-8 border-l-4 border-green-500">
-        <div className="flex items-start space-x-4">
-          <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-            <CheckCircle className="w-6 h-6 text-green-600" />
-          </div>
-          <div className="flex-1">
-            <h3 className="text-xl font-bold text-green-800 mb-3">当前状态</h3>
-            <p className="text-green-700 mb-4">
-              当前项目进展顺利，各项指标均在预期范围内。试点验证阶段的关键功能已部署完成，
-              正在收集用户反馈和性能数据，为Q4全面推广做准备。
-            </p>
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-green-600 font-medium">整体进度</span>
-                <span className="font-bold text-green-800 text-lg">75%</span>
-              </div>
-              <div className="w-full bg-green-200 rounded-full h-3">
-                <div className="bg-gradient-to-r from-green-500 to-emerald-500 h-3 rounded-full transition-all duration-300" style={{width: '75%'}}></div>
-              </div>
-              <div className="text-sm text-green-600">Q3试点验证阶段 - 按计划推进</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       {/* 项目时间轴 */}
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
