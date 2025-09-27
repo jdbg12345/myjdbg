@@ -41,16 +41,41 @@ export const FKTransformationRhythm = () => {
       </div>
 
       {/* 困难挑战 */}
-      <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 mb-8 border-l-4 border-amber-500">
-        <div className="flex items-start space-x-4">
-          <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-            <AlertTriangle className="w-6 h-6 text-amber-600" />
+      <div className="mb-8">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-amber-500 rounded-lg flex items-center justify-center">
+            <AlertTriangle className="w-5 h-5 text-white" />
           </div>
-          <div className="flex-1">
-            <h3 className="text-xl font-bold text-amber-800 mb-3">困难挑战</h3>
-            <p className="text-amber-700 leading-relaxed">
-              FK变革横跨多个部门与利益相关方，任何策略或流程调整都可能影响会员体验、代理收益与业务稳定性；而核心流程的系统升级则对既有架构提出了巨大的挑战。
-            </p>
+          <h3 className="text-2xl font-bold text-gray-800">困难挑战</h3>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-amber-600 font-bold text-sm">1</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-amber-800 mb-3">多部门协调挑战</h4>
+                <p className="text-amber-700 leading-relaxed">
+                  FK变革横跨多个部门与利益相关方，任何策略或流程调整都可能影响会员体验、代理收益与业务稳定性
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-amber-600 font-bold text-sm">2</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-amber-800 mb-3">系统架构挑战</h4>
+                <p className="text-amber-700 leading-relaxed">
+                  核心流程的系统升级则对既有架构提出了巨大的挑战
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -71,7 +96,7 @@ export const FKTransformationRhythm = () => {
       </div>
 
 
-      {/* 项目时间轴 */}
+      {/* 项目时间轴 - 横向里程碑样式 */}
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
         <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6">
           <div className="flex items-center space-x-3">
@@ -80,40 +105,48 @@ export const FKTransformationRhythm = () => {
           </div>
         </div>
         
-        <div className="p-6">
-          <div className="space-y-6">
-            {progressSchedule.map((item, index) => (
-              <div key={index} className={`relative pl-8 ${item.status === 'current' ? 'bg-blue-50 rounded-lg p-4 -ml-4' : ''}`}>
-                {/* 时间轴点 */}
-                <div className={`absolute left-0 top-2 w-4 h-4 rounded-full border-2 ${
-                  item.status === 'completed' ? 'bg-green-500 border-green-500' :
-                  item.status === 'current' ? 'bg-blue-500 border-blue-500 animate-pulse' :
-                  'bg-gray-300 border-gray-300'
-                }`}></div>
-                
-                {/* 时间轴线 */}
-                {index < progressSchedule.length - 1 && (
-                  <div className="absolute left-1.5 top-6 w-0.5 h-16 bg-gray-200"></div>
-                )}
-                
-                <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
-                  <div className="flex items-center justify-between mb-2">
-                    <h4 className="text-lg font-semibold text-gray-800">{item.time} - {item.stage}</h4>
-                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                      item.status === 'completed' ? 'bg-green-100 text-green-800' :
-                      item.status === 'current' ? 'bg-blue-100 text-blue-800' :
-                      'bg-gray-100 text-gray-600'
-                    }`}>
-                      {item.result}
-                    </span>
+        <div className="p-8">
+          {/* 横向时间轴 */}
+          <div className="relative">
+            {/* 时间轴线 */}
+            <div className="absolute top-8 left-0 right-0 h-1 bg-gray-200"></div>
+            
+            {/* 里程碑节点 */}
+            <div className="grid grid-cols-4 gap-4 relative">
+              {progressSchedule.map((item, index) => (
+                <div key={index} className="relative">
+                  {/* 节点圆圈 */}
+                  <div className={`w-16 h-16 rounded-full border-4 flex items-center justify-center mx-auto mb-4 ${
+                    item.status === 'completed' ? 'bg-green-500 border-green-500' :
+                    item.status === 'current' ? 'bg-blue-500 border-blue-500 animate-pulse' :
+                    'bg-gray-300 border-gray-300'
+                  }`}>
+                    <span className="text-white font-bold text-sm">{index + 1}</span>
                   </div>
-                  <p className="text-gray-600">{item.work}</p>
-                  {item.status === 'current' && (
-                    <div className="mt-2 text-sm text-blue-700 font-medium">当前阶段 - 在预期范围内</div>
-                  )}
+                  
+                  {/* 内容卡片 */}
+                  <div className={`bg-white rounded-lg p-4 shadow-sm border border-gray-200 ${
+                    item.status === 'current' ? 'bg-blue-50 border-blue-300' : ''
+                  }`}>
+                    <div className="text-center mb-2">
+                      <h5 className="font-semibold text-gray-800 text-sm">{item.time}</h5>
+                      <h6 className="font-bold text-gray-800">{item.stage}</h6>
+                      <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                        item.status === 'completed' ? 'bg-green-100 text-green-800' :
+                        item.status === 'current' ? 'bg-blue-100 text-blue-800' :
+                        'bg-gray-100 text-gray-600'
+                      }`}>
+                        {item.result}
+                      </span>
+                    </div>
+                    <p className="text-gray-600 text-sm">{item.work}</p>
+                    {item.status === 'current' && (
+                      <div className="mt-2 text-xs text-blue-700 font-medium">当前阶段 - 在预期范围内</div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
