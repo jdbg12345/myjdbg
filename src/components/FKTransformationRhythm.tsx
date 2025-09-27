@@ -37,7 +37,7 @@ export const FKTransformationRhythm = () => {
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.1 FKZX-FK变革节奏</h1>
+        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.1 FK变革进度</h1>
       </div>
 
       {/* 困难挑战 */}
@@ -124,7 +124,7 @@ export const FKTransformationRhythm = () => {
                   <div className={`w-16 h-16 rounded-full border-4 flex items-center justify-center mx-auto mb-4 ${
                     item.status === 'completed' ? 'bg-green-500 border-green-500' :
                     item.status === 'current' ? 'bg-blue-500 border-blue-500 shadow-lg ring-4 ring-blue-200' :
-                      <div className="bg-white rounded-lg p-6 border-l-4 border-gray-500 flex-1 max-w-md">
+                    'bg-gray-300 border-gray-300'
                   }`}>
                     <span className="text-white font-bold text-sm">{index + 1}</span>
                   </div>
@@ -133,11 +133,7 @@ export const FKTransformationRhythm = () => {
                   <div className={`bg-white rounded-lg p-4 shadow-sm border border-gray-200 ${
                     item.status === 'current' ? 'bg-blue-50 border-blue-300 shadow-lg ring-2 ring-blue-200 font-bold' : ''
                   }`}>
-                        <div className="w-12 h-12 text-blue-600 flex items-center justify-center">
-                          <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </div>
+                    <div className="mb-2">
                       <h5 className={`font-semibold text-sm ${item.status === 'current' ? 'text-blue-700 font-bold' : 'text-gray-800'}`}>{item.time}</h5>
                       <h6 className={`font-bold ${item.status === 'current' ? 'text-blue-800 text-lg' : 'text-gray-800'}`}>{item.stage}</h6>
                       <span className={`px-2 py-1 rounded-full text-xs font-medium ${
