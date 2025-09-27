@@ -70,10 +70,7 @@ export const FKTransformationRhythm = () => {
               </div>
             </div>
           </div>
-          
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500 flex-1">
-           
-          </div>
+     
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500 flex-1">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
