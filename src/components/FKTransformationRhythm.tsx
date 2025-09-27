@@ -62,7 +62,7 @@ export const FKTransformationRhythm = () => {
             <Target className="w-6 h-6 text-blue-600" />
           </div>
           <div className="flex-1">
-            <h3 className="text-xl font-bold text-blue-800 mb-3">变革原则</h3>
+            <h3 className="text-xl font-bold text-blue-800 mb-3">落地策略</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-3">
                 <div className="flex items-start">
