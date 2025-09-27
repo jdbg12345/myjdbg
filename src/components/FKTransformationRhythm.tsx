@@ -49,7 +49,7 @@ export const FKTransformationRhythm = () => {
                 <span className="text-amber-600 font-bold text-sm">1</span>
               </div>
               <div className="flex-1">
-                <h4 className="text-lg font-bold text-amber-800 mb-3">多部门协调挑战</h4>
+                <h4 className="text-lg font-bold text-amber-800 mb-3">影响面大挑战</h4>
                 <p className="text-amber-700 leading-relaxed">
                   FK变革横跨多个部门与利益相关方，任何策略或流程调整都可能影响会员体验、代理收益与业务稳定性
                 </p>
@@ -63,7 +63,7 @@ export const FKTransformationRhythm = () => {
                 <span className="text-amber-600 font-bold text-sm">2</span>
               </div>
               <div className="flex-1">
-                <h4 className="text-lg font-bold text-amber-800 mb-3">系统架构挑战</h4>
+                <h4 className="text-lg font-bold text-amber-800 mb-3">系统研发挑战</h4>
                 <p className="text-amber-700 leading-relaxed">
                   核心流程的系统升级则对既有架构提出了巨大的挑战
                 </p>
@@ -77,7 +77,7 @@ export const FKTransformationRhythm = () => {
                 <span className="text-amber-600 font-bold text-sm">3</span>
               </div>
               <div className="flex-1">
-                <h4 className="text-lg font-bold text-amber-800 mb-3">人员基础能力较差</h4>
+                <h4 className="text-lg font-bold text-amber-800 mb-3">人能力差挑战</h4>
                 <p className="text-amber-700 leading-relaxed">
                   人员基础能力较差
                 </p>
