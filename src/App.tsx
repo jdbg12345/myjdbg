@@ -36,10 +36,10 @@ function App() {
         <CoverPage />
         <TableOfContents />
         
-        {/* 1. 风控组织架构 */}
+        {/* 1. FK组织情况 */}
         <OrganizationalStructure />
         
-        {/* 2. 风控整体数据 */}
+        {/* 2. FK数据情况 */}
         <OverallData />
         
         {/* 2.1 第三季度防范单量与金额 */}
@@ -72,7 +72,7 @@ function App() {
         {/* 2.9 飞机数据 */}
         <AirplaneData />
         
-        {/* 3. 风控工作总结 */}
+        {/* 3. FK工作总结 */}
         {/* 3.0 业务方向及提升策略概览 */}
         <BusinessOverview />
         {/* 3.1 审核组 */}
