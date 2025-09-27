@@ -42,6 +42,7 @@ export const FKSystemOverview = () => {
                     <h4 className="text-xl font-bold text-gray-800">1.0阶段 过去状态</h4>
                   </div>
                 </div>
+                <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
                     <Users className="w-4 h-4 mr-2 text-gray-400" />
@@ -68,6 +69,7 @@ export const FKSystemOverview = () => {
                     <h4 className="text-xl font-bold text-gray-800">2.0阶段 当前目标</h4>
                   </div>
                 </div>
+                <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
                 <div className="space-y-2">
                    <div className="flex items-center text-sm text-gray-600">
                     <Users className="w-4 h-4 mr-2 text-gray-400" />
