@@ -11,7 +11,7 @@ interface NavigationItem {
 const navigationItems: NavigationItem[] = [
   {
     id: 'cover',
-    title: '封面',
+    title: 'FKZX Q3 Report',
     icon: <FileText className="w-4 h-4" />
   },
   {
