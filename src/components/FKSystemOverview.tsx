@@ -82,12 +82,7 @@ export const FKSystemOverview = () => {
                     <span>效率：<strong className="text-blue-800">中高</strong></span>
                   </div>
                 </div>
-                <div className="mt-4">
-                  <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-700">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></div>
-                    正在实现
-                  </div>
-                </div>
+            
               </div>
 
               {/* 3.0阶段 */}
@@ -114,12 +109,7 @@ export const FKSystemOverview = () => {
                     <span>效率：<strong className="text-green-800">极高</strong></span>
                   </div>
                 </div>
-                <div className="mt-4">
-                  <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">
-                    <CheckCircle className="w-4 h-4 mr-1" />
-                    未来目标
-                  </div>
-                </div>
+             
               </div>
             </div>
           </div>
