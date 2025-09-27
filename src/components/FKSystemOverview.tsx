@@ -139,10 +139,10 @@ export const FKSystemOverview = () => {
                   { id: 1, x: 120, y: 120, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
                   { id: 2, x: 320, y: 120, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
                   { id: 3, x: 520, y: 120, name: "AI智能审核", desc: "多维度风险实时检测", color: "#10b981" },
-                  { id: 4, x: 720, y: 120, name: "自动放行", desc: "即时到账", color: "#10b981" },
-                  { id: 5, x: 920, y: 280, name: "人工复审", desc: "专业FK二次审核", color: "#f97316" },
-                  { id: 6, x: 1120, y: 280, name: "系统监控", desc: "持续监控", color: "#3b82f6" },
-                  { id: 7, x: 1320, y: 280, name: "内控复审", desc: "最终审核", color: "#ef4444" }
+                  { id: 4, x: 1320, y: 120, name: "自动放行", desc: "即时到账", color: "#10b981" },
+                  { id: 5, x: 720, y: 280, name: "人工复审", desc: "专业FK二次审核", color: "#f97316" },
+                  { id: 6, x: 920, y: 280, name: "系统监控", desc: "持续监控", color: "#3b82f6" },
+                  { id: 7, x: 1120, y: 280, name: "内控复审", desc: "最终审核", color: "#ef4444" }
                 ].map((node) => (
                   <g key={node.id}>
                     <circle cx={node.x} cy={node.y} r="35" fill={node.color} stroke="white" strokeWidth="4" />
