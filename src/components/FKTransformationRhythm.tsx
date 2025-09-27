@@ -140,9 +140,6 @@ export const FKTransformationRhythm = () => {
                       </span>
                     </div>
                     <p className="text-gray-600 text-sm">{item.work}</p>
-                    {item.status === 'current' && (
-                      <div className="mt-2 text-xs text-blue-700 font-medium">当前阶段 - 在预期范围内</div>
-                    )}
                   </div>
                 </div>
               ))}
