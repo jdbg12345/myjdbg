@@ -101,7 +101,7 @@ function App() {
         </div>
         
         {/* 3. FK工作总结 */}
-        {/* 3.0 业务方向及提升策略概览 */}
+        {/* 3.0 FK变革节奏 */}
         <div data-section="business-overview">
           <BusinessOverview />
         </div>
