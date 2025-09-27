@@ -46,15 +46,15 @@ export const FKSystemOverview = () => {
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
                     <Users className="w-4 h-4 mr-2 text-gray-400" />
-                    <span>人工决策：<strong className="text-gray-800">90%+</strong></span>
+                    <span className="text-lg">人工决策：<strong className="text-gray-800 text-xl">90%+</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
-                    <span>系统通过：<strong className="text-gray-800">90%+</strong></span>
+                    <span className="text-lg">系统通过：<strong className="text-gray-800 text-xl">90%+</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
                     <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
-                    <span>系统拒绝：<strong className="text-gray-800">0%（排除流水不足）</strong></span>
+                    <span className="text-lg">系统拒绝：<strong className="text-gray-800 text-xl">0%（排除流水不足）</strong></span>
                   </div>
                 </div>
               </div>
@@ -71,17 +71,17 @@ export const FKSystemOverview = () => {
                 </div>
                 <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
                 <div className="space-y-2">
-                   <div className="flex items-center text-sm text-gray-600">
+                  <div className="flex items-center text-sm text-gray-600">
                     <Users className="w-4 h-4 mr-2 text-gray-400" />
-                    <span>人工决策：<strong className="text-gray-800">90%+</strong></span>
+                    <span className="text-lg">人工决策：<strong className="text-gray-800 text-xl">50%</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
-                    <span>系统通过：<strong className="text-gray-800">90%+</strong></span>
+                    <span className="text-lg">系统通过：<strong className="text-gray-800 text-xl">70%</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
                     <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
-                    <span>系统拒绝：<strong className="text-gray-800">0%（排除流水不足）</strong></span>
+                    <span className="text-lg">系统拒绝：<strong className="text-gray-800 text-xl">30%</strong></span>
                   </div>
                 </div>
               </div>
@@ -100,30 +100,29 @@ export const FKSystemOverview = () => {
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
                     <Users className="w-4 h-4 mr-2 text-gray-400" />
-                    <span>人工决策：<strong className="text-gray-800">90%+</strong></span>
+                    <span className="text-lg">人工决策：<strong className="text-gray-800 text-xl">10%</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                      <span className="text-lg">系统通过：<strong className="text-gray-800 text-xl">40%</strong></span>
-                    <span>系统通过：<strong className="text-gray-800">90%+</strong></span>
+                    <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-lg">系统通过：<strong className="text-gray-800 text-xl">40%</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                      <span className="text-lg">系统拒绝：<strong className="text-gray-800 text-xl">60%</strong></span>
-                    <span>系统拒绝：<strong className="text-gray-800">0%（排除流水不足）</strong></span>
+                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
+                    <span className="text-lg">系统拒绝：<strong className="text-gray-800 text-xl">60%</strong></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
         {/* 2.2 FK流程变化 */}
         <div className="mb-16">
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
+          <div className="bg-white rounded-lg p-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.2</div>
-            <h3 className="text-2xl font-bold text-gray-800">FK流程变化</h3>
-          </div>
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.2</div>
+              <h3 className="text-2xl font-bold text-gray-800">FK流程变化</h3>
+            </div>
           </div>
           
           <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-8 border border-gray-200">
@@ -131,28 +130,28 @@ export const FKSystemOverview = () => {
               <h4 className="text-2xl font-bold text-gray-800">智能FK流程</h4>
             </div>
             
-            {/* SVG流程图 - 7个节点的横向流程 */}
-            <div className="bg-white rounded-lg p-6 mb-6">
-              <svg viewBox="0 0 1200 300" className="w-full h-80">
-                {/* 节点定义 */}
+            {/* SVG流程图 - 放大版本，调整节点位置 */}
+            <div className="bg-white rounded-lg p-8 mb-6">
+              <svg viewBox="0 0 1400 400" className="w-full h-96">
+                {/* 节点定义 - 1-4在上方一条线，5-7在下方 */}
                 {[
-                  { id: 1, x: 100, y: 100, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
-                  { id: 2, x: 250, y: 100, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
-                  { id: 3, x: 400, y: 100, name: "AI智能审核", desc: "多维度风险实时检测", color: "#10b981" },
-                  { id: 4, x: 550, y: 100, name: "自动放行", desc: "即时到账", color: "#10b981" },
-                  { id: 5, x: 350, y: 200, name: "人工复审", desc: "专业FK二次审核", color: "#f97316" },
-                  { id: 6, x: 450, y: 200, name: "系统监控", desc: "持续监控", color: "#3b82f6" },
-                  { id: 7, x: 550, y: 200, name: "内控复审", desc: "最终审核", color: "#ef4444" }
+                  { id: 1, x: 120, y: 120, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
+                  { id: 2, x: 320, y: 120, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
+                  { id: 3, x: 520, y: 120, name: "AI智能审核", desc: "多维度风险实时检测", color: "#10b981" },
+                  { id: 4, x: 720, y: 120, name: "自动放行", desc: "即时到账", color: "#10b981" },
+                  { id: 5, x: 420, y: 280, name: "人工复审", desc: "专业FK二次审核", color: "#f97316" },
+                  { id: 6, x: 520, y: 280, name: "系统监控", desc: "持续监控", color: "#3b82f6" },
+                  { id: 7, x: 620, y: 280, name: "内控复审", desc: "最终审核", color: "#ef4444" }
                 ].map((node) => (
                   <g key={node.id}>
                     {/* 节点圆圈 */}
                     <circle
                       cx={node.x}
                       cy={node.y}
-                      r="30"
+                      r="35"
                       fill={node.color}
                       stroke="white"
-                      strokeWidth="3"
+                      strokeWidth="4"
                     />
                     <text
                       x={node.x}
@@ -160,7 +159,7 @@ export const FKSystemOverview = () => {
                       textAnchor="middle"
                       dominantBaseline="middle"
                       fill="white"
-                      fontSize="14"
+                      fontSize="16"
                       fontWeight="bold"
                     >
                       {node.id}
@@ -169,20 +168,20 @@ export const FKSystemOverview = () => {
                     {/* 节点标签 */}
                     <text
                       x={node.x}
-                      y={node.y + 50}
+                      y={node.y + 60}
                       textAnchor="middle"
                       fill="#374151"
-                      fontSize="12"
+                      fontSize="14"
                       fontWeight="600"
                     >
                       {node.name}
                     </text>
                     <text
                       x={node.x}
-                      y={node.y + 65}
+                      y={node.y + 80}
                       textAnchor="middle"
                       fill="#6b7280"
-                      fontSize="10"
+                      fontSize="12"
                     >
                       {node.desc}
                     </text>
@@ -191,29 +190,29 @@ export const FKSystemOverview = () => {
                 
                 {/* 连接线 */}
                 {/* 1→2 */}
-                <line x1="130" y1="100" x2="220" y2="100" stroke="#6b7280" strokeWidth="2" markerEnd="url(#arrowhead)" />
+                <line x1="155" y1="120" x2="285" y2="120" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
                 
                 {/* 2→3 */}
-                <line x1="280" y1="100" x2="370" y2="100" stroke="#6b7280" strokeWidth="2" markerEnd="url(#arrowhead)" />
+                <line x1="355" y1="120" x2="485" y2="120" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
                 
                 {/* 3→4 (通过) */}
-                <line x1="430" y1="100" x2="520" y2="100" stroke="#10b981" strokeWidth="3" markerEnd="url(#arrowhead-green)" />
-                <text x="475" y="85" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="600">通过</text>
+                <line x1="555" y1="120" x2="685" y2="120" stroke="#10b981" strokeWidth="4" markerEnd="url(#arrowhead-green)" />
+                <text x="620" y="100" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="600">通过</text>
                 
                 {/* 3→5 (不通过) */}
-                <line x1="400" y1="130" x2="350" y2="170" stroke="#f97316" strokeWidth="3" markerEnd="url(#arrowhead-orange)" />
-                <text x="375" y="155" textAnchor="middle" fill="#f97316" fontSize="10" fontWeight="600">不通过</text>
+                <line x1="520" y1="155" x2="420" y2="245" stroke="#f97316" strokeWidth="4" markerEnd="url(#arrowhead-orange)" />
+                <text x="470" y="200" textAnchor="middle" fill="#f97316" fontSize="12" fontWeight="600">不通过</text>
                 
                 {/* 5→6 */}
-                <line x1="380" y1="200" x2="420" y2="200" stroke="#6b7280" strokeWidth="2" markerEnd="url(#arrowhead)" />
+                <line x1="455" y1="280" x2="485" y2="280" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
                 
                 {/* 6→4 (监控通过) */}
-                <line x1="480" y1="200" x2="550" y2="130" stroke="#10b981" strokeWidth="2" markerEnd="url(#arrowhead-green)" />
-                <text x="515" y="160" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="600">监控通过</text>
+                <line x1="520" y1="245" x2="720" y2="155" stroke="#10b981" strokeWidth="3" markerEnd="url(#arrowhead-green)" />
+                <text x="620" y="190" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="600">监控通过</text>
                 
                 {/* 6→7 (监控不通过) */}
-                <line x1="480" y1="200" x2="520" y2="200" stroke="#ef4444" strokeWidth="3" markerEnd="url(#arrowhead-red)" />
-                <text x="500" y="185" textAnchor="middle" fill="#ef4444" fontSize="10" fontWeight="600">监控不通过</text>
+                <line x1="555" y1="280" x2="585" y2="280" stroke="#ef4444" strokeWidth="4" markerEnd="url(#arrowhead-red)" />
+                <text x="570" y="260" textAnchor="middle" fill="#ef4444" fontSize="12" fontWeight="600">监控不通过</text>
                 
                 {/* 箭头标记定义 */}
                 <defs>
@@ -252,7 +251,14 @@ export const FKSystemOverview = () => {
                   </div>
                   <div>
                     <h4 className="text-2xl font-bold text-gray-800">玩家风险防控</h4>
-                    <p className="text-gray-600">全面监控玩家行为，防范异常操作与套利行为</p>
+                    <div className="flex items-center space-x-6">
+                      <div className="text-3xl font-bold text-blue-600">85%</div>
+                      <div className="text-sm text-gray-500">完善度</div>
+                      <div className="flex items-center">
+                        <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
+                        <span className="text-sm text-green-600 font-medium">+25%</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -264,7 +270,6 @@ export const FKSystemOverview = () => {
                     <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
                     防御型规则
                   </h5>
-                  <p className="text-blue-700 text-sm mb-4">风险控制 · 防止异常损失</p>
                   
                   <div className="space-y-4">
                     <div className="bg-blue-50 rounded-lg p-4">
@@ -311,7 +316,6 @@ export const FKSystemOverview = () => {
                     <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
                     套利型规则
                   </h5>
-                  <p className="text-green-700 text-sm mb-4">防止套利 · 堵塞系统漏洞</p>
                   
                   <div className="space-y-4">
                     <div className="bg-green-50 rounded-lg p-4">
@@ -339,15 +343,15 @@ export const FKSystemOverview = () => {
                           <span className="text-sm text-gray-600">特殊活动</span>
                           <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
                         </div>
-                      <span className="text-lg">人工决策：<strong className="text-gray-800 text-xl">90%+</strong></span>
+                        <div className="flex justify-between items-center">
                           <span className="text-sm text-gray-600">活动套利</span>
                           <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
                         </div>
-                      <span className="text-lg">系统通过：<strong className="text-gray-800 text-xl">90%+</strong></span>
+                        <div className="flex justify-between items-center">
                           <span className="text-sm text-gray-600">重复参与</span>
                           <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
                         </div>
-                      <span className="text-lg">系统拒绝：<strong className="text-gray-800 text-xl">0%（排除流水不足）</strong></span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -382,7 +386,6 @@ export const FKSystemOverview = () => {
                     <div className="w-3 h-3 bg-indigo-500 rounded-full mr-2"></div>
                     代理行为监控
                   </h5>
-                  <p className="text-indigo-700 text-sm mb-4">行为分析 · 推广监控</p>
                   
                   <div className="space-y-4">
                     <div className="bg-indigo-50 rounded-lg p-4">
@@ -421,7 +424,6 @@ export const FKSystemOverview = () => {
                     <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>
                     关联网络分析
                   </h5>
-                  <p className="text-purple-700 text-sm mb-4">关联分析 · 网络监控</p>
                   
                   <div className="space-y-4">
                     <div className="bg-purple-50 rounded-lg p-4">
@@ -441,15 +443,15 @@ export const FKSystemOverview = () => {
                     <div className="bg-purple-50 rounded-lg p-4">
                       <h6 className="font-semibold text-gray-700 mb-3">权限管理类</h6>
                       <div className="space-y-2">
-                      <span className="text-lg">人工决策：<strong className="text-gray-800 text-xl">50%</strong></span>
+                        <div className="flex justify-between items-center">
                           <span className="text-sm text-gray-600">权限异常</span>
                           <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
                         </div>
-                      <span className="text-lg">系统通过：<strong className="text-gray-800 text-xl">70%</strong></span>
+                        <div className="flex justify-between items-center">
                           <span className="text-sm text-gray-600">权限滥用</span>
                           <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
                         </div>
-                      <span className="text-lg">系统拒绝：<strong className="text-gray-800 text-xl">30%</strong></span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -465,4 +467,3 @@ export const FKSystemOverview = () => {
     </div>
   );
 };
-                      <span className="text-lg">人工决策：<strong className="text-gray-800 text-xl">10%</strong></span>
