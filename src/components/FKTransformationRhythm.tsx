@@ -110,28 +110,29 @@ export const FKTransformationRhythm = () => {
                   {/* 节点圆圈 */}
                   <div className={`w-16 h-16 rounded-full border-4 flex items-center justify-center mx-auto mb-4 ${
                     item.status === 'completed' ? 'bg-green-500 border-green-500' :
-                    item.status === 'current' ? 'bg-blue-500 border-blue-500 shadow-lg ring-4 ring-blue-200' :
+                    item.status === 'current' ? 'bg-blue-500 border-blue-500 shadow-2xl ring-8 ring-blue-300 scale-110' :
                     'bg-gray-300 border-gray-300'
                   }`}>
-                    <span className="text-white font-bold text-sm">{index + 1}</span>
+                    <span className={`text-white font-bold ${item.status === 'current' ? 'text-lg' : 'text-sm'}`}>
+                      {item.time.split(' ')[0]}
+                    </span>
                   </div>
                   
                   {/* 内容卡片 */}
                   <div className={`bg-white rounded-lg p-4 shadow-sm border border-gray-200 ${
-                    item.status === 'current' ? 'bg-blue-50 border-blue-300 shadow-lg ring-2 ring-blue-200 font-bold' : ''
+                    item.status === 'current' ? 'bg-blue-50 border-blue-300 shadow-2xl ring-4 ring-blue-200 transform scale-105' : ''
                   }`}>
                     <div className="mb-2">
-                      <h5 className={`font-semibold text-sm ${item.status === 'current' ? 'text-blue-700 font-bold' : 'text-gray-800'}`}>{item.time}</h5>
-                      <h6 className={`font-bold ${item.status === 'current' ? 'text-blue-800 text-lg' : 'text-gray-800'}`}>{item.stage}</h6>
+                      <h6 className={`font-bold mb-2 ${item.status === 'current' ? 'text-blue-800 text-xl' : 'text-gray-800 text-lg'}`}>{item.stage}</h6>
                       <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                         item.status === 'completed' ? 'bg-green-100 text-green-800' :
-                        item.status === 'current' ? 'bg-blue-100 text-blue-800 font-bold' :
+                        item.status === 'current' ? 'bg-blue-100 text-blue-800 font-bold text-sm' :
                         'bg-gray-100 text-gray-600'
                       }`}>
                         {item.result}
                       </span>
                     </div>
-                    <p className={`text-sm ${item.status === 'current' ? 'text-blue-700' : 'text-gray-600'}`}>{item.work}</p>
+                    <p className={`text-sm text-center ${item.status === 'current' ? 'text-blue-700 font-medium' : 'text-gray-600'}`}>{item.work}</p>
                   </div>
                 </div>
               ))}
