@@ -1,7 +1,7 @@
 import React from 'react';
 import { Calendar, AlertTriangle, Target, CheckCircle, Clock, Users } from 'lucide-react';
 
-export const SystemTransformationRhythm = () => {
+export const FKTransformationRhythm = () => {
   const progressSchedule = [
     {
       time: "Q1 2025",
@@ -34,12 +34,10 @@ export const SystemTransformationRhythm = () => {
   ];
 
   return (
-    <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-      <div className="flex items-center space-x-3 mb-8">
-        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-          <Calendar className="w-5 h-5 text-white" />
-        </div>
-        <h2 className="text-3xl font-bold text-gray-800">一、FK变革节奏</h2>
+    <div className="bg-white rounded-lg p-16 mb-10 relative">
+      {/* Header */}
+      <div className="mb-8">
+        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.1 FK变革节奏</h1>
       </div>
 
       {/* 困难挑战 */}
@@ -50,7 +48,7 @@ export const SystemTransformationRhythm = () => {
           </div>
           <div className="flex-1">
             <h3 className="text-xl font-bold text-amber-800 mb-3">困难挑战</h3>
-            <p class="text-amber-700 leading-relaxed">
+            <p className="text-amber-700 leading-relaxed">
               FK变革涉及多个部门与利益相关方，任何调整都可能影响会员体验、代理收益和业务稳定性。
               因此，采取先小范围试点，效果验证后逐步推广，避免一刀切的潜在的组织及业务风险。
             </p>
@@ -163,6 +161,11 @@ export const SystemTransformationRhythm = () => {
             ))}
           </div>
         </div>
+      </div>
+      
+      {/* Footer */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="text-gray-400 text-sm">FKZX</div>
       </div>
     </div>
   );

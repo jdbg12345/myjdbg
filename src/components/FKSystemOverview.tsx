@@ -1,127 +1,123 @@
 import React from 'react';
 import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock, Target } from 'lucide-react';
 
-export const BusinessOverview2 = () => {
+export const FKSystemOverview = () => {
   return (
-    <div>
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-8">
-          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-            <Target className="w-5 h-5 text-white" />
-          </div>
-          <h2 className="text-3xl font-bold text-gray-800">二、FK体系概览</h2>
+    <div className="bg-white rounded-lg p-16 mb-10 relative">
+      {/* Header */}
+      <div className="mb-8">
+        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.2 FK体系概览</h1>
+      </div>
+
+      {/* 2.1 FK理念变化 */}
+      <div className="mb-16">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.1</div>
+          <h3 className="text-2xl font-bold text-gray-800">FK理念变化</h3>
         </div>
         
-        {/* 2.1 FK理念变化 */}
-        <div className="mb-16">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.1</div>
-            <h3 className="text-2xl font-bold text-gray-800">FK理念变化</h3>
-          </div>
-          
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 mb-8">
-            <div className="text-center mb-8">
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                构建以系统为核心、人工为辅助的智能FK防护体系，实现全流程自动化风险识别与控制
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 mb-8">
+          <div className="text-center mb-8">
+            <p className="text-gray-700 text-lg leading-relaxed mb-4">
+              构建以系统为核心、人工为辅助的智能FK防护体系，实现全流程自动化风险识别与控制
+            </p>
+            <div className="bg-white/80 rounded-xl p-6 inline-block">
+              <p className="text-gray-800 text-lg leading-relaxed">
+                在FK中，<span className="font-bold text-red-600">"人"是所有问题的根源</span>。长期目标是不依赖"人"，压缩人的操作比重与空间，由系统自动完成大部分判定，覆盖策略、流程、内控与预警。当人的执行结果与系统偏差超出预设范围时，会触发内控二次审核，提升FK质量与稳定性，构建高效可靠的防护体系，使违规者成本与风险极高、几乎无操作空间。
               </p>
-              <div className="bg-white/80 rounded-xl p-6 inline-block">
-                <p className="text-gray-800 text-lg leading-relaxed">
-                  在FK中，<span className="font-bold text-red-600">"人"是所有问题的根源</span>。长期目标是不依赖"人"，压缩人的操作比重与空间，由系统自动完成大部分判定，覆盖策略、流程、内控与预警。当人的执行结果与系统偏差超出预设范围时，会触发内控二次审核，提升FK质量与稳定性，构建高效可靠的防护体系，使违规者成本与风险极高、几乎无操作空间。
-                </p>
-              </div>
             </div>
+          </div>
 
-            {/* 人与系统关系演进 */}
-            <div className="mt-8">
-              <h4 className="text-xl font-bold text-gray-800 mb-6 text-center">人与系统关系演进</h4>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {/* 1.0阶段 */}
-                <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-gray-400 transition-all duration-300 hover:transform hover:scale-105">
-                  <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
-                    <Clock className="w-6 h-6 text-gray-600" />
+          {/* 人与系统关系演进 */}
+          <div className="mt-8">
+            <h4 className="text-xl font-bold text-gray-800 mb-6 text-center">人与系统关系演进</h4>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* 1.0阶段 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-gray-400 transition-all duration-300 hover:transform hover:scale-105">
+                <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
+                  <Clock className="w-6 h-6 text-gray-600" />
+                </div>
+                <div className="mb-4">
+                  <span className="text-sm font-semibold text-gray-500">1.0阶段</span>
+                  <h4 className="text-xl font-bold text-gray-800">过去状态</h4>
+                </div>
+                <p className="text-gray-600 mb-4">人为绝对，系统只是简单的辅助工具</p>
+                <div className="space-y-2">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Users className="w-4 h-4 mr-2 text-gray-400" />
+                    <span>人工决策：<strong className="text-gray-800">90%+</strong></span>
                   </div>
-                  <div className="mb-4">
-                    <span className="text-sm font-semibold text-gray-500">1.0阶段</span>
-                    <h4 className="text-xl font-bold text-gray-800">过去状态</h4>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Zap className="w-4 h-4 mr-2 text-gray-400" />
+                    <span>系统作用：<strong className="text-gray-800">辅助工具</strong></span>
                   </div>
-                  <p className="text-gray-600 mb-4">人为绝对，系统只是简单的辅助工具</p>
-                  <div className="space-y-2">
-                    <div className="flex items-center text-sm text-gray-600">
-                      <Users className="w-4 h-4 mr-2 text-gray-400" />
-                      <span>人工决策：<strong className="text-gray-800">90%+</strong></span>
-                    </div>
-                    <div className="flex items-center text-sm text-gray-600">
-                      <Zap className="w-4 h-4 mr-2 text-gray-400" />
-                      <span>系统作用：<strong className="text-gray-800">辅助工具</strong></span>
-                    </div>
-                    <div className="flex items-center text-sm text-gray-600">
-                      <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
-                      <span>效率：<strong className="text-gray-800">低</strong></span>
-                    </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
+                    <span>效率：<strong className="text-gray-800">低</strong></span>
                   </div>
                 </div>
+              </div>
 
-                {/* 2.0阶段 */}
-                <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-blue-500 transition-all duration-300 hover:transform hover:scale-105">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                    <Shield className="w-6 h-6 text-blue-600" />
+              {/* 2.0阶段 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-blue-500 transition-all duration-300 hover:transform hover:scale-105">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Shield className="w-6 h-6 text-blue-600" />
+                </div>
+                <div className="mb-4">
+                  <span className="text-sm font-semibold text-blue-500">2.0阶段</span>
+                  <h4 className="text-xl font-bold text-gray-800">当前目标</h4>
+                </div>
+                <p className="text-gray-600 mb-4">系统为绝对，但是还是人来做最后决策</p>
+                <div className="space-y-2">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Users className="w-4 h-4 mr-2 text-blue-400" />
+                    <span>人工决策占比：<strong className="text-blue-800">20-30%</strong></span>
                   </div>
-                  <div className="mb-4">
-                    <span className="text-sm font-semibold text-blue-500">2.0阶段</span>
-                    <h4 className="text-xl font-bold text-gray-800">当前目标</h4>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Zap className="w-4 h-4 mr-2 text-blue-400" />
+                    <span>系统作用：<strong className="text-blue-800">核心判定</strong></span>
                   </div>
-                  <p className="text-gray-600 mb-4">系统为绝对，但是还是人来做最后决策</p>
-                  <div className="space-y-2">
-                    <div className="flex items-center text-sm text-gray-600">
-                      <Users className="w-4 h-4 mr-2 text-blue-400" />
-                      <span>人工决策占比：<strong className="text-blue-800">20-30%</strong></span>
-                    </div>
-                    <div className="flex items-center text-sm text-gray-600">
-                      <Zap className="w-4 h-4 mr-2 text-blue-400" />
-                      <span>系统作用：<strong className="text-blue-800">核心判定</strong></span>
-                    </div>
-                    <div className="flex items-center text-sm text-gray-600">
-                      <BarChart3 className="w-4 h-4 mr-2 text-blue-400" />
-                      <span>效率：<strong className="text-blue-800">中高</strong></span>
-                    </div>
-                  </div>
-                  <div className="mt-4">
-                    <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-700">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></div>
-                      正在实现
-                    </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <BarChart3 className="w-4 h-4 mr-2 text-blue-400" />
+                    <span>效率：<strong className="text-blue-800">中高</strong></span>
                   </div>
                 </div>
+                <div className="mt-4">
+                  <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-700">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></div>
+                    正在实现
+                  </div>
+                </div>
+              </div>
 
-                {/* 3.0阶段 */}
-                <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-green-500 transition-all duration-300 hover:transform hover:scale-105">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                    <Award className="w-6 h-6 text-green-600" />
+              {/* 3.0阶段 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-green-500 transition-all duration-300 hover:transform hover:scale-105">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                  <Award className="w-6 h-6 text-green-600" />
+                </div>
+                <div className="mb-4">
+                  <span className="text-sm font-semibold text-green-500">3.0阶段</span>
+                  <h4 className="text-xl font-bold text-gray-800">理想状态</h4>
+                </div>
+                <p className="text-gray-600 mb-4">系统为绝对，且大部分订单直接系统做决策，人做决策的比例要大大降低</p>
+                <div className="space-y-2">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Users className="w-4 h-4 mr-2 text-green-400" />
+                    <span>人工决策占比：<strong className="text-green-800">＜5%</strong></span>
                   </div>
-                  <div className="mb-4">
-                    <span className="text-sm font-semibold text-green-500">3.0阶段</span>
-                    <h4 className="text-xl font-bold text-gray-800">理想状态</h4>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <Zap className="w-4 h-4 mr-2 text-green-400" />
+                    <span>系统作用：<strong className="text-green-800">完全自主</strong></span>
                   </div>
-                  <p className="text-gray-600 mb-4">系统为绝对，且大部分订单直接系统做决策，人做决策的比例要大大降低</p>
-                  <div className="space-y-2">
-                    <div className="flex items-center text-sm text-gray-600">
-                      <Users className="w-4 h-4 mr-2 text-green-400" />
-                      <span>人工决策占比：<strong className="text-green-800">＜5%</strong></span>
-                    </div>
-                    <div className="flex items-center text-sm text-gray-600">
-                      <Zap className="w-4 h-4 mr-2 text-green-400" />
-                      <span>系统作用：<strong className="text-green-800">完全自主</strong></span>
-                    </div>
-                    <div className="flex items-center text-sm text-gray-600">
-                      <BarChart3 className="w-4 h-4 mr-2 text-green-400" />
-                      <span>效率：<strong className="text-green-800">极高</strong></span>
-                    </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <BarChart3 className="w-4 h-4 mr-2 text-green-400" />
+                    <span>效率：<strong className="text-green-800">极高</strong></span>
                   </div>
-                  <div className="mt-4">
-                    <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">
-                      <CheckCircle className="w-4 h-4 mr-1" />
-                      未来目标
-                    </div>
+                </div>
+                <div className="mt-4">
+                  <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">
+                    <CheckCircle className="w-4 h-4 mr-1" />
+                    未来目标
                   </div>
                 </div>
               </div>
@@ -442,8 +438,11 @@ export const BusinessOverview2 = () => {
             </div>
           </div>
         </div>
+      
+      {/* Footer */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="text-gray-400 text-sm">FKZX</div>
       </div>
-   
     </div>
   );
 };

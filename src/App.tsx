@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavigationSidebar } from './components/shared/NavigationSidebar';
 import { CoverPage } from './components/CoverPage';
-import { TableOfContents } from './components/TableOfContents';
 import { OrganizationalStructure } from './components/OrganizationalStructure';
 import { OverallData } from './components/OverallData';
 import { QuarterlyPreventionData } from './components/QuarterlyPreventionData';
@@ -14,7 +13,9 @@ import { PandaSportsKillRate } from './components/PandaSportsKillRate';
 import { BSportsKillRate } from './components/BSportsKillRate';
 import { DBSportsKillRate } from './components/DBSportsKillRate';
 import { AirplaneData } from './components/AirplaneData';
-import { BusinessOverview } from './components/BusinessOverview';
+import { FKTransformationRhythm } from './components/FKTransformationRhythm';
+import { FKSystemOverview } from './components/FKSystemOverview';
+import { PilotResults } from './components/PilotResults';
 import { AuditGroup } from './components/AuditGroup';
 import { InternalControlOverview } from './components/InternalControlOverview';
 import { AuditDepartmentOverview } from './components/AuditDepartmentOverview';
@@ -101,10 +102,21 @@ function App() {
         </div>
         
         {/* 3. FK工作总结 */}
-        {/* 3.0 FK变革节奏 */}
-        <div data-section="business-overview">
-          <BusinessOverview />
+        {/* 3.1 FK变革节奏 */}
+        <div data-section="fk-transformation">
+          <FKTransformationRhythm />
         </div>
+        
+        {/* 3.2 FK体系概览 */}
+        <div data-section="fk-system-overview">
+          <FKSystemOverview />
+        </div>
+        
+        {/* 3.3 试点成果说明 */}
+        <div data-section="pilot-results">
+          <PilotResults />
+        </div>
+        
         {/* 3.1 审核组 */}
         <div data-section="audit-group">
           <AuditGroup />
