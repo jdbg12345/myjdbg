@@ -10,16 +10,6 @@ interface NavigationItem {
 
 const navigationItems: NavigationItem[] = [
   {
-    id: 'cover',
-    title: '封面',
-    icon: <FileText className="w-4 h-4" />
-  },
-  {
-    id: 'toc',
-    title: '目录',
-    icon: <FileText className="w-4 h-4" />
-  },
-  {
     id: 'org',
     title: '1. 风控组织架构',
     icon: <Users className="w-4 h-4" />

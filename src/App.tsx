@@ -35,13 +35,6 @@ function App() {
     <div className="min-h-screen bg-white">
       <NavigationSidebar />
       <div className="max-w-7xl mx-auto p-5">
-        <div data-section="cover">
-          <CoverPage />
-        </div>
-        <div data-section="toc">
-          <TableOfContents />
-        </div>
-        
         {/* 1. FK组织情况 */}
         <div data-section="org">
           <OrganizationalStructure />

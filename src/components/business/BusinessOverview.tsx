@@ -14,6 +14,9 @@
 +      {/* 一、FK变革节奏 */}
        <SystemTransformationRhythm />
        
+      {/* 二、FK体系概览 */}
+      <FKSystemOverview />
+      
 -      {/* 二、试点成果说明 */}
 +      {/* 二、FK体系概览 */}
 +      <FKSystemOverview />
