@@ -449,10 +449,6 @@ export const BusinessOverview2 = () => {
         </div>
       </div>
    
-      {/* Footer */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-gray-400 text-sm">FKZX</div>
-      </div>
     </div>
   );
 };
