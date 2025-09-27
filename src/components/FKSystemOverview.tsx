@@ -6,7 +6,7 @@ export const FKSystemOverview = () => {
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.2 FK体系概览</h1>
+        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.2 FKZX-FK体系概览</h1>
       </div>
 
       {/* 2.1 FK理念变化 */}
@@ -33,7 +33,7 @@ export const FKSystemOverview = () => {
             <h4 className="text-xl font-bold text-gray-800 mb-6 text-center">人与系统关系演进</h4>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* 1.0阶段 */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-gray-400 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-gray-400">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
                     <Clock className="w-6 h-6 text-gray-600" />
@@ -42,7 +42,6 @@ export const FKSystemOverview = () => {
                     <h4 className="text-xl font-bold text-gray-800">1.0阶段 过去状态</h4>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4">人为绝对，系统只是简单的辅助工具</p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
                     <Users className="w-4 h-4 mr-2 text-gray-400" />
@@ -60,7 +59,7 @@ export const FKSystemOverview = () => {
               </div>
 
               {/* 2.0阶段 */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-blue-500 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-blue-500">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                     <Shield className="w-6 h-6 text-blue-600" />
@@ -69,7 +68,6 @@ export const FKSystemOverview = () => {
                     <h4 className="text-xl font-bold text-gray-800">2.0阶段 当前目标</h4>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4">系统为绝对，但是还是人来做最后决策</p>
                 <div className="space-y-2">
                    <div className="flex items-center text-sm text-gray-600">
                     <Users className="w-4 h-4 mr-2 text-gray-400" />
@@ -87,7 +85,7 @@ export const FKSystemOverview = () => {
               </div>
 
               {/* 3.0阶段 */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-green-500 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-green-500">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
                     <Award className="w-6 h-6 text-green-600" />
@@ -119,7 +117,7 @@ export const FKSystemOverview = () => {
 
         {/* 2.2 FK流程变化 */}
         <div className="mb-16">
-          <div className="flex items-center space-x-3 mb-6">
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.2</div>
             <h3 className="text-2xl font-bold text-gray-800">FK流程变化</h3>
           </div>
@@ -253,14 +251,6 @@ export const FKSystemOverview = () => {
                     <p className="text-gray-600">全面监控玩家行为，防范异常操作与套利行为</p>
                   </div>
                 </div>
-                <div className="text-right">
-                  <div className="text-3xl font-bold text-blue-600">85%</div>
-                  <div className="text-sm text-gray-500">完善度</div>
-                  <div className="flex items-center justify-end mt-2">
-                    <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
-                    <span className="text-sm text-green-600 font-medium">+12%</span>
-                  </div>
-                </div>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -363,26 +353,33 @@ export const FKSystemOverview = () => {
             {/* 代理网络监控 */}
             <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-8 border border-purple-200">
               <div className="flex items-center justify-between mb-8">
-                <div className="flex items-center space-x-4">
+            <svg viewBox="0 0 1400 400" className="w-full h-96">
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 flex items-center justify-center">
                     <Shield className="w-8 h-8 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-2xl font-bold text-gray-800">代理网络监控</h4>
-                    <p className="text-gray-600">监控代理行为，分析关联风险</p>
-                  </div>
-                </div>
-                <div className="text-right">
+                { id: 1, x: 120, y: 120, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
+                { id: 2, x: 320, y: 120, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
+                { id: 3, x: 520, y: 120, name: "AI智能审核", desc: "多维度风险实时检测", color: "#10b981" },
+                    <div className="flex items-center space-x-6">
+                      <div className="text-3xl font-bold text-purple-600">72%</div>
+                      <div className="text-sm text-gray-500">完善度</div>
+                      <div className="flex items-center">
+                        <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
+                        <span className="text-sm text-green-600 font-medium">+15%</span>
+                      </div>
+                    </div>
+                { id: 5, x: 620, y: 250, name: "人工复审", desc: "专业FK二次审核", color: "#f97316" },
+                { id: 6, x: 720, y: 250, name: "系统监控", desc: "持续监控", color: "#3b82f6" },
+                { id: 7, x: 820, y: 250, name: "内控复审", desc: "最终审核", color: "#ef4444" }
                   <div className="text-3xl font-bold text-purple-600">72%</div>
                   <div className="text-sm text-gray-500">完善度</div>
                   <div className="flex items-center justify-end mt-2">
                     <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
                     <span className="text-sm text-green-600 font-medium">+15%</span>
                   </div>
-                </div>
+                    r="40"
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    strokeWidth="4"
                 {/* 代理行为监控 */}
                 <div className="bg-white rounded-xl p-6 border border-indigo-100">
                   <h5 className="text-xl font-bold text-indigo-800 mb-4 flex items-center">
@@ -390,7 +387,7 @@ export const FKSystemOverview = () => {
                     代理行为监控
                   </h5>
                   <p className="text-indigo-700 text-sm mb-4">行为分析 · 推广监控</p>
-                  
+                    fontSize="18"
                   <div className="space-y-4">
                     <div className="bg-indigo-50 rounded-lg p-4">
                       <h6 className="font-semibold text-gray-700 mb-3">推广行为类</h6>
@@ -399,20 +396,20 @@ export const FKSystemOverview = () => {
                           <span className="text-sm text-gray-600">异常推广渠道</span>
                           <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
                         </div>
-                        <div className="flex justify-between items-center">
+                    y={node.y + 60}
                           <span className="text-sm text-gray-600">虚假推广</span>
                           <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
-                        </div>
+                    fontSize="14"
                       </div>
                     </div>
 
                     <div className="bg-indigo-50 rounded-lg p-4">
                       <h6 className="font-semibold text-gray-700 mb-3">佣金管理类</h6>
                       <div className="space-y-2">
-                        <div className="flex justify-between items-center">
+                    y={node.y + 80}
                           <span className="text-sm text-gray-600">异常佣金模式</span>
                           <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
-                        </div>
+                    fontSize="12"
                         <div className="flex justify-between items-center">
                           <span className="text-sm text-gray-600">佣金套利</span>
                           <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
@@ -420,44 +417,43 @@ export const FKSystemOverview = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-
+              {/* 1→2 */}
+              <line x1="160" y1="120" x2="280" y2="120" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
                 {/* 关联网络分析 */}
-                <div className="bg-white rounded-xl p-6 border border-purple-100">
-                  <h5 className="text-xl font-bold text-purple-800 mb-4 flex items-center">
+              {/* 2→3 */}
+              <line x1="360" y1="120" x2="480" y2="120" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
                     <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>
-                    关联网络分析
-                  </h5>
-                  
+              {/* 3→4 (通过) */}
+              <line x1="560" y1="120" x2="880" y2="120" stroke="#10b981" strokeWidth="4" markerEnd="url(#arrowhead-green)" />
+              <text x="720" y="105" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="600">通过</text>
                   <div className="space-y-4">
-                    <div className="bg-purple-50 rounded-lg p-4">
-                      <h6 className="font-semibold text-gray-700 mb-3">关联关系类</h6>
-                      <div className="space-y-2">
+              {/* 3→5 (不通过) */}
+              <line x1="540" y1="160" x2="600" y2="210" stroke="#f97316" strokeWidth="4" markerEnd="url(#arrowhead-orange)" />
+              <text x="570" y="190" textAnchor="middle" fill="#f97316" fontSize="12" fontWeight="600">不通过</text>
                         <div className="flex justify-between items-center">
-                          <span className="text-sm text-gray-600">异常关联账号</span>
-                          <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
+              {/* 5→6 */}
+              <line x1="660" y1="250" x2="680" y2="250" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
                         </div>
-                        <div className="flex justify-between items-center">
-                          <span className="text-sm text-gray-600">代理网络异常</span>
-                          <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
+              {/* 6→4 (监控通过) */}
+              <line x1="740" y1="210" x2="900" y2="160" stroke="#10b981" strokeWidth="3" markerEnd="url(#arrowhead-green)" />
+              <text x="820" y="180" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="600">监控通过</text>
                         </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-purple-50 rounded-lg p-4">
+              {/* 6→7 (监控不通过) */}
+              <line x1="760" y1="250" x2="780" y2="250" stroke="#ef4444" strokeWidth="4" markerEnd="url(#arrowhead-red)" />
+              <text x="770" y="235" textAnchor="middle" fill="#ef4444" fontSize="12" fontWeight="600">监控不通过</text>
                       <h6 className="font-semibold text-gray-700 mb-3">权限管理类</h6>
                       <div className="space-y-2">
-                        <div className="flex justify-between items-center">
-                          <span className="text-sm text-gray-600">代理异常操作</span>
+                <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+                  <polygon points="0 0, 12 4, 0 8" fill="#6b7280" />
                           <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
-                        </div>
-                        <div className="flex justify-between items-center">
+                <marker id="arrowhead-green" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+                  <polygon points="0 0, 12 4, 0 8" fill="#10b981" />
                           <span className="text-sm text-gray-600">权限滥用</span>
-                          <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
-                        </div>
+                <marker id="arrowhead-orange" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+                  <polygon points="0 0, 12 4, 0 8" fill="#f97316" />
                       </div>
-                    </div>
-                  </div>
+                <marker id="arrowhead-red" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+                  <polygon points="0 0, 12 4, 0 8" fill="#ef4444" />
                 </div>
               </div>
             </div>
