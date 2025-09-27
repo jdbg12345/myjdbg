@@ -29,12 +29,18 @@ import { PlatformReconciliation } from './components/PlatformReconciliation';
 import { InternalSecurityControl } from './components/InternalSecurityControl';
 import { AgentCommissionControl } from './components/AgentCommissionControl';
 import { RiskReview } from './components/RiskReview';
+import { CoverPage } from './components/CoverPage';
 
 function App() {
   return (
     <div className="min-h-screen bg-white">
       <NavigationSidebar />
       <div className="max-w-7xl mx-auto p-5">
+        {/* 封面 */}
+        <div data-section="cover">
+          <CoverPage />
+        </div>
+        
         {/* 1. FK组织情况 */}
         <div data-section="org">
           <OrganizationalStructure />

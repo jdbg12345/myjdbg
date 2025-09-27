@@ -10,6 +10,11 @@ interface NavigationItem {
 
 const navigationItems: NavigationItem[] = [
   {
+    id: 'cover',
+    title: '封面',
+    icon: <FileText className="w-4 h-4" />
+  },
+  {
     id: 'org',
     title: '1. 风控组织架构',
     icon: <Users className="w-4 h-4" />
@@ -168,19 +173,6 @@ export const NavigationSidebar = () => {
           {navigationItems.map(item => renderNavigationItem(item))}
         </div>
         
-        {/* 进度指示器 */}
-        <div className="mt-6 pt-4 border-t border-gray-200">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-sm text-gray-600">阅读进度</span>
-            <span className="text-sm font-medium text-blue-600">{readingProgress}%</span>
-          </div>
-          <div className="w-full bg-gray-200 rounded-full h-2">
-            <div 
-              className="bg-blue-500 h-2 rounded-full transition-all duration-300" 
-              style={{width: `${readingProgress}%`}}
-            ></div>
-          </div>
-        </div>
       </div>
     </div>
   );
