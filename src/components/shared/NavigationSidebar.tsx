@@ -16,7 +16,7 @@ const navigationItems: NavigationItem[] = [
   },
   {
     id: 'org',
-    title: '1. 风控组织架构',
+    title: '1. FK组织架构',
     icon: <Users className="w-4 h-4" />
   },
   {
