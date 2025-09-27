@@ -1,7 +1,7 @@
 import React from 'react';
 import { EssentialProblemsAndSolutions } from './business/EssentialProblemsAndSolutions';
 import { SystemTransformationRhythm } from './business/SystemTransformationRhythm';
-import { BusinessOverview } from './business/BusinessOverview';
+import { BusinessOverview2 } from './business/BusinessOverview2';
 import { PilotResultsPresentation } from './business/PilotResultsPresentation';
 
 export const BusinessOverview = () => {
@@ -15,8 +15,8 @@ export const BusinessOverview = () => {
       {/* 一、体系变革节奏 */}
       <SystemTransformationRhythm />
       
-      {/* 二、试点成果说明 */}
-      <BusinessOverview />
+      {/* 二、FK体系概览 */}
+      <BusinessOverview2 />
       
       {/* 三、试点成果说明 */}
       <PilotResultsPresentation />
