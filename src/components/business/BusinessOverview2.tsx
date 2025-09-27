@@ -5,15 +5,17 @@ import { PilotResultsPresentation } from './PilotResultsPresentation';
 
 export const BusinessOverview2 = () => {
   return (
-    <div>
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
-           
+
+
+       <div>
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-8">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <Target className="w-5 h-5 text-white" />
           </div>
           <h2 className="text-3xl font-bold text-gray-800">二、FK体系概览</h2>
         </div>
+
         
         {/* 2.1 FK理念变化 */}
         <div className="mb-16">
