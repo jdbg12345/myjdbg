@@ -79,17 +79,7 @@ export const FKTransformationRhythm = () => {
           </div>
         </div>
       </div>
-
-      {/* 变革原则 */}
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 mb-8 border-l-4 border-blue-500">
-        <div className="flex items-start space-x-4">
-          <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-            <Target className="w-6 h-6 text-blue-600" />
-          </div>
-        </div>
-      </div>
-
-
+    
       {/* 落地策略 - 横向里程碑样式 */}
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
         <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6">
