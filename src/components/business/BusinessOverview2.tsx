@@ -3,7 +3,7 @@ import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } 
 import { SystemTransformationRhythm } from './SystemTransformationRhythm';
 import { PilotResultsPresentation } from './PilotResultsPresentation';
 
-export const BusinessOverview = () => {
+export const BusinessOverview2 = () => {
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
