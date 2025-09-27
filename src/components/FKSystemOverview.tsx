@@ -39,8 +39,7 @@ export const FKSystemOverview = () => {
                     <Clock className="w-6 h-6 text-gray-600" />
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-gray-500">1.0阶段</span>
-                    <h4 className="text-xl font-bold text-gray-800">过去状态</h4>
+                    <h4 className="text-xl font-bold text-gray-800">1.0阶段 过去状态</h4>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">人为绝对，系统只是简单的辅助工具</p>
@@ -67,8 +66,7 @@ export const FKSystemOverview = () => {
                     <Shield className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-blue-500">2.0阶段</span>
-                    <h4 className="text-xl font-bold text-gray-800">当前目标</h4>
+                    <h4 className="text-xl font-bold text-gray-800">2.0阶段 当前目标</h4>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">系统为绝对，但是还是人来做最后决策</p>
@@ -95,8 +93,7 @@ export const FKSystemOverview = () => {
                     <Award className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-green-500">3.0阶段</span>
-                    <h4 className="text-xl font-bold text-gray-800">理想状态</h4>
+                    <h4 className="text-xl font-bold text-gray-800">3.0阶段 理想状态</h4>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
@@ -134,16 +131,16 @@ export const FKSystemOverview = () => {
             
             {/* SVG流程图 - 7个节点的横向流程 */}
             <div className="bg-white rounded-lg p-6 mb-6">
-              <svg viewBox="0 0 1200 400" className="w-full h-96">
+              <svg viewBox="0 0 1200 300" className="w-full h-80">
                 {/* 节点定义 */}
                 {[
-                  { id: 1, x: 100, y: 200, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
-                  { id: 2, x: 250, y: 200, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
-                  { id: 3, x: 400, y: 200, name: "AI智能审核", desc: "多维度风险实时检测", color: "#10b981" },
-                  { id: 4, x: 550, y: 120, name: "自动放行", desc: "即时到账", color: "#10b981" },
-                  { id: 5, x: 550, y: 280, name: "人工复审", desc: "专业FK二次审核", color: "#f97316" },
-                  { id: 6, x: 700, y: 280, name: "系统监控", desc: "持续监控", color: "#3b82f6" },
-                  { id: 7, x: 850, y: 350, name: "内控复审", desc: "最终审核", color: "#ef4444" }
+                  { id: 1, x: 100, y: 100, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
+                  { id: 2, x: 250, y: 100, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
+                  { id: 3, x: 400, y: 100, name: "AI智能审核", desc: "多维度风险实时检测", color: "#10b981" },
+                  { id: 4, x: 550, y: 100, name: "自动放行", desc: "即时到账", color: "#10b981" },
+                  { id: 5, x: 350, y: 200, name: "人工复审", desc: "专业FK二次审核", color: "#f97316" },
+                  { id: 6, x: 450, y: 200, name: "系统监控", desc: "持续监控", color: "#3b82f6" },
+                  { id: 7, x: 550, y: 200, name: "内控复审", desc: "最终审核", color: "#ef4444" }
                 ].map((node) => (
                   <g key={node.id}>
                     {/* 节点圆圈 */}
@@ -192,29 +189,29 @@ export const FKSystemOverview = () => {
                 
                 {/* 连接线 */}
                 {/* 1→2 */}
-                <line x1="130" y1="200" x2="220" y2="200" stroke="#6b7280" strokeWidth="2" markerEnd="url(#arrowhead)" />
+                <line x1="130" y1="100" x2="220" y2="100" stroke="#6b7280" strokeWidth="2" markerEnd="url(#arrowhead)" />
                 
                 {/* 2→3 */}
-                <line x1="280" y1="200" x2="370" y2="200" stroke="#6b7280" strokeWidth="2" markerEnd="url(#arrowhead)" />
+                <line x1="280" y1="100" x2="370" y2="100" stroke="#6b7280" strokeWidth="2" markerEnd="url(#arrowhead)" />
                 
                 {/* 3→4 (通过) */}
-                <line x1="430" y1="200" x2="520" y2="120" stroke="#10b981" strokeWidth="3" markerEnd="url(#arrowhead-green)" />
-                <text x="475" y="150" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="600">通过</text>
+                <line x1="430" y1="100" x2="520" y2="100" stroke="#10b981" strokeWidth="3" markerEnd="url(#arrowhead-green)" />
+                <text x="475" y="85" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="600">通过</text>
                 
                 {/* 3→5 (不通过) */}
-                <line x1="430" y1="200" x2="520" y2="280" stroke="#f97316" strokeWidth="3" markerEnd="url(#arrowhead-orange)" />
-                <text x="475" y="250" textAnchor="middle" fill="#f97316" fontSize="10" fontWeight="600">不通过</text>
+                <line x1="400" y1="130" x2="350" y2="170" stroke="#f97316" strokeWidth="3" markerEnd="url(#arrowhead-orange)" />
+                <text x="375" y="155" textAnchor="middle" fill="#f97316" fontSize="10" fontWeight="600">不通过</text>
                 
                 {/* 5→6 */}
-                <line x1="580" y1="280" x2="670" y2="280" stroke="#6b7280" strokeWidth="2" markerEnd="url(#arrowhead)" />
+                <line x1="380" y1="200" x2="420" y2="200" stroke="#6b7280" strokeWidth="2" markerEnd="url(#arrowhead)" />
                 
                 {/* 6→4 (监控通过) */}
-                <line x1="700" y1="250" x2="550" y2="150" stroke="#10b981" strokeWidth="2" markerEnd="url(#arrowhead-green)" />
-                <text x="625" y="190" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="600">监控通过</text>
+                <line x1="480" y1="200" x2="550" y2="130" stroke="#10b981" strokeWidth="2" markerEnd="url(#arrowhead-green)" />
+                <text x="515" y="160" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="600">监控通过</text>
                 
                 {/* 6→7 (监控不通过) */}
-                <line x1="730" y1="280" x2="820" y2="350" stroke="#ef4444" strokeWidth="3" markerEnd="url(#arrowhead-red)" />
-                <text x="775" y="325" textAnchor="middle" fill="#ef4444" fontSize="10" fontWeight="600">监控不通过</text>
+                <line x1="480" y1="200" x2="520" y2="200" stroke="#ef4444" strokeWidth="3" markerEnd="url(#arrowhead-red)" />
+                <text x="500" y="185" textAnchor="middle" fill="#ef4444" fontSize="10" fontWeight="600">监控不通过</text>
                 
                 {/* 箭头标记定义 */}
                 <defs>

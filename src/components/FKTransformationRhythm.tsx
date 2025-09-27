@@ -50,7 +50,7 @@ export const FKTransformationRhythm = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500 flex-1">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-amber-600 font-bold text-sm">1</span>
@@ -64,7 +64,7 @@ export const FKTransformationRhythm = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500">
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500 flex-1">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <span className="text-amber-600 font-bold text-sm">2</span>
@@ -73,6 +73,20 @@ export const FKTransformationRhythm = () => {
                 <h4 className="text-lg font-bold text-amber-800 mb-3">系统架构挑战</h4>
                 <p className="text-amber-700 leading-relaxed">
                   核心流程的系统升级则对既有架构提出了巨大的挑战
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500 flex-1">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-amber-600 font-bold text-sm">3</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-amber-800 mb-3">人员基础能力较差</h4>
+                <p className="text-amber-700 leading-relaxed">
+                  人员基础能力较差
                 </p>
               </div>
             </div>
@@ -103,7 +117,7 @@ export const FKTransformationRhythm = () => {
                   {/* 节点圆圈 */}
                   <div className={`w-16 h-16 rounded-full border-4 flex items-center justify-center mx-auto mb-4 ${
                     item.status === 'completed' ? 'bg-green-500 border-green-500' :
-                    item.status === 'current' ? 'bg-blue-500 border-blue-500 animate-pulse' :
+                    item.status === 'current' ? 'bg-blue-500 border-blue-500 animate-pulse shadow-lg ring-4 ring-blue-200' :
                     'bg-gray-300 border-gray-300'
                   }`}>
                     <span className="text-white font-bold text-sm">{index + 1}</span>
@@ -111,14 +125,14 @@ export const FKTransformationRhythm = () => {
                   
                   {/* 内容卡片 */}
                   <div className={`bg-white rounded-lg p-4 shadow-sm border border-gray-200 ${
-                    item.status === 'current' ? 'bg-blue-50 border-blue-300' : ''
+                    item.status === 'current' ? 'bg-blue-50 border-blue-300 shadow-lg ring-2 ring-blue-200' : ''
                   }`}>
                     <div className="text-center mb-2">
                       <h5 className="font-semibold text-gray-800 text-sm">{item.time}</h5>
                       <h6 className="font-bold text-gray-800">{item.stage}</h6>
                       <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                         item.status === 'completed' ? 'bg-green-100 text-green-800' :
-                        item.status === 'current' ? 'bg-blue-100 text-blue-800' :
+                        item.status === 'current' ? 'bg-blue-100 text-blue-800 font-bold' :
                         'bg-gray-100 text-gray-600'
                       }`}>
                         {item.result}
