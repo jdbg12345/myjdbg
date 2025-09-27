@@ -1,5 +1,5 @@
-import React from 'react';
-import { FileText, BarChart3, Users, AlertTriangle } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { FileText, BarChart3, Users, AlertTriangle, ChevronDown, ChevronRight } from 'lucide-react';
 
 interface NavigationItem {
   id: string;
@@ -61,21 +61,66 @@ const navigationItems: NavigationItem[] = [
 ];
 
 export const NavigationSidebar = () => {
-  const [activeItem, setActiveItem] = React.useState('cover');
+  const [activeItem, setActiveItem] = useState('cover');
+  const [expandedItems, setExpandedItems] = useState<string[]>(['data', 'summary']);
+  const [readingProgress, setReadingProgress] = useState(0);
+
+  // 计算阅读进度
+  useEffect(() => {
+    const calculateProgress = () => {
+      const scrollTop = window.pageYOffset;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = Math.round((scrollTop / docHeight) * 100);
+      setReadingProgress(Math.min(progress, 100));
+    };
+
+    const handleScroll = () => {
+      calculateProgress();
+      
+      // 检测当前可见的章节
+      const sections = document.querySelectorAll('[data-section]');
+      let currentSection = 'cover';
+      
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          currentSection = section.getAttribute('data-section') || 'cover';
+        }
+      });
+      
+      setActiveItem(currentSection);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    calculateProgress();
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleItemClick = (itemId: string) => {
-    setActiveItem(itemId);
-    // 这里可以添加滚动到对应章节的逻辑
+    const element = document.querySelector(`[data-section="${itemId}"]`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const toggleExpanded = (itemId: string) => {
+    setExpandedItems(prev => 
+      prev.includes(itemId) 
+        ? prev.filter(id => id !== itemId)
+        : [...prev, itemId]
+    );
   };
 
   const renderNavigationItem = (item: NavigationItem, level: number = 0) => {
     const isActive = activeItem === item.id;
     const hasChildren = item.children && item.children.length > 0;
+    const isExpanded = expandedItems.includes(item.id);
     
     return (
       <div key={item.id}>
         <div
-          className={`flex items-center space-x-3 p-3 rounded-lg cursor-pointer transition-all duration-200 ${
+          className={`flex items-center justify-between p-3 rounded-lg cursor-pointer transition-all duration-200 ${
             level === 0 ? 'font-medium' : 'font-normal text-sm ml-4'
           } ${
             isActive 
@@ -84,15 +129,33 @@ export const NavigationSidebar = () => {
           }`}
           onClick={() => handleItemClick(item.id)}
         >
-          {level === 0 && item.icon && (
-            <div className={`${isActive ? 'text-blue-600' : 'text-gray-500'}`}>
-              {item.icon}
-            </div>
+          <div className="flex items-center space-x-3">
+            {level === 0 && item.icon && (
+              <div className={`${isActive ? 'text-blue-600' : 'text-gray-500'}`}>
+                {item.icon}
+              </div>
+            )}
+            <span className={`${level > 0 ? 'text-sm' : ''}`}>{item.title}</span>
+          </div>
+          
+          {hasChildren && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleExpanded(item.id);
+              }}
+              className="p-1 hover:bg-gray-200 rounded"
+            >
+              {isExpanded ? (
+                <ChevronDown className="w-4 h-4 text-gray-500" />
+              ) : (
+                <ChevronRight className="w-4 h-4 text-gray-500" />
+              )}
+            </button>
           )}
-          <span className={`${level > 0 ? 'text-sm' : ''}`}>{item.title}</span>
         </div>
         
-        {hasChildren && (
+        {hasChildren && isExpanded && (
           <div className="ml-2 mt-1 space-y-1">
             {item.children!.map(child => renderNavigationItem(child, level + 1))}
           </div>
@@ -119,10 +182,13 @@ export const NavigationSidebar = () => {
         <div className="mt-6 pt-4 border-t border-gray-200">
           <div className="flex items-center justify-between mb-2">
             <span className="text-sm text-gray-600">阅读进度</span>
-            <span className="text-sm font-medium text-blue-600">25%</span>
+            <span className="text-sm font-medium text-blue-600">{readingProgress}%</span>
           </div>
           <div className="w-full bg-gray-200 rounded-full h-2">
-            <div className="bg-blue-500 h-2 rounded-full transition-all duration-300" style={{width: '25%'}}></div>
+            <div 
+              className="bg-blue-500 h-2 rounded-full transition-all duration-300" 
+              style={{width: `${readingProgress}%`}}
+            ></div>
           </div>
         </div>
       </div>

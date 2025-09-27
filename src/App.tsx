@@ -35,71 +35,129 @@ function App() {
     <div className="min-h-screen bg-white">
       <NavigationSidebar />
       <div className="max-w-7xl mx-auto p-5">
-        <CoverPage />
-        <TableOfContents />
+        <div data-section="cover">
+          <CoverPage />
+        </div>
+        <div data-section="toc">
+          <TableOfContents />
+        </div>
         
         {/* 1. FK组织情况 */}
-        <OrganizationalStructure />
+        <div data-section="org">
+          <OrganizationalStructure />
+        </div>
         
         {/* 2. FK数据情况 */}
-        <OverallData />
+        <div data-section="data">
+          <OverallData />
+        </div>
         
         {/* 2.1 第三季度防范单量与金额 */}
-        <QuarterlyPreventionData />
+        <div data-section="prevention-data">
+          <QuarterlyPreventionData />
+        </div>
         
         {/* 2.2 第三季度防范金（各大类型占比） */}
-        <QuarterlyPreventionCategory />
+        <div data-section="prevention-category">
+          <QuarterlyPreventionCategory />
+        </div>
         
         {/* 2.3 第三季度防范金（Y4明细） */}
-        <Y4SiteDetail />
+        <div data-section="y4-detail">
+          <Y4SiteDetail />
+        </div>
         
         {/* 2.4 第三季度防范金（BD+XK明细） */}
-        <BDXKSiteDetail />
+        <div data-section="bdxk-detail">
+          <BDXKSiteDetail />
+        </div>
         
         {/* 2.5 第三季度防范金（Y6+Y9明细） */}
-        <Y6Y9SiteDetail />
+        <div data-section="y6y9-detail">
+          <Y6Y9SiteDetail />
+        </div>
         
         {/* 2.6 体育整体杀率明细 */}
-        <SportsOverallKillRate />
+        <div data-section="sports-overall">
+          <SportsOverallKillRate />
+        </div>
         
         {/* 2.7 熊猫体育杀率明细 */}
-        <PandaSportsKillRate />
+        <div data-section="panda-sports">
+          <PandaSportsKillRate />
+        </div>
         
         {/* 2.8 B系体育杀率明细 */}
-        <BSportsKillRate />
+        <div data-section="b-sports">
+          <BSportsKillRate />
+        </div>
         
         {/* 2.9 DB体育杀率明细 */}
-        <DBSportsKillRate />
+        <div data-section="db-sports">
+          <DBSportsKillRate />
+        </div>
         
         {/* 2.9 飞机数据 */}
-        <AirplaneData />
+        <div data-section="airplane-data">
+          <AirplaneData />
+        </div>
         
         {/* 3. FK工作总结 */}
         {/* 3.0 业务方向及提升策略概览 */}
-        <BusinessOverview />
+        <div data-section="business-overview">
+          <BusinessOverview />
+        </div>
         {/* 3.1 审核组 */}
-        <AuditGroup />
+        <div data-section="audit-group">
+          <AuditGroup />
+        </div>
         {/* 3.2 内控组 */}
-        <InternalControlOverview />
+        <div data-section="internal-control">
+          <InternalControlOverview />
+        </div>
         {/* 3.3 稽查组 */}
-        <AuditDepartmentOverview />
+        <div data-section="audit-dept">
+          <AuditDepartmentOverview />
+        </div>
         {/* 3.4 系统组 */}
-        <SystemDepartmentOverview />
+        <div data-section="system-dept">
+          <SystemDepartmentOverview />
+        </div>
         
         {/* 系统组详细页面 - 会员风控详细内容 */}
-        <SummaryOverview />
-        <RiskWarning />
-        <SystemReview />
-        <SystemDispatch />
-        <ManualReview />
-        <InternalControlSampling />
-        <PlatformReconciliation />
-        <InternalSecurityControl />
-        <AgentCommissionControl />
+        <div data-section="summary-overview">
+          <SummaryOverview />
+        </div>
+        <div data-section="risk-warning">
+          <RiskWarning />
+        </div>
+        <div data-section="system-review">
+          <SystemReview />
+        </div>
+        <div data-section="system-dispatch">
+          <SystemDispatch />
+        </div>
+        <div data-section="manual-review">
+          <ManualReview />
+        </div>
+        <div data-section="internal-control-sampling">
+          <InternalControlSampling />
+        </div>
+        <div data-section="platform-reconciliation">
+          <PlatformReconciliation />
+        </div>
+        <div data-section="internal-security-control">
+          <InternalSecurityControl />
+        </div>
+        <div data-section="agent-commission-control">
+          <AgentCommissionControl />
+        </div>
         
         
         {/* 4. 事故问题汇总 */}
-        <RiskReview />
+        <div data-section="risk-review">
+          <RiskReview />
+        </div>
       </div>
     </div>
   );
