@@ -15,6 +15,9 @@ export const BusinessOverview = () => {
       <SystemTransformationRhythm />
       
       {/* 二、试点成果说明 */}
+      <BusinessOverview />
+      
+      {/* 三、试点成果说明 */}
       <PilotResultsPresentation />
       
       {/* Footer */}
