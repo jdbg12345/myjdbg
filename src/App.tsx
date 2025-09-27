@@ -29,7 +29,6 @@ import { PlatformReconciliation } from './components/PlatformReconciliation';
 import { InternalSecurityControl } from './components/InternalSecurityControl';
 import { AgentCommissionControl } from './components/AgentCommissionControl';
 import { RiskReview } from './components/RiskReview';
-import { CoverPage } from './components/CoverPage';
 
 function App() {
   return (
