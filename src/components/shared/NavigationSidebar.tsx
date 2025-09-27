@@ -43,7 +43,7 @@ const navigationItems: NavigationItem[] = [
     children: [
       { id: 'fk-transformation', title: '3.1 FK变革节奏' },
       { id: 'fk-system-overview', title: '3.2 FK体系概览' },
-      { id: 'pilot-results', title: '3.3 试点成果说明' },
+      { id: 'pilot-results', title: '3.3 FK试点成果' },
       { id: 'audit-group', title: '3.1 审核组' },
       { id: 'internal-control', title: '3.2 内控组' },
       { id: 'audit-dept', title: '3.3 稽查组' },
