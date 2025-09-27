@@ -1,6 +1,7 @@
 import React from 'react';
 import { EssentialProblemsAndSolutions } from './business/EssentialProblemsAndSolutions';
 import { SystemTransformationRhythm } from './business/SystemTransformationRhythm';
+import { BusinessOverview } from './business/BusinessOverview';
 import { PilotResultsPresentation } from './business/PilotResultsPresentation';
 
 export const BusinessOverview = () => {
