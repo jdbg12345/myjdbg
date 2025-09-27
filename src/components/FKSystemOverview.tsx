@@ -445,6 +445,4 @@ export const FKSystemOverview = () => {
       </div>
     </div>
   );
-}
-  )
-}
+};
