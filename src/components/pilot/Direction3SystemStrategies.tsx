@@ -486,6 +486,23 @@ export const Direction3SystemStrategies = () => {
                     </div>
                   </div>
                 </div>
+                
+                <>
+                  <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型对比</div>
+                  
+                  <div className="flex justify-center space-x-6 text-sm">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-3 h-3 bg-blue-500 rounded"></div>
+                      <span className="text-gray-700">实施前效果</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-3 h-3 bg-green-500 rounded"></div>
+                      <span className="text-gray-700">实施后效果</span>
+                    </div>
+                  </div>
+                  
+                  <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+                </>
               </div>
             </div>
           </div>
@@ -519,18 +536,22 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
                       
-            <div className="flex justify-center space-x-6 text-sm">
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-red-600 rounded"></div>
-                <span className="text-gray-700">拦截订单数</span>
+            <>
+              <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型对比</div>
+              
+              <div className="flex justify-center space-x-6 text-sm">
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-red-600 rounded"></div>
+                  <span className="text-gray-700">拦截订单数</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  <span className="text-gray-700">准确率</span>
+                </div>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                <span className="text-gray-700">准确率</span>
-              </div>
-            </div>
-            
-            <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+              
+              <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+            </>
           </div>
         </div>
       </div>
@@ -624,18 +645,22 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
             
-            <div className="flex justify-center space-x-6 text-sm">
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-blue-500 rounded"></div>
-                <span className="text-gray-700">拦截订单数</span>
+            <>
+              <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型对比</div>
+              
+              <div className="flex justify-center space-x-6 text-sm">
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-blue-500 rounded"></div>
+                  <span className="text-gray-700">拦截订单数</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  <span className="text-gray-700">准确率</span>
+                </div>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                <span className="text-gray-700">准确率</span>
-              </div>
-            </div>
-            
-            <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+              
+              <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+            </>
           </div>
         </div>
       </div>
