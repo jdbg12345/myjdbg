@@ -102,12 +102,12 @@ function App() {
         </div>
         
         {/* 3. FK工作总结 */}
-        {/* 3.1 FK整体说明 */}
+        {/* 3.1 FK变革进度 */}
         <div data-section="fk-transformation">
           <FKTransformationRhythm />
         </div>
         
-        {/* 3.2 FK能力概览 */}
+        {/* 3.2 FK体系概览 */}
         <div data-section="fk-system-overview">
           <FKSystemOverview />
         </div>
