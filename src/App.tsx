@@ -130,19 +130,19 @@ function App() {
         </div>
         
         {/* 4. 备份待用 */}
-        {/* 3.1 审核组 */}
+        {/* 4.1 审核组 */}
         <div data-section="audit-group">
           <AuditGroup />
         </div>
-        {/* 3.2 内控组 */}
+        {/* 4.2 内控组 */}
         <div data-section="internal-control">
           <InternalControlOverview />
         </div>
-        {/* 3.3 稽查组 */}
+        {/* 4.3 稽查组 */}
         <div data-section="audit-dept">
           <AuditDepartmentOverview />
         </div>
-        {/* 3.4 系统组 */}
+        {/* 4.4 系统组 */}
         <div data-section="system-dept">
           <SystemDepartmentOverview />
         </div>
