@@ -48,20 +48,11 @@ export const FKSystemOverview = () => {
             </div>
 
             <div className="bg-white rounded-lg p-8 mb-6">
-               <svg viewBox="0 0 1200 450" className="w-full h-96">
+             <svg viewBox="0 0 1300 450" className="w-full h-96">
                 {/* 箭头定义 */}
                 <defs>
                   <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" />
-                  </marker>
-                  <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" />
-                  </marker>
-                  <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="#f97316" />
-                  </marker>
-                  <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
                   </marker>
                   <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
                     <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#000" floodOpacity="0.2"/>
@@ -72,24 +63,18 @@ export const FKSystemOverview = () => {
                 {links.map((link, idx) => {
                   const from = getNode(link.from);
                   const to = getNode(link.to);
+                  const offset = 80; // 箭头与节点边缘对齐
                   const midX = (from.x + to.x) / 2;
                   const midY = (from.y + to.y) / 2;
 
-                  // 贝塞尔曲线，分支偏下，主线直线
                   const isVertical = from.y !== to.y;
                   const curve = isVertical
-                    ? `M${from.x + 70},${from.y} Q${midX},${midY} ${to.x - 70},${to.y}`
-                    : `M${from.x + 70},${from.y} L${to.x - 70},${to.y}`;
-
-                  const marker =
-                    link.color === "#6b7280" ? "url(#arrowhead)"
-                    : link.color === "#10b981" ? "url(#arrowhead-green)"
-                    : link.color === "#f97316" ? "url(#arrowhead-orange)"
-                    : "url(#arrowhead-red)";
+                    ? `M${from.x + offset},${from.y} Q${midX},${midY} ${to.x - offset},${to.y}`
+                    : `M${from.x + offset},${from.y} L${to.x - offset},${to.y}`;
 
                   return (
                     <g key={idx}>
-                      <path d={curve} stroke={link.color} strokeWidth="3" fill="none" markerEnd={marker} />
+                      <path d={curve} stroke={link.color} strokeWidth="3" fill="none" markerEnd="url(#arrowhead)" />
                       {link.text && (
                         <text x={midX} y={midY - 15} textAnchor="middle" fill={link.color} fontSize="14" fontWeight="600">
                           {link.text}
@@ -103,9 +88,9 @@ export const FKSystemOverview = () => {
                 {nodes.map((node) => (
                   <g key={node.id}>
                     <rect
-                      x={node.x - 80}
+                      x={node.x - 90}
                       y={node.y - 40}
-                      width="160"
+                      width="180"
                       height="80"
                       rx="12"
                       ry="12"
