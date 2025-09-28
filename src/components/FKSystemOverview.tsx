@@ -49,67 +49,78 @@ export const FKSystemOverview = () => {
             </div>
 
             <div className="bg-white rounded-lg p-8 mb-6">
-          <svg viewBox="0 0 1600 450" className="w-full h-[400px]">
-  {/* 节点定义 */}
-  {[
-    { id: 1, x: 120, y: 140, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
-    { id: 2, x: 320, y: 140, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
-    { id: 3, x: 520, y: 140, name: "AI智能审核", desc: "多维度风险实时检测", color: "#10b981" },
-    { id: 4, x: 1320, y: 140, name: "自动放行", desc: "即时到账", color: "#10b981" },
-    { id: 5, x: 720, y: 300, name: "人工复审", desc: "专业FK二次审核", color: "#f97316" },
-    { id: 6, x: 920, y: 300, name: "系统监控", desc: "持续监控", color: "#3b82f6" },
-    { id: 7, x: 1120, y: 300, name: "内控复审", desc: "最终审核", color: "#ef4444" }
-  ].map((node) => (
-    <g key={node.id}>
-      <circle cx={node.x} cy={node.y} r="50" fill={node.color} stroke="white" strokeWidth="4" />
-      <text x={node.x} y={node.y} textAnchor="middle" dominantBaseline="middle" fill="white" fontSize="18" fontWeight="bold">
-        {node.id}
-      </text>
-      <text x={node.x} y={node.y + 70} textAnchor="middle" fill="#374151" fontSize="16" fontWeight="600">
-        {node.name}
-      </text>
-      <text x={node.x} y={node.y + 95} textAnchor="middle" fill="#6b7280" fontSize="14">
-        {node.desc}
-      </text>
-    </g>
-  ))}
+               <svg viewBox="0 0 1200 450" className="w-full h-96">
+                {/* 箭头定义 */}
+                <defs>
+                  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" />
+                  </marker>
+                  <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" />
+                  </marker>
+                  <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#f97316" />
+                  </marker>
+                  <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+                  </marker>
+                  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#000" floodOpacity="0.2"/>
+                  </filter>
+                </defs>
 
-  {/* 优化后的连线 */}
-  {/* 1→2 */}
-  <line x1="170" y1="140" x2="300" y2="140" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
-  {/* 2→3 */}
-  <line x1="370" y1="140" x2="470" y2="140" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
-  {/* 3→4 (通过) */}
-  <line x1="570" y1="140" x2="1270" y2="140" stroke="#10b981" strokeWidth="4" markerEnd="url(#arrowhead-green)" />
-  <text x="920" y="120" textAnchor="middle" fill="#10b981" fontSize="14" fontWeight="600">通过</text>
-  {/* 3→5 (不通过) */}
-  <line x1="520" y1="180" x2="720" y2="270" stroke="#f97316" strokeWidth="4" markerEnd="url(#arrowhead-orange)" />
-  <text x="620" y="220" textAnchor="middle" fill="#f97316" fontSize="14" fontWeight="600">不通过</text>
-  {/* 5→6 */}
-  <line x1="770" y1="300" x2="870" y2="300" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
-  {/* 6→4 (监控通过) */}
-  <line x1="930" y1="300" x2="1270" y2="160" stroke="#10b981" strokeWidth="3" markerEnd="url(#arrowhead-green)" />
-  <text x="1100" y="210" textAnchor="middle" fill="#10b981" fontSize="14" fontWeight="600">监控通过</text>
-  {/* 6→7 (监控不通过) */}
-  <line x1="930" y1="300" x2="1120" y2="300" stroke="#ef4444" strokeWidth="4" markerEnd="url(#arrowhead-red)" />
-  <text x="1025" y="280" textAnchor="middle" fill="#ef4444" fontSize="14" fontWeight="600">监控不通过</text>
+                {/* 渲染连线 */}
+                {links.map((link, idx) => {
+                  const from = getNode(link.from);
+                  const to = getNode(link.to);
+                  const midX = (from.x + to.x) / 2;
+                  const midY = (from.y + to.y) / 2;
+                  const isVertical = from.y !== to.y;
+                  const curve = isVertical
+                    ? `M${from.x + 70},${from.y} Q${midX},${midY} ${to.x - 70},${to.y}`
+                    : `M${from.x + 70},${from.y} L${to.x - 70},${to.y}`;
+                  const marker =
+                    link.color === "#6b7280" ? "url(#arrowhead)"
+                    : link.color === "#10b981" ? "url(#arrowhead-green)"
+                    : link.color === "#f97316" ? "url(#arrowhead-orange)"
+                    : "url(#arrowhead-red)";
 
-  {/* 箭头标记定义 */}
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" />
-    </marker>
-    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" />
-    </marker>
-    <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#f97316" />
-    </marker>
-    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
-    </marker>
-  </defs>
-</svg>
+                  return (
+                    <g key={idx}>
+                      <path d={curve} stroke={link.color} strokeWidth="3" fill="none" markerEnd={marker} />
+                      {link.text && (
+                        <text x={midX} y={midY - 12} textAnchor="middle" fill={link.color} fontSize="14" fontWeight="600">
+                          {link.text}
+                        </text>
+                      )}
+                    </g>
+                  );
+                })}
+
+                {/* 渲染节点 */}
+                {nodes.map((node) => (
+                  <g key={node.id}>
+                    <rect
+                      x={node.x - 70}
+                      y={node.y - 40}
+                      width="140"
+                      height="80"
+                      rx="12"
+                      ry="12"
+                      fill={node.color}
+                      stroke="#fff"
+                      strokeWidth="4"
+                      filter="url(#shadow)"
+                    />
+                    <text x={node.x} y={node.y - 10} textAnchor="middle" fill="#fff" fontSize="16" fontWeight="bold">
+                      {node.id}. {node.name}
+                    </text>
+                    <text x={node.x} y={node.y + 20} textAnchor="middle" fill="#f3f4f6" fontSize="12">
+                      {node.desc}
+                    </text>
+                  </g>
+                ))}
+              </svg>
 
             </div>
           </div>
