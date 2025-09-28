@@ -59,10 +59,10 @@ const navigationItems: NavigationItem[] = [
     title: '4. 备份待用',
     icon: <FileText className="w-4 h-4" />,
     children: [
-      { id: 'audit-group', title: '3.1 审核组' },
-      { id: 'internal-control', title: '3.2 内控组' },
-      { id: 'audit-dept', title: '3.3 稽查组' },
-      { id: 'system-dept', title: '3.4 系统组' },
+      { id: 'audit-group', title: '4.1 审核组' },
+      { id: 'internal-control', title: '4.2 内控组' },
+      { id: 'audit-dept', title: '4.3 稽查组' },
+      { id: 'system-dept', title: '4.4 系统组' },
       { 
         id: 'system-details', 
         title: '系统组详细页面', 
