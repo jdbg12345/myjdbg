@@ -522,12 +522,7 @@ export const FKSystemOverview = () => {
               <div>
                 <h4 className="text-2xl font-bold text-gray-800">代理网络监控</h4>
                 <div className="flex items-center space-x-6">
-                  <div className="text-3xl font-bold text-blue-600">72%</div>
-                  <div className="text-sm text-gray-500">完善度</div>
-                  <div className="flex items-center">
-                    <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
-                    <span className="text-sm text-green-600 font-medium">+15%</span>
-                  </div>
+                  <div className="text-3xl font-bold text-blue-600">Q3在这个方向的系统建设上资源较少，Q4会作为主要方向进行升级</div>                  
                 </div>
               </div>
             </div>
