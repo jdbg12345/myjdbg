@@ -173,6 +173,12 @@ export const FKSystemOverview = () => {
 
         {/* 2.2 FK能力变化 */}
         <div className="mb-8">
+          <div className="bg-white rounded-lg p-8 border border-blue-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.2</div>
+              <h3 className="text-2xl font-bold text-gray-800">FK能力变化</h3>
+          </div>
+          </div>
           {/* 玩家风险防控 */}
           <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
             <div className="flex items-center justify-between mb-8">
