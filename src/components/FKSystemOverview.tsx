@@ -179,7 +179,7 @@ export const FKSystemOverview = () => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.2</div>
               <h3 className="text-2xl font-bold text-gray-800">FK能力变化</h3>
           </div>
-              <div className="text-gray-500 ml-11">防御型策略 → 多维策略（防御 + 套利 + 作弊），降低系统出款风险。</div>
+              <div className="text-gray-500 ml-11">防御型策略 → 多维度策略（防御 + 套利 + 作弊），降低系统出款风险。</div>
           </div>
           {/* 玩家风险防控 */}
           <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
