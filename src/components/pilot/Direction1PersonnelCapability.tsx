@@ -23,8 +23,8 @@ export const Direction1PersonnelCapability = () => {
               <span className="text-white font-bold text-sm">1</span>
             </div>
               <h4 className="text-xl font-bold text-gray-800">手段1、派单策略变革</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-3">已上线</span>
             </div>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -309,4 +309,10 @@ export const Direction1PersonnelCapability = () => {
             </div>
           </div>
           
-          <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01
+          <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+        </div>
+        </div>
+      </div>
+    </div>
+  );
+};
