@@ -424,38 +424,11 @@ export const FKSystemOverview = () => {
                       <span className="text-sm text-gray-600">体育套利</span>
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">增强</span>
                     </div>
-                     <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">棋牌套利</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">彩票套利</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">电竞套利</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">增强</span>
-                    </div>
+                   
                   </div>
                 </div>
 
-                <div className="bg-red-50 rounded-lg p-4">
-                  <h6 className="font-semibold text-gray-700 mb-3">红利活动类</h6>
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">活动金额</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">活动比例</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">增强</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">活动类型</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
-                    </div>
-                  </div>
-                </div>
+                
                 
                 <div className="bg-red-50 rounded-lg p-4">
                   <h6 className="font-semibold text-gray-700 mb-3">游戏作弊类</h6>
