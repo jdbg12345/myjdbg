@@ -605,7 +605,5 @@ export const FKSystemOverview = () => {
         <div className="text-gray-400 text-sm">FKZX</div>
       </div>
     </div>
-          </div>
-
   );
 };
