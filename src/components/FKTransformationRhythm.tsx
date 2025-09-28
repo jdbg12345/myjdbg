@@ -126,7 +126,7 @@ export const FKTransformationRhythm = () => {
                 <span className="text-amber-600 font-bold text-sm">2</span>
               </div>
               <div className="flex-1">
-                <h4 className="text-lg font-bold text-amber-800 mb-3">系统研发挑战</h4>
+                <h4 className="text-lg font-bold text-amber-800 mb-3">系统挑战</h4>
                 <p className="text-amber-700 leading-relaxed">
                   系统仍处于初期，跨站点融合、策略升级、多站不同及外部能力引入需大量资源投入，短期难显成效。在“解决当下问题”与“长期建设”之间需平衡。
                 </p>
