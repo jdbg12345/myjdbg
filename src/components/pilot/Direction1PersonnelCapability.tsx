@@ -110,7 +110,7 @@ export const Direction1PersonnelCapability = () => {
                     {/* 问题率点 */}
                     <div 
                       className="absolute w-3 h-3 bg-blue-600 rounded-full border border-white"
-                      style={{bottom: `${24 + (item.beforeRate / 5) * 200}px`, left: '50%', transform: 'translateX(-50%)'}}
+                      style={{bottom: `${24 + (item.afterRate / 5) * 200}px`, left: '50%', transform: 'translateX(-50%)'}}
                     >
                       <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs text-blue-700 bg-white px-1 py-0.5 rounded whitespace-nowrap">
                         {item.beforeRate}%
@@ -121,7 +121,7 @@ export const Direction1PersonnelCapability = () => {
                       className="absolute w-3 h-3 bg-green-600 rounded-full border border-white"
                       style={{bottom: `${24 + (item.afterRate / 5) * 200}px`, right: '12px'}}
                     >
-                      <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs text-orange-700 bg-white px-1 py-0.5 rounded whitespace-nowrap">
+                      <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap">
                         {item.afterRate}%
                       </div>
                     </div>
