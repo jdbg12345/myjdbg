@@ -3,7 +3,7 @@ import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } 
 
 export const FKSystemOverview = () => {
    // 节点数据
-  const nodes = [
+     const nodes = [
     { id: 1, x: 150, y: 150, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
     { id: 2, x: 400, y: 150, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
     { id: 3, x: 650, y: 150, name: "AI智能审核", desc: "多维度风险实时检测", color: "#10b981" },
@@ -13,7 +13,6 @@ export const FKSystemOverview = () => {
     { id: 7, x: 1050, y: 300, name: "内控复审", desc: "最终审核", color: "#ef4444" },
   ];
 
-  // 连线数据
   const links = [
     { from: 1, to: 2, color: "#6b7280", text: "" },
     { from: 2, to: 3, color: "#6b7280", text: "" },
@@ -75,10 +74,13 @@ export const FKSystemOverview = () => {
                   const to = getNode(link.to);
                   const midX = (from.x + to.x) / 2;
                   const midY = (from.y + to.y) / 2;
+
+                  // 贝塞尔曲线，分支偏下，主线直线
                   const isVertical = from.y !== to.y;
                   const curve = isVertical
                     ? `M${from.x + 70},${from.y} Q${midX},${midY} ${to.x - 70},${to.y}`
                     : `M${from.x + 70},${from.y} L${to.x - 70},${to.y}`;
+
                   const marker =
                     link.color === "#6b7280" ? "url(#arrowhead)"
                     : link.color === "#10b981" ? "url(#arrowhead-green)"
@@ -89,7 +91,7 @@ export const FKSystemOverview = () => {
                     <g key={idx}>
                       <path d={curve} stroke={link.color} strokeWidth="3" fill="none" markerEnd={marker} />
                       {link.text && (
-                        <text x={midX} y={midY - 12} textAnchor="middle" fill={link.color} fontSize="14" fontWeight="600">
+                        <text x={midX} y={midY - 15} textAnchor="middle" fill={link.color} fontSize="14" fontWeight="600">
                           {link.text}
                         </text>
                       )}
@@ -101,9 +103,9 @@ export const FKSystemOverview = () => {
                 {nodes.map((node) => (
                   <g key={node.id}>
                     <rect
-                      x={node.x - 70}
+                      x={node.x - 80}
                       y={node.y - 40}
-                      width="140"
+                      width="160"
                       height="80"
                       rx="12"
                       ry="12"
@@ -112,7 +114,7 @@ export const FKSystemOverview = () => {
                       strokeWidth="4"
                       filter="url(#shadow)"
                     />
-                    <text x={node.x} y={node.y - 10} textAnchor="middle" fill="#fff" fontSize="16" fontWeight="bold">
+                    <text x={node.x} y={node.y - 5} textAnchor="middle" fill="#fff" fontSize="14" fontWeight="bold">
                       {node.id}. {node.name}
                     </text>
                     <text x={node.x} y={node.y + 20} textAnchor="middle" fill="#f3f4f6" fontSize="12">
@@ -121,7 +123,6 @@ export const FKSystemOverview = () => {
                   </g>
                 ))}
               </svg>
-
             </div>
           </div>
         </div>
