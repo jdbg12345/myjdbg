@@ -32,15 +32,9 @@ export const FKSystemOverview = () => {
           </div>
 
           <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-8 border border-gray-200">
-            <div className="flex items-center justify-between mb-8">
-              <h4 className="text-2xl font-bold text-gray-800">智能FK流程</h4>
-            </div>
-
+           
             <div className="bg-white rounded-lg p-8 mb-6">
-               <svg 
-              viewBox="0 0 1600 550" 
-              className="w-full h-[550px] min-w-[1400px]"
-            >
+               <svg viewBox="0 0 1600 550" className="w-full h-[550px] min-w-[1400px]">
               <defs>
                 <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
                   <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
