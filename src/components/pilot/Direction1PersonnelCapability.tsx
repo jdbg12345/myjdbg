@@ -9,7 +9,7 @@ export const Direction1PersonnelCapability = () => {
             <div className="w-16 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">方向1</span>
             </div>
-            <h2 className="text-3xl font-bold text-gray-800">人员的风控能力参差不齐</h2>
+            <h2 className="text-3xl font-bold text-gray-800">审核问题-质量较差</h2>
           </div>
         </div>
       
