@@ -389,7 +389,7 @@ export const FKSystemOverview = () => {
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">增强</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">帐变记录异常</span>
+                      <span className="text-sm text-gray-600">敏感信息明文查询</span>
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
                     </div>
                     <div className="flex justify-between items-center">
