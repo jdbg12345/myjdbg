@@ -9,13 +9,7 @@ export const FKSystemOverview = () => {
         <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">
           3.2 FKZX-FK体系概览
         </h1>
-      </div>
-      </div>
-
-       
-
-       
-
+  
         {/* 2.2 FK流程变化 */}
         <div className="mb-16">
           <div className="bg-white rounded-lg p-8 border border-blue-200">
