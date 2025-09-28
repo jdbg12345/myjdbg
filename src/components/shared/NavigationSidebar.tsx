@@ -89,7 +89,7 @@ const navigationItems: NavigationItem[] = [
 
 export const NavigationSidebar = () => {
   const [activeItem, setActiveItem] = useState('cover');
-  const [expandedItems, setExpandedItems] = useState<string[]>(['data', 'summary']);
+  const [expandedItems, setExpandedItems] = useState<string[]>(['data', 'fk-summary']);
   const [readingProgress, setReadingProgress] = useState(0);
 
   // 计算阅读进度

@@ -102,6 +102,16 @@ function App() {
         </div>
         
         {/* 3. FK工作总结 */}
+        {/* 3.1 FK整体说明 */}
+        <div data-section="fk-transformation">
+          <FKTransformationRhythm />
+        </div>
+        
+        {/* 3.2 FK体系概览 */}
+        <div data-section="fk-system-overview">
+          <FKSystemOverview />
+        </div>
+        
         {/* 3.3 FK试点成果 */}
         <div data-section="pilot-results">
           <PilotResults />
@@ -120,16 +130,6 @@ function App() {
         </div>
         
         {/* 4. 备份待用 */}
-        {/* 3.1 FK整体说明 */}
-        <div data-section="fk-transformation">
-          <FKTransformationRhythm />
-        </div>
-        
-        {/* 3.2 FK能力概览 */}
-        <div data-section="fk-system-overview">
-          <FKSystemOverview />
-        </div>
-        
         {/* 3.1 审核组 */}
         <div data-section="audit-group">
           <AuditGroup />
@@ -177,7 +177,7 @@ function App() {
         </div>
         
         
-        {/* 5. 事故问题汇总 */}
+        {/* 5. B端事故问题汇总 */}
         <div data-section="risk-review">
           <RiskReview />
         </div>
