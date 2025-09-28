@@ -327,7 +327,7 @@ export const OrganizationalStructure = () => {
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
       <div className="mb-12">
-        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">1. 风控组织架构</h1>
+        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">1. 组织情况</h1>
       </div>
 
       {/* 风控组织协同 */}
