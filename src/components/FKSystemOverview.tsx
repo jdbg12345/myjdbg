@@ -341,8 +341,8 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-3 border border-blue-200">
                       <div className="font-semibold text-gray-800 text-sm mb-1">体育套利</div>
                       <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">试运行</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">增强</span></span>
+                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">开发中</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">新增</span></span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-3 border border-blue-200">
@@ -362,8 +362,8 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-3 border border-blue-200">
                       <div className="font-semibold text-gray-800 text-sm mb-1">电竞套利</div>
                       <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">试运行</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">增强</span></span>
+                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">方案中</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">新增</span></span>
                       </div>
                     </div>
                   </div>
@@ -375,14 +375,14 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-3 border border-blue-200">
                       <div className="font-semibold text-gray-800 text-sm mb-1">活动金额</div>
                       <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">新增</span></span>
+                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">已上线</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">增强</span></span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-3 border border-blue-200">
                       <div className="font-semibold text-gray-800 text-sm mb-1">活动比例</div>
                       <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">试运行</span></span>
+                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">已上线</span></span>
                         <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">增强</span></span>
                       </div>
                     </div>
@@ -390,7 +390,7 @@ export const FKSystemOverview = () => {
                       <div className="font-semibold text-gray-800 text-sm mb-1">活动类型</div>
                       <div className="flex justify-between items-center text-xs">
                         <span className="text-gray-600">状态：<span className="font-medium text-blue-600">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">新增</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">增强</span></span>
                       </div>
                     </div>
                   </div>
