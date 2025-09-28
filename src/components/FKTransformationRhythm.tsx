@@ -176,15 +176,6 @@ export const FKTransformationRhythm = () => {
             </span>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 mb-8">
-            <div className="text-center mb-8">
-              <div className="bg-white/80 rounded-xl p-6 inline-block">
-                <p className="text-gray-800 text-lg leading-relaxed">
-                长期目标是最大化系统自动判定，减少人工操作。当人工结果偏离系统设定范围时触发二次审核，从而提升风控质量与稳定性，使违规成本极高、操作空间几乎为零。
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
