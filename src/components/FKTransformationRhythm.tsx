@@ -229,15 +229,7 @@ export const FKTransformationRhythm = () => {
                       </div>
                       <div>
                         <h4 className="text-2xl font-bold text-blue-900">2.0阶段 当前目标</h4>
-                        <div className="flex items-center space-x-2 mt-2">
-                          <div className="bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-sm font-bold flex items-center">
-                            <span className="text-yellow-600 mr-1">★</span>
-                            当前阶段
-                          </div>
-                          <div className="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm font-bold">
-                            Q3 进行中
-                          </div>
-                        </div>
+                
                       </div>
                     </div>
                     <p className="text-blue-800 mb-6 font-bold text-lg">人做决策的比例要大大降低</p>
