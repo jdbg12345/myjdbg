@@ -185,6 +185,101 @@ export const Direction1PersonnelCapability = () => {
          
       {/* 1、出款强制查看标签备注 */}
       <div className="mb-12">
+
+        {/* 分数分布图表 */}
+        <div className="mt-8">
+          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
+            <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
+              订单数量
+            </div>
+            <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
+              问题率 (%)
+            </div>
+            
+            <div className="mx-12 h-full relative">
+              <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+                <span>400</span>
+                <span>300</span>
+                <span>200</span>
+                <span>100</span>
+                <span>0</span>
+              </div>
+              
+              <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
+                <span>28%</span>
+                <span>21%</span>
+                <span>14%</span>
+                <span>7%</span>
+                <span>0%</span>
+              </div>
+              
+              <div className="absolute left-12 right-12 h-full">
+                {[0, 25, 50, 75, 100].map((percent) => (
+                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                ))}
+              </div>
+              
+              <div className="absolute left-12 right-12 h-full flex items-end justify-around pb-8">
+                {[
+                  { range: '0-29分', count: 400, percent: 33.9, rate: 20 },
+                  { range: '30-59分', count: 350, percent: 29.7, rate: 25.7 },
+                  { range: '60-89分', count: 280, percent: 23.7, rate: 21.4 },
+                  { range: '90-100分', count: 150, percent: 12.7, rate: 20 }
+                ].map((item, index) => (
+                  <div key={index} className="flex flex-col items-center relative">
+                    <div className="relative">
+                      <div 
+                        className="w-16 bg-blue-500 rounded-t"
+                        style={{ height: `${(item.count / 400) * 200}px` }}
+                      ></div>
+                    </div>
+                    
+                    {/* 问题率点 */}
+                    <div 
+                      className="absolute w-3 h-3 bg-orange-500 rounded-full border-2 border-white"
+                      style={{bottom: `${32 + (item.rate / 28) * 200}px`, left: '50%', transform: 'translateX(-50%)'}}
+                    >
+                      <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs text-orange-700 bg-white px-1 py-0.5 rounded shadow whitespace-nowrap">
+                        {item.rate}%
+                      </div>
+                    </div>
+                    
+                    {/* 底部标签 */}
+                    <div className="text-center mt-4">
+                      <div className="text-xs text-gray-800 font-medium whitespace-nowrap">{item.range}</div>
+                      <div className="text-xs text-gray-500 mt-1">{item.count}</div>
+                      <div className="text-xs text-gray-500">({item.percent}%)</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              {/* 问题率连线 */}
+              <svg className="absolute left-16 right-16 top-0 bottom-0 pointer-events-none" width="100%" height="100%">
+                <path
+                  d={`M 12.5% ${100 - (20 / 28) * 60}% L 37.5% ${100 - (25.7 / 28) * 60}% L 62.5% ${100 - (21.4 / 28) * 60}% L 87.5% ${100 - (20 / 28) * 60}%`}
+                  stroke="#f97316"
+                  strokeWidth="3"
+                  fill="none"
+                  opacity="0.8"
+                />
+              </svg>
+            </div>
+          </div>
+          
+          <div className="flex justify-center space-x-6 text-sm">
+            <div className="flex items-center space-x-2">
+              <div className="w-3 h-3 bg-blue-500 rounded"></div>
+              <span className="text-gray-700">订单数量及占比</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+              <span className="text-gray-700">问题率趋势</span>
+            </div>
+          </div>
+          
+          <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+        </div>
         {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center justify-between mb-6">

@@ -52,7 +52,137 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
 
-      {/* 1. 电子策略 */}
+      {/* 各种策略模块 */}
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">各种策略实施</h3>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* 电子策略 */}
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">电</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">电子策略</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            </div>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">电子游戏卡免费旋转等套利行为难以识别</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h5 className="font-bold text-blue-700 mb-2 text-sm">策略</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">建立电子游戏异常行为识别机制</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h5 className="font-bold text-green-700 mb-2 text-sm">收益</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">拦截率达到25%</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 真人策略 */}
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">真</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">真人策略</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            </div>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">真人游戏对打和算牌行为识别不足</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h5 className="font-bold text-blue-700 mb-2 text-sm">策略</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">建立真人游戏异常行为识别机制</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h5 className="font-bold text-green-700 mb-2 text-sm">收益</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">问题率26.7%</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 体育策略 */}
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">体</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">体育策略</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            </div>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">体育打水和对冲套利行为监控薄弱</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h5 className="font-bold text-blue-700 mb-2 text-sm">策略</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">建立体育投注异常行为识别机制</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h5 className="font-bold text-green-700 mb-2 text-sm">收益</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">问题率22.1%</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 棋牌策略 */}
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">棋</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">棋牌策略</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            </div>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">棋牌游戏作弊和异常胜率难以监控</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h5 className="font-bold text-blue-700 mb-2 text-sm">策略</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">建立棋牌游戏异常行为识别机制</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h5 className="font-bold text-green-700 mb-2 text-sm">收益</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">问题率23.8%</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 彩票策略 */}
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">彩</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">彩票策略</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
+            </div>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">彩票全包和异常投注模式缺乏有效拦截</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h5 className="font-bold text-blue-700 mb-2 text-sm">策略</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">建立彩票游戏异常投注识别机制</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h5 className="font-bold text-green-700 mb-2 text-sm">收益</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">问题率25%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="mb-12">
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center space-x-3 mb-6">

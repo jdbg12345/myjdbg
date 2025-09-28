@@ -240,19 +240,19 @@ export const FKTransformationRhythm = () => {
             {progressSchedule.map((item, index) => (
               <div key={index} className={`rounded-lg p-6 border-l-4 ${
                 item.status === 'completed' ? 'bg-gradient-to-r from-green-50 to-emerald-50 border-green-500' :
-                item.status === 'current' ? 'bg-gradient-to-r from-blue-50 to-cyan-50 border-blue-500' :
+                item.status === 'current' ? 'bg-gradient-to-r from-blue-100 to-cyan-100 border-blue-600 shadow-lg transform scale-105' :
                 'bg-gradient-to-r from-gray-50 to-slate-50 border-gray-400'
               }`}>
                 <div className="flex items-start space-x-4">
                   <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${
                     item.status === 'completed' ? 'bg-green-100' :
-                    item.status === 'current' ? 'bg-blue-100' :
+                    item.status === 'current' ? 'bg-blue-200' :
                     'bg-gray-100'
                   }`}>
                     {item.status === 'completed' ? (
                       <CheckCircle className="w-5 h-5 text-green-600" />
                     ) : item.status === 'current' ? (
-                      <Clock className="w-5 h-5 text-blue-600" />
+                      <Clock className="w-6 h-6 text-blue-700" />
                     ) : (
                       <span className="text-gray-600 font-bold text-sm">{item.time}</span>
                     )}
@@ -260,21 +260,21 @@ export const FKTransformationRhythm = () => {
                   <div className="flex-1">
                     <div className={`text-lg font-bold mb-2 ${
                       item.status === 'completed' ? 'text-green-800' :
-                      item.status === 'current' ? 'text-blue-800' :
+                      item.status === 'current' ? 'text-blue-900 text-xl' :
                       'text-gray-700'
                     }`}>
                       {item.time} - {item.stage}
                     </div>
                     <p className={`leading-relaxed text-sm mb-3 ${
                       item.status === 'completed' ? 'text-green-700' :
-                      item.status === 'current' ? 'text-blue-700' :
+                      item.status === 'current' ? 'text-blue-800 font-medium' :
                       'text-gray-600'
                     }`}>
                       {item.work}
                     </p>
                     <div className={`text-sm font-semibold ${
                       item.status === 'completed' ? 'text-green-600' :
-                      item.status === 'current' ? 'text-blue-600' :
+                      item.status === 'current' ? 'text-blue-700 text-base' :
                       'text-gray-500'
                     }`}>
                       {item.result}

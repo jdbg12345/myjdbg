@@ -133,10 +133,10 @@ export const FKSystemOverview = () => {
                   {/* Node name */}
                   <text
                     x={node.x}
-                    y={node.y - 5}
+                    y={node.y - 2}
                     textAnchor="middle"
                     fill="white"
-                    fontSize="20"
+                    fontSize="26"
                     fontWeight="bold"
                   >
                     {node.name}
@@ -145,10 +145,10 @@ export const FKSystemOverview = () => {
                   {/* Node description */}
                   <text
                     x={node.x}
-                    y={node.y + 15}
+                    y={node.y + 20}
                     textAnchor="middle"
                     fill="rgba(255,255,255,0.8)"
-                    fontSize="18"
+                    fontSize="22"
                   >
                     {node.desc}
                   </text>
