@@ -449,24 +449,16 @@ export const Direction3SystemStrategies = () => {
                   </div>
                   
                   <div className="absolute left-12 right-12 h-full">
-                    <span>100%</span>
-                    <span>75%</span>
-                    <span>50%</span>
-                    <span>25%</span>
-                    <span>0%</span>
-                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                  
-                      <div className="mb-2">
-                        <div className="w-20 bg-blue-500 rounded-t" style={{ height: '140px' }}></div>
-                      </div>
                     {[0, 25, 50, 75, 100].map((percent) => (
                       <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
                     ))}
-                        style={{top: '76.2%', left: '50%', transform: 'translateX(-50%)'}}
+                  </div>
                   
                   <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
                     <div className="flex flex-col items-center relative">
-                      <div className="w-20 bg-blue-500 rounded-t" style={{ height: '210px' }}></div>
+                      <div className="mb-2">
+                        <div className="w-20 bg-blue-500 rounded-t" style={{ height: '210px' }}></div>
+                      </div>
                       
                       <div 
                         className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white"
@@ -477,24 +469,25 @@ export const Direction3SystemStrategies = () => {
                         </div>
                       </div>
                       
-              <div className="text-center text-sm font-medium text-gray-600 mb-4">策略效果</div>
+                      <div className="text-center mt-4">
+                        <div className="text-sm text-gray-800 font-medium">棋牌合伙策略</div>
                         <div className="text-xs text-gray-500 mt-1">210单 (23.8%)</div>
                       </div>
                     </div>
                   </div>
-                  <span className="text-gray-700">命中订单数</span>
+                </div>
               </div>
               
-              <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型对比</div>
-                  <span className="text-gray-700">策略准确率</span>
+              <div className="text-center text-sm font-medium text-gray-600 mb-4">策略效果</div>
+              
               <div className="flex justify-center space-x-6 text-sm">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-blue-500 rounded"></div>
-                  <span className="text-gray-700">拦截订单数</span>
+                  <span className="text-gray-700">命中订单数</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                  <span className="text-gray-700">准确率</span>
+                  <span className="text-gray-700">策略准确率</span>
                 </div>
               </div>
               
@@ -534,23 +527,31 @@ export const Direction3SystemStrategies = () => {
                 <h6 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                   收益
+                </h6>
+                <p className="text-gray-700 text-sm leading-relaxed">预计彩票套利识别率提升<span className="font-bold text-green-600">75%</span></p>
+              </div>
+            </div>
+
+            {/* 彩票策略效果图表 */}
+            <div className="mt-6">
+              <h6 className="text-md font-bold text-gray-800 mb-4">彩票策略预期效果图表</h6>
               <div className="relative h-64 mb-4 bg-gray-50 rounded-lg p-8">
-                <p className="text-gray-700 text-sm leading-relaxed">彩票套利策略问题率25%，有效识别全包行为</p>
+                <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
                   规划命中订单数
                 </div>
                 <div className="absolute right-2 top-1/2 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
                   规划准确率 (%)
-            </div>
-
+                </div>
+                
                 <div className="mx-12 h-full relative">
-            <div className="mt-6">
+                  <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
                     <span>600</span>
                     <span>450</span>
                     <span>300</span>
                     <span>150</span>
-                </div>
-                
-                <div className="mx-6 h-full relative">
+                    <span>0</span>
+                  </div>
+                  
                   <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
                     <span>100%</span>
                     <span>75%</span>
@@ -560,11 +561,11 @@ export const Direction3SystemStrategies = () => {
                   </div>
                   
                   <div className="absolute left-12 right-12 h-full">
-                    <span>100%</span>
-                    <span>75%</span>
-                    <span>50%</span>
-                    <span>25%</span>
-                    <span>0%</span>
+                    {[0, 25, 50, 75, 100].map((percent) => (
+                      <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                    ))}
+                  </div>
+                  
                   <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
                     <div className="flex flex-col items-center relative">
                       <div className="mb-2">
@@ -577,38 +578,32 @@ export const Direction3SystemStrategies = () => {
                       >
                         <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap">
                           75%
+                        </div>
                       </div>
-                      >
                       
                       <div className="text-center mt-4">
                         <div className="text-sm text-gray-800 font-medium">彩票全包策略</div>
                         <div className="text-xs text-gray-500 mt-1">450单 (75%)</div>
                       </div>
                     </div>
-                          23.8%
-                        </div>
-                      </div>
-                      
-              <div className="text-center text-sm font-medium text-gray-600 mb-4">策略效果</div>
-                        <div className="text-sm text-gray-800 font-medium">棋牌合伙策略</div>
-                        <div className="text-xs text-gray-500 mt-1">210单 (23.8%)</div>
-                      </div>
-              <>
-                <div className="text-center text-sm font-medium text-gray-600 mb-4">策略效果</div>
-                
-                <div className="flex justify-center space-x-6 text-sm">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-blue-500 rounded"></div>
-                    <span className="text-gray-700">命中订单数</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                    <span className="text-gray-700">策略准确率</span>
                   </div>
                 </div>
-                
-                <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-              </>
+              </div>
+              
+              <div className="text-center text-sm font-medium text-gray-600 mb-4">策略效果</div>
+              
+              <div className="flex justify-center space-x-6 text-sm">
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-gray-500 rounded"></div>
+                  <span className="text-gray-700">规划命中订单数</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  <span className="text-gray-700">规划准确率</span>
+                </div>
+              </div>
+              
+              <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
             </div>
           </div>
         </div>
@@ -652,7 +647,7 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">标准化关联下注工具</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-              <div className="relative h-64 mb-4 bg-gray-50 rounded-lg p-8">
+                <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                   收益
                 </h4>
