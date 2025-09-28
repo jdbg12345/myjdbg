@@ -25,62 +25,76 @@ export const FKSystemOverview = () => {
             </div>
 
             <div className="bg-white rounded-lg p-8 mb-6">
-                <svg viewBox="0 0 1600 500" className="w-full h-[500px]">
+                    <svg viewBox="0 0 1600 450" className="w-full h-96">
                 {/* 节点定义 */}
                 {[
                   { id: 1, x: 100, y: 120, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
                   { id: 2, x: 350, y: 120, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
                   { id: 3, x: 600, y: 120, name: "AI智能审核", desc: "多维度风险实时检测", color: "#3b82f6" },
-                  { id: 4, x: 850, y: 120, name: "自动放行", desc: "即时到账", color: "#3b82f6" },
-                  { id: 5, x: 400, y: 300, name: "人工复审", desc: "专业FK二次审核", color: "#3b82f6" },
-                  { id: 6, x: 650, y: 300, name: "系统监控", desc: "持续监控", color: "#f97316" },
-                  { id: 7, x: 900, y: 300, name: "内控复审", desc: "最终审核", color: "#f97316" }
+                  { id: 5, x: 850, y: 300, name: "人工复审", desc: "专业FK二次审核", color: "#3b82f6" },
+                  { id: 6, x: 1100, y: 300, name: "系统监控", desc: "持续监控", color: "#f97316" },
+                  { id: 7, x: 1350, y: 300, name: "内控复审", desc: "最终审核", color: "#f97316" },
+                  { id: 4, x: 1500, y: 120, name: "自动放行", desc: "即时到账", color: "#3b82f6" },
                 ].map((node) => (
                   <g key={node.id}>
-                    <rect 
-                      x={node.x - 70} 
-                      y={node.y - 40} 
-                      width="140" 
-                      height="80" 
-                      rx="12" 
-                      ry="12" 
-                      fill={node.color} 
+                    <rect
+                      x={node.x - 70}
+                      y={node.y - 40}
+                      width="140"
+                      height="80"
+                      rx="10"
+                      ry="10"
+                      fill={node.color}
+                      stroke="#ffffff"
+                      strokeWidth="4"
                     />
-                    <text x={node.x} y={node.y} textAnchor="middle" dominantBaseline="middle" fill="white" fontSize="16" fontWeight="bold">
+                    <text
+                      x={node.x}
+                      y={node.y}
+                      textAnchor="middle"
+                      dominantBaseline="middle"
+                      fill="white"
+                      fontSize="16"
+                      fontWeight="bold"
+                    >
+                      {node.id}
+                    </text>
+                    <text
+                      x={node.x}
+                      y={node.y + 60}
+                      textAnchor="middle"
+                      fill="#374151"
+                      fontSize="14"
+                      fontWeight="600"
+                    >
                       {node.name}
                     </text>
-                    <text x={node.x} y={node.y + 20} textAnchor="middle" fill="#f3f4f6" fontSize="12">
+                    <text
+                      x={node.x}
+                      y={node.y + 85}
+                      textAnchor="middle"
+                      fill="#6b7280"
+                      fontSize="12"
+                    >
                       {node.desc}
                     </text>
                   </g>
                 ))}
 
-                {/* 箭头和连线（弧线） */}
+                {/* 连接线 - 使用弧线 */}
+                <path d="M170,120 Q225,120 320,120" stroke="#3b82f6" strokeWidth="3" fill="none" markerEnd="url(#arrow)" />
+                <path d="M370,120 Q485,120 600,120" stroke="#3b82f6" strokeWidth="3" fill="none" markerEnd="url(#arrow)" />
+                <path d="M620,120 Q725,180 850,300" stroke="#3b82f6" strokeWidth="3" fill="none" markerEnd="url(#arrow)" />
+                <path d="M880,300 Q1000,300 1100,300" stroke="#f97316" strokeWidth="3" fill="none" markerEnd="url(#arrow)" />
+                <path d="M1130,300 Q1225,210 1500,120" stroke="#3b82f6" strokeWidth="3" fill="none" markerEnd="url(#arrow)" />
+                <path d="M1150,300 Q1250,120 1500,120" stroke="#f97316" strokeWidth="3" fill="none" markerEnd="url(#arrow)" />
+
+                {/* 箭头标记 */}
                 <defs>
                   <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
                     <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
                   </marker>
                 </defs>
-
-                {/* 连接线 */}
-                <path d="M170,120 C220,120 280,120 330,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
-                <path d="M400,120 C500,120 550,120 600,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
-                <path d="M670,120 C750,120 800,120 850,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
-                
-                {/* 3→5 (不通过) */}
-                <path d="M600,160 C600,200 400,260 400,300" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
-                <text x="500" y="220" fill="#3b82f6" fontSize="12" textAnchor="middle">不通过</text>
-
-                {/* 5→6 */}
-                <path d="M470,300 C500,300 600,300 650,300" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
-
-                {/* 6→4 (监控通过) */}
-                <path d="M680,300 C700,260 800,140 850,140" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
-                <text x="760" y="220" fill="#3b82f6" fontSize="12" textAnchor="middle">监控通过</text>
-
-                {/* 6→7 (监控不通过) */}
-                <path d="M680,300 C720,300 860,300 900,300" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
-                <text x="800" y="280" fill="#f97316" fontSize="12" textAnchor="middle">监控不通过</text>
               </svg>
             </div>
           </div>
