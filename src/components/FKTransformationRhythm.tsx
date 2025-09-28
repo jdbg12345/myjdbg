@@ -179,9 +179,6 @@ export const FKTransformationRhythm = () => {
 
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 mb-8">
           <div className="text-center mb-8">
-            <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              构建以系统为核心、人工为辅助的智能FK防护体系，实现全流程自动化风险识别与控制
-            </p>
             <div className="bg-white/80 rounded-xl p-6 inline-block">
               <p className="text-gray-800 text-lg leading-relaxed">
                 在FK中，<span className="font-bold text-red-600">"人"是所有问题的根源</span>。长期目标是不依赖"人"，压缩人的操作比重与空间，由系统自动完成大部分判定，覆盖策略、流程、内控与预警。当人的执行结果与系统偏差超出预设范围时，会触发内控二次审核，提升FK质量与稳定性，构建高效可靠的防护体系，使违规者成本与风险极高、几乎无操作空间。
