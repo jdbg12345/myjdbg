@@ -461,7 +461,7 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-3 border border-blue-200">
                       <div className="font-semibold text-gray-800 text-sm mb-1">泄漏风控标签和备注</div>
                       <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">已完成</span></span>
+                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">已上线</span></span>
                         <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">新增</span></span>
                       </div>
                     </div>
@@ -476,7 +476,7 @@ export const FKSystemOverview = () => {
                       <div className="font-semibold text-gray-800 text-sm mb-1">风控参数动态调整</div>
                       <div className="flex justify-between items-center text-xs">
                         <span className="text-gray-600">状态：<span className="font-medium text-blue-600">试运行</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">增强</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">新增</span></span>
                       </div>
                     </div>
                   </div>
@@ -496,14 +496,14 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-3 border border-blue-200">
                       <div className="font-semibold text-gray-800 text-sm mb-1">出款不看标签和备注</div>
                       <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">试运行</span></span>
+                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">已上线</span></span>
                         <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">新增</span></span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">会员禁用权限滥用</div>
+                      <div className="font-semibold text-gray-800 text-sm mb-1">会员禁用流程升级</div>
                       <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">试运行</span></span>
+                        <span className="text-gray-600">状态：<span className="font-medium text-blue-600">开发中</span></span>
                         <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">新增</span></span>
                       </div>
                     </div>
@@ -511,7 +511,7 @@ export const FKSystemOverview = () => {
                       <div className="font-semibold text-gray-800 text-sm mb-1">高危参数修改监控</div>
                       <div className="flex justify-between items-center text-xs">
                         <span className="text-gray-600">状态：<span className="font-medium text-blue-600">试运行</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">增强</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">新增</span></span>
                       </div>
                     </div>
                   </div>
