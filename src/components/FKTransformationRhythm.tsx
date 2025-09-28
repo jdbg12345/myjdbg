@@ -298,7 +298,7 @@ export const FKTransformationRhythm = () => {
               <Clock className="w-5 h-5 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-800">推进节奏</h2>
-            <span className="text-gray-600 text-lg">小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险</span>
+            <span className="text-gray-600 text-lg">针对FK特殊性，我们采取先小范围试点，验证效果后逐步推广，避免“一刀切”带来的组织和业务风险。</span>
           </div>
 
           <div className="relative">
