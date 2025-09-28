@@ -188,6 +188,56 @@ export const FKTransformationRhythm = () => {
         </div>
       </div>
 
+      {/* 核心目标下的三个模块 */}
+      <div className="mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* 模块1 */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border-l-4 border-blue-500">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-blue-600 font-bold text-sm">1</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-blue-800 mb-3">系统审核比重逐步增加</h4>
+                <p className="text-blue-700 leading-relaxed">
+                  提供尽量由系统判定，降低人工操作比例。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 模块2 */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border-l-4 border-blue-500">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-blue-600 font-bold text-sm">2</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-blue-800 mb-3">提供丰富的风控工具库</h4>
+                <p className="text-blue-700 leading-relaxed">
+                  偏差监控：人工结果偏离系统预设时触发二次审核，保证风控稳定性。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 模块3 */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border-l-4 border-blue-500">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-blue-600 font-bold text-sm">3</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-blue-800 mb-3">内控违规操作风险监控</h4>
+                <p className="text-blue-700 leading-relaxed">
+                  提升违规成本，几乎消除违规操作空间，构建可靠防护体系。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* 推进节奏 */}
       <div className="mb-8">
         <div className="bg-white rounded-lg p-8 border border-blue-200">

@@ -136,7 +136,7 @@ export const FKSystemOverview = () => {
                     y={node.y + 5}
                     textAnchor="middle"
                     fill="white"
-                    fontSize="14"
+                    fontSize="16"
                     fontWeight="bold"
                   >
                     {node.name}
@@ -148,7 +148,7 @@ export const FKSystemOverview = () => {
                     y={node.y + 28}
                     textAnchor="middle"
                     fill="rgba(255,255,255,0.8)"
-                    fontSize="12"
+                    fontSize="14"
                   >
                     {node.desc}
                   </text>
