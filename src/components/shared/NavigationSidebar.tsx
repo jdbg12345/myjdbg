@@ -41,7 +41,7 @@ const navigationItems: NavigationItem[] = [
     title: '3. FK工作总结',
     icon: <FileText className="w-4 h-4" />,
     children: [
-      { id: 'fk-transformation', title: '3.1 FK变革进度' },
+      { id: 'fk-transformation', title: '3.1 FK整体说明' },
       { id: 'fk-system-overview', title: '3.2 FK体系概览' },
       { id: 'pilot-results', title: '3.3 FK试点成果' },
       { id: 'audit-group', title: '3.1 审核组' },
