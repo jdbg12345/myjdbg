@@ -136,7 +136,7 @@ export const FKSystemOverview = () => {
                     y={node.y + 5}
                     textAnchor="middle"
                     fill="white"
-                    fontSize="24"
+                    fontSize="26"
                     fontWeight="bold"
                   >
                     {node.name}
@@ -148,7 +148,7 @@ export const FKSystemOverview = () => {
                     y={node.y + 25}
                     textAnchor="middle"
                     fill="rgba(255,255,255,0.8)"
-                    fontSize="18"
+                    fontSize="22"
                   >
                     {node.desc}
                   </text>
@@ -298,4 +298,101 @@ export const FKSystemOverview = () => {
                         <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3 border
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 套利识别规则 */}
+            <div className="bg-white rounded-xl p-6 border border-blue-100">
+              <h5 className="text-lg font-bold text-blue-800 mb-4 flex items-center">
+                <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>套利识别规则
+              </h5>
+              <div className="space-y-4">
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <h6 className="font-semibold text-gray-700 mb-3">游戏套利类</h6>
+                  <div className="space-y-2">
+                    <div className="bg-white rounded-lg p-3 border border-blue-200">
+                      <div className="font-semibold text-gray-800 text-sm mb-1">电子卡免费</div>
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-blue-200">
+                      <div className="font-semibold text-gray-800 text-sm mb-1">体育对打</div>
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-blue-200">
+                      <div className="font-semibold text-gray-800 text-sm mb-1">真人算牌</div>
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-blue-200">
+                      <div className="font-semibold text-gray-800 text-sm mb-1">彩票全包</div>
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <h6 className="font-semibold text-gray-700 mb-3">活动套利类</h6>
+                  <div className="space-y-2">
+                    <div className="bg-white rounded-lg p-3 border border-blue-200">
+                      <div className="font-semibold text-gray-800 text-sm mb-1">活动&红利风险</div>
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-blue-200">
+                      <div className="font-semibold text-gray-800 text-sm mb-1">关联代理套利</div>
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <h6 className="font-semibold text-gray-700 mb-3">作弊识别类</h6>
+                  <div className="space-y-2">
+                    <div className="bg-white rounded-lg p-3 border border-blue-200">
+                      <div className="font-semibold text-gray-800 text-sm mb-1">机器下注</div>
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 border border-blue-200">
+                      <div className="font-semibold text-gray-800 text-sm mb-1">租卖号</div>
+                      <div className="flex justify-between items-center text-xs">
+                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      {/* Footer */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="text-gray-400 text-sm">FKZX</div>
+      </div>
+    </div>
+  );
+};
