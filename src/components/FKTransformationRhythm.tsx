@@ -110,7 +110,7 @@ export const FKTransformationRhythm = () => {
             <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
               <AlertTriangle className="w-5 h-5 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-800">困难挑战</h2>
+            <h2 className="text-3xl font-bold text-gray-800">面对困难</h2>
             <span className="text-gray-600 text-lg">解决过程面临的实际挑战困难</span>
           </div>
 
