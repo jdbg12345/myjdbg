@@ -12,19 +12,17 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
-
       {/* 风控标签和备注独立权限 */}
       <div className="mb-12">
-        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">标</span>
-            </div>
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">标</span>
+              </div>
               <h4 className="text-xl font-bold text-gray-800">风控标签和备注独立权限</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-3">已上线</span>
             </div>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -50,23 +48,19 @@ export const Direction4InternalCollusion = () => {
             </div>
           </div>
         </div>
-    
       </div>
 
-
-      
-      {/* 2. 会员禁用流程升级 */}
+      {/* 会员禁用流程升级 */}
       <div className="mb-8">
-        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">禁</span>
-            </div>
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">禁</span>
+              </div>
               <h4 className="text-xl font-bold text-gray-800">会员禁用流程升级</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-3">已上线</span>
             </div>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -97,7 +91,6 @@ export const Direction4InternalCollusion = () => {
             <h5 className="text-lg font-bold text-gray-800 mb-4">VIP等级审批流程示意图</h5>
             <div className="bg-white rounded-lg p-6 border border-gray-200">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
                 <div className="text-center">
                   <div className="bg-green-100 border-2 border-green-300 rounded-lg p-4 mb-2">
                     <div className="text-green-700 font-bold">VIP 0-3</div>
@@ -121,25 +114,23 @@ export const Direction4InternalCollusion = () => {
                   </div>
                   <div className="text-sm text-gray-600 font-medium">需U盾/谷歌验证</div>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
-        </div>
+      </div>
       
       {/* 敏感高危参数修改监控 */}
       <div className="mb-12">
-        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">参</span>
-            </div>
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">参</span>
+              </div>
               <h4 className="text-xl font-bold text-gray-800">敏感高危参数修改监控</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 ml-3">试运行</span>
             </div>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -165,21 +156,19 @@ export const Direction4InternalCollusion = () => {
             </div>
           </div>
         </div>
-    
       </div>
 
-         {/* 关联查询使用密文查询 */}
+      {/* 关联查询使用密文查询 */}
       <div className="mb-12">
-        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">密</span>
-            </div>
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">密</span>
+              </div>
               <h4 className="text-xl font-bold text-gray-800">关联查询使用密文查询</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 ml-3">试运行</span>
             </div>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -205,12 +194,10 @@ export const Direction4InternalCollusion = () => {
             </div>
           </div>
         </div>
-    
       </div>
-      
+
       {/* 风控策略参数变化机制 */}
       <div className="mb-8">
-        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
@@ -244,7 +231,6 @@ export const Direction4InternalCollusion = () => {
               <p className="text-gray-700 text-sm leading-relaxed">策略参数泄漏风险降低</p>
             </div>
           </div>
-        
         </div>
       </div>
 
@@ -257,7 +243,9 @@ export const Direction4InternalCollusion = () => {
                 <span className="text-white font-bold text-sm">稽</span>
               </div>
               <h4 className="text-xl font-bold text-gray-800">稽查效果</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-3">已上线</span>
+            </div>
+          </div>
           <div className="bg-white rounded-lg p-6 border border-gray-200">
             <p className="text-gray-600 text-center">内容待定</p>
           </div>
@@ -266,5 +254,3 @@ export const Direction4InternalCollusion = () => {
     </div>
   );
 };
-  )
-}
