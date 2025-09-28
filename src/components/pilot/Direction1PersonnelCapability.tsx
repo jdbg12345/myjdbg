@@ -190,7 +190,7 @@ export const Direction1PersonnelCapability = () => {
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">备</span>
+                <span className="text-white font-bold text-sm">2</span>
               </div>
               <h4 className="text-xl font-bold text-gray-800">出款强制查看标签备注</h4>
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-3">已上线</span>
@@ -314,5 +314,6 @@ export const Direction1PersonnelCapability = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
