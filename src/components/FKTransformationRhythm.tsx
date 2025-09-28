@@ -43,13 +43,11 @@ export const FKTransformationRhythm = () => {
       {/* 核心问题 */}
       <div className="mb-8">
         <div className="flex items-center space-x-3 mb-6">
-          <div className="flex items-center space-x-3 flex-1">
-            <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-              <AlertTriangle className="w-5 h-5 text-white" />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-800">核心问题</h2>
-            <span className="text-gray-600 text-lg">问题很多，也很明确</span>
+          <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+            <AlertTriangle className="w-5 h-5 text-white" />
           </div>
+          <h2 className="text-3xl font-bold text-gray-800">核心问题</h2>
+          <span className="text-gray-600 text-lg">问题很多，也很明确</span>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -60,9 +58,9 @@ export const FKTransformationRhythm = () => {
                 <span className="text-red-600 font-bold text-sm">1</span>
               </div>
               <div className="flex-1">
-                <h4 className="text-lg font-bold text-red-800 mb-3">能力问题-识别不到</h4>
+                <h4 className="text-lg font-bold text-red-800 mb-3">人员的风控能力参差不齐</h4>
                 <p className="text-red-700 leading-relaxed">
-                  团队能力参差不齐，新人及外包团队错误率高；审核操作未严格遵循 SOP，监控不到位。
+                  审核人员经验差异明显，新人和外包团队错误率高，缺乏统一的能力标准和培训体系。
                 </p>
               </div>
             </div>
@@ -75,9 +73,9 @@ export const FKTransformationRhythm = () => {
                 <span className="text-red-600 font-bold text-sm">2</span>
               </div>
               <div className="flex-1">
-                <h4 className="text-lg font-bold text-red-800 mb-3">内控问题-内外勾结</h4>
+                <h4 className="text-lg font-bold text-red-800 mb-3">人的审核不按照标准执行</h4>
                 <p className="text-red-700 leading-relaxed">
-                  团队能力参差不齐，新人及外包团队错误率高；审核操作未严格遵循 SOP，监控不到位。
+                  审核流程执行不规范，未严格按照SOP操作，监控不到位，导致审核质量不稳定。
                 </p>
               </div>
             </div>
@@ -90,7 +88,7 @@ export const FKTransformationRhythm = () => {
                 <span className="text-red-600 font-bold text-sm">3</span>
               </div>
               <div className="flex-1">
-                <h4 className="text-lg font-bold text-red-800 mb-3">系统问题-支持不够</h4>
+                <h4 className="text-lg font-bold text-red-800 mb-3">系统审核策略的维度缺失</h4>
                 <p className="text-red-700 leading-relaxed">
                   策略偏防御型，缺乏套利及作弊识别能力，且缺少标准化工具支持以提升效率。
                 </p>
@@ -100,16 +98,14 @@ export const FKTransformationRhythm = () => {
         </div>
       </div>
 
-          {/* 困难挑战 */}
+      {/* 困难挑战 */}
       <div className="mb-8">    
         <div className="flex items-center space-x-3 mb-6">
-          <div className="flex items-center space-x-3 flex-1">
-            <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-              <AlertTriangle className="w-5 h-5 text-white" />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-800">困难挑战</h2>
-            <span className="text-gray-600 text-lg">解决问题过程中遇到的实际困难</span>
+          <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+            <AlertTriangle className="w-5 h-5 text-white" />
           </div>
+          <h2 className="text-3xl font-bold text-gray-800">困难挑战</h2>
+          <span className="text-gray-600 text-lg">解决问题过程中遇到的实际困难</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500 flex-1">
@@ -134,7 +130,7 @@ export const FKTransformationRhythm = () => {
               <div className="flex-1">
                 <h4 className="text-lg font-bold text-amber-800 mb-3">系统挑战</h4>
                 <p className="text-amber-700 leading-relaxed">
-                  系统仍处于初期，跨站融合、策略升级、多站对齐及能力引入需资源投入，短期难显成效。在“解决当下问题”与“长期建设”之间需平衡。
+                  系统仍处于初期，跨站融合、策略升级、多站对齐及能力引入需资源投入，短期难显成效。在"解决当下问题"与"长期建设"之间需平衡。
                 </p>
               </div>
             </div>
@@ -159,13 +155,11 @@ export const FKTransformationRhythm = () => {
       {/* 核心目标 */}
       <div className="mb-8">
         <div className="flex items-center space-x-3 mb-6">
-          <div className="flex items-center space-x-3 flex-1">
-            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-              <Target className="w-5 h-5 text-white" />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-800">核心目标</h2>
-            <span className="text-gray-600 text-lg">构建以系统为核心、人工为辅助的智能FK防护体系，实现全流程自动化风险识别与控制</span>
+          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <Target className="w-5 h-5 text-white" />
           </div>
+          <h2 className="text-3xl font-bold text-gray-800">核心目标</h2>
+          <span className="text-gray-600 text-lg">构建以系统为核心、人工为辅助的智能FK防护体系，实现全流程自动化风险识别与控制</span>
         </div>
 
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 mb-8">
@@ -272,13 +266,11 @@ export const FKTransformationRhythm = () => {
       {/* 落地策略 - 横向里程碑样式 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
-          <div className="flex items-center space-x-3 flex-1">
-            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-              <Clock className="w-5 h-5 text-white" />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-800">推进节奏</h2>
-            <span className="text-gray-600 text-lg">小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险</span>
+          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <Clock className="w-5 h-5 text-white" />
           </div>
+          <h2 className="text-3xl font-bold text-gray-800">推进节奏</h2>
+          <span className="text-gray-600 text-lg">小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险</span>
         </div>
         
           {/* 横向时间轴 */}
