@@ -16,12 +16,12 @@ const navigationItems: NavigationItem[] = [
   },
   {
     id: 'org',
-    title: '1. FK组织情况',
+    title: '1. 组织情况',
     icon: <Users className="w-4 h-4" />
   },
   {
     id: 'data',
-    title: '2. FK数据情况（待更新）',
+    title: '2. 数据情况（待更新）',
     icon: <BarChart3 className="w-4 h-4" />,
     children: [
       { id: 'prevention-data', title: '2.1 防范单量与金额' },
