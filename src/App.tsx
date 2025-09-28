@@ -125,7 +125,7 @@ function App() {
         <div data-section="pilot-direction2">
         </div>
         
-        {/* 3.3.3 方向3：内控问题-内外串联 */}
+        {/* 3.3.3 方向3：内控问题-违规行为 */}
         <div data-section="pilot-direction3">
         </div>
         
