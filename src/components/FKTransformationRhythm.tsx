@@ -63,7 +63,7 @@ export const FKTransformationRhythm = () => {
                 <span className="text-red-600 font-bold text-sm">1</span>
               </div>
               <div className="flex-1">
-                <h4 className="text-lg font-bold text-red-800 mb-3">审核问题-识别不到</h4>
+                <h4 className="text-lg font-bold text-red-800 mb-3">审核问题-质量较差</h4>
                 <p className="text-red-700 leading-relaxed">
                   团队能力参差不齐，新人及外包团队错误率高；审核操作未严格遵循 SOP，监控不到位。
                 </p>
