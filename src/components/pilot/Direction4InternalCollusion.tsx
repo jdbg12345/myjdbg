@@ -12,7 +12,6 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
-            </div>
 
       {/* 风控标签和备注独立权限 */}
       <div className="mb-12">
