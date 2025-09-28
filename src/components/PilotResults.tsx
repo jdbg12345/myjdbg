@@ -11,7 +11,7 @@ export const PilotResults = () => {
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.3 FKZX-FK试点成果</h1>
+        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.3 FK试点成果</h1>
       </div>   
 
       {/* 各个方向的试点成果 */}
