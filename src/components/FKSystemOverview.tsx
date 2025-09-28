@@ -5,8 +5,8 @@ export const FKSystemOverview = () => {
    const nodes = [
     { id: 1, x: 150, y: 130, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316", number: "1" },
     { id: 2, x: 400, y: 130, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6", number: "2" },
-    { id: 3, x: 650, y: 130, name: "AI智能审核", desc: "多维度风险实时检测", color: "#3b82f6", number: "3" },
-    { id: 4, x: 1200, y: 130, name: "自动放行", desc: "即时到账", color: "#10b981", number: "4" },
+    { id: 3, x: 650, y: 130, name: "系统审核", desc: "多维度风险实时检测", color: "#3b82f6", number: "3" },
+    { id: 4, x: 1200, y: 130, name: "审核通过", desc: "即时到账", color: "#10b981", number: "4" },
     { id: 5, x: 900, y: 290, name: "人工复审", desc: "专业FK二次审核", color: "#3b82f6", number: "5" },
     { id: 6, x: 1200, y: 290, name: "系统监控", desc: "持续监控", color: "#f97316", number: "6" },
     { id: 7, x: 1450, y: 290, name: "内控复审", desc: "最终审核", color: "#f97316", number: "7" },
