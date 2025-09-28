@@ -22,11 +22,11 @@ export const FKSystemOverview = () => {
           3.2 FKZX-FK体系概览
         </h1>
   
-        {/* 2.2 FK流程变化 */}
+        {/* 2.1 FK流程变化 */}
         <div className="mb-16">
           <div className="bg-white rounded-lg p-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.2</div>
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.1</div>
               <h3 className="text-2xl font-bold text-gray-800">FK流程变化</h3>
             </div>
           </div>
