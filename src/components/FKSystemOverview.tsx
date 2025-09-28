@@ -2,6 +2,30 @@ import React from 'react';
 import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } from 'lucide-react';
 
 export const FKSystemOverview = () => {
+   // 节点数据
+  const nodes = [
+    { id: 1, x: 150, y: 150, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
+    { id: 2, x: 400, y: 150, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
+    { id: 3, x: 650, y: 150, name: "AI智能审核", desc: "多维度风险实时检测", color: "#10b981" },
+    { id: 4, x: 950, y: 150, name: "自动放行", desc: "即时到账", color: "#10b981" },
+    { id: 5, x: 650, y: 300, name: "人工复审", desc: "专业FK二次审核", color: "#f97316" },
+    { id: 6, x: 850, y: 300, name: "系统监控", desc: "持续监控", color: "#3b82f6" },
+    { id: 7, x: 1050, y: 300, name: "内控复审", desc: "最终审核", color: "#ef4444" },
+  ];
+
+  // 连线数据
+  const links = [
+    { from: 1, to: 2, color: "#6b7280", text: "" },
+    { from: 2, to: 3, color: "#6b7280", text: "" },
+    { from: 3, to: 4, color: "#10b981", text: "通过" },
+    { from: 3, to: 5, color: "#f97316", text: "不通过" },
+    { from: 5, to: 6, color: "#6b7280", text: "" },
+    { from: 6, to: 4, color: "#10b981", text: "监控通过" },
+    { from: 6, to: 7, color: "#ef4444", text: "监控不通过" },
+  ];
+
+  const getNode = (id: number) => nodes.find(n => n.id === id)!;
+  
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
