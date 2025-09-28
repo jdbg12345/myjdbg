@@ -279,13 +279,11 @@ export const FKTransformationRhythm = () => {
       {/* 落地策略 - 横向里程碑样式 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
-          <div className="flex items-center space-x-3 flex-1">
-            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-              <Clock className="w-5 h-5 text-white" />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-800">推进节奏</h2>
-            <span className="text-gray-600 text-lg">小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险</span>
+          <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+            <Clock className="w-5 h-5 text-white" />
           </div>
+          <h2 className="text-3xl font-bold text-gray-800">推进节奏</h2>
+          <span className="text-gray-600 text-lg">小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险</span>
         </div>
 
         <div className="relative">

@@ -491,11 +491,13 @@ export const Direction3SystemStrategies = () => {
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
-              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
                 <span className="text-white font-bold text-sm">彩</span>
               </div>
               <h4 className="text-xl font-bold text-gray-800">彩票策略</h4>
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 ml-3">方案中</span>
+            </div>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
@@ -762,13 +764,11 @@ export const Direction3SystemStrategies = () => {
             <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-3 flex-1">
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-sm">睡</span>
                   </div>
                   <h4 className="text-xl font-bold text-gray-800">沉睡用户活跃</h4>
                   <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
-                </div>
-              </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                   <h4 className="font-bold text-red-700 mb-3 flex items-center">
