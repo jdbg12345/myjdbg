@@ -894,41 +894,6 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
 
-      {/* 彩票策略 */}
-      <div className="mb-12">
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm">彩</span>
-            </div>
-            <h4 className="text-xl font-bold text-gray-800">彩票策略</h4>
-            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-              <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">彩票全包和异常投注模式缺乏有效拦截，无法识别彩票游戏中的套利行为</p>
-            </div>
-            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">建立彩票游戏异常投注识别机制，重点监控全包和套利行为</p>
-            </div>
-            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-              <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">彩票套利策略问题率25%，有效识别全包行为，显著提升彩票游戏风控水平</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* 标准化风控工具 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
