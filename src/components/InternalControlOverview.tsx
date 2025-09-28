@@ -35,7 +35,7 @@ export const InternalControlOverview = () => {
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.2 FKZX-内控组 工作总结</h1>
+        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">4.2 FKZX-内控组 工作总结</h1>
       </div>
 
       {/* 1. Department Work Content - 调整工作模块列宽度，其他列均匀分配 */}
