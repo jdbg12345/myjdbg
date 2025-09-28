@@ -15,179 +15,6 @@ export const Direction3SystemStrategies = () => {
         目前系统的策略主要集中在防御型，而非套利及作弊识别类型，导致直接出款错误，以及转人工后缺乏强有力的风险提醒。
       </p>
 
-      {/* 标准化风控工具 */}
-      <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">工</span>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800">标准化风控工具</h3>
-          </div>
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            <span className="font-semibold">人工审核依赖个人经验，效率低且存在安全隐患</span>，通过标准化工具提升审核效率和准确性，降低人工依赖。
-          </p>
-          
-          {/* 1. 关联下注工具 */}
-          <div className="mb-8">
-            <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-sm">关</span>
-                </div>
-                <h4 className="text-xl font-bold text-gray-800">关联下注工具</h4>
-                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行中</span>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                  <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                    问题
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，存在严重的数据安全隐患。且操作效率低下，有效拦截率也不足。</p>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    策略
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">标准化关联下注工具</p>
-                </div>
-                <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                  <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    收益
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">每月约50+%的错误出款源于此，影响约200+万/月</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-      {/* 标准化风控工具 */}
-      <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">工</span>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800">标准化风控工具</h3>
-          </div>
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            <span className="font-semibold">人工审核依赖个人经验，效率低且存在安全隐患</span>，通过标准化工具提升审核效率和准确性，降低人工依赖。
-          </p>
-          
-          {/* 1. 关联下注工具 */}
-          <div className="mb-8">
-            <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-sm">关</span>
-                </div>
-                <h4 className="text-xl font-bold text-gray-800">关联下注工具</h4>
-                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行中</span>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                  <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                    问题
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，存在严重的数据安全隐患。且操作效率低下，有效拦截率也不足。</p>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    策略
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">标准化关联下注工具</p>
-                </div>
-                <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                  <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    收益
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">每月约50+%的错误出款源于此，影响约200+万/月</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* 2. 提款流水工具 */}
-          <div className="mb-8">
-            <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-sm">流</span>
-                </div>
-                <h4 className="text-xl font-bold text-gray-800">提款流水工具</h4>
-                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">待开发</span>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                  <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                    问题
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">系统逻辑多年来存在错误（锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等），导致需要人工重新手动计算流水。但计算标准模糊且执行不一致，使风控和质检部门经常因流水计算产生争议。在跨部门协作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），不仅浪费时间，降低用户体验并导致出款错误。</p>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    策略
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">阶段1：实现流水自动统一计算，无需人工介入；阶段2：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程（已提出需求，但收到无法实现的反馈）。</p>
-                </div>
-                <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                  <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    收益
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月；效率提升一倍；用户体验改善</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* 3. 体育打水工具 */}
-          <div className="mb-8">
-            <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-sm">打</span>
-                </div>
-                <h4 className="text-xl font-bold text-gray-800">体育打水工具</h4>
-                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                  <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                    问题
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    策略
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">通过B端百家赔率数据构建体育打水实时查询工具</p>
-                </div>
-                <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                  <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    收益
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* 风控套利理解概览 */}
       <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
         <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">风控套利理解概览</h3>
@@ -221,6 +48,284 @@ export const Direction3SystemStrategies = () => {
             <p className="text-gray-700 text-sm leading-relaxed">
               覆盖线上线下红利套利、活动套利、代理佣金套利等多个维度，构建全方位的风控防护体系
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* 标准化风控工具 */}
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">工</span>
+          </div>
+          <h3 className="text-2xl font-bold text-gray-800">标准化风控工具</h3>
+        </div>
+        <p className="text-gray-700 mb-8 leading-relaxed">
+          <span className="font-semibold">人工审核依赖个人经验，效率低且存在安全隐患</span>，通过标准化工具提升审核效率和准确性，降低人工依赖。
+        </p>
+        
+        {/* 1. 关联下注工具 */}
+        <div className="mb-8">
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">关</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">关联下注工具</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行中</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                  问题
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，存在严重的数据安全隐患。且操作效率低下，有效拦截率也不足。</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                  策略
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">标准化关联下注工具</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  收益
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">每月约50+%的错误出款源于此，影响约200+万/月</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 2. 提款流水工具 */}
+        <div className="mb-8">
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">流</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">提款流水工具</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">待开发</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                  问题
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">系统逻辑多年来存在错误（锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等），导致需要人工重新手动计算流水。但计算标准模糊且执行不一致，使风控和质检部门经常因流水计算产生争议。在跨部门协作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），不仅浪费时间，降低用户体验并导致出款错误。</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                  策略
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">阶段1：实现流水自动统一计算，无需人工介入；阶段2：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程（已提出需求，但收到无法实现的反馈）。</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  收益
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月；效率提升一倍；用户体验改善</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 3. 体育打水工具 */}
+        <div className="mb-8">
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">打</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">体育打水工具</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                  问题
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                  策略
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">通过B端百家赔率数据构建体育打水实时查询工具</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  收益
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 极端异常预防机制 */}
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">极</span>
+          </div>
+          <h3 className="text-2xl font-bold text-gray-800">极端异常预防机制</h3>
+        </div>
+        <p className="text-gray-700 mb-8 leading-relaxed">
+          <span className="font-semibold">流程缺陷及策略局限导致异常资金风险</span>，针对场馆多钱、沉睡用户等极端情况建立预警和防御策略，确保资金安全。
+        </p>
+        
+        {/* 1. 钱包预警 */}
+        <div className="mb-8">
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">钱</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">中心钱包多钱</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                  问题
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">用户钱包异常变动缺乏实时监控，无法及时发现异常资金流动</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                  策略
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">建立钱包异常预警机制，实时监控资金流动</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  收益
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">异常资金发现率提升85%，响应时间缩短至分钟级</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 2. 场馆多钱 */}
+        <div className="mb-8">
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">场</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">场馆钱包多钱</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                  问题
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">场馆账户异常增加资金，缺乏有效的监控和预警机制</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                  策略
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">建立场馆资金异常监控机制，实时预警异常资金变动</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  收益
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 3. 盈利监控预警 */}
+        <div className="mb-8">
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">盈</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">盈利监控预警</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                  问题
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">场馆、游戏、单笔、持续等盈利维度进行监控</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                  策略
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">场馆、游戏、单笔、持续等盈利维度进行监控</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  收益
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* 4. 沉睡用户 */}
+        <div className="mb-8">
+          <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">睡</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">沉睡用户活跃</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                  问题
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">长期沉睡用户突然活跃，可能存在账号被盗或异常操作风险</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                  策略
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">建立沉睡用户活跃预警机制，监控异常登录和操作行为</p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  收益
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">沉睡用户活跃预警机制，异常账号识别率78%，有效防范账号盗用风险</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -782,165 +887,6 @@ export const Direction3SystemStrategies = () => {
             </div>
             
             <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-          </div>
-        </div>
-      </div>
-
-      {/* 极端异常预防机制 */}
-      <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">极</span>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800">极端异常预防机制</h3>
-          </div>
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            <span className="font-semibold">流程缺陷及策略局限导致异常资金风险</span>，针对场馆多钱、沉睡用户等极端情况建立预警和防御策略，确保资金安全。
-          </p>
-          
-          {/* 1. 钱包预警 */}
-          <div className="mb-8">
-            <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-sm">钱</span>
-                </div>
-                <h4 className="text-xl font-bold text-gray-800">中心钱包多钱</h4>
-                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                  <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                    问题
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">用户钱包异常变动缺乏实时监控，无法及时发现异常资金流动</p>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    策略
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">建立钱包异常预警机制，实时监控资金流动</p>
-                </div>
-                <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                  <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    收益
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">异常资金发现率提升85%，响应时间缩短至分钟级</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* 2. 场馆多钱 */}
-          <div className="mb-8">
-            <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-sm">场</span>
-                </div>
-                <h4 className="text-xl font-bold text-gray-800">场馆钱包多钱</h4>
-                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                  <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                    问题
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">场馆账户异常增加资金，缺乏有效的监控和预警机制</p>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    策略
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">建立场馆资金异常监控机制，实时预警异常资金变动</p>
-                </div>
-                <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                  <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    收益
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* 3. 盈利监控预警 */}
-          <div className="mb-8">
-            <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-sm">盈</span>
-                </div>
-                <h4 className="text-xl font-bold text-gray-800">盈利监控预警</h4>
-                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                  <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                    问题
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">场馆、游戏、单笔、持续等盈利维度进行监控</p>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    策略
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">场馆、游戏、单笔、持续等盈利维度进行监控</p>
-                </div>
-                <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                  <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    收益
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* 4. 沉睡用户 */}
-          <div className="mb-8">
-            <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">睡</span>
-                </div>
-                <h4 className="text-xl font-bold text-gray-800">沉睡用户活跃</h4>
-                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                  <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                    问题
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">长期沉睡用户突然活跃，可能存在账号被盗或异常操作风险</p>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    策略
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">建立沉睡用户活跃预警机制，监控异常登录和操作行为</p>
-                </div>
-                <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                  <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    收益
-                  </h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">沉睡用户活跃预警机制，异常账号识别率78%，有效防范账号盗用风险</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
