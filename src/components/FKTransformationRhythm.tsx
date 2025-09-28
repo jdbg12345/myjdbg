@@ -51,7 +51,7 @@ export const FKTransformationRhythm = () => {
               <AlertTriangle className="w-5 h-5 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-800">核心问题</h2>
-            <span className="text-gray-600 text-lg">问题的确很多，逐步解决中</span>
+            <span className="text-gray-600 text-lg">即使问题很多，逐步拆解解决中</span>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
