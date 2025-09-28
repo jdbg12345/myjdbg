@@ -10,7 +10,7 @@ export const FKSystemOverview = () => {
     { id: 5, x: 900, y: 290, name: "人工复审", desc: "", color: "#3b82f6", number: "5" },
     { id: 6, x: 1200, y: 290, name: "系统监控", desc: "", color: "#f97316", number: "6" },
     { id: 7, x: 1450, y: 290, name: "内控复审", desc: "", color: "#f97316", number: "7" },
-    { id: 8, x: 1200, y: 450, name: "审核拒绝", desc: "", color: "#ef4444", number: "8" }
+    { id: 8, x: 1200, y: 450, name: "审核拒绝", desc: "", color: "#3b82f6", number: "8" }
   ];
 
   
