@@ -408,11 +408,11 @@ export const FKSystemOverview = () => {
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">增强</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">高盈利倍数</span>
+                      <span className="text-sm text-gray-600">出款不看标签和备注</span>
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">大额类提款</span>
+                      <span className="text-sm text-gray-600">会员禁用权限滥用</span>
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-600">-</span>
                     </div>
                      <div className="flex justify-between items-center">
