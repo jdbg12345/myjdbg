@@ -3,18 +3,20 @@ import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } 
 
 export const FKSystemOverview = () => {
    // 节点数据
-    const nodeSize = { width: 200, height: 80 }; // 节点尺寸
+  const nodeSize = { width: 220, height: 90 }; // 节点尺寸
   const nodeSpacingX = 250; // 水平间距
-  const nodeSpacingY = 150; // 垂直行间距
+  const nodeSpacingY = 180; // 垂直行间距
+  const fontSizeTitle = 16;
+  const fontSizeDesc = 14;
 
   const nodes = [
     { id: 1, row: 0, col: 0, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
     { id: 2, row: 0, col: 1, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
     { id: 3, row: 0, col: 2, name: "AI智能审核", desc: "多维度风险实时检测", color: "#3b82f6" },
     { id: 4, row: 0, col: 3, name: "自动放行", desc: "即时到账", color: "#3b82f6" },
-    { id: 5, row: 1, col: 2, name: "人工复审", desc: "专业FK二次审核", color: "#3b82f6" },
-    { id: 6, row: 1, col: 3, name: "系统监控", desc: "持续监控", color: "#f97316" },
-    { id: 7, row: 1, col: 4, name: "内控复审", desc: "最终审核", color: "#f97316" },
+    { id: 5, row: 1, col: 1, name: "人工复审", desc: "专业FK二次审核", color: "#3b82f6" },
+    { id: 6, row: 1, col: 2, name: "系统监控", desc: "持续监控", color: "#f97316" },
+    { id: 7, row: 1, col: 3, name: "内控复审", desc: "最终审核", color: "#f97316" },
   ];
 
   const links = [
@@ -52,7 +54,7 @@ export const FKSystemOverview = () => {
             </div>
 
             <div className="bg-white rounded-lg p-8 mb-6">
-              <svg viewBox="0 0 1400 450" className="w-full h-96">
+              <svg viewBox="0 0 1400 500" className="w-full h-[500px]">
                 <defs>
                   <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                     <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
@@ -113,10 +115,10 @@ export const FKSystemOverview = () => {
                         stroke="#fff"
                         strokeWidth="3"
                       />
-                      <text x={x} y={y - 5} textAnchor="middle" fill="#fff" fontSize="14" fontWeight="bold">
+                      <text x={x} y={y - 10} textAnchor="middle" fill="#fff" fontSize={fontSizeTitle} fontWeight="bold">
                         {node.id}. {node.name}
                       </text>
-                      <text x={x} y={y + 20} textAnchor="middle" fill="#f3f4f6" fontSize="12">
+                      <text x={x} y={y + 20} textAnchor="middle" fill="#f3f4f6" fontSize={fontSizeDesc}>
                         {node.desc}
                       </text>
                     </g>
