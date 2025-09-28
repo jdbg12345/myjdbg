@@ -29,6 +29,7 @@ export const FKSystemOverview = () => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.1</div>
               <h3 className="text-2xl font-bold text-gray-800">FK流程变化</h3>
             </div>
+            <div className="text-gray-500 ml-11">防止内外串联出款</div>
           </div>
 
           <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-8 border border-gray-200">
