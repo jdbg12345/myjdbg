@@ -466,14 +466,14 @@ export const FKSystemOverview = () => {
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">敏感信息明文查询</div>
+                      <div className="font-semibold text-gray-800 text-sm mb-1">敏感信息密文查询</div>
                       <div className="flex justify-between items-center text-xs">
                         <span className="text-gray-600">状态：<span className="font-medium text-blue-600">开发中</span></span>
                         <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">新增</span></span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">风控策略参数变化</div>
+                      <div className="font-semibold text-gray-800 text-sm mb-1">风控参数动态调整</div>
                       <div className="flex justify-between items-center text-xs">
                         <span className="text-gray-600">状态：<span className="font-medium text-blue-600">试运行</span></span>
                         <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-medium">增强</span></span>
