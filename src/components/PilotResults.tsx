@@ -1,10 +1,8 @@
 import React from 'react';
 import { Target } from 'lucide-react';
 import { Direction1PersonnelCapability } from './pilot/Direction1PersonnelCapability';
-import { Direction2StandardExecution } from './pilot/Direction2StandardExecution';
 import { Direction3SystemStrategies } from './pilot/Direction3SystemStrategies';
 import { Direction4InternalCollusion } from './pilot/Direction4InternalCollusion';
-import { Direction5ExtremeAnomalyPrevention } from './pilot/Direction5ExtremeAnomalyPrevention';
 
 export const PilotResults = () => {
   return (
@@ -16,10 +14,8 @@ export const PilotResults = () => {
 
       {/* 各个方向的试点成果 */}
       <Direction1PersonnelCapability />
-      <Direction2StandardExecution />
       <Direction3SystemStrategies />
       <Direction4InternalCollusion />
-      <Direction5ExtremeAnomalyPrevention />
       
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
