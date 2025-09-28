@@ -487,71 +487,22 @@ export const Direction3SystemStrategies = () => {
                   </div>
                 </div>
                 
-                <>
-                  <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型对比</div>
-                  
-                  <div className="flex justify-center space-x-6 text-sm">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-3 h-3 bg-blue-500 rounded"></div>
-                      <span className="text-gray-700">实施前效果</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-3 h-3 bg-green-500 rounded"></div>
-                      <span className="text-gray-700">实施后效果</span>
-                    </div>
+                <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型对比</div>
+                
+                <div className="flex justify-center space-x-6 text-sm">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 bg-blue-500 rounded"></div>
+                    <span className="text-gray-700">实施前效果</span>
                   </div>
-                  
-                  <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-                </>
-              </div>
-            </div>
-          </div>
-                </div>
-                
-                <div className="absolute left-12 right-12 h-full">
-                  {[0, 25, 50, 75, 100].map((percent) => (
-                    <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                  ))}
-                </div>
-                
-                <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                  <div className="flex flex-col items-center relative">
-                    <div className="w-20 bg-blue-500 rounded-t" style={{ height: '190px' }}></div>
-                    
-                    {/* 准确率数据点 */}
-                    <div 
-                      className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                      style={{top: `${100 - 22.1 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
-                    >
-                      <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
-                        22.1%
-                      </div>
-                    </div>
-                    
-                    <div className="text-center mt-4">
-                      <div className="text-xs text-gray-500 mt-1">380单 (22.1%)</div>
-                    </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 bg-green-500 rounded"></div>
+                    <span className="text-gray-700">实施后效果</span>
                   </div>
                 </div>
+                
+                <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
               </div>
             </div>
-                      
-            <>
-              <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型对比</div>
-              
-              <div className="flex justify-center space-x-6 text-sm">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-red-600 rounded"></div>
-                  <span className="text-gray-700">拦截订单数</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                  <span className="text-gray-700">准确率</span>
-                </div>
-              </div>
-              
-              <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-            </>
           </div>
         </div>
       </div>
@@ -645,22 +596,20 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
             
-            <>
-              <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型对比</div>
-              
-              <div className="flex justify-center space-x-6 text-sm">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-blue-500 rounded"></div>
-                  <span className="text-gray-700">拦截订单数</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                  <span className="text-gray-700">准确率</span>
-                </div>
+            <div className="text-center text-sm font-medium text-gray-600 mb-4">策略类型对比</div>
+            
+            <div className="flex justify-center space-x-6 text-sm">
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-blue-500 rounded"></div>
+                <span className="text-gray-700">拦截订单数</span>
               </div>
-              
-              <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-            </>
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                <span className="text-gray-700">准确率</span>
+              </div>
+            </div>
+            
+            <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
           </div>
         </div>
       </div>
