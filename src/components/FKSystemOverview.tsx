@@ -182,202 +182,462 @@ export const FKSystemOverview = () => {
         </div>
         
         <div className="bg-white rounded-lg p-8 border border-blue-200">
-        
-        {/* 玩家风险防控 */}
-        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200 mb-8">
-          <div className="flex items-center justify-between mb-8">
-            <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center">
-                <Users className="w-8 h-8 text-white" />
+          {/* 玩家风险防控 */}
+          <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200 mb-8">
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-2xl font-bold text-gray-800">玩家风险防控</h4>
+                  <div className="flex items-center space-x-6">
+                    <div className="text-lg font-bold text-blue-600">Q1-Q3主要资源在这个方向，目前整体框架已有，逐步落地中</div>                 
+                  </div>
+                </div>
               </div>
-              <div>
-                <h4 className="text-2xl font-bold text-gray-800">玩家风险防控</h4>
-                <div className="flex items-center space-x-6">
-                  <div className="text-lg font-bold text-blue-600">Q1-Q3主要资源在这个方向，目前整体框架已有，逐步落地中</div>                 
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* 防御型规则 */}
+              <div className="bg-white rounded-xl p-6 border border-blue-100">
+                <h5 className="text-lg font-bold text-blue-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>防御型规则
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">账户安全类</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">敏感信息变更</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">增强</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">帐变记录异常</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">睡眠账号激活</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">提款环境异常</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">租卖帐号异常</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">盈利监控类</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">高盈利金额</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">高盈利倍数</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">大额类提款</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">长期在盈利</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">内控监控类</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">前几次提款</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">多次不经过人工</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 套利识别规则 */}
+              <div className="bg-white rounded-xl p-6 border border-blue-100">
+                <h5 className="text-lg font-bold text-blue-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>套利识别规则
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">游戏套利类</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">电子卡免费</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">体育对打</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">真人算牌</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">彩票全包</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">活动套利类</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">活动&红利风险</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">关联代理套利</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">作弊识别类</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">机器下注</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">租卖号</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 套利识别规则 */}
+              <div className="bg-white rounded-xl p-6 border border-blue-100">
+                <h5 className="text-lg font-bold text-blue-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>套利识别规则
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">游戏套利类</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">电子卡免费</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">体育对打</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">真人算牌</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">彩票全包</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">活动套利类</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">活动&红利风险</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">关联代理套利</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">作弊识别类</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">机器下注</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-blue-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">租卖号</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* 防御型规则 */}
-            <div className="bg-white rounded-xl p-6 border border-blue-100">
-              <h5 className="text-lg font-bold text-blue-800 mb-4 flex items-center">
-                <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>防御型规则
-              </h5>
-              <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <h6 className="font-semibold text-gray-700 mb-3">账户安全类</h6>
-                  <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">敏感信息变更</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">增强</span></span>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">帐变记录异常</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">睡眠账号激活</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">提款环境异常</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">租卖帐号异常</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
-                      </div>
-                    </div>
+          {/* 内控风险防控 */}
+          <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-8 border border-orange-200 mb-8">
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center">
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-2xl font-bold text-gray-800">内控风险防控</h4>
+                  <div className="flex items-center space-x-6">
+                    <div className="text-lg font-bold text-orange-600">建立多层级内控监控机制，防范内部风险</div>                 
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <h6 className="font-semibold text-gray-700 mb-3">盈利监控类</h6>
-                  <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">高盈利金额</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* 权限管控 */}
+              <div className="bg-white rounded-xl p-6 border border-orange-100">
+                <h5 className="text-lg font-bold text-orange-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>权限管控
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-orange-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">敏感权限</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">标签备注查看</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">变化：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">权限收紧</span></span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">高盈利倍数</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">会员禁用权限</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">变化：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">分级审批</span></span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">大额类提款</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">长期在盈利</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">后台登录管控</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">变化：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">IP绑定</span></span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <h6 className="font-semibold text-gray-700 mb-3">内控监控类</h6>
-                  <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">前几次提款</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
+              </div>
+
+              {/* 监控机制 */}
+              <div className="bg-white rounded-xl p-6 border border-orange-100">
+                <h5 className="text-lg font-bold text-orange-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>监控机制
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-orange-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">内控抽检</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">指定人员抽检</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">覆盖：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">新人/低绩效</span></span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">多次不经过人工</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">增强</span></span>
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">高风险订单抽检</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">目标：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">30%覆盖</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">危险操作抽检</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">范围：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">强制领单</span></span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* 套利识别规则 */}
-            <div className="bg-white rounded-xl p-6 border border-blue-100">
-              <h5 className="text-lg font-bold text-blue-800 mb-4 flex items-center">
-                <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>套利识别规则
-              </h5>
-              <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <h6 className="font-semibold text-gray-700 mb-3">游戏套利类</h6>
-                  <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">电子卡免费</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+          {/* 代理风险防控 */}
+          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8 border border-purple-200 mb-8">
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-2xl font-bold text-gray-800">代理风险防控</h4>
+                  <div className="flex items-center space-x-6">
+                    <div className="text-lg font-bold text-purple-600">Q4重点方向，建立代理行为监控和佣金风控体系</div>                 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* 代理行为监控 */}
+              <div className="bg-white rounded-xl p-6 border border-purple-100">
+                <h5 className="text-lg font-bold text-purple-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>代理行为监控
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-purple-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">刷量识别</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">刷活跃</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">Q4计划：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">新增</span></span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">体育对打</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">凑负盈利</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">Q4计划：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">新增</span></span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">真人算牌</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">彩票全包</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">刷新增</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">Q4计划：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">新增</span></span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <h6 className="font-semibold text-gray-700 mb-3">活动套利类</h6>
-                  <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">活动&红利风险</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+              {/* 佣金风控 */}
+              <div className="bg-white rounded-xl p-6 border border-purple-100">
+                <h5 className="text-lg font-bold text-purple-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>佣金风控
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-purple-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">审核机制</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">佣金计算审核</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">Q4计划：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">新增</span></span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">关联代理套利</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">异常佣金预警</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">Q4计划：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">新增</span></span>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <h6 className="font-semibold text-gray-700 mb-3">作弊识别类</h6>
-                  <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">机器下注</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-200">
-                      <div className="font-semibold text-gray-800 text-sm mb-1">租卖号</div>
-                      <div className="flex justify-between items-center text-xs">
-                        <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">新增</span></span>
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">关联关系分析</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">Q4计划：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">新增</span></span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -386,6 +646,240 @@ export const FKSystemOverview = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* FK人员能力变化 */}
+      <div className="mb-8">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+            <Users className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">FK人员能力变化</h2>
+          <span className="text-gray-600 text-base">个人经验 → 标准化培训 + 工具支持，提升整体审核质量</span>
+        </div>
+        
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
+          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8 border border-purple-200 mb-8">
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-2xl font-bold text-gray-800">人员培训体系</h4>
+                  <div className="flex items-center space-x-6">
+                    <div className="text-lg font-bold text-purple-600">建立标准化培训体系，提升人员专业能力</div>                 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* 培训内容 */}
+              <div className="bg-white rounded-xl p-6 border border-purple-100">
+                <h5 className="text-lg font-bold text-purple-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>培训内容
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-purple-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">基础培训</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">规则制度</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已完成</span></span>
+                          <span className="text-gray-600">课件：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">2个</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">网站基础</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已完成</span></span>
+                          <span className="text-gray-600">课件：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">3个</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-purple-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">专业培训</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">风控业务</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已完成</span></span>
+                          <span className="text-gray-600">课件：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">6个</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">风控流程</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已完成</span></span>
+                          <span className="text-gray-600">课件：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">5个</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">风控案例</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已完成</span></span>
+                          <span className="text-gray-600">课件：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">2个</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 培训效果 */}
+              <div className="bg-white rounded-xl p-6 border border-purple-100">
+                <h5 className="text-lg font-bold text-purple-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>培训效果
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-purple-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">Q2培训成果</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">交付人数</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">总计：<span className="font-bold text-purple-600 text-sm">40人</span></span>
+                          <span className="text-gray-600">批次：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">19批</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">课程类型</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">类型：<span className="font-bold text-purple-600 text-sm">3种</span></span>
+                          <span className="text-gray-600">周期：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">8-15天</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-purple-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">能力提升</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">新人成长周期</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">优化前：<span className="font-bold text-red-600 text-sm">30天</span></span>
+                          <span className="text-gray-600">优化后：<span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-bold text-sm">15天</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">审核准确率</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">提升：<span className="font-bold text-green-600 text-sm">+12%</span></span>
+                          <span className="text-gray-600">目标：<span className="px-2 py-1 rounded-full bg-purple-100 text-purple-700 font-bold text-sm">95%+</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FK内控机制变化 */}
+      <div className="mb-8">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <Shield className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">FK内控机制变化</h2>
+          <span className="text-gray-600 text-base">单人审核 → 多层级监控 + 权限管控，防范内部风险</span>
+        </div>
+        
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
+          <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-8 border border-orange-200 mb-8">
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center">
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-2xl font-bold text-gray-800">内控安全体系</h4>
+                  <div className="flex items-center space-x-6">
+                    <div className="text-lg font-bold text-orange-600">建立多层级内控监控机制，防范内部风险</div>                 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* 权限管控 */}
+              <div className="bg-white rounded-xl p-6 border border-orange-100">
+                <h5 className="text-lg font-bold text-orange-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>权限管控
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-orange-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">敏感权限</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">标签备注查看</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">变化：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">权限收紧</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">会员禁用权限</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">变化：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">分级审批</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">后台登录管控</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">变化：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">IP绑定</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 监控机制 */}
+              <div className="bg-white rounded-xl p-6 border border-orange-100">
+                <h5 className="text-lg font-bold text-orange-800 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>监控机制
+                </h5>
+                <div className="space-y-4">
+                  <div className="bg-orange-50 rounded-lg p-4">
+                    <h6 className="font-semibold text-gray-700 mb-3">内控抽检</h6>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">指定人员抽检</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-blue-600 text-sm">已上线</span></span>
+                          <span className="text-gray-600">覆盖：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">新人/低绩效</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">高风险订单抽检</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-yellow-600 text-sm">开发中</span></span>
+                          <span className="text-gray-600">目标：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">30%覆盖</span></span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-3 border border-orange-200">
+                        <div className="font-semibold text-gray-800 text-sm mb-1">危险操作抽检</div>
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="text-gray-600">状态：<span className="font-bold text-gray-600 text-sm">方案中</span></span>
+                          <span className="text-gray-600">范围：<span className="px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">强制领单</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
