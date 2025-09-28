@@ -21,7 +21,7 @@ const navigationItems: NavigationItem[] = [
   },
   {
     id: 'data',
-    title: '2. FK数据情况',
+    title: '2. FK数据情况（待gang总提供数据后更新）',
     icon: <BarChart3 className="w-4 h-4" />,
     children: [
       { id: 'prevention-data', title: '2.1 防范单量与金额' },
