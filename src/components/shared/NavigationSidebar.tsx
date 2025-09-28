@@ -41,6 +41,8 @@ const navigationItems: NavigationItem[] = [
     title: '3. FK工作总结',
     icon: <FileText className="w-4 h-4" />,
     children: [
+      { id: 'fk-transformation', title: '3.1 FK整体说明' },
+      { id: 'fk-system-overview', title: '3.2 FK体系概览' },
       { id: 'pilot-results', title: '3.3 FK试点成果', children: [
         { id: 'pilot-direction1', title: '方向1：审核问题-质量较差' },
         { id: 'pilot-direction2', title: '方向2：系统问题-支持不够' },
@@ -53,8 +55,6 @@ const navigationItems: NavigationItem[] = [
     title: '4. 备份待用',
     icon: <FileText className="w-4 h-4" />,
     children: [
-      { id: 'fk-transformation', title: '3.0 FK整体说明' },
-      { id: 'fk-system-overview', title: '3.0 FK体系概览' },
       { id: 'audit-group', title: '3.1 审核组' },
       { id: 'internal-control', title: '3.2 内控组' },
       { id: 'audit-dept', title: '3.3 稽查组' },
