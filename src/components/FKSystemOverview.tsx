@@ -432,8 +432,7 @@ export const FKSystemOverview = () => {
               <div>
                 <h4 className="text-2xl font-bold text-gray-800">内控风险监控</h4>
                 <div className="flex items-center space-x-6">
-                  <div className="text-3xl font-bold text-blue-600">部分资源在这个方向，在几个维度进行完善</div>
-                  
+                  <div className="text-xl font-bold text-blue-600">部分资源在这个方向，在几个维度进行完善</div>                  
                 </div>
               </div>
             </div>
