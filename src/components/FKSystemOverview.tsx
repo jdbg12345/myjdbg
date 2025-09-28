@@ -25,8 +25,8 @@ export const FKSystemOverview = () => {
             </div>
 
             <div className="bg-white rounded-lg p-8 mb-6">
-                  <svg viewBox="0 0 1600 450" className="w-full h-[450px]">
-                {/* 节点定义 */}
+               <svg viewBox="0 0 1600 450" className="w-full h-96">
+                {/* 节点数据 */}
                 {[
                   { id: 1, x: 100, y: 120, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
                   { id: 2, x: 350, y: 120, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
@@ -37,61 +37,40 @@ export const FKSystemOverview = () => {
                   { id: 7, x: 1350, y: 300, name: "内控复审", desc: "最终审核", color: "#f97316" }
                 ].map((node) => (
                   <g key={node.id}>
-                    <rect
-                      x={node.x - 60}
-                      y={node.y - 40}
-                      width={120}
-                      height={80}
-                      rx={10}
-                      ry={10}
-                      fill={node.color}
-                      stroke="white"
-                      strokeWidth="3"
-                    />
-                    <text x={node.x} y={node.y - 5} textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">
-                      {node.name}
-                    </text>
-                    <text x={node.x} y={node.y + 20} textAnchor="middle" fill="#e5e7eb" fontSize="12">
-                      {node.desc}
-                    </text>
+                    <rect x={node.x - 60} y={node.y - 40} width="120" height="80" rx="12" ry="12" fill={node.color} />
+                    <text x={node.x} y={node.y - 5} textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">{node.name}</text>
+                    <text x={node.x} y={node.y + 20} textAnchor="middle" fill="#e5e7eb" fontSize="12">{node.desc}</text>
                   </g>
                 ))}
 
                 {/* 箭头定义 */}
                 <defs>
-                  <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
-                    <polygon points="0 0, 10 5, 0 10" fill="#6b7280" />
+                  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" />
                   </marker>
-                  <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
-                    <polygon points="0 0, 10 5, 0 10" fill="#3b82f6" />
+                  <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
                   </marker>
-                  <marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
-                    <polygon points="0 0, 10 5, 0 10" fill="#f97316" />
-                  </marker>
-                  <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
-                    <polygon points="0 0, 10 5, 0 10" fill="#ef4444" />
+                  <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#f97316" />
                   </marker>
                 </defs>
 
-                {/* 连接线 */}
+                {/* 连接线（弧线） */}
                 {/* 1→2 */}
-                <path d="M160 120 L290 120" stroke="#3b82f6" strokeWidth="3" markerEnd="url(#arrow-blue)" />
+                <path d="M160,120 C200,120 250,120 290,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
                 {/* 2→3 */}
-                <path d="M410 120 L540 120" stroke="#3b82f6" strokeWidth="3" markerEnd="url(#arrow-blue)" />
-                {/* 3→4 (通过) */}
-                <path d="M660 120 Q1080 120 1420 120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow-blue)" />
-                <text x={1040} y={100} textAnchor="middle" fill="#3b82f6" fontSize="14" fontWeight="600">通过</text>
-                {/* 3→5 (不通过) */}
-                <path d="M600 145 Q725 180 850 280" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrow-orange)" />
-                <text x={725} y={210} textAnchor="middle" fill="#f97316" fontSize="14" fontWeight="600">不通过</text>
+                <path d="M410,120 C500,120 550,120 570,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
+                {/* 3→4 */}
+                <path d="M660,120 C950,120 1400,120 1440,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
+                {/* 3→5 */}
+                <path d="M600,160 C650,200 800,260 850,260" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
                 {/* 5→6 */}
-                <path d="M910 300 L1070 300" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrow-orange)" />
-                {/* 6→4 (监控通过) */}
-                <path d="M1110 270 Q1300 200 1500 120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow-blue)" />
-                <text x={1300} y={180} textAnchor="middle" fill="#3b82f6" fontSize="14" fontWeight="600">监控通过</text>
-                {/* 6→7 (监控不通过) */}
-                <path d="M1110 330 Q1230 360 1350 300" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrow-orange)" />
-                <text x={1230} y={320} textAnchor="middle" fill="#f97316" fontSize="14" fontWeight="600">监控不通过</text>
+                <path d="M970,300 C1020,300 1070,300 1100,300" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-orange)" />
+                {/* 6→4 */}
+                <path d="M1160,300 C1250,200 1450,160 1500,120" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-orange)" />
+                {/* 6→7 */}
+                <path d="M1160,300 C1250,300 1300,300 1350,300" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-orange)" />
               </svg>
             </div>
           </div>
