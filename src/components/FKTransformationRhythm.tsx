@@ -184,12 +184,6 @@ export const FKTransformationRhythm = () => {
                 </p>
               </div>
             </div>
-
-            {/* 人与系统关系演进 */}
-           
-               
-              </div>
-            </div>
           </div>
         </div>
       </div>
