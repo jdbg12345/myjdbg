@@ -25,7 +25,7 @@ export const FKSystemOverview = () => {
             </div>
 
             <div className="bg-white rounded-lg p-8 mb-6">
-              <svg viewBox="0 0 1400 400" className="w-full h-96">
+             <svg viewBox="0 0 1400 400" className="w-full h-96">
                 {/* 节点定义 */}
                 {[
                   { id: 1, x: 120, y: 120, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
@@ -50,12 +50,46 @@ export const FKSystemOverview = () => {
                   </g>
                 ))}
 
-                {/* 连接线和箭头略去，可在原始代码完整复制 */}
-                {/* 1→2 */} <line x1="155" y1="120" x2="285" y2="120" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" /> {/* 2→3 */} <line x1="355" y1="120" x2="485" y2="120" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" /> {/* 3→4 (通过) */} <line x1="555" y1="120" x2="685" y2="120" stroke="#10b981" strokeWidth="4" markerEnd="url(#arrowhead-green)" /> <text x="620" y="100" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="600">通过</text> {/* 3→5 (不通过) */} <line x1="520" y1="155" x2="420" y2="245" stroke="#f97316" strokeWidth="4" markerEnd="url(#arrowhead-orange)" /> <text x="470" y="200" textAnchor="middle" fill="#f97316" fontSize="12" fontWeight="600">不通过</text> {/* 5→6 */} <line x1="455" y1="280" x2="485" y2="280" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" /> {/* 6→4 (监控通过) */} <line x1="520" y1="245" x2="720" y2="155" stroke="#10b981" strokeWidth="3" markerEnd="url(#arrowhead-green)" /> <text x="620" y="190" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="600">监控通过</text> {/* 6→7 (监控不通过) */} <line x1="555" y1="280" x2="585" y2="280" stroke="#ef4444" strokeWidth="4" markerEnd="url(#arrowhead-red)" /> <text x="570" y="260" textAnchor="middle" fill="#ef4444" fontSize="12" fontWeight="600">监控不通过</text> {/* 箭头标记定义 */} <defs> <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"> <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" /> </marker> <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"> <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" /> </marker> <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"> <polygon points="0 0, 10 3.5, 0 7" fill="#f97316" /> </marker> <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"> <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" /> </marker> </defs>
+                {/* 修复后的连线 */}
+                {/* 1→2 */}
+                <line x1="155" y1="120" x2="285" y2="120" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
+                {/* 2→3 */}
+                <line x1="355" y1="120" x2="485" y2="120" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
+                {/* 3→4 (通过) */}
+                <line x1="555" y1="120" x2="1285" y2="120" stroke="#10b981" strokeWidth="4" markerEnd="url(#arrowhead-green)" />
+                <text x="920" y="100" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="600">通过</text>
+                {/* 3→5 (不通过) */}
+                <line x1="520" y1="155" x2="720" y2="245" stroke="#f97316" strokeWidth="4" markerEnd="url(#arrowhead-orange)" />
+                <text x="620" y="200" textAnchor="middle" fill="#f97316" fontSize="12" fontWeight="600">不通过</text>
+                {/* 5→6 */}
+                <line x1="755" y1="280" x2="895" y2="280" stroke="#6b7280" strokeWidth="3" markerEnd="url(#arrowhead)" />
+                {/* 6→4 (监控通过) */}
+                <line x1="955" y1="280" x2="1285" y2="140" stroke="#10b981" strokeWidth="3" markerEnd="url(#arrowhead-green)" />
+                <text x="1120" y="200" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="600">监控通过</text>
+                {/* 6→7 (监控不通过) */}
+                <line x1="955" y1="280" x2="1120" y2="280" stroke="#ef4444" strokeWidth="4" markerEnd="url(#arrowhead-red)" />
+                <text x="1035" y="260" textAnchor="middle" fill="#ef4444" fontSize="12" fontWeight="600">监控不通过</text>
+
+                {/* 箭头标记定义 */}
+                <defs>
+                  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" />
+                  </marker>
+                  <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" />
+                  </marker>
+                  <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#f97316" />
+                  </marker>
+                  <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+                  </marker>
+                </defs>
               </svg>
             </div>
           </div>
         </div>
+                
 
         {/* 2.3 FK能力变化 */}
         <div className="mb-8">
