@@ -228,7 +228,7 @@ export const FKTransformationRhythm = () => {
                         <Shield className="w-8 h-8 text-white" />
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-blue-900">2.0阶段 当前目标</h4>
+                        <h4 className="text-2xl font-bold text-blue-900">2.0阶段 近期目标</h4>
                 
                       </div>
                     </div>
