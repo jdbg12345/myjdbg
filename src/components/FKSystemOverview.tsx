@@ -2,6 +2,18 @@ import React from 'react';
 import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } from 'lucide-react';
 
 export const FKSystemOverview = () => {
+   const nodes = [
+    { id: 1, x: 150, y: 130, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316", number: "1" },
+    { id: 2, x: 400, y: 130, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6", number: "2" },
+    { id: 3, x: 650, y: 130, name: "AI智能审核", desc: "多维度风险实时检测", color: "#3b82f6", number: "3" },
+    { id: 4, x: 1200, y: 130, name: "自动放行", desc: "即时到账", color: "#10b981", number: "4" },
+    { id: 5, x: 900, y: 290, name: "人工复审", desc: "专业FK二次审核", color: "#3b82f6", number: "5" },
+    { id: 6, x: 1200, y: 290, name: "系统监控", desc: "持续监控", color: "#f97316", number: "6" },
+    { id: 7, x: 1450, y: 290, name: "内控复审", desc: "最终审核", color: "#f97316", number: "7" },
+    { id: 8, x: 1200, y: 450, name: "审核拒绝", desc: "拒绝提款", color: "#ef4444", number: "8" }
+  ];
+
+  
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
@@ -25,53 +37,141 @@ export const FKSystemOverview = () => {
             </div>
 
             <div className="bg-white rounded-lg p-8 mb-6">
-               <svg viewBox="0 0 1600 450" className="w-full h-96">
-                {/* 节点数据 */}
-                {[
-                  { id: 1, x: 100, y: 120, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
-                  { id: 2, x: 350, y: 120, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
-                  { id: 3, x: 600, y: 120, name: "AI智能审核", desc: "多维度风险实时检测", color: "#3b82f6" },
-                  { id: 4, x: 1500, y: 120, name: "自动放行", desc: "即时到账", color: "#3b82f6" },
-                  { id: 5, x: 850, y: 300, name: "人工复审", desc: "专业FK二次审核", color: "#3b82f6" },
-                  { id: 6, x: 1100, y: 300, name: "系统监控", desc: "持续监控", color: "#f97316" },
-                  { id: 7, x: 1350, y: 300, name: "内控复审", desc: "最终审核", color: "#f97316" }
-                ].map((node) => (
-                  <g key={node.id}>
-                    <rect x={node.x - 60} y={node.y - 40} width="120" height="80" rx="12" ry="12" fill={node.color} />
-                    <text x={node.x} y={node.y - 5} textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">{node.name}</text>
-                    <text x={node.x} y={node.y + 20} textAnchor="middle" fill="#e5e7eb" fontSize="12">{node.desc}</text>
-                  </g>
-                ))}
+                <svg 
+              viewBox="0 0 1600 550" 
+              className="w-full h-[550px] min-w-[1400px]"
+            >
+              <defs>
+                <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
+                </marker>
+                <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#f97316" />
+                </marker>
+                <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" />
+                </marker>
+                <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+                </marker>
+              </defs>
 
-                {/* 箭头定义 */}
-                <defs>
-                  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" />
-                  </marker>
-                  <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
-                  </marker>
-                  <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="#f97316" />
-                  </marker>
-                </defs>
+              {/* Connection lines */}
+              {/* 1→2 */}
+              <path d="M210,130 L340,130" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
+              
+              {/* 2→3 */}
+              <path d="M460,130 L590,130" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
+              
+              {/* 3→4 (直接通过) */}
+              <path d="M710,130 L1140,130" stroke="#10b981" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-green)" />
+              
+              {/* 3→5 (需要审核) */}
+              <path d="M650,170 Q750,230 840,290" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
+              
+              {/* 5→6 (人工复审通过) */}
+              <path d="M960,290 L1140,290" stroke="#10b981" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-green)" />
+              
+              {/* 5→8 (人工复审不通过) */}
+              <path d="M900,340 Q1000,395 1140,450" stroke="#ef4444" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-red)" />
+              
+              {/* 6→4 (系统监控通过) - 调整箭头终点避免重叠 */}
+              <path d="M1200,238 L1200,182" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-orange)" />
+              
+              {/* 6→7 */}
+              <path d="M1260,290 L1390,290" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-orange)" />
 
-                {/* 连接线（弧线） */}
-                {/* 1→2 */}
-                <path d="M160,120 C200,120 250,120 290,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
-                {/* 2→3 */}
-                <path d="M410,120 C500,120 550,120 570,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
-                {/* 3→4 */}
-                <path d="M660,120 C950,120 1400,120 1440,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
-                {/* 3→5 */}
-                <path d="M600,160 C650,200 800,260 850,260" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
-                {/* 5→6 */}
-                <path d="M970,300 C1020,300 1070,300 1100,300" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-orange)" />
-                {/* 6→4 */}
-                <path d="M1160,300 C1250,200 1450,160 1500,120" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-orange)" />
-                {/* 6→7 */}
-                <path d="M1160,300 C1250,300 1300,300 1350,300" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-orange)" />
-              </svg>
+              {/* 7→4 (内控复审通过) */}
+              <path d="M1450,238 Q1350,185 1262,130" stroke="#10b981" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-green)" />
+              
+              {/* 7→8 (内控复审不通过) */}
+              <path d="M1450,342 Q1350,395 1262,450" stroke="#ef4444" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-red)" />
+
+              {/* Nodes */}
+              {nodes.map((node) => (
+                <g key={node.id}>
+                  {/* Node shadow */}
+                  <rect
+                    x={node.x - 58}
+                    y={node.y - 50}
+                    width="116"
+                    height="100"
+                    rx="12"
+                    ry="12"
+                    fill="rgba(0,0,0,0.2)"
+                    transform="translate(3,3)"
+                  />
+                  
+                  {/* Main node */}
+                  <rect
+                    x={node.x - 60}
+                    y={node.y - 52}
+                    width="120"
+                    height="104"
+                    rx="12"
+                    ry="12"
+                    fill={node.color}
+                    stroke="rgba(255,255,255,0.2)"
+                    strokeWidth="1"
+                  />
+                  
+                  {/* Number circle */}
+                  <circle
+                    cx={node.x}
+                    cy={node.y - 30}
+                    r="15"
+                    fill="rgba(255,255,255,0.95)"
+                  />
+                  
+                  {/* Number text */}
+                  <text
+                    x={node.x}
+                    y={node.y - 24}
+                    textAnchor="middle"
+                    fill={node.color}
+                    fontSize="16"
+                    fontWeight="bold"
+                  >
+                    {node.number}
+                  </text>
+                  
+                  {/* Node name */}
+                  <text
+                    x={node.x}
+                    y={node.y + 5}
+                    textAnchor="middle"
+                    fill="white"
+                    fontSize="14"
+                    fontWeight="bold"
+                  >
+                    {node.name}
+                  </text>
+                  
+                  {/* Node description */}
+                  <text
+                    x={node.x}
+                    y={node.y + 28}
+                    textAnchor="middle"
+                    fill="rgba(255,255,255,0.8)"
+                    fontSize="12"
+                  >
+                    {node.desc}
+                  </text>
+                </g>
+              ))}
+
+              {/* Flow labels - 重新定位避免重叠 */}
+              <text x="275" y="115" textAnchor="middle" fill="#3b82f6" fontSize="10" fontWeight="bold">开始</text>
+              <text x="525" y="115" textAnchor="middle" fill="#3b82f6" fontSize="10" fontWeight="bold">提交</text>
+              <text x="925" y="115" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="bold">低风险直通</text>
+              <text x="745" y="210" textAnchor="middle" fill="#3b82f6" fontSize="10" fontWeight="bold">高风险</text>
+              <text x="1050" y="275" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="bold">通过</text>
+              <text x="1000" y="420" textAnchor="middle" fill="#ef4444" fontSize="10" fontWeight="bold">不通过</text>
+              <text x="1160" y="210" textAnchor="middle" fill="#f97316" fontSize="10" fontWeight="bold">通过</text>
+              <text x="1325" y="275" textAnchor="middle" fill="#f97316" fontSize="10" fontWeight="bold">内控</text>
+              <text x="1320" y="200" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="bold">通过</text>
+              <text x="1320" y="430" textAnchor="middle" fill="#ef4444" fontSize="10" fontWeight="bold">不通过</text>
+            </svg>
             </div>
           </div>
         </div>
