@@ -2,35 +2,6 @@ import React from 'react';
 import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } from 'lucide-react';
 
 export const FKSystemOverview = () => {
-   // 节点数据
-  const nodeSize = { width: 220, height: 90 }; // 节点尺寸
-  const nodeSpacingX = 250; // 水平间距
-  const nodeSpacingY = 180; // 垂直行间距
-  const fontSizeTitle = 16;
-  const fontSizeDesc = 14;
-
-  const nodes = [
-    { id: 1, row: 0, col: 0, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
-    { id: 2, row: 0, col: 1, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
-    { id: 3, row: 0, col: 2, name: "AI智能审核", desc: "多维度风险实时检测", color: "#3b82f6" },
-    { id: 4, row: 0, col: 3, name: "自动放行", desc: "即时到账", color: "#3b82f6" },
-    { id: 5, row: 1, col: 1, name: "人工复审", desc: "专业FK二次审核", color: "#3b82f6" },
-    { id: 6, row: 1, col: 2, name: "系统监控", desc: "持续监控", color: "#f97316" },
-    { id: 7, row: 1, col: 3, name: "内控复审", desc: "最终审核", color: "#f97316" },
-  ];
-
-  const links = [
-    { from: 1, to: 2, text: "" },
-    { from: 2, to: 3, text: "" },
-    { from: 3, to: 4, text: "通过" },
-    { from: 3, to: 5, text: "不通过" },
-    { from: 5, to: 6, text: "" },
-    { from: 6, to: 4, text: "监控通过" },
-    { from: 6, to: 7, text: "监控不通过" },
-  ];
-
-  const getNodeById = (id: number) => nodes.find(n => n.id === id)!;
-  
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
@@ -54,76 +25,62 @@ export const FKSystemOverview = () => {
             </div>
 
             <div className="bg-white rounded-lg p-8 mb-6">
-              <svg viewBox="0 0 1400 500" className="w-full h-[500px]">
+                <svg viewBox="0 0 1600 500" className="w-full h-[500px]">
+                {/* 节点定义 */}
+                {[
+                  { id: 1, x: 100, y: 120, name: "系统自动预警/打标", desc: "风险识别", color: "#f97316" },
+                  { id: 2, x: 350, y: 120, name: "申请提交", desc: "玩家/代理提款申请", color: "#3b82f6" },
+                  { id: 3, x: 600, y: 120, name: "AI智能审核", desc: "多维度风险实时检测", color: "#3b82f6" },
+                  { id: 4, x: 850, y: 120, name: "自动放行", desc: "即时到账", color: "#3b82f6" },
+                  { id: 5, x: 400, y: 300, name: "人工复审", desc: "专业FK二次审核", color: "#3b82f6" },
+                  { id: 6, x: 650, y: 300, name: "系统监控", desc: "持续监控", color: "#f97316" },
+                  { id: 7, x: 900, y: 300, name: "内控复审", desc: "最终审核", color: "#f97316" }
+                ].map((node) => (
+                  <g key={node.id}>
+                    <rect 
+                      x={node.x - 70} 
+                      y={node.y - 40} 
+                      width="140" 
+                      height="80" 
+                      rx="12" 
+                      ry="12" 
+                      fill={node.color} 
+                    />
+                    <text x={node.x} y={node.y} textAnchor="middle" dominantBaseline="middle" fill="white" fontSize="16" fontWeight="bold">
+                      {node.name}
+                    </text>
+                    <text x={node.x} y={node.y + 20} textAnchor="middle" fill="#f3f4f6" fontSize="12">
+                      {node.desc}
+                    </text>
+                  </g>
+                ))}
+
+                {/* 箭头和连线（弧线） */}
                 <defs>
-                  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
                     <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
                   </marker>
                 </defs>
 
-                {/* 渲染连线 */}
-                {links.map((link, idx) => {
-                  const from = getNodeById(link.from);
-                  const to = getNodeById(link.to);
-                  const fromX = 150 + from.col * nodeSpacingX;
-                  const fromY = 100 + from.row * nodeSpacingY;
-                  const toX = 150 + to.col * nodeSpacingX;
-                  const toY = 100 + to.row * nodeSpacingY;
+                {/* 连接线 */}
+                <path d="M170,120 C220,120 280,120 330,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
+                <path d="M400,120 C500,120 550,120 600,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
+                <path d="M670,120 C750,120 800,120 850,120" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
+                
+                {/* 3→5 (不通过) */}
+                <path d="M600,160 C600,200 400,260 400,300" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
+                <text x="500" y="220" fill="#3b82f6" fontSize="12" textAnchor="middle">不通过</text>
 
-                  const offsetX = nodeSize.width / 2;
-                  const offsetY = nodeSize.height / 2;
+                {/* 5→6 */}
+                <path d="M470,300 C500,300 600,300 650,300" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
 
-                  const startX = fromX + (toX > fromX ? offsetX : -offsetX);
-                  const startY = fromY;
-                  const endX = toX + (toX > fromX ? -offsetX : offsetX);
-                  const endY = toY;
+                {/* 6→4 (监控通过) */}
+                <path d="M680,300 C700,260 800,140 850,140" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
+                <text x="760" y="220" fill="#3b82f6" fontSize="12" textAnchor="middle">监控通过</text>
 
-                  const midX = (startX + endX) / 2;
-                  const midY = (startY + endY) / 2;
-
-                  const pathD = fromY === toY
-                    ? `M${startX},${startY} L${endX},${endY}`
-                    : `M${startX},${startY} Q${midX},${midY} ${endX},${endY}`;
-
-                  return (
-                    <g key={idx}>
-                      <path d={pathD} stroke="#3b82f6" strokeWidth="3" fill="none" markerEnd="url(#arrowhead)" />
-                      {link.text && (
-                        <text x={midX} y={midY - 15} textAnchor="middle" fill="#3b82f6" fontSize="14" fontWeight="600">
-                          {link.text}
-                        </text>
-                      )}
-                    </g>
-                  );
-                })}
-
-                {/* 渲染节点 */}
-                {nodes.map((node) => {
-                  const x = 150 + node.col * nodeSpacingX;
-                  const y = 100 + node.row * nodeSpacingY;
-
-                  return (
-                    <g key={node.id}>
-                      <rect
-                        x={x - nodeSize.width / 2}
-                        y={y - nodeSize.height / 2}
-                        width={nodeSize.width}
-                        height={nodeSize.height}
-                        rx="12"
-                        ry="12"
-                        fill={node.color}
-                        stroke="#fff"
-                        strokeWidth="3"
-                      />
-                      <text x={x} y={y - 10} textAnchor="middle" fill="#fff" fontSize={fontSizeTitle} fontWeight="bold">
-                        {node.id}. {node.name}
-                      </text>
-                      <text x={x} y={y + 20} textAnchor="middle" fill="#f3f4f6" fontSize={fontSizeDesc}>
-                        {node.desc}
-                      </text>
-                    </g>
-                  );
-                })}
+                {/* 6→7 (监控不通过) */}
+                <path d="M680,300 C720,300 860,300 900,300" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrow)" />
+                <text x="800" y="280" fill="#f97316" fontSize="12" textAnchor="middle">监控不通过</text>
               </svg>
             </div>
           </div>
