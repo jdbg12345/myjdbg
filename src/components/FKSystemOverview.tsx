@@ -292,17 +292,16 @@ export const FKSystemOverview = () => {
               </div>
             </div>
 
-                        {/* 内控网络监控 */}
-
-             <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl p-8 border border-orange-200">
-      <div className="flex items-center mb-6">
-        <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-orange-400 to-yellow-400 flex items-center justify-center">
-          <Shield className="w-8 h-8 text-white" />
-        </div>
-        <div className="ml-4">
-          <h4 className="text-2xl font-bold text-gray-800">内控风控</h4>
-          <div className="text-gray-500">内容待定</div>
-        </div>
+          {/* 内控网络监控 */}
+            <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl p-8 border border-orange-200">
+              <div className="flex items-center mb-6">
+              <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-orange-400 to-yellow-400 flex items-center justify-center">
+                <Shield className="w-8 h-8 text-white" />
+            </div>
+            <div className="ml-4">
+              <h4 className="text-2xl font-bold text-gray-800">内控风控</h4>
+            <div className="text-gray-500">内容待定</div>
+          </div>
       </div>
     </div>
             
