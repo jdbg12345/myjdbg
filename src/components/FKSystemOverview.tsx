@@ -157,7 +157,7 @@ export const FKSystemOverview = () => {
               {/* Flow labels - 重新定位避免重叠 */}
               <text x="275" y="115" textAnchor="middle" fill="#3b82f6" fontSize="10" fontWeight="bold">开始</text>
               <text x="525" y="115" textAnchor="middle" fill="#3b82f6" fontSize="10" fontWeight="bold">提交</text>
-              <text x="925" y="115" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="bold">低风险直通</text>
+              <text x="925" y="115" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="bold">低风险</text>
               <text x="745" y="210" textAnchor="middle" fill="#3b82f6" fontSize="10" fontWeight="bold">高风险</text>
               <text x="1050" y="275" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="bold">通过</text>
               <text x="1000" y="420" textAnchor="middle" fill="#ef4444" fontSize="10" fontWeight="bold">不通过</text>
