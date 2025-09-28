@@ -3,7 +3,7 @@ import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } 
 
 export const FKSystemOverview = () => {
    const nodes = [
-    { id: 1, x: 150, y: 130, name: "系统预警", desc: "", color: "#f97316", number: "1" },
+    { id: 1, x: 150, y: 130, name: "系统预警", desc: "", color: "#3b82f6", number: "1" },
     { id: 2, x: 400, y: 130, name: "申请提交", desc: "", color: "#3b82f6", number: "2" },
     { id: 3, x: 650, y: 130, name: "系统审核", desc: "", color: "#3b82f6", number: "3" },
     { id: 4, x: 1200, y: 130, name: "审核通过", desc: "", color: "#3b82f6", number: "4" },
