@@ -225,6 +225,10 @@ export const FKSystemOverview = () => {
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
                     </div>
                      <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">提款环境异常</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
+                    </div>
+                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">新手账户防护</span>
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
                     </div>
