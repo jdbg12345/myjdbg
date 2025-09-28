@@ -29,7 +29,7 @@ export const FKSystemOverview = () => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.1</div>
               <h3 className="text-2xl font-bold text-gray-800">FK流程变化</h3>
             </div>
-            <div className="text-gray-500 ml-11">从单人操作升级为多环节监控，并辅以内控抽检，保障资金安全，防止内外串联风险。</div>
+            <div className="text-gray-500 ml-11">单人出款 → 多环节监控 + 内控的抽检，防内外串联风险。</div>
           </div>
 
           <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-8 border border-gray-200">
@@ -179,7 +179,7 @@ export const FKSystemOverview = () => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.2</div>
               <h3 className="text-2xl font-bold text-gray-800">FK能力变化</h3>
           </div>
-              <div className="text-gray-500 ml-11">防止系统出款错误</div>
+              <div className="text-gray-500 ml-11">防御型策略 → 多维策略（防御 + 套利 + 作弊），降低系统出款风险。</div>
           </div>
           {/* 玩家风险防控 */}
           <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
