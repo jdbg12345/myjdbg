@@ -54,16 +54,13 @@ export const Direction3SystemStrategies = () => {
     
       {/* 1. 电子策略 */}
       <div className="mb-12">
-        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-3 flex-1">
+          <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">电</span>
             </div>
-              <h4 className="text-xl font-bold text-gray-800">电子策略</h4>
-            </div>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            <h4 className="text-xl font-bold text-gray-800">电子策略</h4>
+            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -91,87 +88,84 @@ export const Direction3SystemStrategies = () => {
         
           {/* 电子策略图表 */}
           <div className="mt-8">
-          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
-              拦截订单数
-            </div>
-            <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
-              准确率 (%)
-            </div>
-            
-            <div className="mx-12 h-full relative">
-              <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                <span>400</span>
-                <span>300</span>
-                <span>200</span>
-                <span>100</span>
-                <span>0</span>
+            <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
+              <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
+                拦截订单数
+              </div>
+              <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
+                准确率 (%)
               </div>
               
-              <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
-                <span>100%</span>
-                <span>75%</span>
-                <span>50%</span>
-                <span>25%</span>
-                <span>0%</span>
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full">
-                {[0, 25, 50, 75, 100].map((percent) => (
-                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                ))}
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                <div className="flex flex-col items-center relative">
-                  <div className="w-20 bg-blue-500 rounded-t" style={{ height: '200px' }}></div>
-                  
-                  {/* 准确率数据点 */}
-                  <div 
-                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 25 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
-                  >
-                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
-                      25%
+              <div className="mx-12 h-full relative">
+                <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+                  <span>400</span>
+                  <span>300</span>
+                  <span>200</span>
+                  <span>100</span>
+                  <span>0</span>
+                </div>
+                
+                <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
+                  <span>100%</span>
+                  <span>75%</span>
+                  <span>50%</span>
+                  <span>25%</span>
+                  <span>0%</span>
+                </div>
+                
+                <div className="absolute left-12 right-12 h-full">
+                  {[0, 25, 50, 75, 100].map((percent) => (
+                    <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                  ))}
+                </div>
+                
+                <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-20 bg-blue-500 rounded-t" style={{ height: '200px' }}></div>
+                    
+                    {/* 准确率数据点 */}
+                    <div 
+                      className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                      style={{top: `${100 - 25 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
+                    >
+                      <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
+                        25%
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className="text-center mt-4">
-                    <div className="text-xs text-gray-500 mt-1">400单 (25%)</div>
+                    
+                    <div className="text-center mt-4">
+                      <div className="text-xs text-gray-500 mt-1">400单 (25%)</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-                    
-          <div className="flex justify-center space-x-6 text-sm">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-blue-600 rounded"></div>
-              <span className="text-gray-700">拦截订单数</span>
+                      
+            <div className="flex justify-center space-x-6 text-sm">
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-blue-600 rounded"></div>
+                <span className="text-gray-700">拦截订单数</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                <span className="text-gray-700">准确率</span>
+              </div>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-              <span className="text-gray-700">准确率</span>
-            </div>
+            
+            <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
           </div>
-          
-          <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-        </div>
         </div>
       </div>
 
       {/* 真人策略 */}
       <div className="mb-12">
-        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-3 flex-1">
+          <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">真</span>
             </div>
-              <h4 className="text-xl font-bold text-gray-800">真人策略</h4>
-            </div>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            <h4 className="text-xl font-bold text-gray-800">真人策略</h4>
+            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -199,87 +193,84 @@ export const Direction3SystemStrategies = () => {
         
           {/* 真人策略图表 */}
           <div className="mt-8">
-          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
-              拦截订单数
-            </div>
-            <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
-              准确率 (%)
-            </div>
-            
-            <div className="mx-12 h-full relative">
-              <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                <span>500</span>
-                <span>375</span>
-                <span>250</span>
-                <span>125</span>
-                <span>0</span>
+            <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
+              <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
+                拦截订单数
+              </div>
+              <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
+                准确率 (%)
               </div>
               
-              <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
-                <span>100%</span>
-                <span>75%</span>
-                <span>50%</span>
-                <span>25%</span>
-                <span>0%</span>
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full">
-                {[0, 25, 50, 75, 100].map((percent) => (
-                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                ))}
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                <div className="flex flex-col items-center relative">
-                  <div className="w-20 bg-blue-500 rounded-t" style={{ height: '225px' }}></div>
-                  
-                  {/* 准确率数据点 */}
-                  <div 
-                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 26.7 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
-                  >
-                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
-                      26.7%
+              <div className="mx-12 h-full relative">
+                <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+                  <span>500</span>
+                  <span>375</span>
+                  <span>250</span>
+                  <span>125</span>
+                  <span>0</span>
+                </div>
+                
+                <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
+                  <span>100%</span>
+                  <span>75%</span>
+                  <span>50%</span>
+                  <span>25%</span>
+                  <span>0%</span>
+                </div>
+                
+                <div className="absolute left-12 right-12 h-full">
+                  {[0, 25, 50, 75, 100].map((percent) => (
+                    <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                  ))}
+                </div>
+                
+                <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-20 bg-blue-500 rounded-t" style={{ height: '225px' }}></div>
+                    
+                    {/* 准确率数据点 */}
+                    <div 
+                      className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                      style={{top: `${100 - 26.7 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
+                    >
+                      <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
+                        26.7%
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className="text-center mt-4">
-                    <div className="text-xs text-gray-500 mt-1">450单 (26.7%)</div>
+                    
+                    <div className="text-center mt-4">
+                      <div className="text-xs text-gray-500 mt-1">450单 (26.7%)</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-                    
-          <div className="flex justify-center space-x-6 text-sm">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-blue-600 rounded"></div>
-              <span className="text-gray-700">拦截订单数</span>
+                      
+            <div className="flex justify-center space-x-6 text-sm">
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-blue-600 rounded"></div>
+                <span className="text-gray-700">拦截订单数</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                <span className="text-gray-700">准确率</span>
+              </div>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-              <span className="text-gray-700">准确率</span>
-            </div>
+            
+            <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
           </div>
-          
-          <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-        </div>
         </div>
       </div>
 
       {/* 体育策略 */}
       <div className="mb-12">
-        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-3 flex-1">
+          <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">体</span>
             </div>
-              <h4 className="text-xl font-bold text-gray-800">体育策略</h4>
-            </div>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+            <h4 className="text-xl font-bold text-gray-800">体育策略</h4>
+            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -307,87 +298,84 @@ export const Direction3SystemStrategies = () => {
         
           {/* 体育策略图表 */}
           <div className="mt-8">
-          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
-              拦截订单数
-            </div>
-            <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
-              准确率 (%)
-            </div>
-            
-            <div className="mx-12 h-full relative">
-              <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                <span>400</span>
-                <span>300</span>
-                <span>200</span>
-                <span>100</span>
-                <span>0</span>
+            <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
+              <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
+                拦截订单数
+              </div>
+              <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
+                准确率 (%)
               </div>
               
-              <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
-                <span>100%</span>
-                <span>75%</span>
-                <span>50%</span>
-                <span>25%</span>
-                <span>0%</span>
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full">
-                {[0, 25, 50, 75, 100].map((percent) => (
-                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                ))}
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                <div className="flex flex-col items-center relative">
-                  <div className="w-20 bg-blue-500 rounded-t" style={{ height: '190px' }}></div>
-                  
-                  {/* 准确率数据点 */}
-                  <div 
-                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 22.1 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
-                  >
-                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
-                      22.1%
+              <div className="mx-12 h-full relative">
+                <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+                  <span>400</span>
+                  <span>300</span>
+                  <span>200</span>
+                  <span>100</span>
+                  <span>0</span>
+                </div>
+                
+                <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
+                  <span>100%</span>
+                  <span>75%</span>
+                  <span>50%</span>
+                  <span>25%</span>
+                  <span>0%</span>
+                </div>
+                
+                <div className="absolute left-12 right-12 h-full">
+                  {[0, 25, 50, 75, 100].map((percent) => (
+                    <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                  ))}
+                </div>
+                
+                <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-20 bg-blue-500 rounded-t" style={{ height: '190px' }}></div>
+                    
+                    {/* 准确率数据点 */}
+                    <div 
+                      className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                      style={{top: `${100 - 22.1 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
+                    >
+                      <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
+                        22.1%
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className="text-center mt-4">
-                    <div className="text-xs text-gray-500 mt-1">380单 (22.1%)</div>
+                    
+                    <div className="text-center mt-4">
+                      <div className="text-xs text-gray-500 mt-1">380单 (22.1%)</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-                    
-          <div className="flex justify-center space-x-6 text-sm">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-red-600 rounded"></div>
-              <span className="text-gray-700">拦截订单数</span>
+                      
+            <div className="flex justify-center space-x-6 text-sm">
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-red-600 rounded"></div>
+                <span className="text-gray-700">拦截订单数</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                <span className="text-gray-700">准确率</span>
+              </div>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-              <span className="text-gray-700">准确率</span>
-            </div>
+            
+            <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
           </div>
-          
-          <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-        </div>
         </div>
       </div>
 
       {/* 棋牌策略 */}
       <div className="mb-12">
-        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-3 flex-1">
+          <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">棋</span>
             </div>
+            <h4 className="text-xl font-bold text-gray-800">棋牌策略</h4>
             <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
-              <h4 className="text-xl font-bold text-gray-800">棋牌策略</h4>
-            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -415,88 +403,84 @@ export const Direction3SystemStrategies = () => {
         
           {/* 棋牌策略图表 */}
           <div className="mt-8">
-          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
-              拦截订单数
-            </div>
-            <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
-              准确率 (%)
-            </div>
-            
-            <div className="mx-12 h-full relative">
-              <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                <span>250</span>
-                <span>188</span>
-                <span>125</span>
-                <span>63</span>
-                <span>0</span>
+            <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
+              <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
+                拦截订单数
+              </div>
+              <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
+                准确率 (%)
               </div>
               
-              <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
-                <span>100%</span>
-                <span>75%</span>
-                <span>50%</span>
-                <span>25%</span>
-                <span>0%</span>
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full">
-                {[0, 25, 50, 75, 100].map((percent) => (
-                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                ))}
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                <div className="flex flex-col items-center relative">
-                  <div className="w-20 bg-blue-500 rounded-t" style={{ height: '210px' }}></div>
-                  
-                  {/* 准确率数据点 */}
-                  <div 
-                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 23.8 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
-                  >
-                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
-                      23.8%
+              <div className="mx-12 h-full relative">
+                <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+                  <span>250</span>
+                  <span>188</span>
+                  <span>125</span>
+                  <span>63</span>
+                  <span>0</span>
+                </div>
+                
+                <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
+                  <span>100%</span>
+                  <span>75%</span>
+                  <span>50%</span>
+                  <span>25%</span>
+                  <span>0%</span>
+                </div>
+                
+                <div className="absolute left-12 right-12 h-full">
+                  {[0, 25, 50, 75, 100].map((percent) => (
+                    <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                  ))}
+                </div>
+                
+                <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-20 bg-blue-500 rounded-t" style={{ height: '210px' }}></div>
+                    
+                    {/* 准确率数据点 */}
+                    <div 
+                      className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                      style={{top: `${100 - 23.8 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
+                    >
+                      <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
+                        23.8%
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className="text-center mt-4">
-                    <div className="text-xs text-gray-500 mt-1">210单 (23.8%)</div>
+                    
+                    <div className="text-center mt-4">
+                      <div className="text-xs text-gray-500 mt-1">210单 (23.8%)</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          
-          <div className="flex justify-center space-x-6 text-sm">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-blue-500 rounded"></div>
-              <span className="text-gray-700">拦截订单数</span>
+            
+            <div className="flex justify-center space-x-6 text-sm">
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-blue-500 rounded"></div>
+                <span className="text-gray-700">拦截订单数</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                <span className="text-gray-700">准确率</span>
+              </div>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-              <span className="text-gray-700">准确率</span>
-            </div>
+            
+            <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
           </div>
-          
-          <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-        </div>
         </div>
       </div>
 
       {/* 彩票策略 */}
       <div className="mb-12">
-        {/* 整合的内容模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-3 flex-1">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">彩</span>
-              </div>
-              <h4 className="text-xl font-bold text-gray-800">彩票策略</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 ml-3">方案中</span>
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-sm">彩</span>
             </div>
+            <h4 className="text-xl font-bold text-gray-800">彩票策略</h4>
+            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -526,16 +510,13 @@ export const Direction3SystemStrategies = () => {
 
       {/* 套利兜底组合策略 */}
       <div className="mb-8">
-        {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-3 flex-1">
+          <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">套</span>
             </div>
-              <h4 className="text-xl font-bold text-gray-800">套利兜底组合策略</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-3">已上线</span>
-            </div>
+            <h4 className="text-xl font-bold text-gray-800">套利兜底组合策略</h4>
+            <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -563,72 +544,72 @@ export const Direction3SystemStrategies = () => {
         
           {/* 套利兜底组合策略图表 */}
           <div className="mt-8">
-          <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
-            <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
-              拦截订单数
-            </div>
-            <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
-              准确率 (%)
-            </div>
-            
-            <div className="mx-12 h-full relative">
-              <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                <span>400</span>
-                <span>300</span>
-                <span>200</span>
-                <span>100</span>
-                <span>0</span>
+            <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
+              <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
+                拦截订单数
+              </div>
+              <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
+                准确率 (%)
               </div>
               
-              <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
-                <span>100%</span>
-                <span>75%</span>
-                <span>50%</span>
-                <span>25%</span>
-                <span>0%</span>
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full">
-                {[0, 25, 50, 75, 100].map((percent) => (
-                  <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
-                ))}
-              </div>
-              
-              <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                <div className="flex flex-col items-center relative">
-                  <div className="w-20 bg-blue-500 rounded-t" style={{ height: '190px' }}></div>
-                  
-                  {/* 准确率数据点 */}
-                  <div 
-                    className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                    style={{top: `${100 - 22.1 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
-                  >
-                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
-                      22.1%
+              <div className="mx-12 h-full relative">
+                <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
+                  <span>400</span>
+                  <span>300</span>
+                  <span>200</span>
+                  <span>100</span>
+                  <span>0</span>
+                </div>
+                
+                <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-orange-500">
+                  <span>100%</span>
+                  <span>75%</span>
+                  <span>50%</span>
+                  <span>25%</span>
+                  <span>0%</span>
+                </div>
+                
+                <div className="absolute left-12 right-12 h-full">
+                  {[0, 25, 50, 75, 100].map((percent) => (
+                    <div key={percent} className="absolute w-full border-t border-gray-200" style={{bottom: `${percent}%`}}></div>
+                  ))}
+                </div>
+                
+                <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-20 bg-blue-500 rounded-t" style={{ height: '190px' }}></div>
+                    
+                    {/* 准确率数据点 */}
+                    <div 
+                      className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                      style={{top: `${100 - 22.1 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
+                    >
+                      <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap shadow-md">
+                        22.1%
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className="text-center mt-4">
-                    <div className="text-xs text-gray-500 mt-1">380单 (22.1%)</div>
+                    
+                    <div className="text-center mt-4">
+                      <div className="text-xs text-gray-500 mt-1">380单 (22.1%)</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-                    
-          <div className="flex justify-center space-x-6 text-sm">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-blue-500 rounded"></div>
-              <span className="text-gray-700">拦截订单数</span>
+                      
+            <div className="flex justify-center space-x-6 text-sm">
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-blue-500 rounded"></div>
+                <span className="text-gray-700">拦截订单数</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                <span className="text-gray-700">准确率</span>
+              </div>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-              <span className="text-gray-700">准确率</span>
-            </div>
+            
+            <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
           </div>
-          
-          <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
-        </div>
         </div>
       </div>
 
@@ -648,13 +629,11 @@ export const Direction3SystemStrategies = () => {
           {/* 1. 钱包预警 */}
           <div className="mb-8">
             <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center space-x-3 flex-1">
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                    <span className="text-white font-bold text-sm">钱</span>
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-800">中心钱包多钱</h4>
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                  <span className="text-white font-bold text-sm">钱</span>
                 </div>
+                <h4 className="text-xl font-bold text-gray-800">中心钱包多钱</h4>
                 <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -686,13 +665,11 @@ export const Direction3SystemStrategies = () => {
           {/* 2. 场馆多钱 */}
           <div className="mb-8">
             <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center space-x-3 flex-1">
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                    <span className="text-white font-bold text-sm">场</span>
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-800">场馆钱包多钱</h4>
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                  <span className="text-white font-bold text-sm">场</span>
                 </div>
+                <h4 className="text-xl font-bold text-gray-800">场馆钱包多钱</h4>
                 <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -724,13 +701,11 @@ export const Direction3SystemStrategies = () => {
           {/* 3. 盈利监控预警 */}
           <div className="mb-8">
             <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center space-x-3 flex-1">
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                    <span className="text-white font-bold text-sm">盈</span>
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-800">盈利监控预警</h4>
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                  <span className="text-white font-bold text-sm">盈</span>
                 </div>
+                <h4 className="text-xl font-bold text-gray-800">盈利监控预警</h4>
                 <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -762,13 +737,13 @@ export const Direction3SystemStrategies = () => {
           {/* 4. 沉睡用户 */}
           <div className="mb-8">
             <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center space-x-3 flex-1">
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">睡</span>
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-800">沉睡用户活跃</h4>
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">睡</span>
+                </div>
+                <h4 className="text-xl font-bold text-gray-800">沉睡用户活跃</h4>
+                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                   <h4 className="font-bold text-red-700 mb-3 flex items-center">
