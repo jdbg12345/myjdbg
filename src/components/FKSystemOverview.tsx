@@ -329,14 +329,14 @@ export const FKSystemOverview = () => {
             </div>
 
           {/* 内控网络监控 */}
-              <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-8 border border-purple-200 mt-8">
+            <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-8 border border-purple-200 mt-8">
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 flex items-center justify-center">
                     <Shield className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-2xl font-bold text-gray-800">代理网络监控</h4>
+                    <h4 className="text-2xl font-bold text-gray-800">内控网络监控</h4>
                     <div className="flex items-center space-x-6">
                       <div className="text-3xl font-bold text-purple-600">72%</div>
                       <div className="text-sm text-gray-500">完善度</div>
@@ -348,7 +348,7 @@ export const FKSystemOverview = () => {
                   </div>
                 </div>
               </div>
-                                </div>
+            </div>
 
             <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl p-8 border border-orange-200">
               <div className="flex items-center mb-6">
