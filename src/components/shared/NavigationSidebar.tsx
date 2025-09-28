@@ -16,7 +16,7 @@ const navigationItems: NavigationItem[] = [
   },
   {
     id: 'org',
-    title: '1. 组织情况',
+    title: '1. 组织情况（待更新）',
     icon: <Users className="w-4 h-4" />
   },
   {
