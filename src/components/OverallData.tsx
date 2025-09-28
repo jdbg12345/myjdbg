@@ -6,7 +6,7 @@ export const OverallData = () => {
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">2.0 FKZX-风控整体数据</h1>
+        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">2.0 FK数据情况</h1>
       </div>
 
       {/* 1. 整体数据 */}
