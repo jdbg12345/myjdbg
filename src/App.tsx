@@ -117,6 +117,18 @@ function App() {
           <PilotResults />
         </div>
         
+        {/* 3.3.1 方向1：审核问题-质量较差 */}
+        <div data-section="pilot-direction1">
+        </div>
+        
+        {/* 3.3.2 方向2：系统问题-支持不够 */}
+        <div data-section="pilot-direction2">
+        </div>
+        
+        {/* 3.3.3 方向3：内控问题-内外串联 */}
+        <div data-section="pilot-direction3">
+        </div>
+        
         {/* 3.1 审核组 */}
         <div data-section="audit-group">
           <AuditGroup />

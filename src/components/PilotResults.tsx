@@ -13,9 +13,17 @@ export const PilotResults = () => {
       </div>   
 
       {/* 各个方向的试点成果 */}
-      <Direction1PersonnelCapability />
-      <Direction3SystemStrategies />
-      <Direction4InternalCollusion />
+      <div data-section="pilot-direction1">
+        <Direction1PersonnelCapability />
+      </div>
+      
+      <div data-section="pilot-direction2">
+        <Direction3SystemStrategies />
+      </div>
+      
+      <div data-section="pilot-direction3">
+        <Direction4InternalCollusion />
+      </div>
       
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
