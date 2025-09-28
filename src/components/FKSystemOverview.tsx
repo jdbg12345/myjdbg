@@ -347,7 +347,6 @@ export const FKSystemOverview = () => {
                     </div>
                   </div>
                 </div>
-              </div>
                 
             <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl p-8 border border-orange-200">
               <div className="flex items-center mb-6">
