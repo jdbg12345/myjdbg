@@ -59,7 +59,7 @@ export const FKTransformationRhythm = () => {
               <div className="flex-1">
                 <h4 className="text-lg font-bold text-red-800 mb-3">能力问题-识别不到</h4>
                 <p className="text-red-700 leading-relaxed">
-                  能力参差不齐，新人和外包团队错误率高，未严格按照SOP操作，导致错误出款和风险遗漏
+                  团队能力参差不齐，新人及外包团队错误率高；审核操作未严格遵循 SOP，监控不到位。
                 </p>
               </div>
             </div>
@@ -74,7 +74,7 @@ export const FKTransformationRhythm = () => {
               <div className="flex-1">
                 <h4 className="text-lg font-bold text-red-800 mb-3">内控问题-内外勾结</h4>
                 <p className="text-red-700 leading-relaxed">
-                  审核流程执行不规范，未严格按照SOP操作，导致错误出款和风险遗漏
+                  团队能力参差不齐，新人及外包团队错误率高；审核操作未严格遵循 SOP，监控不到位。
                 </p>
               </div>
             </div>
@@ -89,7 +89,7 @@ export const FKTransformationRhythm = () => {
               <div className="flex-1">
                 <h4 className="text-lg font-bold text-red-800 mb-3">系统问题-支持不够</h4>
                 <p className="text-red-700 leading-relaxed">
-                  系统策略主要为防御型，缺乏套利和作弊识别能力，也缺少工具支持提效，导致系统直接出款错误
+                  策略偏防御型，缺乏套利及作弊识别能力，且缺少标准化工具支持以提升效率。
                 </p>
               </div>
             </div>
