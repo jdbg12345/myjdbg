@@ -470,8 +470,7 @@ export const Direction3SystemStrategies = () => {
                       
                       <div 
                         className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white"
-                        <div className="text-sm text-gray-800 font-medium">棋牌合伙策略</div>
-                        <div className="text-xs text-gray-500 mt-1">210单 (23.8%)</div>
+                        style={{bottom: `${24 + (23.8 / 28) * 200}px`, left: '50%', transform: 'translateX(-50%)'}}
                       >
                         <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold whitespace-nowrap">
                           23.8%
@@ -586,37 +585,30 @@ export const Direction3SystemStrategies = () => {
                         <div className="text-xs text-gray-500 mt-1">450单 (75%)</div>
                       </div>
                     </div>
-                          85%
+                          23.8%
                         </div>
                       </div>
                       
               <div className="text-center text-sm font-medium text-gray-600 mb-4">策略效果</div>
-                        <div className="text-sm text-gray-800 font-medium">电子卡免费策略</div>
-                        <div className="text-xs text-gray-500 mt-1">1050单 (85%)</div>
+                        <div className="text-sm text-gray-800 font-medium">棋牌合伙策略</div>
+                        <div className="text-xs text-gray-500 mt-1">210单 (23.8%)</div>
                       </div>
-                    </div>
-                  <span className="text-gray-700">规划命中订单数</span>
+              <>
+                <div className="text-center text-sm font-medium text-gray-600 mb-4">策略效果</div>
+                
+                <div className="flex justify-center space-x-6 text-sm">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 bg-blue-500 rounded"></div>
+                    <span className="text-gray-700">命中订单数</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                    <span className="text-gray-700">策略准确率</span>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                  <span className="text-gray-700">规划准确率</span>
-                </div>
-              </div>
-              
-              <div className="text-center text-sm font-medium text-gray-600 mb-4">策略效果</div>
-              
-              <div className="flex justify-center space-x-6 text-sm">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-gray-500 rounded"></div>
-                  <span className="text-gray-700">命中订单数</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-                  <span className="text-gray-700">策略准确率</span>
-                </div>
-              </div>
-              
-              <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+                
+                <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
+              </>
             </div>
           </div>
         </div>
