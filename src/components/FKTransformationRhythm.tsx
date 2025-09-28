@@ -236,55 +236,51 @@ export const FKTransformationRhythm = () => {
             <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
               <Clock className="w-5 h-5 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-800">推进节奏</h2>
-            <span className="text-gray-600 text-lg">针对FK特殊性，我们采取先小范围试点，验证效果后逐步推广，避免"一刀切"带来的组织和业务风险。</span>
-          </div>
-
-          <div className="relative">
-            <div className="absolute top-8 left-0 right-0 h-1 bg-gray-200"></div>
-
-            <div className="grid grid-cols-4 gap-4 relative">
-              {progressSchedule.map((item, index) => (
-                <div key={index} className="relative">
-                  <div className={`w-16 h-16 rounded-full border-4 flex items-center justify-center mx-auto mb-4 ${
-                    item.status === 'completed' ? 'bg-green-500 border-green-500' :
-                    item.status === 'current' ? 'bg-blue-500 border-blue-500 shadow-2xl ring-8 ring-blue-300 scale-110' :
-                    'bg-gray-300 border-gray-300'
-                  }`}>
-                    <span className={`text-white font-bold ${item.status === 'current' ? 'text-lg' : 'text-sm'}`}>
-                      {item.time}
-                    </span>
-                  </div>
-
-                  <div className={`bg-white rounded-lg p-4 shadow-sm border border-gray-200 text-center ${
-                    item.status === 'current' ? 'bg-blue-50 border-blue-300 shadow-2xl ring-4 ring-blue-200 transform scale-105' : ''
-                  }`}>
-                    <div className="mb-2">
-                      <h6 className={`font-bold mb-2 ${item.status === 'current' ? 'text-blue-800 text-xl' : 'text-gray-800'}`}>
-                        {item.stage}
-                      </h6>
-                      <p className="text-sm text-gray-600 mb-2 leading-relaxed">{item.work}</p>
-                    </div>
-                    <div className="mt-2">
-                      <span className={`text-xs px-2 py-1 rounded-full ${
-                        item.status === 'completed' ? 'bg-green-100 text-green-700' :
-                        item.status === 'current' ? 'bg-blue-100 text-blue-700' :
-                        'bg-gray-100 text-gray-500'
-                      }`}>
-                        {item.result}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          {/* 模块1 */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border-l-4 border-blue-500">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-blue-600 font-bold text-sm">1</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-blue-800 mb-3">系统审核比重逐步增加</h4>
+                <p className="text-blue-700 leading-relaxed">
+                  提供尽量由系统判定，降低人工操作比例。
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      {/* Footer */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-gray-400 text-sm">FKZX</div>
+
+          {/* 模块2 */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border-l-4 border-blue-500">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-blue-600 font-bold text-sm">2</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-blue-800 mb-3">提供丰富的风控工具库</h4>
+                <p className="text-blue-700 leading-relaxed">
+                  偏差监控：人工结果偏离系统预设时触发二次审核，保证风控稳定性。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 模块3 */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border-l-4 border-blue-500">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-blue-600 font-bold text-sm">3</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-blue-800 mb-3">内控违规操作风险监控</h4>
+                <p className="text-blue-700 leading-relaxed">
+                  提升违规成本，几乎消除违规操作空间，构建可靠防护体系。
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
       
     </div>
