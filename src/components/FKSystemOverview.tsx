@@ -11,14 +11,8 @@ export const FKSystemOverview = () => {
         </h1>
       </div>
 
-      {/* 2.1 FK理念变化 */}
-      <div className="mb-16">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.1</div>
-          <h3 className="text-2xl font-bold text-gray-800">FK理念变化</h3>
-        </div>
+       
 
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 mb-8">
        
 
         {/* 2.2 FK流程变化 */}
