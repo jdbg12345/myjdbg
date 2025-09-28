@@ -8,7 +8,7 @@ export const Direction3SystemStrategies = () => {
           <div className="w-16 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">方向3</span>
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">系统审核策略的维度缺失</h2>
+          <h2 className="text-3xl font-bold text-gray-800">系统问题-支持不够</h2>
         </div>
       </div>
       <p className="text-gray-700 mb-8 leading-relaxed">
