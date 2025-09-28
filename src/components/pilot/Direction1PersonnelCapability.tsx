@@ -183,7 +183,7 @@ export const Direction1PersonnelCapability = () => {
       </div>
 
          
-      {/* 1、出款强制查看标签备注 */}
+      {/* 分数分布图表 */}
       <div className="mb-12">
 
         {/* 分数分布图表 */}
