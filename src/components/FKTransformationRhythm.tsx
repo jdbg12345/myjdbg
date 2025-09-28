@@ -50,6 +50,7 @@ export const FKTransformationRhythm = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* 问题1 */}
           <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -64,6 +65,7 @@ export const FKTransformationRhythm = () => {
             </div>
           </div>
 
+          {/* 问题2 */}
           <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -78,6 +80,7 @@ export const FKTransformationRhythm = () => {
             </div>
           </div>
      
+          {/* 问题3 */}
           <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -202,10 +205,11 @@ export const FKTransformationRhythm = () => {
             </div>
           </div>
         </div>
+      </div> 
 
       {/* 困难挑战 */}
       <div className="mb-8">    
-         <div className="flex items-center space-x-3 mb-6">
+        <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
             <AlertTriangle className="w-5 h-5 text-white" />
           </div>
@@ -291,27 +295,26 @@ export const FKTransformationRhythm = () => {
                     item.status === 'current' ? 'bg-blue-50 border-blue-300 shadow-2xl ring-4 ring-blue-200 transform scale-105' : ''
                   }`}>
                     <div className="mb-2">
-                      <h6 className={`font-bold mb-2 ${item.status === 'current' ? 'text-blue-800 text-xl' : 'text-gray-800 text-lg'}`}>{item.stage}</h6>
-                      <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                        item.status === 'completed' ? 'bg-green-100 text-green-800' :
-                        item.status === 'current' ? 'bg-blue-100 text-blue-800 font-bold text-sm' :
-                        'bg-gray-100 text-gray-600'
+                      <h6 className={`font-bold mb-2 ${item.status === 'current' ? 'text-blue-800 text-xl' : 'text-gray-800'}`}>
+                        {item.stage}
+                      </h6>
+                      <p className="text-sm text-gray-600 mb-2 leading-relaxed">{item.work}</p>
+                    </div>
+                    <div className="mt-2">
+                      <span className={`text-xs px-2 py-1 rounded-full ${
+                        item.status === 'completed' ? 'bg-green-100 text-green-700' :
+                        item.status === 'current' ? 'bg-blue-100 text-blue-700' :
+                        'bg-gray-100 text-gray-500'
                       }`}>
                         {item.result}
                       </span>
                     </div>
-                    <p className={`text-sm text-center ${item.status === 'current' ? 'text-blue-700 font-medium' : 'text-gray-600'}`}>{item.work}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
         </div>
-      </div>
-      
-      {/* Footer */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-gray-400 text-sm">FKZX</div>
       </div>
     </div>
   );
