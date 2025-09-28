@@ -172,7 +172,7 @@ export const FKTransformationRhythm = () => {
             </div>
             <h2 className="text-3xl font-bold text-gray-800">核心目标</h2>
             <span className="text-gray-600 text-lg">
-              构建以系统为核心、人工为辅助的智能FK防护体系，实现全流程自动化风险识别与控制
+              构建以系统为核心、人工为辅助的FK防护体系，实现全流程自动化风险识别与控制
             </span>
           </div>
         </div>
