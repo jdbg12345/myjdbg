@@ -236,7 +236,7 @@ export const FKTransformationRhythm = () => {
                     <div className="space-y-3">
                       <div className="flex items-center text-sm text-gray-600">
                         <Users className="w-5 h-5 mr-3 text-blue-600" />
-                        <span className="text-xl font-bold">人工决策：<strong className="text-blue-900 text-2xl">50%</strong></span>
+                        <span className="text-xl font-bold">人工审核：<strong className="text-blue-900 text-2xl">50%</strong></span>
                       </div>
                       <div className="flex items-center text-sm text-gray-600">
                         <CheckCircle className="w-5 h-5 mr-3 text-blue-600" />
