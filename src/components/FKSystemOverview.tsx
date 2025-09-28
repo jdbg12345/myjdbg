@@ -378,7 +378,7 @@ export const FKSystemOverview = () => {
             {/* 防御型规则 */}
             <div className="bg-white rounded-xl p-6 border border-red-100">
               <h5 className="text-xl font-bold text-red-800 mb-4 flex items-center">
-                <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>防御型规则
+                <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>违规操作
               </h5>
               <div className="space-y-4">
                 <div className="bg-red-50 rounded-lg p-4">
