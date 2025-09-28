@@ -308,17 +308,17 @@ export const Direction1PersonnelCapability = () => {
             {/* 盲审效果图表 */}
             <div className="mt-8">
               <h5 className="text-lg font-bold text-gray-800 mb-4">盲审效果对比图表</h5>
-              <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
+              <div className="relative h-64 mb-6 bg-gray-50 rounded-lg p-8">
                 <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
-                  准确率 (%)
+                  错误率 (%)
                 </div>
                 
                 <div className="mx-12 h-full relative">
                   <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-500">
-                    <span>100%</span>
-                    <span>75%</span>
-                    <span>50%</span>
-                    <span>25%</span>
+                    <span>30%</span>
+                    <span>22.5%</span>
+                    <span>15%</span>
+                    <span>7.5%</span>
                     <span>0%</span>
                   </div>
                   
@@ -328,31 +328,33 @@ export const Direction1PersonnelCapability = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-12 right-12 h-full flex items-end justify-around pb-8">
+                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
                     {[
-                      { name: '传统审核', before: 72, after: 78 },
-                      { name: '盲审机制', before: 68, after: 85 },
-                      { name: '系统辅助', before: 75, after: 88 }
+                      { name: '整体错误率', before: 25.2, after: 18.7, change: -6.5 }
                     ].map((item, index) => (
                       <div key={index} className="flex flex-col items-center relative">
-                        <div className="flex items-end space-x-1 mb-2">
+                        <div className="flex items-end space-x-4 mb-2">
                           <div className="relative">
+                            <div className="text-xs text-blue-600 font-bold mb-1 text-center">{item.before}%</div>
                             <div 
-                              className="w-8 bg-blue-500 rounded-t"
-                              style={{ height: `${(item.before / 100) * 200}px` }}
+                              className="w-16 bg-blue-500 rounded-t"
+                              style={{ height: `${(item.before / 30) * 160}px` }}
                             ></div>
+                            <div className="text-xs text-gray-600 text-center mt-2">上线前</div>
                           </div>
                           <div className="relative">
+                            <div className="text-xs text-green-600 font-bold mb-1 text-center">{item.after}%</div>
                             <div 
-                              className="w-8 bg-green-500 rounded-t"
-                              style={{ height: `${(item.after / 100) * 200}px` }}
+                              className="w-16 bg-green-500 rounded-t"
+                              style={{ height: `${(item.after / 30) * 160}px` }}
                             ></div>
+                            <div className="text-xs text-gray-600 text-center mt-2">上线后</div>
                           </div>
                         </div>
                         
                         <div className="text-center">
-                          <div className="text-xs text-gray-800 font-medium whitespace-nowrap">{item.name}</div>
-                          <div className="text-xs text-gray-500 mt-1">{item.before}% → {item.after}%</div>
+                          <div className="text-sm text-gray-800 font-medium whitespace-nowrap mt-4">{item.name}</div>
+                          <div className="text-xs text-green-600 font-bold mt-1">改善 {Math.abs(item.change)}%</div>
                         </div>
                       </div>
                     ))}
@@ -360,16 +362,16 @@ export const Direction1PersonnelCapability = () => {
                 </div>
               </div>
               
-              <div className="text-center text-sm font-medium text-gray-600 mb-4">审核方式对比</div>
+              <div className="text-center text-sm font-medium text-gray-600 mb-4">盲审机制效果对比</div>
               
               <div className="flex justify-center space-x-6 text-sm">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-blue-500 rounded"></div>
-                  <span className="text-gray-700">试点前准确率</span>
+                  <span className="text-gray-700">上线前错误率</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-500 rounded"></div>
-                  <span className="text-gray-700">试点后准确率</span>
+                  <span className="text-gray-700">上线后错误率</span>
                 </div>
               </div>
               
