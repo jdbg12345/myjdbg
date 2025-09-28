@@ -382,7 +382,6 @@ export const FKSystemOverview = () => {
               </h5>
               <div className="space-y-4">
                 <div className="bg-indigo-50 rounded-lg p-4">
-                  <h6 className="font-semibold text-gray-700 mb-3">审核流程</h6>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">审核流程</span>
