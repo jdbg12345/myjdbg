@@ -171,7 +171,7 @@ export const FKSystemOverview = () => {
         </div>
                 
 
-        {/* 2.3 FK能力变化 */}
+        {/* 2.2 FK能力变化 */}
         <div className="mb-8">
           {/* 玩家风险防控 */}
           <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
