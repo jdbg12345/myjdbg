@@ -432,12 +432,8 @@ export const FKSystemOverview = () => {
               <div>
                 <h4 className="text-2xl font-bold text-gray-800">内控风险监控</h4>
                 <div className="flex items-center space-x-6">
-                  <div className="text-3xl font-bold text-blue-600">85%</div>
-                  <div className="text-sm text-gray-500">完善度</div>
-                  <div className="flex items-center">
-                    <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
-                    <span className="text-sm text-green-600 font-medium">+25%</span>
-                  </div>
+                  <div className="text-3xl font-bold text-blue-600">部分资源在这个方向，在几个维度进行完善</div>
+                  
                 </div>
               </div>
             </div>
