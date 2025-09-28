@@ -257,7 +257,7 @@ export const FKSystemOverview = () => {
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">不经过人工</span>
+                      <span className="text-sm text-gray-600">多次不经过人工</span>
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
                     </div>
                     <div className="flex justify-between items-center">
@@ -288,6 +288,18 @@ export const FKSystemOverview = () => {
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">体育套利</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
+                    </div>
+                     <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">棋牌套利</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">彩票套利</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">电竞套利</span>
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
                     </div>
                   </div>
