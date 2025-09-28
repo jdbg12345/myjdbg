@@ -37,17 +37,21 @@ const navigationItems: NavigationItem[] = [
     ]
   },
   {
-    id: 'summary',
+    id: 'fk-summary',
     title: '3. FK工作总结',
     icon: <FileText className="w-4 h-4" />,
     children: [
       { id: 'fk-transformation', title: '3.1 FK整体说明' },
       { id: 'fk-system-overview', title: '3.2 FK体系概览' },
-      { id: 'pilot-results', title: '3.3 FK试点成果', children: [
-        { id: 'pilot-direction1', title: '方向1：审核问题-质量较差' },
-        { id: 'pilot-direction2', title: '方向2：系统问题-支持不够' },
-        { id: 'pilot-direction3', title: '方向3：内控问题-内外串联' }
-      ]}
+      { 
+        id: 'pilot-results', 
+        title: '3.3 FK试点成果', 
+        children: [
+          { id: 'pilot-direction1', title: '方向1：审核问题-质量较差' },
+          { id: 'pilot-direction2', title: '方向2：系统问题-支持不够' },
+          { id: 'pilot-direction3', title: '方向3：内控问题-内外串联' }
+        ]
+      }
     ]
   },
   {
@@ -58,7 +62,22 @@ const navigationItems: NavigationItem[] = [
       { id: 'audit-group', title: '3.1 审核组' },
       { id: 'internal-control', title: '3.2 内控组' },
       { id: 'audit-dept', title: '3.3 稽查组' },
-      { id: 'system-dept', title: '3.4 系统组' }
+      { id: 'system-dept', title: '3.4 系统组' },
+      { 
+        id: 'system-details', 
+        title: '系统组详细页面', 
+        children: [
+          { id: 'summary-overview', title: '会员出款风控概览' },
+          { id: 'risk-warning', title: '事前（风险预警）' },
+          { id: 'system-review', title: '事中（系统审核）' },
+          { id: 'system-dispatch', title: '事中（系统派单）' },
+          { id: 'manual-review', title: '事中（人工审核）' },
+          { id: 'internal-control-sampling', title: '事中（内控抽检）' },
+          { id: 'platform-reconciliation', title: '事后（平台对账）' },
+          { id: 'internal-security-control', title: '内控安全风控' },
+          { id: 'agent-commission-control', title: '代理佣金风控' }
+        ]
+      }
     ]
   },
   {
