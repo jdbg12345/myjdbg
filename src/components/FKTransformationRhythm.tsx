@@ -252,7 +252,7 @@ export const FKTransformationRhythm = () => {
                     {item.status === 'completed' ? (
                       <CheckCircle className="w-5 h-5 text-green-600" />
                     ) : item.status === 'current' ? (
-                      <Clock className="w-6 h-6 text-blue-700" />
+                      <Clock className="w-5 h-5 text-blue-700" />
                     ) : (
                       <span className="text-gray-600 font-bold text-sm">{item.time}</span>
                     )}
@@ -260,21 +260,21 @@ export const FKTransformationRhythm = () => {
                   <div className="flex-1">
                     <div className={`text-lg font-bold mb-2 ${
                       item.status === 'completed' ? 'text-green-800' :
-                      item.status === 'current' ? 'text-blue-900 text-xl' :
+                      item.status === 'current' ? 'text-blue-900' :
                       'text-gray-700'
                     }`}>
                       {item.time} - {item.stage}
                     </div>
                     <p className={`leading-relaxed text-sm mb-3 ${
                       item.status === 'completed' ? 'text-green-700' :
-                      item.status === 'current' ? 'text-blue-800 font-medium' :
+                      item.status === 'current' ? 'text-blue-800' :
                       'text-gray-600'
                     }`}>
                       {item.work}
                     </p>
                     <div className={`text-sm font-semibold ${
                       item.status === 'completed' ? 'text-green-600' :
-                      item.status === 'current' ? 'text-blue-700 text-base' :
+                      item.status === 'current' ? 'text-blue-700' :
                       'text-gray-500'
                     }`}>
                       {item.result}
