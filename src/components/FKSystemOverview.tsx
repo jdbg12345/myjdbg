@@ -307,7 +307,7 @@ export const FKSystemOverview = () => {
                       <div className="font-semibold text-gray-800 text-sm mb-1">特殊上分类型</div>
                       <div className="flex justify-between items-center text-xs">
                         <span className="text-gray-600">状态：<span className="font-medium text-blue-600">运行中</span></span>
-                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-gray-100 text-gray-600 font-medium">无变化</span></span>
+                        <span className="text-gray-600">Q3变化：<span className="px-2 py-1 rounded-full bg-gray-100 text-gray-600 font-medium">没变</span></span>
                       </div>
                     </div>
                   </div>
