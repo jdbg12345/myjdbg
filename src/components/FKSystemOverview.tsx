@@ -23,17 +23,17 @@ export const FKSystemOverview = () => {
         </h1>
       </div>
 
-      {/* 2.1 FK流程变化 */}
+      {/* FK流程变化 */}
       <div className="mb-16">
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">2.1</div>
-            <h3 className="text-2xl font-bold text-gray-800">FK流程变化</h3>
-            <span className="text-gray-600 text-lg">单人可出款 → 多环节监控 + 内控的抽检，防内外串联风险</span>
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <BarChart3 className="w-5 h-5 text-white" />
           </div>
+          <h2 className="text-3xl font-bold text-gray-800">FK流程变化</h2>
+          <span className="text-gray-600 text-lg">单人可出款 → 多环节监控 + 内控的抽检，防内外串联风险</span>
         </div>
 
-        <div className="bg-white rounded-lg p-6 border border-gray-200">
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex justify-center">
             <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[400px]">
               <defs>
@@ -171,8 +171,8 @@ export const FKSystemOverview = () => {
         </div>
       </div>
 
-      {/* 2.2 FK能力变化 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      {/* FK能力变化 */}
+      <div className="mb-8">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
             <Shield className="w-5 h-5 text-white" />
@@ -598,12 +598,14 @@ export const FKSystemOverview = () => {
             </div>
           </div>
         </div>
+        </div>
       </div>
       
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="text-gray-400 text-sm">FKZX</div>
       </div>
+      
     </div>
   );
 };
