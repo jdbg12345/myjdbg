@@ -33,9 +33,9 @@ export const FKSystemOverview = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg p-6 border border-gray-200 overflow-x-auto">
-          <div className="min-w-[1600px]">
-            <svg viewBox="0 0 1600 550" className="w-full h-[400px]">
+        <div className="bg-white rounded-lg p-6 border border-gray-200">
+          <div className="flex justify-center">
+            <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[400px]">
               <defs>
                 <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
                   <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
@@ -354,16 +354,16 @@ export const FKSystemOverview = () => {
         </div>
 
         {/* 内控风险监控 */}
-        <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-xl p-8 border border-red-200 mt-8">
+        <div className="bg-blue-50 rounded-xl p-8 border border-blue-200 mt-8">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-red-500 to-pink-500 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-xl bg-blue-500 flex items-center justify-center">
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <div>
                 <h4 className="text-2xl font-bold text-gray-800">内控风险监控</h4>
                 <div className="flex items-center space-x-6">
-                  <div className="text-3xl font-bold text-red-600">85%</div>
+                  <div className="text-3xl font-bold text-blue-600">85%</div>
                   <div className="text-sm text-gray-500">完善度</div>
                   <div className="flex items-center">
                     <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
@@ -376,17 +376,17 @@ export const FKSystemOverview = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* 防御型规则 */}
-            <div className="bg-white rounded-xl p-6 border border-red-100">
-              <h5 className="text-xl font-bold text-red-800 mb-4 flex items-center">
-                <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>信息安全
+            <div className="bg-white rounded-xl p-6 border border-blue-100">
+              <h5 className="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>信息安全
               </h5>
               <div className="space-y-4">
-                <div className="bg-red-50 rounded-lg p-4">
+                <div className="bg-blue-50 rounded-lg p-4">
                   <h6 className="font-semibold text-gray-700 mb-3">信息安全类</h6>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">泄漏风控标签和备注</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">增强</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">敏感信息明文查询</span>
@@ -394,7 +394,7 @@ export const FKSystemOverview = () => {
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">风控策略参数变化</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">增强</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
                     </div>
             
                   </div>
@@ -404,12 +404,12 @@ export const FKSystemOverview = () => {
             </div>
 
             {/* 违规操作 */}
-            <div className="bg-white rounded-xl p-6 border border-red-100">
-              <h5 className="text-xl font-bold text-red-800 mb-4 flex items-center">
-                <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>违规操作
+            <div className="bg-white rounded-xl p-6 border border-blue-100">
+              <h5 className="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>违规操作
               </h5>
               <div className="space-y-4">
-                <div className="bg-red-50 rounded-lg p-4">
+                <div className="bg-blue-50 rounded-lg p-4">
                   <h6 className="font-semibold text-gray-700 mb-3">游戏套利类</h6>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
@@ -422,7 +422,7 @@ export const FKSystemOverview = () => {
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">高危参数修改监控</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">增强</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
                     </div>
                    
                   </div>
@@ -433,16 +433,16 @@ export const FKSystemOverview = () => {
         </div>
 
         {/* 代理网络监控 */}
-        <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-8 border border-purple-200 mt-8">
+        <div className="bg-blue-50 rounded-xl p-8 border border-blue-200 mt-8">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-xl bg-blue-500 flex items-center justify-center">
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <div>
                 <h4 className="text-2xl font-bold text-gray-800">代理网络监控</h4>
                 <div className="flex items-center space-x-6">
-                  <div className="text-3xl font-bold text-purple-600">72%</div>
+                  <div className="text-3xl font-bold text-blue-600">72%</div>
                   <div className="text-sm text-gray-500">完善度</div>
                   <div className="flex items-center">
                     <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
@@ -455,20 +455,20 @@ export const FKSystemOverview = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* 佣金审核 */}
-            <div className="bg-white rounded-xl p-6 border border-indigo-100">
-              <h5 className="text-xl font-bold text-indigo-800 mb-4 flex items-center">
-                <div className="w-3 h-3 bg-indigo-500 rounded-full mr-2"></div>佣金审核
+            <div className="bg-white rounded-xl p-6 border border-blue-100">
+              <h5 className="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>佣金审核
               </h5>
               <div className="space-y-4">
-                <div className="bg-indigo-50 rounded-lg p-4">
+                <div className="bg-blue-50 rounded-lg p-4">
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">审核流程</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">新增</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">代理质量</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">新增</span>
                     </div>
                   </div>
                 </div>
@@ -476,12 +476,12 @@ export const FKSystemOverview = () => {
             </div>
 
             {/* 关联网络分析 */}
-            <div className="bg-white rounded-xl p-6 border border-purple-100">
-              <h5 className="text-xl font-bold text-purple-800 mb-4 flex items-center">
-                <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>关联网络
+            <div className="bg-white rounded-xl p-6 border border-blue-100">
+              <h5 className="text-xl font-bold text-blue-800 mb-4 flex items-center">
+                <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>关联网络
               </h5>
               <div className="space-y-4">
-                <div className="bg-purple-50 rounded-lg p-4">
+                <div className="bg-blue-50 rounded-lg p-4">
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">关联图谱</span>
@@ -489,7 +489,7 @@ export const FKSystemOverview = () => {
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">设备指纹</span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">新增</span>
                     </div>
                   </div>
                 </div>
