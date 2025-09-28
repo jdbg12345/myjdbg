@@ -219,52 +219,6 @@ export const Direction1PersonnelCapability = () => {
               <p className="text-gray-700 text-sm leading-relaxed">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* 内控培训 */}
-      <div className="mb-8">
-        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center space-x-3 flex-1">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">3</span>
-              </div>
-              <h4 className="text-xl font-bold text-gray-800">内控培训</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-3">已上线</span>
-            </div>
-          </div>
-          <div className="bg-white rounded-lg p-6 border border-gray-200">
-            <p className="text-gray-600 text-center">内容待定</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-              <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">出款时未查看备注标签（公告）导致出款错误，每月约15-20%的错误出款源于此，影响约100+万/月</p>
-            </div>
-            <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">将查看备注设为出款流程中的强制环节</p>
-            </div>
-            <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-              <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">错误出款影响降低<span className="font-bold text-green-600">15%-20%</span></p>
-            </div>
-          </div>
 
           {/* 图表模块 */}
           <div className="mt-8">
@@ -357,6 +311,24 @@ export const Direction1PersonnelCapability = () => {
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
+        </div>
+      </div>
+
+      {/* 内控培训 */}
+      <div className="mb-8">
+        <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">3</span>
+              </div>
+              <h4 className="text-xl font-bold text-gray-800">内控培训</h4>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-3">已上线</span>
+            </div>
+          </div>
+          <div className="bg-white rounded-lg p-6 border border-gray-200">
+            <p className="text-gray-600 text-center">内容待定</p>
+          </div>
         </div>
       </div>
     </div>

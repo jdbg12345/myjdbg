@@ -218,28 +218,29 @@ export const FKTransformationRhythm = () => {
               </div>
 
               {/* 2.0阶段 */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-blue-500">
+              <div className="bg-blue-50 rounded-xl p-6 shadow-xl border-l-4 border-blue-500 ring-4 ring-blue-200 transform scale-105">
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center shadow-lg">
                     <Shield className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-gray-800">2.0阶段 当前目标</h4>
+                    <h4 className="text-xl font-bold text-blue-800">2.0阶段 当前目标</h4>
+                    <div className="text-sm text-blue-600 font-medium">← 当前阶段</div>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4">人做决策的比例要大大降低</p>
+                <p className="text-blue-700 mb-4 font-medium">人做决策的比例要大大降低</p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
-                    <Users className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-2xl font-bold">人工决策：<strong className="text-gray-800 text-3xl">50%</strong></span>
+                    <Users className="w-4 h-4 mr-2 text-blue-500" />
+                    <span className="text-2xl font-bold">人工决策：<strong className="text-blue-800 text-3xl">50%</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-2xl font-bold">系统通过：<strong className="text-gray-800 text-3xl">70%</strong></span>
+                    <CheckCircle className="w-4 h-4 mr-2 text-blue-500" />
+                    <span className="text-2xl font-bold">系统通过：<strong className="text-blue-800 text-3xl">70%</strong></span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
-                    <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-2xl font-bold">系统拒绝：<strong className="text-gray-800 text-3xl">30%</strong></span>
+                    <BarChart3 className="w-4 h-4 mr-2 text-blue-500" />
+                    <span className="text-2xl font-bold">系统拒绝：<strong className="text-blue-800 text-3xl">30%</strong></span>
                   </div>
                 </div>
               </div>
