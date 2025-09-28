@@ -42,11 +42,14 @@ export const FKTransformationRhythm = () => {
 
       {/* 核心问题 */}
       <div className="mb-8">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-            <AlertTriangle className="w-5 h-5 text-white" />
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+              <AlertTriangle className="w-5 h-5 text-white" />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-800">核心问题</h2>
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">核心问题</h2>
+          <div className="text-gray-600 text-lg">问题很多，也很明确</div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -99,11 +102,14 @@ export const FKTransformationRhythm = () => {
 
           {/* 困难挑战 */}
       <div className="mb-8">    
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-            <AlertTriangle className="w-5 h-5 text-white" />
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+              <AlertTriangle className="w-5 h-5 text-white" />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-800">困难挑战</h2>
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">困难挑战</h2>
+          <div className="text-gray-600 text-lg">解决问题过程中遇到的实际困难</div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 border-l-4 border-amber-500 flex-1">
@@ -152,11 +158,14 @@ export const FKTransformationRhythm = () => {
       
       {/* 核心目标 */}
       <div className="mb-8">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-            <Target className="w-5 h-5 text-white" />
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+              <Target className="w-5 h-5 text-white" />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-800">核心目标</h2>
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">核心目标</h2>
+          <div className="text-gray-600 text-lg">构建以系统为核心、人工为辅助的智能FK防护体系，实现全流程自动化风险识别与控制</div>
         </div>
 
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 mb-8">
@@ -262,11 +271,12 @@ export const FKTransformationRhythm = () => {
 
       {/* 落地策略 - 横向里程碑样式 */}
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-        <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6">
+        <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <Clock className="w-6 h-6" />
-            <h3 className="text-xl font-bold">落地策略：小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险。</h3>
+            <h3 className="text-xl font-bold">推进节奏</h3>
           </div>
+          <div className="text-gray-300 text-lg">小范围试点，效果验证后逐步推广，避免一刀切的潜在组织及业务风险</div>
         </div>
         
         <div className="p-8">
