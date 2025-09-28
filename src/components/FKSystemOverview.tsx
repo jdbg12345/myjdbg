@@ -193,12 +193,7 @@ export const FKSystemOverview = () => {
               <div>
                 <h4 className="text-2xl font-bold text-gray-800">玩家风险防控</h4>
                 <div className="flex items-center space-x-6">
-                  <div className="text-3xl font-bold text-blue-600">85%</div>
-                  <div className="text-sm text-gray-500">完善度</div>
-                  <div className="flex items-center">
-                    <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
-                    <span className="text-sm text-green-600 font-medium">+25%</span>
-                  </div>
+                  <div className="text-3xl font-bold text-blue-600">Q1-Q3主要资源在这个方向，目前整体框架已有，逐步落地中</div>                 
                 </div>
               </div>
             </div>
