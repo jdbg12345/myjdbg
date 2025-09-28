@@ -378,18 +378,14 @@ export const FKSystemOverview = () => {
             {/* 代理行为监控 */}
             <div className="bg-white rounded-xl p-6 border border-indigo-100">
               <h5 className="text-xl font-bold text-indigo-800 mb-4 flex items-center">
-                <div className="w-3 h-3 bg-indigo-500 rounded-full mr-2"></div>代理佣金监控
+                <div className="w-3 h-3 bg-indigo-500 rounded-full mr-2"></div>佣金审核
               </h5>
               <div className="space-y-4">
                 <div className="bg-indigo-50 rounded-lg p-4">
-                  <h6 className="font-semibold text-gray-700 mb-3">佣金审核</h6>
+                  <h6 className="font-semibold text-gray-700 mb-3">审核流程</h6>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600"></span>
-                      <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">增强</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">优质代理</span>
+                      <span className="text-sm text-gray-600">代理质量</span>
                       <span className="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">新增</span>
                     </div>
                   </div>
@@ -414,7 +410,7 @@ export const FKSystemOverview = () => {
             {/* 关联网络分析 */}
             <div className="bg-white rounded-xl p-6 border border-purple-100">
               <h5 className="text-xl font-bold text-purple-800 mb-4 flex items-center">
-                <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>关联网络分析
+                <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>关联网络
               </h5>
               <div className="space-y-4">
                 <div className="bg-purple-50 rounded-lg p-4">
