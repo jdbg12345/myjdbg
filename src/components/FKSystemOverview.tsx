@@ -522,7 +522,7 @@ export const FKSystemOverview = () => {
               <div>
                 <h4 className="text-2xl font-bold text-gray-800">代理网络监控</h4>
                 <div className="flex items-center space-x-6">
-                  <div className="text-3xl font-bold text-blue-600">Q3在这个方向的建设上资源较少，Q4会作为主要方向升级</div>                  
+                  <div className="text-xl font-bold text-blue-600">Q3在这个方向的建设上资源较少，Q4会作为主要方向升级</div>                  
                 </div>
               </div>
             </div>

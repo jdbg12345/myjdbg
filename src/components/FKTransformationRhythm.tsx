@@ -236,15 +236,15 @@ export const FKTransformationRhythm = () => {
                     <div className="space-y-3">
                       <div className="flex items-center text-sm text-gray-600">
                         <Users className="w-5 h-5 mr-3 text-blue-600" />
-                        <span className="text-lg font-bold">人工审核：<strong className="text-blue-900 text-xl">50%</strong></span>
+                        <span className="text-xl font-bold">人工审核：<strong className="text-blue-900 text-2xl">50%</strong></span>
                       </div>
                       <div className="flex items-center text-sm text-gray-600">
                         <CheckCircle className="w-5 h-5 mr-3 text-blue-600" />
-                        <span className="text-lg font-bold">系统通过：<strong className="text-blue-900 text-xl">70%</strong></span>
+                        <span className="text-xl font-bold">系统通过：<strong className="text-blue-900 text-2xl">70%</strong></span>
                       </div>
                       <div className="flex items-center text-sm text-gray-600">
                         <BarChart3 className="w-5 h-5 mr-3 text-blue-600" />
-                        <span className="text-lg font-bold">系统拒绝：<strong className="text-blue-900 text-xl">30%</strong></span>
+                        <span className="text-xl font-bold">系统拒绝：<strong className="text-blue-900 text-2xl">30%</strong></span>
                       </div>
                     </div>
                   </div>
@@ -264,15 +264,15 @@ export const FKTransformationRhythm = () => {
                   <div className="space-y-2">
                     <div className="flex items-center text-sm text-gray-600">
                       <Users className="w-4 h-4 mr-2 text-gray-400" />
-                      <span className="text-2xl font-bold">人工审核：<strong className="text-gray-800 text-3xl">10%</strong></span>
+                      <span className="text-lg font-bold">人工审核：<strong className="text-gray-800 text-xl">10%</strong></span>
                     </div>
                     <div className="flex items-center text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 mr-2 text-gray-400" />
-                      <span className="text-2xl font-bold">系统通过：<strong className="text-gray-800 text-3xl">40%</strong></span>
+                      <span className="text-lg font-bold">系统通过：<strong className="text-gray-800 text-xl">40%</strong></span>
                     </div>
                     <div className="flex items-center text-sm text-gray-600">
                       <BarChart3 className="w-4 h-4 mr-2 text-gray-400" />
-                      <span className="text-2xl font-bold">系统拒绝：<strong className="text-gray-800 text-3xl">60%</strong></span>
+                      <span className="text-lg font-bold">系统拒绝：<strong className="text-gray-800 text-xl">60%</strong></span>
                     </div>
                   </div>
                 </div>
@@ -290,7 +290,7 @@ export const FKTransformationRhythm = () => {
               <Clock className="w-5 h-5 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-800">推进节奏</h2>
-            <span className="text-gray-600 text-lg">针对FK特殊性，我们采取先小范围试点，验证效果后逐步推广，避免“一刀切”带来的组织和业务风险。</span>
+            <span className="text-gray-600 text-lg">针对FK特殊性，我们采取先小范围试点，验证效果后逐步推广，避免"一刀切"带来的组织和业务风险。</span>
           </div>
 
           <div className="relative">
