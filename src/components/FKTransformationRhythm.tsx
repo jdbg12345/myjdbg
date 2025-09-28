@@ -124,7 +124,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-lg font-bold text-amber-800 mb-3">人员挑战</h4>
                   <p className="text-amber-700 leading-relaxed">
-                    依赖个人经验，稳定性差；小圈子文化严重，部分员工不愿分享经验，人才培养困难。内外串联等风险事件仍时有发生。
+                    依赖个人经验，稳定性差；小圈子文化严重，部分员工不愿分享经验，人才培养困难；内外串联等风险事件仍时有发生。
                   </p>
                 </div>
               </div>
