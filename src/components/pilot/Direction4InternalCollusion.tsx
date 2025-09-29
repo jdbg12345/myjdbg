@@ -104,7 +104,7 @@ export const Direction4InternalCollusion = () => {
                     <div className="text-yellow-700 font-bold">VIP 4-6</div>
                     <div className="text-sm text-yellow-600">中级会员</div>
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">需主管审批</div>
+                  <div className="text-sm text-gray-600 font-medium">需主管的U盾码才可操作</div>
                 </div>
                 
                 <div className="text-center">
@@ -112,7 +112,7 @@ export const Direction4InternalCollusion = () => {
                     <div className="text-red-700 font-bold">VIP 7+</div>
                     <div className="text-sm text-red-600">高级会员</div>
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">需U盾/谷歌验证</div>
+                  <div className="text-sm text-gray-600 font-medium">需负责人/CEO的谷歌验证码才可操作</div>
                 </div>
               </div>
             </div>
