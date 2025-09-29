@@ -548,7 +548,7 @@ export const Direction3SystemStrategies = () => {
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">用户体验极差</span>：日常工作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），消耗大量时间，运行效率极低</span>
+                    <span><span className="font-bold">用户体验较差</span>：日常工作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），消耗大量时间，运行效率极低</span>
                   </div>
                 </div>
               </div>
