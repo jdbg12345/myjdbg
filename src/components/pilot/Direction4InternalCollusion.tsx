@@ -145,14 +145,14 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                 解决策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">一些影响到收益的关键参数的修改会触发实时触发</p>
+              <p className="text-gray-700 text-sm leading-relaxed">一些关键参数的修改会触发实时预警，并有人专门跟进处理</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                 预期收益
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">减少被泄露风险</p>
+              <p className="text-gray-700 text-sm leading-relaxed">降低异常操作导致的重大损失风险</p>
             </div>
           </div>
         </div>
