@@ -38,7 +38,7 @@ const navigationItems: NavigationItem[] = [
   },
   {
     id: 'fk-summary',
-    title: '3. 工作总结',
+    title: '3. 工作情况',
     icon: <FileText className="w-4 h-4" />,
     children: [
       { id: 'fk-transformation', title: '3.1 整体概览' },
