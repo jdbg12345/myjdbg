@@ -136,7 +136,7 @@ export const FKTransformationRhythm = () => {
                   <span className="text-amber-600 font-bold text-sm">2</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-bold text-amber-800 mb-3">系统困难</h4>
+                  <h4 className="text-lg font-bold text-amber-800 mb-3">系统挑战</h4>
                   <p className="text-amber-700 leading-relaxed">
                     系统处于初期，跨站融合、策略升级等需投入资源，在‘解决当下问题’与‘长期合理性’之间需平衡，短期难显成效，需要韧性。
                   </p>
@@ -151,7 +151,7 @@ export const FKTransformationRhythm = () => {
                   <span className="text-amber-600 font-bold text-sm">3</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-bold text-amber-800 mb-3">风险挑战（关键点）</h4>
+                  <h4 className="text-lg font-bold text-amber-800 mb-3">风险挑战（关键考虑点）</h4>
                   <p className="text-amber-700 leading-relaxed">
                     变革涉及多部门，且任何策略流程调整（即使改正过往错误做法），都影响会员体验、代理收益和业务稳定，存在隐性风险。
                   </p>
