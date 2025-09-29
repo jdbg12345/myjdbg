@@ -12,7 +12,7 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
       <p className="text-gray-700 mb-8 leading-relaxed">
-        过去侧重防御，缺防范套利和作弊的策略，缺提效的工具，综合导致员工对系统不信任，只能依赖个人经验，陷入恶性循环。
+        从系统审核策略、风控工具集合、极端异常预防等三个方向给予支持
       </p>
 
       {/* 风控套利理解概览 */}
