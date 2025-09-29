@@ -121,7 +121,7 @@ export const FKTransformationRhythm = () => {
                   <span className="text-amber-600 font-bold text-sm">1</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-bold text-amber-800 mb-3">人员挑战</h4>
+                  <h4 className="text-lg font-bold text-amber-800 mb-3">人员困难</h4>
                   <p className="text-amber-700 leading-relaxed">
                     依赖个人经验，稳定性差；小圈子文化严重，部分员工不愿分享经验，人才培养困难；内外串联等风险事件仍时有发生。
                   </p>
@@ -136,7 +136,7 @@ export const FKTransformationRhythm = () => {
                   <span className="text-amber-600 font-bold text-sm">2</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-bold text-amber-800 mb-3">系统挑战</h4>
+                  <h4 className="text-lg font-bold text-amber-800 mb-3">系统困难</h4>
                   <p className="text-amber-700 leading-relaxed">
                     系统处于初期，跨站融合、策略升级、多站对齐等需资源投入，短期难显成效。在"解决当下问题"与"长期建设"之间需平衡。
                   </p>
@@ -151,7 +151,7 @@ export const FKTransformationRhythm = () => {
                   <span className="text-amber-600 font-bold text-sm">3</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-bold text-amber-800 mb-3">风险挑战</h4>
+                  <h4 className="text-lg font-bold text-amber-800 mb-3">风险</h4>
                   <p className="text-amber-700 leading-relaxed">
                     风控变革涉及多部门与利益相关方，任何策略或流程调整都可能影响会员体验、代理收益及业务组织稳定性，隐性风险大。
                   </p>
