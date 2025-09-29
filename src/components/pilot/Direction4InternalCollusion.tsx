@@ -96,7 +96,7 @@ export const Direction4InternalCollusion = () => {
                     <div className="text-green-700 font-bold">VIP 0-2</div>
                     <div className="text-sm text-green-600">普通会员</div>
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">单人审批即可</div>
+                  <div className="text-sm text-gray-600 font-medium">单人审批即可操作</div>
                 </div>
                 
                 <div className="text-center">
