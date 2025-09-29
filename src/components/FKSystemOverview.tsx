@@ -53,7 +53,6 @@ export const FKSystemOverview = () => {
                   <stop offset="0%" style={{stopColor:'#3b82f6', stopOpacity:1}} />
                   <stop offset="100%" style={{stopColor:'#2563eb', stopOpacity:1}} />
                 </linearGradient>
-                </marker>
               </defs>
 
               {/* Connection lines */}
