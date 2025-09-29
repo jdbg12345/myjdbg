@@ -227,54 +227,56 @@ export const FKTransformationRhythm = () => {
 
       {/* 推进节奏 */}
       <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-xl p-8 border border-gray-200 shadow-sm">
           <div className="flex items-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
               <Clock className="w-5 h-5 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-800">推进节奏</h2>
-            <span className="text-gray-600 text-lg">存在较大影响及风险，将采取分阶段推进方式，在风险可控和有效的前提下，完成体系变革。</span>
+            <div>
+              <h2 className="text-3xl font-bold text-gray-800">推进节奏</h2>
+              <span className="text-gray-600 text-base">存在较大影响及风险，将采取分阶段推进方式，在风险可控和有效的前提下，完成体系变革。</span>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {progressSchedule.map((item, index) => (
-              <div key={index} className={`rounded-lg p-6 border-l-4 ${
-                item.status === 'completed' ? 'bg-gradient-to-r from-green-50 to-emerald-50 border-green-500' :
-                item.status === 'current' ? 'bg-gradient-to-r from-blue-100 to-cyan-100 border-blue-600 shadow-lg transform scale-105' :
-                'bg-gradient-to-r from-gray-50 to-slate-50 border-gray-400'
+              <div key={index} className={`rounded-xl p-6 border-2 transition-all duration-200 ${
+                item.status === 'completed' ? 'bg-gradient-to-br from-green-50 to-emerald-50 border-green-400 shadow-md' :
+                item.status === 'current' ? 'bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-500 shadow-lg' :
+                'bg-gradient-to-br from-gray-50 to-slate-50 border-gray-300 shadow-sm'
               }`}>
                 <div className="flex items-start space-x-4">
-                  <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${
-                    item.status === 'completed' ? 'bg-green-100' :
-                    item.status === 'current' ? 'bg-blue-200' :
-                    'bg-gray-100'
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm ${
+                    item.status === 'completed' ? 'bg-gradient-to-r from-green-100 to-green-200' :
+                    item.status === 'current' ? 'bg-gradient-to-r from-blue-100 to-blue-200' :
+                    'bg-gradient-to-r from-gray-100 to-gray-200'
                   }`}>
                     {item.status === 'completed' ? (
-                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <CheckCircle className="w-6 h-6 text-green-600" />
                     ) : item.status === 'current' ? (
-                      <Clock className="w-6 h-6 text-blue-700" />
+                      <Clock className="w-6 h-6 text-blue-600" />
                     ) : (
-                      <span className="text-gray-600 font-bold text-sm">{item.time}</span>
+                      <span className="text-gray-600 font-bold text-base">{item.time}</span>
                     )}
                   </div>
                   <div className="flex-1">
-                    <div className={`text-lg font-bold mb-2 ${
+                    <div className={`text-xl font-bold mb-3 ${
                       item.status === 'completed' ? 'text-green-800' :
-                      item.status === 'current' ? 'text-blue-900 text-xl' :
-                      'text-gray-700'
+                      item.status === 'current' ? 'text-blue-800' :
+                      'text-gray-800'
                     }`}>
                       {item.time} - {item.stage}
                     </div>
-                    <p className={`leading-relaxed text-sm mb-3 ${
+                    <p className={`leading-relaxed text-sm mb-4 ${
                       item.status === 'completed' ? 'text-green-700' :
-                      item.status === 'current' ? 'text-blue-800 font-medium' :
+                      item.status === 'current' ? 'text-blue-700' :
                       'text-gray-600'
                     }`}>
                       {item.work}
                     </p>
-                    <div className={`text-sm font-semibold ${
+                    <div className={`text-base font-semibold ${
                       item.status === 'completed' ? 'text-green-600' :
-                      item.status === 'current' ? 'text-blue-700 text-base' :
+                      item.status === 'current' ? 'text-blue-600' :
                       'text-gray-500'
                     }`}>
                       {item.result}
