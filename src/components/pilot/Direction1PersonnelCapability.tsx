@@ -53,6 +53,7 @@ export const Direction1PersonnelCapability = () => {
           {/* 图表模块 */}
           <div className="mt-8">
           <div className="relative h-80 mb-6 bg-gray-50 rounded-lg p-8">
+            
             {/* Y轴标签 */}
             <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
               分配订单数
