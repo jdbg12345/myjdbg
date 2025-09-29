@@ -32,7 +32,7 @@ export const Direction1PersonnelCapability = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">当前派单机制仅以 金额维度 作为分配依据，未考虑订单的风险等级与审核人员能力差异。结果导致部分 高风险、复杂订单 被下发至远程/外包团队，其审核差错率明显高于总部（约为总部的 2–3 倍），每月因此造成 100 万元以上的潜在风险损失。</p>
+              <p className="text-gray-700 text-sm leading-relaxed">仅以金额作为分配依据，未考虑订单的风险等级与审核人员能力差异。结果导致部分高风险、复杂订单被下发至远程/外包团队，但其差错率高于总部的约等2～3倍，每月因此造成100万+的损失。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
