@@ -74,7 +74,7 @@ export const Direction3SystemStrategies = () => {
               <h4 className="text-xl font-bold text-gray-800">电子策略</h4>
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
             </div>
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">电子游戏卡免费旋转等套利行为难以识别</p>
@@ -170,7 +170,7 @@ export const Direction3SystemStrategies = () => {
               <h4 className="text-xl font-bold text-gray-800">真人策略</h4>
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
             </div>
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">真人游戏对打和算牌行为识别不足</p>
@@ -266,7 +266,7 @@ export const Direction3SystemStrategies = () => {
               <h4 className="text-xl font-bold text-gray-800">体育策略</h4>
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
             </div>
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">体育打水和对冲套利行为监控薄弱</p>
@@ -362,7 +362,7 @@ export const Direction3SystemStrategies = () => {
               <h4 className="text-xl font-bold text-gray-800">棋牌策略</h4>
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
             </div>
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">棋牌游戏作弊和异常胜率难以监控</p>
@@ -458,7 +458,7 @@ export const Direction3SystemStrategies = () => {
               <h4 className="text-xl font-bold text-gray-800">彩票策略</h4>
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">方案中</span>
             </div>
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">彩票全包和异常投注模式缺乏有效拦截</p>
@@ -556,6 +556,40 @@ export const Direction3SystemStrategies = () => {
                   收益
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月；效率提升一倍；用户体验改善</p>
+              </div>
+            </div>
+            
+            {/* 竞品调研情况说明 */}
+            <div className="mt-8">
+              <h5 className="text-lg font-bold text-gray-800 mb-4">竞品调研情况说明</h5>
+              <div className="bg-white rounded-lg border border-gray-200">
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead className="bg-blue-600 text-white">
+                      <tr>
+                        <th className="p-4 text-left font-semibold w-48">平台</th>
+                        <th className="p-4 text-left font-semibold">提款流水展示</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        { platform: '易游（M6)', display: '提款界面明确显示"还需完成 XX 元投注额"' },
+                        { platform: '雷竞技（Raybet）', display: '提款界面提示"需完成 XX元投注"；流水计算基于投注金额而非结算金额；有系统判定，无人工审核' },
+                        { platform: '竞技宝（JJB）', display: '提款界面显示"还需XX元流水"；流水满足后显示"可提余额"与"账户余额"' },
+                        { platform: '易倍体育（EMC）', display: '提款界面未直接显示流水；用户需发起提款等待人工审核' },
+                        { platform: '万博（ManbetX）', display: '提款界面显示"还需完成 XX元"；并有实时更新流水，显示不同场馆流水及剩余差额' },
+                        { platform: '尊龙凯时（AG）', display: '提款时弹窗提示"暂未完成流水XX USDT，提款可能被拒绝"' },
+                        { platform: '金宝博（188）', display: '提款时提示"账户尚未满足流水要求"；界面可实时查看"可提款金额"和"未完成流水"，回传速度极快' },
+                        { platform: '竞博（IM）', display: '提款界面直接显示可提现金额' }
+                      ].map((row, index) => (
+                        <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                          <td className="p-4 font-semibold text-blue-700">{row.platform}</td>
+                          <td className="p-4 text-gray-700">{row.display}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
