@@ -449,7 +449,7 @@ export const Direction3SystemStrategies = () => {
           <h3 className="text-2xl font-bold text-gray-800">风控工具集合</h3>
         </div>
         <p className="text-gray-700 mb-8 leading-relaxed">
-          将风控中高频、费时费力的操作场景整合为标准化工具集，使人员仅需查询结果，无需手动计算或深入理解逻辑，从而提升效率与准确性。
+          风控中高频、费时费力的场景整合为标准化工具集，使人员仅需查询结果，无需手动计算或深入理解逻辑，从而提升效率与准确性。
         </p>
         
         {/* 1. 关联下注工具 */}
