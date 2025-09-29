@@ -3,13 +3,13 @@ import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } 
 
 export const FKSystemOverview = () => {
    const nodes = [
-    { id: 1, x: 150, y: 130, name: "系统预警", desc: "", color: "#3b82f6", number: "1" },
-    { id: 2, x: 400, y: 130, name: "申请提交", desc: "", color: "#3b82f6", number: "2" },
-    { id: 3, x: 650, y: 130, name: "系统审核", desc: "", color: "#3b82f6", number: "3" },
+    { id: 1, x: 150, y: 130, name: "系统预警", desc: "", color: "#9ca3af", number: "1" },
+    { id: 2, x: 400, y: 130, name: "申请提交", desc: "", color: "#9ca3af", number: "2" },
+    { id: 3, x: 650, y: 130, name: "系统审核", desc: "", color: "#9ca3af", number: "3" },
     { id: 4, x: 1200, y: 130, name: "出款放行", desc: "", color: "#10b981", number: "4" },
-    { id: 5, x: 900, y: 290, name: "人工审核", desc: "", color: "#3b82f6", number: "5" },
-    { id: 6, x: 1200, y: 290, name: "系统监控", desc: "", color: "#f97316", number: "6" },
-    { id: 7, x: 1450, y: 290, name: "内控复审", desc: "", color: "#f97316", number: "7" },
+    { id: 5, x: 900, y: 290, name: "人工审核", desc: "", color: "#9ca3af", number: "5" },
+    { id: 6, x: 1200, y: 290, name: "系统监控", desc: "", color: "#3b82f6", number: "6" },
+    { id: 7, x: 1450, y: 290, name: "内控复审", desc: "", color: "#3b82f6", number: "7" },
     { id: 8, x: 1200, y: 450, name: "出款拒绝", desc: "", color: "#ef4444", number: "8" }
   ];
 
@@ -84,16 +84,16 @@ export const FKSystemOverview = () => {
 
               {/* Bubble 1: Between 3 and 4 */}
               <g>
-                <ellipse cx="925" cy="100" rx="80" ry="20" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3,3"/>
-                <text x="925" y="105" textAnchor="middle" fill="#3b82f6" fontSize="11" fontWeight="bold">
+                <ellipse cx="925" cy="60" rx="120" ry="25" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3,3"/>
+                <text x="925" y="65" textAnchor="middle" fill="#3b82f6" fontSize="14" fontWeight="bold">
                   变化：增加套利作弊等拦截策略
                 </text>
               </g>
 
               {/* Bubble 2: Between 3 and 5 */}
               <g>
-                <ellipse cx="720" cy="240" rx="75" ry="20" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3,3"/>
-                <text x="720" y="245" textAnchor="middle" fill="#3b82f6" fontSize="11" fontWeight="bold">
+                <ellipse cx="720" cy="350" rx="110" ry="25" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3,3"/>
+                <text x="720" y="355" textAnchor="middle" fill="#3b82f6" fontSize="14" fontWeight="bold">
                   变化：升级为按分数和金额派单
                 </text>
               </g>
