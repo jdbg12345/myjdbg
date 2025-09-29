@@ -315,16 +315,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
                   核心问题
                 </h4>
-                  <div className="text-gray-700 text-sm leading-relaxed space-y-1">
-                    <div className="flex items-start">
-                      <span className="text-red-600 mr-2">•</span>
-                      <span><span className="font-bold">系统计算错误</span>：长期以来，系统在审核流水计算中存在多类错误，例如锁定场馆流水重复计算、场馆间流水转移未正确处理等</span>
-                    </div>
-                    <div className="flex items-start">
-                      <span className="text-red-600 mr-2">•</span>
-                      <span><span className="font-bold">人工计算复杂</span>：审核员需要手动计算复杂的流水逻辑，耗时且容易出错，影响审核效率和准确性</span>
-                    </div>
-                  </div>
+                <p className="text-gray-700 text-sm leading-relaxed">审核员在处理订单时经常忽略查看会员的风控标签和备注信息，导致重要风险信息被遗漏，增加了错误出款的风险。</p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
@@ -341,7 +332,6 @@ export const Direction1PersonnelCapability = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">遗漏率降低<span className="font-bold text-green-600">90%+</span></p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
