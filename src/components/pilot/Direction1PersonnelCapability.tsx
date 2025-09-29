@@ -187,7 +187,7 @@ export const Direction1PersonnelCapability = () => {
       {/* 1、出款强制查看标签备注 */}
       <div className="mb-12">
 
-        {/* 分数分布图表 */}
+        {/* 云盾分数分布图表 */}
         <div className="mt-8">
           <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
