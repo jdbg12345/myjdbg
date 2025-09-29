@@ -486,7 +486,7 @@ export const Direction3SystemStrategies = () => {
           <h3 className="text-2xl font-bold text-gray-800">风控工具集合</h3>
         </div>
         <p className="text-gray-700 mb-8 leading-relaxed">
-          提供关联工具、对打工具、流水工具等工具集，实现技能熟练度提升，提高效率和准确性，同时帮助新人快速上手
+          将风控中高频、费时费力的操作场景整合为标准化工具集，使人员仅需查询结果，无需手动计算或深入理解逻辑，从而提升效率与准确性。
         </p>
         
         {/* 1. 关联下注工具 */}
