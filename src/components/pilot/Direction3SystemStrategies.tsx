@@ -812,7 +812,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">沉睡用户活跃预警机制，异常账号识别率78%，有效防范账号盗用风险</p>
+                <p className="text-gray-700 text-sm leading-relaxed">有效防范账号盗用/违规风险</p>
               </div>
             </div>
           </div>
