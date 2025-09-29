@@ -15,43 +15,6 @@ export const Direction3SystemStrategies = () => {
         从系统审核策略、风控工具集合、极端异常预防等三个方向给予支持
       </p>
 
-      {/* 风控套利理解概览 */}
-      <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">解决维度</h3>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="bg-white rounded-lg p-6 border-l-4 border-blue-600">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
-              <h4 className="text-lg font-bold text-blue-700">系统审核策略</h4>
-            </div>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              补强系统在套利与作弊方向的审核策略
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-lg p-6 border-l-4 border-green-600">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
-              <h4 className="text-lg font-bold text-green-700">风控工具集合</h4>
-            </div>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              将风控中高频、费时费力的操作场景整合为标准化工具集，使人员仅需查询结果，无需手动计算或深入理解逻辑，从而提升效率与准确性。
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-lg p-6 border-l-4 border-orange-600">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
-              <h4 className="text-lg font-bold text-orange-700">极端异常预防</h4>
-            </div>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              针对中心钱包、场馆钱包等多钱、沉睡用户活跃提款、场馆杀率异常等场景，建立预警监控机制，及时发现并响应潜在风险；
-            </p>
-          </div>
-        </div>
-      </div>
-
       {/* 系统审核策略 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
