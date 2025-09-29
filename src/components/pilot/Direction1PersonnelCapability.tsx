@@ -191,10 +191,10 @@ export const Direction1PersonnelCapability = () => {
         <div className="mt-8">
           <div className="relative h-96 mb-6 bg-gray-50 rounded-lg p-8">
             <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-600">
-              订单数量
+              订单数
             </div>
             <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
-              问题率 (%)
+              订单风控率 (%)
             </div>
             
             <div className="mx-12 h-full relative">
@@ -235,7 +235,7 @@ export const Direction1PersonnelCapability = () => {
                       ></div>
                     </div>
                     
-                    {/* 问题率点 */}
+                    {/* 订单风控率点 */}
                     <div 
                       className="absolute w-3 h-3 bg-orange-500 rounded-full border-2 border-white"
                       style={{bottom: `${32 + (item.rate / 28) * 200}px`, left: '50%', transform: 'translateX(-50%)'}}
