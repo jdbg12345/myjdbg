@@ -572,21 +572,21 @@ export const Direction3SystemStrategies = () => {
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h4 className="font-bold text-red-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                  问题
+                  核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  策略
+                  解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">通过B端百家赔率数据构建体育打水实时查询工具</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  收益
+                  预期收益
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月</p>
               </div>
@@ -621,21 +621,21 @@ export const Direction3SystemStrategies = () => {
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h4 className="font-bold text-red-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                  问题
+                  核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">用户钱包异常变动缺乏实时监控，无法及时发现异常资金流动</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  策略
+                  解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">建立钱包异常预警机制，实时监控资金流动</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  收益
+                  预期收益
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">异常资金发现率提升85%，响应时间缩短至分钟级</p>
               </div>
@@ -657,21 +657,21 @@ export const Direction3SystemStrategies = () => {
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h4 className="font-bold text-red-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                  问题
+                  核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">场馆账户异常增加资金，缺乏有效的监控和预警机制</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  策略
+                  解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">建立场馆资金异常监控机制，实时预警异常资金变动</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  收益
+                  预期收益
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</p>
               </div>
@@ -693,21 +693,21 @@ export const Direction3SystemStrategies = () => {
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h4 className="font-bold text-red-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                  问题
+                  核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">场馆、游戏、单笔、持续等盈利维度进行监控</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  策略
+                  解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">场馆、游戏、单笔、持续等盈利维度进行监控</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  收益
+                  预期收益
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</p>
               </div>
@@ -729,21 +729,21 @@ export const Direction3SystemStrategies = () => {
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h4 className="font-bold text-red-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                  问题
+                  核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">长期沉睡用户突然活跃，可能存在账号被盗或异常操作风险</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  策略
+                  解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">建立沉睡用户活跃预警机制，监控异常登录和操作行为</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  收益
+                  预期收益
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">沉睡用户活跃预警机制，异常账号识别率78%，有效防范账号盗用风险</p>
               </div>
