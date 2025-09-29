@@ -214,7 +214,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 核心问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">风控策略参数固定，易被外部摸清规律或内外勾结泄露，已经存在被故意规避和绕过的风险，且缺乏动态调整机制。</p>
+              <p className="text-gray-700 text-sm leading-relaxed">风控策略的参数固定，易被外部摸清规律或内外勾结泄露，目前市场上已经存在被故意规避和绕过的套利提款行为，</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
