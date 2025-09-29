@@ -30,21 +30,21 @@ export const Direction1PersonnelCapability = () => {
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
+                核心问题
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">以金额作为分单依据，未考虑订单难度及人员能力匹配，导致部分高风险订单被分配至远程或外包，而其差错率较总部高出约2～3倍，每月由此带来超过100万+的损失。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
+                解决方法
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">引入订单风险评分机制，将派单从"仅按金额"升级为"按风险分数+金额"，确保中高风险订单由经验丰富的审核员处理，实现人单匹配最优分配。</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
+                预期收益
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">错误率降低<span className="font-bold text-green-600">15%-20%</span></p>
             </div>
