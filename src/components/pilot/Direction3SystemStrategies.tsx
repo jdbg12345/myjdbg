@@ -531,7 +531,7 @@ export const Direction3SystemStrategies = () => {
                     <thead className="bg-blue-600 text-white">
                       <tr>
                         <th className="p-4 text-left font-semibold w-48">平台</th>
-                        <th className="p-4 text-left font-semibold">提款流水展示</th>
+                        <th className="p-4 text-left font-semibold">前端提款流水展示</th>
                       </tr>
                     </thead>
                     <tbody>
