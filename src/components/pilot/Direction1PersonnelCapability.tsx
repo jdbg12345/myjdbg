@@ -184,7 +184,7 @@ export const Direction1PersonnelCapability = () => {
       </div>
 
          
-      {/* 1、出款强制查看标签备注 */}
+      {/* 云盾分数分布图表 */}
       <div className="mb-12">
 
         {/* 云盾分数分布图表 */}
@@ -268,6 +268,8 @@ export const Direction1PersonnelCapability = () => {
             </div>
           </div>
           
+          <div className="text-center text-sm font-medium text-gray-600 mb-4">订单云盾分数分布</div>
+
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-blue-500 rounded"></div>
