@@ -167,30 +167,30 @@ export const Direction4InternalCollusion = () => {
                 <span className="text-white font-bold text-sm">密</span>
               </div>
               <h4 className="text-xl font-bold text-gray-800">关联查询使用密文查询</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 ml-3">试运行</span>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 ml-3">开发中</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
+                核心问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">高危参数（如代理佣金、存提费率、场馆费率、VIP体系）缺乏实时监控与审计，存在被误操作、滥用或配置异常导致的重大风险。</p>
+              <p className="text-gray-700 text-sm leading-relaxed">部分关键查询参数以玩家明文（姓名、银行卡号、虚拟货币地址等）直接操作，存在敏感信息泄露风险。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
+                解决策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">一些影响到收益的关键参数的修改会触发实时触发</p>
+              <p className="text-gray-700 text-sm leading-relaxed">支持密文查询</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
+                预期收益
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">减少被泄露风险</p>
+              <p className="text-gray-700 text-sm leading-relaxed">降低敏感信息被泄露风险</p>
             </div>
           </div>
         </div>
