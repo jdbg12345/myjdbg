@@ -172,7 +172,7 @@ export const FKSystemOverview = () => {
               <text x="1160" y="210" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">通过</text>
               <text x="1325" y="275" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">不通过</text>
               <text x="1320" y="200" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">通过</text>
-              <text x="1380" y="380" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">不通过</text>
+              <text x="1325" y="380" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">不通过</text>
             </svg>
           </div>
         </div>
