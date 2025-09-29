@@ -410,6 +410,6 @@ export const Direction1PersonnelCapability = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
