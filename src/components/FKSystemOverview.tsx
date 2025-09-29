@@ -198,7 +198,7 @@ export const FKSystemOverview = () => {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-gray-800">玩家风险防控</h4>
+                <h4 className="text-2xl font-bold text-gray-800">玩家风险防控能力变化</h4>
                 <div className="flex items-center space-x-6">
                   <div className="text-lg font-bold text-blue-600">Q1-Q3主要资源在这个方向，目前整体框架已有，逐步落地中</div>                 
                 </div>
@@ -437,7 +437,7 @@ export const FKSystemOverview = () => {
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-gray-800">内控风险监控</h4>
+                <h4 className="text-2xl font-bold text-gray-800">内控风险监控能力变化</h4>
                 <div className="flex items-center space-x-6">
                   <div className="text-lg font-bold text-blue-600">部分资源在这个方向，在几个维度进行完善</div>                  
                 </div>
@@ -518,7 +518,7 @@ export const FKSystemOverview = () => {
           </div>
         </div>
 
-        {/* 代理网络监控 */}
+        {/* 代理风险监控 */}
         <div className="bg-blue-50 rounded-xl p-8 border border-blue-200 mt-8">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
@@ -526,7 +526,7 @@ export const FKSystemOverview = () => {
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-gray-800">代理网络监控</h4>
+                <h4 className="text-2xl font-bold text-gray-800">代理风险监控能力变化</h4>
                 <div className="flex items-center space-x-6">
                   <div className="text-lg font-bold text-blue-600">Q3在这个方向的建设上资源较少，Q4会作为主要方向升级</div>                  
                 </div>
