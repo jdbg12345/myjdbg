@@ -201,7 +201,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-lg font-bold text-blue-800 mb-3">提供丰富的风控工具库</h4>
                   <p className="text-blue-700 leading-relaxed">
-                    偏差监控：人工结果偏离系统预设时触发二次审核，保证风控稳定性。
+                    将风控中高频操作、费时费力的场景，通过提供关联工具、对打工具、流水工具等工具集，实现技能熟练度提升，提高效率和准确性，同时帮助新人快速上手。
                   </p>
                 </div>
               </div>
