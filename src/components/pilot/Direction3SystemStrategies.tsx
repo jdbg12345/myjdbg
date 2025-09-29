@@ -17,7 +17,7 @@ export const Direction3SystemStrategies = () => {
 
       {/* 风控套利理解概览 */}
       <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">风控套利理解概览</h3>
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">解决维度</h3>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="bg-white rounded-lg p-6 border-l-4 border-blue-600">
