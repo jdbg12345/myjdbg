@@ -46,7 +46,7 @@ export const Direction3SystemStrategies = () => {
               <h4 className="text-lg font-bold text-orange-700">极端异常预防</h4>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
-              覆盖线上线下红利套利、活动套利、代理佣金套利等多个维度，构建全方位的风控防护体系
+              针对中心钱包、场馆钱包等多钱、沉睡用户活跃提款、场馆杀率异常等场景，建立预警监控机制，及时发现并响应潜在风险；
             </p>
           </div>
         </div>
