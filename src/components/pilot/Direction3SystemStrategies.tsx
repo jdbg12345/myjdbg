@@ -23,7 +23,7 @@ export const Direction3SystemStrategies = () => {
           <div className="bg-white rounded-lg p-6 border-l-4 border-blue-600">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
-              <h4 className="text-lg font-bold text-blue-700">游戏典型套利</h4>
+              <h4 className="text-lg font-bold text-blue-700">系统审核策略</h4>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
               按照每个游戏的典型套利手法进行精准拦截，如电子卡免费、真人算牌、体育打水、彩票全包等特定游戏场景的套利行为识别
