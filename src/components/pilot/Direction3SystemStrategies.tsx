@@ -538,11 +538,11 @@ export const Direction3SystemStrategies = () => {
                       {[
                         { platform: '尊龙凯时（AG）', display: '提款提示：暂未完成流水XX USDT，提款可能被拒绝' },
                         { platform: '金宝博（188）', display: '提款提示：账户尚未满足流水要求"；可实时查看"可提款金额"和"未完成流水"，回传速度极快' },
-                        { platform: '万博（ManbetX）', display: '提款界面直接显示：还需完成 XX元"；并有实时更新流水，显示不同场馆流水及剩余差额' },
+                        { platform: '万博（ManbetX）', display: '提款界面直接显示：还需完成 XX元；并有实时更新流水，显示不同场馆流水及剩余差额' },
                         { platform: '竞博（IM）', display: '提款界面直接显示：可提现金额' },
                         { platform: '易游（M6)', display: '提款界面直接显示：还需完成XX元投注额' },
                         { platform: '雷竞技（Raybet）', display: '提款界面直接提示：需完成XX元投注' },
-                        { platform: '竞技宝（JJB）', display: '提款界面显示：还需XX元流水"；流水满足后显示"可提余额"与"账户余额' },
+                        { platform: '竞技宝（JJB）', display: '提款界面显示：还需XX元流水；流水满足后显示"可提余额"与"账户余额' },
                       
                       ].map((row, index) => (
                         <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
