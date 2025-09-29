@@ -323,19 +323,19 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">棋</span>
               </div>
               <h4 className="text-xl font-bold text-gray-800">棋牌策略</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">已上线</span>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">试运行</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
+                <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">棋牌游戏作弊和异常胜率难以监控</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                <h5 className="font-bold text-blue-700 mb-2 text-sm">策略</h5>
+                <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">建立棋牌游戏异常行为识别机制</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                <h5 className="font-bold text-green-700 mb-2 text-sm">收益</h5>
+                <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">问题率23.8%</p>
               </div>
             </div>
