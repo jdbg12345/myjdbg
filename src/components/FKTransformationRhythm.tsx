@@ -138,7 +138,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-lg font-bold text-amber-800 mb-3">系统困难</h4>
                   <p className="text-amber-700 leading-relaxed">
-                    系统处于初期，跨站融合、策略升级、多站对齐等需资源投入，短期难显成效。在"解决当下问题"与"长期合理性"之间需平衡，足够的韧性。
+                    系统处于初期，跨站融合、策略升级、多站对齐等需投入资源，在‘解决当下问题’与‘长期合理性’之间需平衡，短期难显成效，需要韧性。
                   </p>
                 </div>
               </div>
