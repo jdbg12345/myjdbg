@@ -485,7 +485,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">标准化关联下注工具</p>
+                <p className="text-gray-700 text-sm leading-relaxed">提供面向真人、彩票及体育（开发中）等多类游戏的一键跨站点“关联下注查询”工具，支持基于核心关联特征（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
