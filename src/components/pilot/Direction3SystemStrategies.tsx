@@ -477,13 +477,13 @@ export const Direction3SystemStrategies = () => {
       </div>
       
 
-      {/* 标准化风控工具 */}
+      {/* 风控工具集合 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">工</span>
           </div>
-          <h3 className="text-2xl font-bold text-gray-800">标准化风控工具</h3>
+          <h3 className="text-2xl font-bold text-gray-800">风控工具集合</h3>
         </div>
         <p className="text-gray-700 mb-8 leading-relaxed">
           <span className="font-semibold">人工审核依赖个人经验，效率低且存在安全隐患</span>，通过标准化工具提升审核效率和准确性，降低人工依赖。
