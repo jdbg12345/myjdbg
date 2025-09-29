@@ -460,7 +460,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">关</span>
               </div>
               <h4 className="text-xl font-bold text-gray-800">关联下注工具</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行中</span>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
