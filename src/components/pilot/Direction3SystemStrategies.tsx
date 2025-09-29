@@ -128,7 +128,7 @@ export const Direction3SystemStrategies = () => {
                   </div>
                 </div>
               </div>
-                        
+                            
               <div className="flex justify-center space-x-8 text-sm">
                 <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-gradient-to-r from-blue-500 to-blue-400 rounded shadow-sm"></div>
@@ -224,7 +224,7 @@ export const Direction3SystemStrategies = () => {
                   </div>
                 </div>
               </div>
-                        
+                            
               <div className="flex justify-center space-x-8 text-sm">
                 <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-gradient-to-r from-blue-500 to-blue-400 rounded shadow-sm"></div>
@@ -320,7 +320,7 @@ export const Direction3SystemStrategies = () => {
                   </div>
                 </div>
               </div>
-                        
+                            
               <div className="flex justify-center space-x-8 text-sm">
                 <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-gradient-to-r from-blue-500 to-blue-400 rounded shadow-sm"></div>
