@@ -486,7 +486,7 @@ export const Direction3SystemStrategies = () => {
           <h3 className="text-2xl font-bold text-gray-800">风控工具集合</h3>
         </div>
         <p className="text-gray-700 mb-8 leading-relaxed">
-          <span className="font-semibold">人工审核依赖个人经验，效率低且存在安全隐患</span>，通过标准化工具提升审核效率和准确性，降低人工依赖。
+          提供关联工具、对打工具、流水工具等工具集，实现技能熟练度提升，提高效率和准确性，同时帮助新人快速上手
         </p>
         
         {/* 1. 关联下注工具 */}
