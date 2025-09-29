@@ -75,7 +75,7 @@ export const FKSystemOverview = () => {
 
               {/* Bubble 1: Between 3 and 4 */}
               <g>
-                <ellipse cx="925" cy="50" rx="140" ry="30" fill="#3b82f6" stroke="#3b82f6" strokeWidth="2"/>
+                <ellipse cx="925" cy="50" rx="210" ry="50" fill="#3b82f6" stroke="#3b82f6" strokeWidth="2"/>
                 <text x="925" y="55" textAnchor="middle" fill="white" fontSize="20" fontWeight="bold">
                   变化：增加套利作弊等拦截策略
                 </text>
@@ -83,7 +83,7 @@ export const FKSystemOverview = () => {
 
               {/* Bubble 2: Between 3 and 5 */}
               <g>
-                <ellipse cx="680" cy="345" rx="130" ry="30" fill="#3b82f6" stroke="#3b82f6" strokeWidth="2"/>
+                <ellipse cx="680" cy="345" rx="200" ry="50" fill="#3b82f6" stroke="#3b82f6" strokeWidth="2"/>
                 <text x="680" y="350" textAnchor="middle" fill="white" fontSize="20" fontWeight="bold">
                   变化：升级为按分数和金额派单
                 </text>
