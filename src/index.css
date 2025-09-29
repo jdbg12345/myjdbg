@@ -9,6 +9,9 @@
     -webkit-print-color-adjust: exact !important;
     color-adjust: exact !important;
     print-color-adjust: exact !important;
+    color: black !important;
+    overflow: visible !important;
+    background-color: inherit !important;
   }
   
   /* Remove any potential hiding of content */
@@ -16,9 +19,15 @@
     display: block !important;
   }
   
-  /* Ensure fixed/absolute positioned elements are visible */
-  .fixed, .absolute {
+  /* Only convert fixed positioned elements to static, keep absolute for charts */
+  .fixed {
     position: static !important;
+  }
+  
+  /* Remove box shadows that can cause rendering issues in PDF */
+  .shadow, .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl, .shadow-2xl {
+    box-shadow: none !important;
+    border: 1px solid #eee !important;
   }
   
   /* Ensure proper page breaks */
@@ -34,16 +43,6 @@
     page-break-inside: avoid;
   }
   
-  /* Ensure backgrounds and borders are printed */
-  .bg-white, .bg-gray-50, .bg-blue-50, .bg-green-50, .bg-red-50, .bg-yellow-50, .bg-orange-50 {
-    background-color: inherit !important;
-  }
-  
-  /* Ensure text is always black for readability */
-  body {
-    color: black !important;
-  }
-  
   /* Ensure tables don't break across pages poorly */
   table {
     page-break-inside: avoid;
@@ -53,11 +52,6 @@
   svg, canvas {
     max-width: 100% !important;
     height: auto !important;
-  }
-  
-  /* Remove any overflow hidden that might clip content */
-  .overflow-hidden {
-    overflow: visible !important;
   }
   
   /* Ensure navigation sidebar doesn't interfere */
