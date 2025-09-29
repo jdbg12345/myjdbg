@@ -492,7 +492,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">每月约50+%的错误出款源于此，影响约200+万/月</p>
+                <p className="text-gray-700 text-sm leading-relaxed">关联因素在日常风控中占比极高，该工具可一键筛选并展示所有关联用户的下注行为，极大增强风险识别与处置能力。</p>
               </div>
             </div>
           </div>
