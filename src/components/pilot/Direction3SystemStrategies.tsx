@@ -573,7 +573,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月；效率提升一倍；用户体验改善</p>
+                <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月；运行效率提升；用户体验改善</p>
               </div>
             </div>
             
