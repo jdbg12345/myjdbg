@@ -162,7 +162,7 @@ export const FKSystemOverview = () => {
                 </g>
               ))}
 
-              {/* Flow labels - 重新定位避免重叠 */}
+              {/* Flow labels */}
               <text x="275" y="115" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">开始</text>
               <text x="525" y="115" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">提交</text>
               <text x="925" y="115" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">低风险</text>
