@@ -158,7 +158,7 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
-      {/* 关联查询使用密文查询 */}
+      {/* 敏感查询使用密文查询 */}
       <div className="mb-12">
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center justify-between mb-6">
@@ -166,7 +166,7 @@ export const Direction4InternalCollusion = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md">
                 <span className="text-white font-bold text-sm">密</span>
               </div>
-              <h4 className="text-xl font-bold text-gray-800">关联查询使用密文查询</h4>
+              <h4 className="text-xl font-bold text-gray-800">敏感查询使用密文查询</h4>
               <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 ml-3">开发中</span>
             </div>
           </div>
