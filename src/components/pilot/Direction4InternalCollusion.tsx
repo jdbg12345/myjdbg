@@ -28,21 +28,21 @@ export const Direction4InternalCollusion = () => {
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
+                核心问题
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">风控标签和备注权限未独立管理，大部分部门均可查看，敏感信息易泄露，存在潜在公司损失风险</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
+                解决策略
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">风控类标签备注独立权限</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
+                预期收益
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">减少被泄露风险</p>
             </div>
