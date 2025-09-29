@@ -424,11 +424,11 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">彩票全包和异常投注模式缺乏有效拦截</p>
+                <p className="text-gray-700 text-xs leading-relaxed">全包行为等是最常见的套利与作弊手段；目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏，每月都有损失100万+/月。</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">建立彩票游戏异常投注识别机制</p>
+                <p className="text-gray-700 text-xs leading-relaxed">针对对全包行为进行预警和拦截</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
