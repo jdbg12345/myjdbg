@@ -528,7 +528,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">待开发</span>
               </div>
               <div className="text-blue-600 font-bold text-sm">
-                目前对技术挑战比较大，暂时反馈实现很难，需讨论下，怎么进行支持？
+                目前该问题在技术层面反馈，暂时无法实现彻底解决，需进一步讨论，如何能够支持？
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
