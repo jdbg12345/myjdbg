@@ -135,8 +135,8 @@ export const Direction3SystemStrategies = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">真人游戏对打和算牌行为识别不足</p>
+                <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
+                <p className="text-gray-700 text-xs leading-relaxed">在真人游戏中，对打、机器下注和算牌等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏，导致每月损失超过100万元。</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">策略</h5>
