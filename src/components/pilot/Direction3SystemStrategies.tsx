@@ -11,31 +11,6 @@ export const Direction3SystemStrategies = () => {
           <h2 className="text-3xl font-bold text-gray-800">系统问题-支持不够</h2>
         </div>
       </div>
-      <div className="bg-blue-50 rounded-lg p-6 mb-8">
-        <div className="space-y-4 text-gray-700">
-          <div className="flex items-start">
-            <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">1</div>
-            <div>
-              <span className="font-bold text-gray-800">按游戏类型提取并建模典型套利特征</span>
-              <div className="text-sm text-gray-600 mt-1">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</div>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">2</div>
-            <div>
-              <span className="font-bold text-gray-800">基于套利结果构建兜底式组合识别策略</span>
-              <div className="text-sm text-gray-600 mt-1">如玩家/代理的关联、红利金额/比例、流水异常等</div>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">3</div>
-            <div>
-              <span className="font-bold text-gray-800">打通 Y/B 跨站点及 B/C 端系统链路</span>
-              <div className="text-sm text-gray-600 mt-1">K 端暂不支持，实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* 系统审核策略 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
@@ -44,6 +19,31 @@ export const Direction3SystemStrategies = () => {
             <span className="text-white font-bold text-sm">系</span>
           </div>
           <h3 className="text-2xl font-bold text-gray-800">系统审核策略</h3>
+        </div>
+        <div className="bg-blue-50 rounded-lg p-6 mb-8">
+          <div className="space-y-4 text-gray-700">
+            <div className="flex items-start">
+              <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">1</div>
+              <div>
+                <span className="font-bold text-gray-800">按游戏类型提取并建模典型套利特征</span>
+                <div className="text-sm text-gray-600 mt-1">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</div>
+              </div>
+            </div>
+            <div className="flex items-start">
+              <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">2</div>
+              <div>
+                <span className="font-bold text-gray-800">基于套利结果构建兜底式组合识别策略</span>
+                <div className="text-sm text-gray-600 mt-1">如玩家/代理的关联、红利金额/比例、流水异常等</div>
+              </div>
+            </div>
+            <div className="flex items-start">
+              <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">3</div>
+              <div>
+                <span className="font-bold text-gray-800">打通 Y/B 跨站点及 B/C 端系统链路</span>
+                <div className="text-sm text-gray-600 mt-1">K 端暂不支持，实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</div>
+              </div>
+            </div>
+          </div>
         </div>
         <p className="text-gray-700 mb-8 leading-relaxed">
           一是按游戏类型提取并建模典型套利特征（如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等）；二是基于套利结果构建兜底式组合识别策略（如玩家/代理的关联、红利金额/比例、流水异常等）；三是打通 Y/B 跨站点（K 端暂不支持）及 B/C 端系统链路，实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误。
@@ -522,12 +522,17 @@ export const Direction3SystemStrategies = () => {
         {/* 2. 提款流水工具 */}
         <div className="mb-8">
           <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">流</span>
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                  <span className="text-white font-bold text-sm">流</span>
+                </div>
+                <h4 className="text-xl font-bold text-gray-800">提款流水工具</h4>
+                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">待开发</span>
               </div>
-              <h4 className="text-xl font-bold text-gray-800">提款流水工具</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">待开发</span>
+              <div className="text-blue-600 font-bold text-sm">
+                目前对技术挑战比较大，暂时反馈实现很难，需讨论下，怎么进行支持？
+              </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
