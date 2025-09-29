@@ -83,7 +83,7 @@ export const FKSystemOverview = () => {
 
               {/* Bubble 2: Between 3 and 5 */}
               <g>
-                <ellipse cx="660" cy="325" rx="170" ry="50" fill="#3b82f6" stroke="#3b82f6" strokeWidth="2"/>
+                <ellipse cx="660" cy="325" rx="170" ry="40" fill="#3b82f6" stroke="#3b82f6" strokeWidth="2"/>
                 <text x="660" y="330" textAnchor="middle" fill="white" fontSize="20" fontWeight="bold">
                   变化：升级为按分数和金额派单
                 </text>
