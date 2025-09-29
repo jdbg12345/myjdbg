@@ -303,9 +303,9 @@ export const Direction1PersonnelCapability = () => {
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
+                解决策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">将查看备注设为出款流程中的强制环节</p>
+              <p className="text-gray-700 text-sm leading-relaxed">将查看备注设为出款流程中的强制环节，否则无法完成审核</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
