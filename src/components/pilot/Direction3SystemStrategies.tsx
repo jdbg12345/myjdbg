@@ -520,19 +520,15 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-2">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>系统逻辑多年来存在错误（锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等）</span>
+                    <span>系统逻辑多年来存在错误（如，锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等）</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>计算标准模糊且执行不一致，使风控和质检部门经常因流水计算产生争议</span>
+                    <span>由于系统流水不可用，风控人员只能被动依赖手动计算流水。但由于规则复杂，实际执行存在较大差异，不仅耗时繁琐，还导致每月约 1 万笔订单因流水计算错误引发出款问题</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>跨部门协作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户）</span>
-                  </div>
-                  <div className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span>不仅浪费时间，降低用户体验并导致出款错误</span>
+                    <span>日常工作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），消耗大量时间，运行效率极低</span>
                   </div>
                 </div>
               </div>
