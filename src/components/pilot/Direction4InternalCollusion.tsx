@@ -68,14 +68,14 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 核心问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">当前会员禁用流程由单人操作完成，缺乏线上分级审批与确认机制，存在高价值用户被误禁，以及问题用户被违规启用的风险。</p>
+              <p className="text-gray-700 text-sm leading-relaxed">当前会员禁用流程由单人操作完成，缺乏线上分级审批与确认机制，存在高V被误禁，以及问题用户被违规启用的风险。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                 解决策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">建立基于会员等级的禁用/启用分级审批机制，高V玩家的启禁用操作需提供审批人的 U 盾或谷歌验证码验证</p>
+              <p className="text-gray-700 text-sm leading-relaxed">建立基于会员等级的禁用/启用分级审批机制，高V的启禁用操作需提供审批人的U盾或谷歌验证码验证</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
