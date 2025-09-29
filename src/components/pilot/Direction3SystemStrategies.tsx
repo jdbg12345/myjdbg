@@ -600,16 +600,13 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-2">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>打水是体育中最常见的套利方式</span>
+                    <span>人工效率低：目前完全依赖人工进行多平台对比，耗时费力，效率极低</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>目前完全依赖人工进行多平台对比，耗时费力，效率极低</span>
+                    <span>无法全覆盖：人工非标操作，无法实现全面及时的覆盖</span>
                   </div>
-                  <div className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span>无法实现全面及时的覆盖</span>
-                  </div>
+          
                 </div>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
