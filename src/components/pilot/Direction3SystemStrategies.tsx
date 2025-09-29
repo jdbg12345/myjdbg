@@ -534,7 +534,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">阶段1：实现流水自动统一计算，无需人工介入；阶段2：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程（已提出需求，但收到无法实现的反馈）。</p>
+                <p className="text-gray-700 text-sm leading-relaxed">阶段1：实现流水自动统一计算，无需人工介入；阶段2：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程（已提出需求，但收到无法实现的反馈）</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
