@@ -6,11 +6,11 @@ export const FKSystemOverview = () => {
     { id: 1, x: 150, y: 130, name: "系统预警", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "1" },
     { id: 2, x: 400, y: 130, name: "申请提交", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "2" },
     { id: 3, x: 650, y: 130, name: "系统审核", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "3" },
-    { id: 4, x: 1200, y: 130, name: "出款放行", desc: "", color: "#10b981", numberColor: "#10b981", number: "4" },
+    { id: 4, x: 1200, y: 130, name: "出款放行", desc: "", color: "#9ca3af", numberColor: "#10b981", number: "4" },
     { id: 5, x: 900, y: 290, name: "人工审核", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "5" },
     { id: 6, x: 1200, y: 290, name: "系统管控", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "6" },
     { id: 7, x: 1450, y: 290, name: "内控复审", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "7" },
-    { id: 8, x: 1200, y: 450, name: "出款拒绝", desc: "", color: "#ef4444", numberColor: "#ef4444", number: "8" }
+    { id: 8, x: 1200, y: 450, name: "出款拒绝", desc: "", color: "#9ca3af", numberColor: "#ef4444", number: "8" }
   ];
 
   
@@ -113,9 +113,8 @@ export const FKSystemOverview = () => {
                     rx="12"
                     ry="12"
                     fill={node.color}
-                    stroke={node.id === 6 || node.id === 7 ? "rgba(255,255,255,0.8)" : "rgba(255,255,255,0.2)"}
-                    strokeWidth={node.id === 6 || node.id === 7 ? "2" : "1"}
-                    strokeDasharray={node.id === 6 || node.id === 7 ? "5,5" : "none"}
+                    stroke="rgba(255,255,255,0.2)"
+                    strokeWidth="1"
                   />
                   
                   {/* Number circle */}
