@@ -468,7 +468,20 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，存在严重的数据安全隐患。且操作效率低下，有效拦截率也不足。</p>
+                <div className="text-gray-700 text-sm leading-relaxed space-y-2">
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>完全依靠人工基于个人经验发掘关联下注（如对打）</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>曾经需要10人+团队从后台导出数据并在本地处理风控算法，存在严重的数据安全隐患</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>操作效率低下，有效拦截率也不足</span>
+                  </div>
+                </div>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
@@ -504,7 +517,24 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">系统逻辑多年来存在错误（锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等），导致需要人工重新手动计算流水。但计算标准模糊且执行不一致，使风控和质检部门经常因流水计算产生争议。在跨部门协作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），不仅浪费时间，降低用户体验并导致出款错误。</p>
+                <div className="text-gray-700 text-sm leading-relaxed space-y-2">
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>系统逻辑多年来存在错误（锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等）</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>计算标准模糊且执行不一致，使风控和质检部门经常因流水计算产生争议</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>跨部门协作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户）</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>不仅浪费时间，降低用户体验并导致出款错误</span>
+                  </div>
+                </div>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
@@ -543,11 +573,11 @@ export const Direction3SystemStrategies = () => {
                         { platform: '易游（M6)', display: '提款界面直接显示：还需完成XX元投注额' },
                         { platform: '雷竞技（Raybet）', display: '提款界面直接提示：需完成XX元投注' },
                         { platform: '竞技宝（JJB）', display: '提款界面显示：还需XX元流水；流水满足后显示"可提余额"与"账户余额"' },
-                        { platform: '开云（KY）', display: '用户无法在前端得知提款所需流水以及已完成流水' }
+                        { platform: '开云（KY）', display: '用户无法在前端得知提款所需流水以及已完成流水', highlight: true }
                       ].map((row, index) => (
-                        <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                        <tr key={index} className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${row.highlight ? 'bg-yellow-100' : ''}`}>
                           <td className="p-4 font-semibold text-blue-700">{row.platform}</td>
-                          <td className="p-4 text-gray-700">{row.display}</td>
+                          <td className={`p-4 ${row.highlight ? 'text-gray-900 font-bold' : 'text-gray-700'}`}>{row.display}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -574,7 +604,20 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">打水是体育中最常见的套利方式，目前完全依赖人工进行多平台对比，不仅耗时费力，效率极低，还无法实现全面及时的覆盖。</p>
+                <div className="text-gray-700 text-sm leading-relaxed space-y-2">
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>打水是体育中最常见的套利方式</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>目前完全依赖人工进行多平台对比，耗时费力，效率极低</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>无法实现全面及时的覆盖</span>
+                  </div>
+                </div>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
