@@ -466,21 +466,21 @@ export const Direction3SystemStrategies = () => {
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h4 className="font-bold text-red-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                  问题
+                  核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">完全依靠人工基于个人经验发掘关联下注（如对打）；曾经需要10人+团队从后台导出数据并在本地处理风控算法，存在严重的数据安全隐患。且操作效率低下，有效拦截率也不足。</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  策略
+                  解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">标准化关联下注工具</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  收益
+                  预期收益
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">每月约50+%的错误出款源于此，影响约200+万/月</p>
               </div>
