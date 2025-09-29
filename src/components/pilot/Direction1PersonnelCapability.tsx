@@ -32,7 +32,7 @@ export const Direction1PersonnelCapability = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">仅以金额作为分配依据，未考虑订单的风险等级与审核人员能力差异。结果导致部分高风险、复杂订单被下发至远程/外包团队，但其差错率高于总部的约等2～3倍，每月因此造成100万+的损失。</p>
+              <p className="text-gray-700 text-sm leading-relaxed">仅以金额作为分单依据，未综合考虑订单风险等级及审核人员能力差异，导致部分高风险订单被分配至远程或外包团队，而其差错率较总部高出约2～3倍，每月由此带来超过100万元的损失。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
