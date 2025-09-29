@@ -540,11 +540,11 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-1">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">系统计算错误</span>：统逻辑多年来存在错误（如，锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等）</span>
+                    <span><span className="font-bold">系统计算错误</span>：长期以来，系统在审核流水计算中存在多类错误，例如锁定场馆流水重复计算、场馆红利多计一次提款流水、用户输光后提款流水未自动达标等；这些问题可能导致提款系统因流水计算错误而误拒用户提款</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">人工手动计算</span>：由于系统流水不可用，风控人员只能被动依赖手动计算流水。但由于规则复杂，实际执行存在较大差异，不仅耗时繁琐，还导致每月约 1 万笔订单因流水计算错误引发出款问题</span>
+                    <span><span className="font-bold">人工计算错误</span>：由于系统流水不可用，风控人员只能被动依赖手动计算流水。但由于规则复杂，实际执行存在较大差异，不仅耗时繁琐，还导致每月约 1 万笔订单因流水计算错误引发出款问题</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
