@@ -298,7 +298,7 @@ export const Direction1PersonnelCapability = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 核心问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">出款时，虽然在SOP上要求必须看标签备注，但是部分人员仍然会忽略而导致出款错误，每月约15-20%的错误出款源于此，影响约100+万/月</p>
+              <p className="text-gray-700 text-sm leading-relaxed">在出款操作中，尽管SOP明确要求查看标签备注，但部分人员仍存在忽视行为，导致出款错误。每月约15–20%的错误出款由此产生，造成约100万+的损失。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
