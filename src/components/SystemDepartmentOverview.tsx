@@ -185,7 +185,7 @@ export const SystemDepartmentOverview = () => {
                   { category: "", subCategory: "查看验证码", desc: "停留在验证码页面并刷新，即可看到所有已发送号码，且无日志记录，从而与外部合作牟利并逃避侦查", level: "高", status: "❌", strategy: "限制该页面刷新全展示功能，仅允许通过账号搜索方式查询，保留日志记录", time: "7月内", isHighRiskUnsolved: true },
                   { category: "", subCategory: "后台账号被盗", desc: "一旦后台账号被盗存在较大安全隐患", level: "高", status: "✅", strategy: "后台IP登录绑定以及预警", time: "", isHighRiskUnsolved: false }
                 ].map((row, index) => (
-                  <tr key={index} className={`border-b border-gray-100 hover:bg-white transition-colors ${row.isHighRiskUnsolved ? 'bg-white' : ''}`}>
+                  <tr key={index} className={`border-b border-gray-100 ${row.isHighRiskUnsolved ? 'bg-white' : ''}`}>
                     <td className={`p-4 font-semibold whitespace-nowrap ${row.isHighRiskUnsolved ? 'text-blue-700' : ''}`}>{row.category}</td>
                     <td className={`p-4 font-semibold whitespace-nowrap ${row.isHighRiskUnsolved ? 'text-blue-700' : ''}`}>{row.subCategory}</td>
                     <td className={`p-4 ${row.isHighRiskUnsolved ? 'text-blue-700' : ''}`}>{row.desc}</td>

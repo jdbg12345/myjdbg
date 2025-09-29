@@ -234,7 +234,7 @@ export const AuditDepartmentOverview = () => {
               </thead>
               <tbody>
                 {investigationCases.map((item, index) => (
-                  <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
+                  <tr key={index} className="border-b border-gray-100">
                     <td className="p-4 font-semibold text-blue-600">{item.month}</td>
                     <td className="p-4 font-semibold whitespace-nowrap">{item.category}</td>
                     <td className="p-4">{item.personnel}</td>

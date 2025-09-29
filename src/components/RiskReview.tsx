@@ -129,7 +129,7 @@ export const RiskReview = () => {
             </thead>
             <tbody>
               {incidentData.map((incident, index) => (
-                <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                <tr key={index} className="border-b border-gray-100">
                   <td className="p-4 font-semibold text-blue-600">{incident.date}</td>
                   <td className="p-4 font-semibold">{incident.venue}</td>
                   <td className="p-4 font-semibold">{incident.incident}</td>

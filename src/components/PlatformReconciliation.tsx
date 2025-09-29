@@ -25,7 +25,7 @@ export const PlatformReconciliation = () => {
           <h4 className="text-blue-600 font-semibold text-lg mb-4 whitespace-nowrap">目标进度</h4>
           <div className="flex items-center mt-4">
             <div className="flex-1 bg-gray-200 rounded-full h-4 mr-4">
-              <div className="bg-blue-600 h-4 rounded-full transition-all duration-300" style={{width: '0%'}}></div>
+              <div className="bg-blue-600 h-4 rounded-full" style={{width: '0%'}}></div>
             </div>
             <div className="text-blue-600 font-semibold text-lg">0%</div>
           </div>
