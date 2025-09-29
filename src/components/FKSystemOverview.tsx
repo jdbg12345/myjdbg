@@ -6,11 +6,11 @@ export const FKSystemOverview = () => {
     { id: 1, x: 150, y: 130, name: "系统预警", desc: "", color: "#3b82f6", number: "1" },
     { id: 2, x: 400, y: 130, name: "申请提交", desc: "", color: "#3b82f6", number: "2" },
     { id: 3, x: 650, y: 130, name: "系统审核", desc: "", color: "#3b82f6", number: "3" },
-    { id: 4, x: 1200, y: 130, name: "出款放行", desc: "", color: "#3b82f6", number: "4" },
+    { id: 4, x: 1200, y: 130, name: "出款放行", desc: "", color: "#10b981", number: "4" },
     { id: 5, x: 900, y: 290, name: "人工审核", desc: "", color: "#3b82f6", number: "5" },
     { id: 6, x: 1200, y: 290, name: "系统监控", desc: "", color: "#f97316", number: "6" },
     { id: 7, x: 1450, y: 290, name: "内控复审", desc: "", color: "#f97316", number: "7" },
-    { id: 8, x: 1200, y: 450, name: "出款拒绝", desc: "", color: "#3b82f6", number: "8" }
+    { id: 8, x: 1200, y: 450, name: "出款拒绝", desc: "", color: "#ef4444", number: "8" }
   ];
 
   
@@ -35,7 +35,7 @@ export const FKSystemOverview = () => {
 
         <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex justify-center">
-            <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[400px]">
+            <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[450px]">
               <defs>
                 <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
                   <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
@@ -81,6 +81,22 @@ export const FKSystemOverview = () => {
               
               {/* 7→8 (内控复审不通过) */}
               <path d="M1450,342 Q1350,395 1262,450" stroke="#ef4444" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-red)" />
+
+              {/* Bubble 1: Between 3 and 4 */}
+              <g>
+                <ellipse cx="925" cy="100" rx="80" ry="20" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3,3"/>
+                <text x="925" y="105" textAnchor="middle" fill="#3b82f6" fontSize="11" fontWeight="bold">
+                  变化：增加套利作弊等拦截策略
+                </text>
+              </g>
+
+              {/* Bubble 2: Between 3 and 5 */}
+              <g>
+                <ellipse cx="720" cy="240" rx="75" ry="20" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3,3"/>
+                <text x="720" y="245" textAnchor="middle" fill="#3b82f6" fontSize="11" fontWeight="bold">
+                  变化：升级为按分数和金额派单
+                </text>
+              </g>
 
               {/* Nodes */}
               {nodes.map((node) => (
@@ -133,10 +149,10 @@ export const FKSystemOverview = () => {
                   {/* Node name */}
                   <text
                     x={node.x}
-                    y={node.y + 8}
+                    y={node.y + 10}
                     textAnchor="middle"
                     fill="white"
-                    fontSize="16"
+                    fontSize="18"
                     fontWeight="bold"
                   >
                     {node.name}
@@ -145,10 +161,10 @@ export const FKSystemOverview = () => {
                   {/* Node description */}
                   <text
                     x={node.x}
-                    y={node.y + 28}
+                    y={node.y + 32}
                     textAnchor="middle"
                     fill="rgba(255,255,255,0.8)"
-                    fontSize="12"
+                    fontSize="14"
                   >
                     {node.desc}
                   </text>
