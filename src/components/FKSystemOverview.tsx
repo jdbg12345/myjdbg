@@ -200,7 +200,7 @@ export const FKSystemOverview = () => {
               <div>
                 <h4 className="text-2xl font-bold text-gray-800">玩家风险防控能力变化</h4>
                 <div className="flex items-center space-x-6">
-                  <div className="text-lg font-bold text-blue-600">Q1-Q3主要资源在这个方向，变化比较大，持续落地中</div>                 
+                  <div className="text-lg font-bold text-blue-600">主要资源在这个方向，变化比较大，持续落地中</div>                 
                 </div>
               </div>
             </div>
