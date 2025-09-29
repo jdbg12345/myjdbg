@@ -93,7 +93,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-lg font-bold text-red-800 mb-3">系统问题-支持不够</h4>
                   <p className="text-red-700 leading-relaxed">
-                    系统过去的策略侧重防御，缺乏套利和作弊识别能力，且几乎没有标准化工具来提升效率，导致员工对系统缺乏信任，更加依赖个人经验，陷入恶性循环。
+                    过去策略侧重防御，缺乏套利和作弊等，且没有标准化工具来提升效率，导致员工不信任系统，更加依赖个人经验，陷入恶性循环。
                   </p>
                 </div>
               </div>
