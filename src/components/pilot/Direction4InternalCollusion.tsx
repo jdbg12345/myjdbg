@@ -93,7 +93,7 @@ export const Direction4InternalCollusion = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
                   <div className="bg-green-100 border-2 border-green-300 rounded-lg p-4 mb-2">
-                    <div className="text-green-700 font-bold">VIP 0-3</div>
+                    <div className="text-green-700 font-bold">VIP 0-2</div>
                     <div className="text-sm text-green-600">普通会员</div>
                   </div>
                   <div className="text-sm text-gray-600 font-medium">单人审批即可</div>
@@ -101,7 +101,7 @@ export const Direction4InternalCollusion = () => {
                 
                 <div className="text-center">
                   <div className="bg-yellow-100 border-2 border-yellow-300 rounded-lg p-4 mb-2">
-                    <div className="text-yellow-700 font-bold">VIP 4-6</div>
+                    <div className="text-yellow-700 font-bold">VIP 3-5</div>
                     <div className="text-sm text-yellow-600">中级会员</div>
                   </div>
                   <div className="text-sm text-gray-600 font-medium">需主管的U盾码才可操作</div>
@@ -109,7 +109,7 @@ export const Direction4InternalCollusion = () => {
                 
                 <div className="text-center">
                   <div className="bg-red-100 border-2 border-red-300 rounded-lg p-4 mb-2">
-                    <div className="text-red-700 font-bold">VIP 7+</div>
+                    <div className="text-red-700 font-bold">VIP 6+</div>
                     <div className="text-sm text-red-600">高级会员</div>
                   </div>
                   <div className="text-sm text-gray-600 font-medium">需负责人/CEO的谷歌验证码才可操作</div>
