@@ -754,7 +754,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">盈</span>
               </div>
               <h4 className="text-xl font-bold text-gray-800">盈利监控预警</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">试运行</span>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-orange-100 text-orange-600">已上线</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -762,21 +762,21 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">场馆、游戏、单笔、持续等盈利维度进行监控</p>
+                <p className="text-gray-700 text-sm leading-relaxed">针对盈利类监控不完整，无法做到全方位、及时性的发现潜在问题</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">场馆、游戏、单笔、持续等盈利维度进行监控</p>
+                <p className="text-gray-700 text-sm leading-relaxed">已经覆盖场馆、游戏、单笔、持续等盈利维度进行监控</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">场馆多钱预警机制上线，异常资金识别率达到92%，有效防范资金风险</p>
+                <p className="text-gray-700 text-sm leading-relaxed">可第一时间进行预警，然后由专人跟进处理</p>
               </div>
             </div>
           </div>
