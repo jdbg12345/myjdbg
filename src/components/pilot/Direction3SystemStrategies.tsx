@@ -232,7 +232,7 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">体育打水和对冲套利行为监控薄弱</p>
+                <p className="text-gray-700 text-xs leading-relaxed">打水、协议球、卡危险球、出货、蛇货、拉赛、机器下注等是最常见的套利与作弊手段。当前系统在自动出款与人工审核环节对此类行为的识别尚不充分，尤其是体育赛类场景复杂、多变，对审核人员经验依赖高，导致漏判与误判并存，带来较大风控盲区与损失风险</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
