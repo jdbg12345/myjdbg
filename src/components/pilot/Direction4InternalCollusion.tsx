@@ -228,7 +228,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                 预期收益
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">策略参数泄漏风险降低</p>
+              <p className="text-gray-700 text-sm leading-relaxed">提升风控整体拦截效果</p>
             </div>
           </div>
         </div>
