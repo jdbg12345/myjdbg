@@ -167,7 +167,7 @@ export const FKSystemOverview = () => {
               <text x="275" y="115" textAnchor="middle" fill="#9ca3af" fontSize="14" fontWeight="bold">开始</text>
               <text x="525" y="115" textAnchor="middle" fill="#9ca3af" fontSize="14" fontWeight="bold">提交</text>
               <text x="925" y="115" textAnchor="middle" fill="#9ca3af" fontSize="14" fontWeight="bold">低风险</text>
-              <text x="745" y="210" textAnchor="middle" fill="#9ca3af" fontSize="14" fontWeight="bold">高风险</text>
+              <text x="780" y="210" textAnchor="middle" fill="#9ca3af" fontSize="14" fontWeight="bold">高风险</text>
               <text x="1050" y="275" textAnchor="middle" fill="#9ca3af" fontSize="14" fontWeight="bold">通过</text>
               <text x="1050" y="380" textAnchor="middle" fill="#9ca3af" fontSize="14" fontWeight="bold">不通过</text>
               <text x="1160" y="210" textAnchor="middle" fill="#9ca3af" fontSize="14" fontWeight="bold">通过</text>
