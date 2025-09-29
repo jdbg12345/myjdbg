@@ -185,7 +185,7 @@ export const FKSystemOverview = () => {
             <Shield className="w-5 h-5 text-white" />
           </div>
           <h2 className="text-3xl font-bold text-gray-800">FK能力变化</h2>
-          <span className="text-gray-600 text-base">防御型策略 → 多维度策略（防御 + 套利 + 作弊），降低系统出款风险</span>
+          <span className="text-gray-600 text-base">防御型策略 → 多维度策略（防御 + 套利 + 作弊），既降低系统直接出款错误风险，又为人工审核提供强制提醒与决策支持。</span>
         </div>
         
         <div className="bg-white rounded-lg p-8 border border-blue-200">
