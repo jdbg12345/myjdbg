@@ -205,28 +205,28 @@ export const Direction4InternalCollusion = () => {
                 <span className="text-white font-bold text-sm">参</span>
               </div>
               <h4 className="text-xl font-bold text-gray-800">风控策略参数变化机制</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 ml-3">方案中</span>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 ml-3">开发中</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
+                核心问题
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">风控策略参数固定，易被外部摸清规律或内外勾结泄露，已经存在被故意规避和绕过的风险，且缺乏动态调整机制。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
+                解决策略
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">建立动态参数调整机制，使表面显示参数与实际执行参数不完全一致，从而增加外界预测难度并降低泄漏风险。</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
+                预期收益
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">策略参数泄漏风险降低</p>
             </div>
