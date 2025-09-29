@@ -82,7 +82,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                 预期收益
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">彻底解决禁用滥用问题</p>
+              <p className="text-gray-700 text-sm leading-relaxed">彻底解决启禁用违规操作问题</p>
             </div>
           </div>
           
