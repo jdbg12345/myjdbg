@@ -579,7 +579,7 @@ export const Direction3SystemStrategies = () => {
             
             {/* 竞品调研情况说明 */}
             <div className="mt-8">
-              <h5 className="text-lg font-bold text-gray-800 mb-4">竞品调研情况说明</h5>
+              <h5 className="text-lg font-bold text-gray-800 mb-4">调研情况</h5>
               <div className="bg-white rounded-lg border border-gray-200">
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
