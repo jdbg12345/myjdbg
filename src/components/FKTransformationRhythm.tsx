@@ -184,9 +184,9 @@ export const FKTransformationRhythm = () => {
                   <span className="text-blue-600 font-bold text-sm">1</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-bold text-blue-800 mb-3">系统审核比重逐步增加</h4>
+                  <h4 className="text-lg font-bold text-blue-800 mb-3">系统判定比重逐步增加</h4>
                   <p className="text-blue-700 leading-relaxed">
-                    提供尽量由系统判定，降低人工操作比例。
+                    不断提供更多策略，尤其是针对套利和作弊的模型，持续迭代优化效果，当模型的准确率和效率超过人工时，对人的依赖将降低，从而更好地应对极端情况。
                   </p>
                 </div>
               </div>
