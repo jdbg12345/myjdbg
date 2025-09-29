@@ -30,7 +30,7 @@ export const FKSystemOverview = () => {
             <BarChart3 className="w-5 h-5 text-white" />
           </div>
           <h2 className="text-3xl font-bold text-gray-800">FK流程变化</h2>
-          <span className="text-gray-600 text-lg">单人可出款 → 多环节监控 + 内控的抽检，防内外串联风险</span>
+          <span className="text-gray-600 text-lg">单人可出款 → 多环节的监控 + 触发内控抽检，防内外串联风险</span>
         </div>
 
         <div className="bg-white rounded-lg p-8 border border-blue-200">
