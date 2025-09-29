@@ -45,10 +45,7 @@ export const Direction3SystemStrategies = () => {
             </div>
           </div>
         </div>
-        <p className="text-gray-700 mb-8 leading-relaxed">
-          一是按游戏类型提取并建模典型套利特征（如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等）；二是基于套利结果构建兜底式组合识别策略（如玩家/代理的关联、红利金额/比例、流水异常等）；三是打通 Y/B 跨站点（K 端暂不支持）及 B/C 端系统链路，实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误。
-        </p>
-        
+    
         {/* 1. 电子策略 */}
         <div className="mb-8">
           <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
