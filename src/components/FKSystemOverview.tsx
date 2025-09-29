@@ -3,14 +3,14 @@ import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } 
 
 export const FKSystemOverview = () => {
    const nodes = [
-    { id: 1, x: 150, y: 130, name: "系统预警", desc: "", color: "#9ca3af", number: "1" },
-    { id: 2, x: 400, y: 130, name: "申请提交", desc: "", color: "#9ca3af", number: "2" },
-    { id: 3, x: 650, y: 130, name: "系统审核", desc: "", color: "#9ca3af", number: "3" },
-    { id: 4, x: 1200, y: 130, name: "出款放行", desc: "", color: "#10b981", number: "4" },
-    { id: 5, x: 900, y: 290, name: "人工审核", desc: "", color: "#9ca3af", number: "5" },
-    { id: 6, x: 1200, y: 290, name: "系统监控", desc: "", color: "#3b82f6", number: "6" },
-    { id: 7, x: 1450, y: 290, name: "内控复审", desc: "", color: "#3b82f6", number: "7" },
-    { id: 8, x: 1200, y: 450, name: "出款拒绝", desc: "", color: "#ef4444", number: "8" }
+    { id: 1, x: 150, y: 130, name: "系统预警", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "1" },
+    { id: 2, x: 400, y: 130, name: "申请提交", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "2" },
+    { id: 3, x: 650, y: 130, name: "系统审核", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "3" },
+    { id: 4, x: 1200, y: 130, name: "出款放行", desc: "", color: "#10b981", numberColor: "#10b981", number: "4" },
+    { id: 5, x: 900, y: 290, name: "人工审核", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "5" },
+    { id: 6, x: 1200, y: 290, name: "系统监控", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "6" },
+    { id: 7, x: 1450, y: 290, name: "内控复审", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "7" },
+    { id: 8, x: 1200, y: 450, name: "出款拒绝", desc: "", color: "#ef4444", numberColor: "#ef4444", number: "8" }
   ];
 
   
@@ -37,63 +37,54 @@ export const FKSystemOverview = () => {
           <div className="flex justify-center">
             <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[450px]">
               <defs>
-                <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
-                </marker>
-                <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="#f97316" />
-                </marker>
-                <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" />
-                </marker>
-                <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+                <marker id="arrowhead-gray" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#9ca3af" />
                 </marker>
               </defs>
 
               {/* Connection lines */}
               {/* 1→2 */}
-              <path d="M210,130 L340,130" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
+              <path d="M210,130 L340,130" stroke="#9ca3af" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
               
               {/* 2→3 */}
-              <path d="M460,130 L590,130" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
+              <path d="M460,130 L590,130" stroke="#9ca3af" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
               
               {/* 3→4 (直接通过) */}
-              <path d="M710,130 L1140,130" stroke="#10b981" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-green)" />
+              <path d="M710,130 L1140,130" stroke="#9ca3af" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
               
               {/* 3→5 (需要审核) */}
-              <path d="M650,170 Q750,230 840,290" stroke="#3b82f6" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-blue)" />
+              <path d="M650,170 Q750,230 840,290" stroke="#9ca3af" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
               
               {/* 5→6 (人工复审通过) */}
-              <path d="M960,290 L1140,290" stroke="#10b981" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-green)" />
+              <path d="M960,290 L1140,290" stroke="#9ca3af" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
               
               {/* 5→8 (人工复审不通过) */}
-              <path d="M900,340 Q1000,395 1140,450" stroke="#ef4444" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-red)" />
+              <path d="M900,340 Q1000,395 1140,450" stroke="#9ca3af" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
               
               {/* 6→4 (系统监控通过) - 调整箭头终点避免重叠 */}
-              <path d="M1200,238 L1200,182" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-orange)" />
+              <path d="M1200,238 L1200,182" stroke="#9ca3af" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
               
               {/* 6→7 */}
-              <path d="M1260,290 L1390,290" stroke="#f97316" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-orange)" />
+              <path d="M1260,290 L1390,290" stroke="#9ca3af" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
 
               {/* 7→4 (内控复审通过) */}
-              <path d="M1450,238 Q1350,185 1262,130" stroke="#10b981" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-green)" />
+              <path d="M1450,238 Q1350,185 1262,130" stroke="#9ca3af" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
               
               {/* 7→8 (内控复审不通过) */}
-              <path d="M1450,342 Q1350,395 1262,450" stroke="#ef4444" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-red)" />
+              <path d="M1450,342 Q1350,395 1262,450" stroke="#9ca3af" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
 
               {/* Bubble 1: Between 3 and 4 */}
               <g>
-                <ellipse cx="925" cy="60" rx="120" ry="25" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3,3"/>
-                <text x="925" y="65" textAnchor="middle" fill="#3b82f6" fontSize="14" fontWeight="bold">
+                <ellipse cx="925" cy="50" rx="140" ry="30" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3,3"/>
+                <text x="925" y="55" textAnchor="middle" fill="#3b82f6" fontSize="16" fontWeight="bold">
                   变化：增加套利作弊等拦截策略
                 </text>
               </g>
 
               {/* Bubble 2: Between 3 and 5 */}
               <g>
-                <ellipse cx="720" cy="350" rx="110" ry="25" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3,3"/>
-                <text x="720" y="355" textAnchor="middle" fill="#3b82f6" fontSize="14" fontWeight="bold">
+                <ellipse cx="720" cy="380" rx="130" ry="30" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3,3"/>
+                <text x="720" y="385" textAnchor="middle" fill="#3b82f6" fontSize="16" fontWeight="bold">
                   变化：升级为按分数和金额派单
                 </text>
               </g>
@@ -137,10 +128,10 @@ export const FKSystemOverview = () => {
                   {/* Number text */}
                   <text
                     x={node.x}
-                    y={node.y - 26}
+                    y={node.y - 25}
                     textAnchor="middle"
-                    fill={node.color}
-                    fontSize="14"
+                    fill={node.numberColor}
+                    fontSize="16"
                     fontWeight="bold"
                   >
                     {node.number}
@@ -149,10 +140,10 @@ export const FKSystemOverview = () => {
                   {/* Node name */}
                   <text
                     x={node.x}
-                    y={node.y + 10}
+                    y={node.y + 15}
                     textAnchor="middle"
                     fill="white"
-                    fontSize="18"
+                    fontSize="20"
                     fontWeight="bold"
                   >
                     {node.name}
@@ -172,16 +163,16 @@ export const FKSystemOverview = () => {
               ))}
 
               {/* Flow labels - 重新定位避免重叠 */}
-              <text x="275" y="115" textAnchor="middle" fill="#3b82f6" fontSize="10" fontWeight="bold">开始</text>
-              <text x="525" y="115" textAnchor="middle" fill="#3b82f6" fontSize="10" fontWeight="bold">提交</text>
-              <text x="925" y="115" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="bold">低风险</text>
-              <text x="745" y="210" textAnchor="middle" fill="#3b82f6" fontSize="10" fontWeight="bold">高风险</text>
-              <text x="1050" y="275" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="bold">通过</text>
-              <text x="1000" y="420" textAnchor="middle" fill="#ef4444" fontSize="10" fontWeight="bold">不通过</text>
-              <text x="1160" y="210" textAnchor="middle" fill="#f97316" fontSize="10" fontWeight="bold">通过</text>
-              <text x="1325" y="275" textAnchor="middle" fill="#f97316" fontSize="10" fontWeight="bold">不通过</text>
-              <text x="1320" y="200" textAnchor="middle" fill="#10b981" fontSize="10" fontWeight="bold">通过</text>
-              <text x="1320" y="430" textAnchor="middle" fill="#ef4444" fontSize="10" fontWeight="bold">不通过</text>
+              <text x="275" y="115" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">开始</text>
+              <text x="525" y="115" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">提交</text>
+              <text x="925" y="115" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">低风险</text>
+              <text x="745" y="210" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">高风险</text>
+              <text x="1050" y="275" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">通过</text>
+              <text x="1000" y="420" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">不通过</text>
+              <text x="1160" y="210" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">通过</text>
+              <text x="1325" y="275" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">不通过</text>
+              <text x="1320" y="200" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">通过</text>
+              <text x="1380" y="380" textAnchor="middle" fill="#9ca3af" fontSize="12" fontWeight="bold">不通过</text>
             </svg>
           </div>
         </div>
