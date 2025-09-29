@@ -12,7 +12,7 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
       <p className="text-gray-700 mb-8 leading-relaxed">
-        目前系统的策略主要集中在防御型，而非套利及作弊识别类型，导致直接出款错误，以及转人工后缺乏强有力的风险提醒。
+        过去侧重防御，缺防范套利和作弊的策略，缺提效的工具，综合导致员工对系统不信任，只能依赖个人经验，陷入恶性循环。
       </p>
 
       {/* 风控套利理解概览 */}
