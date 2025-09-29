@@ -194,7 +194,7 @@ export const Direction1PersonnelCapability = () => {
               订单数
             </div>
             <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
-              订单风控率 (%)
+              风控率 (%)
             </div>
             
             <div className="mx-12 h-full relative">
@@ -235,7 +235,7 @@ export const Direction1PersonnelCapability = () => {
                       ></div>
                     </div>
                     
-                    {/* 订单风控率点 */}
+                    {/* 风控率点 */}
                     <div 
                       className="absolute w-3 h-3 bg-orange-500 rounded-full border-2 border-white"
                       style={{bottom: `${32 + (item.rate / 28) * 200}px`, left: '50%', transform: 'translateX(-50%)'}}
@@ -255,7 +255,7 @@ export const Direction1PersonnelCapability = () => {
                 ))}
               </div>
               
-              {/* 问题率连线 */}
+              {/* 风控率连线 */}
               <svg className="absolute left-16 right-16 top-0 bottom-0 pointer-events-none" width="100%" height="100%">
                 <path
                   d={`M 12.5% ${100 - (20 / 28) * 60}% L 37.5% ${100 - (25.7 / 28) * 60}% L 62.5% ${100 - (21.4 / 28) * 60}% L 87.5% ${100 - (20 / 28) * 60}%`}
@@ -271,11 +271,11 @@ export const Direction1PersonnelCapability = () => {
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-blue-500 rounded"></div>
-              <span className="text-gray-700">订单数量及占比</span>
+              <span className="text-gray-700">订单数及占比</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-              <span className="text-gray-700">订单风控率</span>
+              <span className="text-gray-700">风控率</span>
             </div>
           </div>
           
