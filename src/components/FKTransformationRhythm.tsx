@@ -153,7 +153,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-lg font-bold text-amber-800 mb-3">风险挑战</h4>
                   <p className="text-amber-700 leading-relaxed">
-                    变革涉及多个部门和利益方，任何策略或流程调整，即使是改正已成惯例的不合理做法，都影响会员体验、代理收益和业务稳定，存在较大隐性风险。
+                    变革涉及多部门和利益方，任何策略流程调整，即使改正过往不合理做法，都影响会员体验、代理收益和业务稳定，存在较大隐性风险。
                   </p>
                 </div>
               </div>
