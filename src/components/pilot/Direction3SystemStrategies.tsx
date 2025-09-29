@@ -573,7 +573,7 @@ export const Direction3SystemStrategies = () => {
                         { platform: '易游（M6)', display: '提款界面直接显示：还需完成XX元投注额' },
                         { platform: '雷竞技（Raybet）', display: '提款界面直接提示：需完成XX元投注' },
                         { platform: '竞技宝（JJB）', display: '提款界面显示：还需XX元流水；流水满足后显示"可提余额"与"账户余额"' },
-                        { platform: '开云（KY）', display: '用户无法在前端得知提款所需流水以及已完成流水', highlight: true }
+                        { platform: '开云（KY）', display: '用户无法在前端得知提款所需流水以及已完成流水；后台也无法直接查看，需要人工计算', highlight: true }
                       ].map((row, index) => (
                         <tr key={index} className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${row.highlight ? 'bg-yellow-100' : ''}`}>
                           <td className="p-4 font-semibold text-blue-700">{row.platform}</td>
