@@ -632,13 +632,13 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
 
-      {/* 极端异常预防机制 */}
+      {/* 极端异常预防 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">极</span>
           </div>
-          <h3 className="text-2xl font-bold text-gray-800">极端异常预防机制</h3>
+          <h3 className="text-2xl font-bold text-gray-800">极端异常预防</h3>
         </div>
         <p className="text-gray-700 mb-8 leading-relaxed">
           <span className="font-semibold">流程缺陷及策略局限导致异常资金风险</span>，针对场馆多钱、沉睡用户等极端情况建立预警和防御策略，确保资金安全。
