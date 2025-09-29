@@ -560,11 +560,11 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-2">
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-0.5 flex-shrink-0">1</div>
-                    <span><span className="font-bold">阶段1</span>：后端：修复系统计算错误，且在后台提供流水查询工具，实现流水自动统一计算，人工只需一键查询</span>
+                    <span><span className="font-bold">阶段1-》后端</span>：修复系统计算错误，且在后台提供流水查询工具，实现流水自动统一计算，人工只需一键查询</span>
                   </div>
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-0.5 flex-shrink-0">2</div>
-                    <span><span className="font-bold">阶段2</span>：前端：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程</span>
+                    <span><span className="font-bold">阶段2-》前端</span>：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程</span>
                   </div>
                 </div>
               </div>
