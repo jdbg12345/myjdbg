@@ -315,7 +315,16 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">审核员在处理订单时经常忽略查看会员标签和备注信息，导致遗漏重要风险提示，造成错误出款。</p>
+                  <div className="text-gray-700 text-sm leading-relaxed space-y-1">
+                    <div className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span><span className="font-bold">系统计算错误</span>：长期以来，系统在审核流水计算中存在多类错误，例如锁定场馆流水重复计算、场馆间流水转移未正确处理等</span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="text-red-600 mr-2">•</span>
+                      <span><span className="font-bold">人工计算复杂</span>：审核员需要手动计算复杂的流水逻辑，耗时且容易出错，影响审核效率和准确性</span>
+                    </div>
+                  </div>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
@@ -333,80 +342,6 @@ export const Direction1PersonnelCapability = () => {
               </div>
             </div>
 
-            {/* 对比图表 */}
-            <div className="mt-8">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {/* 实施前 */}
-                <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border border-red-200 shadow-sm">
-                  <h5 className="text-xl font-bold text-red-700 mb-6 text-center">实施前</h5>
-                  <div className="space-y-4">
-                    <div className="bg-white rounded-lg p-4 border border-red-200 shadow-sm">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-700 font-medium">查看标签率</span>
-                        <span className="text-2xl font-bold text-red-600">65%</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-3 mt-2">
-                        <div className="bg-red-500 h-3 rounded-full" style={{width: '65%'}}></div>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-4 border border-red-200 shadow-sm">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-700 font-medium">查看备注率</span>
-                        <span className="text-2xl font-bold text-red-600">58%</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-3 mt-2">
-                        <div className="bg-red-500 h-3 rounded-full" style={{width: '58%'}}></div>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-4 border border-red-200 shadow-sm">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-700 font-medium">遗漏导致错误</span>
-                        <span className="text-2xl font-bold text-red-600">12%</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-3 mt-2">
-                        <div className="bg-red-500 h-3 rounded-full" style={{width: '12%'}}></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 实施后 */}
-                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border border-green-200 shadow-sm">
-                  <h5 className="text-xl font-bold text-green-700 mb-6 text-center">实施后</h5>
-                  <div className="space-y-4">
-                    <div className="bg-white rounded-lg p-4 border border-green-200 shadow-sm">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-700 font-medium">查看标签率</span>
-                        <span className="text-2xl font-bold text-green-600">100%</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-3 mt-2">
-                        <div className="bg-green-500 h-3 rounded-full" style={{width: '100%'}}></div>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-4 border border-green-200 shadow-sm">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-700 font-medium">查看备注率</span>
-                        <span className="text-2xl font-bold text-green-600">100%</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-3 mt-2">
-                        <div className="bg-green-500 h-3 rounded-full" style={{width: '100%'}}></div>
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-4 border border-green-200 shadow-sm">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-700 font-medium">遗漏导致错误</span>
-                        <span className="text-2xl font-bold text-green-600">1.2%</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-3 mt-2">
-                        <div className="bg-green-500 h-3 rounded-full" style={{width: '1.2%'}}></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="text-right text-sm text-gray-500 mt-6 font-medium">统计周期：2025-04-01 ~ 2025-06-30</div>
-            </div>
           </div>
         </div>
       </div>
