@@ -236,7 +236,7 @@ export const Direction3SystemStrategies = () => {
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">建立体育投注异常行为识别机制</p>
+                <p className="text-gray-700 text-xs leading-relaxed">通过联动 B 端系统，引入百家赔、危险球等关键外部数据，构建针对性的特征识别策略，实现对异常行为更高时效的预警与拦截，全面提升对体育类套利与作弊行为的识别与防控能力。</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
