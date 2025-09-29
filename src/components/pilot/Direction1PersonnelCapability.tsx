@@ -296,7 +296,7 @@ export const Direction1PersonnelCapability = () => {
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
+                核心问题
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">出款时未查看备注标签（公告）导致出款错误，每月约15-20%的错误出款源于此，影响约100+万/月</p>
             </div>
