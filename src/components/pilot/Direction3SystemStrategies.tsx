@@ -641,7 +641,7 @@ export const Direction3SystemStrategies = () => {
           <h3 className="text-2xl font-bold text-gray-800">极端异常预防</h3>
         </div>
         <p className="text-gray-700 mb-8 leading-relaxed">
-          <span className="font-semibold">流程缺陷及策略局限导致异常资金风险</span>，针对场馆多钱、沉睡用户等极端情况建立预警和防御策略，确保资金安全。
+          针对中心钱包、场馆钱包等多钱、沉睡用户活跃提款、场馆杀率异常等场景，建立预警监控机制，及时发现并响应潜在风险；
         </p>
         
         {/* 1. 钱包预警 */}
