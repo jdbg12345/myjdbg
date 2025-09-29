@@ -502,21 +502,21 @@ export const Direction3SystemStrategies = () => {
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                 <h4 className="font-bold text-red-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                  问题
+                  核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">系统逻辑多年来存在错误（锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等），导致需要人工重新手动计算流水。但计算标准模糊且执行不一致，使风控和质检部门经常因流水计算产生争议。在跨部门协作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），不仅浪费时间，降低用户体验并导致出款错误。</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  策略
+                  解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">阶段1：实现流水自动统一计算，无需人工介入；阶段2：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程（已提出需求，但收到无法实现的反馈）。</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  收益
+                  预期收益
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月；效率提升一倍；用户体验改善</p>
               </div>
