@@ -25,14 +25,14 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-start">
               <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">1</div>
               <div>
-                <span className="font-bold text-gray-800">精准类型：按游戏类型提取并建模典型套利特征</span>
+                <span className="font-bold text-gray-800">精准策略：按游戏类型提取并建模典型套利特征</span>
                 <div className="text-sm text-gray-600 mt-1">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</div>
               </div>
             </div>
             <div className="flex items-start">
               <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">2</div>
               <div>
-                <span className="font-bold text-gray-800">防御类型：基于套利结果构建兜底式组合识别策略</span>
+                <span className="font-bold text-gray-800">防御策略：基于套利结果构建兜底式组合识别策略</span>
                 <div className="text-sm text-gray-600 mt-1">如玩家/代理的关联、红利金额/比例、流水异常等</div>
               </div>
             </div>
