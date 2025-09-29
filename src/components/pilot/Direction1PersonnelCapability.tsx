@@ -58,7 +58,7 @@ export const Direction1PersonnelCapability = () => {
               分配订单数
             </div>
             <div className="absolute right-2 top-1/2 transform -translate-y-1/2 rotate-90 text-xs font-medium text-orange-600">
-              问题率 (%)
+              错误率 (%)
             </div>
             
             <div className="mx-12 h-full relative">
