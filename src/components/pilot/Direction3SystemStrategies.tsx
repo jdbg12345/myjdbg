@@ -26,7 +26,7 @@ export const Direction3SystemStrategies = () => {
               <h4 className="text-lg font-bold text-blue-700">系统审核策略</h4>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
-              补强系统在套利与作弊方向的审核策略：一是按游戏类型提取并建模典型套利特征（如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等）；二是基于套利结果构建兜底式组合识别策略（如玩家/代理的关联、红利金额/比例、流水异常等）；三是打通 Y/B 跨站点（K 端暂不支持）及 B/C 端系统链路，实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误。
+              补强系统在套利与作弊方向的审核策略
             </p>
           </div>
           
