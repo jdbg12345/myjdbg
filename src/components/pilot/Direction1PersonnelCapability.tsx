@@ -32,7 +32,7 @@ export const Direction1PersonnelCapability = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 核心问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">以金额作为分单依据，未考虑订单难度及人员能力匹配，导致部分高风险订单被分配至远程或外包，而其差错率较总部高出约2～3倍，每月由此带来超过100万+的损失。</p>
+              <p className="text-gray-700 text-sm leading-relaxed">以金额作为分单依据，未考虑订单难度及人员能力匹配，导致部分高风险订单被分配至远程或外包，而其差错率较总部高出约2～3倍，由此带来超过100万+/月的损失。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
@@ -298,7 +298,7 @@ export const Direction1PersonnelCapability = () => {
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                 核心问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">在出款操作中，尽管SOP明确要求查看标签备注，但部分人员仍存在忽视行为，导致出款错误。每月约15–20%的错误出款由此产生，造成约100万+的损失。</p>
+              <p className="text-gray-700 text-sm leading-relaxed">在出款操作中，尽管SOP明确要求查看标签备注，但部分人员仍存在忽视行为，导致出款错误。每月约15–20%的错误出款由此产生，造成约100万+/月的损失。</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
