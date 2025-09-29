@@ -61,7 +61,7 @@ export const Direction3SystemStrategies = () => {
           <h3 className="text-2xl font-bold text-gray-800">系统审核策略</h3>
         </div>
         <p className="text-gray-700 mb-8 leading-relaxed">
-          <span className="font-semibold">策略主要集中在防御型，而非套利及作弊识别类型</span>，通过建立各游戏类型的异常行为识别机制，提升系统自动拦截能力。
+          一是按游戏类型提取并建模典型套利特征（如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等）；二是基于套利结果构建兜底式组合识别策略（如玩家/代理的关联、红利金额/比例、流水异常等）；三是打通 Y/B 跨站点（K 端暂不支持）及 B/C 端系统链路，实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误。
         </p>
         
         {/* 1. 电子策略 */}
