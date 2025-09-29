@@ -268,7 +268,7 @@ export const Direction1PersonnelCapability = () => {
             </div>
           </div>
           
-          <div className="text-center text-sm font-medium text-gray-600 mb-4">订单云盾分数分布</div>
+          <div className="text-center text-sm font-medium text-gray-600 mb-4">云盾分数订单分布</div>
 
           <div className="flex justify-center space-x-6 text-sm">
             <div className="flex items-center space-x-2">
