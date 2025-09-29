@@ -214,9 +214,9 @@ export const FKTransformationRhythm = () => {
                   <span className="text-blue-600 font-bold text-sm">3</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-bold text-blue-800 mb-3">内控违规操作风险监控</h4>
+                  <h4 className="text-lg font-bold text-blue-800 mb-3">内控违规操作为行为管控</h4>
                   <p className="text-blue-700 leading-relaxed">
-                    提升违规成本，几乎消除违规操作空间，构建可靠防护体系。
+                    通过合理切割权限、增加背靠背流程机制，并在多环节、多维度识别高危操作、实施监控预警，提升违规成本，几乎消除违规操作空间，构建可靠防护体系。
                   </p>
                 </div>
               </div>
