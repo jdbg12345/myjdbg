@@ -2,10 +2,10 @@ import React from 'react';
 
 export const Direction3SystemStrategies = () => {
   return (
-    <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+    <div className="bg-white rounded-xl p-8 mb-8 border border-blue-200 shadow-md">
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center space-x-3">
-          <div className="w-16 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+          <div className="w-16 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
             <span className="text-white font-bold text-sm">方向2</span>
           </div>
           <h2 className="text-3xl font-bold text-gray-800">系统问题-支持不够</h2>
@@ -76,7 +76,7 @@ export const Direction3SystemStrategies = () => {
         
             {/* 电子策略图表 */}
             <div className="mt-8">
-              <div className="relative h-96 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
+              <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
                 <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700">
                   拦截订单数
                 </div>
@@ -172,7 +172,7 @@ export const Direction3SystemStrategies = () => {
         
             {/* 真人策略图表 */}
             <div className="mt-8">
-              <div className="relative h-96 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
+              <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
                 <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700">
                   拦截订单数
                 </div>
@@ -268,7 +268,7 @@ export const Direction3SystemStrategies = () => {
         
             {/* 体育策略图表 */}
             <div className="mt-8">
-              <div className="relative h-96 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
+              <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
                 <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700">
                   拦截订单数
                 </div>
@@ -364,7 +364,7 @@ export const Direction3SystemStrategies = () => {
         
             {/* 棋牌策略图表 */}
             <div className="mt-8">
-              <div className="relative h-96 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
+              <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
                 <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700">
                   拦截订单数
                 </div>
@@ -457,6 +457,75 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-xs leading-relaxed">问题率25%</p>
               </div>
             </div>
+        
+            {/* 彩票策略图表 */}
+            <div className="mt-8">
+              <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
+                <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700">
+                  拦截订单数
+                </div>
+                <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-sm font-semibold text-orange-600">
+                  准确率 (%)
+                </div>
+                
+                <div className="mx-12 h-full relative">
+                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
+                    <span>300</span>
+                    <span>225</span>
+                    <span>150</span>
+                    <span>75</span>
+                    <span>0</span>
+                  </div>
+                  
+                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
+                    <span>100%</span>
+                    <span>75%</span>
+                    <span>50%</span>
+                    <span>25%</span>
+                    <span>0%</span>
+                  </div>
+                  
+                  <div className="absolute left-12 right-12 h-full">
+                    {[0, 25, 50, 75, 100].map((percent) => (
+                      <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
+                    ))}
+                  </div>
+                  
+                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
+                    <div className="flex flex-col items-center relative">
+                      <div className="w-20 bg-gradient-to-t from-blue-500 to-blue-400 rounded-t shadow-md" style={{ height: '200px' }}></div>
+                      
+                      {/* 准确率数据点 */}
+                      <div 
+                        className="absolute w-5 h-5 bg-orange-500 rounded-full border-2 border-white shadow-lg"
+                        style={{top: `${100 - 25 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
+                      >
+                        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
+                          25%
+                        </div>
+                      </div>
+                      
+                      <div className="text-center mt-4">
+                        <div className="text-sm text-gray-600 mt-1 font-medium">250单 (25%)</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="flex justify-center space-x-8 text-sm">
+                <div className="flex items-center space-x-2">
+                  <div className="w-4 h-4 bg-gradient-to-r from-blue-500 to-blue-400 rounded shadow-sm"></div>
+                  <span className="text-gray-700 font-medium">拦截订单数</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-4 h-4 bg-orange-500 rounded-full shadow-sm"></div>
+                  <span className="text-gray-700 font-medium">准确率</span>
+                </div>
+              </div>
+              
+              <div className="text-right text-sm text-gray-500 mt-6 font-medium">统计周期：2025-04-01 ~ 2025-06-30</div>
+            </div>
           </div>
         </div>
       </div>
@@ -543,4 +612,32 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-1">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">系统计算错误</span>：长期以来，系统在审核流水计算中存在多类错误，例如锁定场馆流水重复计算、场
+                    <span><span className="font-bold">系统计算错误</span>：长期以来，系统在审核流水计算中存在多类错误，例如锁定场馆流水重复计算、场馆间流水转移未正确处理等</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span><span className="font-bold">人工计算复杂</span>：审核员需要手动计算复杂的流水逻辑，耗时且容易出错，影响审核效率和准确性</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
+                  解决策略
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">开发智能流水计算工具，自动处理各种复杂场景下的流水计算，为审核员提供准确的流水分析报告</p>
+              </div>
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
+                <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
+                  预期收益
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">流水计算准确率提升至<span className="font-bold text-green-600">99%+</span>，审核效率提升<span className="font-bold text-green-600">40%</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
