@@ -10,6 +10,9 @@ export const Direction3SystemStrategies = () => {
           </div>
           <h2 className="text-3xl font-bold text-gray-800">系统问题-支持不够</h2>
         </div>
+        <div className="text-gray-600 text-lg">
+          从系统审核策略、风控工具合集、极端异常预防等三个维度进行优化
+        </div>
       </div>
 
       {/* 系统审核策略 */}
