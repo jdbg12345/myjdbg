@@ -8,32 +8,7 @@ export const Direction3SystemStrategies = () => {
           <div className="w-16 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">方向2</span>
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">系统问题-支持不够</h2>
-        </div>
-      </div>
-      <div className="bg-blue-50 rounded-lg p-6 mb-8">
-        <div className="space-y-4 text-gray-700">
-          <div className="flex items-start">
-            <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">1</div>
-            <div>
-              <span className="font-bold text-gray-800">按游戏类型提取并建模典型套利特征</span>
-              <div className="text-sm text-gray-600 mt-1">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</div>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">2</div>
-            <div>
-              <span className="font-bold text-gray-800">基于套利结果构建兜底式组合识别策略</span>
-              <div className="text-sm text-gray-600 mt-1">如玩家/代理的关联、红利金额/比例、流水异常等</div>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">3</div>
-            <div>
-              <span className="font-bold text-gray-800">打通 Y/B 跨站点及 B/C 端系统链路</span>
-              <div className="text-sm text-gray-600 mt-1">K 端暂不支持，实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</div>
-            </div>
-          </div>
+          <h3 className="text-3xl font-bold text-gray-800">系统问题-支持不够</h2>
         </div>
       </div>
 
@@ -45,10 +20,32 @@ export const Direction3SystemStrategies = () => {
           </div>
           <h3 className="text-2xl font-bold text-gray-800">系统审核策略</h3>
         </div>
-        <p className="text-gray-700 mb-8 leading-relaxed">
-          一是按游戏类型提取并建模典型套利特征（如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等）；二是基于套利结果构建兜底式组合识别策略（如玩家/代理的关联、红利金额/比例、流水异常等）；三是打通 Y/B 跨站点（K 端暂不支持）及 B/C 端系统链路，实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误。
-        </p>
-        
+        <div className="bg-blue-50 rounded-lg p-6 mb-8">
+          <div className="space-y-4 text-gray-700">
+            <div className="flex items-start">
+              <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">1</div>
+              <div>
+                <span className="font-bold text-gray-800">精准策略：按游戏类型提取并建模典型套利特征</span>
+                <div className="text-sm text-gray-600 mt-1">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</div>
+              </div>
+            </div>
+            <div className="flex items-start">
+              <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">2</div>
+              <div>
+                <span className="font-bold text-gray-800">防御策略：基于套利结果构建兜底式组合识别策略</span>
+                <div className="text-sm text-gray-600 mt-1">如玩家/代理的关联、红利金额/比例、流水异常等</div>
+              </div>
+            </div>
+            <div className="flex items-start">
+              <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">3</div>
+              <div>
+                <span className="font-bold text-gray-800">底层支持：打通Y/B跨站点及B/C端系统链路</span>
+                <div className="text-sm text-gray-600 mt-1">实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
         {/* 1. 电子策略 */}
         <div className="mb-8">
           <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
@@ -522,12 +519,17 @@ export const Direction3SystemStrategies = () => {
         {/* 2. 提款流水工具 */}
         <div className="mb-8">
           <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">流</span>
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                  <span className="text-white font-bold text-sm">流</span>
+                </div>
+                <h4 className="text-xl font-bold text-gray-800">提款流水工具</h4>
+                <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">待开发</span>
               </div>
-              <h4 className="text-xl font-bold text-gray-800">提款流水工具</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">待开发</span>
+              <div className="text-blue-600 font-bold text-sm">
+                目前该问题在技术层面反馈，暂时无法实现彻底解决，需进一步讨论，如何能够支持？
+              </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
@@ -538,15 +540,15 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-1">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">系统计算错误</span>：统逻辑多年来存在错误（如，锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等）</span>
+                    <span><span className="font-bold">系统计算错误</span>：长期以来，系统在审核流水计算中存在多类错误，例如锁定场馆流水重复计算、场馆红利多计一次提款流水、用户输光后提款流水未自动达标等；这些问题可能导致提款系统因流水计算错误而误拒用户提款</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">人工手动计算</span>：由于系统流水不可用，风控人员只能被动依赖手动计算流水。但由于规则复杂，实际执行存在较大差异，不仅耗时繁琐，还导致每月约 1 万笔订单因流水计算错误引发出款问题</span>
+                    <span><span className="font-bold">人工计算错误</span>：由于系统计算流水不可用，风控人员只能被动依赖自己手动计算。但由于规则复杂，实际执行存在较大差异，不仅耗时繁琐，还导致每月约 1 万笔订单因流水计算错误引发出款问题</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">用户体验极差</span>：日常工作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），消耗大量时间，运行效率极低</span>
+                    <span><span className="font-bold">用户体验较差</span>：日常工作中，流水咨询形成冗长的沟通链路（如，用户-客服-运营-风控-运营-客服-用户），消耗大量时间，运行效率极低</span>
                   </div>
                 </div>
               </div>
@@ -558,11 +560,11 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-2">
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-0.5 flex-shrink-0">1</div>
-                    <span><span className="font-bold">阶段1</span>：实现流水自动统一计算，无需人工介入</span>
+                    <span><span className="font-bold">阶段1-》后端优化</span>：修复系统计算错误，且在后台提供流水查询工具，实现流水自动统一计算，人工只需一键查询</span>
                   </div>
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-0.5 flex-shrink-0">2</div>
-                    <span><span className="font-bold">阶段2</span>：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程（已提出需求，但收到无法实现的反馈）</span>
+                    <span><span className="font-bold">阶段2-》前端优化</span>：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程</span>
                   </div>
                 </div>
               </div>
@@ -571,13 +573,13 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月；效率提升一倍；用户体验改善</p>
+                <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月；运行效率提升；用户体验改善</p>
               </div>
             </div>
             
             {/* 竞品调研情况说明 */}
             <div className="mt-8">
-              <h5 className="text-lg font-bold text-gray-800 mb-4">竞品调研情况说明</h5>
+              <h5 className="text-lg font-bold text-gray-800 mb-4">调研情况</h5>
               <div className="bg-white rounded-lg border border-gray-200">
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
@@ -589,14 +591,14 @@ export const Direction3SystemStrategies = () => {
                     </thead>
                     <tbody>
                       {[
+                        { platform: '开云（KY）', display: '用户无法在前端得知提款所需流水以及已完成流水；后台也无法直接查看，需要人工手动计算', highlight: true },
                         { platform: '尊龙凯时（AG）', display: '提款提示：暂未完成流水XX USDT，提款可能被拒绝' },
                         { platform: '金宝博（188）', display: '提款提示：账户尚未满足流水要求"；可实时查看"可提款金额"和"未完成流水"，回传速度极快' },
                         { platform: '万博（ManbetX）', display: '提款界面直接显示：还需完成 XX元；（并有显示不同场馆流水及剩余差额）' },
                         { platform: '竞博（IM）', display: '提款界面直接显示：可提现金额' },
                         { platform: '易游（M6)', display: '提款界面直接显示：还需完成XX元投注额' },
                         { platform: '雷竞技（Raybet）', display: '提款界面直接提示：需完成XX元投注' },
-                        { platform: '竞技宝（JJB）', display: '提款界面显示：还需XX元流水；流水满足后显示"可提余额"与"账户余额"' },
-                        { platform: '开云（KY）', display: '用户无法在前端得知提款所需流水以及已完成流水；后台也无法直接查看，需要人工手动计算', highlight: true }
+                        { platform: '竞技宝（JJB）', display: '提款界面显示：还需XX元流水；流水满足后显示"可提余额"与"账户余额"' }
                       ].map((row, index) => (
                         <tr key={index} className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${row.highlight ? 'bg-yellow-100' : ''}`}>
                           <td className="p-4 font-semibold text-blue-700">{row.platform}</td>
