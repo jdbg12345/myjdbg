@@ -11,9 +11,31 @@ export const Direction3SystemStrategies = () => {
           <h2 className="text-3xl font-bold text-gray-800">系统问题-支持不够</h2>
         </div>
       </div>
-      <p className="text-gray-700 mb-8 leading-relaxed">
-        从系统审核策略、风控工具集合、极端异常预防等三个方向给予支持
-      </p>
+      <div className="bg-blue-50 rounded-lg p-6 mb-8">
+        <div className="space-y-4 text-gray-700">
+          <div className="flex items-start">
+            <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">1</div>
+            <div>
+              <span className="font-bold text-gray-800">按游戏类型提取并建模典型套利特征</span>
+              <div className="text-sm text-gray-600 mt-1">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</div>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">2</div>
+            <div>
+              <span className="font-bold text-gray-800">基于套利结果构建兜底式组合识别策略</span>
+              <div className="text-sm text-gray-600 mt-1">如玩家/代理的关联、红利金额/比例、流水异常等</div>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0">3</div>
+            <div>
+              <span className="font-bold text-gray-800">打通 Y/B 跨站点及 B/C 端系统链路</span>
+              <div className="text-sm text-gray-600 mt-1">K 端暂不支持，实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* 系统审核策略 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
@@ -468,16 +490,15 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                   核心问题
                 </h4>
-                <div className="text-gray-700 text-sm leading-relaxed space-y-2">
+                <div className="text-gray-700 text-sm leading-relaxed space-y-1">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>依赖个人经验：完全依靠人工基于个人经验发掘关联下注（如对打），操作效率低，新人门槛高；</span>
+                    <span><span className="font-bold">依赖个人经验</span>：完全依靠人工基于个人经验发掘关联下注（如对打），操作效率低，新人门槛高</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>成本高风险大：曾需要10人+团队从后台导出数据并在本地处理风控算法，不仅人力成本高，也存在安全隐患</span>
+                    <span><span className="font-bold">成本高风险大</span>：曾需要10人+团队从后台导出数据并在本地处理风控算法，不仅人力成本高，也存在安全隐患</span>
                   </div>
-                 
                 </div>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
@@ -514,18 +535,18 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                   核心问题
                 </h4>
-                <div className="text-gray-700 text-sm leading-relaxed space-y-2">
+                <div className="text-gray-700 text-sm leading-relaxed space-y-1">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>系统计算错误：统逻辑多年来存在错误（如，锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等）</span>
+                    <span><span className="font-bold">系统计算错误</span>：统逻辑多年来存在错误（如，锁定场馆流水双算、场馆红利多算1倍提款流水、输光后提款流水不自动达标等）</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>人工手动计算：由于系统流水不可用，风控人员只能被动依赖手动计算流水。但由于规则复杂，实际执行存在较大差异，不仅耗时繁琐，还导致每月约 1 万笔订单因流水计算错误引发出款问题</span>
+                    <span><span className="font-bold">人工手动计算</span>：由于系统流水不可用，风控人员只能被动依赖手动计算流水。但由于规则复杂，实际执行存在较大差异，不仅耗时繁琐，还导致每月约 1 万笔订单因流水计算错误引发出款问题</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>用户体验极差：日常工作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），消耗大量时间，运行效率极低</span>
+                    <span><span className="font-bold">用户体验极差</span>：日常工作中，流水咨询形成冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户），消耗大量时间，运行效率极低</span>
                   </div>
                 </div>
               </div>
@@ -534,7 +555,16 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">阶段1：实现流水自动统一计算，无需人工介入；阶段2：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程（已提出需求，但收到无法实现的反馈）</p>
+                <div className="text-gray-700 text-sm leading-relaxed space-y-2">
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-0.5 flex-shrink-0">1</div>
+                    <span><span className="font-bold">阶段1</span>：实现流水自动统一计算，无需人工介入</span>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-0.5 flex-shrink-0">2</div>
+                    <span><span className="font-bold">阶段2</span>：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程（已提出需求，但收到无法实现的反馈）</span>
+                  </div>
+                </div>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
@@ -597,16 +627,15 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                   核心问题
                 </h4>
-                <div className="text-gray-700 text-sm leading-relaxed space-y-2">
+                <div className="text-gray-700 text-sm leading-relaxed space-y-1">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>人工效率低：目前完全依赖人工进行多平台对比，耗时费力，效率极低</span>
+                    <span><span className="font-bold">人工效率低</span>：目前完全依赖人工进行多平台对比，耗时费力，效率极低</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>无法全覆盖：人工非标操作，无法实现全面及时的覆盖</span>
+                    <span><span className="font-bold">无法全覆盖</span>：人工非标操作，无法实现全面及时的覆盖</span>
                   </div>
-          
                 </div>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
