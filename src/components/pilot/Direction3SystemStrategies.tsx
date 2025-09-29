@@ -43,7 +43,7 @@ export const Direction3SystemStrategies = () => {
           <div className="bg-white rounded-lg p-6 border-l-4 border-orange-600">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
-              <h4 className="text-lg font-bold text-orange-700">多维度覆盖</h4>
+              <h4 className="text-lg font-bold text-orange-700">极端异常预防</h4>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
               覆盖线上线下红利套利、活动套利、代理佣金套利等多个维度，构建全方位的风控防护体系
