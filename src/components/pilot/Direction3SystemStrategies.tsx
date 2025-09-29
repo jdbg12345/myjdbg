@@ -471,16 +471,13 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-2">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>完全依靠人工基于个人经验发掘关联下注（如对打）</span>
+                    <span>依赖个人经验：完全依靠人工基于个人经验发掘关联下注（如对打），操作效率低，新人门槛高；</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span>曾经需要10人+团队从后台导出数据并在本地处理风控算法，存在严重的数据安全隐患</span>
+                    <span>成本高风险大：曾需要10人+团队从后台导出数据并在本地处理风控算法，不仅人力成本高，也存在安全隐患</span>
                   </div>
-                  <div className="flex items-start">
-                    <span className="text-red-600 mr-2">•</span>
-                    <span>操作效率低下，有效拦截率也不足</span>
-                  </div>
+                 
                 </div>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
