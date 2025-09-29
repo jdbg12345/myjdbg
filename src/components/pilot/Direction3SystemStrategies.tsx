@@ -614,14 +614,14 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">通过B端百家赔率数据构建体育打水实时查询工具</p>
+                <p className="text-gray-700 text-sm leading-relaxed">通过B端百家赔率数据构建体育打水查询工具</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月</p>
+                <p className="text-gray-700 text-sm leading-relaxed">节省成本，提升效率</p>
               </div>
             </div>
           </div>
