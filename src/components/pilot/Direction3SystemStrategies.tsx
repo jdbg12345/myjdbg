@@ -231,15 +231,15 @@ export const Direction3SystemStrategies = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                <h5 className="font-bold text-red-700 mb-2 text-sm">问题</h5>
+                <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">体育打水和对冲套利行为监控薄弱</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                <h5 className="font-bold text-blue-700 mb-2 text-sm">策略</h5>
+                <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">建立体育投注异常行为识别机制</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                <h5 className="font-bold text-green-700 mb-2 text-sm">收益</h5>
+                <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
                 <p className="text-gray-700 text-xs leading-relaxed">问题率22.1%</p>
               </div>
             </div>
