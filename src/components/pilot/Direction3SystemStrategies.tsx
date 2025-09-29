@@ -33,7 +33,7 @@ export const Direction3SystemStrategies = () => {
           <div className="bg-white rounded-lg p-6 border-l-4 border-green-600">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
-              <h4 className="text-lg font-bold text-green-700">特征组合兜底</h4>
+              <h4 className="text-lg font-bold text-green-700">风控工具集合</h4>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
               不考虑具体游戏类型，通过多维度特征组合（如投注模式、时间规律、金额分布等）进行兜底判定，捕获未知套利手法
