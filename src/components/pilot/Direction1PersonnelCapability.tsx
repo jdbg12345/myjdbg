@@ -280,6 +280,7 @@ export const Direction1PersonnelCapability = () => {
           
           <div className="text-right text-xs text-gray-400 mt-4">统计周期：2025-04-01 ~ 2025-06-30</div>
         </div>
+        
         {/* 整合的内容和图表模块 */}
         <div className="bg-white rounded-lg p-6 mb-6 shadow-md border border-gray-200">
           <div className="flex items-center justify-between mb-6">
