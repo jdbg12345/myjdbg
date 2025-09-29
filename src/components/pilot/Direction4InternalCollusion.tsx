@@ -59,28 +59,28 @@ export const Direction4InternalCollusion = () => {
                 <span className="text-white font-bold text-sm">禁</span>
               </div>
               <h4 className="text-xl font-bold text-gray-800">会员禁用流程升级</h4>
-              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-3">已上线</span>
+              <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-3">开发中</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
               <h4 className="font-bold text-red-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                问题
+                核心问题
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">当前会员禁用流程单人即可操作，权限管理不够精细，缺乏分级审批机制，存在高V用户误禁及权限滥用风险</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                策略
+                解决策略
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">建立基于玩家等级的会员禁用分级审批机制，高V玩家的启禁用操作需提供审批人的 U 盾或谷歌验证码验证</p>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <h4 className="font-bold text-green-700 mb-3 flex items-center">
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                收益
+                预期收益
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">彻底解决禁用滥用问题</p>
             </div>
