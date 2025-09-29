@@ -45,7 +45,7 @@ const navigationItems: NavigationItem[] = [
       { id: 'fk-system-overview', title: '3.2 变化说明' },
       { 
         id: 'pilot-results', 
-        title: '3.3 试点成果', 
+        title: '3.3 成果说明', 
         children: [
           { id: 'pilot-direction1', title: '方向1：审核问题-质量较差' },
           { id: 'pilot-direction2', title: '方向2：系统问题-支持不够' },
