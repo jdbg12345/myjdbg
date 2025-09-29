@@ -439,7 +439,7 @@ export const FKSystemOverview = () => {
               <div>
                 <h4 className="text-2xl font-bold text-gray-800">内控风险监控能力变化</h4>
                 <div className="flex items-center space-x-6">
-                  <div className="text-lg font-bold text-blue-600">部分资源在这个方向，在几个维度进行完善</div>                  
+                  <div className="text-lg font-bold text-blue-600">在以下高危场景进行优化升级</div>                  
                 </div>
               </div>
             </div>
