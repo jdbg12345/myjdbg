@@ -65,7 +65,7 @@ export const DBSportsKillRate = () => {
                 </thead>
                 <tbody>
                   {dbMonthlyData.map((row, index) => (
-                    <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <tr key={index} className="border-b border-gray-100">
                       <td className="p-4 text-center font-semibold">{row.month}</td>
                       <td className="p-4 text-center">{row.dbKill}%</td>
                       <td className="p-4 text-center">{row.imKill}%</td>

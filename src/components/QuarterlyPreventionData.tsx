@@ -48,7 +48,7 @@ export const QuarterlyPreventionData = () => {
                 <div key={index} className="flex flex-col items-center flex-1 mx-1">
                   <div className="text-sm font-semibold text-blue-600 mb-2">{item.amount}</div>
                   <div 
-                    className="bg-blue-500 w-full rounded-t transition-all duration-300"
+                    className="bg-blue-500 w-full rounded-t"
                     style={{ height: `${(item.amount / maxAmount) * 250}px` }}
                   ></div>
                   <div className="text-sm text-gray-600 mt-2 whitespace-nowrap">{item.month}</div>

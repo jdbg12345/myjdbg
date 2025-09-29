@@ -9,11 +9,9 @@ export const PilotResults = () => {
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
       <div className="mb-8">
-        <div className="flex items-center justify-between mb-4">
-          <h1 className="text-5xl font-bold text-gray-800 border-b-4 border-blue-600 pb-4">3.3 FK试点说明</h1>
-          <div className="text-gray-600 text-lg">
-            从审核问题-质量较差、系统问题-支持不够、内控问题-违规行为等三个方向进行优化
-          </div>
+        <h1 className="text-5xl font-bold text-gray-800 border-b-4 border-blue-600 pb-4 mb-4">3.3 FK试点说明</h1>
+        <div className="text-gray-600 text-lg">
+          从审核问题-质量较差、系统问题-支持不够、内控问题-违规行为等三个方向进行优化
         </div>
       </div>   
 

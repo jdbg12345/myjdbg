@@ -152,7 +152,7 @@ export const NavigationSidebar = () => {
           } ${
             isActive 
               ? 'bg-blue-100 text-blue-700 border-l-4 border-blue-500' 
-              : 'text-gray-700 hover:bg-gray-100'
+              : 'text-gray-700'
           }`}
           onClick={() => handleItemClick(item.id)}
         >
@@ -171,7 +171,7 @@ export const NavigationSidebar = () => {
                 e.stopPropagation();
                 toggleExpanded(item.id);
               }}
-              className="p-1 hover:bg-gray-200 rounded"
+              className="p-1 rounded"
             >
               {isExpanded ? (
                 <ChevronDown className="w-4 h-4 text-gray-500" />

@@ -58,7 +58,7 @@ export const Y6Y9SiteDetail = () => {
                     <td rowSpan="5" className="p-4 font-semibold text-center bg-blue-50">Y6+Y9</td>
                   </tr>
                   {y6y9DetailData.map((row, index) => (
-                    <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <tr key={index} className="border-b border-gray-100">
                       <td className="p-3 font-semibold text-center">{row.type}</td>
                       <td className="p-3 text-center">{row.zkAmount}</td>
                       <td className="p-3 text-center">{row.zkPercent}%</td>

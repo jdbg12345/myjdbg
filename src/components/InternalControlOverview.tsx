@@ -212,7 +212,7 @@ export const InternalControlOverview = () => {
               </thead>
               <tbody>
                 {courseCategories.map((category, index) => (
-                  <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
+                  <tr key={index} className="border-b border-gray-100">
                     <td className="p-4 text-center font-semibold">{index + 1}</td>
                     <td className="p-4">
                       <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600">

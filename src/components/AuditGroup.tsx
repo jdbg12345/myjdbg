@@ -128,7 +128,7 @@ export const AuditGroup = () => {
             </thead>
             <tbody>
               {lastQuarterPlans.map((plan, index) => (
-                <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                <tr key={index} className="border-b border-gray-100">
                   <td className="p-4 font-semibold text-gray-800">{plan.name}</td>
                   <td className="p-4 text-center">
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${getImportanceStyle(plan.importance)}`}>

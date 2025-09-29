@@ -101,7 +101,7 @@ export const BSportsKillRate = () => {
                 </thead>
                 <tbody>
                   {gameTypeData.map((row, index) => (
-                    <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <tr key={index} className="border-b border-gray-100">
                       <td className="p-3 text-center font-semibold">{row.gameType}</td>
                       <td className={`p-3 text-center ${getMinMaxClass(row.yWater, gameYWaters)}`}>{row.yWater}%</td>
                       <td className={`p-3 text-center ${getMinMaxClass(row.yKill, gameYKills)}`}>{row.yKill}%</td>
