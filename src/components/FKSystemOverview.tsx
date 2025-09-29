@@ -75,8 +75,8 @@ export const FKSystemOverview = () => {
 
               {/* Bubble 1: Between 3 and 4 */}
               <g>
-                <ellipse cx="925" cy="50" rx="180" ry="50" fill="#3b82f6" stroke="#3b82f6" strokeWidth="2"/>
-                <text x="925" y="55" textAnchor="middle" fill="white" fontSize="20" fontWeight="bold">
+                <ellipse cx="925" cy="60" rx="180" ry="50" fill="#3b82f6" stroke="#3b82f6" strokeWidth="2"/>
+                <text x="925" y="65" textAnchor="middle" fill="white" fontSize="20" fontWeight="bold">
                   变化：增加套利作弊等拦截策略
                 </text>
               </g>
