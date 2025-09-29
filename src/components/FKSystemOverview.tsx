@@ -453,7 +453,6 @@ export const FKSystemOverview = () => {
               </h5>
               <div className="space-y-4">
                 <div className="bg-blue-50 rounded-lg p-5">
-                  <h6 className="font-bold text-gray-800 mb-4 text-lg">信息安全类</h6>
                   <div className="space-y-2">
                     <div className="bg-white rounded-lg p-4 border border-blue-200">
                       <div className="font-bold text-gray-800 text-base mb-2">泄漏风控标签和备注</div>
@@ -488,7 +487,6 @@ export const FKSystemOverview = () => {
               </h5>
               <div className="space-y-4">
                 <div className="bg-blue-50 rounded-lg p-5">
-                  <h6 className="font-bold text-gray-800 mb-4 text-lg">游戏套利类</h6>
                   <div className="space-y-2">
                     <div className="bg-white rounded-lg p-4 border border-blue-200">
                       <div className="font-bold text-gray-800 text-base mb-2">出款不看标签和备注</div>
