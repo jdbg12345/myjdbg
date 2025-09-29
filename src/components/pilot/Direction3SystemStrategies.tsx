@@ -44,7 +44,7 @@ export const Direction3SystemStrategies = () => {
               </div>
               <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">建立电子游戏异常行为识别机制</p>
+                <p className="text-gray-700 text-xs leading-relaxed">系统策略增加电子卡免费的策略模型</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                 <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
