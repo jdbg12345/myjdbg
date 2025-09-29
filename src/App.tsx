@@ -101,7 +101,7 @@ function App() {
           <AirplaneData />
         </div>
         
-        {/* 3. FK工作总结 */}
+        {/* 3. FK工作情况 */}
         {/* 3.1 FK整体说明 */}
         <div data-section="fk-transformation">
           <FKTransformationRhythm />
