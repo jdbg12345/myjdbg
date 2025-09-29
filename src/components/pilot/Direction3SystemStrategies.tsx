@@ -36,7 +36,7 @@ export const Direction3SystemStrategies = () => {
               <h4 className="text-lg font-bold text-green-700">风控工具集合</h4>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
-              不考虑具体游戏类型，通过多维度特征组合（如投注模式、时间规律、金额分布等）进行兜底判定，捕获未知套利手法
+              将风控中高频操作、费时费力的场景，通过提供关联工具、对打工具、流水工具等工具集，实现技能熟练度提升，提高效率和准确性，同时帮助新人快速上手
             </p>
           </div>
           
