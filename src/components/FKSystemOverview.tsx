@@ -8,7 +8,7 @@ export const FKSystemOverview = () => {
     { id: 3, x: 650, y: 130, name: "系统审核", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "3" },
     { id: 4, x: 1200, y: 130, name: "出款放行", desc: "", color: "#10b981", numberColor: "#10b981", number: "4" },
     { id: 5, x: 900, y: 290, name: "人工审核", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "5" },
-    { id: 6, x: 1200, y: 290, name: "系统监控", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "6" },
+    { id: 6, x: 1200, y: 290, name: "系统管控", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "6" },
     { id: 7, x: 1450, y: 290, name: "内控复审", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "7" },
     { id: 8, x: 1200, y: 450, name: "出款拒绝", desc: "", color: "#ef4444", numberColor: "#ef4444", number: "8" }
   ];
