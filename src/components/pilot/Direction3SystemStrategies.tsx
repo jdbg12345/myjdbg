@@ -524,7 +524,7 @@ export const Direction3SystemStrategies = () => {
               </div>
               <h4 className="text-2xl font-bold text-gray-800">关联下注工具</h4>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 ml-4 shadow-sm">试运行</span>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4 shadow-sm">跨站点打通</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4 shadow-sm">跨Y+B等全站点打通</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
