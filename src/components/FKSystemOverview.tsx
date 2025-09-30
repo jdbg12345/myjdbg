@@ -200,7 +200,7 @@ export const FKSystemOverview = () => {
           </div>
           <div>
             <h2 className="text-3xl font-bold text-gray-800">FK能力变化</h2>
-            <span className="text-gray-600 text-base">会员侧：防御型策略 → 多维度策略（防御 + 套利 + 作弊），既降低系统直接出款错误风险；内控侧：增强违规管控能力</span>
+            <span className="text-gray-600 text-base">会员侧：防御型策略 → 多维度策略（防御 + 套利 + 作弊），既降低系统直接出款错误风险，又给审核给予强提醒支持；内控侧：增强违规管控能力</span>
           </div>
         </div>
         
