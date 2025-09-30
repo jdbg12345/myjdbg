@@ -650,7 +650,7 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-2">
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-1 flex-shrink-0">1</div>
-                    <span><span className="font-bold">阶段1-》解决系统流水错误</span>：修复系统计算错误，且在后台提供流水查询工具，实现流水自动统一计算，人工只需一键查询</span>
+                    <span><span className="font-bold">阶段1-》解决系统流水错误</span>：修复系统计算错误（锁定场馆流水重复计算、场馆红利多计一次提款流水、用户输光后提款流水未自动达标等）</span>
                   </div>
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-1 flex-shrink-0">2</div>
