@@ -207,7 +207,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">审核效率提升<span className="font-bold text-green-600">50%+</span>，准确率提升至<span className="font-bold text-green-600">95%+</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed">风控体系由人工向系统过渡最重要的底层基础></p>
               </div>
             </div>
 
