@@ -654,7 +654,7 @@ export const Direction3SystemStrategies = () => {
                   </div>
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-1 flex-shrink-0">2</div>
-                    <span><span className="font-bold">阶段2-》后端提款流水工具</span>：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程</span>
+                    <span><span className="font-bold">阶段2-》后端流水查询工具</span>：在后台提供全新的流水查询工具（已有的当前不可用）</span>
                   </div>
                   
                   <div className="flex items-start">
