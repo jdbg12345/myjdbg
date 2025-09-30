@@ -407,7 +407,7 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                       <div className="font-bold text-gray-800 text-base mb-2">活动类型</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-semibold text-xs">增强</span>
                       </div>
                     </div>
@@ -428,13 +428,13 @@ export const FKSystemOverview = () => {
                       <div className="font-bold text-gray-800 text-base mb-2">算牌下注</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-orange-600">试运行</span></span>
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-semibold text-xs">增强</span>
+                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-semibold text-xs">新增</span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                       <div className="font-bold text-gray-800 text-base mb-2">场馆多钱</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-orange-600">试运行</span></span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-orange-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs">新增</span>
                       </div>
                     </div>
