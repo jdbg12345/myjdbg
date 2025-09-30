@@ -274,7 +274,7 @@ export const FKTransformationRhythm = () => {
                     }`}>
                       {item.work}
                     </p>
-                    <div className={`text-base font-semibold ${
+                    <div className={`text-base font-semibold mt-auto ${
                       item.status === 'completed' ? 'text-green-600' :
                       item.status === 'current' ? 'text-blue-600' :
                       'text-gray-500'
