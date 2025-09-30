@@ -336,12 +336,12 @@ export const Direction1PersonnelCapability = () => {
             {/* 错误率对比图表 */}
             <div className="mt-8">
               <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
-                <div className="absolute right-2 top-1/3 transform -translate-y-1/2 rotate-90 text-sm font-semibold text-orange-600">
+                <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-orange-600">
                   错误率 (%)
                 </div>
                 
                 <div className="mx-12 h-full relative">
-                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
+                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
                     <span>30%</span>
                     <span>22.5%</span>
                     <span>15%</span>
@@ -356,7 +356,7 @@ export const Direction1PersonnelCapability = () => {
                   </div>
                   
                   <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                    <div className="flex items-end space-x-16">
+                    <div className="flex items-end space-x-32">
                       {/* 调整前 */}
                       <div className="flex flex-col items-center relative">
                         <div 
@@ -389,6 +389,25 @@ export const Direction1PersonnelCapability = () => {
                         </div>
                       </div>
                     </div>
+                    
+                    {/* 连接线显示下降趋势 */}
+                    <svg className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                      <line
+                        x1="35%"
+                        y1={`${100 - (25 / 30) * 60 - 10}%`}
+                        x2="65%"
+                        y2={`${100 - (8 / 30) * 60 - 10}%`}
+                        stroke="#10b981"
+                        strokeWidth="3"
+                        strokeDasharray="8,4"
+                        opacity="0.8"
+                      />
+                      <polygon
+                        points={`${65 - 1},${100 - (8 / 30) * 60 - 10 - 1} ${65 + 1},${100 - (8 / 30) * 60 - 10 + 1} ${65 + 3},${100 - (8 / 30) * 60 - 10}`}
+                        fill="#10b981"
+                        opacity="0.8"
+                      />
+                    </svg>
                     
                     {/* 改善指示 */}
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
