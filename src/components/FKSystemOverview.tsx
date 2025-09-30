@@ -311,20 +311,20 @@ export const FKSystemOverview = () => {
                       <div className="font-bold text-gray-800 text-base mb-2">前几次提款需要人工</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-semibold text-xs">增强</span>
+                        <span className="px-2 py-1 rounded-full bg-gray-100 text-gray-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                       <div className="font-bold text-gray-800 text-base mb-2">多次不经过人工</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-semibold text-xs">增强</span>
+                        <span className="px-2 py-1 rounded-full bg-gray-100 text-gray-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                       <div className="font-bold text-gray-800 text-base mb-2">特殊上分类型</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-blue-600">运行中</span></span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-gray-100 text-gray-600 font-semibold text-xs">没变</span>
                       </div>
                     </div>
@@ -345,14 +345,14 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-3 border border-gray-200">
                       <div className="font-bold text-gray-800 text-base mb-2">电子套利</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-blue-600">试运行</span></span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-gray-100 text-gray-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-3 border border-gray-200">
                       <div className="font-bold text-gray-800 text-base mb-2">真人套利</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-blue-600">试运行</span></span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-gray-100 text-gray-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
@@ -366,7 +366,7 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-3 border border-gray-200">
                       <div className="font-bold text-gray-800 text-base mb-2">棋牌套利</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-blue-600">试运行</span></span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-gray-100 text-gray-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
@@ -427,7 +427,7 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-3 border border-gray-200">
                       <div className="font-bold text-gray-800 text-base mb-2">算牌下注</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-blue-600">试运行</span></span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-gray-100 text-gray-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
