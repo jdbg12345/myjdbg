@@ -79,6 +79,22 @@ export const Direction3SystemStrategies = () => {
               <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
                 
                 <div className="mx-12 h-full relative">
+                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
+                    <span>500</span>
+                    <span>375</span>
+                    <span>250</span>
+                    <span>125</span>
+                    <span>0</span>
+                  </div>
+                  
+                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
+                    <span>100%</span>
+                    <span>75%</span>
+                    <span>50%</span>
+                    <span>25%</span>
+                    <span>0%</span>
+                  </div>
+                  
                   <div className="absolute left-12 right-12 h-full">
                     {[0, 25, 50, 75, 100].map((percent) => (
                       <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
@@ -243,6 +259,22 @@ export const Direction3SystemStrategies = () => {
               <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
                 
                 <div className="mx-12 h-full relative">
+                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
+                    <span>500</span>
+                    <span>375</span>
+                    <span>250</span>
+                    <span>125</span>
+                    <span>0</span>
+                  </div>
+                  
+                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
+                    <span>100%</span>
+                    <span>75%</span>
+                    <span>50%</span>
+                    <span>25%</span>
+                    <span>0%</span>
+                  </div>
+                  
                   <div className="absolute left-12 right-12 h-full">
                     {[0, 25, 50, 75, 100].map((percent) => (
                       <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
@@ -407,6 +439,22 @@ export const Direction3SystemStrategies = () => {
               <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
                 
                 <div className="mx-12 h-full relative">
+                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
+                    <span>300</span>
+                    <span>225</span>
+                    <span>150</span>
+                    <span>75</span>
+                    <span>0</span>
+                  </div>
+                  
+                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
+                    <span>100%</span>
+                    <span>75%</span>
+                    <span>50%</span>
+                    <span>25%</span>
+                    <span>0%</span>
+                  </div>
+                  
                   <div className="absolute left-12 right-12 h-full">
                     {[0, 25, 50, 75, 100].map((percent) => (
                       <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
