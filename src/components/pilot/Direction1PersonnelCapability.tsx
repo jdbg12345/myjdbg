@@ -224,7 +224,7 @@ export const Direction1PersonnelCapability = () => {
                     <span>0</span>
                   </div>
                   
-                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
+                  <div className="absolute left-16 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
                     <span>40%</span>
                     <span>30%</span>
                     <span>20%</span>
@@ -240,11 +240,11 @@ export const Direction1PersonnelCapability = () => {
                   
                   <div className="absolute left-20 right-12 h-full flex items-end justify-around pb-0">
                     {[
-                      { name: '0-20分\n(低风险)', count: 1800, rate: 5 },
-                      { name: '21-40分\n(中低风险)', count: 1200, rate: 12 },
-                      { name: '41-60分\n(中风险)', count: 800, rate: 25 },
-                      { name: '61-80分\n(中高风险)', count: 400, rate: 35 },
-                      { name: '81-100分\n(高风险)', count: 200, rate: 40 }
+                      { name: '0-20分', count: 1800, rate: 5 },
+                      { name: '21-40分', count: 1200, rate: 12 },
+                      { name: '41-60分', count: 800, rate: 25 },
+                      { name: '61-80分', count: 400, rate: 35 },
+                      { name: '81-100分', count: 200, rate: 40 }
                     ].map((item, index) => (
                       <div key={index} className="flex flex-col items-center relative">
                         <div className="flex items-end space-x-1">
@@ -353,9 +353,9 @@ export const Direction1PersonnelCapability = () => {
           <div className="flex flex-col items-center relative h-full justify-end">
             <div
               className="absolute w-5 h-5 bg-red-500 rounded-full border-2 border-white shadow-lg"
-              style={{ bottom: `${(75 / 100) * 80}px` }} // 计算调整前 25% 错误率的位置
+              style={{ bottom: `${(25 / 30) * 200}px` }}
             >
-              <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
                 25%
               </div>
             </div>
@@ -368,9 +368,9 @@ export const Direction1PersonnelCapability = () => {
           <div className="flex flex-col items-center relative h-full justify-end">
             <div
               className="absolute w-5 h-5 bg-green-500 rounded-full border-2 border-white shadow-lg"
-              style={{ bottom: `${(92 / 100) * 80}px` }} // 计算调整后 8% 错误率的位置
+              style={{ bottom: `${(8 / 30) * 200}px` }}
             >
-              <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
                 8%
               </div>
             </div>
@@ -381,8 +381,8 @@ export const Direction1PersonnelCapability = () => {
         </div>
 
         {/* 改善指示 - 放在连线中间 */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{ top: `${((75 + 92) / 2) / 100 * 80}%` }}>
-          ↓ 68%
+        <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{top: `${100 - ((25 + 8) / 2 / 30) * 80}%`}}>
+          ↓ 68% 改善
         </div>
       </div>
     </div>
