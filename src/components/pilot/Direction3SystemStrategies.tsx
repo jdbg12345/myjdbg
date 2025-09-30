@@ -151,13 +151,7 @@ export const Direction3SystemStrategies = () => {
             {/* 真人策略图表 */}
             <div className="mt-8">
               <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
-                <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700">
-                  拦截订单数
-                </div>
-                <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-sm font-semibold text-orange-600">
-                  准确率 (%)
-                </div>
-                
+                          
                 <div className="mx-12 h-full relative">
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
                     <span>500</span>
