@@ -42,7 +42,7 @@ const navigationItems: NavigationItem[] = [
     icon: <FileText className="w-4 h-4" />,
     children: [
       { id: 'fk-transformation', title: '3.1 整体说明' },
-      { id: 'fk-system-overview', title: '3.2 变化说明' },
+      { id: 'fk-system-overview', title: '3.2 试点说明' },
       { 
         id: 'pilot-results', 
         title: '3.3 成果说明', 
