@@ -362,9 +362,7 @@ export const Direction1PersonnelCapability = () => {
                 25%
               </div>
             </div>
-            <div className="text-center mt-4">
-              <div className="text-sm text-gray-800 font-semibold">调整前</div>
-            </div>
+           
           </div>
 
           {/* 调整后 */}
@@ -377,9 +375,7 @@ export const Direction1PersonnelCapability = () => {
                 8%
               </div>
             </div>
-            <div className="text-center mt-4">
-              <div className="text-sm text-gray-800 font-semibold">调整后</div>
-            </div>
+           
           </div>
         </div>
 
