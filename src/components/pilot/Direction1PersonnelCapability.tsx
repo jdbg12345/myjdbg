@@ -382,7 +382,7 @@ export const Direction1PersonnelCapability = () => {
 
         {/* 改善指示 - 放在连线中间 */}
         <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{top: `${100 - ((25 + 8) / 2 / 30) * 80}%`}}>
-          ↓ 68% 改善
+          ↓ 68%
         </div>
       </div>
     </div>
