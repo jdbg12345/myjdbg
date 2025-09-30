@@ -558,7 +558,6 @@ export const FKSystemOverview = () => {
                 <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-5 border border-blue-200">
                   <div className="space-y-2">
                     <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                      <div className="font-bold text-gray-800 text-base mb-2">审核流程</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-600">方案中</span></span>
                         <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs">新增</span>
@@ -579,7 +578,6 @@ export const FKSystemOverview = () => {
                 <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-5 border border-blue-200">
                   <div className="space-y-2">
                     <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                      <div className="font-bold text-gray-800 text-base mb-2">设备指纹</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-600">方案中</span></span>
                         <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs">新增</span>
