@@ -55,34 +55,8 @@ const navigationItems: NavigationItem[] = [
     ]
   },
   {
-    id: 'backup',
-    title: '4. 备份待用',
-    icon: <FileText className="w-4 h-4" />,
-    children: [
-      { id: 'audit-group', title: '4.1 审核组' },
-      { id: 'internal-control', title: '4.2 内控组' },
-      { id: 'audit-dept', title: '4.3 稽查组' },
-      { id: 'system-dept', title: '4.4 系统组' },
-      { 
-        id: 'system-details', 
-        title: '系统组详细页面', 
-        children: [
-          { id: 'summary-overview', title: '会员出款风控概览' },
-          { id: 'risk-warning', title: '事前（风险预警）' },
-          { id: 'system-review', title: '事中（系统审核）' },
-          { id: 'system-dispatch', title: '事中（系统派单）' },
-          { id: 'manual-review', title: '事中（人工审核）' },
-          { id: 'internal-control-sampling', title: '事中（内控抽检）' },
-          { id: 'platform-reconciliation', title: '事后（平台对账）' },
-          { id: 'internal-security-control', title: '内控安全风控' },
-          { id: 'agent-commission-control', title: '代理佣金风控' }
-        ]
-      }
-    ]
-  },
-  {
     id: 'risk-review',
-    title: '5. B端事故问题汇总',
+    title: '4. B端事故问题汇总',
     icon: <AlertTriangle className="w-4 h-4" />
   }
 ];
