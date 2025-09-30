@@ -42,7 +42,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-start">
               <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0 shadow-md">3</div>
               <div>
-                <span className="font-bold text-gray-800 text-base">底层支持：打通Y/B跨站点及B/C端系统链路</span>
+                <span className="font-bold text-gray-800 text-base">基础保障：打通Y/B跨站点及B/C端系统链路</span>
                 <div className="text-sm text-gray-600 mt-2">实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</div>
               </div>
             </div>
