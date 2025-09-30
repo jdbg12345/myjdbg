@@ -431,7 +431,7 @@ export const FKSystemOverview = () => {
                   </div>
                 </div>
                 
-                <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-5 border border-blue-200">
+                <div className="bg-gradient-to-r from-blue-50 to-gray-100 rounded-xl p-5 border border-gray-200">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
                     <span className="text-green-500 mr-2">✅</span>
                     游戏作弊类
