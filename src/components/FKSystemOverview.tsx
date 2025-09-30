@@ -552,7 +552,7 @@ export const FKSystemOverview = () => {
             {/* 佣金审核 */}
             <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
               <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
-                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>佣金审核
+                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>代理佣金审核流程升级
               </h5>
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-5 border border-blue-200">
