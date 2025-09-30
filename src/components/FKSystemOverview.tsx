@@ -207,7 +207,6 @@ export const FKSystemOverview = () => {
         <div className="bg-white rounded-xl p-8 border border-gray-200 shadow-sm">
         
         {/* 玩家风险防控 */}
-        <div className="bg-gray-50 rounded-xl p-12 mb-8 border border-gray-200">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
@@ -459,7 +458,6 @@ export const FKSystemOverview = () => {
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
 
