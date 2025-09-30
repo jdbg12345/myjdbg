@@ -579,7 +579,7 @@ export const FKSystemOverview = () => {
               </div>
             </div>
 
-            {/* 关联网络分析 */}
+            {/* 代理质量分析 */}
             <div className="bg-white rounded p-8 border border-gray-200">
               <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
