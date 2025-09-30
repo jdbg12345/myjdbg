@@ -574,7 +574,7 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-1">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">人工效率低</span>：目前完全依赖人工进行多平台对比，耗时费力，效率极低</span>
+                    <span><span className="font-bold">人工效率低</span>：目前依赖人工进行多平台对比，耗时费力，效率极低</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
