@@ -507,7 +507,7 @@ export const Direction3SystemStrategies = () => {
       <div className="bg-white rounded-xl p-8 mb-8 border border-gray-200 shadow-sm">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
-            <span className="text-white font-bold text-sm">工</span>
+            <span className="text-white font-bold text-sm">2</span>
           </div>
           <h3 className="text-3xl font-bold text-gray-800">风控工具集合</h3>
         </div>
@@ -520,7 +520,7 @@ export const Direction3SystemStrategies = () => {
           <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">关</span>
+                <span className="text-white font-bold text-sm">2.1</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">关联下注工具</h4>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 ml-4 shadow-sm">试运行</span>
@@ -566,7 +566,7 @@ export const Direction3SystemStrategies = () => {
           <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">体</span>
+                <span className="text-white font-bold text-sm">2.2</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">体育打水工具</h4>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 shadow-sm">试运行</span>
@@ -612,7 +612,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-sm">流</span>
+                  <span className="text-white font-bold text-sm">2.3</span>
                 </div>
                 <h4 className="text-2xl font-bold text-gray-800">提款流水工具</h4>
                 <span className="px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 shadow-sm">待开发</span>
