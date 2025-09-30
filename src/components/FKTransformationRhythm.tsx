@@ -78,7 +78,7 @@ export const FKTransformationRhythm = () => {
                   <span className="text-red-600 font-bold text-lg">2</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">优化【内控问题-违规行为】</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">内控问题-违规行为</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
                     存在敏感信息被泄漏、内外串联出款等违规行为；长期以来，在内控上并未真正做到有效治理，甚至形成灰色产业链。
                   </p>
@@ -93,7 +93,7 @@ export const FKTransformationRhythm = () => {
                   <span className="text-red-600 font-bold text-lg">3</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">优化【系统问题-支持不够】</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">系统问题-支持不够</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
                     过去侧重防御，缺防范套利和作弊的策略，缺提效的工具，综合导致员工对系统不信任，只能依赖个人经验，陷入恶性循环。
                   </p>
