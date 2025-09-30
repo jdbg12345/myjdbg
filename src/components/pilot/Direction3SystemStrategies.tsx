@@ -552,6 +552,7 @@ export const Direction3SystemStrategies = () => {
               </div>
               <h4 className="text-2xl font-bold text-gray-800">关联下注工具</h4>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 shadow-sm">试运行</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 shadow-sm">跨站点打通</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
@@ -588,7 +589,52 @@ export const Direction3SystemStrategies = () => {
           </div>
         </div>
 
-        {/* 2. 提款流水工具 */}
+        {/* 2. 体育打水工具 */}
+        <div className="mb-8">
+          <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm">体</span>
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800">体育打水工具</h4>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 shadow-sm">试运行</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
+                <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
+                  核心问题
+                </h4>
+                <div className="text-gray-700 text-sm leading-relaxed space-y-1">
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span><span className="font-bold">人工效率低</span>：目前完全依赖人工进行多平台对比，耗时费力，效率极低</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span><span className="font-bold">无法全覆盖</span>：人工非标操作，无法实现全面及时的覆盖</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
+                  解决策略
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">通过B端百家赔率数据构建体育打水查询工具</p>
+              </div>
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
+                <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
+                  预期收益
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">节省成本，提升效率</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 3. 提款流水工具 */}
         <div className="mb-8">
           <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
             <div className="flex items-center justify-between mb-6">
@@ -612,11 +658,15 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-1">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">系统计算错误</span>：长期以来，系统在审核流水计算中存在多类错误，例如锁定场馆流水重复计算、场馆间流水转移未正确处理等</span>
+                    <span><span className="font-bold">系统计算错误</span>：长期以来，系统在审核流水计算中存在多类错误，例如锁定场馆流水重复计算、场馆红利多计一次提款流水、用户输光后提款流水未自动达标等；这些问题可能导致提款系统因流水计算错误而误拒用户提款</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">人工计算复杂</span>：审核员需要手动计算复杂的流水逻辑，耗时且容易出错，影响审核效率和准确性</span>
+                    <span><span className="font-bold">人工计算错误</span>：由于系统计算流水不可用，风控人员只能被动依赖自己手动计算。但由于规则复杂，实际执行存在较大差异，不仅耗时繁琐，还导致每月约 1 万笔订单因流水计算错误引发出款问题</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span><span className="font-bold">用户体验较差</span>：日常工作中，流水咨询形成冗长的沟通链路（如，用户-客服-运营-风控-运营-客服-用户），消耗大量时间，运行效率极低</span>
                   </div>
                 </div>
               </div>
@@ -625,14 +675,55 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">开发智能流水计算工具，自动处理各种复杂场景下的流水计算，为审核员提供准确的流水分析报告</p>
+                <div className="text-gray-700 text-sm leading-relaxed space-y-2">
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-1 flex-shrink-0">1</div>
+                    <span><span className="font-bold">阶段1-》后端优化</span>：修复系统计算错误，且在后台提供流水查询工具，实现流水自动统一计算，人工只需一键查询</span>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-1 flex-shrink-0">2</div>
+                    <span><span className="font-bold">阶段2-》前端优化</span>：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程</span>
+                  </div>
+                </div>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">流水计算准确率提升至<span className="font-bold text-green-600">99%+</span>，审核效率提升<span className="font-bold text-green-600">40%</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed">每月约5%的错误出款源于此，影响约30+万/月；运行效率提升；用户体验改善</p>
+              </div>
+            </div>
+            
+            {/* 调研情况表格 */}
+            <div className="mt-8">
+              <h5 className="text-xl font-bold text-gray-800 mb-6">调研情况</h5>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
+                  <thead className="bg-blue-600 text-white">
+                    <tr>
+                      <th className="p-4 text-left font-semibold">平台</th>
+                      <th className="p-4 text-left font-semibold">前端提款流水展示</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      { platform: "开云（KY）", display: "用户无法在前端得知提款所需流水以及已完成流水；后台也无法直接查看，需要人工手动计算" },
+                      { platform: "尊龙凯时（AG）", display: "提款提示：暂未完成流水XX USDT，提款可能被拒绝" },
+                      { platform: "金宝博（188）", display: "提款提示：账户尚未满足流水要求\"；可实时查看\"可提款金额\"和\"未完成流水\"，回传速度极快" },
+                      { platform: "万博（ManbetX）", display: "提款界面直接显示：还需完成 XX元；（并有显示不同场馆流水及剩余差额）" },
+                      { platform: "竞博（IM）", display: "提款界面直接显示：可提现金额" },
+                      { platform: "易游（M6)", display: "提款界面直接显示：还需完成XX元投注额" },
+                      { platform: "雷竞技（Raybet）", display: "提款界面直接提示：需完成XX元投注" },
+                      { platform: "竞技宝（JJB）", display: "提款界面显示：还需XX元流水；流水满足后显示\"可提余额\"与\"账户余额\"" }
+                    ].map((row, index) => (
+                      <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                        <td className="p-4 font-semibold text-blue-600">{row.platform}</td>
+                        <td className="p-4 text-gray-700">{row.display}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
