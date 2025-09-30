@@ -19,7 +19,7 @@ export const Direction3SystemStrategies = () => {
       <div className="bg-white rounded-xl p-8 mb-8 border border-gray-200 shadow-sm">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
-            <span className="text-white font-bold text-sm">1</span>
+            <span className="text-white font-bold text-sm">✅</span>
           </div>
           <h3 className="text-3xl font-bold text-gray-800">系统审核策略</h3>
         </div>
