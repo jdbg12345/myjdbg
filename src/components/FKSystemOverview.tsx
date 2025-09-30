@@ -462,7 +462,6 @@ export const FKSystemOverview = () => {
         </div>
 
         {/* 内控风险监控 */}
-        <div className="bg-gray-50 rounded-xl p-12 mt-8 border border-gray-200">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
@@ -547,11 +546,9 @@ export const FKSystemOverview = () => {
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         {/* 代理风险监控 */}
-        <div className="bg-gray-50 rounded-xl p-12 mt-8 border border-gray-200">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
@@ -608,7 +605,6 @@ export const FKSystemOverview = () => {
               </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
       
