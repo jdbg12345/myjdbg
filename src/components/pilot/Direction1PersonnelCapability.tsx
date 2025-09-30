@@ -240,30 +240,7 @@ export const Direction1PersonnelCapability = () => {
                   
                   <div className="absolute left-20 right-12 h-full flex items-end justify-around pb-0">
                     {[
-                      { name: '(0-30分)', orders: 1800, rejectRate: 5 },
-                      { name: '(31-60分)', orders: 1200, rejectRate: 15 },
-                      { name: '(61-100分)', orders: 600, rejectRate: 35 }
-                    ].map((item, index) => (
-                      <div key={index} className="flex flex-col items-center relative">
-                        <div className="w-16 bg-gradient-to-t from-blue-500 to-blue-400 rounded-t shadow-md" style={{ height: `${(item.orders / 2000) * 200}px` }}></div>
-                        
-                        {/* 风控拒单率点 */}
-                        <div 
-                          className="absolute w-5 h-5 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                          style={{bottom: `${(item.rejectRate / 40) * 200}px`, left: '50%', transform: 'translateX(-50%)'}}
-                        >
-                          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
-                            {item.rejectRate}%
-                          </div>
-                        </div>
-                        
-                        <div className="text-center mt-4">
                           <div className="text-sm text-gray-800 font-semibold whitespace-pre-line">{item.name}</div>
-                          <div className="text-xs text-gray-600 mt-1 font-medium">{item.orders}单</div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </div>
               
