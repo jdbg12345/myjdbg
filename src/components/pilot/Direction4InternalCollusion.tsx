@@ -8,7 +8,7 @@ export const Direction4InternalCollusion = () => {
           <div className="w-16 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
             <span className="text-white font-bold text-sm">方向3</span>
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">内控问题-违规行为</h2>
+          <h2 className="text-3xl font-bold text-gray-800">优化【内控问题-违规行为】</h2>
         </div>
       </div>
 
