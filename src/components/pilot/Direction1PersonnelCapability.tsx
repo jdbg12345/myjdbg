@@ -320,7 +320,7 @@ export const Direction1PersonnelCapability = () => {
             </div>
 
             {/* 错误率对比图表 */}
-           {/* 错误率对比图表 */}
+{/* 错误率对比图表 */}
 <div className="mt-8">
   <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
     <div className="mx-12 h-full relative">
@@ -344,7 +344,7 @@ export const Direction1PersonnelCapability = () => {
           <div className="flex flex-col items-center relative h-full justify-end">
             <div
               className="absolute w-5 h-5 bg-red-500 rounded-full border-2 border-white shadow-lg"
-              style={{ bottom: `${(25 / 30) * 200}px` }}
+              style={{ bottom: `${(25 / 30) * 200}px` }} // 计算调整前 25% 错误率的位置
             >
               <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
                 25%
@@ -359,7 +359,7 @@ export const Direction1PersonnelCapability = () => {
           <div className="flex flex-col items-center relative h-full justify-end">
             <div
               className="absolute w-5 h-5 bg-green-500 rounded-full border-2 border-white shadow-lg"
-              style={{ bottom: `${(8 / 30) * 200}px` }}
+              style={{ bottom: `${(8 / 30) * 200}px` }} // 计算调整后 8% 错误率的位置
             >
               <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
                 8%
@@ -374,9 +374,9 @@ export const Direction1PersonnelCapability = () => {
           <svg className="absolute top-0 left-0 w-full h-full pointer-events-none">
             <line
               x1="20%" // 调整前的X位置
-              y1={`${100 - (25 / 30) * 80}%`} // 调整前的Y位置，25%对应的Y轴位置
+              y1={`${(25 / 30) * 200}`} // 调整前的Y位置，25%对应的Y轴位置
               x2="80%" // 调整后的X位置
-              y2={`${100 - (8 / 30) * 80}%`} // 调整后的Y位置，8%对应的Y轴位置
+              y2={`${(8 / 30) * 200}`} // 调整后的Y位置，8%对应的Y轴位置
               stroke="#10b981"
               strokeWidth="3"
               strokeDasharray="8,4"
@@ -384,14 +384,14 @@ export const Direction1PersonnelCapability = () => {
 
             {/* 箭头 */}
             <polygon
-              points={`${80 - 2}%,${100 - (8 / 30) * 80 - 1}% ${80 + 2}%,${100 - (8 / 30) * 80}% ${80 - 2}%,${100 - (8 / 30) * 80 + 1}%`}
+              points={`${80 - 2}%,${(8 / 30) * 200 - 1}% ${80 + 2}%,${(8 / 30) * 200}% ${80 - 2}%,${(8 / 30) * 200 + 1}%`}
               fill="#10b981"
             />
           </svg>
         </div>
 
         {/* 改善指示 - 放在连线中间 */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{ top: `${100 - ((25 + 8) / 2 / 30) * 80}%` }}>
+        <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{ top: `${(25 + 8) / 2 / 30 * 200}%` }}>
           ↓ 68%
         </div>
       </div>
@@ -412,6 +412,8 @@ export const Direction1PersonnelCapability = () => {
       <span className="text-gray-700 font-medium">改善</span>
     </div>
   </div>
+</div>
+
 
               
               <div className="text-right text-sm text-gray-500 mt-6 font-medium">统计周期：2025-04-01 ~ 2025-06-30</div>
