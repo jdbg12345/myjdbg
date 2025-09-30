@@ -618,6 +618,11 @@ export const Direction3SystemStrategies = () => {
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-1 flex-shrink-0">2</div>
                     <span><span className="font-bold">阶段2-》前端优化</span>：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程</span>
                   </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-1 flex-shrink-0">3</div>
+                    <span><span className="font-bold">阶段3-》前端优化</span>：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程</span>
+                  </div>
                 </div>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
