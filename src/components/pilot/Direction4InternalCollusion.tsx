@@ -68,7 +68,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
                 核心问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">当前会员禁用流程由单人操作完成，缺乏线上分级审批与确认机制，存在高V被误禁，以及问题用户被违规启用的风险。</p>
+              <p className="text-gray-700 text-sm leading-relaxed">当前会员禁用流程由单人操作完成，缺乏线上分级审批机制，存在高V被误禁，及问题用户被违规启用的风险。</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
