@@ -49,8 +49,10 @@ export const FKTransformationRhythm = () => {
             <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
               <AlertTriangle className="w-5 h-5 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-800">核心问题</h2>
-            <span className="text-gray-600 text-lg">问题虽然很多，但已找到路径，逐步解决中</span>
+            <div>
+              <h2 className="text-3xl font-bold text-gray-800">核心问题</h2>
+              <span className="text-gray-600 text-lg">问题虽然很多，但已找到路径，逐步解决中</span>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -109,8 +111,10 @@ export const FKTransformationRhythm = () => {
             <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
               <AlertTriangle className="w-5 h-5 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-800">面对困难</h2>
-            <span className="text-gray-600 text-lg">过程面临的实际挑战和风险较大</span>
+            <div>
+              <h2 className="text-3xl font-bold text-gray-800">面对困难</h2>
+              <span className="text-gray-600 text-lg">过程面临的实际挑战和风险较大</span>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -138,7 +142,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-lg font-bold text-amber-800 mb-3">系统挑战</h4>
                   <p className="text-amber-700 leading-relaxed">
-                    系统处于初期，跨站融合、策略升级等需投入资源，在‘解决当下问题’与‘长期合理性’之间需平衡，短期难显成效，需要韧性。
+                    系统处于初期，跨站融合、策略升级等需投入资源，在'解决当下问题'与'长期合理性'之间需平衡，短期难显成效，需要韧性。
                   </p>
                 </div>
               </div>
@@ -169,10 +173,12 @@ export const FKTransformationRhythm = () => {
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <Target className="w-5 h-5 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-800">核心目标</h2>
-            <span className="text-gray-600 text-lg">
-              构建以系统为核心、人工为辅助的FK防护体系，实现全流程自动化风险识别与控制
-            </span>
+            <div>
+              <h2 className="text-3xl font-bold text-gray-800">核心目标</h2>
+              <span className="text-gray-600 text-lg">
+                构建以系统为核心、人工为辅助的FK防护体系，实现全流程自动化风险识别与控制
+              </span>
+            </div>
           </div>
 
           {/* 核心目标下的三个模块 */}
