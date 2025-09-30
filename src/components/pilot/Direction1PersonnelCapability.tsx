@@ -54,14 +54,6 @@ export const Direction1PersonnelCapability = () => {
             <div className="mt-8">
               <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
                 
-                {/* Y轴标签 */}
-                <div className="absolute left-2 top-1/2 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700">
-                  分配订单数
-                </div>
-                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 rotate-90 text-sm font-semibold text-orange-600">
-                  错误率 (%)
-                </div>
-                
                 <div className="mx-12 h-full relative">
                   {/* Y轴刻度 */}
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
@@ -72,7 +64,7 @@ export const Direction1PersonnelCapability = () => {
                     <span>0</span>
                   </div>
                   
-                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
+                  <div className="absolute left-16 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
                     <span>5%</span>
                     <span>3.75%</span>
                     <span>2.5%</span>
@@ -86,14 +78,14 @@ export const Direction1PersonnelCapability = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-12 right-12 h-full flex items-end justify-around pb-8">
+                  <div className="absolute left-20 right-12 h-full flex items-end justify-around pb-0">
                     {[
                       { name: '外包一审', before: 1200, after: 1050, beforeRate: 4.0, afterRate: 3.0 },
                       { name: '总部一审', before: 850, after: 900, beforeRate: 3.5, afterRate: 2.8 },
                       { name: '总部二审', before: 520, after: 550, beforeRate: 2.2, afterRate: 1.5 }
                     ].map((item, index) => (
                       <div key={index} className="flex flex-col items-center relative">
-                        <div className="flex items-end space-x-1 mb-4">
+                        <div className="flex items-end space-x-1">
                           <div className="relative">
                             <div 
                               className="w-10 bg-gradient-to-t from-blue-500 to-blue-400 rounded-t shadow-md"
@@ -111,7 +103,7 @@ export const Direction1PersonnelCapability = () => {
                         {/* 问题率点 */}
                         <div 
                           className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white shadow-md"
-                          style={{bottom: `${32 + (item.beforeRate / 5) * 200}px`, left: '12px'}}
+                          style={{bottom: `${(item.beforeRate / 5) * 200}px`, left: '12px'}}
                         >
                           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-blue-700 bg-white px-2 py-1 rounded-md shadow-md whitespace-nowrap">
                             {item.beforeRate}%
@@ -120,7 +112,7 @@ export const Direction1PersonnelCapability = () => {
                         
                         <div 
                           className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white shadow-md"
-                          style={{bottom: `${32 + (item.afterRate / 5) * 200}px`, right: '12px'}}
+                          style={{bottom: `${(item.afterRate / 5) * 200}px`, right: '12px'}}
                         >
                           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-green-700 bg-white px-2 py-1 rounded-md shadow-md whitespace-nowrap">
                             {item.afterRate}%
@@ -128,7 +120,7 @@ export const Direction1PersonnelCapability = () => {
                         </div>
                         
                         {/* 底部标签 */}
-                        <div className="text-center">
+                        <div className="text-center mt-4">
                           <div className="text-sm text-gray-800 font-semibold whitespace-nowrap">{item.name}</div>
                           <div className="text-xs text-gray-600 mt-1 font-medium">{item.before}/{item.after}</div>
                         </div>
@@ -137,9 +129,9 @@ export const Direction1PersonnelCapability = () => {
                   </div>
                   
                   {/* 问题率连线 */}
-                  <svg className="absolute left-16 right-16 top-0 bottom-0 pointer-events-none" width="100%" height="100%">
+                  <svg className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none" width="100%" height="100%">
                     <path
-                      d={`M 16.67% ${100 - (4.0 / 5) * 60}% L 50% ${100 - (3.5 / 5) * 60}% L 83.33% ${100 - (2.2 / 5) * 60}%`}
+                      d={`M 16.67% ${100 - (4.0 / 5) * 80}% L 50% ${100 - (3.5 / 5) * 80}% L 83.33% ${100 - (2.2 / 5) * 80}%`}
                       stroke="#3B82F6"
                       strokeWidth="3"
                       fill="none"
@@ -147,7 +139,7 @@ export const Direction1PersonnelCapability = () => {
                       opacity="0.8"
                     />
                     <path
-                      d={`M 16.67% ${100 - (3.0 / 5) * 60}% L 50% ${100 - (2.8 / 5) * 60}% L 83.33% ${100 - (1.5 / 5) * 60}%`}
+                      d={`M 16.67% ${100 - (3.0 / 5) * 80}% L 50% ${100 - (2.8 / 5) * 80}% L 83.33% ${100 - (1.5 / 5) * 80}%`}
                       stroke="#10B981"
                       strokeWidth="3"
                       fill="none"
@@ -230,43 +222,9 @@ export const Direction1PersonnelCapability = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-12 right-12 h-full flex items-end justify-around pb-8">
-                    {[
-                      { name: '低风险\n(0-30分)', orders: 1800, rejectRate: 5 },
-                      { name: '中风险\n(31-60分)', orders: 1200, rejectRate: 15 },
-                      { name: '高风险\n(61-100分)', orders: 600, rejectRate: 35 }
-                    ].map((item, index) => (
-                      <div key={index} className="flex flex-col items-center relative">
-                        <div className="w-16 bg-gradient-to-t from-blue-500 to-blue-400 rounded-t shadow-md" style={{ height: `${(item.orders / 2000) * 250}px` }}></div>
-                        
-                        {/* 风控拒单率点 */}
-                        <div 
-                          className="absolute w-5 h-5 bg-orange-500 rounded-full border-2 border-white shadow-lg"
-                          style={{top: `${100 - (item.rejectRate / 40) * 70 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
-                        >
-                          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
-                            {item.rejectRate}%
-                          </div>
-                        </div>
-                        
-                        <div className="text-center mt-4">
-                          <div className="text-sm text-gray-800 font-semibold whitespace-pre-line">{item.name}</div>
-                          <div className="text-xs text-gray-600 mt-1 font-medium">{item.orders}单</div>
-                        </div>
-                      </div>
-                    ))}
+                  <div className="absolute left-12 right-12 h-full flex items-center justify-center">
+                    <div className="text-gray-500 text-lg">云盾分数订单分布图表</div>
                   </div>
-                </div>
-              </div>
-              
-              <div className="flex justify-center space-x-8 text-sm">
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-gradient-to-r from-blue-500 to-blue-400 rounded shadow-sm"></div>
-                  <span className="text-gray-700 font-medium">订单数量</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-orange-500 rounded-full shadow-sm"></div>
-                  <span className="text-gray-700 font-medium">风控拒单率</span>
                 </div>
               </div>
               
@@ -315,64 +273,74 @@ export const Direction1PersonnelCapability = () => {
             <div className="mt-8">
               <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
                 <div className="mx-12 h-full relative">
+                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
+                    <span>30%</span>
+                    <span>22.5%</span>
+                    <span>15%</span>
+                    <span>7.5%</span>
+                    <span>0%</span>
+                  </div>
+                  
                   <div className="absolute left-12 right-12 h-full">
                     {[0, 25, 50, 75, 100].map((percent) => (
                       <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
                     ))}
                   </div>
                   
-                  <div className="absolute left-12 right-12 h-full flex items-center justify-center">
-                    <div className="flex items-center space-x-48">
+                  <div className="absolute left-20 right-12 h-full flex items-end justify-center pb-0">
+                    <div className="flex items-center space-x-48 h-full relative">
                       {/* 调整前 */}
-                      <div className="flex flex-col items-center relative">
+                      <div className="flex flex-col items-center relative h-full justify-end">
                         <div 
                           className="absolute w-5 h-5 bg-red-500 rounded-full border-2 border-white shadow-lg"
-                          style={{top: '40%'}}
+                          style={{bottom: `${(25 / 30) * 200}px`}}
                         >
                           <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
                             25%
                           </div>
                         </div>
-                        
-                       
+                        <div className="text-center mt-4">
+                          <div className="text-sm text-gray-800 font-semibold">调整前</div>
+                        </div>
                       </div>
 
                       {/* 调整后 */}
-                      <div className="flex flex-col items-center relative">
+                      <div className="flex flex-col items-center relative h-full justify-end">
                         <div 
                           className="absolute w-5 h-5 bg-green-500 rounded-full border-2 border-white shadow-lg"
-                          style={{top: '60%'}}
+                          style={{bottom: `${(8 / 30) * 200}px`}}
                         >
                           <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
                             8%
                           </div>
                         </div>
-                        
-                      
+                        <div className="text-center mt-4">
+                          <div className="text-sm text-gray-800 font-semibold">调整后</div>
+                        </div>
                       </div>
+                      
+                      {/* 连接线显示下降趋势 */}
+                      <svg className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                        <line
+                          x1="25%"
+                          y1={`${100 - (25 / 30) * 80}%`}
+                          x2="75%"
+                          y2={`${100 - (8 / 30) * 80}%`}
+                          stroke="#10b981"
+                          strokeWidth="3"
+                          strokeDasharray="8,4"
+                        />
+                        
+                        {/* 箭头 */}
+                        <polygon
+                          points={`${75 - 2}%,${100 - (8 / 30) * 80 - 1}% ${75 + 2}%,${100 - (8 / 30) * 80}% ${75 - 2}%,${100 - (8 / 30) * 80 + 1}%`}
+                          fill="#10b981"
+                        />
+                      </svg>
                     </div>
                     
-                    {/* 连接线显示下降趋势 - 连接两个数据点 */}
-                    <line
-                      x1="25%"
-                      y1="40%"
-                      x2="75%"
-                      y2="60%"
-                      stroke="#10b981"
-                      strokeWidth="3"
-                      strokeDasharray="8,4"
-                      className="absolute"
-                    />
-                    
-                    {/* 箭头 */}
-                    <polygon
-                      points="75%,58% 77%,60% 75%,62%"
-                      fill="#10b981"
-                      className="absolute"
-                    />
-                    
                     {/* 改善指示 - 放在连线中间 */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md">
+                    <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{top: `${100 - ((25 + 8) / 2 / 30) * 80}%`}}>
                       ↓ 68% 改善
                     </div>
                   </div>
