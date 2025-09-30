@@ -207,7 +207,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">风控体系由人工向系统过渡最重要的底层基础</p>
+                <p className="text-gray-700 text-sm leading-relaxed">风控体系是从「人工驱动」向「系统驱动」转变的最核心基础</p>
               </div>
             </div>
 
