@@ -26,16 +26,16 @@ export const FKSystemOverview = () => {
       {/* FK流程变化 */}
       <div className="mb-16">
         <div className="flex items-center space-x-4 mb-8">
-          <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
-            <BarChart3 className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
+            <BarChart3 className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h2 className="text-3xl font-bold text-gray-800">FK流程变化</h2>
-            <span className="text-gray-600 text-base">单人可出款 → 出款监控（+6） + 内控抽检（+7），想违规出款，会非常难且风险大，有效防内外串联</span>
+            <h2 className="text-3xl font-bold text-gray-900">FK流程变化</h2>
+            <span className="text-gray-700 text-xl">单人可出款 → 出款监控（+6） + 内控抽检（+7），想违规出款，会非常难且风险大，有效防内外串联</span>
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-10 border border-gray-200 shadow-lg">
+        <div className="bg-gray-50 rounded p-10 border-2 border-gray-200">
           <div className="flex justify-center p-4">
             <svg viewBox="0 0 1600 550" className="w-full max-w-7xl h-[600px]">
               <defs>
@@ -195,37 +195,35 @@ export const FKSystemOverview = () => {
       {/* FK能力变化 */}
       <div className="mb-8">
         <div className="flex items-center space-x-4 mb-8">
-          <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
-            <Shield className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
+            <Shield className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h2 className="text-3xl font-bold text-gray-800">FK能力变化</h2>
-            <span className="text-gray-600 text-base">会员侧：防御型策略 → 多维度策略（防御 + 套利 + 作弊），既降低系统直接出款错误风险，又给审核给予强提醒支持；内控侧：增强违规管控能力</span>
+            <h2 className="text-3xl font-bold text-gray-900">FK能力变化</h2>
+            <span className="text-gray-700 text-xl">会员侧：防御型策略 → 多维度策略（防御 + 套利 + 作弊），既降低系统直接出款错误风险，又给审核给予强提醒支持；内控侧：增强违规管控能力</span>
           </div>
         </div>
-        
-        <div className="bg-white rounded-xl p-8 border border-gray-200 shadow-sm">
+
+        <div className="bg-white rounded p-8 border-2 border-gray-200">
         
         {/* 玩家风险防控 */}
-          <div className="flex items-center justify-between mb-8">
+          <div className="bg-blue-50 rounded p-6 border-l-4 border-blue-600 mb-12">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
-                <Users className="w-8 h-8 text-white" />
+              <div className="w-12 h-12 rounded bg-blue-600 flex items-center justify-center">
+                <Users className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-gray-800">玩家风险防控能力变化</h4>
-                <div className="flex items-center space-x-6">
-                  <div className="text-base font-semibold text-blue-600">主要资源在这个方向，变化比较大，持续落地中</div>                 
-                </div>
+                <h4 className="text-2xl font-bold text-gray-900">玩家风险防控能力变化</h4>
+                <div className="text-lg font-semibold text-gray-700">主要资源在这个方向，变化比较大，持续落地中</div>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
             {/* 防御型规则 */}
-            <div className="bg-white rounded-xl p-8">
-              <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
-                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>防御型规则
+            <div className="bg-white rounded p-8 border border-gray-200">
+              <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>防御型规则
               </h5>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
@@ -342,9 +340,9 @@ export const FKSystemOverview = () => {
             </div>
 
             {/* 套利型规则 */}
-            <div className="bg-white rounded-xl p-8">
-              <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
-                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>套利型规则
+            <div className="bg-white rounded p-8 border border-gray-200">
+              <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>套利型规则
               </h5>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
@@ -462,25 +460,23 @@ export const FKSystemOverview = () => {
         </div>
 
         {/* 内控风险监控 */}
-          <div className="flex items-center justify-between mb-8">
+          <div className="bg-blue-50 rounded p-6 border-l-4 border-blue-600 mb-12">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
-                <Shield className="w-8 h-8 text-white" />
+              <div className="w-12 h-12 rounded bg-blue-600 flex items-center justify-center">
+                <Shield className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-gray-800">内控风险监控能力变化</h4>
-                <div className="flex items-center space-x-6">
-                  <div className="text-base font-semibold text-blue-600">在以下高危场景进行优化升级</div>                  
-                </div>
+                <h4 className="text-2xl font-bold text-gray-900">内控风险监控能力变化</h4>
+                <div className="text-lg font-semibold text-gray-700">在以下高危场景进行优化升级</div>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* 防御型规则 */}
-            <div className="bg-white rounded-xl p-8">
-              <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
-                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+            {/* 信息安全 */}
+            <div className="bg-white rounded p-8 border border-gray-200">
+              <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 信息安全
               </h5>
               <div className="space-y-4">
@@ -513,9 +509,9 @@ export const FKSystemOverview = () => {
             </div>
 
             {/* 违规操作 */}
-            <div className="bg-white rounded-xl p-8">
-              <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
-                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>
+            <div className="bg-white rounded p-8 border border-gray-200">
+              <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 违规操作
               </h5>
               <div className="space-y-4">
@@ -549,25 +545,23 @@ export const FKSystemOverview = () => {
         </div>
 
         {/* 代理风险监控 */}
-          <div className="flex items-center justify-between mb-8">
+          <div className="bg-blue-50 rounded p-6 border-l-4 border-blue-600 mb-12">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
-                <Shield className="w-8 h-8 text-white" />
+              <div className="w-12 h-12 rounded bg-blue-600 flex items-center justify-center">
+                <Shield className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-gray-800">代理风险监控能力变化</h4>
-                <div className="flex items-center space-x-6">
-                  <div className="text-base font-semibold text-blue-600">Q3在这个方向的投入资源较少，Q4会作为主要方向升级</div>                  
-                </div>
+                <h4 className="text-2xl font-bold text-gray-900">代理风险监控能力变化</h4>
+                <div className="text-lg font-semibold text-gray-700">Q3在这个方向的投入资源较少，Q4会作为主要方向升级</div>
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* 佣金审核 */}
-            <div className="bg-white rounded-xl p-8">
-              <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
-                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>
+            <div className="bg-white rounded p-8 border border-gray-200">
+              <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 代理佣金审核流程升级
               </h5>
               <div className="space-y-4">
@@ -586,9 +580,9 @@ export const FKSystemOverview = () => {
             </div>
 
             {/* 关联网络分析 */}
-            <div className="bg-white rounded-xl p-8">
-              <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
-                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>
+            <div className="bg-white rounded p-8 border border-gray-200">
+              <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 代理质量自动化分析
               </h5>
               <div className="space-y-4">

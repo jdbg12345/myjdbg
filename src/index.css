@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Disable all animations and transitions */
+* {
+  animation: none !important;
+  transition: none !important;
+}
+
 /* Print styles for PDF export */
 @media print {
   /* Ensure all content is visible */
@@ -13,57 +19,57 @@
     overflow: visible !important;
     background-color: inherit !important;
   }
-  
+
   /* Remove any potential hiding of content */
   .hidden {
     display: block !important;
   }
-  
+
   /* Only convert fixed positioned elements to static, keep absolute for charts */
   .fixed {
     position: static !important;
   }
-  
+
   /* Remove box shadows that can cause rendering issues in PDF */
   .shadow, .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl, .shadow-2xl {
     box-shadow: none !important;
     border: 1px solid #eee !important;
   }
-  
+
   /* Ensure proper page breaks */
   .page-break-before {
     page-break-before: always;
   }
-  
+
   .page-break-after {
     page-break-after: always;
   }
-  
+
   .page-break-inside-avoid {
     page-break-inside: avoid;
   }
-  
+
   /* Ensure tables don't break across pages poorly */
   table {
     page-break-inside: avoid;
   }
-  
+
   /* Ensure charts and complex elements are visible */
   svg, canvas {
     max-width: 100% !important;
     height: auto !important;
   }
-  
+
   /* Ensure navigation sidebar doesn't interfere */
   .xl\:block {
     display: none !important;
   }
-  
+
   /* Adjust margins for print */
   .p-16 {
     padding: 2rem !important;
   }
-  
+
   /* Ensure proper spacing between sections */
   .mb-10 {
     margin-bottom: 1rem !important;
