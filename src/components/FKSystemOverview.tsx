@@ -36,9 +36,8 @@ export const FKSystemOverview = () => {
         </div>
 
         <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-10 border border-gray-200 shadow-lg">
-        <div className="bg-gray-100 rounded-xl p-10 border border-gray-200">
-          <div className="flex justify-center">
-            <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[500px]">
+          <div className="flex justify-center p-4">
+            <svg viewBox="0 0 1600 550" className="w-full max-w-7xl h-[600px]">
               <defs>
                 <marker id="arrowhead-gray" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto">
                   <polygon points="0 0, 12 4, 0 8" fill="#6b7280" />
@@ -191,7 +190,6 @@ export const FKSystemOverview = () => {
             </svg>
           </div>
         </div>
-        </div>
       </div>
 
       {/* FK能力变化 */}
@@ -209,7 +207,7 @@ export const FKSystemOverview = () => {
         <div className="bg-white rounded-xl p-8 border border-gray-200 shadow-sm">
         
         {/* 玩家风险防控 */}
-        <div className="bg-gray-50 rounded-xl p-8 mb-8 border border-gray-200">
+        <div className="bg-gray-50 rounded-xl p-12 mb-8 border border-gray-200">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
@@ -226,46 +224,46 @@ export const FKSystemOverview = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* 防御型规则 */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-white rounded-xl p-8">
               <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
                 <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>防御型规则
               </h5>
               <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
                     <span className="text-green-500 mr-2">✅</span>
                     账户安全类
                   </h6>
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">敏感信息变更</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">帐变记录异常</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">睡眠账号激活</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">提款环境异常</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">租卖帐号异常</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
@@ -275,34 +273,34 @@ export const FKSystemOverview = () => {
                   </div>
                 </div>
 
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
                     <span className="text-green-500 mr-2">✅</span>
                     盈利监控类
                   </h6>
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">高盈利金额</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">高盈利倍数</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">大额类提款</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">长期在盈利</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
@@ -312,27 +310,27 @@ export const FKSystemOverview = () => {
                   </div>
                 </div>
                 
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
                     <span className="text-green-500 mr-2">✅</span>
                     内控监控类
                   </h6>
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-4">
+                    <div className="bg-white rounded-lg p-5">
                       <div className="font-bold text-gray-800 text-base mb-2">前几次提款需要人工</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-4">
+                    <div className="bg-white rounded-lg p-5">
                       <div className="font-bold text-gray-800 text-base mb-2">多次不经过人工</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-4">
+                    <div className="bg-white rounded-lg p-5">
                       <div className="font-bold text-gray-800 text-base mb-2">特殊上分类型</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
@@ -345,53 +343,53 @@ export const FKSystemOverview = () => {
             </div>
 
             {/* 套利型规则 */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-white rounded-xl p-8">
               <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
                 <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>套利型规则
               </h5>
               <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
                     <span className="text-green-500 mr-2">✅</span>
                     游戏套利类
                   </h6>
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">电子套利</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">真人套利</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">体育套利</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">棋牌套利</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">彩票套利</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">电竞套利</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-500">方案中</span></span>
@@ -401,27 +399,27 @@ export const FKSystemOverview = () => {
                   </div>
                 </div>
 
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
                     <span className="text-green-500 mr-2">✅</span>
                     红利活动类
                   </h6>
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">活动金额</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">活动比例</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">活动类型</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
@@ -431,27 +429,27 @@ export const FKSystemOverview = () => {
                   </div>
                 </div>
                 
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
                     <span className="text-green-500 mr-2">✅</span>
                     游戏作弊类
                   </h6>
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">机器下注</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">算牌下注</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">场馆多钱</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
@@ -466,7 +464,7 @@ export const FKSystemOverview = () => {
         </div>
 
         {/* 内控风险监控 */}
-        <div className="bg-gray-50 rounded-xl p-8 mt-8 border border-gray-200">
+        <div className="bg-gray-50 rounded-xl p-12 mt-8 border border-gray-200">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
@@ -483,29 +481,29 @@ export const FKSystemOverview = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* 防御型规则 */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-white rounded-xl p-8">
               <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
                 <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>
                 信息安全
               </h5>
               <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">风控标签和备注独立权限</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">敏感信息支持密文查询</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">风控策略参数动态调整</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
@@ -518,29 +516,29 @@ export const FKSystemOverview = () => {
             </div>
 
             {/* 违规操作 */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-white rounded-xl p-8">
               <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
                 <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>
                 违规操作
               </h5>
               <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">出款必须看标签和备注</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">会员启禁用流程升级</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">高危参数修改预警监控</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
@@ -555,7 +553,7 @@ export const FKSystemOverview = () => {
         </div>
 
         {/* 代理风险监控 */}
-        <div className="bg-gray-50 rounded-xl p-8 mt-8 border border-gray-200">
+        <div className="bg-gray-50 rounded-xl p-12 mt-8 border border-gray-200">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg">
@@ -572,15 +570,15 @@ export const FKSystemOverview = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* 佣金审核 */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-white rounded-xl p-8">
               <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
                 <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>
                 代理佣金审核流程升级
               </h5>
               <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-500">方案中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
@@ -593,15 +591,15 @@ export const FKSystemOverview = () => {
             </div>
 
             {/* 关联网络分析 */}
-            <div className="bg-white rounded-xl p-6">
+            <div className="bg-white rounded-xl p-8">
               <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
                 <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>
                 代理质量自动化分析
               </h5>
               <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-3">
+                    <div className="bg-white rounded-lg p-4">
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-500">方案中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
