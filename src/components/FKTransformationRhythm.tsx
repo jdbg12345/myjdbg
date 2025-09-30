@@ -114,7 +114,7 @@ export const FKTransformationRhythm = () => {
             <h2 className="text-3xl font-bold text-gray-900">面对困难</h2>
           </div>
           <div className="mb-8">
-            <span className="text-gray-700 text-xl">过程面临的实际挑战和风险较大</span>
+            <span className="text-gray-700 text-xl">推进过程中，人力、系统与风险管理都面临较大挑战</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
