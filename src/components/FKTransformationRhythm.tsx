@@ -52,7 +52,7 @@ export const FKTransformationRhythm = () => {
             <h2 className="text-3xl font-bold text-gray-900">核心问题</h2>
           </div>
           <div className="mb-8">
-            <span className="text-gray-700 text-xl">问题虽然很多，但已找到路径，逐步解决中</span>
+            <span className="text-gray-700 text-xl">问题虽多，但已逐步明确解决路径，并按计划有序推进</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
