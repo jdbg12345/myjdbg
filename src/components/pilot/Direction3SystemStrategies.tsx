@@ -630,7 +630,7 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-1">
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span><span className="font-bold">系统计算错误</span>：长期以来，系统在审核流水计算中存在多类错误，例如锁定场馆流水重复计算、场馆红利多计一次提款流水、用户输光后提款流水未自动达标等；这些问题可能导致提款系统因流水计算错误而误拒用户提款</span>
+                    <span><span className="font-bold">系统计算错误</span>：长期以来，系统在审核流水计算中存在多类错误，如锁定场馆流水重复计算、场馆红利多计一次提款流水、用户输光后流水未自动达标等；这些问题导致因流水计算错误而误拒用户提款</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
