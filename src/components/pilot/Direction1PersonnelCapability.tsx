@@ -240,7 +240,39 @@ export const Direction1PersonnelCapability = () => {
                   
                   <div className="absolute left-20 right-12 h-full flex items-end justify-around pb-0">
                     {[
+                      { name: '0-20分\n(低风险)', count: 1800, rate: 5 },
+                      { name: '21-40分\n(中低风险)', count: 1200, rate: 12 },
+                      { name: '41-60分\n(中风险)', count: 800, rate: 25 },
+                      { name: '61-80分\n(中高风险)', count: 400, rate: 35 },
+                      { name: '81-100分\n(高风险)', count: 200, rate: 40 }
+                    ].map((item, index) => (
+                      <div key={index} className="flex flex-col items-center relative">
+                        <div className="flex items-end space-x-1">
+                          <div className="relative">
+                            <div 
+                              className="w-12 bg-gradient-to-t from-blue-500 to-blue-400 rounded-t shadow-md"
+                              style={{ height: `${(item.count / 2000) * 250}px` }}
+                            ></div>
+                          </div>
+                        </div>
+                        
+                        {/* 风控拒单率点 */}
+                        <div 
+                          className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-md"
+                          style={{bottom: `${(item.rate / 40) * 250}px`, left: '50%', transform: 'translateX(-50%)'}}
+                        >
+                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-orange-700 bg-white px-2 py-1 rounded-md shadow-md whitespace-nowrap">
+                            {item.rate}%
+                          </div>
+                        </div>
+                        
+                        {/* 底部标签 */}
+                        <div className="text-center mt-4">
                           <div className="text-sm text-gray-800 font-semibold whitespace-pre-line">{item.name}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
               
@@ -389,7 +421,6 @@ export const Direction1PersonnelCapability = () => {
       <span className="text-gray-700 font-medium">改善</span>
     </div>
   </div>
-
 
               
               <div className="text-right text-sm text-gray-500 mt-6 font-medium">统计周期：2025-04-01 ~ 2025-06-30</div>
