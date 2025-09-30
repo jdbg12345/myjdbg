@@ -127,7 +127,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">人员挑战</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    依赖个人经验，稳定性差；小圈子文化，员工不愿分享经验，人才培养困难；内外串联等风险事件仍时有发生。
+                    依赖个人经验，稳定性差；小圈子文化，员工不愿分享经验，人才培养困难；内外串联等风险事件仍时有发生
                   </p>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">系统挑战</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    系统处于初级，底层升级、跨站融合、策略升级等需投入资源和时间，不仅难度大，短期难显成效，需要足够的韧性。
+                    系统处于初级，底层升级、跨站融合、策略升级等需投入资源和时间，不仅难度大，短期难显成效，需要足够的韧性
                   </p>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">风险挑战</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    涉及多部门且任何策略流程调整（即使改正过往错误做法），都影响会员体验、代理收益和业务稳定，存在风险。
+                    涉及多部门且任何策略流程调整（即使改正过往错误做法），都影响会员体验、代理收益和业务稳定，存在风险
                   </p>
                 </div>
               </div>
