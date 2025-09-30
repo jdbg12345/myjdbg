@@ -656,7 +656,7 @@ export const Direction3SystemStrategies = () => {
                       { platform: "雷竞技（Raybet）", display: "提款界面直接提示：需完成XX元投注" },
                       { platform: "竞技宝（JJB）", display: "提款界面显示：还需XX元流水；流水满足后显示\"可提余额\"与\"账户余额\"" }
                     ].map((row, index) => (
-                      <tr key={index} className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${row.highlight ? 'bg-yellow-50' : ''}`}>
+                      <tr key={index} className={`border-b border-gray-100 ${row.highlight ? 'bg-yellow-50' : 'hover:bg-gray-50 transition-colors'}`}>
                         <td className={`p-4 font-semibold ${row.highlight ? 'text-yellow-700' : 'text-blue-600'}`}>{row.platform}</td>
                         <td className={`p-4 ${row.highlight ? 'text-yellow-700 font-semibold' : 'text-gray-700'}`}>{row.display}</td>
                       </tr>
