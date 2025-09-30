@@ -329,7 +329,7 @@ export const Direction1PersonnelCapability = () => {
             </div>
 
             {/* 错误率对比图表 */}
-            {/* 错误率对比图表 */}
+          {/* 错误率对比图表 */}
 <div className="mt-8">
   <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
     <div className="mx-12 h-full relative">
@@ -340,20 +340,20 @@ export const Direction1PersonnelCapability = () => {
         <span>7.5%</span>
         <span>0%</span>
       </div>
-      
+
       <div className="absolute left-12 right-12 h-full">
         {[0, 25, 50, 75, 100].map((percent) => (
-          <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
+          <div key={percent} className="absolute w-full border-t border-gray-300" style={{ bottom: `${percent}%` }}></div>
         ))}
       </div>
-      
+
       <div className="absolute left-20 right-12 h-full flex items-end justify-center pb-0">
         <div className="flex items-center space-x-48 h-full relative">
           {/* 调整前 */}
           <div className="flex flex-col items-center relative h-full justify-end">
-            <div 
+            <div
               className="absolute w-5 h-5 bg-red-500 rounded-full border-2 border-white shadow-lg"
-              style={{bottom: `${(25 / 30) * 200}px`}}
+              style={{ bottom: `${(75 / 100) * 80}px` }} // 计算调整前 25% 错误率的位置
             >
               <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
                 25%
@@ -366,9 +366,9 @@ export const Direction1PersonnelCapability = () => {
 
           {/* 调整后 */}
           <div className="flex flex-col items-center relative h-full justify-end">
-            <div 
+            <div
               className="absolute w-5 h-5 bg-green-500 rounded-full border-2 border-white shadow-lg"
-              style={{bottom: `${(8 / 30) * 200}px`}}
+              style={{ bottom: `${(92 / 100) * 80}px` }} // 计算调整后 8% 错误率的位置
             >
               <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
                 8%
@@ -378,35 +378,16 @@ export const Direction1PersonnelCapability = () => {
               <div className="text-sm text-gray-800 font-semibold">调整后</div>
             </div>
           </div>
-          
-          {/* 连接线显示下降趋势 - 修复后的坐标 */}
-          <svg className="absolute top-0 left-0 w-full h-full pointer-events-none">
-            <line
-              x1="25%"
-              y1={`${100 - (25 / 30) * 100}%`}
-              x2="75%"
-              y2={`${100 - (8 / 30) * 100}%`}
-              stroke="#10b981"
-              strokeWidth="3"
-              strokeDasharray="8,4"
-            />
-            
-            {/* 箭头 */}
-            <polygon
-              points={`${75 - 1.5}%,${100 - (8 / 30) * 100 - 0.8}% ${75 + 1.5}%,${100 - (8 / 30) * 100}% ${75 - 1.5}%,${100 - (8 / 30) * 100 + 0.8}%`}
-              fill="#10b981"
-            />
-          </svg>
         </div>
-        
+
         {/* 改善指示 - 放在连线中间 */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{top: `${100 - ((25 + 8) / 2 / 30) * 100}%`}}>
+        <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{ top: `${((75 + 92) / 2) / 100 * 80}%` }}>
           ↓ 68%
         </div>
       </div>
     </div>
   </div>
-  
+
   <div className="flex justify-center space-x-8 text-sm">
     <div className="flex items-center space-x-2">
       <div className="w-4 h-4 bg-red-500 rounded-full shadow-sm"></div>
@@ -421,6 +402,7 @@ export const Direction1PersonnelCapability = () => {
       <span className="text-gray-700 font-medium">改善</span>
     </div>
   </div>
+
 
               
               <div className="text-right text-sm text-gray-500 mt-6 font-medium">统计周期：2025-04-01 ~ 2025-06-30</div>
