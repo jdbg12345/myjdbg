@@ -192,7 +192,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">对人的依赖要越来越低</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    持续迭代套利与作弊识别模型，不断优化策略效果；当系统准确率与效率超过人工时，对人的依赖将显著降低，不仅实现降本增效，也提升了应对极端情况的能力
+                    持续迭代套利与作弊识别模型，不断完善风控流程；当系统准确率与效率超过人工时，对人的依赖将显著降低，不仅实现降本增效，也提升了应对极端情况的能力
                   </p>
                 </div>
               </div>
@@ -207,7 +207,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">提供丰富的风控工具库</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    将风控中高频操作、费时费力的场景，通过提供关联工具、对打工具、流水工具等工具集，实现技能熟练度提升，提高效率和准确性，同时帮助新人快速上手。
+                    将风控中的高频操作、费时费力的场景，通过提供关联工具、对打工具、流水工具等工具集，实现技能熟练度提升，提高效率和准确性，同时帮助新人快速上手。
                   </p>
                 </div>
               </div>
