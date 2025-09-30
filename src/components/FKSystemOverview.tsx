@@ -249,14 +249,14 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                       <div className="font-bold text-gray-800 text-base mb-2">睡眠账号激活</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-blue-600">已上线</span></span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-blue-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs">新增</span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                       <div className="font-bold text-gray-800 text-base mb-2">提款环境异常</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-blue-600">已上线</span></span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-blue-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs">新增</span>
                       </div>
                     </div>
@@ -308,7 +308,7 @@ export const FKSystemOverview = () => {
                   <h6 className="font-bold text-gray-800 mb-4 text-lg">内控监控类</h6>
                   <div className="space-y-2">
                     <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                      <div className="font-bold text-gray-800 text-base mb-2">前几次提款</div>
+                      <div className="font-bold text-gray-800 text-base mb-2">前几次提款需要人工</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-yellow-600">开发中</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-semibold text-xs">增强</span>
