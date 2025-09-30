@@ -239,7 +239,7 @@ export const Direction3SystemStrategies = () => {
               </div>
               <h4 className="text-2xl font-bold text-gray-800">体育策略</h4>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-600 shadow-sm">开发中</span>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4 shadow-sm">突破：B/C端系统打通，解决操作实效性、无法跨商户、风控无联动等关键问题</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4 shadow-sm">突破：B/C端系统打通，解决实效性极差、无法跨商户、风控无联动等关键问题</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
@@ -248,7 +248,7 @@ export const Direction3SystemStrategies = () => {
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">通过联动 B 端系统，引入百家赔、危险球等关键外部数据，构建针对性的特征识别策略，实现对异常行为更高时效的预警与拦截，全面提升对体育类套利与作弊行为的识别与防控能力。</p>
+                <p className="text-gray-700 text-xs leading-relaxed">通过联动B端系统，引入百家赔、危险球等关键外部数据，构建针对性的特征识别策略，实现对异常行为更高时效的预警与拦截，全面提升对体育类套利与作弊行为的识别与防控能力。</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
