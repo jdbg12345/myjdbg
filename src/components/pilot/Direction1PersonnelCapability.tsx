@@ -256,7 +256,7 @@ export const Direction1PersonnelCapability = () => {
                           </div>
                         </div>
                         
-                        {/* 风控拒单率点 */}
+                        {/* 被风控率点 */}
                         <div 
                           className="absolute w-4 h-4 bg-orange-500 rounded-full border-2 border-white shadow-md"
                           style={{bottom: `${(item.rate / 40) * 250}px`, left: '50%', transform: 'translateX(-50%)'}}
@@ -283,7 +283,7 @@ export const Direction1PersonnelCapability = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-orange-500 rounded-full shadow-sm"></div>
-                  <span className="text-gray-700 font-medium">风控拒单率</span>
+                  <span className="text-gray-700 font-medium">被风控率</span>
                 </div>
               </div>
               
