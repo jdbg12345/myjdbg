@@ -320,97 +320,99 @@ export const Direction1PersonnelCapability = () => {
             </div>
 
             {/* 错误率对比图表 */}
-            <div className="mt-8">
-              <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
-                <div className="mx-12 h-full relative">
-                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
-                    <span>30%</span>
-                    <span>22.5%</span>
-                    <span>15%</span>
-                    <span>7.5%</span>
-                    <span>0%</span>
-                  </div>
-                  
-                  <div className="absolute left-12 right-12 h-full">
-                    {[0, 25, 50, 75, 100].map((percent) => (
-                      <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
-                    ))}
-                  </div>
-                  
-                  <div className="absolute left-20 right-12 h-full flex items-end justify-center pb-0">
-                    <div className="flex items-center space-x-48 h-full relative">
-                      {/* 调整前 */}
-                      <div className="flex flex-col items-center relative h-full justify-end">
-                        <div 
-                          className="absolute w-5 h-5 bg-red-500 rounded-full border-2 border-white shadow-lg"
-                          style={{bottom: `${(25 / 30) * 200}px`}}
-                        >
-                          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
-                            25%
-                          </div>
-                        </div>
-                        <div className="text-center mt-4">
-                          <div className="text-sm text-gray-800 font-semibold">调整前</div>
-                        </div>
-                      </div>
+           {/* 错误率对比图表 */}
+<div className="mt-8">
+  <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
+    <div className="mx-12 h-full relative">
+      <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
+        <span>30%</span>
+        <span>22.5%</span>
+        <span>15%</span>
+        <span>7.5%</span>
+        <span>0%</span>
+      </div>
 
-                      {/* 调整后 */}
-                      <div className="flex flex-col items-center relative h-full justify-end">
-                        <div 
-                          className="absolute w-5 h-5 bg-green-500 rounded-full border-2 border-white shadow-lg"
-                          style={{bottom: `${(8 / 30) * 200}px`}}
-                        >
-                          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
-                            8%
-                          </div>
-                        </div>
-                        <div className="text-center mt-4">
-                          <div className="text-sm text-gray-800 font-semibold">调整后</div>
-                        </div>
-                      </div>
-                      
-                      {/* 连接线显示下降趋势 */}
-                      <svg className="absolute top-0 left-0 w-full h-full pointer-events-none">
-                        <line
-                          x1="20%"
-                          y1={`${100 - (25 / 30) * 80}%`}
-                          x2="80%"
-                          y2={`${100 - (8 / 30) * 80}%`}
-                          stroke="#10b981"
-                          strokeWidth="3"
-                          strokeDasharray="8,4"
-                        />
-                        
-                        {/* 箭头 */}
-                        <polygon
-                          points={`${80 - 2}%,${100 - (8 / 30) * 80 - 1}% ${80 + 2}%,${100 - (8 / 30) * 80}% ${80 - 2}%,${100 - (8 / 30) * 80 + 1}%`}
-                          fill="#10b981"
-                        />
-                      </svg>
-                    </div>
-                    
-                    {/* 改善指示 - 放在连线中间 */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{top: `${100 - ((25 + 8) / 2 / 30) * 80}%`}}>
-                      ↓ 68%
-                    </div>
-                  </div>
-                </div>
+      <div className="absolute left-12 right-12 h-full">
+        {[0, 25, 50, 75, 100].map((percent) => (
+          <div key={percent} className="absolute w-full border-t border-gray-300" style={{ bottom: `${percent}%` }}></div>
+        ))}
+      </div>
+
+      <div className="absolute left-20 right-12 h-full flex items-end justify-center pb-0">
+        <div className="flex items-center space-x-48 h-full relative">
+          {/* 调整前 */}
+          <div className="flex flex-col items-center relative h-full justify-end">
+            <div
+              className="absolute w-5 h-5 bg-red-500 rounded-full border-2 border-white shadow-lg"
+              style={{ bottom: `${(25 / 30) * 200}px` }}
+            >
+              <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
+                25%
               </div>
-              
-              <div className="flex justify-center space-x-8 text-sm">
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-red-500 rounded-full shadow-sm"></div>
-                  <span className="text-gray-700 font-medium">调整前错误率</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-green-500 rounded-full shadow-sm"></div>
-                  <span className="text-gray-700 font-medium">调整后错误率</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-blue-600 rounded shadow-sm"></div>
-                  <span className="text-gray-700 font-medium">改善</span>
-                </div>
+            </div>
+            <div className="text-center mt-4">
+              <div className="text-sm text-gray-800 font-semibold">调整前</div>
+            </div>
+          </div>
+
+          {/* 调整后 */}
+          <div className="flex flex-col items-center relative h-full justify-end">
+            <div
+              className="absolute w-5 h-5 bg-green-500 rounded-full border-2 border-white shadow-lg"
+              style={{ bottom: `${(8 / 30) * 200}px` }}
+            >
+              <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
+                8%
               </div>
+            </div>
+            <div className="text-center mt-4">
+              <div className="text-sm text-gray-800 font-semibold">调整后</div>
+            </div>
+          </div>
+
+          {/* 连接线显示下降趋势 */}
+          <svg className="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <line
+              x1="20%" // 调整前的X位置
+              y1={`${100 - (25 / 30) * 80}%`} // 调整前的Y位置，25%对应的Y轴位置
+              x2="80%" // 调整后的X位置
+              y2={`${100 - (8 / 30) * 80}%`} // 调整后的Y位置，8%对应的Y轴位置
+              stroke="#10b981"
+              strokeWidth="3"
+              strokeDasharray="8,4"
+            />
+
+            {/* 箭头 */}
+            <polygon
+              points={`${80 - 2}%,${100 - (8 / 30) * 80 - 1}% ${80 + 2}%,${100 - (8 / 30) * 80}% ${80 - 2}%,${100 - (8 / 30) * 80 + 1}%`}
+              fill="#10b981"
+            />
+          </svg>
+        </div>
+
+        {/* 改善指示 - 放在连线中间 */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{ top: `${100 - ((25 + 8) / 2 / 30) * 80}%` }}>
+          ↓ 68%
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="flex justify-center space-x-8 text-sm">
+    <div className="flex items-center space-x-2">
+      <div className="w-4 h-4 bg-red-500 rounded-full shadow-sm"></div>
+      <span className="text-gray-700 font-medium">调整前错误率</span>
+    </div>
+    <div className="flex items-center space-x-2">
+      <div className="w-4 h-4 bg-green-500 rounded-full shadow-sm"></div>
+      <span className="text-gray-700 font-medium">调整后错误率</span>
+    </div>
+    <div className="flex items-center space-x-2">
+      <div className="w-4 h-4 bg-blue-600 rounded shadow-sm"></div>
+      <span className="text-gray-700 font-medium">改善</span>
+    </div>
+  </div>
+
               
               <div className="text-right text-sm text-gray-500 mt-6 font-medium">统计周期：2025-04-01 ~ 2025-06-30</div>
             </div>
