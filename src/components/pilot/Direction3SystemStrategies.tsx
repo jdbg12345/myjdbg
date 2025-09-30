@@ -77,30 +77,8 @@ export const Direction3SystemStrategies = () => {
             {/* 电子策略图表 */}
             <div className="mt-8">
               <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
-                <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700">
-                  拦截订单数
-                </div>
-                <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-sm font-semibold text-orange-600">
-                  准确率 (%)
-                </div>
                 
                 <div className="mx-12 h-full relative">
-                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
-                    <span>400</span>
-                    <span>300</span>
-                    <span>200</span>
-                    <span>100</span>
-                    <span>0</span>
-                  </div>
-                  
-                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
-                    <span>100%</span>
-                    <span>75%</span>
-                    <span>50%</span>
-                    <span>25%</span>
-                    <span>0%</span>
-                  </div>
-                  
                   <div className="absolute left-12 right-12 h-full">
                     {[0, 25, 50, 75, 100].map((percent) => (
                       <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
@@ -269,30 +247,8 @@ export const Direction3SystemStrategies = () => {
             {/* 体育策略图表 */}
             <div className="mt-8">
               <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
-                <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700">
-                  拦截订单数
-                </div>
-                <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-sm font-semibold text-orange-600">
-                  准确率 (%)
-                </div>
                 
                 <div className="mx-12 h-full relative">
-                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
-                    <span>400</span>
-                    <span>300</span>
-                    <span>200</span>
-                    <span>100</span>
-                    <span>0</span>
-                  </div>
-                  
-                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
-                    <span>100%</span>
-                    <span>75%</span>
-                    <span>50%</span>
-                    <span>25%</span>
-                    <span>0%</span>
-                  </div>
-                  
                   <div className="absolute left-12 right-12 h-full">
                     {[0, 25, 50, 75, 100].map((percent) => (
                       <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
@@ -461,30 +417,8 @@ export const Direction3SystemStrategies = () => {
             {/* 彩票策略图表 */}
             <div className="mt-8">
               <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
-                <div className="absolute left-2 top-1/3 transform -translate-y-1/2 -rotate-90 text-sm font-semibold text-gray-700">
-                  拦截订单数
-                </div>
-                <div className="absolute right-2 top-2/3 transform -translate-y-1/2 rotate-90 text-sm font-semibold text-orange-600">
-                  准确率 (%)
-                </div>
                 
                 <div className="mx-12 h-full relative">
-                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm font-medium text-gray-600">
-                    <span>300</span>
-                    <span>225</span>
-                    <span>150</span>
-                    <span>75</span>
-                    <span>0</span>
-                  </div>
-                  
-                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
-                    <span>100%</span>
-                    <span>75%</span>
-                    <span>50%</span>
-                    <span>25%</span>
-                    <span>0%</span>
-                  </div>
-                  
                   <div className="absolute left-12 right-12 h-full">
                     {[0, 25, 50, 75, 100].map((percent) => (
                       <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
@@ -551,8 +485,8 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">关</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">关联下注工具</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 shadow-sm">试运行</span>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 shadow-sm">跨站点打通</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 ml-4 shadow-sm">试运行</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4 shadow-sm">跨站点打通</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
@@ -708,7 +642,7 @@ export const Direction3SystemStrategies = () => {
                   </thead>
                   <tbody>
                     {[
-                      { platform: "开云（KY）", display: "用户无法在前端得知提款所需流水以及已完成流水；后台也无法直接查看，需要人工手动计算" },
+                      { platform: "开云（KY）", display: "用户无法在前端得知提款所需流水以及已完成流水；后台也无法直接查看，需要人工手动计算", highlight: true },
                       { platform: "尊龙凯时（AG）", display: "提款提示：暂未完成流水XX USDT，提款可能被拒绝" },
                       { platform: "金宝博（188）", display: "提款提示：账户尚未满足流水要求\"；可实时查看\"可提款金额\"和\"未完成流水\"，回传速度极快" },
                       { platform: "万博（ManbetX）", display: "提款界面直接显示：还需完成 XX元；（并有显示不同场馆流水及剩余差额）" },
@@ -717,9 +651,9 @@ export const Direction3SystemStrategies = () => {
                       { platform: "雷竞技（Raybet）", display: "提款界面直接提示：需完成XX元投注" },
                       { platform: "竞技宝（JJB）", display: "提款界面显示：还需XX元流水；流水满足后显示\"可提余额\"与\"账户余额\"" }
                     ].map((row, index) => (
-                      <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                        <td className="p-4 font-semibold text-blue-600">{row.platform}</td>
-                        <td className="p-4 text-gray-700">{row.display}</td>
+                      <tr key={index} className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${row.highlight ? 'bg-yellow-50' : ''}`}>
+                        <td className={`p-4 font-semibold ${row.highlight ? 'text-yellow-700' : 'text-blue-600'}`}>{row.platform}</td>
+                        <td className={`p-4 ${row.highlight ? 'text-yellow-700 font-semibold' : 'text-gray-700'}`}>{row.display}</td>
                       </tr>
                     ))}
                   </tbody>
