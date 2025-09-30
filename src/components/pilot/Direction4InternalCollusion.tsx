@@ -126,7 +126,7 @@ export const Direction4InternalCollusion = () => {
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">参</span>
+                <span className="text-white font-bold text-sm">3.3</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">敏感高危参数修改监控</h4>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4 shadow-sm">已上线</span>
