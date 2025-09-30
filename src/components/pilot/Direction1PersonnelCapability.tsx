@@ -412,8 +412,6 @@ export const Direction1PersonnelCapability = () => {
       <span className="text-gray-700 font-medium">改善</span>
     </div>
   </div>
-</div>
-
 
               
               <div className="text-right text-sm text-gray-500 mt-6 font-medium">统计周期：2025-04-01 ~ 2025-06-30</div>
