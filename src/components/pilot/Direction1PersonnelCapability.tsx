@@ -224,7 +224,7 @@ export const Direction1PersonnelCapability = () => {
                     <span>0</span>
                   </div>
                   
-                  <div className="absolute left-16 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
+                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
                     <span>40%</span>
                     <span>30%</span>
                     <span>20%</span>
@@ -381,7 +381,7 @@ export const Direction1PersonnelCapability = () => {
         </div>
 
         {/* 改善指示 - 放在连线中间 */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{top: `${100 - ((25 + 8) / 2 / 30) * 80}%`}}>
+        <div className="absolute left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md" style={{top: '40%'}}>
           错误率下降：↓ 68%
         </div>
       </div>
