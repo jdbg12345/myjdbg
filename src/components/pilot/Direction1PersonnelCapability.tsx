@@ -12,7 +12,7 @@ export const Direction1PersonnelCapability = () => {
             <h2 className="text-3xl font-bold text-gray-800">优化【审核问题-质量较差】</h2>
           </div>
           <div className="text-gray-600 text-lg">
-          从系统审核策略、风控工具合集、极端异常预防等三个维度进行优化
+          从派单策略改变、审核流程优化、风险分数调优等三个维度进行优化
         </div>
         </div>
       
