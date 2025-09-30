@@ -315,22 +315,107 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">审核员在处理订单时经常忽略查看会员的风控标签和备注信息，导致重要风险信息被遗漏，增加了错误出款的风险。</p>
+                <p className="text-gray-700 text-sm leading-relaxed">在出款操作中，尽管SOP明确要求查看标签备注，但部分人员仍存在忽视行为，导致出款错误。每月约15–20%的错误出款由此产生，造成约100万+/月的损失。</p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">系统强制要求审核员必须点击查看标签和备注后才能进行出款操作，确保关键信息不被遗漏。</p>
+                <p className="text-gray-700 text-sm leading-relaxed">将查看标签备注，设为出款流程中的强制查看环节，否则无法完成审核</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">遗漏率降低<span className="font-bold text-green-600">90%+</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed">错误出款影响降低15%-20%</p>
               </div>
+            </div>
+
+            {/* 错误率对比图表 */}
+            <div className="mt-8">
+              <div className="relative h-80 mb-6 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 border border-gray-200 shadow-sm">
+                <div className="absolute right-2 top-1/3 transform -translate-y-1/2 rotate-90 text-sm font-semibold text-orange-600">
+                  错误率 (%)
+                </div>
+                
+                <div className="mx-12 h-full relative">
+                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm font-medium text-orange-600">
+                    <span>30%</span>
+                    <span>22.5%</span>
+                    <span>15%</span>
+                    <span>7.5%</span>
+                    <span>0%</span>
+                  </div>
+                  
+                  <div className="absolute left-12 right-12 h-full">
+                    {[0, 25, 50, 75, 100].map((percent) => (
+                      <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
+                    ))}
+                  </div>
+                  
+                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
+                    <div className="flex items-end space-x-16">
+                      {/* 调整前 */}
+                      <div className="flex flex-col items-center relative">
+                        <div 
+                          className="absolute w-5 h-5 bg-red-500 rounded-full border-2 border-white shadow-lg"
+                          style={{bottom: `${32 + (25 / 30) * 200}px`}}
+                        >
+                          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
+                            25%
+                          </div>
+                        </div>
+                        
+                        <div className="text-center mt-4">
+                          <div className="text-lg font-bold text-gray-800">调整前</div>
+                        </div>
+                      </div>
+
+                      {/* 调整后 */}
+                      <div className="flex flex-col items-center relative">
+                        <div 
+                          className="absolute w-5 h-5 bg-green-500 rounded-full border-2 border-white shadow-lg"
+                          style={{bottom: `${32 + (8 / 30) * 200}px`}}
+                        >
+                          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap shadow-md">
+                            8%
+                          </div>
+                        </div>
+                        
+                        <div className="text-center mt-4">
+                          <div className="text-lg font-bold text-gray-800">调整后</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* 改善指示 */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                      <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-md">
+                        ↓ 68% 改善
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="flex justify-center space-x-8 text-sm">
+                <div className="flex items-center space-x-2">
+                  <div className="w-4 h-4 bg-red-500 rounded-full shadow-sm"></div>
+                  <span className="text-gray-700 font-medium">调整前错误率</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-4 h-4 bg-green-500 rounded-full shadow-sm"></div>
+                  <span className="text-gray-700 font-medium">调整后错误率</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-4 h-4 bg-blue-600 rounded shadow-sm"></div>
+                  <span className="text-gray-700 font-medium">改善趋势</span>
+                </div>
+              </div>
+              
+              <div className="text-right text-sm text-gray-500 mt-6 font-medium">统计周期：2025-04-01 ~ 2025-06-30</div>
             </div>
           </div>
         </div>
