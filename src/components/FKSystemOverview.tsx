@@ -486,7 +486,6 @@ export const FKSystemOverview = () => {
             <div className="bg-white rounded-xl p-6">
               <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
                 <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>
-                <span className="text-green-500 mr-2">✅</span>
                 信息安全
               </h5>
               <div className="space-y-4">
@@ -522,7 +521,6 @@ export const FKSystemOverview = () => {
             <div className="bg-white rounded-xl p-6">
               <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
                 <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>
-                <span className="text-green-500 mr-2">✅</span>
                 违规操作
               </h5>
               <div className="space-y-4">
