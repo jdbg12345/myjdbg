@@ -326,7 +326,7 @@ export const Direction3SystemStrategies = () => {
           <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">棋</span>
+                <span className="text-white font-bold text-sm">1.4</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">棋牌策略</h4>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 shadow-sm">试运行</span>
