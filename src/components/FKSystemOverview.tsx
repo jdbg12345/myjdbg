@@ -335,9 +335,10 @@ export const FKSystemOverview = () => {
 
             {/* 套利型规则 */}
             <div className="bg-white rounded-xl p-6">
-              <h5 className="text-xl font-bold text-green-800 mb-6 flex items-center">
-                <div className="w-5 h-5 bg-gradient-to-r from-green-500 to-green-600 rounded-lg mr-3 shadow-sm"></div>套利型规则
+              <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
+                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>套利型规则
               </h5>
+              
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg">游戏套利类</h6>
