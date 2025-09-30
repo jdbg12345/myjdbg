@@ -191,6 +191,7 @@ export const FKSystemOverview = () => {
             </svg>
           </div>
         </div>
+        </div>
       </div>
 
       {/* FK能力变化 */}
@@ -592,6 +593,7 @@ export const FKSystemOverview = () => {
                   </div>
                 </div>
               </div>
+            </div>
 
             {/* 关联网络分析 */}
             <div className="bg-white rounded-xl p-6">
