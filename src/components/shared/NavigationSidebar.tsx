@@ -56,7 +56,7 @@ const navigationItems: NavigationItem[] = [
   },
   {
     id: 'risk-review',
-    title: '4. B端事故问题汇总',
+    title: '4. B端问题汇总',
     icon: <AlertTriangle className="w-4 h-4" />
   }
 ];
