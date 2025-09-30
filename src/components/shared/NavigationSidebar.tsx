@@ -49,7 +49,7 @@ const navigationItems: NavigationItem[] = [
         children: [
           { id: 'pilot-direction1', title: '优化【审核问题】' },
           { id: 'pilot-direction2', title: '优化【系统问题】' },
-          { id: 'pilot-direction3', title: '优化【内控问题' }
+          { id: 'pilot-direction3', title: '优化【内控问题】' }
         ]
       }
     ]
