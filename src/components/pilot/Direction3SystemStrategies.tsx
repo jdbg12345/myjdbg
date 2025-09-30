@@ -24,27 +24,21 @@ export const Direction3SystemStrategies = () => {
           <h3 className="text-3xl font-bold text-gray-800">系统审核策略</h3>
         </div>
         <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 mb-8 border border-blue-200 shadow-sm">
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0 shadow-md">1</div>
-              <div>
-                <span className="font-bold text-gray-800 text-base">精准策略：按游戏类型提取并建模典型套利特征</span>
-                <div className="text-sm text-gray-600 mt-2">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">1</div>
+              <h4 className="font-bold text-gray-800 text-base mb-2">精准策略：按游戏类型提取并建模典型套利特征</h4>
+              <p className="text-sm text-gray-600">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</p>
             </div>
-            <div className="flex items-start">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0 shadow-md">2</div>
-              <div>
-                <span className="font-bold text-gray-800 text-base">防御策略：基于套利结果构建兜底式组合识别策略</span>
-                <div className="text-sm text-gray-600 mt-2">如玩家/代理的关联、红利金额/比例、流水异常等</div>
-              </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">2</div>
+              <h4 className="font-bold text-gray-800 text-base mb-2">防御策略：基于套利结果构建兜底式组合识别策略</h4>
+              <p className="text-sm text-gray-600">如玩家/代理的关联、红利金额/比例、流水异常等</p>
             </div>
-            <div className="flex items-start">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-sm mr-4 mt-1 flex-shrink-0 shadow-md">3</div>
-              <div>
-                <span className="font-bold text-gray-800 text-base">基础保障：打通Y/B跨站点及B/C端系统链路</span>
-                <div className="text-sm text-gray-600 mt-2">实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</div>
-              </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">3</div>
+              <h4 className="font-bold text-gray-800 text-base mb-2">基础保障：打通Y/B跨站点及B/C端系统链路</h4>
+              <p className="text-sm text-gray-600">实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</p>
             </div>
           </div>
         </div>
