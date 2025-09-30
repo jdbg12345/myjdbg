@@ -36,7 +36,7 @@ export const Direction3SystemStrategies = () => {
               <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
               <div>
                 <h4 className="font-bold text-gray-800 text-base mb-2">防御策略：基于套利特征构建兜底式组合识别策略</h4>
-                <p className="text-sm text-gray-600">如玩家/代理的关联、红利金额/比例、流水异常等</p>
+                <p className="text-sm text-gray-600">如玩家/代理的关联、红利金额/比例、流水比例、存款比例等</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
