@@ -104,8 +104,8 @@ export const FKSystemOverview = () => {
 
               {/* Bubble 3: Below node 5 */}
               <g>
-                <ellipse cx="900" cy="420" rx="140" ry="35" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
-                <text x="900" y="425" textAnchor="middle" fill="white" fontSize="16" fontWeight="600">
+                <ellipse cx="900" cy="425" rx="140" ry="35" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
+                <text x="900" y="430" textAnchor="middle" fill="white" fontSize="16" fontWeight="600">
                   变化：提供标准工具支持
                 </text>
               </g>
