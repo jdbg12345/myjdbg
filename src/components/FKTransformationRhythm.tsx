@@ -61,7 +61,7 @@ export const FKTransformationRhythm = () => {
                   <span className="text-red-600 font-bold text-sm">1</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-bold text-red-800 mb-3">优化【审核问题-质量较差】</h4>
+                  <h4 className="text-lg font-bold text-red-800 mb-3">审核问题-质量较差</h4>
                   <p className="text-red-700 leading-relaxed">
                     人员能力参差不齐，新人及外包团队错误率高；审核操作未严格遵循SOP；时间考核压力导致无法充分审核。
                   </p>
@@ -76,7 +76,7 @@ export const FKTransformationRhythm = () => {
                   <span className="text-red-600 font-bold text-sm">2</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-bold text-red-800 mb-3">优化【内控问题-违规行】</h4>
+                  <h4 className="text-lg font-bold text-red-800 mb-3">内控问题-违规行为</h4>
                   <p className="text-red-700 leading-relaxed">
                     存在敏感信息被泄漏、内外串联出款等违规行为；长期以来，在内控上并未真正做到有效治理，甚至形成灰色产业链。
                   </p>
