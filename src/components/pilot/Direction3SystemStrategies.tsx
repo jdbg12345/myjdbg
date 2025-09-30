@@ -8,7 +8,7 @@ export const Direction3SystemStrategies = () => {
           <div className="w-16 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
             <span className="text-white font-bold text-sm">方向2</span>
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">优化【系统问题-支持不够】</h2>
+          <h2 className="text-3xl font-bold text-gray-800"> 优化【系统问题-支持不够】</h2>
         </div>
         <div className="text-gray-600 text-lg">
           从系统审核策略、风控工具合集、极端异常预防等三个维度进行优化
