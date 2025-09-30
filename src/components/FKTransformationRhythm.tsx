@@ -80,7 +80,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">内控问题-违规行为</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    存在敏感信息被泄漏、内外串联出款等违规行为；长期以来，在内控上并未真正做到有效治理，甚至形成灰色产业链。
+                    存在信息被泄漏、内外串联出款等违规行为；长期以来，在内控上并未真正做到有效治理，甚至形成灰色产业链。
                   </p>
                 </div>
               </div>
