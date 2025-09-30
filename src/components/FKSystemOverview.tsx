@@ -564,13 +564,7 @@ export const FKSystemOverview = () => {
                         <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                      <div className="font-bold text-gray-800 text-base mb-2">代理质量</div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-600">方案中</span></span>
-                        <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs">新增</span>
-                      </div>
-                    </div>
+  
                   </div>
                 </div>
               </div>
@@ -579,18 +573,11 @@ export const FKSystemOverview = () => {
             {/* 关联网络分析 */}
             <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
               <h5 className="text-xl font-bold text-blue-800 mb-6 flex items-center">
-                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>关联网络
+                <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-3 shadow-sm"></div>代理质量自动化分析
               </h5>
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-5 border border-blue-200">
                   <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                      <div className="font-bold text-gray-800 text-base mb-2">关联图谱</div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-600">方案中</span></span>
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-700 font-semibold text-xs">增强</span>
-                      </div>
-                    </div>
                     <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                       <div className="font-bold text-gray-800 text-base mb-2">设备指纹</div>
                       <div className="flex justify-between items-center">
