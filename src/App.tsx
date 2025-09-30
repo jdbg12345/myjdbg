@@ -130,52 +130,6 @@ function App() {
         </div>
         
         {/* 4. 备份待用 */}
-        {/* 4.1 审核组 */}
-        <div data-section="audit-group">
-          <AuditGroup />
-        </div>
-        {/* 4.2 内控组 */}
-        <div data-section="internal-control">
-          <InternalControlOverview />
-        </div>
-        {/* 4.3 稽查组 */}
-        <div data-section="audit-dept">
-          <AuditDepartmentOverview />
-        </div>
-        {/* 4.4 系统组 */}
-        <div data-section="system-dept">
-          <SystemDepartmentOverview />
-        </div>
-        
-        {/* 系统组详细页面 - 会员风控详细内容 */}
-        <div data-section="summary-overview">
-          <SummaryOverview />
-        </div>
-        <div data-section="risk-warning">
-          <RiskWarning />
-        </div>
-        <div data-section="system-review">
-          <SystemReview />
-        </div>
-        <div data-section="system-dispatch">
-          <SystemDispatch />
-        </div>
-        <div data-section="manual-review">
-          <ManualReview />
-        </div>
-        <div data-section="internal-control-sampling">
-          <InternalControlSampling />
-        </div>
-        <div data-section="platform-reconciliation">
-          <PlatformReconciliation />
-        </div>
-        <div data-section="internal-security-control">
-          <InternalSecurityControl />
-        </div>
-        <div data-section="agent-commission-control">
-          <AgentCommissionControl />
-        </div>
-        
         
         {/* 5. B端事故问题汇总 */}
         <div data-section="risk-review">

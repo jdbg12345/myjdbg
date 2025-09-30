@@ -57,7 +57,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">1.1</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">电子策略</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 shadow-sm">试运行</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 shadow-sm">已上线</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
@@ -147,7 +147,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">1.2</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">真人策略</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 shadow-sm">已上线</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 shadow-sm">已上线</span>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4 shadow-sm">突破：B/C端打通</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -329,7 +329,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">1.4</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">棋牌策略</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 shadow-sm">试运行</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 shadow-sm">已上线</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
@@ -523,7 +523,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">2.1</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">关联下注工具</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 ml-4 shadow-sm">试运行</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 ml-4 shadow-sm">已上线</span>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4 shadow-sm">突破：跨Y+B全站点打通</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -569,7 +569,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">2.2</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">体育打水工具</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-orange-100 text-orange-600 shadow-sm">试运行</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 shadow-sm">已上线</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
