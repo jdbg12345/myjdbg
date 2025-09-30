@@ -190,9 +190,9 @@ export const FKTransformationRhythm = () => {
                   <span className="text-blue-600 font-bold text-lg">1</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">对人的依赖会越来越低</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">对人的依赖要越来越低</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    不断提供更多策略，尤其是针对套利和作弊的模型，持续迭代优化效果，当模型的准确率和效率超过人工时，对人的依赖将降低，从而更好地应对极端情况。
+                    持续迭代套利与作弊识别模型，不断优化策略效果；当系统准确率与效率超过人工时，对人的依赖将显著降低，不仅实现降本增效，也提升了应对极端情况的能力
                   </p>
                 </div>
               </div>
