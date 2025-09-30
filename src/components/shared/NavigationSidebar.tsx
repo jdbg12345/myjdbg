@@ -47,9 +47,9 @@ const navigationItems: NavigationItem[] = [
         id: 'pilot-results', 
         title: '3.3 成果说明', 
         children: [
-          { id: 'pilot-direction1', title: '方向1：优化【审核问题-质量较差】' },
-          { id: 'pilot-direction2', title: '方向2：优化【系统问题-支持不够】' },
-          { id: 'pilot-direction3', title: '方向3：优化【内控问题-违规行为】' }
+          { id: 'pilot-direction1', title: '优化【审核问题】' },
+          { id: 'pilot-direction2', title: '优化【系统问题】' },
+          { id: 'pilot-direction3', title: '优化【内控问题' }
         ]
       }
     ]
