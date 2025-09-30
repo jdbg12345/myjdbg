@@ -414,7 +414,7 @@ export const FKSystemOverview = () => {
                   </div>
                 </div>
                 
-                <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-5 border border-green-200">
+                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg">游戏作弊类</h6>
                   <div className="space-y-2">
                     <div className="bg-white rounded-lg p-3">
