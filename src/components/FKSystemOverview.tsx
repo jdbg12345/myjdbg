@@ -667,8 +667,8 @@ export const FKSystemOverview = () => {
 
               {/* 下级质量维度 */}
               <tr className="border-b border-gray-100">
-                <td rowSpan="5" className="p-4 font-bold text-center bg-blue-60 border-r border-gray-200 align-top">
-                  <div className="text-orange-700 text-lg">下级质量</div>
+                <td rowSpan="5" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
+                  <div className="text-blue-700 text-lg">下级质量</div>
                 </td>
                 <td className="p-4 font-semibold border-r border-gray-200">一次性会员占比</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">低价值用户占比（结合留存率评估低价值风险）</td>
@@ -712,8 +712,8 @@ export const FKSystemOverview = () => {
 
               {/* 风险评估维度 */}
               <tr className="border-b border-gray-100">
-                <td rowSpan="4" className="p-4 font-bold text-center bg-blue-70 border-r border-gray-200 align-top">
-                  <div className="text-red-700 text-lg">风险评估</div>
+                <td rowSpan="4" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
+                  <div className="text-blue-700 text-lg">风险评估</div>
                 </td>
                 <td className="p-4 font-semibold border-r border-gray-200">关联情况</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">下级账号与高风险账号关联（按风险等级加权）</td>
