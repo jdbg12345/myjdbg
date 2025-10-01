@@ -715,7 +715,7 @@ export const FKSystemOverview = () => {
                 <td rowSpan="4" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
                   <div className="text-blue-700 text-lg">风险评估</div>
                 </td>
-                <td className="p-4 font-semibold border-r border-gray-200">关联情况</td>
+                <td className="p-4 font-semibold border-r border-gray-200">关联风险</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">下级账号与高风险账号关联（按风险等级加权）</td>
                 <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
                 <td className="p-4 text-center">
@@ -723,7 +723,7 @@ export const FKSystemOverview = () => {
                 </td>
               </tr>
               <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">打负情况</td>
+                <td className="p-4 font-semibold border-r border-gray-200">打负风险</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">异常亏损/盈利比例（分级权重，高额异常权重大）</td>
                 <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
                 <td className="p-4 text-center">
@@ -731,21 +731,14 @@ export const FKSystemOverview = () => {
                 </td>
               </tr>
               <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">风控会员占比</td>
+                <td className="p-4 font-semibold border-r border-gray-200">风险会员占比</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">下级中被风控拦截比例（按违规类型和严重程度加权）</td>
                 <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
                 <td className="p-4 text-center">
                   <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600">负向</span>
                 </td>
               </tr>
-              <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">风险趋势指标</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">最近周期关联账号增幅、打负增幅等趋势反映潜在高风险</td>
-                <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-5%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600">负向</span>
-                </td>
-              </tr>
+  
             </tbody>
           </table>
         </div>
@@ -864,11 +857,15 @@ export const FKSystemOverview = () => {
                     {/* 业务数据 */}
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">活跃用户:</span>
+                        <span className="text-sm text-gray-600">月活用户:</span>
                         <span className="font-semibold">{agent.activeUsers}</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-sm text-gray-600">有效流水:</span>
+                        <span className="font-semibold">{agent.validFlow}</span>
+                      </div>
+                       <div className="flex justify-between items-center">
+                        <span className="text-sm text-gray-600">净盈利:</span>
                         <span className="font-semibold">{agent.validFlow}</span>
                       </div>
                     </div>
@@ -876,7 +873,7 @@ export const FKSystemOverview = () => {
                     {/* 质量指标 */}
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">留存率:</span>
+                        <span className="text-sm text-gray-600">:</span>
                         <span className="font-semibold">{agent.retention}</span>
                       </div>
                       <div className="flex justify-between items-center">
