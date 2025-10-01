@@ -44,9 +44,9 @@ export const FKTransformationRhythm = () => {
 
       {/* 核心问题 */}
       <div className="mb-8">
-        <div className="bg-white rounded p-8 border-2 border-gray-200">
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex items-center space-x-3 mb-3">
-            <div className="w-10 h-10 bg-red-500 rounded flex items-center justify-center">
+            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
               <AlertTriangle className="w-6 h-6 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">过往问题</h2>
@@ -57,10 +57,10 @@ export const FKTransformationRhythm = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* 问题1 */}
-            <div className="bg-red-50 rounded p-6 border-l-4 border-red-500">
+            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-red-100 rounded flex items-center justify-center flex-shrink-0">
-                  <span className="text-red-600 font-bold text-lg">1</span>
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-blue-600 font-bold text-lg">1</span>
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">审核问题-质量较差</h4>
@@ -72,10 +72,10 @@ export const FKTransformationRhythm = () => {
             </div>
 
             {/* 问题2 */}
-            <div className="bg-red-50 rounded p-6 border-l-4 border-red-500">
+            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-red-100 rounded flex items-center justify-center flex-shrink-0">
-                  <span className="text-red-600 font-bold text-lg">2</span>
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-blue-600 font-bold text-lg">2</span>
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">内控问题-违规行为</h4>
@@ -87,10 +87,10 @@ export const FKTransformationRhythm = () => {
             </div>
 
             {/* 问题3 */}
-            <div className="bg-red-50 rounded p-6 border-l-4 border-red-500">
+            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-red-100 rounded flex items-center justify-center flex-shrink-0">
-                  <span className="text-red-600 font-bold text-lg">3</span>
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-blue-600 font-bold text-lg">3</span>
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">系统问题-支持不够</h4>
@@ -106,9 +106,9 @@ export const FKTransformationRhythm = () => {
 
       {/* 面对困难 */}
       <div className="mb-8">
-        <div className="bg-white rounded p-8 border-2 border-gray-200">
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex items-center space-x-3 mb-3">
-            <div className="w-10 h-10 bg-amber-500 rounded flex items-center justify-center">
+            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
               <AlertTriangle className="w-6 h-6 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">面对困难</h2>
@@ -119,10 +119,10 @@ export const FKTransformationRhythm = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* 困难1 */}
-            <div className="bg-amber-50 rounded p-6 border-l-4 border-amber-500 flex-1">
+            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600 flex-1">
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-amber-100 rounded flex items-center justify-center flex-shrink-0">
-                  <span className="text-amber-600 font-bold text-lg">1</span>
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-blue-600 font-bold text-lg">1</span>
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">人员挑战</h4>
@@ -134,10 +134,10 @@ export const FKTransformationRhythm = () => {
             </div>
 
             {/* 困难2 */}
-            <div className="bg-amber-50 rounded p-6 border-l-4 border-amber-500 flex-1">
+            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600 flex-1">
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-amber-100 rounded flex items-center justify-center flex-shrink-0">
-                  <span className="text-amber-600 font-bold text-lg">2</span>
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-blue-600 font-bold text-lg">2</span>
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">系统挑战</h4>
@@ -149,10 +149,10 @@ export const FKTransformationRhythm = () => {
             </div>
 
             {/* 困难3 */}
-            <div className="bg-amber-50 rounded p-6 border-l-4 border-amber-500 flex-1">
+            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600 flex-1">
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-amber-100 rounded flex items-center justify-center flex-shrink-0">
-                  <span className="text-amber-600 font-bold text-lg">3</span>
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-blue-600 font-bold text-lg">3</span>
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">风险挑战</h4>
@@ -168,9 +168,9 @@ export const FKTransformationRhythm = () => {
 
       {/* 核心目标 */}
       <div className="mb-8">
-        <div className="bg-white rounded p-8 border-2 border-gray-200">
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex items-center space-x-3 mb-3">
-            <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
+            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
               <Target className="w-6 h-6 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">核心目标</h2>
@@ -184,9 +184,9 @@ export const FKTransformationRhythm = () => {
           {/* 核心目标下的三个模块 */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* 模块1 */}
-            <div className="bg-blue-50 rounded p-6 border-l-4 border-blue-600">
+            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                   <span className="text-blue-600 font-bold text-lg">1</span>
                 </div>
                 <div className="flex-1">
@@ -199,9 +199,9 @@ export const FKTransformationRhythm = () => {
             </div>
 
             {/* 模块2 */}
-            <div className="bg-blue-50 rounded p-6 border-l-4 border-blue-600">
+            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                   <span className="text-blue-600 font-bold text-lg">2</span>
                 </div>
                 <div className="flex-1">
@@ -214,9 +214,9 @@ export const FKTransformationRhythm = () => {
             </div>
 
             {/* 模块3 */}
-            <div className="bg-blue-50 rounded p-6 border-l-4 border-blue-600">
+            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                   <span className="text-blue-600 font-bold text-lg">3</span>
                 </div>
                 <div className="flex-1">
@@ -233,9 +233,9 @@ export const FKTransformationRhythm = () => {
 
       {/* 推进节奏 */}
       <div className="mb-8">
-        <div className="bg-white rounded p-8 border-2 border-gray-200">
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex items-center space-x-3 mb-3">
-            <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
+            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
               <Clock className="w-6 h-6 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">推进节奏</h2>
@@ -246,41 +246,33 @@ export const FKTransformationRhythm = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {progressSchedule.map((item, index) => (
-              <div key={index} className={`rounded p-6 border-2 ${
-                item.status === 'completed' ? 'bg-green-50 border-green-500' :
+              <div key={index} className={`rounded-lg p-6 border ${
+                item.status === 'completed' ? 'bg-blue-50 border-blue-600' :
                 item.status === 'current' ? 'bg-blue-50 border-blue-600' :
-                'bg-gray-50 border-gray-300'
+                'bg-blue-50 border-blue-600'
               }`}>
                 <div className="flex items-start space-x-4">
-                  <div className={`w-12 h-12 rounded flex items-center justify-center flex-shrink-0 ${
-                    item.status === 'completed' ? 'bg-green-100' :
+                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 ${
+                    item.status === 'completed' ? 'bg-blue-100' :
                     item.status === 'current' ? 'bg-blue-100' :
-                    'bg-gray-100'
+                    'bg-blue-100'
                   }`}>
                     {item.status === 'completed' ? (
-                      <CheckCircle className="w-7 h-7 text-green-600" />
+                      <CheckCircle className="w-7 h-7 text-blue-600" />
                     ) : item.status === 'current' ? (
                       <Clock className="w-7 h-7 text-blue-600" />
                     ) : (
-                      <span className="text-gray-600 font-bold text-lg">{item.time}</span>
+                      <span className="text-blue-600 font-bold text-lg">{item.time}</span>
                     )}
                   </div>
                   <div className="flex-1">
-                    <div className={`text-xl font-bold mb-3 ${
-                      item.status === 'completed' ? 'text-gray-900' :
-                      item.status === 'current' ? 'text-gray-900' :
-                      'text-gray-900'
-                    }`}>
+                    <div className="text-xl font-bold mb-3 text-gray-900">
                       {item.time}{item.stage}
                     </div>
                     <p className="text-gray-700 leading-relaxed text-base mb-4">
                       {item.work}
                     </p>
-                    <div className={`text-base font-bold ${
-                      item.status === 'completed' ? 'text-green-600' :
-                      item.status === 'current' ? 'text-blue-600' :
-                      'text-gray-500'
-                    }`}>
+                    <div className="text-base font-bold text-blue-600">
                       {item.result}
                     </div>
                   </div>
