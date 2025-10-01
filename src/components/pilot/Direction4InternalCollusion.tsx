@@ -25,26 +25,26 @@ export const Direction4InternalCollusion = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
+            <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
                 核心问题
               </h4>
-              <p className="text-gray-700 text-lg leading-relaxed font-semibold">风控的标签和备注权限未独立管理，大部分部门均可查看，敏感信息易泄露</p>
+              <p className="text-gray-700 text-sm leading-relaxed">风控的标签和备注权限未独立管理，大部分部门均可查看，敏感信息易泄露</p>
             </div>
-            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
+                <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
                 解决策略
               </h4>
-              <p className="text-gray-700 text-lg leading-relaxed font-semibold">风控的标签备注独立权限</p>
+              <p className="text-gray-700 text-sm leading-relaxed">风控的标签备注独立权限</p>
             </div>
-            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
                 预期收益
               </h4>
-              <p className="text-gray-700 text-lg leading-relaxed font-semibold">降低敏感信息被泄露风险</p>
+              <p className="text-gray-700 text-sm leading-relaxed">降低敏感信息被泄露风险</p>
             </div>
           </div>
         </div>
@@ -60,30 +60,29 @@ export const Direction4InternalCollusion = () => {
               </div>
               <h4 className="text-2xl font-bold text-gray-800">会员启禁用流程升级</h4>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-600 ml-4 shadow-sm">开发中</span>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 ml-4 shadow-sm">开发中</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
+            <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
+              <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
                 核心问题
               </h4>
-              <p className="text-gray-700 text-lg leading-relaxed font-semibold">当前会员禁用流程由单人操作完成，缺乏线上分级审批机制，存在高V被误禁，及问题用户被违规启用的风险。</p>
+              <p className="text-gray-700 text-sm leading-relaxed">当前会员禁用流程由单人操作完成，缺乏线上分级审批机制，存在高V被误禁，及问题用户被违规启用的风险。</p>
             </div>
-            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
               <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
+                <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
                 解决策略
               </h4>
-              <p className="text-gray-700 text-lg leading-relaxed font-semibold">建立基于会员等级的禁用/启用分级审批机制，高V的启禁用操作需提供审批人的U盾或谷歌验证码验证</p>
+              <p className="text-gray-700 text-sm leading-relaxed">建立基于会员等级的禁用/启用分级审批机制，高V的启禁用操作需提供审批人的U盾或谷歌验证码验证</p>
             </div>
-            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
-              <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
+              <h4 className="font-bold text-green-700 mb-3 flex items-center">
+                <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
                 预期收益
               </h4>
-              <p className="text-gray-700 text-lg leading-relaxed font-semibold">彻底解决启禁用违规操作问题</p>
+              <p className="text-gray-700 text-sm leading-relaxed">彻底解决启禁用违规操作问题</p>
             </div>
           </div>
           
@@ -168,7 +167,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="text-white font-bold text-sm">3.4</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">敏感查询使用密文查询</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-gray-600 ml-4 shadow-sm">开发中</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-600 ml-4 shadow-sm">开发中</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -206,7 +205,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="text-white font-bold text-sm">3.5</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">风控策略参数变化机制</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-gray-600 ml-4 shadow-sm">开发中</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-600 ml-4 shadow-sm">开发中</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
