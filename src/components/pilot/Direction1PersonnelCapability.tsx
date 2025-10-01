@@ -35,7 +35,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">以金额作为分单依据，未考虑订单难度及人员能力匹配，导致部分高风险订单被分配至远程或外包，而其差错率较总部高出约2～3倍，由此带来超过100万+/月的损失。</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">以金额作为分单依据，未考虑订单难度及人员能力匹配，导致部分高风险订单被分配至远程或外包，而其<span className="text-blue-600">差错率较总部高出约2～3倍，由此带来超过100万+/月的损失</span></p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
@@ -210,7 +210,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">风控体系是从 <span className="text-blue-600">「人工驱动」向「系统驱动」</span>转变的最核心基础</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">风控体系是从<span className="text-blue-600">「人工驱动」向「系统驱动」</span>转变的最核心基础</p>
               </div>
             </div>
 
