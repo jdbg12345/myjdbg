@@ -229,7 +229,7 @@ export const FKSystemOverview = () => {
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-green-500 mr-2">✅</span>
+                    <span className="text-green-500 mr-2">1</span>
                     账户安全类
                   </h6>
                   <div className="space-y-2">
@@ -273,7 +273,7 @@ export const FKSystemOverview = () => {
 
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-green-500 mr-2">✅</span>
+                    <span className="text-green-500 mr-2">2</span>
                     盈利监控类
                   </h6>
                   <div className="space-y-2">
@@ -310,7 +310,7 @@ export const FKSystemOverview = () => {
                 
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-green-500 mr-2">✅</span>
+                    <span className="text-green-500 mr-2">3</span>
                     内控监控类
                   </h6>
                   <div className="space-y-2">
@@ -349,7 +349,7 @@ export const FKSystemOverview = () => {
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-blue-600 mr-2">✅</span>
+                    <span className="text-blue-600 mr-2">1</span>
                     游戏套利类
                   </h6>
                   <div className="space-y-2">
@@ -400,7 +400,7 @@ export const FKSystemOverview = () => {
 
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-green-500 mr-2">✅</span>
+                    <span className="text-green-500 mr-2">2</span>
                     红利活动类
                   </h6>
                   <div className="space-y-2">
@@ -430,7 +430,7 @@ export const FKSystemOverview = () => {
                 
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-green-500 mr-2">✅</span>
+                    <span className="text-green-500 mr-2">3</span>
                     游戏作弊类
                   </h6>
                   <div className="space-y-2">
