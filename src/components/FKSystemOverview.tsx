@@ -705,7 +705,7 @@ export const FKSystemOverview = () => {
 
               {/* 风险评估维度 */}
               <tr className="border-b border-gray-100">
-                <td rowSpan="4" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
+                <td rowSpan="3" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
                   <div className="text-blue-700 text-lg">风险评估</div>
                 </td>
                 <td className="p-4 font-semibold border-r border-gray-200">关联风险</td>
