@@ -731,7 +731,7 @@ export const FKSystemOverview = () => {
                 </td>
               </tr>
               <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">风险会员占比</td>
+                <td className="p-4 font-semibold border-r border-gray-200">下级风险</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">下级中被风控拦截比例（按违规类型和严重程度加权）</td>
                 <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
                 <td className="p-4 text-center">
