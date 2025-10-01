@@ -107,7 +107,7 @@ function App() {
           <FKTransformationRhythm />
         </div>
         
-        {/* 3.2 FK变化说明 */}
+        {/* 3.2 FK玩家风控变化说明 */}
         <div data-section="fk-system-overview">
           <FKSystemOverview />
         </div>
