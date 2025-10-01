@@ -881,7 +881,6 @@ export const FKSystemOverview = () => {
 
             {/* 有效贡献度呈现例子 */}
             <div className="mt-8">
-              <h6 className="text-xl font-bold text-gray-800 mb-6">2）有效贡献度呈现例子</h6>
             </div>
           ))}
         </div>
