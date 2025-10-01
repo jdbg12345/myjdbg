@@ -419,7 +419,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">1.5</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">彩票策略</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-gray-600 shadow-sm">开发中</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 shadow-sm">开发中</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
