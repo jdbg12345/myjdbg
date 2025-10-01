@@ -781,7 +781,7 @@ export const FKSystemOverview = () => {
           <span className="text-gray-600 text-lg">快速区分优质代理与劣质代理，实现精准监控与管理</span>
         </div>
 
-        {/* 代理分级统计 */}
+        {/* 分级统计 */}
         <div className="grid grid-cols-4 gap-6 mb-8">
           <div className="bg-green-50 rounded-lg p-6 text-center border border-green-200">
             <div className="text-4xl font-bold text-green-600 mb-2">0</div>
