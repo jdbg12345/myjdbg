@@ -3,7 +3,6 @@ import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } 
 import { Direction1PersonnelCapability } from './pilot/Direction1PersonnelCapability';
 import { Direction3SystemStrategies } from './pilot/Direction3SystemStrategies';
 
-
 export const FKSystemOverview = () => {
    const nodes = [
     { id: 1, x: 150, y: 130, name: "系统预警", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "1" },
