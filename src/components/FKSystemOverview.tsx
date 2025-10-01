@@ -16,11 +16,11 @@ export const FKSystemOverview = () => {
   
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">
-          3.2 试点说明
-        </h1>
+        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.2 试点说明</h1>
+      </div>
       </div>
 
       {/* FK流程变化 */}
@@ -581,9 +581,9 @@ export const FKSystemOverview = () => {
                 </div>
               </div>
             </div>
-
+        <div className="space-y-8">
             {/* 代理质量分析 */}
-            <div className="bg-white rounded p-8 border border-gray-200">
+          <div className="bg-white rounded-lg p-8 border border-gray-200">
               <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 代理质量自动化分析
@@ -598,7 +598,6 @@ export const FKSystemOverview = () => {
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -636,26 +635,13 @@ export const FKSystemOverview = () => {
           </div>
         </div>
 
-        {/* 代理贡献度总览标题 */}
-        <div className="flex items-center justify-between mb-6">
-          <h4 className="text-xl font-bold text-gray-800">代理贡献度总览</h4>
-          <div className="flex items-center space-x-4">
-            <select className="px-4 py-2 border border-gray-300 rounded-lg bg-white">
-              <option>全部站点</option>
-            </select>
-            <select className="px-4 py-2 border border-gray-300 rounded-lg bg-white">
-              <option>全部分级</option>
-            </select>
-          </div>
-        </div>
-
         {/* 代理列表 */}
         <div className="space-y-4">
           {[
             {
               id: '#1Y695966',
               grade: 'B档 - 良好',
-              level: '高级代理',
+              site: 'Y1',
               joinDate: '2024-10-02',
               totalScore: 61,
               businessScore: 39,
@@ -670,7 +656,7 @@ export const FKSystemOverview = () => {
             {
               id: '#2Y144558',
               grade: 'C档 - 一般',
-              level: '金牌代理',
+              site: 'Y2',
               joinDate: '2024-09-05',
               totalScore: 57,
               businessScore: 38,
@@ -683,54 +669,9 @@ export const FKSystemOverview = () => {
               gradeColor: 'text-yellow-600 bg-yellow-50'
             },
             {
-              id: '#3Y218350',
-              grade: 'C档 - 一般',
-              level: '金牌代理',
-              joinDate: '2024-08-10',
-              totalScore: 56,
-              businessScore: 39,
-              userQuality: 66,
-              riskControl: 72,
-              activeUsers: 586,
-              validFlow: '¥46.8万',
-              retention: '17%',
-              riskUsers: '6%',
-              gradeColor: 'text-yellow-600 bg-yellow-50'
-            },
-            {
-              id: '#4Y116215',
-              grade: 'C档 - 一般',
-              level: '高级代理',
-              joinDate: '2024-11-25',
-              totalScore: 55,
-              businessScore: 34,
-              userQuality: 59,
-              riskControl: 91,
-              activeUsers: 231,
-              validFlow: '¥44.6万',
-              retention: '31%',
-              riskUsers: '4%',
-              gradeColor: 'text-yellow-600 bg-yellow-50'
-            },
-            {
-              id: '#5Y455003',
-              grade: 'C档 - 一般',
-              level: '高级代理',
-              joinDate: '2024-12-17',
-              totalScore: 55,
-              businessScore: 27,
-              userQuality: 65,
-              riskControl: 90,
-              activeUsers: 325,
-              validFlow: '¥37.4万',
-              retention: '32%',
-              riskUsers: '4%',
-              gradeColor: 'text-yellow-600 bg-yellow-50'
-            },
-            {
               id: '#6Y567649',
               grade: 'C档 - 一般',
-              level: '初级代理',
+              site: 'Y4',
               joinDate: '2024-06-15',
               totalScore: 55,
               businessScore: 39,
@@ -749,72 +690,198 @@ export const FKSystemOverview = () => {
                   <div className="flex items-center space-x-4 mb-3">
                     <span className="text-lg font-bold text-gray-800">{agent.id}</span>
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
-                      {agent.grade}
-                    </span>
-                    <span className="text-gray-600">{agent.level}</span>
-                    <span className="text-gray-500">• 加入时间: {agent.joinDate}</span>
-                  </div>
-                  
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                    {/* 综合贡献度分数 */}
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-blue-600 mb-1">{agent.totalScore}</div>
+          {/* 有效贡献度呈现例子 */}
+          <div className="mb-8">
+            <h4 className="text-xl font-bold text-gray-800 mb-6">2）有效贡献度呈现例子</h4>
+            
+            {/* 有效贡献度标题 */}
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-gray-800 mb-2">有效贡献度</h3>
+              <p className="text-gray-600 text-lg">快速区分优质代理与劣质代理，实现精准监控与管理</p>
+            </div>
+            <Users className="w-5 h-5 text-white" />
+            {/* 代理分级统计 */}
+            <div className="grid grid-cols-4 gap-6 mb-8">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center border border-green-200 shadow-sm">
+                <div className="text-4xl font-bold text-green-600 mb-2">0</div>
+                <div className="text-green-700 font-semibold">A档优质</div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center border border-blue-200 shadow-sm">
+                <div className="text-4xl font-bold text-blue-600 mb-2">1</div>
+                <div className="text-blue-700 font-semibold">B档良好</div>
+              </div>
+              <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-6 text-center border border-yellow-200 shadow-sm">
+                <div className="text-4xl font-bold text-yellow-600 mb-2">51</div>
+                <div className="text-yellow-700 font-semibold">C档一般</div>
+              </div>
+              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 text-center border border-red-200 shadow-sm">
+                <div className="text-4xl font-bold text-red-600 mb-2">1</div>
+                <div className="text-red-700 font-semibold">D档风险</div>
+              </h4>
+            </div>
+              <p className="text-gray-700 text-sm leading-relaxed">代理佣金审核依赖人工，效率低且易出错，缺乏系统化的风险识别机制</p>
+            {/* 代理贡献度总览 */}
+            <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-8">
+              <div className="flex items-center justify-between mb-6">
+                <h4 className="text-2xl font-bold text-gray-800">代理贡献度总览</h4>
+                <div className="flex space-x-4">
+                  <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>全部站点</option>
+                  </select>
+                  <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>全部分级</option>
+                  </select>
+              </h4>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">审核效率提升80%，风险识别准确率达到95%+</p>
+              {/* 代理列表 */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {[
+                  {
+                    id: '#1Y695966',
+                    grade: 'B档 - 良好',
+                    level: '高级代理',
+                    joinDate: '2024-10-02',
+                    totalScore: 61,
+                    businessScore: 39,
+                    qualityScore: 64,
+                    riskScore: 97,
+                    activeUsers: 970,
+                    validFlow: '38.8万',
+                    retention: '30%',
+                    riskUsers: '5%',
+                    gradeColor: 'bg-blue-100 text-blue-700'
+                  },
+                  {
+                    id: '#2Y144558',
+                    grade: 'C档 - 一般',
+                    level: '金牌代理',
+                    joinDate: '2024-09-05',
+                    totalScore: 57,
+                    businessScore: 38,
+                    qualityScore: 60,
+                    riskScore: 90,
+                    activeUsers: 253,
+                    validFlow: '51.4万',
+                    retention: '18%',
+                    riskUsers: '4%',
+                    gradeColor: 'bg-yellow-100 text-yellow-700'
+                  },
+                  {
+                    id: '#3Y218350',
+                    grade: 'C档 - 一般',
+                    level: '金牌代理',
+                    joinDate: '2024-08-10',
+                    totalScore: 56,
+                    businessScore: 39,
+                    qualityScore: 66,
+                    riskScore: 72,
+                    activeUsers: 586,
+                    validFlow: '46.8万',
+                    retention: '17%',
+                    riskUsers: '6%',
+                    gradeColor: 'bg-yellow-100 text-yellow-700'
+                  },
+                  {
+                    id: '#4Y116215',
+                    grade: 'C档 - 一般',
+                    level: '高级代理',
+                    joinDate: '2024-11-25',
+                    totalScore: 55,
+                    businessScore: 34,
+                    qualityScore: 59,
+                    riskScore: 91,
+                    activeUsers: 231,
+                    validFlow: '44.6万',
+                    retention: '31%',
+                    riskUsers: '4%',
+                    gradeColor: 'bg-yellow-100 text-yellow-700'
+                  },
+                  {
+                    id: '#5Y455003',
+                    grade: 'C档 - 一般',
+                    level: '高级代理',
+                    joinDate: '2024-12-17',
+                    totalScore: 55,
+                    businessScore: 27,
+                    qualityScore: 65,
+                    riskScore: 90,
+                    activeUsers: 325,
+                    validFlow: '37.4万',
+                    retention: '32%',
+                    riskUsers: '4%',
+                    gradeColor: 'bg-yellow-100 text-yellow-700'
+                  },
+                  {
+                    id: '#6Y567649',
+                    grade: 'C档 - 一般',
+                    level: '初级代理',
+                    joinDate: '2024-06-15',
+                    totalScore: 55,
+                    businessScore: 39,
+                    qualityScore: 52,
+                    riskScore: 91,
+                    activeUsers: 876,
+                    validFlow: '64.8万',
+                    retention: '24%',
+                    riskUsers: '7%',
+                    gradeColor: 'bg-yellow-100 text-yellow-700'
+                  }
+                ].map((agent, index) => (
+                  <div key={index} className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center space-x-3">
+                        <span className="font-bold text-gray-800">{agent.id}</span>
+                        <span className={`px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
+                          {agent.grade}
+                        </span>
+                  <tr className="bg-orange-50">
+                      <div className="text-sm text-gray-500">
+                        <span className="font-semibold text-blue-600">{agent.level}</span>
+                        <span className="mx-2">•</span>
+                        <span>加入时间: {agent.joinDate}</span>
+                  </tr>
+                    </div>
+                    
+                    <div className="mb-4">
+                      <div className="text-3xl font-bold text-gray-800 mb-2">{agent.totalScore}</div>
                       <div className="text-sm text-gray-600">综合贡献度分数</div>
                     </div>
                     
-                    {/* 三个评分指标 */}
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">业务贡献</span>
-                        <span className="font-semibold text-blue-600">{agent.businessScore}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">用户质量</span>
-                        <span className="font-semibold text-green-600">{agent.userQuality}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">风险控制</span>
-                        <span className="font-semibold text-orange-600">{agent.riskControl}</span>
-                      </div>
-                    </div>
-                    
-                    {/* 业务数据 */}
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">活跃用户:</span>
-                        <span className="font-semibold">{agent.activeUsers}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">有效流水:</span>
-                        <span className="font-semibold">{agent.validFlow}</span>
+                    <div className="grid grid-cols-3 gap-4 mb-4">
+                      <div className="text-center">
+                        <div className="text-xl font-bold text-blue-600">{agent.businessScore}</div>
+                        <div className="text-xs text-gray-600">业务贡献</div>
+                  </tr>
+                      <div className="text-center">
+                        <div className="text-xl font-bold text-orange-600">{agent.qualityScore}</div>
+                        <div className="text-xs text-gray-600">用户质量</div>
+                    <td className="p-4 text-center"><span className="px-2 py-1 bg-red-100 text-red-600 rounded-full text-sm font-semibold">负向</span></td>
+                      <div className="text-center">
+                        <div className="text-xl font-bold text-green-600">{agent.riskScore}</div>
+                        <div className="text-xs text-gray-600">风险控制</div>
                       </div>
                     </div>
                     
-                    {/* 质量指标 */}
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">30日留存:</span>
-                        <span className="font-semibold text-green-600">{agent.retention}</span>
+                    <div className="grid grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <div className="text-gray-600">活跃用户: <span className="font-semibold text-gray-800">{agent.activeUsers}</span></div>
+                        <div className="text-gray-600">有效流水: <span className="font-semibold text-gray-800">¥{agent.validFlow}</span></div>
                       </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">风险用户:</span>
-                        <span className="font-semibold text-red-600">{agent.riskUsers}</span>
+                      <div>
+                        <div className="text-gray-600">30日留存: <span className="font-semibold text-gray-800">{agent.retention}</span></div>
+                        <div className="text-gray-600">风险用户: <span className="font-semibold text-gray-800">{agent.riskUsers}</span></div>
                       </div>
-                    </div>
+                  </tr>
                   </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+      </div>
+      
+      {/* Footer */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="text-gray-400 text-sm">FKZX</div>
       </div>
     </div>
-      
-    {/* Footer */}
-    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-      <div className="text-gray-400 text-sm">FKZX</div>
     </div>
-    
-  </div>
+      
   );
 };
