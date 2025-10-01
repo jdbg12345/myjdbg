@@ -2,23 +2,14 @@ import React from 'react';
 
 export const Direction4InternalCollusion = () => {
   return (
-    <div className="bg-white rounded-xl p-8 mb-8 border border-blue-200 shadow-md">
-      <div className="flex items-center justify-between mb-8">
-        <div className="flex items-center space-x-3">
-          <div className="w-16 h-10 bg-blue-600 rounded flex items-center justify-center">
-            <span className="text-white font-medium text-sm">方向3</span>
-          </div>
-          <h2 className="text-2xl font-semibold text-gray-800">优化【内控问题-违规行为】</h2>
-        </div>
-      </div>
-
+    <>
       {/* 风控标签和备注独立权限 */}
       <div className="mb-12">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">3.1</span>
+                <span className="text-white font-medium text-sm">1</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">风控标签和备注独立权限</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
@@ -56,7 +47,7 @@ export const Direction4InternalCollusion = () => {
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">3.2</span>
+                <span className="text-white font-medium text-sm">2</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">会员启禁用流程升级</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
@@ -126,7 +117,7 @@ export const Direction4InternalCollusion = () => {
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">3.3</span>
+                <span className="text-white font-medium text-sm">3</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">敏感高危参数修改监控</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
@@ -164,7 +155,7 @@ export const Direction4InternalCollusion = () => {
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">3.4</span>
+                <span className="text-white font-medium text-sm">4</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">敏感查询使用密文查询</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
@@ -202,7 +193,7 @@ export const Direction4InternalCollusion = () => {
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">3.5</span>
+                <span className="text-white font-medium text-sm">5</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">风控策略参数变化机制</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
@@ -240,7 +231,7 @@ export const Direction4InternalCollusion = () => {
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">3.6</span>
+                <span className="text-white font-medium text-sm">6</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">稽查效果</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
@@ -310,6 +301,6 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
-    </div>
+    </>
   );
 };
