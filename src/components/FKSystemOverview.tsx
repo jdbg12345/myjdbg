@@ -713,41 +713,22 @@ export const FKSystemOverview = () => {
         <div className="space-y-4">
           {[
             {
-               id: '#3Y218350',
-      grade: 'C档 - 一般',
-      site: 'Y8',
-      joinDate: '2024-08-10',
-      totalScore: 56,
-      businessScore: 39,
-      userQuality: 66,
-      riskControl: 72,
-      activeUsers: 586,
-      monthlyActive: 586,
-      validFlow: '¥46.8万',
-      contributionProfit: '¥44.0万',
-      totalDeposit: '¥48.1万',
-      retention: '17%',
-      riskUsers: '6%',
-      gradeColor: 'text-yellow-600 bg-yellow-50'
-      
-            },
-            {
-             id: '#4Y116215',
-      grade: 'C档 - 一般',
-      site: 'Y1',
-      joinDate: '2024-11-25',
-      totalScore: 55,
-      businessScore: 34,
-      userQuality: 59,
-      riskControl: 91,
-      activeUsers: 231,
-      monthlyActive: 231,
-      validFlow: '¥44.6万',
-      contributionProfit: '¥44.6万',
-      totalDeposit: '¥44.6万',
-      retention: '31%',
-      riskUsers: '4%',
-      gradeColor: 'text-yellow-600 bg-yellow-50'
+                id: '#3Y218350',
+                grade: 'C档 - 一般',
+                site: 'Y8',
+                joinDate: '2024-08-10',
+                totalScore: 56,
+                businessScore: 39,
+                userQuality: 66,
+                riskControl: 72,
+                activeUsers: 586,
+                monthlyActive: 586,
+                validFlow: '¥46.8万',
+                contributionProfit: '¥44.0万',
+                totalDeposit: '¥48.1万',
+                retention: '17%',
+                riskUsers: '6%',
+                gradeColor: 'text-yellow-600 bg-yellow-50'
             }
           ].map((agent, index) => (
             <div key={index} className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
