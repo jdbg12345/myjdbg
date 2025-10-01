@@ -105,4 +105,4 @@ export const FKSystemOverview = () => {
                 </text>
               </g>
 
-              {/* Bubble 3: Below
+              {/* Bubble 3: Below */}
