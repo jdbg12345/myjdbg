@@ -254,7 +254,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex items-start space-x-4">
                   <div className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 ${
                     item.status === 'completed' ? 'bg-blue-100' :
-                    item.status === 'current' ? 'bg-blue-100' :
+                    item.status === 'current' ? 'bg-green-100' :
                     'bg-blue-100'
                   }`}>
                     {item.status === 'completed' ? (
