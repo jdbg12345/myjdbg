@@ -790,21 +790,18 @@ export const FKSystemOverview = () => {
             <div className="col-span-1 border-r pr-4">
               <div className="text-sm text-gray-500">盈利贡献</div>
               <div className="mt-2 text-2xl font-bold text-blue-600">{agent.businessScore}</div>
-              <div className="text-xs text-gray-400 mt-2">（业务侧评分）</div>
             </div>
 
             {/* 第三列：下级质量 */}
             <div className="col-span-1 border-r pr-4">
               <div className="text-sm text-gray-500">下级质量</div>
               <div className="mt-2 text-2xl font-bold text-green-600">{agent.userQuality}</div>
-              <div className="text-xs text-gray-400 mt-2">（质量侧评分）</div>
             </div>
 
             {/* 第四列：风险评估 */}
             <div className="col-span-1">
               <div className="text-sm text-gray-500">风险评估</div>
               <div className="mt-2 text-2xl font-bold text-orange-600">{agent.riskControl}</div>
-              <div className="text-xs text-gray-400 mt-2">（风控侧评分）</div>
             </div>
 
             {/* 第二行：各列子项 */}
