@@ -3,15 +3,6 @@ import React from 'react';
 export const Direction4InternalCollusion = () => {
   return (
     <div className="bg-white rounded-xl p-8 mb-8 border border-blue-200 shadow-md">
-      <div className="flex items-center justify-between mb-8">
-        <div className="flex items-center space-x-3">
-          <div className="w-16 h-10 bg-blue-600 rounded flex items-center justify-center">
-            <span className="text-white font-medium text-sm">方向3</span>
-          </div>
-          <h2 className="text-2xl font-semibold text-gray-800">优化【内控问题-违规行为】</h2>
-        </div>
-      </div>
-
       {/* 风控标签和备注独立权限 */}
       <div className="mb-12">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
