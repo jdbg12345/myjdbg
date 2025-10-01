@@ -477,10 +477,15 @@ export const FKSystemOverview = () => {
         </div>
       </div>
 
+      <div className="flex items-center space-x-4 mb-8">
+          <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
+            <BarChart3 className="w-6 h-6 text-white" />
+          </div>
           <div>
             <h2 className="text-3xl font-bold text-gray-900">会员FK流程变化</h2>
             <span className="text-gray-700 text-xl"><span className="text-blue-600">单人可出款 → 出款监控（+6） + 内控抽检（+7），想违规出款，会非常难且风险大</span>，有效防内外串联</span>
           </div>
+      </div>
       
       {/* 优化 */}
       <Direction1PersonnelCapability />
