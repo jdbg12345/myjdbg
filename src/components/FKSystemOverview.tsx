@@ -923,21 +923,4 @@ export const FKSystemOverview = () => {
                     {/* 质量指标 */}
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">30日留存:</span>
-                        <span className="font-semibold text-green-600">{agent.retention}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">风险用户:</span>
-                        <span className="font-semibold text-red-600">{agent.riskUsers}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+                        <span className="text-sm text-gray-600">
