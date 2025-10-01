@@ -207,115 +207,78 @@ export const FKSystemOverview = () => {
           </div>
         </div>
 
-        {/* 能力变化对比 */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-          {/* 调整前 */}
-          <div className="bg-white rounded-lg p-8 border border-gray-200">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-8 h-8 bg-gray-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">调整前</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-800">传统防御型策略</h3>
+        {/* 防御型规则 */}
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-sm">1</span>
             </div>
-            <div className="space-y-4">
-              <div className="bg-gray-50 rounded-lg p-4">
-                <h4 className="font-semibold text-gray-700 mb-2">主要特点</h4>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-start">
-                    <span className="text-gray-400 mr-2">•</span>
-                    <span>单一防御机制，主要依赖基础规则</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gray-400 mr-2">•</span>
-                    <span>人工审核为主，系统辅助有限</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gray-400 mr-2">•</span>
-                    <span>缺乏套利和作弊识别能力</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gray-400 mr-2">•</span>
-                    <span>内控管理相对薄弱</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-red-50 rounded-lg p-4 border border-red-200">
-                <h4 className="font-semibold text-red-700 mb-2">存在问题</h4>
-                <ul className="space-y-1 text-sm text-red-600">
-                  <li>• 系统直接出款错误率高</li>
-                  <li>• 套利行为难以识别</li>
-                  <li>• 内外串联风险大</li>
-                </ul>
-              </div>
-            </div>
+            <h3 className="text-2xl font-bold text-gray-800">防御型规则</h3>
           </div>
-
-          {/* 调整后 */}
-          <div className="bg-white rounded-lg p-8 border border-blue-200">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">调整后</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-800">多维度智能策略</h3>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <h4 className="font-semibold text-blue-700 mb-3">基础防护</h4>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• 金额限制规则</li>
+                <li>• 频次控制规则</li>
+                <li>• 时间窗口规则</li>
+                <li>• IP地址监控</li>
+              </ul>
             </div>
-            <div className="space-y-4">
-              <div className="bg-blue-50 rounded-lg p-4">
-                <h4 className="font-semibold text-blue-700 mb-2">核心能力</h4>
-                <ul className="space-y-2 text-sm text-blue-600">
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2">•</span>
-                    <span>防御+套利+作弊三重识别</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2">•</span>
-                    <span>系统审核为主，人工复核为辅</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2">•</span>
-                    <span>智能派单+内控抽检机制</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2">•</span>
-                    <span>违规操作全程监控</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                <h4 className="font-semibold text-green-700 mb-2">预期效果</h4>
-                <ul className="space-y-1 text-sm text-green-600">
-                  <li>• 系统直接出款准确率提升</li>
-                  <li>• 套利作弊行为有效拦截</li>
-                  <li>• 内外串联风险显著降低</li>
-                </ul>
-              </div>
+            
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <h4 className="font-semibold text-blue-700 mb-3">行为监控</h4>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• 异常登录检测</li>
+                <li>• 设备指纹识别</li>
+                <li>• 操作轨迹分析</li>
+                <li>• 关联账户识别</li>
+              </ul>
+            </div>
+            
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <h4 className="font-semibold text-blue-700 mb-3">风险评估</h4>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• 用户信用评级</li>
+                <li>• 历史行为分析</li>
+                <li>• 资金流向监控</li>
+                <li>• 综合风险评分</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        {/* 能力提升指标 */}
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
-          <h3 className="text-xl font-bold text-gray-800 mb-6">能力提升指标对比</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
-                <div className="text-sm text-gray-600 mb-2">策略数量</div>
-                <div className="text-xs text-gray-500">vs 调整前 10+</div>
-              </div>
+        {/* 套利类型规则 */}
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-sm">2</span>
             </div>
-            <div className="text-center">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <div className="text-3xl font-bold text-blue-600 mb-2">90%+</div>
-                <div className="text-sm text-gray-600 mb-2">拦截准确率</div>
-                <div className="text-xs text-gray-500">vs 调整前 60%</div>
-              </div>
+            <h3 className="text-2xl font-bold text-gray-800">套利类型规则</h3>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <h4 className="font-semibold text-blue-700 mb-3">游戏套利</h4>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• 电子游戏卡免费</li>
+                <li>• 真人游戏对打</li>
+                <li>• 体育打水套利</li>
+                <li>• 彩票全包行为</li>
+                <li>• 棋牌移分操作</li>
+              </ul>
             </div>
-            <div className="text-center">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <div className="text-3xl font-bold text-blue-600 mb-2">3层</div>
-                <div className="text-sm text-gray-600 mb-2">防护机制</div>
-                <div className="text-xs text-gray-500">系统+人工+内控</div>
-              </div>
+            
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <h4 className="font-semibold text-blue-700 mb-3">红利套利</h4>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• 新用户红利套取</li>
+                <li>• 存款红利滥用</li>
+                <li>• 代理佣金套利</li>
+                <li>• 活动奖励套取</li>
+                <li>• 返水机制滥用</li>
+              </ul>
             </div>
           </div>
         </div>
