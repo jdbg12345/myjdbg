@@ -248,7 +248,7 @@ export const FKTransformationRhythm = () => {
             {progressSchedule.map((item, index) => (
               <div key={index} className={`rounded-lg p-6 border ${
                 item.status === 'completed' ? 'bg-blue-50 border-blue-600' :
-                item.status === 'current' ? 'bg-green-50 border-blue-600' :
+                item.status === 'current' ? 'bg-green-50 border-green-600' :
                 'bg-blue-50 border-blue-600'
               }`}>
                 <div className="flex items-start space-x-4">
