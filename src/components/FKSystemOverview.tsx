@@ -667,7 +667,7 @@ export const FKSystemOverview = () => {
 
               {/* 下级质量维度 */}
               <tr className="border-b border-gray-100">
-                <td rowSpan="5" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
+                <td rowSpan="4" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
                   <div className="text-blue-700 text-lg">下级质量</div>
                 </td>
                 <td className="p-4 font-semibold border-r border-gray-200">一次性会员占比</td>
