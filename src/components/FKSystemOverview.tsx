@@ -225,6 +225,7 @@ export const FKSystemOverview = () => {
               <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>防御型规则
               </h5>
+                 <div className="text-lg text-gray-600 mb-4">定义<span className="text-blue-600">平台有效贡献度模型</span>，进行全局监控，及时发现优质和劣质代理，进行后续针对性的调整措施</div>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
@@ -344,6 +345,7 @@ export const FKSystemOverview = () => {
               <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <div className="w-6 h-6 bg-blue-600 rounded-lg mr-3"></div>套利型规则
               </h5>
+                 <div className="text-lg text-gray-600 mb-4">定义<span className="text-blue-600">平台有效贡献度模型</span>，进行全局监控，及时发现优质和劣质代理，进行后续针对性的调整措施</div>
               <div className="space-y-4">
                 <div className="bg-blue-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
