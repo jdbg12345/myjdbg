@@ -15,7 +15,6 @@ export const Direction1PersonnelCapability = () => {
           <p className="text-gray-700 text-base leading-relaxed font-semibold">从<span className="text-blue-600">派单策略改变、审核流程优化、风险分数调优</span>等三个维度进行优化 </p>
         </div>
         </div>
-        </div>
       
         {/* 新派单规则效果图表 */}
         <div className="mb-12">
