@@ -253,7 +253,7 @@ export const Direction1PersonnelCapability = () => {
                         <div className="flex items-end space-x-1">
                           <div className="relative">
                             <div 
-                              className="w-12 bg-blue-500 rounded-t"
+                              className="w-20 bg-blue-500 rounded-t"
                               style={{ height: `${(item.count / 2000) * 250}px` }}
                             ></div>
                           </div>
