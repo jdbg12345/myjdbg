@@ -244,7 +244,7 @@ export const FKSystemOverview = () => {
                       <div className="font-bold text-gray-800 text-base mb-2">帐变记录异常</div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-600">开发中</span></span>
-                        <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-600 font-semibold text-xs">新增</span>
+                        <span className="px-2 py-1 rounded-full bg-blue-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-4">
