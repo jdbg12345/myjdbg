@@ -694,7 +694,7 @@ export const FKSystemOverview = () => {
                 </td>
               </tr>
               <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">新用户贡献度</td>
+                <td className="p-4 font-semibold border-r border-gray-200">新手贡献度</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">近一段时间新增下级对总盈利贡献（结合活跃和留存加权）</td>
                 <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">5%</td>
                 <td className="p-4 text-center">
