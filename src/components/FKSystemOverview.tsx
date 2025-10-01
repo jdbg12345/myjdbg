@@ -458,8 +458,8 @@ export const FKSystemOverview = () => {
                   </div>
                 </div>
               </div>
+            </div>
           </div>
-        </div>
 
         {/* 内控风险监控 */}
           <div className="bg-blue-50 rounded p-6 border-l-4 border-blue-600 mb-12">
@@ -544,7 +544,7 @@ export const FKSystemOverview = () => {
                 </div>
               </div>
             </div>
-        </div>
+          </div>
 
         {/* 代理风险监控 */}
           <div className="bg-blue-50 rounded p-6 border-l-4 border-blue-600 mb-12">
@@ -937,11 +937,6 @@ export const FKSystemOverview = () => {
             </div>
           ))}
         </div>
-      </div>
-      
-      {/* Footer */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-gray-400 text-sm">FKZX</div>
       </div>
     </div>
   );
