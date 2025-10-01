@@ -223,20 +223,20 @@ export const FKSystemOverview = () => {
             {/* 防御型规则 */}
             <div className="bg-white rounded p-8 border border-gray-200">
               <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                <div className="w-6 h-6 bg-blue-600 rounded-lg mr-3"></div>防御型规则
+                <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>防御型规则
               </h5>
               <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-6">
+                <div className="bg-gray-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-blue-600 mr-2">✅</span>
+                    <span className="text-green-500 mr-2">✅</span>
                     账户安全类
                   </h6>
                   <div className="space-y-2">
                     <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">敏感信息变更</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-blue-600">已上线</span></span>
-                        <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-600 font-semibold text-xs">增强</span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
+                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">增强</span>
                       </div>
                     </div>
                     <div className="bg-white rounded-lg p-4">
@@ -342,12 +342,12 @@ export const FKSystemOverview = () => {
             {/* 套利型规则 */}
             <div className="bg-white rounded p-8 border border-gray-200">
               <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>套利型规则
+                <div className="w-6 h-6 bg-blue-600 rounded-lg mr-3"></div>套利型规则
               </h5>
               <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-6">
+                <div className="bg-blue-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-green-500 mr-2">✅</span>
+                    <span className="text-blue-600 mr-2">✅</span>
                     游戏套利类
                   </h6>
                   <div className="space-y-2">
