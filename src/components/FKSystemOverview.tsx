@@ -621,15 +621,15 @@ export const FKSystemOverview = () => {
           <h4 className="text-lg font-bold text-blue-800 mb-3">模型说明</h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
             <div className="bg-white rounded-lg p-4 border border-blue-200">
-              <div className="font-semibold text-blue-700 mb-2">盈利贡献 (50%)</div>
+              <div className="font-semibold text-blue-700 mb-2">盈利贡献</div>
               <div className="text-gray-600">评估代理为平台带来的实际经济价值和长期稳定性</div>
             </div>
             <div className="bg-white rounded-lg p-4 border border-orange-200">
-              <div className="font-semibold text-orange-700 mb-2">下级质量 (20%)</div>
+              <div className="font-semibold text-orange-700 mb-2">下级质量</div>
               <div className="text-gray-600">衡量代理下级用户的质量和可持续发展潜力</div>
             </div>
             <div className="bg-white rounded-lg p-4 border border-red-200">
-              <div className="font-semibold text-red-700 mb-2">风险评估 (30%)</div>
+              <div className="font-semibold text-red-700 mb-2">风险评估</div>
               <div className="text-gray-600">识别和量化代理及其下级可能带来的各类风险</div>
             </div>
           </div>
