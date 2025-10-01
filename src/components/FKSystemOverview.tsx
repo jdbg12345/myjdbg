@@ -636,11 +636,6 @@ export const FKSystemOverview = () => {
           </div>
         </div>
 
-        {/* 代理贡献度总览标题 */}
-        <div className="flex items-center justify-between mb-6">
-          <h4 className="text-xl font-bold text-gray-800">有效贡献度</h4>
-        </div>
-
         {/* 代理列表 */}
         <div className="space-y-4">
           {[
