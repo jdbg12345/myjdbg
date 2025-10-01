@@ -205,20 +205,7 @@ export const FKSystemOverview = () => {
         </div>
 
         <div className="bg-white rounded p-8 border-2 border-gray-200">
-        
-        {/* 玩家风险防控 */}
-          <div className="bg-blue-50 rounded p-6 border-l-4 border-blue-600 mb-12">
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 rounded bg-blue-600 flex items-center justify-center">
-                <Users className="w-7 h-7 text-white" />
-              </div>
-              <div>
-                <h4 className="text-2xl font-bold text-gray-900">玩家风险防控能力变化</h4>
-                <div className="text-lg font-semibold text-gray-700">主要资源在这个方向，增强了一些既有策略，更重要的新增【套利型】策略</div>
-              </div>
-            </div>
-          </div>
-
+                 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
             {/* 防御型规则 */}
             <div className="bg-white rounded p-8 border border-gray-200">
