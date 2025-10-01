@@ -37,7 +37,7 @@ export const FKSystemOverview = () => {
 
         <div className="bg-gray-50 rounded p-10 border-2 border-gray-200">
           <div className="flex justify-center p-4">
-              <svg viewBox="0 0 1800 650" className="w-full h-[800px]" preserveAspectRatio="xMidYMid meet">
+              <svg viewBox="0 0 1800 650" className="w-full h-[700px]" preserveAspectRatio="xMidYMid meet">
   <defs>
     <marker id="arrowhead-gray" markerWidth="14" markerHeight="10" refX="14" refY="5" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 14 10">
       <polygon points="0 0, 14 5, 0 10" fill="#6b7280" />
@@ -60,7 +60,7 @@ export const FKSystemOverview = () => {
   {/* helper: edges 定义（按 id 指向） */}
   {(() => {
     // 配置：节点矩形尺寸（与你rect一致）
-    const NODE_W = 200, NODE_H = 160;
+    const NODE_W = 160, NODE_H = 130;
     const hw = NODE_W / 2, hh = NODE_H / 2;
 
     // 查 node 辅助
@@ -174,24 +174,24 @@ export const FKSystemOverview = () => {
 
   {/* Bubble 1 - 调整位置适应新的节点布局 */}
   <g>
-    <ellipse cx="900" cy="80" rx="250" ry="55" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
-    <text x="900" y="85" textAnchor="middle" fill="white" fontSize="26" fontWeight="600">
+    <ellipse cx="900" cy="80" rx="200" ry="45" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
+    <text x="900" y="85" textAnchor="middle" fill="white" fontSize="20" fontWeight="600">
       变化：增加套利作弊等拦截策略
     </text>
   </g>
 
   {/* Bubble 2 - 调整位置 */}
   <g>
-    <ellipse cx="600" cy="280" rx="240" ry="55" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
-    <text x="600" y="285" textAnchor="middle" fill="white" fontSize="26" fontWeight="600">
+    <ellipse cx="600" cy="280" rx="190" ry="45" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
+    <text x="600" y="285" textAnchor="middle" fill="white" fontSize="20" fontWeight="600">
       变化：升级为按分数和金额派单
     </text>
   </g>
 
   {/* Bubble 3 - 调整位置 */}
   <g>
-    <ellipse cx="900" cy="480" rx="200" ry="50" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
-    <text x="900" y="485" textAnchor="middle" fill="white" fontSize="26" fontWeight="600">
+    <ellipse cx="900" cy="480" rx="160" ry="40" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
+    <text x="900" y="485" textAnchor="middle" fill="white" fontSize="20" fontWeight="600">
       变化：提供标准工具支持
     </text>
   </g>
@@ -214,35 +214,35 @@ export const FKSystemOverview = () => {
       <circle
         cx={node.x}
         cy={node.y - 45}
-        r="28"
+        r="16"
         fill="white"
         stroke="#e5e7eb"
         strokeWidth="2"
         filter="url(#nodeShadow)"
       />
-      <text x={node.x} y={node.y - 35} textAnchor="middle" fill={node.numberColor} fontSize="24" fontWeight="700">
+      <text x={node.x} y={node.y - 35} textAnchor="middle" fill={node.numberColor} fontSize="18" fontWeight="700">
         {node.number}
       </text>
-      <text x={node.x} y={node.y + 20} textAnchor="middle" fill="white" fontSize="32" fontWeight="600">
+      <text x={node.x} y={node.y + 20} textAnchor="middle" fill="white" fontSize="24" fontWeight="600">
         {node.name}
       </text>
-      <text x={node.x} y={node.y + 50} textAnchor="middle" fill="rgba(255,255,255,0.9)" fontSize="20" fontWeight="500">
+      <text x={node.x} y={node.y + 50} textAnchor="middle" fill="rgba(255,255,255,0.9)" fontSize="16" fontWeight="500">
         {node.desc}
       </text>
     </g>
   ))}
 
   {/* Flow labels */}
-  <text x="330" y="120" textAnchor="middle" fill="#6b7280" fontSize="20" fontWeight="600">开始</text>
-  <text x="595" y="120" textAnchor="middle" fill="#6b7280" fontSize="20" fontWeight="600">提交</text>
-  <text x="900" y="120" textAnchor="middle" fill="#6b7280" fontSize="20" fontWeight="600">低风险</text>
-  <text x="815" y="240" textAnchor="middle" fill="#6b7280" fontSize="20" fontWeight="600">高风险</text>
-  <text x="1200" y="240" textAnchor="middle" fill="#6b7280" fontSize="20" fontWeight="600">通过</text>
-  <text x="1200" y="440" textAnchor="middle" fill="#6b7280" fontSize="20" fontWeight="600">不通过</text>
-  <text x="1490" y="240" textAnchor="middle" fill="#6b7280" fontSize="20" fontWeight="600">通过</text>
-  <text x="1490" y="440" textAnchor="middle" fill="#6b7280" fontSize="20" fontWeight="600">不通过</text>
-  <text x="1575" y="240" textAnchor="middle" fill="#6b7280" fontSize="20" fontWeight="600">通过</text>
-  <text x="1575" y="440" textAnchor="middle" fill="#6b7280" fontSize="20" fontWeight="600">不通过</text>
+  <text x="330" y="120" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">开始</text>
+  <text x="595" y="120" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">提交</text>
+  <text x="900" y="120" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">低风险</text>
+  <text x="815" y="240" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">高风险</text>
+  <text x="1200" y="240" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
+  <text x="1200" y="440" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
+  <text x="1490" y="240" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
+  <text x="1490" y="440" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
+  <text x="1575" y="240" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
+  <text x="1575" y="440" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
 </svg>
           </div>
         </div>
