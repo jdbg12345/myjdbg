@@ -203,7 +203,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold"><span className="text-blue-600">依托风控策略与标签体系对各项指标进行赋分</span>，构建风控评分体系；<span className="text-blue-600">为每笔订单/每位玩家生成风险分数</span>，从而实现风险量化判断与统一管理</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold"><span className="text-blue-600">依托风控策略与标签体系对各项指标进行赋分</span>，构建风控评分体系；<span className="text-blue-600">为每笔订单/每位玩家生成风险分数</span>，实现风险量化判断与管理</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
