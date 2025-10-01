@@ -429,6 +429,13 @@ export const FKSystemOverview = () => {
           </div>
         </div>
       </div>
+      
+      {/* 优化 */}
+      <Direction1PersonnelCapability />
+      
+       {/* 内控问题优化 */}
+      <Direction3SystemStrategies />
+      
     </div>
   );
 };
