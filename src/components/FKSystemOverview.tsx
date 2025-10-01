@@ -701,14 +701,7 @@ export const FKSystemOverview = () => {
                   <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-600">正向</span>
                 </td>
               </tr>
-              <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">下级增长质量指数</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">新增下级数量、盈利贡献、活跃度和留存综合评分</td>
-                <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">5%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-600">正向</span>
-                </td>
-              </tr>
+          
 
               {/* 风险评估维度 */}
               <tr className="border-b border-gray-100">
