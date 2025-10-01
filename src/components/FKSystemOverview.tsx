@@ -588,7 +588,7 @@ export const FKSystemOverview = () => {
                 <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 代理质量自动化分析
               </h5>
-              <div className="text-lg text-gray-600 mb-4">定义<span className="text-blue-600">平台有效贡献度模型->(下级质量+收益质量+风险情况)综合纬度打分</span>，进行全局监控，及时发现优质和劣质代理，进行后续针对性的调整措施</div>
+              <div className="text-lg text-gray-600 mb-4">定义<span className="text-blue-600">平台有效贡献度模型(下级质量+收益质量+风险情况)综合纬度打分</span>，进行全局监控，及时发现优质和劣质代理，进行后续针对性的调整措施</div>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <div className="space-y-2">
