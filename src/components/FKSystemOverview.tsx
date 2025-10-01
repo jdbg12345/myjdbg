@@ -653,39 +653,9 @@ export const FKSystemOverview = () => {
         <div className="space-y-4">
           {[
             {
-              id: '#1Y695966',
-              grade: 'B档 - 良好',
-              level: '高级代理',
-              joinDate: '2024-10-02',
-              totalScore: 61,
-              businessScore: 39,
-              userQuality: 64,
-              riskControl: 97,
-              activeUsers: 970,
-              validFlow: '¥38.8万',
-              retention: '30%',
-              riskUsers: '5%',
-              gradeColor: 'text-blue-600 bg-blue-50'
-            },
-            {
-              id: '#2Y144558',
-              grade: 'C档 - 一般',
-              level: '金牌代理',
-              joinDate: '2024-09-05',
-              totalScore: 57,
-              businessScore: 38,
-              userQuality: 60,
-              riskControl: 90,
-              activeUsers: 253,
-              validFlow: '¥51.4万',
-              retention: '18%',
-              riskUsers: '4%',
-              gradeColor: 'text-yellow-600 bg-yellow-50'
-            },
-            {
               id: '#3Y218350',
               grade: 'C档 - 一般',
-              level: '金牌代理',
+              site: ' Y8',
               joinDate: '2024-08-10',
               totalScore: 56,
               businessScore: 39,
@@ -700,7 +670,7 @@ export const FKSystemOverview = () => {
             {
               id: '#4Y116215',
               grade: 'C档 - 一般',
-              level: '高级代理',
+              site: ' Y1',
               joinDate: '2024-11-25',
               totalScore: 55,
               businessScore: 34,
@@ -715,7 +685,7 @@ export const FKSystemOverview = () => {
             {
               id: '#5Y455003',
               grade: 'C档 - 一般',
-              level: '高级代理',
+              site: ' Y3',
               joinDate: '2024-12-17',
               totalScore: 55,
               businessScore: 27,
@@ -730,7 +700,7 @@ export const FKSystemOverview = () => {
             {
               id: '#6Y567649',
               grade: 'C档 - 一般',
-              level: '初级代理',
+              site: 'Y4',
               joinDate: '2024-06-15',
               totalScore: 55,
               businessScore: 39,
@@ -751,7 +721,7 @@ export const FKSystemOverview = () => {
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
                       {agent.grade}
                     </span>
-                    <span className="text-gray-600">{agent.level}</span>
+                    <span className="text-gray-600">{agent.site}</span>
                     <span className="text-gray-500">• 加入时间: {agent.joinDate}</span>
                   </div>
                   
@@ -765,15 +735,15 @@ export const FKSystemOverview = () => {
                     {/* 三个评分指标 */}
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">业务贡献</span>
+                        <span className="text-sm text-gray-600">盈利贡献</span>
                         <span className="font-semibold text-blue-600">{agent.businessScore}</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">用户质量</span>
+                        <span className="text-sm text-gray-600">下级质量</span>
                         <span className="font-semibold text-green-600">{agent.userQuality}</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">风险控制</span>
+                        <span className="text-sm text-gray-600">风险评估</span>
                         <span className="font-semibold text-orange-600">{agent.riskControl}</span>
                       </div>
                     </div>
