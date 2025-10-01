@@ -719,15 +719,14 @@ export const Direction3SystemStrategies = () => {
           针对中心钱包、场馆钱包等多钱、沉睡用户活跃提款、场馆杀率异常等场景，建立预警监控机制，及时发现并响应潜在风险；
         </p>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
           {/* 中心钱包多钱 */}
           <div className="bg-white rounded p-8 border border-gray-200">
             <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-              <div className="w-6 h-6 bg-blue-600 rounded mr-3 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">钱</span>
-              </div>
+              <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
               中心钱包多钱
             </h5>
+            <div className="text-lg text-gray-600 mb-4">出现用户钱包异常变动的极端情况，如无存款、无盈利却发起提款，但目前系统缺乏针对该类行为的监控，一旦发生损失可能巨大</div>
             <div className="space-y-4">
               <div className="bg-gray-50 rounded-lg p-6">
                 <div className="space-y-2">
@@ -738,20 +737,6 @@ export const Direction3SystemStrategies = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-4 mt-6">
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">出现用户钱包异常变动的极端情况，如无存款、无盈利却发起提款，但目前系统缺乏针对该类行为的监控，一旦发生损失可能巨大</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">建立钱包异常预警机制，实时监控资金流动</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">预防极端情况，尽早发现</p>
               </div>
             </div>
           </div>
@@ -759,11 +744,10 @@ export const Direction3SystemStrategies = () => {
           {/* 场馆钱包多钱 */}
           <div className="bg-white rounded p-8 border border-gray-200">
             <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-              <div className="w-6 h-6 bg-blue-600 rounded mr-3 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">场</span>
-              </div>
+              <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
               场馆钱包多钱
             </h5>
+            <div className="text-lg text-gray-600 mb-4">近期出现多次场馆钱包多钱情况，但目前系统缺乏针对该类行为的监控，一旦发生损失可能巨大</div>
             <div className="space-y-4">
               <div className="bg-gray-50 rounded-lg p-6">
                 <div className="space-y-2">
@@ -776,30 +760,15 @@ export const Direction3SystemStrategies = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-4 mt-6">
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">近期出现多次场馆钱包多钱情况，但目前系统缺乏针对该类行为的监控，一旦发生损失可能巨大</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">建立场馆资金异常监控机制，实时预警异常资金变动</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">预防极端情况，尽早发现</p>
-              </div>
-            </div>
           </div>
 
           {/* 盈利监控预警 */}
           <div className="bg-white rounded p-8 border border-gray-200">
             <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-              <div className="w-6 h-6 bg-blue-600 rounded mr-3 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">盈</span>
-              </div>
+              <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
               盈利监控预警
             </h5>
+            <div className="text-lg text-gray-600 mb-4">针对盈利类监控不完整，无法做到全方位、及时性的发现潜在问题</div>
             <div className="space-y-4">
               <div className="bg-gray-50 rounded-lg p-6">
                 <div className="space-y-2">
@@ -812,30 +781,15 @@ export const Direction3SystemStrategies = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-4 mt-6">
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">针对盈利类监控不完整，无法做到全方位、及时性的发现潜在问题</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">已经覆盖场馆、游戏、单笔、持续等盈利维度进行监控</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">可第一时间进行预警，然后由专人跟进处理</p>
-              </div>
-            </div>
           </div>
 
           {/* 沉睡用户活跃 */}
           <div className="bg-white rounded p-8 border border-gray-200">
             <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-              <div className="w-6 h-6 bg-blue-600 rounded mr-3 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">睡</span>
-              </div>
+              <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
               沉睡用户活跃
             </h5>
+            <div className="text-lg text-gray-600 mb-4">长期沉睡用户突然活跃，可能存在账号被盗或异常操作风险</div>
             <div className="space-y-4">
               <div className="bg-gray-50 rounded-lg p-6">
                 <div className="space-y-2">
@@ -846,20 +800,6 @@ export const Direction3SystemStrategies = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-4 mt-6">
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">长期沉睡用户突然活跃，可能存在账号被盗或异常操作风险</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">建立沉睡用户活跃预警机制，监控异常登录和操作行为</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <h6 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h6>
-                <p className="text-gray-700 text-sm leading-relaxed">有效防范账号盗用/违规风险</p>
               </div>
             </div>
           </div>
