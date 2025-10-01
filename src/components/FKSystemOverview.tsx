@@ -760,7 +760,7 @@ export const FKSystemOverview = () => {
                         <span className="font-semibold text-green-600">{agent.userQuality}</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">风险控制</span>
+                        <span className="text-sm text-gray-600">风险评估</span>
                         <span className="font-semibold text-orange-600">{agent.riskControl}</span>
                       </div>
                     </div>
