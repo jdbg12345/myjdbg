@@ -60,17 +60,17 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 shadow-sm">已上线</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
-                <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">卡免费是最典型的套利或藏分手段。目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏，每月都有损失100万+/月。</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">核心问题</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">卡免费是最典型的套利或藏分手段。目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏，每月都有损失100万+/月。</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
-                <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">系统策略增加电子卡免费的策略模型</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">解决策略</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">系统策略增加电子卡免费的策略模型</p>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
-                <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">拦截率：95%+</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">预期收益</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">拦截率：95%+</p>
               </div>
             </div>
         
@@ -151,17 +151,17 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4 shadow-sm">突破：B/C端系统打通，解决实效性极差、无法跨商户、风控无联动等关键问题</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
-                <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold"><span className="text-blue-600">对打、机器下注和算牌</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏，导致每月<span className="text-blue-600">损失超过100万元</span></p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">核心问题</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold"><span className="text-blue-600">对打、机器下注和算牌</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏，导致每月<span className="text-blue-600">损失超过100万元</span></p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
-                <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">系统策略增加真人对打、机器下注、算牌的策略模型</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">解决策略</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">系统策略增加真人对打、机器下注、算牌的策略模型</p>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
-                <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">拦截率：80%+</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">预期收益</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">拦截率：80%+</p>
               </div>
             </div>
         
@@ -238,21 +238,21 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">1.3</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">体育策略</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-600 shadow-sm">开发中</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 shadow-sm">开发中</span>
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4 shadow-sm">突破：B/C端系统打通，解决实效性极差、无法跨商户、风控无联动等关键问题</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
-                <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold"><span className="text-blue-600">打水、协议球、卡危险球、出货、蛇货、拉赛、机器下注</span>等是最常见的套利与作弊手段。当前系统在自动出款与人工审核环节对此类行为的识别尚不充分，尤其是体育赛类场景复杂、多变，对审核人员经验依赖高，导致漏判与误判并存，带来较大风控盲区与损失风险</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">核心问题</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold"><span className="text-blue-600">打水、协议球、卡危险球、出货、蛇货、拉赛、机器下注</span>等是最常见的套利与作弊手段。当前系统在自动出款与人工审核环节对此类行为的识别尚不充分，尤其是体育赛类场景复杂、多变，对审核人员经验依赖高，导致漏判与误判并存，带来较大风控盲区与损失风险</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
-                <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">通过<span className="text-blue-600">联动B端系统，引入百家赔、危险球</span>等关键外部数据，构建针对性的特征识别策略，实现对异常行为更高时效的预警与拦截，全面提升对体育类套利与作弊行为的识别与防控能力。</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">解决策略</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">通过<span className="text-blue-600">联动B端系统，引入百家赔、危险球</span>等关键外部数据，构建针对性的特征识别策略，实现对异常行为更高时效的预警与拦截，全面提升对体育类套利与作弊行为的识别与防控能力。</p>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
-                <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">拦截率：70%+</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">预期收益</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">拦截率：70%+</p>
               </div>
             </div>
         
@@ -332,17 +332,17 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 shadow-sm">已上线</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
-                <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold"><span className="text-blue-600">移分</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏，导致每月<span className="text-blue-600">损失超过100万元</span></p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">核心问题</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold"><span className="text-blue-600">移分</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏，导致每月<span className="text-blue-600">损失超过100万元</span></p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
-                <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">建立棋牌游戏异常行为识别机制</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">解决策略</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">建立棋牌游戏异常行为识别机制</p>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
-                <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">拦截率：60%+</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">预期收益</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">拦截率：60%+</p>
               </div>
             </div>
         
@@ -419,20 +419,20 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-bold text-sm">1.5</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">彩票策略</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-600 shadow-sm">开发中</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 shadow-sm">开发中</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
-                <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold"><span className="text-blue-600">全包行为</span>等是最常见的套利与作弊手段；目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏，<span className="text-blue-600">损失超过100万元</span></p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">核心问题</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold"><span className="text-blue-600">全包行为</span>等是最常见的套利与作弊手段；目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏，<span className="text-blue-600">损失超过100万元</span></p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
-                <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">针对对全包行为进行预警和拦截</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">解决策略</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">针对对全包行为进行预警和拦截</p>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
-                <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">拦截率：90%+</p>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h5 className="font-bold text-blue-700 mb-2 text-lg">预期收益</h5>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">拦截率：90%+</p>
               </div>
             </div>
         
