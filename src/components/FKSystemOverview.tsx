@@ -879,14 +879,10 @@ export const FKSystemOverview = () => {
               </div>
             </div>
 
-            {/* 有效贡献度呈现例子 */}
-            <div className="mt-8">
-              <h6 className="text-xl font-bold text-gray-800 mb-6">2）有效贡献度呈现例子</h6>
-              {/* 这里是原来的代理质量自动化分析详细展示内容 */}
-            </div>
           ))}
         </div>
       </div>
+    </div>
       
   );
 };
