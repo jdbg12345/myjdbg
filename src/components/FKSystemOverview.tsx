@@ -762,34 +762,6 @@ export const FKSystemOverview = () => {
           <span className="text-gray-600 text-lg">快速区分优质代理与劣质代理，实现精准监控与管理</span>
         </div>
 
-        {/* 分级统计 */}
-        <div className="grid grid-cols-4 gap-6 mb-8">
-          <div className="bg-green-50 rounded-lg p-6 text-center border border-green-200">
-            <div className="text-4xl font-bold text-green-600 mb-2">0</div>
-            <div className="text-green-700 font-semibold">A档优质</div>
-          </div>
-          <div className="bg-blue-50 rounded-lg p-6 text-center border border-blue-200">
-            <div className="text-4xl font-bold text-blue-600 mb-2">1</div>
-            <div className="text-blue-700 font-semibold">B档良好</div>
-          </div>
-          <div className="bg-yellow-50 rounded-lg p-6 text-center border border-yellow-200">
-            <div className="text-4xl font-bold text-yellow-600 mb-2">51</div>
-            <div className="text-yellow-700 font-semibold">C档一般</div>
-          </div>
-          <div className="bg-red-50 rounded-lg p-6 text-center border border-red-200">
-            <div className="text-4xl font-bold text-red-600 mb-2">1</div>
-            <div className="text-red-700 font-semibold">D档风险</div>
-          </div>
-        </div>
-
-        {/* 有效贡献度总览标题 */}
-        <div className="flex items-center justify-between mb-6">
-          <h4 className="text-xl font-bold text-gray-800">有效贡献度总览</h4>
-          <div className="flex items-center space-x-4">
-          
-          </div>
-        </div>
-
         {/* 代理列表 */}
         <div className="space-y-4">
           {[
