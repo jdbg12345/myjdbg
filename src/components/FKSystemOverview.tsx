@@ -605,6 +605,8 @@ export const FKSystemOverview = () => {
           </div>
         </div>
       </div>
+            </div>
+
 
       {/* 代理质量自动化分析详细展示 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
@@ -808,8 +810,6 @@ export const FKSystemOverview = () => {
           ))}
         </div>
       </div>
-            </div>
-
     </div>
       
       {/* Footer */}
