@@ -313,7 +313,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">在出款操作中，尽管SOP明确要求查看标签备注，<span className="text-blue-600">但仍存在忽视行为，造成约每月约15–20%的错误出款，100万+/月的损失</span>。</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">在出款操作中，尽管SOP明确要求查看标签备注，<span className="text-blue-600">但仍存在忽视行为，造成15–20%的错误出款，100万+/月的损失</span>。</p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
