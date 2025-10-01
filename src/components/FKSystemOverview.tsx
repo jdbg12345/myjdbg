@@ -272,8 +272,8 @@ export const FKSystemOverview = () => {
                 </div>
 
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-green-500 mr-2">2</span>
+                  <h6 className="font-bold text-blue-800 mb-4 text-lg flex items-center">
+                    <span className="text-blue-500 mr-2">2</span>
                     盈利监控类
                   </h6>
                   <div className="space-y-2">
@@ -309,8 +309,8 @@ export const FKSystemOverview = () => {
                 </div>
                 
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-green-500 mr-2">3</span>
+                  <h6 className="font-bold text-blue-800 mb-4 text-lg flex items-center">
+                    <span className="text-blue-500 mr-2">3</span>
                     内控监控类
                   </h6>
                   <div className="space-y-2">
