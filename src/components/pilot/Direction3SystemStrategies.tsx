@@ -26,21 +26,21 @@ export const Direction3SystemStrategies = () => {
         <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 mb-8 border border-blue-200 shadow-sm">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+              <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">+1</div>
               <div>
                 <h4 className="font-bold text-gray-800 text-base mb-2"><span className="text-blue-600">精准策略</span>：按游戏类型提取并建模典型套利特征</h4>
                 <p className="text-sm text-gray-600">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+              <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">+2</div>
               <div>
                 <h4 className="font-bold text-gray-800 text-base mb-2"><span className="text-blue-600">防御策略</span>：基于套利特征构建兜底式组合识别策略</h4>
                 <p className="text-sm text-gray-600">如玩家/代理的关联、红利金额/比例、流水比例、存款比例等</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+              <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">+3</div>
               <div>
                 <h4 className="font-bold text-gray-800 text-base mb-2"><span className="text-blue-600">基础建设</span>：打通Y/B跨站点及B/C端系统链路</h4>
                 <p className="text-sm text-gray-600">实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</p>
