@@ -876,12 +876,9 @@ export const FKSystemOverview = () => {
                     </tr>
                   </tbody>
                 </table>
-              </div>
             </div>
 
-            {/* 有效贡献度呈现例子 */}
-            <div className="mt-8">
-            </div>
+        
           ))}
         </div>
       </div>
