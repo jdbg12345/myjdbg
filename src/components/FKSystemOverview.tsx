@@ -564,7 +564,6 @@ export const FKSystemOverview = () => {
                 <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 代理佣金审核流程升级
               </h5>
-              <div className="text-lg text-blue-600 font-semibold mb-4">优化审核流程和监控违规操作</div>
               <div className="text-lg text-gray-600 mb-4">针对<span className="text-blue-600">红利、打负、调整等情况设定策略</span>，触发则进入<span className="text-blue-600">复审机制</span>来控制违规行为，提升佣金有效性</div>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
@@ -587,7 +586,6 @@ export const FKSystemOverview = () => {
                 <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 代理质量自动化分析
               </h5>
-              <div className="text-lg text-blue-600 font-semibold mb-4">优化审核流程和监控违规操作</div>
               <div className="text-lg text-gray-600 mb-4">定义<span className="text-blue-600">平台有效贡献度模型</span>，进行全局监控，及时发现优质和劣质代理，进行后续针对性的调整措施</div>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
