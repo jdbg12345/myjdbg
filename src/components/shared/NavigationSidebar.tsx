@@ -43,15 +43,8 @@ const navigationItems: NavigationItem[] = [
     children: [
       { id: 'fk-transformation', title: '3.1 整体说明' },
       { id: 'fk-system-overview', title: '3.2 会员风控说明' },
-      { 
-        id: 'pilot-results', 
-        title: '3.3 成果说明', 
-        children: [
-          { id: 'pilot-direction1', title: '优化【审核问题】' },
-          { id: 'pilot-direction2', title: '优化【系统问题】' },
-          { id: 'pilot-direction3', title: '优化【内控问题】' }
-        ]
-      }
+      { id: 'internal-control-overview', title: '3.3 内控风控说明' },
+      { id: 'agent-control-overview', title: '3.4 代理风控说明' }
     ]
   },
   {
