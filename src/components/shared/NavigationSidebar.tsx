@@ -42,15 +42,10 @@ const navigationItems: NavigationItem[] = [
     icon: <FileText className="w-4 h-4" />,
     children: [
       { id: 'fk-transformation', title: '3.1 整体说明' },
-      { id: 'fk-system-overview', title: '3.2 会员风控变化' },
-      { id: 'internal-control-overview', title: '3.3 内控风控变化' },
-      { id: 'agent-control-overview', title: '3.4 代理风控变化' }
+      { id: 'fk-system-overview', title: '3.2 会员风控说明' },
+      { id: 'internal-control-overview', title: '3.3 内控风控说明' },
+      { id: 'agent-control-overview', title: '3.4 代理风控说明' }
     ]
-  },
-  {
-    id: 'risk-review',
-    title: '4. B端问题汇总',
-    icon: <AlertTriangle className="w-4 h-4" />
   }
 ];
 
