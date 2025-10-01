@@ -320,7 +320,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">将<span className="text-blue-600">查看标签备注，设为出款流程中的强制查看环节</span>，否则无法完成审核</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">将<span className="text-blue-600">查看标签备注设为出款流程中的强制查看环节</span>，否则无法完成审核</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
