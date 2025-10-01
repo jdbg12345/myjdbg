@@ -8,7 +8,7 @@ export const AgentControlOverview = () => {
       <div className="mb-8">
         <h1 className="text-5xl font-bold text-gray-800 border-b-4 border-blue-600 pb-4 mb-4">3.4 代理风控说明</h1>
         <div className="text-gray-600 text-lg">
-          <p className="text-gray-700 text-lg leading-relaxed font-semibold">从<span className="text-blue-600">代理风险监控能力变化、代理质量分析模型、有效贡献度呈现效果</span>等方向进行优化，Q3在这个方向的投入资源较少，Q4会作为主要方向升级</p>
+          <p className="text-gray-700 text-lg leading-relaxed font-semibold">Q3在这个方向的投入资源较少，Q4会从<span className="text-blue-600">佣金审核流程、代理质量分析</span>等方向进行重点优化</p>
         </div>
       </div>   
 
