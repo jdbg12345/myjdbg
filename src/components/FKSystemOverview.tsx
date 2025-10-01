@@ -37,157 +37,213 @@ export const FKSystemOverview = () => {
 
         <div className="bg-gray-50 rounded p-10 border-2 border-gray-200">
           <div className="flex justify-center p-4">
-            <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[600px]">
-              <defs>
-                <marker id="arrowhead-gray" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto">
-                  <polygon points="0 0, 12 4, 0 8" fill="#6b7280" />
-                </marker>
-                <filter id="nodeShadow" x="-20%" y="-20%" width="140%" height="140%">
-                  <feDropShadow dx="2" dy="4" stdDeviation="3" floodColor="#000000" floodOpacity="0.15"/>
-                </filter>
-                <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" style={{stopColor:'#3b82f6', stopOpacity:1}} />
-                  <stop offset="100%" style={{stopColor:'#1d4ed8', stopOpacity:1}} />
-                </linearGradient>
-                <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" style={{stopColor:'#3b82f6', stopOpacity:1}} />
-                  <stop offset="100%" style={{stopColor:'#2563eb', stopOpacity:1}} />
-                </linearGradient>
-              </defs>
+              <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[600px]" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <marker id="arrowhead-gray" markerWidth="14" markerHeight="10" refX="14" refY="5" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 14 10">
+      <polygon points="0 0, 14 5, 0 10" fill="#6b7280" />
+    </marker>
 
-              {/* Connection lines */}
-              {/* 1→2 */}
-              <path d="M210,130 L340,130" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
-              
-              {/* 2→3 */}
-              <path d="M460,130 L590,130" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
-              
-              {/* 3→4 (直接通过) */}
-              <path d="M710,130 L1140,130" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
-              
-              {/* 3→5 (需要审核) */}
-              <path d="M650,170 Q750,230 840,290" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
-              
-              {/* 5→6 (人工复审通过) */}
-              <path d="M960,290 L1140,290" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
-              
-              {/* 5→8 (人工复审不通过) */}
-              <path d="M900,340 Q1000,395 1140,450" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
-              
-              {/* 6→4 (系统监控通过) - 调整箭头终点避免重叠 */}
-              <path d="M1200,238 L1200,182" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
-              
-              {/* 6→7 */}
-              <path d="M1260,290 L1390,290" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+    <filter id="nodeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" floodColor="#000000" floodOpacity="0.15"/>
+    </filter>
 
-              {/* 7→4 (内控复审通过) */}
-              <path d="M1450,238 Q1350,185 1262,130" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
-              
-              {/* 7→8 (内控复审不通过) */}
-              <path d="M1450,342 Q1350,395 1262,450" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style={{stopColor:'#3b82f6', stopOpacity:1}} />
+      <stop offset="100%" style={{stopColor:'#1d4ed8', stopOpacity:1}} />
+    </linearGradient>
+    <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style={{stopColor:'#3b82f6', stopOpacity:1}} />
+      <stop offset="100%" style={{stopColor:'#2563eb', stopOpacity:1}} />
+    </linearGradient>
+  </defs>
 
-              {/* Bubble 1: Between 3 and 4 */}
-              <g>
-                <ellipse cx="925" cy="50" rx="200" ry="45" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
-                <text x="925" y="55" textAnchor="middle" fill="white" fontSize="22" fontWeight="600">
-                  变化：增加套利作弊等拦截策略
-                </text>
-              </g>
+  {/* helper: edges 定义（按 id 指向） */}
+  {(() => {
+    // 配置：节点矩形尺寸（与你rect一致）
+    const NODE_W = 160, NODE_H = 130;
+    const hw = NODE_W / 2, hh = NODE_H / 2;
 
-              {/* Bubble 2: Between 3 and 5 */}
-              <g>
-                <ellipse cx="590" cy="250" rx="190" ry="45" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
-                <text x="590" y="255" textAnchor="middle" fill="white" fontSize="22" fontWeight="600">
-                  变化：升级为按分数和金额派单
-                </text>
-              </g>
+    // 查 node 辅助
+    const byId = (id) => nodes.find(n => n.id === id);
 
-              {/* Bubble 3: Below node 5 */}
-              <g>
-                <ellipse cx="900" cy="425" rx="160" ry="40" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
-                <text x="900" y="430" textAnchor="middle" fill="white" fontSize="22" fontWeight="600">
-                  变化：提供标准工具支持
-                </text>
-              </g>
+    // 返回节点边缘到节点边缘的直线起终点（simple 算法：按水平/垂直优先）
+    const edgePoints = (a, b, prefer = 'auto') => {
+      // center coords
+      const ax = a.x, ay = a.y;
+      const bx = b.x, byy = b.y;
 
-              {/* Nodes */}
-              {nodes.map((node) => (
-                <g key={node.id}>
-                  {/* Main node */}
-                  <rect
-                    x={node.x - 80}
-                    y={node.y - 65}
-                    width="160"
-                    height="130"
-                    rx="16"
-                    ry="16"
-                    fill={node.color === "#3b82f6" ? "url(#nodeGradient)" : node.color}
-                    stroke="#e5e7eb"
-                    strokeWidth="2"
-                    filter="url(#nodeShadow)"
-                  />
-                  
-                  {/* Number circle */}
-                  <circle
-                    cx={node.x}
-                    cy={node.y - 35}
-                    r="20"
-                    fill="white"
-                    stroke="#e5e7eb"
-                    strokeWidth="2"
-                    filter="url(#nodeShadow)"
-                  />
-                  
-                  {/* Number text */}
-                  <text
-                    x={node.x}
-                    y={node.y - 28}
-                    textAnchor="middle"
-                    fill={node.numberColor}
-                    fontSize="20"
-                    fontWeight="700"
-                  >
-                    {node.number}
-                  </text>
-                  
-                  {/* Node name */}
-                  <text
-                    x={node.x}
-                    y={node.y + 15}
-                    textAnchor="middle"
-                    fill="white"
-                    fontSize="24"
-                    fontWeight="600"
-                  >
-                    {node.name}
-                  </text>
-                  
-                  {/* Node description */}
-                  <text
-                    x={node.x}
-                    y={node.y + 40}
-                    textAnchor="middle"
-                    fill="rgba(255,255,255,0.9)"
-                    fontSize="16"
-                    fontWeight="500"
-                  >
-                    {node.desc}
-                  </text>
-                </g>
-              ))}
+      // candidate points on rectangle edges
+      const aPoints = {
+        left:  { x: ax - hw, y: ay },
+        right: { x: ax + hw, y: ay },
+        top:   { x: ax, y: ay - hh },
+        bottom:{ x: ax, y: ay + hh },
+      };
+      const bPoints = {
+        left:  { x: bx - hw, y: byy },
+        right: { x: bx + hw, y: byy },
+        top:   { x: bx, y: byy - hh },
+        bottom:{ x: bx, y: byy + hh },
+      };
 
-              {/* Flow labels */}
-              <text x="275" y="115" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">开始</text>
-              <text x="525" y="115" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">提交</text>
-              <text x="925" y="115" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">低风险</text>
-              <text x="780" y="210" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">高风险</text>
-              <text x="1050" y="275" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
-              <text x="1050" y="380" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
-              <text x="1160" y="210" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
-              <text x="1325" y="275" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
-              <text x="1320" y="200" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
-              <text x="1325" y="380" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
-            </svg>
+      // heuristic: if target is mostly to the right, start from right, end at left; etc.
+      const dx = bx - ax, dy = byy - ay;
+      if (prefer === 'auto') {
+        if (Math.abs(dx) >= Math.abs(dy)) {
+          return dx >= 0 ? [aPoints.right, bPoints.left] : [aPoints.left, bPoints.right];
+        } else {
+          return dy >= 0 ? [aPoints.bottom, bPoints.top] : [aPoints.top, bPoints.bottom];
+        }
+      } else if (prefer === 'horizontal') {
+        return dx >= 0 ? [aPoints.right, bPoints.left] : [aPoints.left, bPoints.right];
+      } else {
+        return dy >= 0 ? [aPoints.bottom, bPoints.top] : [aPoints.top, bPoints.bottom];
+      }
+    };
+
+    // 生成直线或二次贝塞尔路径
+    const makePath = (fromId, toId, opts = {}) => {
+      const a = byId(fromId), b = byId(toId);
+      if (!a || !b) return null;
+      const [p1, p2] = edgePoints(a, b, opts.prefer || 'auto');
+
+      if (opts.curve === 'quad') {
+        // control point：靠近中间并偏移一定量（可定制）
+        const mx = (p1.x + p2.x) / 2;
+        const my = (p1.y + p2.y) / 2;
+        // 偏移根据两点位置（横向线偏Y，纵向偏X）
+        const offset = opts.offset ?? 80;
+        let cx = mx, cy = my;
+        if (Math.abs(p2.x - p1.x) > Math.abs(p2.y - p1.y)) {
+          cy += (p2.y > p1.y ? offset : -offset);
+        } else {
+          cx += (p2.x > p1.x ? offset : -offset);
+        }
+        return `M ${p1.x},${p1.y} Q ${cx},${cy} ${p2.x},${p2.y}`;
+      } else {
+        return `M ${p1.x},${p1.y} L ${p2.x},${p2.y}`;
+      }
+    };
+
+    // edges 列表 - 将你原始的硬编码路径替换为基于节点 id 的映射
+    // 假设 nodes 中 id 分别是: "1","2","3","4","5","6","7","8" — 根据你真实 id 调整
+    const edges = [
+      { from: "1", to: "2", type: "line" },
+      { from: "2", to: "3", type: "line" },
+      { from: "3", to: "4", type: "line" },
+      { from: "3", to: "5", type: "quad", offset: 100 },
+      { from: "5", to: "6", type: "line" },
+      { from: "5", to: "8", type: "quad", offset: 140 },
+      { from: "6", to: "4", type: "vertical-short" }, // custom short vertical
+      { from: "6", to: "7", type: "line" },
+      { from: "7", to: "4", type: "quad", offset: -160 },
+      { from: "7", to: "8", type: "quad", offset: 160 },
+    ];
+
+    return (
+      <g>
+        {edges.map((e, idx) => {
+          // 支持自定义短线（例如你原来 6→4 的竖线）
+          if (e.type === 'vertical-short') {
+            const a = byId(e.from), b = byId(e.to);
+            if (!a || !b) return null;
+            // 从 a 的 right/bottom/top 等处取点（简单硬编码：从 a 的右侧，上下取固定 y）
+            const start = { x: a.x + hw, y: a.y - 52 }; // 根据你想要微调
+            const end   = { x: b.x + hw, y: b.y - 68 }; // 调整避免重叠
+            const d = `M ${start.x},${start.y} L ${end.x},${end.y}`;
+            return (
+              <path key={idx} d={d}
+                stroke="#6b7280" strokeWidth="3" fill="transparent"
+                markerEnd="url(#arrowhead-gray)"
+                vectorEffect="non-scaling-stroke" />
+            );
+          }
+
+          const d = makePath(e.from, e.to, { curve: e.type === 'quad' ? 'quad' : 'line', offset: e.offset });
+          if (!d) return null;
+          return (
+            <path key={idx} d={d}
+              stroke="#6b7280" strokeWidth="3" fill="transparent"
+              markerEnd="url(#arrowhead-gray)"
+              vectorEffect="non-scaling-stroke" />
+          );
+        })}
+      </g>
+    );
+  })()}
+
+  {/* Bubble 1 */}
+  <g>
+    <ellipse cx="925" cy="50" rx="200" ry="45" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
+    <text x="925" y="55" textAnchor="middle" fill="white" fontSize="22" fontWeight="600">
+      变化：增加套利作弊等拦截策略
+    </text>
+  </g>
+
+  {/* Bubble 2 */}
+  <g>
+    <ellipse cx="590" cy="250" rx="190" ry="45" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
+    <text x="590" y="255" textAnchor="middle" fill="white" fontSize="22" fontWeight="600">
+      变化：升级为按分数和金额派单
+    </text>
+  </g>
+
+  {/* Bubble 3 */}
+  <g>
+    <ellipse cx="900" cy="425" rx="160" ry="40" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
+    <text x="900" y="430" textAnchor="middle" fill="white" fontSize="22" fontWeight="600">
+      变化：提供标准工具支持
+    </text>
+  </g>
+
+  {/* Nodes 渲染（保留你原有实现逻辑） */}
+  {nodes.map((node) => (
+    <g key={node.id}>
+      <rect
+        x={node.x - 80}
+        y={node.y - 65}
+        width="160"
+        height="130"
+        rx="16"
+        ry="16"
+        fill={node.color === "#3b82f6" ? "url(#nodeGradient)" : node.color}
+        stroke="#e5e7eb"
+        strokeWidth="2"
+        filter="url(#nodeShadow)"
+      />
+      <circle
+        cx={node.x}
+        cy={node.y - 35}
+        r="20"
+        fill="white"
+        stroke="#e5e7eb"
+        strokeWidth="2"
+        filter="url(#nodeShadow)"
+      />
+      <text x={node.x} y={node.y - 28} textAnchor="middle" fill={node.numberColor} fontSize="20" fontWeight="700">
+        {node.number}
+      </text>
+      <text x={node.x} y={node.y + 15} textAnchor="middle" fill="white" fontSize="24" fontWeight="600">
+        {node.name}
+      </text>
+      <text x={node.x} y={node.y + 40} textAnchor="middle" fill="rgba(255,255,255,0.9)" fontSize="16" fontWeight="500">
+        {node.desc}
+      </text>
+    </g>
+  ))}
+
+  {/* Flow labels */}
+  <text x="275" y="115" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">开始</text>
+  <text x="525" y="115" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">提交</text>
+  <text x="925" y="115" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">低风险</text>
+  <text x="780" y="210" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">高风险</text>
+  <text x="1050" y="275" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
+  <text x="1050" y="380" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
+  <text x="1160" y="210" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
+  <text x="1325" y="275" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
+  <text x="1320" y="200" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
+  <text x="1325" y="380" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
+</svg>
           </div>
         </div>
       </div>
