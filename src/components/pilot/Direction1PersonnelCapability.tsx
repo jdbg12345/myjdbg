@@ -22,17 +22,17 @@ export const Direction1PersonnelCapability = () => {
           <div className="bg-white rounded-xl p-8 mb-8 shadow-lg border border-gray-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
-                <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm">1</span>
                 </div>
                 <h4 className="text-2xl font-bold text-gray-800">派单策略优化</h4>
-                <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 ml-4 shadow-sm">已上线</span>
+                <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4">已上线</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
                 <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   核心问题
                 </h4>
                 <p className="text-gray-700 text-base leading-relaxed font-semibold">以金额作为分单依据，未考虑订单难度及人员能力匹配，导致部分高风险订单被分配至远程或外包，而其<span className="text-blue-600">差错率较总部高出约2～3倍，由此带来超过100万+/月的损失</span></p>
