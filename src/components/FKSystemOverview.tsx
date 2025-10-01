@@ -210,7 +210,6 @@ export const FKSystemOverview = () => {
         <div className="bg-white rounded p-8 border-2 border-gray-200">
                  
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-            {/* 防御型规则 */}
       {/* 防御型规则 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
