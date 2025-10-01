@@ -16,11 +16,11 @@ export const FKSystemOverview = () => {
   
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">
-          3.2 试点说明
-        </h1>
+        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.2 试点说明</h1>
+      </div>
       </div>
 
       {/* FK流程变化 */}
@@ -690,197 +690,197 @@ export const FKSystemOverview = () => {
                   <div className="flex items-center space-x-4 mb-3">
                     <span className="text-lg font-bold text-gray-800">{agent.id}</span>
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
-                      {agent.grade}
-                    </span>
-                    <span className="text-gray-600">{agent.site}</span>
-                    <span className="text-gray-500">• 加入时间: {agent.joinDate}</span>
-                  </div>
-                  
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                    {/* 综合贡献度分数 */}
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-blue-600 mb-1">{agent.totalScore}</div>
-                      <div className="text-sm text-gray-600">综合评分</div>
-                    </div>
-                    
-                    {/* 三个评分指标 */}
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">盈利贡献</span>
-                        <span className="font-semibold text-blue-600">{agent.businessScore}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">下级质量</span>
-                        <span className="font-semibold text-green-600">{agent.userQuality}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">风险评估</span>
-                        <span className="font-semibold text-orange-600">{agent.riskControl}</span>
-                      </div>
-                    </div>
-                    
-                    {/* 业务数据 */}
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">活跃用户:</span>
-                        <span className="font-semibold">{agent.activeUsers}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">有效流水:</span>
-                        <span className="font-semibold">{agent.validFlow}</span>
-          <div className="bg-white rounded-lg p-8 border border-gray-200">
-                    </div>
-                    
-                    {/* 质量指标 */}
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">30日留存:</span>
-                        <span className="font-semibold text-green-600">{agent.retention}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">风险用户:</span>
-                        <span className="font-semibold text-red-600">{agent.riskUsers}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          {/* 有效贡献度呈现例子 */}
+          <div className="mb-8">
+            <h4 className="text-xl font-bold text-gray-800 mb-6">2）有效贡献度呈现例子</h4>
+            
+            {/* 有效贡献度标题 */}
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-gray-800 mb-2">有效贡献度</h3>
+              <p className="text-gray-600 text-lg">快速区分优质代理与劣质代理，实现精准监控与管理</p>
             </div>
-
-            {/* 有效贡献度模型 */}
-            <div className="mt-8">
-              <h6 className="text-xl font-bold text-gray-800 mb-6">1）有效贡献度模型</h6>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
-                  <thead className="bg-blue-600 text-white">
-                    <tr>
-                      <th className="p-4 text-left font-semibold">维度</th>
-                      <th className="p-4 text-left font-semibold">子指标</th>
-                      <th className="p-4 text-left font-semibold">说明</th>
-                      <th className="p-4 text-center font-semibold">权重</th>
-                      <th className="p-4 text-center font-semibold">正向/负向</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {/* 盈利贡献 */}
-                    <tr className="border-b border-gray-100">
-                      <td rowSpan="4" className="p-4 font-bold text-blue-700 bg-blue-50 border-r border-blue-200 align-top">盈利贡献</td>
-                      <td className="p-4 font-semibold">净盈利</td>
-                      <td className="p-4 text-gray-700">代理带来的净盈利（投注输赢 - 红利 - 返水 - 成本），考虑长期稳定性</td>
-                      <td className="p-4 text-center font-semibold text-blue-600">25%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">正向</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="p-4 font-semibold">投入产出比（ROI）</td>
-                      <td className="p-4 text-gray-700">平台投入资源（红利、奖励、运营成本）与代理贡献盈利比率</td>
-                      <td className="p-4 text-center font-semibold text-blue-600">10%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">正向</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="p-4 font-semibold">日常贡献</td>
-                      <td className="p-4 text-gray-700">停扶持后下级盈利表现是否稳定或提升（滑动周期评估，如3-6个月平均）</td>
-                      <td className="p-4 text-center font-semibold text-blue-600">10%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">正向</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="p-4 font-semibold">净盈利稳定性</td>
-                      <td className="p-4 text-gray-700">净盈利波动系数（CV），稳定性高加分</td>
-                      <td className="p-4 text-center font-semibold text-blue-600">5%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">正向</span>
-                      </td>
-                    </tr>
-                    
-                    {/* 下级质量 */}
-                    <tr className="border-b border-gray-100">
-                      <td rowSpan="5" className="p-4 font-bold text-orange-700 bg-orange-50 border-r border-orange-200 align-top">下级质量</td>
-                      <td className="p-4 font-semibold">一次性会员占比</td>
-                      <td className="p-4 text-gray-700">低价值用户占比（结合留存率评估低价值风险）</td>
-                      <td className="p-4 text-center font-semibold text-red-600">-10%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-red-100 text-red-600 font-semibold text-xs">负向</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="p-4 font-semibold">大客户贡献占比</td>
-                      <td className="p-4 text-gray-700">高价值用户对代理净盈利的贡献占比</td>
-                      <td className="p-4 text-center font-semibold text-blue-600">15%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">正向</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="p-4 font-semibold">贡献集中度</td>
-                      <td className="p-4 text-gray-700">收益是否过度依赖少数下级（Top N占比 vs 下级数）</td>
-                      <td className="p-4 text-center font-semibold text-red-600">-5%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-red-100 text-red-600 font-semibold text-xs">负向</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="p-4 font-semibold">新用户贡献度</td>
-                      <td className="p-4 text-gray-700">近一段时间新增下级对总盈利贡献（结合活跃和留存加权）</td>
-                      <td className="p-4 text-center font-semibold text-blue-600">5%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">正向</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="p-4 font-semibold">下级增长质量指数</td>
-                      <td className="p-4 text-gray-700">新增下级数量、盈利贡献、活跃度和留存综合评分</td>
-                      <td className="p-4 text-center font-semibold text-blue-600">5%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">正向</span>
-                      </td>
-                    </tr>
-                    
-                    {/* 风险评估 */}
-                    <tr className="border-b border-gray-100">
-                      <td rowSpan="4" className="p-4 font-bold text-red-700 bg-red-50 border-r border-red-200 align-top">风险评估</td>
-                      <td className="p-4 font-semibold">关联情况</td>
-                      <td className="p-4 text-gray-700">下级账号与高风险账号关联（按风险等级加权）</td>
-                      <td className="p-4 text-center font-semibold text-red-600">-10%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-red-100 text-red-600 font-semibold text-xs">负向</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="p-4 font-semibold">打负情况</td>
-                      <td className="p-4 text-gray-700">异常亏损/盈利比例（分级权重，高额异常权重大）</td>
-                      <td className="p-4 text-center font-semibold text-red-600">-10%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-red-100 text-red-600 font-semibold text-xs">负向</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="p-4 font-semibold">风控会员占比</td>
-                      <td className="p-4 text-gray-700">下级中被风控拦截比例（按违规类型和严重程度加权）</td>
-                      <td className="p-4 text-center font-semibold text-red-600">-10%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-red-100 text-red-600 font-semibold text-xs">负向</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100">
-                      <td className="p-4 font-semibold">风险趋势指标</td>
-                      <td className="p-4 text-gray-700">最近周期关联账号增幅、打负增幅等趋势反映潜在高风险</td>
-                      <td className="p-4 text-center font-semibold text-red-600">-5%</td>
-                      <td className="p-4 text-center">
-                        <span className="px-2 py-1 rounded-full bg-red-100 text-red-600 font-semibold text-xs">负向</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+            <Users className="w-5 h-5 text-white" />
+            {/* 代理分级统计 */}
+            <div className="grid grid-cols-4 gap-6 mb-8">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center border border-green-200 shadow-sm">
+                <div className="text-4xl font-bold text-green-600 mb-2">0</div>
+                <div className="text-green-700 font-semibold">A档优质</div>
               </div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center border border-blue-200 shadow-sm">
+                <div className="text-4xl font-bold text-blue-600 mb-2">1</div>
+                <div className="text-blue-700 font-semibold">B档良好</div>
+              </div>
+              <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-6 text-center border border-yellow-200 shadow-sm">
+                <div className="text-4xl font-bold text-yellow-600 mb-2">51</div>
+                <div className="text-yellow-700 font-semibold">C档一般</div>
+              </div>
+              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 text-center border border-red-200 shadow-sm">
+                <div className="text-4xl font-bold text-red-600 mb-2">1</div>
+                <div className="text-red-700 font-semibold">D档风险</div>
+              </h4>
             </div>
-          ))}
-        </div>
+              <p className="text-gray-700 text-sm leading-relaxed">代理佣金审核依赖人工，效率低且易出错，缺乏系统化的风险识别机制</p>
+            {/* 代理贡献度总览 */}
+            <div className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-8">
+              <div className="flex items-center justify-between mb-6">
+                <h4 className="text-2xl font-bold text-gray-800">代理贡献度总览</h4>
+                <div className="flex space-x-4">
+                  <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>全部站点</option>
+                  </select>
+                  <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>全部分级</option>
+                  </select>
+              </h4>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">审核效率提升80%，风险识别准确率达到95%+</p>
+              {/* 代理列表 */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {[
+                  {
+                    id: '#1Y695966',
+                    grade: 'B档 - 良好',
+                    level: '高级代理',
+                    joinDate: '2024-10-02',
+                    totalScore: 61,
+                    businessScore: 39,
+                    qualityScore: 64,
+                    riskScore: 97,
+                    activeUsers: 970,
+                    validFlow: '38.8万',
+                    retention: '30%',
+                    riskUsers: '5%',
+                    gradeColor: 'bg-blue-100 text-blue-700'
+                  },
+                  {
+                    id: '#2Y144558',
+                    grade: 'C档 - 一般',
+                    level: '金牌代理',
+                    joinDate: '2024-09-05',
+                    totalScore: 57,
+                    businessScore: 38,
+                    qualityScore: 60,
+                    riskScore: 90,
+                    activeUsers: 253,
+                    validFlow: '51.4万',
+                    retention: '18%',
+                    riskUsers: '4%',
+                    gradeColor: 'bg-yellow-100 text-yellow-700'
+                  },
+                  {
+                    id: '#3Y218350',
+                    grade: 'C档 - 一般',
+                    level: '金牌代理',
+                    joinDate: '2024-08-10',
+                    totalScore: 56,
+                    businessScore: 39,
+                    qualityScore: 66,
+                    riskScore: 72,
+                    activeUsers: 586,
+                    validFlow: '46.8万',
+                    retention: '17%',
+                    riskUsers: '6%',
+                    gradeColor: 'bg-yellow-100 text-yellow-700'
+                  },
+                  {
+                    id: '#4Y116215',
+                    grade: 'C档 - 一般',
+                    level: '高级代理',
+                    joinDate: '2024-11-25',
+                    totalScore: 55,
+                    businessScore: 34,
+                    qualityScore: 59,
+                    riskScore: 91,
+                    activeUsers: 231,
+                    validFlow: '44.6万',
+                    retention: '31%',
+                    riskUsers: '4%',
+                    gradeColor: 'bg-yellow-100 text-yellow-700'
+                  },
+                  {
+                    id: '#5Y455003',
+                    grade: 'C档 - 一般',
+                    level: '高级代理',
+                    joinDate: '2024-12-17',
+                    totalScore: 55,
+                    businessScore: 27,
+                    qualityScore: 65,
+                    riskScore: 90,
+                    activeUsers: 325,
+                    validFlow: '37.4万',
+                    retention: '32%',
+                    riskUsers: '4%',
+                    gradeColor: 'bg-yellow-100 text-yellow-700'
+                  },
+                  {
+                    id: '#6Y567649',
+                    grade: 'C档 - 一般',
+                    level: '初级代理',
+                    joinDate: '2024-06-15',
+                    totalScore: 55,
+                    businessScore: 39,
+                    qualityScore: 52,
+                    riskScore: 91,
+                    activeUsers: 876,
+                    validFlow: '64.8万',
+                    retention: '24%',
+                    riskUsers: '7%',
+                    gradeColor: 'bg-yellow-100 text-yellow-700'
+                  }
+                ].map((agent, index) => (
+                  <div key={index} className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center space-x-3">
+                        <span className="font-bold text-gray-800">{agent.id}</span>
+                        <span className={`px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
+                          {agent.grade}
+                        </span>
+                  <tr className="bg-orange-50">
+                      <div className="text-sm text-gray-500">
+                        <span className="font-semibold text-blue-600">{agent.level}</span>
+                        <span className="mx-2">•</span>
+                        <span>加入时间: {agent.joinDate}</span>
+                  </tr>
+                    </div>
+                    
+                    <div className="mb-4">
+                      <div className="text-3xl font-bold text-gray-800 mb-2">{agent.totalScore}</div>
+                      <div className="text-sm text-gray-600">综合贡献度分数</div>
+                    </div>
+                    
+                    <div className="grid grid-cols-3 gap-4 mb-4">
+                      <div className="text-center">
+                        <div className="text-xl font-bold text-blue-600">{agent.businessScore}</div>
+                        <div className="text-xs text-gray-600">业务贡献</div>
+                  </tr>
+                      <div className="text-center">
+                        <div className="text-xl font-bold text-orange-600">{agent.qualityScore}</div>
+                        <div className="text-xs text-gray-600">用户质量</div>
+                    <td className="p-4 text-center"><span className="px-2 py-1 bg-red-100 text-red-600 rounded-full text-sm font-semibold">负向</span></td>
+                      <div className="text-center">
+                        <div className="text-xl font-bold text-green-600">{agent.riskScore}</div>
+                        <div className="text-xs text-gray-600">风险控制</div>
+                      </div>
+                    </div>
+                    
+                    <div className="grid grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <div className="text-gray-600">活跃用户: <span className="font-semibold text-gray-800">{agent.activeUsers}</span></div>
+                        <div className="text-gray-600">有效流水: <span className="font-semibold text-gray-800">¥{agent.validFlow}</span></div>
+                      </div>
+                      <div>
+                        <div className="text-gray-600">30日留存: <span className="font-semibold text-gray-800">{agent.retention}</span></div>
+                        <div className="text-gray-600">风险用户: <span className="font-semibold text-gray-800">{agent.riskUsers}</span></div>
+                      </div>
+                  </tr>
+                  </div>
       </div>
+      
+      {/* Footer */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="text-gray-400 text-sm">FKZX</div>
+      </div>
+    </div>
     </div>
       
   );
