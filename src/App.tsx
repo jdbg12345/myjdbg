@@ -125,23 +125,6 @@ function App() {
         </div>
         
         
-        {/* 3.3 FK试点成果 */}
-        <div data-section="pilot-results">
-          <PilotResults />
-        </div>
-        
-        {/* 3.3.1 方向1：审核问题-质量较差 */}
-        <div data-section="pilot-direction1">
-        </div>
-        
-        {/* 3.3.2 方向2：系统问题-支持不够 */}
-        <div data-section="pilot-direction2">
-        </div>
-        
-        {/* 3.3.3 方向3：内控问题-违规行为 */}
-        <div data-section="pilot-direction3">
-        </div>
-        
         {/* 4. B端事故问题汇总 */}
         <div data-section="risk-review">
           <RiskReview />
