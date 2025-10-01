@@ -15,10 +15,9 @@ import { DBSportsKillRate } from './components/DBSportsKillRate';
 import { AirplaneData } from './components/AirplaneData';
 import { FKTransformationRhythm } from './components/FKTransformationRhythm';
 import { FKSystemOverview } from './components/FKSystemOverview';
-import { InternalControlOverview } from './components/InternalControlOverview';
-import { AgentControlOverview } from './components/AgentControlOverview';
 import { PilotResults } from './components/PilotResults';
 import { AuditGroup } from './components/AuditGroup';
+import { InternalControlOverview } from './components/InternalControlOverview';
 import { AuditDepartmentOverview } from './components/AuditDepartmentOverview';
 import { SystemDepartmentOverview } from './components/SystemDepartmentOverview';
 import { SummaryOverview } from './components/SummaryOverview';
@@ -108,22 +107,27 @@ function App() {
           <FKTransformationRhythm />
         </div>
         
-        {/* 3.2 FK玩家风控变化说明 */}
+        {/* 3.2 FK变化说明 */}
         <div data-section="fk-system-overview">
           <FKSystemOverview />
         </div>
-
-           
-        {/* 3.3 FK内控风控变化说明 */}
-        <div data-section="internal-control-overview">
-          <InternalControlOverview />
-        </div>
-
-         {/* 3.4 FK代理风控变化说明 */}
-        <div data-section="agent-control-overview">
-          <AgentControlOverview />
+        
+        {/* 3.3 FK试点成果 */}
+        <div data-section="pilot-results">
+          <PilotResults />
         </div>
         
+        {/* 3.3.1 方向1：审核问题-质量较差 */}
+        <div data-section="pilot-direction1">
+        </div>
+        
+        {/* 3.3.2 方向2：系统问题-支持不够 */}
+        <div data-section="pilot-direction2">
+        </div>
+        
+        {/* 3.3.3 方向3：内控问题-违规行为 */}
+        <div data-section="pilot-direction3">
+        </div>
         
         {/* 4. B端事故问题汇总 */}
         <div data-section="risk-review">
