@@ -751,112 +751,115 @@ export const FKSystemOverview = () => {
             }
           ].map((agent, index) => (
             <div key={index} className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
-  <div className="flex items-start justify-between mb-3">
-    <div className="flex items-center space-x-4">
-      <span className="text-lg font-bold text-gray-800">{agent.id}</span>
-      <span className={`px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
-        {agent.grade}
-      </span>
-      <span className="text-gray-600">{agent.site}</span>
-    </div>
-    {/* 右侧：加入时间 + 汇总（放在最右侧） */}
-    <div className="text-right text-sm text-gray-500">
-      <div>加入时间: <span className="text-gray-700">{agent.joinDate}</span></div>
-      <div className="mt-2 text-xs text-gray-600">
-        {/* 汇总数据：贡献盈利 / 累计存款 / 下级人数 / 月活人数 */}
-        <span className="mr-3">贡献盈利: <span className="font-semibold text-gray-800">{agent.validFlow}</span></span>
-        <span className="mr-3">累计存款: <span className="font-semibold text-gray-800">{agent.validFlow}</span></span>
-        <span className="mr-3">下级人数: <span className="font-semibold text-gray-800">{agent.activeUsers}</span></span>
-        <div className="mt-1">月活人数: <span className="font-semibold text-gray-800">{agent.activeUsers}</span></div>
-      </div>
-    </div>
-  </div>
+          {/* 顶部信息 */}
+          <div className="flex items-start justify-between mb-3">
+            <div className="flex items-center space-x-4">
+              <span className="text-lg font-bold text-gray-800">{agent.id}</span>
+              <span className={`px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
+                {agent.grade}
+              </span>
+              <span className="text-gray-600">{agent.site}</span>
 
-  {/* 主体：两行四列布局 */}
-  <div className="grid grid-cols-4 gap-6">
-    {/* 第一列：综合分数，跨两行 */}
-    <div className="row-span-2 flex flex-col items-center justify-center border-r pr-4">
-      <div className="text-4xl font-extrabold text-blue-600">{agent.totalScore}</div>
-      <div className="mt-2 text-sm text-gray-600">综合分数</div>
-      {/* 在综合分数处显示等级标签（更醒目） */}
-      <div className="mt-3">
-        <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
-          {agent.grade}
-        </span>
-      </div>
-    </div>
+              {/* 中间：汇总数据 */}
+              <div className="flex items-center space-x-4 text-sm text-gray-600 ml-4">
+                <span>贡献盈利: <span className="font-semibold text-gray-800">{agent.contributionProfit}</span></span>
+                <span>累计存款: <span className="font-semibold text-gray-800">{agent.totalDeposit}</span></span>
+                <span>下级人数: <span className="font-semibold text-gray-800">{agent.activeUsers}</span></span>
+                <span>月活人数: <span className="font-semibold text-gray-800">{agent.monthlyActive}</span></span>
+              </div>
+            </div>
 
-    {/* 第二列：盈利贡献（上） */}
-    <div className="col-span-1 border-r pr-4">
-      <div className="text-sm text-gray-500">盈利贡献</div>
-      <div className="mt-2 text-2xl font-bold text-blue-600">{agent.businessScore}</div>
-      <div className="text-xs text-gray-400 mt-2">（业务侧评分）</div>
-    </div>
+            {/* 最右侧：加入时间 */}
+            <div className="text-sm text-gray-500">
+              加入时间: <span className="text-gray-700">{agent.joinDate}</span>
+            </div>
+          </div>
 
-    {/* 第三列：下级质量（上） */}
-    <div className="col-span-1 border-r pr-4">
-      <div className="text-sm text-gray-500">下级质量</div>
-      <div className="mt-2 text-2xl font-bold text-green-600">{agent.userQuality}</div>
-      <div className="text-xs text-gray-400 mt-2">（质量侧评分）</div>
-    </div>
+          {/* 主体：两行四列布局 */}
+          <div className="grid grid-cols-4 gap-6">
+            {/* 第一列：综合分数，跨两行 */}
+            <div className="row-span-2 flex flex-col items-center justify-center border-r pr-4">
+              <div className="text-4xl font-extrabold text-blue-600">{agent.totalScore}</div>
+              <div className="mt-2 text-sm text-gray-600">综合分数</div>
+              <div className="mt-3">
+                <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
+                  {agent.grade}
+                </span>
+              </div>
+            </div>
 
-    {/* 第四列：风险评估（上） */}
-    <div className="col-span-1">
-      <div className="text-sm text-gray-500">风险评估</div>
-      <div className="mt-2 text-2xl font-bold text-orange-600">{agent.riskControl}</div>
-      <div className="text-xs text-gray-400 mt-2">（风控侧评分）</div>
-    </div>
+            {/* 第二列：盈利贡献 */}
+            <div className="col-span-1 border-r pr-4">
+              <div className="text-sm text-gray-500">盈利贡献</div>
+              <div className="mt-2 text-2xl font-bold text-blue-600">{agent.businessScore}</div>
+              <div className="text-xs text-gray-400 mt-2">（业务侧评分）</div>
+            </div>
 
-    {/* 第二行：每列的子项（四列的第二行） */}
-    {/* 第二列下半（盈利贡献的三项：贡献净盈利 / 投入产出比 / 贡献持续度） */}
-    <div className="col-start-2 col-span-1 space-y-2">
-      <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-600">贡献净盈利</span>
-        <span className="font-semibold text-gray-800">{agent.validFlow}</span>
-      </div>
-      <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-600">投入产出比</span>
-        <span className="font-semibold text-gray-800">—</span>
-      </div>
-      <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-600">贡献持续度</span>
-        <span className="font-semibold text-gray-800">{agent.retention}</span>
-      </div>
-    </div>
+            {/* 第三列：下级质量 */}
+            <div className="col-span-1 border-r pr-4">
+              <div className="text-sm text-gray-500">下级质量</div>
+              <div className="mt-2 text-2xl font-bold text-green-600">{agent.userQuality}</div>
+              <div className="text-xs text-gray-400 mt-2">（质量侧评分）</div>
+            </div>
 
-    {/* 第三列下半（一次性会员 / 贡献集中度 / 新客贡献度） */}
-    <div className="col-span-1 space-y-2">
-      <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-600">一次性会员</span>
-        <span className="font-semibold text-gray-800">{agent.retention}</span>
-      </div>
-      <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-600">贡献集中度</span>
-        <span className="font-semibold text-gray-800">{agent.riskUsers}</span>
-      </div>
-      <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-600">新客贡献度</span>
-        <span className="font-semibold text-gray-800">—</span>
-      </div>
-    </div>
+            {/* 第四列：风险评估 */}
+            <div className="col-span-1">
+              <div className="text-sm text-gray-500">风险评估</div>
+              <div className="mt-2 text-2xl font-bold text-orange-600">{agent.riskControl}</div>
+              <div className="text-xs text-gray-400 mt-2">（风控侧评分）</div>
+            </div>
 
-    {/* 第四列下半（多关联风险 / 负盈利风险 / 下级风险度） */}
-    <div className="col-span-1 space-y-2">
-      <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-600">多关联风险</span>
-        <span className="font-semibold text-gray-800">{agent.riskUsers}</span>
-      </div>
-      <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-600">负盈利风险</span>
-        <span className="font-semibold text-gray-800">—</span>
-      </div>
-      <div className="flex justify-between items-center">
-        <span className="text-sm text-gray-600">下级风险度</span>
-        <span className="font-semibold text-gray-800">—</span>
-      </div>
-    </div>
-  </div>
-</div>
+            {/* 第二行：各列子项 */}
+            {/* 第二列下半 */}
+            <div className="col-start-2 col-span-1 space-y-2">
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-600">贡献净盈利</span>
+                <span className="font-semibold text-gray-800">{agent.contributionProfit}</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-600">投入产出比</span>
+                <span className="font-semibold text-gray-800">—</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-600">贡献持续度</span>
+                <span className="font-semibold text-gray-800">{agent.retention}</span>
+              </div>
+            </div>
+
+            {/* 第三列下半 */}
+            <div className="col-span-1 space-y-2">
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-600">一次性会员</span>
+                <span className="font-semibold text-gray-800">{agent.retention}</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-600">贡献集中度</span>
+                <span className="font-semibold text-gray-800">{agent.riskUsers}</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-600">新客贡献度</span>
+                <span className="font-semibold text-gray-800">—</span>
+              </div>
+            </div>
+
+            {/* 第四列下半 */}
+            <div className="col-span-1 space-y-2">
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-600">多关联风险</span>
+                <span className="font-semibold text-gray-800">{agent.riskUsers}</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-600">负盈利风险</span>
+                <span className="font-semibold text-gray-800">—</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-600">下级风险度</span>
+                <span className="font-semibold text-gray-800">—</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
 
           ))}
         </div>
