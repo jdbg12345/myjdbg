@@ -9,7 +9,7 @@ export const InternalControlOverview = () => {
       <div className="mb-8">
         <h1 className="text-5xl font-bold text-gray-800 border-b-4 border-blue-600 pb-4 mb-4">3.3 内控风控说明</h1>
         <div className="text-gray-600 text-lg">
-          <p className="text-gray-700 text-lg leading-relaxed font-semibold">从<span className="text-blue-600">内控问题-违规行为</span>方向进行优化</p>
+          <p className="text-gray-700 text-lg leading-relaxed font-semibold">内控问题主要从<span className="text-blue-600">信息安全、违规操作</span>方向进行优化</p>
         </div>
       </div>   
 
