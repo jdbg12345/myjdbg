@@ -177,7 +177,7 @@ export const FKTransformationRhythm = () => {
           </div>
           <div className="mb-8">
             <span className="text-gray-700 text-xl">
-              构建<span className="text-blue-600">以系统为核心、人工为辅助</span>的防护体系，实现全流程自动化风险识别与控制
+              构建以<span className="text-blue-600">系统为核心、人工为辅助</span>的防护体系，实现全流程自动化风险识别与控制
             </span>
           </div>
 
