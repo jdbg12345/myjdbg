@@ -707,7 +707,7 @@ export const FKSystemOverview = () => {
                     {/* 三个评分指标 */}
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">业务贡献</span>
+                        <span className="text-sm text-gray-600">盈利贡献</span>
                         <span className="font-semibold text-blue-600">{agent.businessScore}</span>
                       </div>
                       <div className="flex justify-between items-center">
