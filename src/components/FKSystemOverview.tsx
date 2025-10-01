@@ -755,9 +755,7 @@ export const FKSystemOverview = () => {
           <div className="flex items-start justify-between mb-3">
             <div className="flex items-center space-x-4">
               <span className="text-lg font-bold text-gray-800">{agent.id}</span>
-              <span className={`px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
-                {agent.grade}
-              </span>
+              
               <span className="text-gray-600">{agent.site}</span>
 
               {/* 中间：汇总数据 */}
