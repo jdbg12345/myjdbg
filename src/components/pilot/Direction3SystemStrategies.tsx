@@ -62,15 +62,15 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">卡免费是最典型的套利或藏分手段。目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏，每月都有损失100万+/月。</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">卡免费是最典型的套利或藏分手段。目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏，每月都有损失100万+/月。</p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">系统策略增加电子卡免费的策略模型</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">系统策略增加电子卡免费的策略模型</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">拦截率：95%+</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">拦截率：95%+</p>
               </div>
             </div>
         
@@ -153,15 +153,15 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">对打、机器下注和算牌等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏，导致每月损失超过100万元。</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">对打、机器下注和算牌等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏，导致每月损失超过100万元。</p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">系统策略增加真人对打、机器下注、算牌的策略模型</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">系统策略增加真人对打、机器下注、算牌的策略模型</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">拦截率：80%+</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">拦截率：80%+</p>
               </div>
             </div>
         
@@ -244,15 +244,15 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">打水、协议球、卡危险球、出货、蛇货、拉赛、机器下注等是最常见的套利与作弊手段。当前系统在自动出款与人工审核环节对此类行为的识别尚不充分，尤其是体育赛类场景复杂、多变，对审核人员经验依赖高，导致漏判与误判并存，带来较大风控盲区与损失风险</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">打水、协议球、卡危险球、出货、蛇货、拉赛、机器下注等是最常见的套利与作弊手段。当前系统在自动出款与人工审核环节对此类行为的识别尚不充分，尤其是体育赛类场景复杂、多变，对审核人员经验依赖高，导致漏判与误判并存，带来较大风控盲区与损失风险</p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">通过联动B端系统，引入百家赔、危险球等关键外部数据，构建针对性的特征识别策略，实现对异常行为更高时效的预警与拦截，全面提升对体育类套利与作弊行为的识别与防控能力。</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">通过联动B端系统，引入百家赔、危险球等关键外部数据，构建针对性的特征识别策略，实现对异常行为更高时效的预警与拦截，全面提升对体育类套利与作弊行为的识别与防控能力。</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">拦截率：70%+</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">拦截率：70%+</p>
               </div>
             </div>
         
@@ -334,15 +334,15 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">棋牌游戏作弊和异常胜率难以监控</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">棋牌游戏作弊和异常胜率难以监控</p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">建立棋牌游戏异常行为识别机制</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">建立棋牌游戏异常行为识别机制</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">拦截率：60%+</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">拦截率：60%+</p>
               </div>
             </div>
         
@@ -424,15 +424,15 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
                 <h5 className="font-bold text-red-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">全包行为等是最常见的套利与作弊手段；目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏，每月都有损失100万+/月。</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">全包行为等是最常见的套利与作弊手段；目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏，每月都有损失100万+/月。</p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h5 className="font-bold text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">针对对全包行为进行预警和拦截</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">针对对全包行为进行预警和拦截</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h5 className="font-bold text-green-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-xs leading-relaxed">拦截率：90%+</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">拦截率：90%+</p>
               </div>
             </div>
         
@@ -511,7 +511,7 @@ export const Direction3SystemStrategies = () => {
           </div>
           <h3 className="text-3xl font-bold text-gray-800">风控工具集合</h3>
         </div>
-        <p className="text-gray-700 mb-8 leading-relaxed text-base">
+        <p className="text-gray-700 text-base leading-relaxed font-semibolde">
           风控中高频、费时费力的场景整合为标准化工具集，使人员仅需查询结果，无需手动计算或深入理解逻辑，从而提升效率与准确性。
         </p>
         
@@ -548,14 +548,14 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">提供面向真人、彩票及体育（开发中）等多类游戏的一键跨站点"关联下注查询"工具，支持基于核心关联特征（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">提供面向真人、彩票及体育（开发中）等多类游戏的一键跨站点"关联下注查询"工具，支持基于核心关联特征（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">关联因素在日常风控中占比极高，该工具可一键筛选并展示所有关联用户的下注行为，极大增强风险识别与处置能力</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">关联因素在日常风控中占比极高，该工具可一键筛选并展示所有关联用户的下注行为，极大增强风险识别与处置能力</p>
               </div>
             </div>
           </div>
@@ -593,14 +593,14 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">通过B端百家赔率数据构建体育打水查询工具</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">通过B端百家赔率数据构建体育打水查询工具</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">节省成本，提升效率</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">节省成本，提升效率</p>
               </div>
             </div>
           </div>
