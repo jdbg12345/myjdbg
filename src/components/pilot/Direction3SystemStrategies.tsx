@@ -650,16 +650,16 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-2">
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-1 flex-shrink-0">1</div>
-                    <span className="font-semibold"><span className="font-bold text-blue-600">阶段1-》解决系统流水错误</span>：修复系统计算错误（<span className="text-blue-600">锁定场馆流水重复计算、场馆红利多计一次提款流水、用户输光后提款流水未自动达标</span>等）</span>
+                    <span className="font-semibold"><span className="font-bold text-blue-600">阶段1-》解决系统流水错误</span>：修复系统计算错误（锁定场馆流水重复计算、场馆红利多计一次提款流水、用户输光后提款流水未自动达标等）</span>
                   </div>
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-1 flex-shrink-0">2</div>
-                    <span className="font-semibold"><span className="font-bold text-blue-600">阶段2-》后端流水查询工具</span>：在后台提供<span className="text-blue-600">全新的流水查询工具</span>（已有的当前不可用）</span>
+                    <span className="font-semibold"><span className="font-bold text-blue-600">阶段2-》后端流水查询工具</span>：在后台提供全新的流水查询工具（已有的当前不可用）</span>
                   </div>
                   
                   <div className="flex items-start">
                     <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xs mr-3 mt-1 flex-shrink-0">3</div>
-                    <span className="font-semibold"><span className="font-bold text-blue-600">阶段3-》前端直接展示流水</span>：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，<span className="text-blue-600">彻底解决这个多余过程</span></span>
+                    <span className="font-semibold"><span className="font-bold text-blue-600">阶段3-》前端直接展示流水</span>：用户在前端直接查看流水情况，目前大部分竞品已实现此体验，彻底解决这个多余过程</span>
                   </div>
                 </div>
               </div>
