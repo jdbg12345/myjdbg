@@ -630,7 +630,7 @@ export const FKSystemOverview = () => {
             <tbody>
               {/* 盈利贡献维度 */}
               <tr className="border-b border-gray-100">
-                <td rowSpan="4" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
+                <td rowSpan="3" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
                   <div className="text-blue-700 text-lg">盈利贡献</div>
                 </td>
                 <td className="p-4 font-semibold border-r border-gray-200">净盈利</td>
@@ -641,7 +641,7 @@ export const FKSystemOverview = () => {
                 </td>
               </tr>
               <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">投入产出比（ROI）</td>
+                <td className="p-4 font-semibold border-r border-gray-200">投入产出比</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">平台投入资源（红利、奖励、运营成本）与代理贡献盈利比率</td>
                 <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">10%</td>
                 <td className="p-4 text-center">
@@ -656,14 +656,7 @@ export const FKSystemOverview = () => {
                   <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-600">正向</span>
                 </td>
               </tr>
-              <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">净盈利稳定性</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">净盈利波动系数（CV），稳定性高加分</td>
-                <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">5%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-600">正向</span>
-                </td>
-              </tr>
+            
 
               {/* 下级质量维度 */}
               <tr className="border-b border-gray-100">
