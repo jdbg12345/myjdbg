@@ -746,7 +746,7 @@ export const FKSystemOverview = () => {
                     {/* 综合贡献度分数 */}
                     <div className="text-center">
                       <div className="text-3xl font-bold text-blue-600 mb-1">{agent.totalScore}</div>
-                      <div className="text-sm text-gray-600">综合贡献度分数</div>
+                      <div className="text-sm text-gray-600">综合评分</div>
                     </div>
                     
                     {/* 三个评分指标 */}
