@@ -345,7 +345,7 @@ export const FKSystemOverview = () => {
               <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <div className="w-6 h-6 bg-blue-600 rounded-lg mr-3"></div>套利型规则
               </h5>
-                 <div className="text-lg text-gray-600 mb-4">重点补充各种<span className="text-blue-600">套利、作弊</span>类的策略，解决绕过人工审核直接出的错误</div>
+                 <div className="text-lg text-gray-600 mb-4">补充各种<span className="text-blue-600">套利、作弊</span>类的策略，优化绕过人工审核直接出的错误</div>
               <div className="space-y-4">
                 <div className="bg-blue-50 rounded-lg p-6">
                   <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
