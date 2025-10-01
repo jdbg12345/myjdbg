@@ -214,7 +214,7 @@ export const FKSystemOverview = () => {
               </div>
               <div>
                 <h4 className="text-2xl font-bold text-gray-900">玩家风险防控能力变化</h4>
-                <div className="text-lg font-semibold text-gray-700">主要资源在这个方向，变化比较大，持续落地中</div>
+                <div className="text-lg font-semibold text-gray-700">主要资源在这个方向，增强了一些既有策略，更重要的新增【套利型】策略</div>
               </div>
             </div>
           </div>
