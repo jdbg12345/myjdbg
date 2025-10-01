@@ -859,8 +859,6 @@ export const FKSystemOverview = () => {
             </div>
           </div>
         </div>
-      
-
           ))}
         </div>
       </div>
