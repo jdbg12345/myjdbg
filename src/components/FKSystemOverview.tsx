@@ -587,138 +587,85 @@ export const FKSystemOverview = () => {
               <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                 <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 代理质量自动化分析
-              </h5>
-              <div className="text-lg text-gray-600 mb-4">定义<span className="text-blue-600">代理有效贡献度模</span>，进行全局监控，及时发现优质和劣质代理，进行后续针对性的调整措施</div>
-              <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-6">
-                  <div className="space-y-2">
-                    <div className="bg-white rounded-lg p-4">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-500">方案中</span></span>
-                        <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div className="grid grid-cols-4 gap-6">
+          {/* 第一列：综合分数 */}
+          <div className="bg-blue-50 rounded p-6 border border-blue-200 flex flex-col justify-center items-center">
+            <div className="text-3xl font-semibold text-blue-600 mb-2">85</div>
+            <div className="text-base font-semibold text-blue-700">综合分数</div>
+            <div className="text-sm text-gray-600 mt-2 text-center">基于多维度<br/>综合评估</div>
+          </div>
+
+          {/* 第二列：盈利贡献 */}
+          <div className="space-y-3">
+            {/* 第一行：标题 */}
+            <div className="bg-blue-600 text-white p-4 rounded text-center">
+              <div className="text-base font-semibold">盈利贡献</div>
+              <div className="text-sm opacity-90">50%权重</div>
+            </div>
+            {/* 第二行：子指标 */}
+            <div className="grid grid-cols-3 gap-2">
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">贡献净盈利</div>
+                <div className="text-xs text-gray-600 mt-1">25%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">投入产出比</div>
+                <div className="text-xs text-gray-600 mt-1">10%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">贡献持续度</div>
+                <div className="text-xs text-gray-600 mt-1">10%</div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* 有效贡献度模型 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">📋</span>
+          {/* 第三列：下级质量 */}
+          <div className="space-y-3">
+            {/* 第一行：标题 */}
+            <div className="bg-blue-600 text-white p-4 rounded text-center">
+              <div className="text-base font-semibold">下级质量</div>
+              <div className="text-sm opacity-90">30%权重</div>
+            </div>
+            {/* 第二行：子指标 */}
+            <div className="grid grid-cols-3 gap-2">
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">一次性会员</div>
+                <div className="text-xs text-gray-600 mt-1">-10%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">贡献集中度</div>
+                <div className="text-xs text-gray-600 mt-1">-5%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">新客贡献度</div>
+                <div className="text-xs text-gray-600 mt-1">5%</div>
+              </div>
+            </div>
           </div>
-          <h3 className="text-2xl font-bold text-gray-800">有效贡献度模型</h3>
-          <span className="text-gray-600 text-lg">基于<span className="text-blue-600">盈利贡献、下级质量、风险评估</span>等多维度指标构建代理质量评估体系</span>
-        </div>
-        
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
-            <thead className="bg-blue-600 text-white">
-              <tr>
-                <th className="p-4 text-left font-semibold border-r border-blue-500">维度</th>
-                <th className="p-4 text-left font-semibold border-r border-blue-500">子指标</th>
-                <th className="p-4 text-left font-semibold border-r border-blue-500">说明</th>
-                <th className="p-4 text-center font-semibold border-r border-blue-500">权重</th>
-                <th className="p-4 text-center font-semibold">正向/负向</th>
-              </tr>
-            </thead>
-            <tbody>
-              {/* 盈利贡献维度 */}
-              <tr className="border-b border-gray-100">
-                <td rowSpan="3" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
-                  <div className="text-blue-700 text-lg">盈利贡献</div>
-                </td>
-                <td className="p-4 font-semibold border-r border-gray-200">贡献净盈利</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">代理带来的净盈利（投注输赢 - 红利 - 返水 - 成本），考虑长期稳定性</td>
-                <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">25%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-600">正向</span>
-                </td>
-              </tr>
-              <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">投入产出比</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">平台投入资源（红利、奖励、运营成本）与代理贡献盈利比率</td>
-                <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">10%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-600">正向</span>
-                </td>
-              </tr>
-              <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">贡献持续度</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">停扶持后下级盈利表现是否稳定或提升（滑动周期评估，如3-6个月平均）</td>
-                <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">10%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-600">正向</span>
-                </td>
-              </tr>
-            
 
-              {/* 下级质量维度 */}
-              <tr className="border-b border-gray-100">
-                <td rowSpan="3" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
-                  <div className="text-blue-700 text-lg">下级质量</div>
-                </td>
-                <td className="p-4 font-semibold border-r border-gray-200">一次性会员</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">低价值用户占比（结合留存率评估低价值风险）</td>
-                <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600">负向</span>
-                </td>
-              </tr>
-              <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">贡献集中度</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">收益是否过度依赖少数下级（Top N占比 vs 下级数）</td>
-                <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-5%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600">负向</span>
-                </td>
-              </tr>
-              <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">新客贡献度</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">近一段时间新增下级对总盈利贡献（结合活跃和留存加权）</td>
-                <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">5%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-600">正向</span>
-                </td>
-              </tr>
-          
-
-              {/* 风险评估维度 */}
-              <tr className="border-b border-gray-100">
-                <td rowSpan="3" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
-                  <div className="text-blue-700 text-lg">风险评估</div>
-                </td>
-                <td className="p-4 font-semibold border-r border-gray-200">多关联风险</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">下级账号与高风险账号关联（按风险等级加权）</td>
-                <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600">负向</span>
-                </td>
-              </tr>
-              <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">负盈利风险</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">异常亏损/盈利比例（分级权重，高额异常权重大）</td>
-                <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600">负向</span>
-                </td>
-              </tr>
-              <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">下级风险度</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">下级中被风控拦截比例（按违规类型和严重程度加权）</td>
-                <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600">负向</span>
-                </td>
-              </tr>
-  
-            </tbody>
-          </table>
+          {/* 第四列：风险评估 */}
+          <div className="space-y-3">
+            {/* 第一行：标题 */}
+            <div className="bg-blue-600 text-white p-4 rounded text-center">
+              <div className="text-base font-semibold">风险评估</div>
+              <div className="text-sm opacity-90">-35%权重</div>
+            </div>
+            {/* 第二行：子指标 */}
+            <div className="grid grid-cols-3 gap-2">
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">多关联风险</div>
+                <div className="text-xs text-gray-600 mt-1">-10%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">负盈利风险</div>
+                <div className="text-xs text-gray-600 mt-1">-10%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">下级风险度</div>
+                <div className="text-xs text-gray-600 mt-1">-10%</div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
