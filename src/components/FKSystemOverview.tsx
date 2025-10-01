@@ -453,12 +453,12 @@ export const FKSystemOverview = () => {
         </div>
       </div>
       
-      {/* 内控问题优化 */}
+      {/* 策略优化 */}
       <div data-section="pilot-direction3">
         <Direction1PersonnelCapability.tsx />
       </div>
 
-        {/* 内控问题优化 */}
+        {/* 工具优化 */}
       <div data-section="pilot-direction3">
         <Direction3SystemStrategies.tsx />
       </div>
