@@ -522,7 +522,7 @@ export const FKSystemOverview = () => {
                     <div className="bg-white rounded-lg p-4">
                       <div className="font-bold text-gray-800 text-base mb-2">出款必须看标签和备注</div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-green-600">已上线</span></span>
+                        <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-600">已上线</span></span>
                         <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
                       </div>
                     </div>
