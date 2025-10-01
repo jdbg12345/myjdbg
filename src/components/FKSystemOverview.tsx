@@ -660,7 +660,7 @@ export const FKSystemOverview = () => {
 
               {/* 下级质量维度 */}
               <tr className="border-b border-gray-100">
-                <td rowSpan="4" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
+                <td rowSpan="3" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
                   <div className="text-blue-700 text-lg">下级质量</div>
                 </td>
                 <td className="p-4 font-semibold border-r border-gray-200">一次性会员占比</td>
@@ -668,14 +668,6 @@ export const FKSystemOverview = () => {
                 <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
                 <td className="p-4 text-center">
                   <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600">负向</span>
-                </td>
-              </tr>
-              <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">大客户贡献度</td>
-                <td className="p-4 text-gray-700 border-r border-gray-200">高价值用户对代理净盈利的贡献占比</td>
-                <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">15%</td>
-                <td className="p-4 text-center">
-                  <span className="px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-600">正向</span>
                 </td>
               </tr>
               <tr className="border-b border-gray-100">
