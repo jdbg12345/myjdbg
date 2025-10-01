@@ -3,14 +3,14 @@ import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } 
 
 export const FKSystemOverview = () => {
    const nodes = [
-    { id: 1, x: 150, y: 130, name: "系统预警", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "1" },
-    { id: 2, x: 400, y: 130, name: "申请提交", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "2" },
-    { id: 3, x: 650, y: 130, name: "系统审核", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "3" },
-    { id: 4, x: 1200, y: 130, name: "出款放行", desc: "", color: "#9ca3af", numberColor: "#10b981", number: "4" },
-    { id: 5, x: 900, y: 290, name: "人工审核", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "5" },
-    { id: 6, x: 1200, y: 290, name: "系统管控", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "6" },
-    { id: 7, x: 1450, y: 290, name: "内控复审", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "7" },
-    { id: 8, x: 1200, y: 450, name: "出款拒绝", desc: "", color: "#9ca3af", numberColor: "#ef4444", number: "8" }
+    { id: 1, x: 200, y: 150, name: "系统预警", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "1" },
+    { id: 2, x: 460, y: 150, name: "申请提交", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "2" },
+    { id: 3, x: 730, y: 150, name: "系统审核", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "3" },
+    { id: 4, x: 1350, y: 150, name: "出款放行", desc: "", color: "#9ca3af", numberColor: "#10b981", number: "4" },
+    { id: 5, x: 1050, y: 340, name: "人工审核", desc: "", color: "#9ca3af", numberColor: "#9ca3af", number: "5" },
+    { id: 6, x: 1350, y: 340, name: "系统管控", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "6" },
+    { id: 7, x: 1630, y: 340, name: "内控复审", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "7" },
+    { id: 8, x: 1350, y: 530, name: "出款拒绝", desc: "", color: "#9ca3af", numberColor: "#ef4444", number: "8" }
   ];
 
   
