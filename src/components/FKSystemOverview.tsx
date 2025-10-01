@@ -620,7 +620,7 @@ export const FKSystemOverview = () => {
         <div className="grid grid-cols-4 gap-6">
           {/* 第一列：综合分数 */}
           <div className="bg-blue-50 rounded p-6 border border-blue-200 flex flex-col justify-center items-center">
-            <div className="text-3xl font-semibold text-blue-600 mb-2">85</div>
+            <div className="text-3xl font-semibold text-blue-600 mb-2">xx</div>
             <div className="text-base font-semibold text-blue-700">综合分数</div>
             <div className="text-sm text-gray-600 mt-2 text-center">基于多维度<br/>综合评估</div>
           </div>
