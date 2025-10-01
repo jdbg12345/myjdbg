@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Direction4InternalCollusion = () => {
   return (
-    <div className="bg-white rounded-xl p-8 mb-8 border border-blue-200 shadow-md">
+    <>
       {/* 风控标签和备注独立权限 */}
       <div className="mb-12">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
@@ -301,6 +301,6 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
-    </div>
+    </>
   );
 };

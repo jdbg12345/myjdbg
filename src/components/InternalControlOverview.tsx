@@ -14,9 +14,7 @@ export const InternalControlOverview = () => {
       </div>   
 
       {/* 内控问题优化 */}
-      <div data-section="pilot-direction3">
-        <Direction4InternalCollusion />
-      </div>
+      <Direction4InternalCollusion />
       
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
