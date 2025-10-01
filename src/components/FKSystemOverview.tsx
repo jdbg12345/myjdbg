@@ -1,5 +1,8 @@
 import React from 'react';
 import { Shield, Users, Zap, BarChart3, TrendingUp, Award, CheckCircle, Clock } from 'lucide-react';
+import { Direction1PersonnelCapability } from './pilot/Direction1PersonnelCapability';
+import { Direction3SystemStrategies } from './pilot/Direction3SystemStrategies';
+
 
 export const FKSystemOverview = () => {
    const nodes = [
