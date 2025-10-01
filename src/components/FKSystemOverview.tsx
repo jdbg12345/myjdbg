@@ -14,7 +14,7 @@ export const FKSystemOverview = () => {
     { id: 6, x: 1200, y: 290, name: "系统管控", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "6" },
     { id: 7, x: 1450, y: 290, name: "内控复审", desc: "", color: "#3b82f6", numberColor: "#3b82f6", number: "7" },
     { id: 8, x: 1200, y: 450, name: "出款拒绝", desc: "", color: "#9ca3af", numberColor: "#ef4444", number: "8" }
-  ];
+     ];
 
   
   return (
@@ -106,3 +106,5 @@ export const FKSystemOverview = () => {
               </g>
 
               {/* Bubble 3: Below */}
+  )
+}
