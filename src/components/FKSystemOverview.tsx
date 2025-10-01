@@ -636,16 +636,11 @@ export const FKSystemOverview = () => {
           </div>
         </div>
 
-        {/* 代理贡献度总览标题 */}
+        {/* 有效贡献度总览标题 */}
         <div className="flex items-center justify-between mb-6">
-          <h4 className="text-xl font-bold text-gray-800">代理贡献度总览</h4>
+          <h4 className="text-xl font-bold text-gray-800">有效贡献度总览</h4>
           <div className="flex items-center space-x-4">
-            <select className="px-4 py-2 border border-gray-300 rounded-lg bg-white">
-              <option>全部站点</option>
-            </select>
-            <select className="px-4 py-2 border border-gray-300 rounded-lg bg-white">
-              <option>全部分级</option>
-            </select>
+          
           </div>
         </div>
 
@@ -729,7 +724,7 @@ export const FKSystemOverview = () => {
                     {/* 综合贡献度分数 */}
                     <div className="text-center">
                       <div className="text-3xl font-bold text-blue-600 mb-1">{agent.totalScore}</div>
-                      <div className="text-sm text-gray-600">综合贡献度分数</div>
+                      <div className="text-sm text-gray-600">综合分数</div>
                     </div>
                     
                     {/* 三个评分指标 */}
