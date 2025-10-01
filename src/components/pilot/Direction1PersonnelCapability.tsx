@@ -91,13 +91,13 @@ export const Direction1PersonnelCapability = () => {
                         <div className="flex items-end space-x-1">
                           <div className="relative">
                             <div 
-                              className="w-10 bg-blue-500 rounded-t"
+                              className="w-20 bg-blue-500 rounded-t"
                               style={{ height: `${(item.before / 1400) * 200}px` }}
                             ></div>
                           </div>
                           <div className="relative">
                             <div 
-                              className="w-10 bg-blue-400 rounded-t"
+                              className="w-20 bg-blue-400 rounded-t"
                               style={{ height: `${(item.after / 1400) * 200}px` }}
                             ></div>
                           </div>
