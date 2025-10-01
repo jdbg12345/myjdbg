@@ -19,7 +19,6 @@ import { InternalControlOverview } from './components/InternalControlOverview';
 import { AgentControlOverview } from './components/AgentControlOverview';
 import { PilotResults } from './components/PilotResults';
 import { AuditGroup } from './components/AuditGroup';
-import { InternalControlOverview } from './components/InternalControlOverview';
 import { AuditDepartmentOverview } from './components/AuditDepartmentOverview';
 import { SystemDepartmentOverview } from './components/SystemDepartmentOverview';
 import { SummaryOverview } from './components/SummaryOverview';
