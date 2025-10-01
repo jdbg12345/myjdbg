@@ -19,7 +19,7 @@ export const FKSystemOverview = () => {
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">
-          3.2 试点说明
+          3.2 会员风控变化说明
         </h1>
       </div>
 
