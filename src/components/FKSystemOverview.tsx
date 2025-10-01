@@ -216,34 +216,103 @@ export const FKSystemOverview = () => {
             <h3 className="text-2xl font-bold text-gray-800">防御型规则</h3>
           </div>
           
+          <div className="mb-6">
+            <p className="text-gray-700 text-base leading-relaxed">
+              无论玩家有没有问题，达到了对应的数据，就要拦截；存在有问题的玩家规避绕过的风险
+            </p>
+          </div>
+          
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-              <h4 className="font-semibold text-blue-700 mb-3">基础防护</h4>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">1</span>
+                </div>
+                <h4 className="font-semibold text-blue-700">账户安全类</h4>
+              </div>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• 金额限制规则</li>
-                <li>• 频次控制规则</li>
-                <li>• 时间窗口规则</li>
-                <li>• IP地址监控</li>
+                <li className="flex justify-between items-center">
+                  <span>• 敏感信息变更</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">增强</li>
+                <li className="flex justify-between items-center">
+                  <span>• 帐变记录异常</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
+                <li className="flex justify-between items-center">
+                  <span>• 睡眠账号激活</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
+                <li className="flex justify-between items-center">
+                  <span>• 提款环境异常</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
+                <li className="flex justify-between items-center">
+                  <span>• 租卖帐号异常</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
               </ul>
             </div>
             
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-              <h4 className="font-semibold text-blue-700 mb-3">行为监控</h4>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">2</span>
+                </div>
+                <h4 className="font-semibold text-blue-700">盈利监控类</h4>
+              </div>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• 异常登录检测</li>
-                <li>• 设备指纹识别</li>
-                <li>• 操作轨迹分析</li>
-                <li>• 关联账户识别</li>
+                <li className="flex justify-between items-center">
+                  <span>• 高盈利金额</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">增强</li>
+                <li className="flex justify-between items-center">
+                  <span>• 高盈利倍数</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">增强</li>
+                <li className="flex justify-between items-center">
+                  <span>• 大额类提款</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">增强</li>
+                <li className="flex justify-between items-center">
+                  <span>• 长期在盈利</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
               </ul>
             </div>
             
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-              <h4 className="font-semibold text-blue-700 mb-3">风险评估</h4>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">3</span>
+                </div>
+                <h4 className="font-semibold text-blue-700">内控监控类</h4>
+              </div>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• 用户信用评级</li>
-                <li>• 历史行为分析</li>
-                <li>• 资金流向监控</li>
-                <li>• 综合风险评分</li>
+                <li className="flex justify-between items-center">
+                  <span>• 前几次提款需要人工</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">增强</li>
+                <li className="flex justify-between items-center">
+                  <span>• 多次不经过人工</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">增强</li>
+                <li className="flex justify-between items-center">
+                  <span>• 特殊上分类型</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">没变</li>
               </ul>
             </div>
           </div>
@@ -258,26 +327,103 @@ export const FKSystemOverview = () => {
             <h3 className="text-2xl font-bold text-gray-800">套利类型规则</h3>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="mb-6">
+            <p className="text-gray-700 text-base leading-relaxed">
+              补充各种套利、作弊类的策略，优化绕过人工审核直接出的错误
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-              <h4 className="font-semibold text-blue-700 mb-3">游戏套利</h4>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">1</span>
+                </div>
+                <h4 className="font-semibold text-blue-700">游戏套利类</h4>
+              </div>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• 电子游戏卡免费</li>
-                <li>• 真人游戏对打</li>
-                <li>• 体育打水套利</li>
-                <li>• 彩票全包行为</li>
-                <li>• 棋牌移分操作</li>
+                <li className="flex justify-between items-center">
+                  <span>• 电子套利</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
+                <li className="flex justify-between items-center">
+                  <span>• 真人套利</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
+                <li className="flex justify-between items-center">
+                  <span>• 体育套利</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
+                <li className="flex justify-between items-center">
+                  <span>• 棋牌套利</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
+                <li className="flex justify-between items-center">
+                  <span>• 彩票套利</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
+                <li className="flex justify-between items-center">
+                  <span>• 电竞套利</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">方案中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
               </ul>
             </div>
             
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-              <h4 className="font-semibold text-blue-700 mb-3">红利套利</h4>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">2</span>
+                </div>
+                <h4 className="font-semibold text-blue-700">红利活动类</h4>
+              </div>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• 新用户红利套取</li>
-                <li>• 存款红利滥用</li>
-                <li>• 代理佣金套利</li>
-                <li>• 活动奖励套取</li>
-                <li>• 返水机制滥用</li>
+                <li className="flex justify-between items-center">
+                  <span>• 活动金额</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">增强</li>
+                <li className="flex justify-between items-center">
+                  <span>• 活动比例</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">增强</li>
+                <li className="flex justify-between items-center">
+                  <span>• 活动类型</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">增强</li>
+              </ul>
+            </div>
+            
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">3</span>
+                </div>
+                <h4 className="font-semibold text-blue-700">游戏作弊类</h4>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex justify-between items-center">
+                  <span>• 机器下注</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
+                <li className="flex justify-between items-center">
+                  <span>• 算牌下注</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
+                <li className="flex justify-between items-center">
+                  <span>• 场馆多钱</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                </li>
+                <li className="text-xs text-gray-500 ml-4">新增</li>
               </ul>
             </div>
           </div>
