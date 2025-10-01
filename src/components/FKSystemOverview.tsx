@@ -449,6 +449,12 @@ export const FKSystemOverview = () => {
           </div>
         </div>
       </div>
+      
+      {/* 内控问题优化 */}
+      <div data-section="pilot-direction3">
+        <Direction4InternalCollusion />
+      </div>
+      
     </div>
   );
 };
