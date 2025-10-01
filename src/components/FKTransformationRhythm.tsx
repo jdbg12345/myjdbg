@@ -271,7 +271,7 @@ export const FKTransformationRhythm = () => {
                       item.status === 'current' ? 'text-gray-900' :
                       'text-gray-900'
                     }`}>
-                      {item.time} - {item.stage}
+                      {item.time}{item.stage}
                     </div>
                     <p className="text-gray-700 leading-relaxed text-base mb-4">
                       {item.work}

@@ -313,21 +313,21 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">在出款操作中，尽管SOP明确要求查看标签备注，但仍存在忽视行为，导致出款错误。每月约15–20%的错误出款由此产生，造成约100万+/月的损失。</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">在出款操作中，尽管<span className="text-blue-600">SOP明确要求查看标签备注</span>，但仍存在忽视行为，导致出款错误。每月约<span className="text-blue-600">15–20%的错误出款</span>由此产生，造成约<span className="text-blue-600">100万+/月的损失</span>。</p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">将查看标签备注，设为出款流程中的强制查看环节，否则无法完成审核</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold">将<span className="text-blue-600">查看标签备注，设为出款流程中的强制查看环节</span>，否则无法完成审核</p>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
                 <h4 className="font-bold text-green-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">错误出款影响降低15%-20%</p>
+                <p className="text-gray-700 text-base leading-relaxed font-semibold"><span className="text-blue-600">错误出款影响降低15%-20%</span></p>
               </div>
             </div>
 

@@ -37,7 +37,7 @@ export const FKSystemOverview = () => {
 
         <div className="bg-gray-50 rounded p-10 border-2 border-gray-200">
           <div className="flex justify-center p-4">
-            <svg viewBox="0 0 1600 550" className="w-full max-w-7xl h-[600px]">
+            <svg viewBox="0 0 1600 550" className="w-full max-w-8xl h-[700px]">
               <defs>
                 <marker id="arrowhead-gray" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto">
                   <polygon points="0 0, 12 4, 0 8" fill="#6b7280" />
@@ -564,6 +564,7 @@ export const FKSystemOverview = () => {
                 <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 代理佣金审核流程升级
               </h5>
+              <div className="text-lg text-gray-600 mb-4">优化审核流程和监控违规操作</div>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <div className="space-y-2">
@@ -585,6 +586,7 @@ export const FKSystemOverview = () => {
                 <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 代理质量自动化分析
               </h5>
+              <div className="text-lg text-gray-600 mb-4">优化审核流程和监控违规操作</div>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <div className="space-y-2">
