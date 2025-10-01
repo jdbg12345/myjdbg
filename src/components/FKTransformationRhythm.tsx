@@ -260,7 +260,7 @@ export const FKTransformationRhythm = () => {
                     {item.status === 'completed' ? (
                       <CheckCircle className="w-7 h-7 text-blue-600" />
                     ) : item.status === 'current' ? (
-                      <Clock className="w-7 h-7 text-blue-600" />
+                      <Clock className="w-7 h-7 text-green-600" />
                     ) : (
                       <span className="text-blue-600 font-bold text-lg">{item.time}</span>
                     )}
