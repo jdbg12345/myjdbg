@@ -633,7 +633,7 @@ export const FKSystemOverview = () => {
                 <td rowSpan="3" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
                   <div className="text-blue-700 text-lg">盈利贡献</div>
                 </td>
-                <td className="p-4 font-semibold border-r border-gray-200">贡献盈利</td>
+                <td className="p-4 font-semibold border-r border-gray-200">贡献净盈利</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">代理带来的净盈利（投注输赢 - 红利 - 返水 - 成本），考虑长期稳定性</td>
                 <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">25%</td>
                 <td className="p-4 text-center">
@@ -641,7 +641,7 @@ export const FKSystemOverview = () => {
                 </td>
               </tr>
               <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">投入产出</td>
+                <td className="p-4 font-semibold border-r border-gray-200">投入产出比</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">平台投入资源（红利、奖励、运营成本）与代理贡献盈利比率</td>
                 <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">10%</td>
                 <td className="p-4 text-center">
@@ -649,7 +649,7 @@ export const FKSystemOverview = () => {
                 </td>
               </tr>
               <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">日常贡献</td>
+                <td className="p-4 font-semibold border-r border-gray-200">贡献持续度</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">停扶持后下级盈利表现是否稳定或提升（滑动周期评估，如3-6个月平均）</td>
                 <td className="p-4 text-center font-bold text-blue-600 border-r border-gray-200">10%</td>
                 <td className="p-4 text-center">
