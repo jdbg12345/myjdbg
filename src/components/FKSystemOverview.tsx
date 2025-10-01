@@ -483,17 +483,19 @@ export const FKSystemOverview = () => {
         </div>
       </div>
       
-    </div>
-    </div>
+      {/* 策略优化 */}
+      <div data-section="pilot-direction3">
+        <Direction1PersonnelCapability />
+      </div>
 
-    {/* 策略优化 */}
-    <div data-section="pilot-direction1">
-      <Direction1PersonnelCapability />
+        {/* 工具优化 */}
+      <div data-section="pilot-direction3">
+        <Direction3SystemStrategies />
+      </div>
+      
     </div>
-
-    {/* 工具优化 */}
-    <div data-section="pilot-direction3">
-      <Direction3SystemStrategies />
+        </div>
+      </div>
     </div>
   );
 };
