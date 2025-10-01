@@ -111,6 +111,18 @@ function App() {
         <div data-section="fk-system-overview">
           <FKSystemOverview />
         </div>
+
+           
+        {/* 3.3 FK内控风控变化说明 */}
+        <div data-section="fk-system-overview">
+          <InternalControlOverview.tsx />
+        </div>
+
+         {/* 3.4 FK内控风控变化说明 */}
+        <div data-section="fk-system-overview">
+          <AgentControlOverview.tsx.tsx />
+        </div>
+        
         
         {/* 3.3 FK试点成果 */}
         <div data-section="pilot-results">
