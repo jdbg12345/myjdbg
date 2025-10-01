@@ -693,7 +693,7 @@ export const FKSystemOverview = () => {
                 <td rowSpan="3" className="p-4 font-bold text-center bg-blue-50 border-r border-gray-200 align-top">
                   <div className="text-blue-700 text-lg">风险评估</div>
                 </td>
-                <td className="p-4 font-semibold border-r border-gray-200">关联风险</td>
+                <td className="p-4 font-semibold border-r border-gray-200">多关联风险</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">下级账号与高风险账号关联（按风险等级加权）</td>
                 <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
                 <td className="p-4 text-center">
@@ -701,7 +701,7 @@ export const FKSystemOverview = () => {
                 </td>
               </tr>
               <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">打负风险</td>
+                <td className="p-4 font-semibold border-r border-gray-200">负盈利风险</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">异常亏损/盈利比例（分级权重，高额异常权重大）</td>
                 <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
                 <td className="p-4 text-center">
@@ -709,7 +709,7 @@ export const FKSystemOverview = () => {
                 </td>
               </tr>
               <tr className="border-b border-gray-100">
-                <td className="p-4 font-semibold border-r border-gray-200">下级风险</td>
+                <td className="p-4 font-semibold border-r border-gray-200">下级风险度</td>
                 <td className="p-4 text-gray-700 border-r border-gray-200">下级中被风控拦截比例（按违规类型和严重程度加权）</td>
                 <td className="p-4 text-center font-bold text-red-600 border-r border-gray-200">-10%</td>
                 <td className="p-4 text-center">
