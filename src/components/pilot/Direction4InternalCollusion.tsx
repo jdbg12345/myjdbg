@@ -168,7 +168,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="text-white font-bold text-sm">3.4</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">敏感查询使用密文查询</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-600 ml-4 shadow-sm">开发中</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-gray-600 ml-4 shadow-sm">开发中</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -206,7 +206,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="text-white font-bold text-sm">3.5</span>
               </div>
               <h4 className="text-2xl font-bold text-gray-800">风控策略参数变化机制</h4>
-              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-600 ml-4 shadow-sm">开发中</span>
+              <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-gray-600 ml-4 shadow-sm">开发中</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
