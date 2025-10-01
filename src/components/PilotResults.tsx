@@ -11,7 +11,7 @@ export const PilotResults = () => {
       <div className="mb-8">
         <h1 className="text-5xl font-bold text-gray-800 border-b-4 border-blue-600 pb-4 mb-4">3.3 成果说明</h1>
         <div className="text-gray-600 text-lg">
-          从审核问题-质量较差、系统问题-支持不够、内控问题-违规行为等三个方向进行优化
+        <p className="text-gray-700 text-base leading-relaxed font-semibold">从<span className="text-blue-600">审核问题-质量较差、系统问题-支持不够、内控问题-违规行为</span>等三个方向进行优化</p>
         </div>
       </div>   
 
