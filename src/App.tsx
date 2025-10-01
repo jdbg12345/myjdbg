@@ -15,6 +15,8 @@ import { DBSportsKillRate } from './components/DBSportsKillRate';
 import { AirplaneData } from './components/AirplaneData';
 import { FKTransformationRhythm } from './components/FKTransformationRhythm';
 import { FKSystemOverview } from './components/FKSystemOverview';
+import { InternalControlOverview } from './components/InternalControlOverview';
+import { AgentControlOverview } from './components/AgentControlOverview';
 import { PilotResults } from './components/PilotResults';
 import { AuditGroup } from './components/AuditGroup';
 import { InternalControlOverview } from './components/InternalControlOverview';
@@ -120,7 +122,7 @@ function App() {
 
          {/* 3.4 FK内控风控变化说明 */}
         <div data-section="fk-system-overview">
-          <AgentControlOverview.tsx />
+          <AgentControlOverview />
         </div>
         
         
