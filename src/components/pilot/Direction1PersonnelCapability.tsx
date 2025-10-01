@@ -26,30 +26,30 @@ export const Direction1PersonnelCapability = () => {
                   <span className="text-white font-bold text-sm">1</span>
                 </div>
                 <h4 className="text-2xl font-bold text-gray-800">派单策略优化</h4>
-                <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 ml-4">已上线</span>
+                <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-green-600 ml-4">已上线</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
-                <h4 className="font-bold text-red-700 mb-3 flex items-center">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">以金额作为分单依据，未考虑订单难度及人员能力匹配，导致部分高风险订单被分配至远程或外包，而其<span className="text-blue-600">差错率较总部高出约2～3倍，由此带来超过100万+/月的损失</span></p>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">以金额作为分单依据，未考虑订单难度及人员能力匹配，导致部分高风险订单被分配至远程或外包，而其<span className="text-blue-600">差错率较总部高出约2～3倍，由此带来超过100万+/月的损失</span></p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   解决方法
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">引入订单风险评分机制，将派单从<span className="text-blue-600">"仅按金额"升级为"按风险分数+金额"</span>，确保中高风险订单由经验丰富的审核员处理，实现人单匹配最优分配。</p>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">引入订单风险评分机制，将派单从<span className="text-blue-600">"仅按金额"升级为"按风险分数+金额"</span>，确保中高风险订单由经验丰富的审核员处理，实现人单匹配最优分配。</p>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
-                <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">错误率降低<span className="font-bold text-green-600">15%-20%</span></p>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">错误率降低<span className="font-bold text-blue-600">15%-20%</span></p>
               </div>
             </div>
         
@@ -191,26 +191,26 @@ export const Direction1PersonnelCapability = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
-                <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold"><span className="text-blue-600">FK体系缺一个统一的量化标准</span>，如分数来衡量风险程度，在多方协作和系统交互中，就难以高效、一致地执行判断和决策</p>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold"><span className="text-blue-600">FK体系缺一个统一的量化标准</span>，如分数来衡量风险程度，在多方协作和系统交互中，就难以高效、一致地执行判断和决策</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold"><span className="text-blue-600">依托风控策略与标签对各项指标进行赋分</span>，构建风控评分体系；<span className="text-blue-600">为每笔订单/每位玩家生成风险分数</span>，实现风险量化判断与管理</p>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold"><span className="text-blue-600">依托风控策略与标签对各项指标进行赋分</span>，构建风控评分体系；<span className="text-blue-600">为每笔订单/每位玩家生成风险分数</span>，实现风险量化判断与管理</p>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
-                <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">风控体系是从<span className="text-blue-600">「人工驱动」向「系统驱动」</span>转变的最核心基础</p>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">风控体系是从<span className="text-blue-600">「人工驱动」向「系统驱动」</span>转变的最核心基础</p>
               </div>
             </div>
 
@@ -308,26 +308,26 @@ export const Direction1PersonnelCapability = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-l-4 border-red-500 shadow-sm">
-                <h4 className="font-bold text-red-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-red-500 rounded-full mr-3 shadow-sm"></span>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">在出款操作中，尽管SOP明确要求查看标签备注，<span className="text-blue-600">但仍存在忽视行为，造成15–20%的错误出款，100万+/月的损失</span>。</p>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">在出款操作中，尽管SOP明确要求查看标签备注，<span className="text-blue-600">但仍存在忽视行为，造成15–20%的错误出款，100万+/月的损失</span>。</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 shadow-sm">
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
                 <h4 className="font-bold text-blue-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-blue-500 rounded-full mr-3 shadow-sm"></span>
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold">将<span className="text-blue-600">查看标签备注设为出款流程中的强制查看环节</span>，否则无法完成审核</p>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold">将<span className="text-blue-600">查看标签备注设为出款流程中的强制查看环节</span>，否则无法完成审核</p>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 shadow-sm">
-                <h4 className="font-bold text-green-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-green-500 rounded-full mr-3 shadow-sm"></span>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h4 className="font-bold text-blue-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-base leading-relaxed font-semibold"><span className="text-blue-600">错误出款影响降低15%-20%</span></p>
+                <p className="text-gray-700 text-lg leading-relaxed font-semibold"><span className="text-blue-600">错误出款影响降低15%-20%</span></p>
               </div>
             </div>
 
