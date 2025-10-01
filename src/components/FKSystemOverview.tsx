@@ -642,7 +642,7 @@ export const FKSystemOverview = () => {
             {
               id: '#1Y695966',
               grade: 'B档 - 良好',
-              level: '高级代理',
+              site: 'Y1',
               joinDate: '2024-10-02',
               totalScore: 61,
               businessScore: 39,
@@ -657,7 +657,7 @@ export const FKSystemOverview = () => {
             {
               id: '#2Y144558',
               grade: 'C档 - 一般',
-              level: '金牌代理',
+              site: 'Y2',
               joinDate: '2024-09-05',
               totalScore: 57,
               businessScore: 38,
@@ -672,7 +672,7 @@ export const FKSystemOverview = () => {
             {
               id: '#6Y567649',
               grade: 'C档 - 一般',
-              level: '初级代理',
+              site: 'Y4',
               joinDate: '2024-06-15',
               totalScore: 55,
               businessScore: 39,
@@ -693,7 +693,7 @@ export const FKSystemOverview = () => {
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${agent.gradeColor}`}>
                       {agent.grade}
                     </span>
-                    <span className="text-gray-600">{agent.level}</span>
+                    <span className="text-gray-600">{agent.site}</span>
                     <span className="text-gray-500">• 加入时间: {agent.joinDate}</span>
                   </div>
                   
