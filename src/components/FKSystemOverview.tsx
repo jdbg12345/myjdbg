@@ -613,7 +613,7 @@ export const FKSystemOverview = () => {
             <span className="text-white font-bold text-sm">📋</span>
           </div>
           <h3 className="text-2xl font-bold text-gray-800">有效贡献度模型</h3>
-          <span className="text-gray-600 text-lg">基于多维度指标构建代理质量评估体系</span>
+          <span className="text-gray-600 text-lg">基于盈利贡献、下级质量、风险评估等多维度指标构建代理质量评估体系</span>
         </div>
         
         <div className="overflow-x-auto">
