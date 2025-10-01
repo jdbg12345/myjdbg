@@ -564,7 +564,7 @@ export const FKSystemOverview = () => {
                 <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
                 代理佣金审核流程升级
               </h5>
-              <div className="text-lg text-gray-600 mb-4">针对<span className="text-blue-600">红利、负盈利、调整等异常情况设定策略</span>，一旦触发则进入<span className="text-blue-600">复审机制</span>来控制违规等行为，提升佣金发放合理性</div>
+              <div className="text-lg text-gray-600 mb-4">针对<span className="text-blue-600">红利、打负、调整等情况设定策略</span>，触发则进入<span className="text-blue-600">复审机制</span>来控制违规行为，提升佣金有效性</div>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
                   <div className="space-y-2">
