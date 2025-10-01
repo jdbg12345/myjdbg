@@ -228,8 +228,8 @@ export const FKSystemOverview = () => {
                  <div className="text-lg text-gray-600 mb-4">无论玩家有没有问题，达到了对应的数据，就要拦截；存在<span className="text-blue-600">有问题的玩家规避绕过的风险</span></div>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
-                    <span className="text-green-500 mr-2">1</span>
+                  <h6 className="font-bold text-blue-800 mb-4 text-lg flex items-center">
+                    <span className="text-blue-500 mr-2">1</span>
                     账户安全类
                   </h6>
                   <div className="space-y-2">
