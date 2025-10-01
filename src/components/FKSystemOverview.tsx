@@ -881,7 +881,6 @@ export const FKSystemOverview = () => {
 
           ))}
         </div>
-  
       
   );
 };
