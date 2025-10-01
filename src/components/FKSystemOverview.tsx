@@ -348,7 +348,7 @@ export const FKSystemOverview = () => {
                  <div className="text-lg text-gray-600 mb-4">补充各种<span className="text-blue-600">套利、作弊</span>类的策略，优化绕过人工审核直接出的错误</div>
               <div className="space-y-4">
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <h6 className="font-bold text-gray-800 mb-4 text-lg flex items-center">
+                  <h6 className="font-bold text-blue-800 mb-4 text-lg flex items-center">
                     <span className="text-blue-600 mr-2">1</span>
                     游戏套利类
                   </h6>
