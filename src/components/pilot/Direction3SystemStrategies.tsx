@@ -47,15 +47,15 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">Y、B</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">卡免费是最典型的<span className="text-blue-600">套利或藏分</span>手段。目前系统在自动出款及人工审核环节中对此识别不足</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">系统提款策略增加电子卡免费的策略模型</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">拦截率：95%+</p>
               </div>
@@ -66,7 +66,7 @@ export const Direction3SystemStrategies = () => {
               <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
               洞察分析
             </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">现有模型已具备初步拦截能力；<span className="text-blue-600">随机样本100单中，52单经人工复核确有问题，其中17单定位为“跨平台对压”；9单拒付、43单放行，但是存在警告、扣款出款、出款禁用等不同程度处理；</span>另外的48单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理；<span className="text-blue-600">后续需要继续迭代，目标准确率在80%；</span></p>
+            <p className="text-gray-700 text-sm leading-relaxed">现有模型已具备初步拦截能力；随机样本<span className="font-bold">100</span>单中，<span className="font-bold">52</span>单经人工复核确有问题，其中<span className="font-bold">17</span>单定位为“跨平台对压”；<span className="font-bold">9</span>单拒付、<span className="font-bold">43</span>单放行，但是存在警告、扣款出款、出款禁用等不同程度处理；另外的<span className="font-bold">48</span>单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理；<span className="font-bold text-green-600">后续需要继续迭代，目标准确率在80%；</span></p>
           </div>
             
             {/* 电子策略图表 */}
@@ -147,15 +147,15 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">突破：B/C端系统打通，解决实效性极差、无法跨商户、风控无联动等关键问题</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">对打、机器下注和算牌</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">系统提款策略增加真人对打、机器下注、算牌的策略模型</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">识别准确率：80%+；（DB跨站点对打）</p>
               </div>
@@ -166,11 +166,11 @@ export const Direction3SystemStrategies = () => {
               <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
                 洞察分析
             </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">1、现有模型已具备初步拦截能力；<span className="text-blue-600">随机样本100单中，52单经人工复核确有问题，9单拒付、43单放行，但是存在警告、扣款出款、出款禁用等不同程度处理；</span></p>
+            <p className="text-gray-700 text-sm leading-relaxed">1、现有模型已具备初步拦截能力；随机样本<span className="font-bold">100</span>单中，<span className="font-bold">52</span>单经人工复核确有问题，<span className="font-bold">9</span>单拒付、<span className="font-bold">43</span>单放行，但是存在警告、扣款出款、出款禁用等不同程度处理；</p>
 
-            <p className="text-gray-700 text-sm leading-relaxed">2、<span className="text-blue-600">其中17单定位为“跨平台对压”，是过往很难发现的</span></p>
-            <p className="text-gray-700 text-sm leading-relaxed">3、另外的48单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理；<span className="text-blue-600">后续需要继续迭代，目标准确率在80%；</span></p>
-                  
+            <p className="text-gray-700 text-sm leading-relaxed">2、其中<span className="font-bold">17</span>单定位为“跨平台对压”，是过往很难发现的</p>
+            <p className="text-gray-700 text-sm leading-relaxed">3、另外的<span className="font-bold">48</span>单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理；<span className="font-bold text-green-600">后续需要继续迭代，目标准确率在80%；</span></p>
+
           </div>
             
             {/* 真人策略图表 */}
@@ -248,15 +248,15 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">突破：B/C端系统打通，解决实效性极差、无法跨商户、风控无联动等关键问题</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">打水、协议球、卡危险球、出货、蛇货、拉赛、机器下注</span>等是最常见的套利与作弊手段。当前系统在自动出款与人工审核环节对此类行为的识别尚不充分，尤其是体育赛类场景复杂、多变，对审核人员经验依赖高，导致漏判与误判并存，带来较大风控盲区与损失风险</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">通过<span className="text-blue-600">联动B端系统，引入百家赔、危险球</span>等关键外部数据，构建针对性的特征识别策略，实现对异常行为更高时效的预警与拦截，全面提升对体育类套利与作弊行为的识别与防控能力。</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">识别准确率：70%+</p>
               </div>
@@ -276,15 +276,15 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">开发中</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">移分</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏 </p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">建立棋牌游戏异常行为识别机制</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">识别准确率：60%+</p>
               </div>
@@ -303,15 +303,15 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">开发中</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">全包行为</span>是最常见的套利与作弊手段；目前系统在自动出款及人工审核环节中对此识别不足</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">针对对全包行为进行预警和拦截</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
                 <p className="text-gray-700 text-sm leading-relaxed">识别准确率：90%+</p>
               </div>
@@ -364,7 +364,7 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">突破：实现跨 Y+B 全站点的核心关联特征打通，解决了绝大多数关联识别难题</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
@@ -380,14 +380,14 @@ export const Direction3SystemStrategies = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点</span>"关联下注查询\"工具，支持基于核心关联特征<span className="text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
+                <p className="text-gray-700 text-sm leading-relaxed">提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点</span>"关联下注查询\"工具，支持基于核心关联特征<span className=\"text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
@@ -409,7 +409,7 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
@@ -425,14 +425,14 @@ export const Direction3SystemStrategies = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">通过B端百家赔率数据构建体育打水查询工具</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
@@ -459,7 +459,7 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
@@ -479,7 +479,7 @@ export const Direction3SystemStrategies = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
@@ -500,7 +500,7 @@ export const Direction3SystemStrategies = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
@@ -590,21 +590,21 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">出现用户钱包异常变动的极端情况，如<span className="text-blue-600">无存款、无盈利却发起提款</span>，但目前系统缺乏针对该类行为的监控，一旦发生损失可能巨大</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">建立钱包帐变异常预警机制，实时监控资金流动</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
@@ -628,21 +628,21 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">近期<span className="text-blue-600">出现多次场馆钱包多钱情况</span>，但是C端缺少对此情况的监控，一旦发生损失可能巨大</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">建立<span className="text-blue-600">场馆资金异常</span>监控机制，预警异常资金变动</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
@@ -666,21 +666,21 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">针对盈利类监控不完整，无法做到全方位、及时性的发现潜在问题</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">已覆盖<span className="text-blue-600">场馆、游戏、单笔、长期</span>等<span className="text-blue-600">日、周、月</span>的盈利进行监控</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
@@ -704,21 +704,21 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">长期沉睡用户突然活跃，可能<span className="text-blue-600">存在账号被盗或异常操作风险</span></p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">建立沉睡用户活跃预警机制，监控异常登录和操作行为</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益

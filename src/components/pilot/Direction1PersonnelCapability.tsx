@@ -19,21 +19,21 @@ export const Direction1PersonnelCapability = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">FK体系缺一个统一的量化标准</span>，如分数来衡量风险程度，在多方协作和系统交互中，就难以高效、一致地执行判断和决策</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">依托风控策略与标签对各项指标进行赋分</span>，构建风控评分体系；<span className="text-blue-600">为每笔订单/每位玩家生成风险分数</span>，实现风险量化管理</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
@@ -47,8 +47,8 @@ export const Direction1PersonnelCapability = () => {
               <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
               洞察分析
             </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">1、现有模型评分已具备初步区分能力，<span className="text-blue-600">风险分数越高的订单数量越少、但风控率越高；</span></p>
-                 <p className="text-gray-700 text-sm leading-relaxed">2、随着策略和参数的持续优化，评分将更精准可靠，可作为关键指标，逐步用于驱动规则引擎，<span className="text-blue-600">减少人工介入，实现更高效的风控自动化</span></p>
+            <p className="text-gray-700 text-sm leading-relaxed">1、现有模型评分已具备初步区分能力，<span className="font-bold text-blue-600">风险分数越高的订单数量越少、但风控率越高；</span></p>
+                 <p className="text-gray-700 text-sm leading-relaxed">2、随着策略和参数的持续优化，评分将更精准可靠，可作为关键指标，逐步用于驱动规则引擎，<span className="font-bold text-green-600">减少人工介入，实现更高效的风控自动化</span></p>
           </div>
 
         {/* 云盾分数分布图表 */}
@@ -215,21 +215,21 @@ export const Direction1PersonnelCapability = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">以金额作为分单依据，未考虑订单难度及人员能力匹配，导致部分高风险订单被分配至远程或外包，而其<span className="text-blue-600">差错率较总部高出约2～3倍</span></p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决方法
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">引入订单风险评分机制，将派单从<span className="text-blue-600">"仅按金额"升级为"按风险分数+金额"</span>，确保<span className="text-blue-600">中高风险订单由经验丰富的审核员处理</span>，实现人单匹配最优分配。</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
@@ -243,12 +243,12 @@ export const Direction1PersonnelCapability = () => {
                 <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
                   洞察分析
               </h4>
-            <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">1、通过派单机制的调整，外包的订单量由 66,423 单降至 24,511 单，下降了 63.10%；远程的订单量由 82,733 单降至 29,431 单，下降了 64.44%，整体实现了低效渠道订单量的显著压缩。</span></p>
-              
-               <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">2、与此同时，总部一审的订单量由 25,161 单增长至 135,259 单，提升了 437.57%；其审核错误率由 0.63% 降至 0.51%，下降了 19.05%，审核质量明显提升。
-</span></p>
-                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">
-3、进一步分析发现，尽管外包与远程渠道的一审订单量大幅减少，且审核任务相对简化，其错误率并未随之下降，反映出相关团队在审核能力及工作态度方面仍存在较大短板。后续加强人员培训力度、优化考核机制，并持续强化过程管控。</span></p>
+            <p className="text-gray-700 text-sm leading-relaxed">1、通过派单机制的调整，外包的订单量由 <span className="font-bold">66,423</span> 单降至 <span className="font-bold">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；远程的订单量由 <span className="font-bold">82,733</span> 单降至 <span className="font-bold">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>，整体实现了低效渠道订单量的显著压缩。</p>
+
+               <p className="text-gray-700 text-sm leading-relaxed">2、与此同时，总部一审的订单量由 <span className="font-bold">25,161</span> 单增长至 <span className="font-bold">135,259</span> 单，提升了 <span className="font-bold text-green-600">437.57%</span>；其审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.51%</span>，下降了 <span className="font-bold text-green-600">19.05%</span>，审核质量明显提升。
+</p>
+                <p className="text-gray-700 text-sm leading-relaxed">
+3、进一步分析发现，尽管外包与远程渠道的一审订单量大幅减少，且审核任务相对简化，其错误率并未随之下降，反映出相关团队在审核能力及工作态度方面仍存在较大短板。后续加强人员培训力度、优化考核机制，并持续强化过程管控。</p>
           </div>
             
             {/* 图表模块 */}
@@ -392,21 +392,21 @@ export const Direction1PersonnelCapability = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">在出款操作中，尽管SOP明确要求查看标签备注，<span className="text-blue-600">但仍存在忽视行为，错误出款中占比15–20%</span></p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">将<span className="text-blue-600">查看标签备注设为出款流程中的强制查看环节</span>，否则无法完成审核</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
