@@ -293,6 +293,73 @@ export const Direction1PersonnelCapability = () => {
               <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025-04-01 ~ 2025-06-30</div>
             </div>
           </div>
+
+          {/* 云盾分数分布图表 */}
+            <div className="mt-8">
+              <div className="relative h-96 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
+                         
+                <div className="mx-12 h-full relative">
+                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
+                    <span>120000</span>
+                    <span>90000</span>
+                    <span>60000</span>
+                    <span>30000</span>
+                    <span>0</span>
+                  </div>
+                  
+                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
+                    <span>12%</span>
+                    <span>9%</span>
+                    <span>6%</span>
+                    <span>3%</span>
+                    <span>0%</span>
+                  </div>
+                  
+                  <div className="absolute left-12 right-12 h-full">
+                    {[0, 25, 50, 75, 100].map((percent) => (
+                      <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
+                    ))}
+                  </div>
+                  
+                  <div className="absolute left-20 right-12 h-full flex items-end justify-around pb-0">
+                    {[
+                      { name: '1-50分', count: 29099, rate: 1.94 },
+                      { name: '51-100分', count: 111817, rate: 2.73 },
+                      { name: '101-150分', count: 69627, rate: 3.32 },
+                      { name: '151-200分', count: 19958, rate: 4.73 },
+                      { name: '201-250分', count: 14473, rate: 5.17 },
+                      { name: '251-300分', count: 4319, rate: 6.95 },
+                      { name: '301-350分', count: 3065, rate: 10.38 },
+                      { name: '351-1000分', count: 1492, rate: 11.73 }
+                    ].map((item, index) => (
+                      <div key={index} className="flex flex-col items-center relative">
+                        <div className="flex items-end space-x-1">
+                          <div className="relative">
+                            <div 
+                              className="w-20 bg-blue-500 rounded-t"
+                              style={{ height: `${(item.count / 120000) * 250}px` }}
+                            ></div>
+                          </div>
+                        </div>
+                        
+                        {/* 风控拒单率点 */}
+                        <div 
+                          className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white"
+                          style={{bottom: `${(item.rate / 10) * 250}px`, left: '50%', transform: 'translateX(-50%)'}}
+                        >
+                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
+                            {item.rate}%
+                          </div>
+                        </div>
+                        
+                        {/* 底部标签 */}
+                        <div className="text-center mt-4">
+                          <div className="text-sm text-gray-800 font-medium whitespace-pre-line">{item.name}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  
         </div>
 
         {/* 出款强制查看标签备注 */}
