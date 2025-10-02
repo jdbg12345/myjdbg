@@ -6,13 +6,11 @@ export const Direction3SystemStrategies = () => {
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center space-x-3">
           <div className="w-16 h-10 bg-blue-600 rounded flex items-center justify-center">
-            <span className="text-white font-medium text-sm">方向2</span>
+            <span className="text-white font-medium text-sm">2</span>
           </div>
-          <h2 className="text-2xl font-semibold text-gray-800"> 优化【系统问题-支持不够】</h2>
+          <h2 className="text-2xl font-semibold text-gray-800"> 从系统审核策略、风控工具合集、极端异常预防等三个维度进行优化</h2>
         </div>
-        <div className="text-gray-600 text-lg">
-          <p className="text-gray-700 text-base leading-relaxed">从<span className="text-blue-600">系统审核策略、风控工具合集、极端异常预防</span>等三个维度进行优化</p>
-        </div>
+    
       </div>
 
       {/* 系统审核策略 */}
