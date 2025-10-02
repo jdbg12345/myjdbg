@@ -80,7 +80,6 @@ export const AgentControlOverview = () => {
             <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-48">
               <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
               <div className="text-blue-700 font-semibold mb-2">复审抽检</div>
-              <div className="text-sm text-blue-600">专门复审</div>
             </div>
 
             {/* 箭头 */}
@@ -120,7 +119,6 @@ export const AgentControlOverview = () => {
             <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-48">
               <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
               <div className="text-blue-700 font-semibold mb-2">复审抽检</div>
-              <div className="text-sm text-blue-600">专门复审</div>
             </div>
 
             {/* 箭头 */}
@@ -160,7 +158,6 @@ export const AgentControlOverview = () => {
             <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-48">
               <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
               <div className="text-blue-700 font-semibold mb-2">复审抽检</div>
-              <div className="text-sm text-blue-600">专门复审</div>
             </div>
 
             {/* 箭头 */}
