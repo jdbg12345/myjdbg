@@ -12,8 +12,7 @@ export const Direction1PersonnelCapability = () => {
             <h2 className="text-2xl font-semibold text-gray-800">从派单策略改变、审核流程优化、风险分数调优等三个维度进行优化</h2>
           </div>
         </div>
-      
-       
+        
          
         {/* 云盾分数分布图表 */}
         <div className="mb-12">
@@ -21,7 +20,7 @@ export const Direction1PersonnelCapability = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">2</span>
+                  <span className="text-white font-medium text-sm">1</span>
                 </div>
                 <h4 className="text-xl font-semibold text-gray-800">云盾分数订单分布</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
