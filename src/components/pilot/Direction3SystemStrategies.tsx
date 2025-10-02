@@ -295,8 +295,7 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">拦截率：60%+</p>
               </div>
             </div>
-                          </div>
-
+            </div>
         </div>
 
         {/* 5. 彩票策略 */}
