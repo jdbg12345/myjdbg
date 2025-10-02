@@ -5,9 +5,6 @@ export const Direction3SystemStrategies = () => {
     <div className="bg-white rounded-xl p-8 mb-8 border border-blue-200 shadow-md">
       {/* 系统审核策略 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
-          <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
-        </div>
         <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
              <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
