@@ -261,7 +261,7 @@ export const Direction1PersonnelCapability = () => {
                           className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white"
                           style={{bottom: `${(item.rate / 15) * 250}px`, left: '50%', transform: 'translateX(-50%)'}}
                         >
-                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
+                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-green-700 bg-white px-2 py-1 rounded whitespace-nowrap">
                             {item.rate}%
                           </div>
                         </div>
