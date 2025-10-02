@@ -656,14 +656,14 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">建立<span className="text-blue-600">场馆资金异常</span>监控机制，实时预警异常资金变动</p>
+                <p className="text-gray-700 text-sm leading-relaxed">建立<span className="text-blue-600">场馆资金异常</span>监控机制，预警异常资金变动</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">由于转账钱包模式限制及注单延迟，目前策略极限可以做到一旦发生多钱情况，大概15-30min以内发现</p>
+                <p className="text-gray-700 text-sm leading-relaxed">受限于转账钱包模式和注单延迟，目前策略最多可在<span className="text-blue-600">多钱情况发生后约15–30分钟内发现异常</span></p>
               </div>
             </div>
           </div>
