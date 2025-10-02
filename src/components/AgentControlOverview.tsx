@@ -95,8 +95,8 @@ export const AgentControlOverview = () => {
               <svg className="w-8 h-8 text-green-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <div className="text-green-700 font-semibold mb-2">抽检通过</div>
-              <div className="text-sm text-green-600">进入财务</div>
+              <div className="text-green-700 font-semibold mb-2">复审通过</div>
+              <div className="text-sm text-green-600">佣金结算</div>
             </div>
           </div>
         </div>
