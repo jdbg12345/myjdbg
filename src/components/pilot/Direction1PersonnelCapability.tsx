@@ -175,53 +175,10 @@ export const Direction1PersonnelCapability = () => {
           </div>
         </div>
          
-        {/* 云盾分数分布图表 */}
-        <div className="mb-12">
-          <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center space-x-3 flex-1">
-                <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">2</span>
-                </div>
-                <h4 className="text-xl font-semibold text-gray-800">云盾分数订单分布</h4>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <h4 className="font-medium text-blue-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
-                  核心问题
-                </h4>
-                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">FK体系缺一个统一的量化标准</span>，如分数来衡量风险程度，在多方协作和系统交互中，就难以高效、一致地执行判断和决策</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <h4 className="font-medium text-blue-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
-                  解决策略
-                </h4>
-                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">依托风控策略与标签对各项指标进行赋分</span>，构建风控评分体系；<span className="text-blue-600">为每笔订单/每位玩家生成风险分数</span>，实现风险量化判断与管理</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <h4 className="font-medium text-blue-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
-                  预期收益
-                </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">风控体系是从<span className="text-blue-600">「人工驱动」向「系统驱动」</span>转变的最核心基础</p>
-              </div>
-            </div>
-
-          <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
-            <h4 className="font-medium text-green-700 mb-3 flex items-center">
-              <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
-              数据效果
-            </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">现有模型评分已具备初步区分能力，<span className="text-blue-600">风险分数越高的订单数量越少、但风控命中率越高；</span>随着策略和参数的持续优化，评分将更精准可靠，可作为关键指标，逐步用于驱动规则引擎，<span className="text-blue-600">减少人工介入，实现更高效的风控自动化</span></p>
-          </div>
-
-            {/* 云盾分数分布图表 */}
+{/* 云盾分数分布图表 */}
 <div className="mt-8">
   <div className="relative h-96 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
+
     <div className="mx-12 h-full relative">
       <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
         <span>160000</span>
@@ -249,55 +206,69 @@ export const Direction1PersonnelCapability = () => {
         ))}
       </div>
 
-      <div className="absolute left-20 right-12 h-full flex items-end justify-around pb-0">
+      <div
+        className="absolute left-20 right-12 h-full flex items-end justify-around pb-0"
+        style={{ width: '100%', maxWidth: '420px' }}
+      >
         {[
           { name: "1-100分（55.46%）", count: 140916, rate: 2.57 },
           { name: "101-200分（35.25%）", count: 89585, rate: 3.64 },
           { name: "201-300分（7.51%）", count: 19092, rate: 5.57 },
           { name: "301-400分（1.54%）", count: 3923, rate: 9.81 },
           { name: "401-及以上（0.25%）", count: 634, rate: 17.03 },
-        ].map((item, index) => (
-          <div key={index} className="flex flex-col items-center relative">
-            <div className="flex items-end space-x-1">
-              <div className="relative">
-                <div
-                  className="w-20 bg-blue-500 rounded-t"
-                  style={{ height: `${(item.count / 140000) * 250}px` }}
-                ></div>
-              </div>
-            </div>
-
-            {/* 风控拒单率点 */}
+        ].map((item, index) => {
+          // 计算绿点bottom，比例用最大值20，和svg一致
+          const greenBottom = (item.rate / 20) * 250;
+          // 计算bar高度（比例参考140000）
+          const barHeight = (item.count / 140000) * 250;
+          return (
             <div
-              className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white"
-              style={{
-                bottom: `${(item.rate / 20) * 250}px`,
-                left: "50%",
-                transform: "translateX(-50%)",
-              }}
+              key={index}
+              className="flex flex-col items-center relative"
+              style={{ width: 80 }}
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-green-700 bg-white px-2 py-1 rounded whitespace-nowrap">
-                {item.rate}%
+              <div className="flex items-end space-x-1">
+                <div className="relative">
+                  <div
+                    className="w-20 bg-blue-500 rounded-t"
+                    style={{ height: `${barHeight}px` }}
+                  ></div>
+                </div>
               </div>
-            </div>
 
-            {/* 底部标签 */}
-            <div className="text-center mt-4">
-              <div className="text-sm text-gray-800 font-medium whitespace-pre-line">
-                {item.name}
+              {/* 风控拒单率点 */}
+              <div
+                className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white"
+                style={{
+                  bottom: `${greenBottom}px`,
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                }}
+              >
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-green-700 bg-white px-2 py-1 rounded whitespace-nowrap">
+                  {item.rate}%
+                </div>
+              </div>
+
+              {/* 底部标签 */}
+              <div className="text-center mt-4">
+                <div className="text-sm text-gray-800 font-medium whitespace-pre-line">
+                  {item.name}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* 风控拒单率连线 */}
       <svg
-        className="absolute left-20 right-12 bottom-8 pointer-events-none"
-        width="100%"
-        height="250"
+        className="absolute left-20 bottom-8 pointer-events-none"
+        width={420}
+        height={250}
         viewBox="0 0 420 250"
         preserveAspectRatio="none"
+        style={{ top: 0 }}
       >
         <polyline
           fill="none"
@@ -312,10 +283,8 @@ export const Direction1PersonnelCapability = () => {
               9.81,
               17.03,
             ].map((rate, index) => {
-              const barWidth = 80; // w-20 = 5*16=80px
-              const gap = (420 - 5 * barWidth) / 6; // 5 bars, 6 gaps (前后+中间)
-              const x = gap + index * (barWidth + gap) + barWidth / 2; // 每个bar中点x坐标
-              const y = 250 - (rate / 20) * 250; // 纵向坐标，最大20%
+              const x = 80 * index + 40; // 80宽度的bar，中点x坐标
+              const y = 250 - (rate / 20) * 250;
               return `${x},${y}`;
             }).join(" ")
           }
@@ -339,6 +308,7 @@ export const Direction1PersonnelCapability = () => {
     统计周期：2025-04-01 ~ 2025-06-30
   </div>
 </div>
+      
 
        
           </div>
