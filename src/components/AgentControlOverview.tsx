@@ -38,7 +38,7 @@ export const AgentControlOverview = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">针对<span className="text-blue-600">红利、打负、调整等情况设定策略</span>，触发则进入<span className="text-blue-600">复审机制</span>来控制违规行为，提升佣金有效性</p>
+                <p className="text-gray-700 text-sm leading-relaxed">针对<span className="text-blue-600">综合分数低、风险系数高的代理等情况设定策略</span>，触发则进入<span className="text-blue-600">复审机制</span>来控制违规行为，提升佣金有效性</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
