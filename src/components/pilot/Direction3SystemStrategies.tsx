@@ -168,7 +168,7 @@ export const Direction3SystemStrategies = () => {
               <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
               数据效果
             </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">现有模型评分已具备初步区分能力，<span className="text-blue-600">风险分数越高的订单数量越少、但风控命中率越高；</span>随着策略和参数的持续优化，评分将更精准可靠，可作为关键指标，逐步用于驱动规则引擎，<span className="text-blue-600">减少人工介入，实现更高效的风控自动化</span></p>
+            <p className="text-gray-700 text-sm leading-relaxed">现有模型已具备初步拦截能力，<span className="text-blue-600">随机样本100单中，52单人工真实判定有问题，其中9单拒绝出款，43单中有出款，但是存在警告、扣款出款、出款禁用等不同程度处理；</span>另外的48单，有对打、机器等行为嫌疑，但是占比极金额较低，为产生实际影响较弱，所以FK实际暂时不处理；<span className="text-blue-600">后续需要继续迭代，目标准确率在80%</span></p>
           </div>
             
             {/* 真人策略图表 */}
