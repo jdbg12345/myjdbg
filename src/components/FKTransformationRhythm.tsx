@@ -65,7 +65,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">审核问题-质量较差</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    人员能力参差不齐，新人及外包团队错误率高；审核操作未严格遵循SOP；时间考核压力导致无法充分审核。
+                    人员能力参差不齐，新人及外包远程团队错误率高；审核未严格遵循SOP；时间考核压力导致无法充分审核。
                   </p>
                 </div>
               </div>
