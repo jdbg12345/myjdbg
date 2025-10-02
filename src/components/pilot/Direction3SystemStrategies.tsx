@@ -205,7 +205,7 @@ export const Direction3SystemStrategies = () => {
                       </div>
                       
                       <div className="text-center mt-4">
-                        <div className="text-sm text-gray-600 mt-1">450单 (26.7%)</div>
+                        <div className="text-sm text-gray-600 mt-1">100单 (52%)</div>
                       </div>
                     </div>
                   </div>
