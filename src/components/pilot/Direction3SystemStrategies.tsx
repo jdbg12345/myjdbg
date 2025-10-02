@@ -6,12 +6,12 @@ export const Direction3SystemStrategies = () => {
       {/* 系统审核策略 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
-          <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-            <span className="text-white font-medium text-sm">1</span>
-          </div>
           <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
         </div>
         <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
+           <div className="flex items-center space-x-3 mb-6">
+          <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">+1</div>
