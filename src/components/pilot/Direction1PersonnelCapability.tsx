@@ -349,9 +349,7 @@ export const Direction1PersonnelCapability = () => {
                   </svg>
                 </div>
               </div>
-              
-              <div className="text-center text-base font-medium text-gray-700 mb-6">审核角色</div>
-              
+                            
               <div className="flex justify-center space-x-8 text-sm">
                 <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-blue-500 rounded"></div>
