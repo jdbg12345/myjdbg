@@ -61,7 +61,6 @@ export const AgentControlOverview = () => {
           复审是一个新增的流程，作为最后一道防线，确保高风险代理和可疑操作得到充分审核，有效降低错误佣金发放风险，提升整体风控质量。
         </p>
 
-        <div className="flex items-center justify-center">
          
 
         <div className="flex items-center justify-center mt-6">
