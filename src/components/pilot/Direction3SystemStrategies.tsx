@@ -553,7 +553,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="text-white font-medium text-sm">1</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">中心钱包多钱</h4>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-yellow-100 text-yellow-600 ml-4">开发中</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -591,7 +591,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="text-white font-medium text-sm">2</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">场馆钱包多钱</h4>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-yellow-100 text-yellow-600 ml-4">开发中</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
