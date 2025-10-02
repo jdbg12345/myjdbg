@@ -220,7 +220,6 @@ export const Direction1PersonnelCapability = () => {
           </div>
 
             {/* 云盾分数分布图表 */}
-            
 <div className="mt-8">
   <div className="relative h-96 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
     <div className="mx-12 h-full relative">
@@ -246,17 +245,17 @@ export const Direction1PersonnelCapability = () => {
             key={percent}
             className="absolute w-full border-t border-gray-300"
             style={{ bottom: `${percent}%` }}
-          />
+          ></div>
         ))}
       </div>
 
       <div className="absolute left-20 right-12 h-full flex items-end justify-around pb-0">
         {[
-          { name: '1-100分（55.46%）', count: 140916, rate: 2.57 },
-          { name: '101-200分（35.25%）', count: 89585, rate: 3.64 },
-          { name: '201-300分（7.51%）', count: 19092, rate: 5.57 },
-          { name: '301-400分（1.54%）', count: 3923, rate: 9.81 },
-          { name: '401-及以上（0.25%）', count: 634, rate: 17.03 }
+          { name: "1-100分（55.46%）", count: 140916, rate: 2.57 },
+          { name: "101-200分（35.25%）", count: 89585, rate: 3.64 },
+          { name: "201-300分（7.51%）", count: 19092, rate: 5.57 },
+          { name: "301-400分（1.54%）", count: 3923, rate: 9.81 },
+          { name: "401-及以上（0.25%）", count: 634, rate: 17.03 },
         ].map((item, index) => (
           <div key={index} className="flex flex-col items-center relative">
             <div className="flex items-end space-x-1">
@@ -264,7 +263,7 @@ export const Direction1PersonnelCapability = () => {
                 <div
                   className="w-20 bg-blue-500 rounded-t"
                   style={{ height: `${(item.count / 140000) * 250}px` }}
-                />
+                ></div>
               </div>
             </div>
 
@@ -272,9 +271,9 @@ export const Direction1PersonnelCapability = () => {
             <div
               className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white"
               style={{
-                bottom: `${(item.rate / 17.03) * 250}px`, // 用最大值17.03对应250px
-                left: '50%',
-                transform: 'translateX(-50%)',
+                bottom: `${(item.rate / 20) * 250}px`,
+                left: "50%",
+                transform: "translateX(-50%)",
               }}
             >
               <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-green-700 bg-white px-2 py-1 rounded whitespace-nowrap">
@@ -284,44 +283,42 @@ export const Direction1PersonnelCapability = () => {
 
             {/* 底部标签 */}
             <div className="text-center mt-4">
-              <div className="text-sm text-gray-800 font-medium whitespace-pre-line">{item.name}</div>
+              <div className="text-sm text-gray-800 font-medium whitespace-pre-line">
+                {item.name}
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* 风控拒单率连线 - 修正后的计算 */}
+      {/* 风控拒单率连线 */}
       <svg
-        className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none"
-        style={{ width: 'calc(100% - 8rem)', height: '100%' }}
+        className="absolute left-20 right-12 bottom-8 pointer-events-none"
+        width="100%"
+        height="250"
+        viewBox="0 0 420 250"
+        preserveAspectRatio="none"
       >
         <polyline
-          points={(() => {
-            const data = [
-              { rate: 2.57 },
-              { rate: 3.64 },
-              { rate: 5.57 },
-              { rate: 9.81 },
-              { rate: 17.03 }
-            ];
-            const containerWidth = 320; // 你的svg宽度，估算320px合理
-            const barWidth = 80; // w-20 = 80px
-            const totalBars = data.length;
-            const totalGap = containerWidth - totalBars * barWidth;
-            const gap = totalGap / (totalBars + 1);
-
-            return data
-              .map((item, index) => {
-                const x = gap + index * (barWidth + gap) + barWidth / 2;
-                const y = 250 - (item.rate / 17.03) * 250; // 17.03 是最大rate，和点对应
-                return `${x},${y}`;
-              })
-              .join(' ');
-          })()}
+          fill="none"
           stroke="#16a34a"
           strokeWidth="3"
-          fill="none"
           opacity="0.8"
+          points={
+            [
+              2.57,
+              3.64,
+              5.57,
+              9.81,
+              17.03,
+            ].map((rate, index) => {
+              const barWidth = 80; // w-20 = 5*16=80px
+              const gap = (420 - 5 * barWidth) / 6; // 5 bars, 6 gaps (前后+中间)
+              const x = gap + index * (barWidth + gap) + barWidth / 2; // 每个bar中点x坐标
+              const y = 250 - (rate / 20) * 250; // 纵向坐标，最大20%
+              return `${x},${y}`;
+            }).join(" ")
+          }
         />
       </svg>
     </div>
@@ -338,9 +335,11 @@ export const Direction1PersonnelCapability = () => {
     </div>
   </div>
 
-  <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025-04-01 ~ 2025-06-30</div>
-        
-                </div>
+  <div className="text-right text-sm text-gray-500 mt-6">
+    统计周期：2025-04-01 ~ 2025-06-30
+  </div>
+</div>
+
        
           </div>
         </div>
