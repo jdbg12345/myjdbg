@@ -26,7 +26,7 @@ export const AgentControlOverview = () => {
                 <div className="bg-white rounded-lg p-4">
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-500">方案中</span></span>
-                    <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
+                    <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">Q4重点</span>
                   </div>
                 </div>
 
@@ -48,7 +48,7 @@ export const AgentControlOverview = () => {
                 <div className="bg-white rounded-lg p-4">
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-500">方案中</span></span>
-                    <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">新增</span>
+                    <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">Q4重点</span>
                   </div>
                 </div>
 
