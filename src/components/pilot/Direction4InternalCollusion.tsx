@@ -174,7 +174,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 解决策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">支持密文查询</p>
+              <p className="text-gray-700 text-sm leading-relaxed">支持<span className="text-blue-600">密文查询</span></p>
             </div>
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
