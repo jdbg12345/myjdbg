@@ -210,6 +210,7 @@ export const Direction1PersonnelCapability = () => {
                 </div>
                 <h4 className="text-xl font-semibold text-gray-800">派单策略优化</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Y1、2、3、5、7、9</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
