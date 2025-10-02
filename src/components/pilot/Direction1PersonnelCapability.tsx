@@ -371,7 +371,8 @@ export const Direction1PersonnelCapability = () => {
                 </div>
               </div>
               
-              <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025-04-01 ~ 2025-06-30</div>
+              <div className="text-right text-sm text-gray-500 mt-6">统计周期：Y1、2、3、5、7、9上线日期后到9月30，平均试运行周期在10天
+</div>
             </div>
           </div>
         </div>
