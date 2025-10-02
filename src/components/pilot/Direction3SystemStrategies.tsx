@@ -3,11 +3,11 @@ import React from 'react';
 export const Direction3SystemStrategies = () => {
   return (
     <div className="bg-white rounded-xl p-8 mb-8 border border-blue-200 shadow-md">
-      {/* 系统审核策略 */}
+      {/* 系统提款审核策略 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
-             <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
+             <h3 className="text-xl font-semibold text-gray-800">系统提款审核策略</h3>
            </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
