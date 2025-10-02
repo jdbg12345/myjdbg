@@ -283,15 +283,32 @@ export const Direction1PersonnelCapability = () => {
                   </div>
                   
                   {/* 风控拒单率连线 */}
-                  <svg className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none" width="100%" height="100%">
-                    <path
-                      d={`M 10% ${100 - (2.57 / 15) * 83.33}% L 30% ${100 - (3.64 / 15) * 83.33}% L 50% ${100 - (5.57 / 15) * 83.33}% L 70% ${100 - (9.81 / 15) * 83.33}% L 90% ${100 - (17.03 / 15) * 83.33}%`}
-                      stroke="#16a34a"
-                      strokeWidth="3"
-                      fill="none"
-                      opacity="0.8"
-                    />
-                  </svg>
+                   <svg className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none" width="100%" height="100%">
+  <polyline
+    fill="none"
+    stroke="#16a34a"
+    strokeWidth="3"
+    opacity="0.8"
+    points={
+      [
+        { x: 0, rate: 2.57 },
+        { x: 1, rate: 3.64 },
+        { x: 2, rate: 5.57 },
+        { x: 3, rate: 9.81 },
+        { x: 4, rate: 17.03 }
+      ].map((point, idx, arr) => {
+        const totalPoints = arr.length;
+        const containerWidth = 100; // placeholder, we’ll use relative %
+        const containerHeight = 250; // same as your rate height scale
+        const spacing = containerWidth / (totalPoints - 1);
+        const x = idx * spacing;
+        const y = containerHeight - (point.rate / 17.03) * containerHeight;
+        return `${x},${y}`;
+      }).join(' ')
+    }
+  />
+</svg>
+
                 </div>
               </div>
               
