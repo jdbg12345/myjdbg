@@ -388,7 +388,7 @@ export const FKSystemOverview = () => {
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">新增</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-新增</span>
                     <span>棋牌套利</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
