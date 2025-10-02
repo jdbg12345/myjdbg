@@ -38,7 +38,7 @@ export const FKTransformationRhythm = () => {
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">
-          3.1 整体说明
+          3.1 FK全局说明
         </h1>
       </div>
 
