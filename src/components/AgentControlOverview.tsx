@@ -134,15 +134,15 @@ export const AgentControlOverview = () => {
             <div className="grid grid-cols-3 gap-2">
               <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
                 <div className="text-sm font-semibold text-blue-700">多关联风险</div>
-                <div className="text-xs text-gray-600 mt-1">-10%</div>
+                <div className="text-xs text-gray-600 mt-1">-xx%</div>
               </div>
               <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
                 <div className="text-sm font-semibold text-blue-700">负盈利风险</div>
-                <div className="text-xs text-gray-600 mt-1">-10%</div>
+                <div className="text-xs text-gray-600 mt-1">-xx%</div>
               </div>
               <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
                 <div className="text-sm font-semibold text-blue-700">下级风险度</div>
-                <div className="text-xs text-gray-600 mt-1">-10%</div>
+                <div className="text-xs text-gray-600 mt-1">-xx%</div>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@ export const AgentControlOverview = () => {
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">📊</span>
           </div>
-          <h3 className="text-2xl font-bold text-gray-800">有效贡献度呈现效果</h3>
+          <h3 className="text-2xl font-bold text-gray-800">有效贡献度呈现示意</h3>
           <span className="text-gray-600 text-lg">快速区分优质代理与劣质代理，实现精准监控与管理</span>
         </div>
 
