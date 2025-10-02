@@ -247,7 +247,7 @@ export const Direction1PersonnelCapability = () => {
                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">2、与此同时，总部一审的订单量由 25,161 单增长至 135,259 单，提升了 437.57%；其审核错误率由 0.63% 降至 0.51%，下降了 19.05%，审核质量明显提升。
 </span></p>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">
-3、进一步分析发现，尽管外包与远程渠道的一审订单量大幅减少，且审核任务相对简化，其错误率并未随之下降，反映出相关团队在审核能力及工作态度方面仍存在较大短板。后续建议加强人员能力建设、优化考核机制，并持续强化过程管控。</span></p>
+3、进一步分析发现，尽管外包与远程渠道的一审订单量大幅减少，且审核任务相对简化，其错误率并未随之下降，反映出相关团队在审核能力及工作态度方面仍存在较大短板。后续加强人员培训力度、优化考核机制，并持续强化过程管控。</span></p>
           </div>
             
             {/* 图表模块 */}
