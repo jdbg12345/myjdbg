@@ -147,7 +147,7 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">对打、机器下注和算牌</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，导致每月<span className="text-blue-600">损失超过100万元</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">对打、机器下注和算牌</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足</span></p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
@@ -276,7 +276,7 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">移分</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏，导致每月<span className="text-blue-600">损失超过100万元</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">移分</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏</span></p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
@@ -303,7 +303,7 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">全包行为</span>等是最常见的套利与作弊手段；目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏，<span className="text-blue-600">损失超过100万元</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">全包行为</span>等是最常见的套利与作弊手段；目前系统在自动出款及人工审核环节中对此识别不足，仍存在较多遗漏</span></p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
