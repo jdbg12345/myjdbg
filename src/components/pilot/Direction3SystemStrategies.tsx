@@ -229,7 +229,7 @@ export const Direction3SystemStrategies = () => {
                 </div>
               </div>
               
-              <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025-04-01 ~ 2025-06-30</div>
+              <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025年9月17日至9月30日期间，随机选取了100笔命了该风控策略的提款订单</div>
             </div>
           </div>
         </div>
