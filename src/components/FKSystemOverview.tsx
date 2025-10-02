@@ -217,7 +217,7 @@ export const FKSystemOverview = () => {
           
           <div className="mb-6">
             <p className="text-gray-700 text-base leading-relaxed">
-              无论玩家有没有问题，达到了对应的数据，就要拦截；存在有问题的玩家规避绕过的风险
+              基于盈利、红利等数据阈值触发，无论玩家是否存在实际问题，只要达到设定标准即进行拦截，但仍可能被有意规避的玩家绕过
             </p>
           </div>
           
