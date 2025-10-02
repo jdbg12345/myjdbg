@@ -55,7 +55,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-medium text-sm">1.1</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">电子策略</h4>
-              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
+              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">Y/B：已上线</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
@@ -153,7 +153,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-medium text-sm">1.2</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">真人策略</h4>
-              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
+              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">Y：已上线</span>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">突破：B/C端系统打通，解决实效性极差、无法跨商户、风控无联动等关键问题</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
