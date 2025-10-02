@@ -252,10 +252,10 @@ export const Direction1PersonnelCapability = () => {
                 <div className="mx-12 h-full relative">
                   {/* Y轴刻度 */}
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
-                    <span>1400</span>
-                    <span>1050</span>
-                    <span>700</span>
-                    <span>350</span>
+                    <span>16000</span>
+                    <span>12000</span>
+                    <span>80000</span>
+                    <span>40000</span>
                     <span>0</span>
                   </div>
                   
@@ -284,13 +284,13 @@ export const Direction1PersonnelCapability = () => {
                           <div className="relative">
                             <div 
                               className="w-20 bg-blue-500 rounded-t"
-                              style={{ height: `${(item.before / 1400) * 200}px` }}
+                              style={{ height: `${(item.before / 16000) * 200}px` }}
                             ></div>
                           </div>
                           <div className="relative">
                             <div 
                               className="w-20 bg-blue-400 rounded-t"
-                              style={{ height: `${(item.after / 1400) * 200}px` }}
+                              style={{ height: `${(item.after / 16000) * 200}px` }}
                             ></div>
                           </div>
                         </div>
