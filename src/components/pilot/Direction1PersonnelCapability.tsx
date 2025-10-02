@@ -217,18 +217,18 @@ export const Direction1PersonnelCapability = () => {
                          
                 <div className="mx-12 h-full relative">
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
-                    <span>2000</span>
-                    <span>1500</span>
-                    <span>1000</span>
-                    <span>500</span>
+                    <span>120000</span>
+                    <span>90000</span>
+                    <span>60000</span>
+                    <span>30000</span>
                     <span>0</span>
                   </div>
                   
                   <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
-                    <span>40%</span>
-                    <span>30%</span>
-                    <span>20%</span>
-                    <span>10%</span>
+                    <span>12%</span>
+                    <span>9%</span>
+                    <span>6%</span>
+                    <span>3%</span>
                     <span>0%</span>
                   </div>
                   
@@ -240,11 +240,14 @@ export const Direction1PersonnelCapability = () => {
                   
                   <div className="absolute left-20 right-12 h-full flex items-end justify-around pb-0">
                     {[
-                      { name: '0-20分', count: 1800, rate: 5 },
-                      { name: '21-40分', count: 1200, rate: 12 },
-                      { name: '41-60分', count: 800, rate: 25 },
-                      { name: '61-80分', count: 400, rate: 35 },
-                      { name: '81-100分', count: 200, rate: 40 }
+                      { name: '1-50分', count: 29099, rate: 1.94 },
+                      { name: '51-100分', count: 111817, rate: 2.73 },
+                      { name: '101-150分', count: 69627, rate: 3.32 },
+                      { name: '151-200分', count: 19958, rate: 4.73 },
+                      { name: '201-250分', count: 14473, rate: 5.17 },
+                      { name: '251-300分', count: 4319, rate: 6.95 },
+                      { name: '301-350分', count: 3065, rate: 10.38 },
+                      { name: '351-1000分', count: 1492, rate: 11.73 }
                     ].map((item, index) => (
                       <div key={index} className="flex flex-col items-center relative">
                         <div className="flex items-end space-x-1">
