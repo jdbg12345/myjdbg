@@ -7,13 +7,10 @@ export const Direction1PersonnelCapability = () => {
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center space-x-3">
             <div className="w-16 h-10 bg-blue-600 rounded flex items-center justify-center">
-              <span className="text-white font-medium text-sm">方向1</span>
+              <span className="text-white font-medium text-sm">1</span>
             </div>
-            <h2 className="text-2xl font-semibold text-gray-800">优化【审核问题-质量较差】</h2>
+            <h2 className="text-2xl font-semibold text-gray-800">从派单策略改变、审核流程优化、风险分数调优等三个维度进行优化</h2>
           </div>
-          <div className="text-gray-600 text-lg">
-          <p className="text-gray-700 text-base leading-relaxed">从<span className="text-blue-600">派单策略改变、审核流程优化、风险分数调优</span>等三个维度进行优化 </p>
-        </div>
         </div>
       
         {/* 新派单规则效果图表 */}
