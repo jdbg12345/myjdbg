@@ -283,9 +283,9 @@ export const Direction1PersonnelCapability = () => {
                   </div>
                   
                   {/* 风控拒单率连线 */}
-                  <svg className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none" width="100%" height="100%">
-                    <path
-                      d={`M 10% ${100 - (2.57 / 17.03) * 100}% L 30% ${100 - (3.64 / 17.03) * 100}% L 50% ${100 - (5.57 / 17.03) * 100}% L 70% ${100 - (9.81 / 17.03) * 100}% L 90% ${100 - (17.03 / 17.03) * 100}%`}
+                  <svg className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none" style={{width: 'calc(100% - 8rem)', height: '100%'}}>
+                    <polyline
+                      points="10,212.5 30,196.25 50,168.75 70,105 90,0"
                       stroke="#16a34a"
                       strokeWidth="3"
                       fill="none"
