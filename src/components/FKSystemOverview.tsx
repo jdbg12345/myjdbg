@@ -242,7 +242,7 @@ export const FKSystemOverview = () => {
                     <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-新增</span>
                     <span>帐变记录异常</span>
                   </div>
-                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-gray-600">开发中</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
