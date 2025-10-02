@@ -687,54 +687,14 @@ export const Direction3SystemStrategies = () => {
             </div>
           </div>
         </div>
-
-         {/* 赔率异常预警 */}
-        <div className="mb-12">
-          <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center space-x-3 flex-1">
-                <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">4</span>
-                </div>
-                <h4 className="text-lg font-semibold text-gray-800">赔率异常预警</h4>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">方案中</span>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Q4重点</span>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <h4 className="font-medium text-blue-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
-                  核心问题
-                </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">操盘错误是B端常见风险之一，常见表现包括<span className="text-blue-600">赔率差距过大、玩法错配、盘口不一致等</span>，直接影响用户体验与平台盈利</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <h4 className="font-medium text-blue-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
-                  解决策略
-                </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">通过<span className="text-blue-600">比对B端赔率并结合百家赔进行异常逻辑校验</span>，命中后Telegram预警，及时发现并处置异常</p>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <h4 className="font-medium text-blue-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
-                  预期收益
-                </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">可第一时间进行预警，然后由专人跟进处理</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
+    
         {/* 沉睡用户活跃 */}
         <div className="mb-8">
           <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">5</span>
+                  <span className="text-white font-medium text-sm">4</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">沉睡用户活跃</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
