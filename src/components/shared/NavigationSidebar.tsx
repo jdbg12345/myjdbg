@@ -41,7 +41,7 @@ const navigationItems: NavigationItem[] = [
     title: '3. 工作情况',
     icon: <FileText className="w-4 h-4" />,
     children: [
-      { id: 'fk-transformation', title: '3.1 整体说明' },
+      { id: 'fk-transformation', title: '3.1 FK全局说明' },
       { id: 'fk-system-overview', title: '3.2 会员风控说明' },
       { id: 'internal-control-overview', title: '3.3 内控风控说明' },
       { id: 'agent-control-overview', title: '3.4 代理风控说明' }
