@@ -12,7 +12,8 @@ export const Direction4InternalCollusion = () => {
                 <span className="text-white font-medium text-sm">1</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">风控标签和备注独立权限</h4>
-              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Y：已上线</span>
+              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
+              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Y</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
