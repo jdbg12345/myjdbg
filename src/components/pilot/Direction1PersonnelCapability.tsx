@@ -243,8 +243,7 @@ export const Direction1PersonnelCapability = () => {
                   洞察分析
               </h4>
             <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">通过派单机制的调整，外包渠道的订单量由 66,423 单降至 24,511 单，下降了 63.10%；远程渠道的订单量由 82,733 单降至 29,431 单，下降了 64.44%，整体实现了低效渠道订单量的显著压缩。</span></p>
-              <span className="text-blue-600">
-与此同时，总部一审的订单量由 25,161 单增长至 135,259 单，提升了 437.57%；其审核错误率由 0.63% 降至 0.51%，下降了 19.05%，审核质量明显提升。
+               <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">与此同时，总部一审的订单量由 25,161 单增长至 135,259 单，提升了 437.57%；其审核错误率由 0.63% 降至 0.51%，下降了 19.05%，审核质量明显提升。
 </span></p>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">
 然而进一步分析发现，尽管外包与远程渠道的一审订单量大幅减少，且审核任务相对简化，其错误率并未随之下降，反映出相关团队在审核能力及工作态度方面仍存在较大短板。后续建议加强人员能力建设、优化考核机制，并持续强化过程管控。</span></p>
