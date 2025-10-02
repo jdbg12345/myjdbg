@@ -232,35 +232,35 @@ export const FKSystemOverview = () => {
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">增强</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-增强</span>
                     <span>敏感信息变更</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">新增</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-新增</span>
                     <span>帐变记录异常</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">新增</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-新增</span>
                     <span>睡眠账号激活</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">新增</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-新增</span>
                     <span>提款环境异常</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">新增</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-新增</span>
                     <span>租卖帐号异常</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
@@ -278,28 +278,28 @@ export const FKSystemOverview = () => {
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">增强</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-增强</span>
                     <span>高盈利金额</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">增强</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-增强</span>
                     <span>高盈利倍数</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">增强</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-增强</span>
                     <span>大额类提款</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">新增</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-新增</span>
                     <span>长期在盈利</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
@@ -317,14 +317,14 @@ export const FKSystemOverview = () => {
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">增强</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-增强</span>
                     <span>前几次提款需要人工</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">增强</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-增强</span>
                     <span>多次不经过人工</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-100 text-yellow-600">开发中</span>
@@ -334,7 +334,7 @@ export const FKSystemOverview = () => {
                     <span className="px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">没变</span>
                     <span>特殊上分类型</span>
                   </div>
-                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">已上线</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">运行中</span>
                 </li>
               </ul>
             </div>
