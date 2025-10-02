@@ -283,33 +283,15 @@ export const Direction1PersonnelCapability = () => {
                   </div>
                   
                   {/* 风控拒单率连线 */}
-<svg
-  className="absolute left-20 right-12 bottom-8 pointer-events-none"
-  width="100%"
-  height="250"
-  viewBox="0 0 600 250"
-  preserveAspectRatio="none"
->
-  <polyline
-    fill="none"
-    stroke="#16a34a"
-    strokeWidth="3"
-    opacity="0.8"
-    points={
-      [
-        2.57,
-        3.64,
-        5.57,
-        9.81,
-        17.03
-      ].map((rate, index) => {
-        const x = index * (600 / 4); // 宽度600，5个点，平均分布
-        const y = 250 - (rate / 17.03) * 250;
-        return `${x},${y}`;
-      }).join(' ')
-    }
-  />
-</svg>
+                  <svg className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none" width="100%" height="100%">
+                    <path
+                      d={`M 10% ${100 - (2.57 / 17.03) * 100}% L 30% ${100 - (3.64 / 17.03) * 100}% L 50% ${100 - (5.57 / 17.03) * 100}% L 70% ${100 - (9.81 / 17.03) * 100}% L 90% ${100 - (17.03 / 17.03) * 100}%`}
+                      stroke="#16a34a"
+                      strokeWidth="3"
+                      fill="none"
+                      opacity="0.8"
+                    />
+                  </svg>
 
                 </div>
               </div>
