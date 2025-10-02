@@ -47,8 +47,9 @@ export const AgentControlOverview = () => {
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">提升佣金合理性，有效避免内外串联</p>
               </div>
+            </div>
 
-               <div className="bg-white rounded-lg p-6 mb-8">
+             <div className="bg-white rounded-lg p-6 mb-8">
         <div className="flex items-center mb-4">
           <Shield className="w-6 h-6 text-blue-600 mr-4" />
           <h3 className="text-2xl font-bold text-gray-800">复审机制简要说明</h3>
@@ -136,8 +137,6 @@ export const AgentControlOverview = () => {
           </div>
         </div>
       </div>
-              
-            </div>
           </div>
         </div>
 
