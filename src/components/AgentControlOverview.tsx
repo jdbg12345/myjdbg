@@ -89,32 +89,6 @@ export const AgentControlOverview = () => {
           </div>
         </div>
       
-      
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-
-
-        {/* 代理质量分析 */}
-        <div className="bg-white rounded p-8 border border-gray-200">
-          <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-            <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
-            代理质量自动化分析
-          </h5>
-          <div className="text-lg text-gray-600 mb-4">基于<span className="text-blue-600">盈利贡献、下级质量、风险评估</span>三个维度，自动化计算代理的有效贡献度分数，实现精准监控</div>
-          <div className="space-y-4">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <div className="space-y-2">
-                <div className="bg-white rounded-lg p-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-500">方案中</span></span>
-                    <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">Q4重点</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* 代理质量分析详细展示 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
