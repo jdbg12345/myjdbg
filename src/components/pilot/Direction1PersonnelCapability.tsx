@@ -58,11 +58,11 @@ export const Direction1PersonnelCapability = () => {
             <p className="text-gray-700 text-sm leading-relaxed">现有模型评分已具备初步区分能力，<span className="text-blue-600">风险分数越高的订单数量越少、但风控命中率越高；</span>随着策略和参数的持续优化，评分将更精准可靠，可作为关键指标，逐步用于驱动规则引擎，<span className="text-blue-600">减少人工介入，实现更高效的风控自动化</span></p>
           </div>
 
-            {/* 云盾分数分布图表 */}
+        {/* 云盾分数分布图表 */}
 <div className="mt-8">
   <div className="relative h-96 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
-
     <div className="mx-12 h-full relative">
+      {/* 左侧数量刻度 */}
       <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
         <span>160000</span>
         <span>120000</span>
@@ -71,6 +71,7 @@ export const Direction1PersonnelCapability = () => {
         <span>0</span>
       </div>
 
+      {/* 右侧百分比刻度 */}
       <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
         <span>20%</span>
         <span>15%</span>
@@ -79,6 +80,7 @@ export const Direction1PersonnelCapability = () => {
         <span>0%</span>
       </div>
 
+      {/* 背景横线 */}
       <div className="absolute left-12 right-12 h-full">
         {[0, 25, 50, 75, 100].map((percent) => (
           <div
@@ -89,9 +91,10 @@ export const Direction1PersonnelCapability = () => {
         ))}
       </div>
 
+      {/* 柱状体和绿点 */}
       <div
-        className="absolute left-20 right-12 h-full flex items-end justify-around pb-0"
-        style={{ width: '100%', maxWidth: '420px' }}
+        className="absolute left-20 right-12 h-full flex items-end justify-between pb-0"
+        style={{ width: "420px" }}
       >
         {[
           { name: "1-100分（55.46%）", count: 140916, rate: 2.57 },
@@ -100,10 +103,12 @@ export const Direction1PersonnelCapability = () => {
           { name: "301-400分（1.54%）", count: 3923, rate: 9.81 },
           { name: "401-及以上（0.25%）", count: 634, rate: 17.03 },
         ].map((item, index) => {
-          // 计算绿点bottom，比例用最大值20，和svg一致
-          const greenBottom = (item.rate / 20) * 250;
-          // 计算bar高度（比例参考140000）
-          const barHeight = (item.count / 140000) * 250;
+          const maxCount = 140000;
+          const maxRate = 20;
+
+          const barHeight = (item.count / maxCount) * 250;
+          const greenBottom = (item.rate / maxRate) * 250;
+
           return (
             <div
               key={index}
@@ -166,7 +171,9 @@ export const Direction1PersonnelCapability = () => {
               9.81,
               17.03,
             ].map((rate, index) => {
-              const x = 80 * index + 40; // 80宽度的bar，中点x坐标
+              const barWidth = 80;
+              const gap = 0; // justify-between让间距自动分配，所以gap是0
+              const x = (barWidth + gap) * index + barWidth / 2;
               const y = 250 - (rate / 20) * 250;
               return `${x},${y}`;
             }).join(" ")
@@ -176,6 +183,7 @@ export const Direction1PersonnelCapability = () => {
     </div>
   </div>
 
+  {/* 图例 */}
   <div className="flex justify-center space-x-8 text-sm">
     <div className="flex items-center space-x-2">
       <div className="w-4 h-4 bg-blue-500 rounded"></div>
