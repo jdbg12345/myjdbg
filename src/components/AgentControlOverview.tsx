@@ -52,28 +52,6 @@ export const AgentControlOverview = () => {
         </div>
 
       
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-        {/* 佣金审核 */}
-        <div className="bg-white rounded p-8 border border-gray-200">
-          <h5 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-            <div className="w-6 h-6 bg-blue-600 rounded mr-3"></div>
-            代理佣金审核流程升级
-          </h5>
-          <div className="text-lg text-gray-600 mb-4">针对<span className="text-blue-600">红利、打负、调整等情况设定策略</span>，触发则进入<span className="text-blue-600">复审机制</span>来控制违规行为，提升佣金有效性</div>
-          <div className="space-y-4">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <div className="space-y-2">
-                <div className="bg-white rounded-lg p-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600 text-sm">状态：<span className="font-semibold text-gray-500">方案中</span></span>
-                    <span className="px-2 py-1 rounded-full bg-green-100 text-green-600 font-semibold text-xs">Q4重点</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* 代理质量分析 */}
         <div className="bg-white rounded p-8 border border-gray-200">
