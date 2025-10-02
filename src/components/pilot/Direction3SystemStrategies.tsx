@@ -169,15 +169,13 @@ export const Direction3SystemStrategies = () => {
                           
                 <div className="mx-12 h-full relative">
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
-                    <span>500</span>
-                    <span>375</span>
-                    <span>250</span>
-                    <span>125</span>
+                    <span>150</span>
+                    <span>100</span>
+                    <span>50</span>
                     <span>0</span>
                   </div>
                   
                   <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
-                    <span>100%</span>
                     <span>75%</span>
                     <span>50%</span>
                     <span>25%</span>
