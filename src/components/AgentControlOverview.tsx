@@ -179,7 +179,26 @@ export const AgentControlOverview = () => {
                 retention: '17%',
                 riskUsers: '6%',
                 gradeColor: 'text-blue-600 bg-blue-50'
+            }，
+       {
+                id: '#3Y218350',
+                grade: 'C档 - 一般',
+                site: 'Y8',
+                joinDate: '2024-08-10',
+                totalScore: 56,
+                businessScore: 39,
+                userQuality: 66,
+                riskControl: 72,
+                activeUsers: 586,
+                monthlyActive: 586,
+                validFlow: '¥46.8万',
+                contributionProfit: '¥44.0万',
+                totalDeposit: '¥48.1万',
+                retention: '17%',
+                riskUsers: '6%',
+                gradeColor: 'text-blue-600 bg-blue-50'
             }
+          
           ].map((agent, index) => (
             <div key={index} className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
           {/* 顶部信息 */}
