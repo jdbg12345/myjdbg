@@ -79,7 +79,7 @@ export const Direction4InternalCollusion = () => {
           
           {/* VIP等级审批流程示意图 */}
           <div className="mt-8">
-            <h5 className="text-lg font-semibold text-gray-800 mb-6">VIP不同等级的启禁流程支持后台自定义配置：下图为示例。</h5>
+            <h5 className="text-lg font-semibold text-gray-800 mb-6">VIP不同等级的启禁流程<span className="text-blue-600">支持后台自定义配置：下图为示例</span></h5>
             <div className="bg-blue-50 rounded-lg p-8 border border-blue-200">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
