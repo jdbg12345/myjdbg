@@ -732,7 +732,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">通过比对B端赔率并结合百家赔进行异常逻辑校验，命中后Telegram预警，及时发现并处置异常</p>
+                <p className="text-gray-700 text-sm leading-relaxed">通过<span className="text-blue-600">比对B端赔率并结合百家赔进行异常逻辑校验</span>，命中后Telegram预警，及时发现并处置异常</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
@@ -764,7 +764,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">长期沉睡用户突然活跃，可能存在账号被盗或异常操作风险</p>
+                <p className="text-gray-700 text-sm leading-relaxed">长期沉睡用户突然活跃，可能<span className="text-blue-600">存在账号被盗或异常操作风险</span></p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
