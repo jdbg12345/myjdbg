@@ -62,7 +62,6 @@ export const AgentControlOverview = () => {
         </p>
 
         <div className="flex items-center justify-center">
-          <div className="flex items-center space-x-8">
          
 
         <div className="flex items-center justify-center mt-6">
