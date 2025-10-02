@@ -49,8 +49,9 @@ export const AgentControlOverview = () => {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="bg-gray-50 rounded p-10 border-2 border-gray-200">
+      <div className="bg-gray-50 rounded p-10 border-2 border-gray-200">
           <div className="flex justify-center p-4">
             <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[600px]">
               <defs>
@@ -205,8 +206,7 @@ export const AgentControlOverview = () => {
             </svg>
           </div>
         </div>
-          
-        </div>
+      
 
                {/* 代理质量分析 */}
         <div className="mb-12">
