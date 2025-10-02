@@ -49,6 +49,163 @@ export const AgentControlOverview = () => {
               </div>
             </div>
           </div>
+
+          <div className="bg-gray-50 rounded p-10 border-2 border-gray-200">
+          <div className="flex justify-center p-4">
+            <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[600px]">
+              <defs>
+                <marker id="arrowhead-gray" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto">
+                  <polygon points="0 0, 12 4, 0 8" fill="#6b7280" />
+                </marker>
+                <filter id="nodeShadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="2" dy="4" stdDeviation="3" floodColor="#000000" floodOpacity="0.15"/>
+                </filter>
+                <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style={{stopColor:'#3b82f6', stopOpacity:1}} />
+                  <stop offset="100%" style={{stopColor:'#1d4ed8', stopOpacity:1}} />
+                </linearGradient>
+                <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style={{stopColor:'#3b82f6', stopOpacity:1}} />
+                  <stop offset="100%" style={{stopColor:'#2563eb', stopOpacity:1}} />
+                </linearGradient>
+              </defs>
+
+              {/* Connection lines */}
+              {/* 1→2 */}
+              <path d="M210,130 L340,130" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+              
+              {/* 2→3 */}
+              <path d="M460,130 L590,130" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+              
+              {/* 3→4 (直接通过) */}
+              <path d="M710,130 L1140,130" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+              
+              {/* 3→5 (需要审核) */}
+              <path d="M650,170 Q750,230 840,290" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+              
+              {/* 5→6 (人工复审通过) */}
+              <path d="M960,290 L1140,290" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+              
+              {/* 5→8 (人工复审不通过) */}
+              <path d="M900,340 Q1000,395 1140,450" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+              
+              {/* 6→4 (系统监控通过) - 调整箭头终点避免重叠 */}
+              <path d="M1200,238 L1200,182" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+              
+              {/* 6→7 */}
+              <path d="M1260,290 L1390,290" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+
+              {/* 7→4 (内控复审通过) */}
+              <path d="M1450,238 Q1350,185 1262,130" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+              
+              {/* 7→8 (内控复审不通过) */}
+              <path d="M1450,342 Q1350,395 1262,450" stroke="#6b7280" strokeWidth="3" fill="transparent" markerEnd="url(#arrowhead-gray)" />
+
+              {/* Bubble 1: Between 3 and 4 */}
+              <g>
+                <ellipse cx="925" cy="50" rx="200" ry="45" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
+                <text x="925" y="55" textAnchor="middle" fill="white" fontSize="22" fontWeight="600">
+                  变化：增加套利作弊等拦截策略
+                </text>
+              </g>
+
+              {/* Bubble 2: Between 3 and 5 */}
+              <g>
+                <ellipse cx="590" cy="250" rx="190" ry="45" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
+                <text x="590" y="255" textAnchor="middle" fill="white" fontSize="22" fontWeight="600">
+                  变化：升级为按分数和金额派单
+                </text>
+              </g>
+
+              {/* Bubble 3: Below node 5 */}
+              <g>
+                <ellipse cx="900" cy="425" rx="160" ry="40" fill="url(#bubbleGradient)" stroke="#2563eb" strokeWidth="2" filter="url(#nodeShadow)"/>
+                <text x="900" y="430" textAnchor="middle" fill="white" fontSize="22" fontWeight="600">
+                  变化：提供标准工具支持
+                </text>
+              </g>
+
+              {/* Nodes */}
+              {nodes.map((node) => (
+                <g key={node.id}>
+                  {/* Main node */}
+                  <rect
+                    x={node.x - 80}
+                    y={node.y - 65}
+                    width="160"
+                    height="130"
+                    rx="16"
+                    ry="16"
+                    fill={node.color === "#3b82f6" ? "url(#nodeGradient)" : node.color}
+                    stroke="#e5e7eb"
+                    strokeWidth="2"
+                    filter="url(#nodeShadow)"
+                  />
+                  
+                  {/* Number circle */}
+                  <circle
+                    cx={node.x}
+                    cy={node.y - 35}
+                    r="20"
+                    fill="white"
+                    stroke="#e5e7eb"
+                    strokeWidth="2"
+                    filter="url(#nodeShadow)"
+                  />
+                  
+                  {/* Number text */}
+                  <text
+                    x={node.x}
+                    y={node.y - 28}
+                    textAnchor="middle"
+                    fill={node.numberColor}
+                    fontSize="20"
+                    fontWeight="700"
+                  >
+                    {node.number}
+                  </text>
+                  
+                  {/* Node name */}
+                  <text
+                    x={node.x}
+                    y={node.y + 15}
+                    textAnchor="middle"
+                    fill="white"
+                    fontSize="24"
+                    fontWeight="600"
+                  >
+                    {node.name}
+                  </text>
+                  
+                  {/* Node description */}
+                  <text
+                    x={node.x}
+                    y={node.y + 40}
+                    textAnchor="middle"
+                    fill="rgba(255,255,255,0.9)"
+                    fontSize="16"
+                    fontWeight="500"
+                  >
+                    {node.desc}
+                  </text>
+                </g>
+              ))}
+
+              {/* Flow labels */}
+              <text x="275" y="115" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">开始</text>
+              <text x="525" y="115" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">提交</text>
+              <text x="925" y="115" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">低风险</text>
+              <text x="780" y="210" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">高风险</text>
+              <text x="1050" y="275" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
+              <text x="1050" y="380" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
+              <text x="1160" y="210" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
+              <text x="1325" y="275" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
+              <text x="1320" y="200" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">通过</text>
+              <text x="1325" y="380" textAnchor="middle" fill="#6b7280" fontSize="16" fontWeight="600">不通过</text>
+            </svg>
+          </div>
+        </div>
+          
         </div>
 
                {/* 代理质量分析 */}
