@@ -243,7 +243,7 @@ export const Direction1PersonnelCapability = () => {
                 <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
                   洞察分析
               </h4>
-            <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">1、通过派单机制的调整，外包渠道的订单量由 66,423 单降至 24,511 单，下降了 63.10%；远程渠道的订单量由 82,733 单降至 29,431 单，下降了 64.44%，整体实现了低效渠道订单量的显著压缩。</span></p>
+            <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">1、通过派单机制的调整，外包的订单量由 66,423 单降至 24,511 单，下降了 63.10%；远程的订单量由 82,733 单降至 29,431 单，下降了 64.44%，整体实现了低效渠道订单量的显著压缩。</span></p>
               
                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">2、与此同时，总部一审的订单量由 25,161 单增长至 135,259 单，提升了 437.57%；其审核错误率由 0.63% 降至 0.51%，下降了 19.05%，审核质量明显提升。
 </span></p>
