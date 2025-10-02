@@ -133,7 +133,7 @@ export const AgentControlOverview = () => {
               <svg className="w-8 h-8 text-red-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
-              <div className="text-red-700 font-semibold mb-2">抽检不通过</div>
+              <div className="text-red-700 font-semibold mb-2">复审不通过</div>
               <div className="text-sm text-red-600">挂起核实</div>
             </div>
           </div>
@@ -172,7 +172,7 @@ export const AgentControlOverview = () => {
               <svg className="w-8 h-8 text-green-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <div className="text-green-700 font-semibold mb-2">抽检通过</div>
+              <div className="text-green-700 font-semibold mb-2">复审通过</div>
               <div className="text-sm text-green-600">佣金结算</div>
             </div>
           </div>
