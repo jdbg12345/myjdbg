@@ -210,7 +210,7 @@ export const Direction1PersonnelCapability = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">风控体系是从<span className="text-blue-600">「人工驱动」向「系统驱动」</span>转变的最核心基础；从实际数据看，<span className="text-blue-600">分数越高，订单数量越少；分数越高，被风控率越高</span></p>
               </div>
             </div>
-
+ <p className="text-gray-700 text-sm leading-relaxed">风控体系是从<span className="text-blue-600">「人工驱动」向「系统驱动」</span>转变的最核心基础；从实际数据看，<span className="text-blue-600">分数越高，订单数量越少；分数越高，被风控率越高</span></p>
             {/* 云盾分数分布图表 */}
             <div className="mt-8">
               <div className="relative h-96 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
