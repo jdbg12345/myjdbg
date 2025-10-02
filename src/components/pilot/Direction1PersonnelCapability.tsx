@@ -175,6 +175,51 @@ export const Direction1PersonnelCapability = () => {
           </div>
         </div>
          
+        {/* 云盾分数分布图表 */}
+        <div className="mb-12">
+          <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center space-x-3 flex-1">
+                <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
+                  <span className="text-white font-medium text-sm">2</span>
+                </div>
+                <h4 className="text-xl font-semibold text-gray-800">云盾分数订单分布</h4>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+                <h4 className="font-medium text-blue-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
+                  核心问题
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">FK体系缺一个统一的量化标准</span>，如分数来衡量风险程度，在多方协作和系统交互中，就难以高效、一致地执行判断和决策</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+                <h4 className="font-medium text-blue-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
+                  解决策略
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">依托风控策略与标签对各项指标进行赋分</span>，构建风控评分体系；<span className="text-blue-600">为每笔订单/每位玩家生成风险分数</span>，实现风险量化判断与管理</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+                <h4 className="font-medium text-blue-700 mb-3 flex items-center">
+                  <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
+                  预期收益
+                </h4>
+                <p className="text-gray-700 text-sm leading-relaxed">风控体系是从<span className="text-blue-600">「人工驱动」向「系统驱动」</span>转变的最核心基础</p>
+              </div>
+            </div>
+
+          <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
+            <h4 className="font-medium text-green-700 mb-3 flex items-center">
+              <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
+              数据效果
+            </h4>
+            <p className="text-gray-700 text-sm leading-relaxed">现有模型评分已具备初步区分能力，<span className="text-blue-600">风险分数越高的订单数量越少、但风控命中率越高；</span>随着策略和参数的持续优化，评分将更精准可靠，可作为关键指标，逐步用于驱动规则引擎，<span className="text-blue-600">减少人工介入，实现更高效的风控自动化</span></p>
+          </div>
+
+            {/* 云盾分数分布图表 */}
 {/* 云盾分数分布图表 */}
 <div className="mt-8">
   <div className="relative h-96 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
@@ -307,7 +352,8 @@ export const Direction1PersonnelCapability = () => {
   <div className="text-right text-sm text-gray-500 mt-6">
     统计周期：2025-04-01 ~ 2025-06-30
   </div>
-      
+</div>
+
 
        
           </div>
