@@ -260,10 +260,10 @@ export const Direction1PersonnelCapability = () => {
         ))}
       </div>
 
-      <div className="absolute left-20 right-12 h-full flex items-end justify-center pb-0">
+      <div className="absolute left-20 right-12 h-full flex items-end justify-between pb-0">
         <div className="flex items-center space-x-48 h-full relative">
           {/* 调整前 */}
-          <div className="flex flex-col items-center relative h-full justify-end">
+          <div className="flex flex-col items-center relative h-full justify-end pb-8">
             <div
               className="absolute w-5 h-5 bg-gray-500 rounded-full border-2 border-white"
               style={{ bottom: `${(25 / 30) * 200}px` }}
@@ -272,11 +272,13 @@ export const Direction1PersonnelCapability = () => {
                 25%
               </div>
             </div>
-           
+            <div className="text-center mt-4">
+              <div className="text-sm text-gray-800 font-medium">调整前</div>
+            </div>
           </div>
 
           {/* 调整后 */}
-          <div className="flex flex-col items-center relative h-full justify-end">
+          <div className="flex flex-col items-center relative h-full justify-end pb-8">
             <div
               className="absolute w-5 h-5 bg-blue-500 rounded-full border-2 border-white"
               style={{ bottom: `${(8 / 30) * 200}px` }}
@@ -285,7 +287,9 @@ export const Direction1PersonnelCapability = () => {
                 8%
               </div>
             </div>
-           
+            <div className="text-center mt-4">
+              <div className="text-sm text-gray-800 font-medium">调整后</div>
+            </div>
           </div>
         </div>
 
