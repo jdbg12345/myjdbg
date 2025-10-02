@@ -348,7 +348,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">3</div>
               <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">降低门槛</span>：打通Y/B跨站点及B/C端系统链路</h4>
+                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">跨多站点</span>：打通Y/B跨站点及B/C端系统链路</h4>
                 <p className="text-sm text-gray-600">实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</p>
               </div>
             </div>
