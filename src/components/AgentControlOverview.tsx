@@ -104,8 +104,8 @@ export const AgentControlOverview = () => {
           <div className="flex items-center space-x-8">
             {/* 高危代理 */}
             <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
-              <div className="text-gray-700 font-semibold mb-2">高危代理</div>
-              <div className="text-sm text-gray-600">高风险分数</div>
+              <div className="text-gray-700 font-semibold mb-2">综合分数低代理</div>
+              <div className="text-sm text-gray-600">综合打分低于xx分，但是得到高扶持 </div>
             </div>
 
             {/* 箭头 */}
@@ -143,8 +143,8 @@ export const AgentControlOverview = () => {
           <div className="flex items-center space-x-8">
             {/* 异常风险 */}
             <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
-              <div className="text-gray-700 font-semibold mb-2">危险操作</div>
-              <div className="text-sm text-gray-600">命中红利、打负、调整等综合策略</div>
+              <div className="text-gray-700 font-semibold mb-2">风险系数高代理</div>
+              <div className="text-sm text-gray-600">命中红利、打负、调整等综合风控策略</div>
             </div>
 
             {/* 箭头 */}
