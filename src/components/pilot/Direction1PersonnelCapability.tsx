@@ -411,7 +411,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">错误出款影响降低15%-20%</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">避免不看标签及备注出款的行为</span></p>
               </div>
             </div>
           </div>
