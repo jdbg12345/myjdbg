@@ -22,7 +22,7 @@ export const Direction1PersonnelCapability = () => {
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                   <span className="text-white font-medium text-sm">1</span>
                 </div>
-                <h4 className="text-xl font-semibold text-gray-800">云盾分数订单分布</h4>
+                <h4 className="text-xl font-semibold text-gray-800">云盾分数分布</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
               </div>
             </div>
