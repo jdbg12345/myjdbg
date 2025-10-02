@@ -651,7 +651,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">近期<span className="text-blue-600">出现多次场馆钱包多钱情况</span>，但由于转账钱包模式，是默认相信B端可管控好，但是仍然C端基于当前转账钱包模式下进行多钱的监控，一旦发生损失可能巨大</p>
+                <p className="text-gray-700 text-sm leading-relaxed">近期<span className="text-blue-600">出现多次场馆钱包多钱情况</span>，但是仍然C端缺少对此情况的监控，一旦发生损失可能巨大</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
@@ -665,7 +665,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">预防极端情况，尽早发现</p>
+                <p className="text-gray-700 text-sm leading-relaxed">由于转账钱包模式限制及注单延迟，目前策略极限可以做到一旦发生多钱情况，大概15-30min以内发现</p>
               </div>
             </div>
           </div>
