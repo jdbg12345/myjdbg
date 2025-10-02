@@ -66,7 +66,7 @@ export const AgentControlOverview = () => {
             {/* 指定人员 */}
             <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
               <div className="text-gray-700 font-semibold mb-2">指定人员</div>
-              <div className="text-sm text-gray-600">新人/低绩效</div>
+              <div className="text-sm text-gray-600">如可疑人</div>
             </div>
 
             {/* 箭头 */}
@@ -76,10 +76,10 @@ export const AgentControlOverview = () => {
               </svg>
             </div>
 
-            {/* 内控抽检 */}
+            {/* 复审抽检 */}
             <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-48">
               <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-              <div className="text-blue-700 font-semibold mb-2">内控抽检</div>
+              <div className="text-blue-700 font-semibold mb-2">复审抽检</div>
               <div className="text-sm text-blue-600">专门复审</div>
             </div>
 
