@@ -168,7 +168,7 @@ export const Direction3SystemStrategies = () => {
               <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
               数据效果
             </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">现有模型已具备初步拦截能力，<span className="text-blue-600">随机样本100单中，52单经人工复核确有问题，其中17单定位为“跨平台对压”；结果：9单拒付、43单放行，但是存在警告、扣款出款、出款禁用等不同程度处理；</span>另外的48单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理；<span className="text-blue-600">后续需要继续迭代，目标准确率在80%</span></p>
+            <p className="text-gray-700 text-sm leading-relaxed">现有模型已具备初步拦截能力；<span className="text-blue-600">随机样本100单中，52单经人工复核确有问题，其中17单定位为“跨平台对压”；结果：9单拒付、43单放行，但是存在警告、扣款出款、出款禁用等不同程度处理；</span>另外的48单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理；<span className="text-blue-600">后续需要继续迭代，目标准确率在80%</span></p>
           </div>
             
             {/* 真人策略图表 */}
