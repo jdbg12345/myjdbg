@@ -63,42 +63,7 @@ export const AgentControlOverview = () => {
 
         <div className="flex items-center justify-center">
           <div className="flex items-center space-x-8">
-            {/* 指定人员 */}
-            <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
-              <div className="text-gray-700 font-semibold mb-2">指定人员</div>
-              <div className="text-sm text-gray-600">如可疑人员、强制领单</div>
-            </div>
-
-            {/* 箭头 */}
-            <div className="bg-gray-600 rounded-full p-3">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-
-            {/* 复审抽检 */}
-            <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-48">
-              <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-              <div className="text-blue-700 font-semibold mb-2">复审抽检</div>
-            </div>
-
-            {/* 箭头 */}
-            <div className="bg-gray-600 rounded-full p-3">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-
-            {/* 抽检通过 */}
-            <div className="bg-white border border-green-200 rounded-lg p-6 text-center min-w-48">
-              <svg className="w-8 h-8 text-green-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-              <div className="text-green-700 font-semibold mb-2">复审通过</div>
-              <div className="text-sm text-green-600">佣金结算</div>
-            </div>
-          </div>
-        </div>
+         
 
         <div className="flex items-center justify-center mt-6">
           <div className="flex items-center space-x-8">
