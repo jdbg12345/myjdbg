@@ -613,7 +613,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">出现用户钱包异常变动的极端情况，如无存款、无盈利却发起提款，但目前系统缺乏针对该类行为的监控，一旦发生损失可能巨大</p>
+                <p className="text-gray-700 text-sm leading-relaxed">出现用户钱包异常变动的极端情况，如<span className="text-blue-600">无存款、无盈利却发起提款</span>，但目前系统缺乏针对该类行为的监控，一旦发生损失可能巨大</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
