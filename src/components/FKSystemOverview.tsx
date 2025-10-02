@@ -331,7 +331,7 @@ export const FKSystemOverview = () => {
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <span className="px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">没变</span>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">Q3-没变</span>
                     <span>特殊上分类型</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-600">运行中</span>
