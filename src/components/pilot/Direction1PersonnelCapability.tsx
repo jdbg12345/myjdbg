@@ -282,7 +282,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="text-gray-700">订单数量</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
+                  <div className="w-4 h-4 bg-green-600 rounded-full"></div>
                   <span className="text-green-700">风控拒单率</span>
                 </div>
               </div>
