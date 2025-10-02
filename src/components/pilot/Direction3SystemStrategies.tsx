@@ -203,7 +203,7 @@ export const Direction3SystemStrategies = () => {
                       </div>
                       
                       <div className="text-center mt-4">
-                        <div className="text-sm text-gray-600 mt-1">100单</div>
+                        <div className="text-sm text-gray-600 mt-1">随机抽取100单</div>
                       </div>
                     </div>
                   </div>
