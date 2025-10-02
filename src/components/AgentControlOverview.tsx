@@ -158,7 +158,7 @@ export const AgentControlOverview = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">操盘错误是B端常见风险之一，常见表现包括<span className="text-blue-600">赔率差距过大、玩法错配、盘口不一致等</span>，直接影响用户体验与平台盈利</p>
+                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">缺乏稳定、合理且可量化的标准来评估代理质量</span>，导致代理绩效难以客观衡量，管理和激励难以精准执行</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
