@@ -282,10 +282,29 @@ export const Direction1PersonnelCapability = () => {
                     ))}
                   </div>
                   
-                  {/* 风控拒单率连线 */}
+                  {/* 风控拒单率连线 - 使用动态计算 */}
                   <svg className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none" style={{width: 'calc(100% - 8rem)', height: '100%'}}>
                     <polyline
-                      points="10,212.5 30,196.25 50,168.75 70,105 90,0"
+                      points={(() => {
+                        const data = [
+                          { rate: 2.57 },
+                          { rate: 3.64 },
+                          { rate: 5.57 },
+                          { rate: 9.81 },
+                          { rate: 17.03 }
+                        ];
+                        const containerWidth = 320; // 大约的容器宽度 (calc(100% - 8rem))
+                        const barWidth = 80; // w-20
+                        const totalBars = data.length;
+                        const totalGap = containerWidth - totalBars * barWidth;
+                        const gap = totalGap / (totalBars + 1);
+                        
+                        return data.map((item, index) => {
+                          const x = gap + index * (barWidth + gap) + barWidth / 2;
+                          const y = 250 - (item.rate / 20) * 250; // 20 是最大 rate
+                          return `${x},${y}`;
+                        }).join(' ');
+                      })()}
                       stroke="#16a34a"
                       strokeWidth="3"
                       fill="none"
