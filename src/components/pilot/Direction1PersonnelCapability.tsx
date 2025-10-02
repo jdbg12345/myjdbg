@@ -283,29 +283,23 @@ export const Direction1PersonnelCapability = () => {
                   </div>
                   
                   {/* 风控拒单率连线 */}
-                   <svg className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none" width="100%" height="100%">
+<svg
+  className="absolute left-20 bottom-8 pointer-events-none"
+  width={480}  // 4间距 * 120px = 480
+  height={250} // 和你柱子高度一致
+>
   <polyline
     fill="none"
     stroke="#16a34a"
     strokeWidth="3"
     opacity="0.8"
-    points={
-      [
-        { x: 0, rate: 2.57 },
-        { x: 1, rate: 3.64 },
-        { x: 2, rate: 5.57 },
-        { x: 3, rate: 9.81 },
-        { x: 4, rate: 17.03 }
-      ].map((point, idx, arr) => {
-        const totalPoints = arr.length;
-        const containerWidth = 100; // placeholder, we’ll use relative %
-        const containerHeight = 250; // same as your rate height scale
-        const spacing = containerWidth / (totalPoints - 1);
-        const x = idx * spacing;
-        const y = containerHeight - (point.rate / 17.03) * containerHeight;
-        return `${x},${y}`;
-      }).join(' ')
-    }
+    points={`
+      0,212.2
+      120,190.3
+      240,169.1
+      360,98.1
+      480,0
+    `}
   />
 </svg>
 
