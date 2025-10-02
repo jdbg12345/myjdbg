@@ -251,7 +251,7 @@ export const Direction1PersonnelCapability = () => {
                           <div className="relative">
                             <div 
                               className="w-20 bg-blue-500 rounded-t"
-                              style={{ height: `${(item.count / 160000) * 250}px` }}
+                              style={{ height: `${(item.count / 140000) * 250}px` }}
                             ></div>
                           </div>
                         </div>
