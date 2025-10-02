@@ -211,13 +211,14 @@ export const Direction1PersonnelCapability = () => {
               </div>
             </div>
 
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                <h4 className="font-medium text-green-700 mb-3 flex items-center">
-                  <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
-                  数据效果
-                </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">现有模型评分已具备初步区分能力，<span className="text-blue-600">风险分数越高的订单数量越少、但风控命中率越高；</span>随着策略和参数的持续优化，评分将更精准可靠，可作为关键指标，逐步用于驱动规则引擎，<span className="text-blue-600">减少人工介入，实现更高效的风控自动化</span></p>
-              </div>
+          <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
+            <h4 className="font-medium text-green-700 mb-3 flex items-center">
+              <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
+              数据效果
+            </h4>
+            <p className="text-gray-700 text-sm leading-relaxed">现有模型评分已具备初步区分能力，<span className="text-blue-600">风险分数越高的订单数量越少、但风控命中率越高；</span>随着策略和参数的持续优化，评分将更精准可靠，可作为关键指标，逐步用于驱动规则引擎，<span className="text-blue-600">减少人工介入，实现更高效的风控自动化</span></p>
+          </div>
+
             {/* 云盾分数分布图表 */}
             <div className="mt-8">
               <div className="relative h-96 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
@@ -280,6 +281,17 @@ export const Direction1PersonnelCapability = () => {
                       </div>
                     ))}
                   </div>
+                  
+                  {/* 风控拒单率连线 */}
+                  <svg className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none" width="100%" height="100%">
+                    <path
+                      d={`M 10% ${100 - (2.57 / 15) * 83.33}% L 30% ${100 - (3.64 / 15) * 83.33}% L 50% ${100 - (5.57 / 15) * 83.33}% L 70% ${100 - (9.81 / 15) * 83.33}% L 90% ${100 - (17.03 / 15) * 83.33}%`}
+                      stroke="#16a34a"
+                      strokeWidth="3"
+                      fill="none"
+                      opacity="0.8"
+                    />
+                  </svg>
                 </div>
               </div>
               
