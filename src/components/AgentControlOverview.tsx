@@ -163,7 +163,7 @@ export const AgentControlOverview = () => {
         <div className="space-y-4">
           {[
             {
-                id: '#3Y218350',
+                id: '3Y218350',
                 grade: 'C档 - 一般',
                 site: 'Y8',
                 joinDate: '2024-08-10',
@@ -181,9 +181,9 @@ export const AgentControlOverview = () => {
                 gradeColor: 'text-blue-600 bg-blue-50'
             },
             {
-                id: '#3Y218350',
+                id: '3Y123456',
                 grade: 'A档 - 优秀',
-                site: 'Y8',
+                site: 'Y1',
                 joinDate: '2025-08-10',
                 totalScore: 80,
                 businessScore: 90,
