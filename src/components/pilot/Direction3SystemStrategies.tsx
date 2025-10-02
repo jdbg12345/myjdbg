@@ -734,7 +734,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">通过比对B端赔率并进行异常逻辑校验，结合标准判定规则和Telegram实时预警，及时发现并处置异常，降低套利风险</p>
+                <p className="text-gray-700 text-sm leading-relaxed">通过比对B端赔率并结合百家赔进行异常逻辑校验，命中后Telegram预警，及时发现并处置异常</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
