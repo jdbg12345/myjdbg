@@ -10,8 +10,9 @@ export const Direction3SystemStrategies = () => {
         </div>
         <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
-          <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
-        </div>
+             <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
+           </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">+1</div>
