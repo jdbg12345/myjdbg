@@ -276,11 +276,11 @@ export const AgentControlOverview = () => {
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-sm text-gray-600">负盈利风险</span>
-                <span className="font-semibold text-gray-800">—</span>
+                <span className="font-semibold text-gray-800">80%</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-sm text-gray-600">下级风险度</span>
-                <span className="font-semibold text-gray-800">—</span>
+                <span className="font-semibold text-gray-800">70%</span>
               </div>
             </div>
           </div>
