@@ -189,7 +189,7 @@ export const Direction1PersonnelCapability = () => {
   </div>
 
   <div className="text-right text-sm text-gray-500 mt-6">
-    统计周期：Y123579上线日期后到9月30
+    统计周期：Y1、2、3、5、7、9上线日期后到9月30，平均试运行周期在10天
   </div>
 </div>
 
