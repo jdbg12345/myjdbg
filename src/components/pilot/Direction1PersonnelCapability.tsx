@@ -251,7 +251,7 @@ export const Direction1PersonnelCapability = () => {
                           <div className="relative">
                             <div 
                               className="w-20 bg-blue-500 rounded-t"
-                              style={{ height: `${(item.count / 120000) * 250}px` }}
+                              style={{ height: `${(item.count / 160000) * 250}px` }}
                             ></div>
                           </div>
                         </div>
@@ -259,7 +259,7 @@ export const Direction1PersonnelCapability = () => {
                         {/* 风控拒单率点 */}
                         <div 
                           className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white"
-                          style={{bottom: `${(item.rate / 10) * 250}px`, left: '50%', transform: 'translateX(-50%)'}}
+                          style={{bottom: `${(item.rate / 15) * 250}px`, left: '50%', transform: 'translateX(-50%)'}}
                         >
                           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
                             {item.rate}%
