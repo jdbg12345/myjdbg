@@ -38,7 +38,7 @@ export const FKTransformationRhythm = () => {
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">
-          3.1 FK全局说明
+          3.1 整体说明
         </h1>
       </div>
 
@@ -49,7 +49,7 @@ export const FKTransformationRhythm = () => {
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
               <AlertTriangle className="w-6 h-6 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900">核心问题</h2>
+            <h2 className="text-3xl font-bold text-gray-900">过往问题</h2>
           </div>
           <div className="mb-8">
             <span className="text-gray-700 text-xl">问题虽多，但已逐步明确解决路径，并按计划有序推进</span>
@@ -111,7 +111,7 @@ export const FKTransformationRhythm = () => {
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
               <AlertTriangle className="w-6 h-6 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900">面对挑战</h2>
+            <h2 className="text-3xl font-bold text-gray-900">面对困难</h2>
           </div>
           <div className="mb-8">
             <span className="text-gray-700 text-xl">推进过程中，人员、系统与风险管理都面临较大挑战</span>

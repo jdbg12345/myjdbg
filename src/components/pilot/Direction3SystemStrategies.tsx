@@ -55,7 +55,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-medium text-sm">1.1</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">电子策略</h4>
-              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">Y/B：已上线</span>
+              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
@@ -71,15 +71,7 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">拦截率：95%+</p>
               </div>
             </div>
-
-                   <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
-            <h4 className="font-medium text-green-700 mb-3 flex items-center">
-              <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
-              数据效果
-            </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">现有模型已具备初步拦截能力；<span className="text-blue-600">随机样本100单中，52单经人工复核确有问题，其中17单定位为“跨平台对压”；9单拒付、43单放行，但是存在警告、扣款出款、出款禁用等不同程度处理；</span>另外的48单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理；<span className="text-blue-600">后续需要继续迭代，目标准确率在80%；</span></p>
-          </div>
-            
+        
             {/* 电子策略图表 */}
             <div className="mt-8">
               <div className="relative h-80 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
@@ -153,7 +145,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-medium text-sm">1.2</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">真人策略</h4>
-              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">Y：已上线</span>
+              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">突破：B/C端系统打通，解决实效性极差、无法跨商户、风控无联动等关键问题</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -167,31 +159,25 @@ export const Direction3SystemStrategies = () => {
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">识别准确率：80%+；（DB跨站点对打）</p>
+                <p className="text-gray-700 text-sm leading-relaxed">拦截率：80%+；（DB跨站点对打）</p>
               </div>
             </div>
-
-                <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
-            <h4 className="font-medium text-green-700 mb-3 flex items-center">
-              <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
-              数据效果
-            </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">现有模型已具备初步拦截能力；<span className="text-blue-600">随机样本100单中，52单经人工复核确有问题，其中17单定位为“跨平台对压”；9单拒付、43单放行，但是存在警告、扣款出款、出款禁用等不同程度处理；</span>另外的48单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理；<span className="text-blue-600">后续需要继续迭代，目标准确率在80%；</span></p>
-          </div>
-            
+        
             {/* 真人策略图表 */}
             <div className="mt-8">
               <div className="relative h-80 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
                           
                 <div className="mx-12 h-full relative">
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
-                    <span>150</span>
-                    <span>100</span>
-                    <span>50</span>
+                    <span>500</span>
+                    <span>375</span>
+                    <span>250</span>
+                    <span>125</span>
                     <span>0</span>
                   </div>
                   
                   <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
+                    <span>100%</span>
                     <span>75%</span>
                     <span>50%</span>
                     <span>25%</span>
@@ -204,22 +190,22 @@ export const Direction3SystemStrategies = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-0">
+                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
                     <div className="flex flex-col items-center relative">
-                      <div className="w-20 bg-blue-500 rounded-t" style={{ height: `${(100 / 150) * 250}px` }}></div>
+                      <div className="w-20 bg-blue-500 rounded-t" style={{ height: '225px' }}></div>
                       
                       {/* 准确率数据点 */}
                       <div 
                         className="absolute w-5 h-5 bg-blue-600 rounded-full border-2 border-white"
-                        style={{bottom: `${(52 / 75) * 250}px`, left: '50%', transform: 'translateX(-50%)'}}
+                        style={{top: `${100 - 26.7 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
                       >
                         <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded text-xs font-medium whitespace-nowrap">
-                          52%
+                          26.7%
                         </div>
                       </div>
                       
                       <div className="text-center mt-4">
-                        <div className="text-sm text-gray-600 mt-1">随机抽取100单</div>
+                        <div className="text-sm text-gray-600 mt-1">450单 (26.7%)</div>
                       </div>
                     </div>
                   </div>
@@ -237,7 +223,7 @@ export const Direction3SystemStrategies = () => {
                 </div>
               </div>
               
-              <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025年9月17日至9月30日期间，随机选取了100笔命了该风控策略的提款订单</div>
+              <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025-04-01 ~ 2025-06-30</div>
             </div>
           </div>
         </div>
@@ -264,7 +250,7 @@ export const Direction3SystemStrategies = () => {
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">识别准确率：70%+</p>
+                <p className="text-gray-700 text-sm leading-relaxed">拦截率：70%+</p>
               </div>
             </div>
         
@@ -279,7 +265,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="text-white font-medium text-sm">1.4</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">棋牌策略</h4>
-              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">开发中</span>
+              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
@@ -292,10 +278,73 @@ export const Direction3SystemStrategies = () => {
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">识别准确率：60%+</p>
+                <p className="text-gray-700 text-sm leading-relaxed">拦截率：60%+</p>
               </div>
             </div>
+        
+            {/* 棋牌策略图表 */}
+            <div className="mt-8">
+              <div className="relative h-80 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
+                           
+                <div className="mx-12 h-full relative">
+                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
+                    <span>250</span>
+                    <span>188</span>
+                    <span>125</span>
+                    <span>63</span>
+                    <span>0</span>
+                  </div>
+                  
+                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
+                    <span>100%</span>
+                    <span>75%</span>
+                    <span>50%</span>
+                    <span>25%</span>
+                    <span>0%</span>
+                  </div>
+                  
+                  <div className="absolute left-12 right-12 h-full">
+                    {[0, 25, 50, 75, 100].map((percent) => (
+                      <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
+                    ))}
+                  </div>
+                  
+                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
+                    <div className="flex flex-col items-center relative">
+                      <div className="w-20 bg-blue-500 rounded-t" style={{ height: '210px' }}></div>
+                      
+                      {/* 准确率数据点 */}
+                      <div 
+                        className="absolute w-5 h-5 bg-blue-600 rounded-full border-2 border-white"
+                        style={{top: `${100 - 23.8 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
+                      >
+                        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded text-xs font-medium whitespace-nowrap">
+                          23.8%
+                        </div>
+                      </div>
+                      
+                      <div className="text-center mt-4">
+                        <div className="text-sm text-gray-600 mt-1">210单 (23.8%)</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="flex justify-center space-x-8 text-sm">
+                <div className="flex items-center space-x-2">
+                  <div className="w-4 h-4 bg-blue-500 rounded"></div>
+                  <span className="text-gray-700">拦截订单数</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
+                  <span className="text-gray-700">准确率</span>
+                </div>
+              </div>
+              
+              <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025-04-01 ~ 2025-06-30</div>
             </div>
+          </div>
         </div>
 
         {/* 5. 彩票策略 */}
@@ -319,7 +368,7 @@ export const Direction3SystemStrategies = () => {
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">识别准确率：90%+</p>
+                <p className="text-gray-700 text-sm leading-relaxed">拦截率：90%+</p>
               </div>
             </div>
 
@@ -373,7 +422,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点</span>"关联下注查询\"工具，支持基于核心关联特征<span className="text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
+                <p className="text-gray-700 text-sm leading-relaxed">提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点</span>"关联下注查询"工具，支持基于核心关联特征<span className="text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
@@ -553,7 +602,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="text-white font-medium text-sm">1</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">中心钱包多钱</h4>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-yellow-100 text-yellow-600 ml-4">开发中</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -591,7 +640,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="text-white font-medium text-sm">2</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">场馆钱包多钱</h4>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-yellow-100 text-yellow-600 ml-4">开发中</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -668,7 +717,6 @@ export const Direction3SystemStrategies = () => {
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">赔率异常预警</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">方案中</span>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Q4重点</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -707,7 +755,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="text-white font-medium text-sm">5</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">沉睡用户活跃</h4>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-green-100 text-green-600 ml-4">试运行</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
