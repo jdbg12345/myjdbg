@@ -42,7 +42,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决方法
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">引入订单风险评分机制，将派单从<span className="text-blue-600">"仅按金额"升级为"按风险分数+金额"</span>，确保中高风险订单由经验丰富的审核员处理，实现人单匹配最优分配。</p>
+                <p className="text-gray-700 text-sm leading-relaxed">引入订单风险评分机制，将派单从<span className="text-blue-600">"仅按金额"升级为"按风险分数+金额"</span>，确保<span className="text-blue-600">中高风险订单由经验丰富的审核员处理</span>，实现人单匹配最优分配。</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
