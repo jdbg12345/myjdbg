@@ -103,9 +103,9 @@ export const AgentControlOverview = () => {
 
         <div className="flex items-center justify-center mt-6">
           <div className="flex items-center space-x-8">
-            {/* 高危订单 */}
+            {/* 高危代理 */}
             <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
-              <div className="text-gray-700 font-semibold mb-2">高危订单</div>
+              <div className="text-gray-700 font-semibold mb-2">高危代理</div>
               <div className="text-sm text-gray-600">高风险分数</div>
             </div>
 
