@@ -116,10 +116,10 @@ export const AgentControlOverview = () => {
               </svg>
             </div>
 
-            {/* 内控抽检 */}
+            {/* 复审抽检 */}
             <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-48">
               <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-              <div className="text-blue-700 font-semibold mb-2">内控抽检</div>
+              <div className="text-blue-700 font-semibold mb-2">复审抽检</div>
               <div className="text-sm text-blue-600">专门复审</div>
             </div>
 
@@ -130,7 +130,7 @@ export const AgentControlOverview = () => {
               </svg>
             </div>
 
-            {/* 抽检不通过 */}
+            {/* 复审不通过 */}
             <div className="bg-white border border-red-200 rounded-lg p-6 text-center min-w-48">
               <svg className="w-8 h-8 text-red-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -159,7 +159,7 @@ export const AgentControlOverview = () => {
             {/* 内控抽检 */}
             <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-48">
               <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-              <div className="text-blue-700 font-semibold mb-2">内控抽检</div>
+              <div className="text-blue-700 font-semibold mb-2">复审抽检</div>
               <div className="text-sm text-blue-600">专门复审</div>
             </div>
 
@@ -176,7 +176,7 @@ export const AgentControlOverview = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
               <div className="text-green-700 font-semibold mb-2">抽检通过</div>
-              <div className="text-sm text-green-600">进入财务</div>
+              <div className="text-sm text-green-600">佣金结算</div>
             </div>
           </div>
         </div>
