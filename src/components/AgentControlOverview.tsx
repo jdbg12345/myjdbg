@@ -179,8 +179,8 @@ export const AgentControlOverview = () => {
                 retention: '17%',
                 riskUsers: '6%',
                 gradeColor: 'text-blue-600 bg-blue-50'
-            }，
-       {
+            }
+            {
                 id: '#3Y218350',
                 grade: 'C档 - 一般',
                 site: 'Y8',
