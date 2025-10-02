@@ -435,69 +435,7 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">拦截率：90%+</p>
               </div>
             </div>
-        
-            {/* 彩票策略图表 */}
-            <div className="mt-8">
-              <div className="relative h-80 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
-                
-                <div className="mx-12 h-full relative">
-                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
-                    <span>300</span>
-                    <span>225</span>
-                    <span>150</span>
-                    <span>75</span>
-                    <span>0</span>
-                  </div>
-                  
-                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
-                    <span>100%</span>
-                    <span>75%</span>
-                    <span>50%</span>
-                    <span>25%</span>
-                    <span>0%</span>
-                  </div>
-                  
-                  <div className="absolute left-12 right-12 h-full">
-                    {[0, 25, 50, 75, 100].map((percent) => (
-                      <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
-                    ))}
-                  </div>
-                  
-                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
-                    <div className="flex flex-col items-center relative">
-                      <div className="w-20 bg-blue-500 rounded-t" style={{ height: '200px' }}></div>
-                      
-                      {/* 准确率数据点 */}
-                      <div 
-                        className="absolute w-5 h-5 bg-blue-600 rounded-full border-2 border-white"
-                        style={{top: `${100 - 25 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
-                      >
-                        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded text-xs font-medium whitespace-nowrap">
-                          25%
-                        </div>
-                      </div>
-                      
-                      <div className="text-center mt-4">
-                        <div className="text-sm text-gray-600 mt-1">250单 (25%)</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex justify-center space-x-8 text-sm">
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-blue-500 rounded"></div>
-                  <span className="text-gray-700">拦截订单数</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">准确率</span>
-                </div>
-              </div>
-              
-              <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025-04-01 ~ 2025-06-30</div>
-            </div>
+
           </div>
         </div>
       </div>
