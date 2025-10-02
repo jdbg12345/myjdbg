@@ -62,11 +62,11 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">卡免费是最典型的套利或藏分手段。目前系统在自动出款及人工审核环节中对此识别不足，损失～100万+/月</p>
+                <p className="text-gray-700 text-sm leading-relaxed">卡免费是最典型的<span className="text-blue-600">套利或藏分</span>手段。目前系统在自动出款及人工审核环节中对此识别不足，损失～100万+/月</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">系统策略增加电子卡免费的策略模型</p>
+                <p className="text-gray-700 text-sm leading-relaxed">系统提款策略增加电子卡免费的策略模型</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
@@ -157,11 +157,11 @@ export const Direction3SystemStrategies = () => {
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">系统策略增加真人对打、机器下注、算牌的策略模型</p>
+                <p className="text-gray-700 text-sm leading-relaxed">系统提款策略增加真人对打、机器下注、算牌的策略模型</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">拦截率：80%+</p>
+                <p className="text-gray-700 text-sm leading-relaxed">拦截率：80%+；（DB跨站点对打）</p>
               </div>
             </div>
         
