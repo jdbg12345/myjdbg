@@ -23,6 +23,7 @@ export const AgentControlOverview = () => {
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">代理佣金审核流程升级</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">方案中</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Q4重点</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -31,7 +32,7 @@ export const AgentControlOverview = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">系统工具支持不足、核心流程依赖线下，缺乏有效管控<span className="text-blue-600">易导致佣金发放不合理或内外串联</span>，直接影响平台利益</p>
+                <p className="text-gray-700 text-sm leading-relaxed">系统工具支持不足、核心流程依赖线下，缺乏有效管控<span className="text-blue-600">易导致佣金发放不合理，甚至内外串联</span>，直接影响平台利益</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
@@ -151,6 +152,7 @@ export const AgentControlOverview = () => {
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">代理质量自动化分析</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">方案中</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Q4重点</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
