@@ -245,7 +245,7 @@ export const Direction1PersonnelCapability = () => {
                <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
             <h4 className="font-medium text-green-700 mb-3 flex items-center">
               <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
-              数据效果
+                            洞察分析
             </h4>
             <p className="text-gray-700 text-sm leading-relaxed">现有模型评分已具备初步区分能力，<span className="text-blue-600">风险分数越高的订单数量越少、但风控率越高；</span>随着策略和参数的持续优化，评分将更精准可靠，可作为关键指标，逐步用于驱动规则引擎，<span className="text-blue-600">减少人工介入，实现更高效的风控自动化</span></p>
           </div>
