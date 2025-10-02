@@ -48,7 +48,7 @@ const navigationItems: NavigationItem[] = [
     ]
   },
   {
-    id: 'org',
+    id: 'risk-review',
     title: '4.B端问题汇总（待更新）',
     icon: <Users className="w-4 h-4" />
   }
