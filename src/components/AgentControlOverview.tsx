@@ -54,11 +54,11 @@ export const AgentControlOverview = () => {
       <div className="bg-white rounded-lg p-6 mb-8">
         <div className="flex items-center mb-4">
           <Shield className="w-6 h-6 text-blue-600 mr-4" />
-          <h3 className="text-2xl font-bold text-gray-800">抽检机制简要说明</h3>
+          <h3 className="text-2xl font-bold text-gray-800">复审机制简要说明</h3>
         </div>
         
         <p className="text-gray-600 mb-6">
-          内控是一个新增的流程，作为最后一道防线，确保高风险订单和可疑操作得到充分审核，有效降低错误出款风险，提升整体风控质量。
+          复审是一个新增的流程，作为最后一道防线，确保高风险代理和可疑操作得到充分审核，有效降低错误佣金发放风险，提升整体风控质量。
         </p>
 
         <div className="flex items-center justify-center">
