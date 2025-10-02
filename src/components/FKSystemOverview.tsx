@@ -352,7 +352,7 @@ export const FKSystemOverview = () => {
           
           <div className="mb-6">
             <p className="text-gray-700 text-base leading-relaxed">
-              补充各种套利、作弊类的策略，优化绕过人工审核直接出的错误
+              针对各类套利与作弊行为的策略是风控的核心，旨在最大限度减少玩家绕过人工审核导致的漏洞和风险      
             </p>
           </div>
           
