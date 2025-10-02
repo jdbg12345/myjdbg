@@ -284,22 +284,30 @@ export const Direction1PersonnelCapability = () => {
                   
                   {/* 风控拒单率连线 */}
 <svg
-  className="absolute left-20 bottom-8 pointer-events-none"
-  width={480}  // 4间距 * 120px = 480
-  height={250} // 和你柱子高度一致
+  className="absolute left-20 right-12 bottom-8 pointer-events-none"
+  width="100%"
+  height="250"
+  viewBox="0 0 600 250"
+  preserveAspectRatio="none"
 >
   <polyline
     fill="none"
     stroke="#16a34a"
     strokeWidth="3"
     opacity="0.8"
-    points={`
-      0,212.2
-      120,190.3
-      240,169.1
-      360,98.1
-      480,0
-    `}
+    points={
+      [
+        2.57,
+        3.64,
+        5.57,
+        9.81,
+        17.03
+      ].map((rate, index) => {
+        const x = index * (600 / 4); // 宽度600，5个点，平均分布
+        const y = 250 - (rate / 17.03) * 250;
+        return `${x},${y}`;
+      }).join(' ')
+    }
   />
 </svg>
 
