@@ -601,7 +601,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">钱</span>
+                  <span className="text-white font-medium text-sm">1</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">中心钱包多钱</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-yellow-100 text-yellow-600 ml-4">开发中</span>
@@ -639,7 +639,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">场</span>
+                  <span className="text-white font-medium text-sm">2</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">场馆钱包多钱</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-yellow-100 text-yellow-600 ml-4">开发中</span>
@@ -677,7 +677,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">盈</span>
+                  <span className="text-white font-medium text-sm">3</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">盈利监控预警</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
@@ -715,7 +715,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">赔</span>
+                  <span className="text-white font-medium text-sm">4</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">赔率异常预警</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">方案中</span>
@@ -754,7 +754,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">睡</span>
+                  <span className="text-white font-medium text-sm">5</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">沉睡用户活跃</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-green-100 text-green-600 ml-4">试运行</span>
