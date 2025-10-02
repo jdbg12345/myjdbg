@@ -247,11 +247,11 @@ export const Direction1PersonnelCapability = () => {
                   
                   <div className="absolute left-20 right-12 h-full flex items-end justify-around pb-0">
                     {[
-                      { name: '1-100分', count: 140916, rate: 2.57 },
-                      { name: '101-200分', count: 89585, rate: 3.64 },
-                      { name: '201-300分', count: 19092, rate: 5.57 },
-                      { name: '301-400分', count: 3923, rate: 9.81 },
-                      { name: '401-及以上', count: 634, rate: 17.03 }
+                      { name: '1-100分（55.46%）', count: 140916, rate: 2.57 },
+                      { name: '101-200分（35.25%）', count: 89585, rate: 3.64 },
+                      { name: '201-300分（7.51%）', count: 19092, rate: 5.57 },
+                      { name: '301-400分（1.54%）', count: 3923, rate: 9.81 },
+                      { name: '401-及以上（0.25%）', count: 634, rate: 17.03 }
                     ].map((item, index) => (
                       <div key={index} className="flex flex-col items-center relative">
                         <div className="flex items-end space-x-1">
