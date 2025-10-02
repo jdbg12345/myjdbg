@@ -31,7 +31,7 @@ export const AgentControlOverview = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">系统工具支持少、核心流程线下完成，无法做到过程管控，存在较大佣金发放不合理，甚至内外串联情况<span className="text-blue-600">赔率差距过大、玩法错配、盘口不一致等</span>，直接影响平台利益</p>
+                <p className="text-gray-700 text-sm leading-relaxed">系统工具支持不足、核心流程依赖线下，缺乏有效管控<span className="text-blue-600">易导致佣金发放不合理或内外串联</span>，直接影响平台利益</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
