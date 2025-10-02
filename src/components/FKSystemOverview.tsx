@@ -37,7 +37,7 @@ export const FKSystemOverview = () => {
           </div>
         </div>
 
-        <div className="bg-gray-50 rounded p-0 border-1 border-gray-200">
+        <div className="bg-gray-50 rounded p-0 border-0 border-gray-200">
           <div className="flex justify-center p-4">
             <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[600px]">
               <defs>
