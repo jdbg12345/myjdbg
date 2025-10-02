@@ -220,9 +220,7 @@ export const Direction1PersonnelCapability = () => {
           </div>
 
             {/* 云盾分数分布图表 */}
-            <div className="mt-8">
-              <div className="relative h-96 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
-                 {/* 云盾分数分布图表 */}
+            
 <div className="mt-8">
   <div className="relative h-96 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
     <div className="mx-12 h-full relative">
