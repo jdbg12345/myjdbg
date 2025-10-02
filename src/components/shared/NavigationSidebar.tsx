@@ -46,6 +46,11 @@ const navigationItems: NavigationItem[] = [
       { id: 'internal-control-overview', title: '3.3 内控风控说明' },
       { id: 'agent-control-overview', title: '3.4 代理风控说明' }
     ]
+  },
+  {
+    id: 'org',
+    title: '4.B端问题汇总（待更新）',
+    icon: <Users className="w-4 h-4" />
   }
 ];
 
