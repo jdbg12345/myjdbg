@@ -176,6 +176,98 @@ export const AgentControlOverview = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">优化代理管理及运营能力，提升佣金ROI</p>
               </div>
             </div>
+
+             {/* 代理质量分析模型 */}
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">📊</span>
+          </div>
+          <h3 className="text-2xl font-bold text-gray-800">代理质量分析模型</h3>
+          <span className="text-gray-600 text-lg">基于多维度综合评估，自动化计算代理有效贡献度</span>
+        </div>
+
+        <div className="grid grid-cols-4 gap-6">
+          {/* 第一列：综合分数 */}
+          <div className="bg-blue-50 rounded p-6 border border-blue-200 flex flex-col justify-center items-center">
+            <div className="text-3xl font-semibold text-blue-600 mb-2">xx</div>
+            <div className="text-base font-semibold text-blue-700">综合分数</div>
+          </div>
+
+          {/* 第二列：盈利贡献 */}
+          <div className="space-y-3">
+            {/* 第一行：标题 */}
+            <div className="bg-blue-600 text-white p-4 rounded text-center">
+              <div className="text-base font-semibold">盈利贡献</div>
+              <div className="text-sm opacity-90">xx%权重</div>
+            </div>
+            {/* 第二行：子指标 */}
+            <div className="grid grid-cols-3 gap-2">
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">贡献净盈利</div>
+                <div className="text-xs text-gray-600 mt-1">xx%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">投入产出比</div>
+                <div className="text-xs text-gray-600 mt-1">xx%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">贡献持续度</div>
+                <div className="text-xs text-gray-600 mt-1">xx%</div>
+              </div>
+            </div>
+          </div>
+
+          {/* 第三列：下级质量 */}
+          <div className="space-y-3">
+            {/* 第一行：标题 */}
+            <div className="bg-blue-600 text-white p-4 rounded text-center">
+              <div className="text-base font-semibold">下级质量</div>
+              <div className="text-sm opacity-90">xx%权重</div>
+            </div>
+            {/* 第二行：子指标 */}
+            <div className="grid grid-cols-3 gap-2">
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">一次性会员</div>
+                <div className="text-xs text-gray-600 mt-1">-xx%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">贡献集中度</div>
+                <div className="text-xs text-gray-600 mt-1">-xx%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">新客贡献度</div>
+                <div className="text-xs text-gray-600 mt-1">xx%</div>
+              </div>
+            </div>
+          </div>
+
+          {/* 第四列：风险评估 */}
+          <div className="space-y-3">
+            {/* 第一行：标题 */}
+            <div className="bg-blue-600 text-white p-4 rounded text-center">
+              <div className="text-base font-semibold">风险评估</div>
+              <div className="text-sm opacity-90">-35%权重</div>
+            </div>
+            {/* 第二行：子指标 */}
+            <div className="grid grid-cols-3 gap-2">
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">多关联风险</div>
+                <div className="text-xs text-gray-600 mt-1">-xx%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">负盈利风险</div>
+                <div className="text-xs text-gray-600 mt-1">-xx%</div>
+              </div>
+              <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
+                <div className="text-sm font-semibold text-blue-700">下级风险度</div>
+                <div className="text-xs text-gray-600 mt-1">-xx%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            
           </div>
         </div>
       
