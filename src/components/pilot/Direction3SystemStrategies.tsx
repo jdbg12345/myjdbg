@@ -3,16 +3,6 @@ import React from 'react';
 export const Direction3SystemStrategies = () => {
   return (
     <div className="bg-white rounded-xl p-8 mb-8 border border-blue-200 shadow-md">
-      <div className="flex items-center justify-between mb-8">
-        <div className="flex items-center space-x-3">
-          <div className="w-16 h-10 bg-blue-600 rounded flex items-center justify-center">
-            <span className="text-white font-medium text-sm">2</span>
-          </div>
-          <h2 className="text-2xl font-semibold text-gray-800"> 从系统审核策略、风控工具合集、极端异常预防等三个维度进行优化</h2>
-        </div>
-    
-      </div>
-
       {/* 系统审核策略 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
