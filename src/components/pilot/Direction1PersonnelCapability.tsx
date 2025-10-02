@@ -277,7 +277,7 @@ export const Direction1PersonnelCapability = () => {
                     {[
                       { name: '外包一审', before: 1200, after: 1050, beforeRate: 4.0, afterRate: 3.0 },
                       { name: '远程一审', before: 850, after: 900, beforeRate: 3.5, afterRate: 2.8 },
-                      { name: '总部二审', before: 520, after: 550, beforeRate: 2.2, afterRate: 1.5 }
+                      { name: '总部一审', before: 25161, after: 135259, beforeRate: 0.63, afterRate: 0.51 }
                     ].map((item, index) => (
                       <div key={index} className="flex flex-col items-center relative">
                         <div className="flex items-end space-x-1">
