@@ -245,7 +245,6 @@ export const Direction1PersonnelCapability = () => {
                       { name: '201-300分', count: 19092, rate: 5.57 },
                       { name: '301-400分', count: 3923, rate: 9.81 },
                       { name: '401-及以上', count: 634, rate: 17.03 }
-                      
                     ].map((item, index) => (
                       <div key={index} className="flex flex-col items-center relative">
                         <div className="flex items-end space-x-1">
