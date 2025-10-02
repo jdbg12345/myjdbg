@@ -4,15 +4,8 @@ export const Direction1PersonnelCapability = () => {
   return (
     <>
       <div className="bg-white rounded-xl p-8 mb-8 border border-blue-200 shadow-md">
-                      <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center space-x-3">
-            <div className="w-16 h-10 bg-blue-600 rounded flex items-center justify-center">
-              <span className="text-white font-medium text-sm">方向1</span>
-            </div>
-            <h2 className="text-2xl font-semibold text-gray-800">从派单策略改变、审核流程优化、风险分数调优等三个维度进行优化</h2>
-          </div>
-        </div>
-        {/* 云盾分数分布图表 */}
+          
+     {/* 云盾分数分布图表 */}
         <div className="mb-12">
           <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
