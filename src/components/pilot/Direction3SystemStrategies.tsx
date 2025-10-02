@@ -546,7 +546,7 @@ export const Direction3SystemStrategies = () => {
 
         <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
-             <h3 className="text-xl font-semibold text-gray-800">风控工具集合</h3>
+             <h3 className="text-xl font-semibold text-gray-800">极端异常预防</h3>
            </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -572,17 +572,7 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
           </div>
-        </div>
-        
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-            <span className="text-white font-medium text-sm">3</span>
-          </div>
-          <h3 className="text-xl font-semibold text-gray-800">极端异常预防</h3>
-        </div>
-        <p className="text-gray-700 text-base leading-relaxed mb-8">
-          针对中心钱包、场馆钱包等多钱、沉睡用户活跃提款、场馆杀率异常等场景，建立预警监控机制，及时发现并响应潜在风险；
-        </p>
+        </div>   
         
         {/* 中心钱包多钱 */}
         <div className="mb-12">
