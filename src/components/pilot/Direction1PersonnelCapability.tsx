@@ -340,7 +340,8 @@ export const Direction1PersonnelCapability = () => {
 
   <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025-04-01 ~ 2025-06-30</div>
         
-             
+                </div>
+       
           </div>
         </div>
 
