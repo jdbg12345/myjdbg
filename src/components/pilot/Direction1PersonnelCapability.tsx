@@ -217,10 +217,10 @@ export const Direction1PersonnelCapability = () => {
                          
                 <div className="mx-12 h-full relative">
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
+                    <span>160000</span>
                     <span>120000</span>
-                    <span>90000</span>
-                    <span>60000</span>
-                    <span>30000</span>
+                    <span>80000</span>
+                    <span>40000</span>
                     <span>0</span>
                   </div>
                   
