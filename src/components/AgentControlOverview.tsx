@@ -66,7 +66,7 @@ export const AgentControlOverview = () => {
             {/* 指定人员 */}
             <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
               <div className="text-gray-700 font-semibold mb-2">指定人员</div>
-              <div className="text-sm text-gray-600">如可疑人</div>
+              <div className="text-sm text-gray-600">如可疑人员、强制领单</div>
             </div>
 
             {/* 箭头 */}
