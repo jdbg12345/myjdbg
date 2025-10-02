@@ -244,7 +244,7 @@ export const AgentControlOverview = () => {
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-sm text-gray-600">投入产出比</span>
-                <span className="font-semibold text-gray-800">—</span>
+                <span className="font-semibold text-gray-800">120%</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-sm text-gray-600">贡献持续度</span>
@@ -264,7 +264,7 @@ export const AgentControlOverview = () => {
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-sm text-gray-600">新客贡献度</span>
-                <span className="font-semibold text-gray-800">—</span>
+                <span className="font-semibold text-gray-800">70%</span>
               </div>
             </div>
 
