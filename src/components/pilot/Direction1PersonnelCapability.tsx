@@ -56,7 +56,7 @@ export const Direction1PersonnelCapability = () => {
 
               <div className="bg-white border-l-4 border-green-500 p-3 rounded">
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-800">2、未来价值：</span>随着策略和参数的持续优化，评分将更精准可靠，可作为关键指标，逐步用于驱动规则引擎，<span className="font-bold text-green-600">减少人工介入，实现更高效的风控自动化</span>。
+                  <span className="font-semibold text-gray-800">2、未来价值：</span>随着策略和参数的持续优化，评分将更精准可靠，<span className="font-bold text-green-600">可作为关键指标，用于驱动规则引擎，减少人工介入，实现更高效的风控自动化</span>。
                 </p>
               </div>
             </div>
