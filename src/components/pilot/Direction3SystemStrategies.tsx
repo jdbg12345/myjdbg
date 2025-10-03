@@ -537,26 +537,6 @@ export const Direction3SystemStrategies = () => {
              <h3 className="text-xl font-semibold text-gray-800">极端异常预防</h3>
            </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">+1</div>
-              <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">一键查询</span>：无需经验丰富，只需要一键查询结果</h4>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">+2</div>
-              <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">实时返回</span>：基于套利特征构建兜底式组合识别策略</h4>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">+3</div>
-              <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">跨多站点</span>：打通Y/B跨站点及B/C端系统链路</h4>
-              </div>
-            </div>
-          </div>
         </div>   
         
         {/* 中心钱包多钱 */}
