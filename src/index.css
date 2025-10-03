@@ -60,9 +60,13 @@
     height: auto !important;
   }
 
-  /* Ensure navigation sidebar doesn't interfere */
-  .xl\:block {
-    display: none !important;
+  /* Hide smart navigation in print but keep breadcrumb */
+  .print\:relative {
+    position: relative !important;
+  }
+
+  .print\:bg-white {
+    background-color: white !important;
   }
 
   /* Adjust margins for print */

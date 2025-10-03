@@ -97,7 +97,7 @@ export const Direction1PersonnelCapability = () => {
       </div>
 
       {/* 柱状体和绿点 */}
-      <div className="absolute left-12 right-12 bottom-0 top-0 flex items-end justify-around">
+      <div className="absolute left-12 right-12 bottom-0 top-0">
         {[
           { name: "1-100分（55.46%）", count: 140916, rate: 2.57 },
           { name: "101-200分（35.25%）", count: 89585, rate: 3.64 },
@@ -107,30 +107,34 @@ export const Direction1PersonnelCapability = () => {
         ].map((item, index) => {
           const maxCount = 160000;
           const maxRate = 20;
-
+          const totalBars = 5;
           const chartHeight = 320;
+
           const barHeight = (item.count / maxCount) * chartHeight;
           const greenBottom = (item.rate / maxRate) * chartHeight;
 
+          const barWidth = 80;
+          const centerX = ((index + 0.5) / totalBars) * 100;
+
           return (
-            <div
-              key={index}
-              className="flex flex-col items-center relative"
-              style={{ width: '80px' }}
-            >
-              <div className="flex items-end justify-center w-full">
-                <div
-                  className="bg-blue-500 rounded-t"
-                  style={{ height: `${barHeight}px`, width: '80px' }}
-                ></div>
-              </div>
+            <div key={index}>
+              {/* 柱状图 */}
+              <div
+                className="absolute bg-blue-500 rounded-t"
+                style={{
+                  height: `${barHeight}px`,
+                  width: `${barWidth}px`,
+                  bottom: 0,
+                  left: `calc(${centerX}% - ${barWidth / 2}px)`
+                }}
+              ></div>
 
               {/* 风控拒单率点 */}
               <div
                 className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white z-10"
                 style={{
                   bottom: `${greenBottom}px`,
-                  left: "50%",
+                  left: `${centerX}%`,
                   transform: "translateX(-50%)",
                 }}
               >
@@ -173,22 +177,33 @@ export const Direction1PersonnelCapability = () => {
     </div>
 
     {/* X轴标签（图表外） */}
-    <div className="mx-12 mt-3">
-      <div className="flex items-start justify-around">
-        {[
-          "1-100分\n(55.46%)",
-          "101-200分\n(35.25%)",
-          "201-300分\n(7.51%)",
-          "301-400分\n(1.54%)",
-          "401-及以上\n(0.25%)",
-        ].map((label, index) => (
-          <div key={index} className="text-center" style={{ width: '80px' }}>
+    <div className="mx-12 mt-3 relative" style={{ height: '40px' }}>
+      {[
+        "1-100分\n(55.46%)",
+        "101-200分\n(35.25%)",
+        "201-300分\n(7.51%)",
+        "301-400分\n(1.54%)",
+        "401-及以上\n(0.25%)",
+      ].map((label, index) => {
+        const totalBars = 5;
+        const centerX = ((index + 0.5) / totalBars) * 100;
+
+        return (
+          <div
+            key={index}
+            className="absolute text-center"
+            style={{
+              left: `${centerX}%`,
+              transform: 'translateX(-50%)',
+              width: '80px'
+            }}
+          >
             <div className="text-xs text-gray-800 font-medium whitespace-pre-line leading-tight">
               {label}
             </div>
           </div>
-        ))}
-      </div>
+        );
+      })}
     </div>
   </div>
 
@@ -325,7 +340,7 @@ export const Direction1PersonnelCapability = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-12 right-12 bottom-0 top-0 flex items-end justify-around">
+                  <div className="absolute left-12 right-12 bottom-0 top-0">
                     {[
                       { name: '外包一审', before: 66423, after: 24511, beforeRate: 0.99, afterRate: 0.92 },
                       { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.76, afterRate: 0.59 },
@@ -334,38 +349,65 @@ export const Direction1PersonnelCapability = () => {
                     ].map((item, index) => {
                       const maxCount = 160000;
                       const maxRate = 2;
+                      const totalGroups = 4;
                       const chartHeight = 320;
                       const barHeightBefore = (item.before / maxCount) * chartHeight;
                       const barHeightAfter = (item.after / maxCount) * chartHeight;
                       const rateBottomBefore = (item.beforeRate / maxRate) * chartHeight;
                       const rateBottomAfter = (item.afterRate / maxRate) * chartHeight;
 
-                      return (
-                      <div key={index} className="flex flex-col items-center relative" style={{ width: '160px' }}>
-                        <div className="flex items-end justify-center space-x-2">
-                          <div
-                            className="bg-blue-500 rounded-t"
-                            style={{ height: `${barHeightBefore}px`, width: '40px' }}
-                          ></div>
-                          <div
-                            className="bg-blue-400 rounded-t"
-                            style={{ height: `${barHeightAfter}px`, width: '40px' }}
-                          ></div>
-                        </div>
+                      const barWidth = 40;
+                      const groupCenterX = ((index + 0.5) / totalGroups) * 100;
+                      const barSpacing = 2;
+                      const beforeBarX = `calc(${groupCenterX}% - ${barWidth + barSpacing / 2}px)`;
+                      const afterBarX = `calc(${groupCenterX}% + ${barSpacing / 2}px)`;
 
-                        {/* 问题率点 */}
+                      return (
+                      <div key={index}>
+                        {/* 调整前柱状图 */}
+                        <div
+                          className="absolute bg-blue-500 rounded-t"
+                          style={{
+                            height: `${barHeightBefore}px`,
+                            width: `${barWidth}px`,
+                            bottom: 0,
+                            left: beforeBarX
+                          }}
+                        ></div>
+
+                        {/* 调整后柱状图 */}
+                        <div
+                          className="absolute bg-blue-400 rounded-t"
+                          style={{
+                            height: `${barHeightAfter}px`,
+                            width: `${barWidth}px`,
+                            bottom: 0,
+                            left: afterBarX
+                          }}
+                        ></div>
+
+                        {/* 调整前错误率点 */}
                         <div
                           className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white z-10"
-                          style={{bottom: `${rateBottomBefore}px`, left: '50%', marginLeft: '-21px'}}
+                          style={{
+                            bottom: `${rateBottomBefore}px`,
+                            left: `calc(${groupCenterX}% - ${barWidth / 2 + barSpacing / 2}px)`,
+                            transform: 'translateX(-50%)'
+                          }}
                         >
                           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
                             {item.beforeRate}%
                           </div>
                         </div>
 
+                        {/* 调整后错误率点 */}
                         <div
                           className="absolute w-4 h-4 bg-blue-400 rounded-full border-2 border-white z-10"
-                          style={{bottom: `${rateBottomAfter}px`, left: '50%', marginLeft: '21px'}}
+                          style={{
+                            bottom: `${rateBottomAfter}px`,
+                            left: `calc(${groupCenterX}% + ${barWidth / 2 + barSpacing / 2}px)`,
+                            transform: 'translateX(-50%)'
+                          }}
                         >
                           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
                             {item.afterRate}%
@@ -397,20 +439,31 @@ export const Direction1PersonnelCapability = () => {
                 </div>
 
                 {/* X轴标签（图表外） */}
-                <div className="mx-12 mt-3">
-                  <div className="flex items-start justify-around">
-                    {[
-                      { name: '外包一审', before: 66423, after: 24511 },
-                      { name: '远程一审', before: 82773, after: 29431 },
-                      { name: '总部一审', before: 25161, after: 135259 },
-                      { name: '总部二审', before: 14472, after: 145628 }
-                    ].map((item, index) => (
-                      <div key={index} className="text-center" style={{ width: '160px' }}>
+                <div className="mx-12 mt-3 relative" style={{ height: '45px' }}>
+                  {[
+                    { name: '外包一审', before: 66423, after: 24511 },
+                    { name: '远程一审', before: 82773, after: 29431 },
+                    { name: '总部一审', before: 25161, after: 135259 },
+                    { name: '总部二审', before: 14472, after: 14628 }
+                  ].map((item, index) => {
+                    const totalGroups = 4;
+                    const groupCenterX = ((index + 0.5) / totalGroups) * 100;
+
+                    return (
+                      <div
+                        key={index}
+                        className="absolute text-center"
+                        style={{
+                          left: `${groupCenterX}%`,
+                          transform: 'translateX(-50%)',
+                          width: '160px'
+                        }}
+                      >
                         <div className="text-sm text-gray-800 font-medium whitespace-nowrap">{item.name}</div>
                         <div className="text-xs text-gray-600 mt-1">{item.before}/{item.after}</div>
                       </div>
-                    ))}
-                  </div>
+                    );
+                  })}
                 </div>
               </div>
                             
