@@ -25,8 +25,7 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-sm text-gray-600">如玩家/代理的关联、红利金额/比例、流水比例、存款比例等</p>
               </div>
             </div>
-          
-            </div>
+       
           </div>
         </div>
     
