@@ -43,10 +43,7 @@ export const Direction3SystemStrategies = () => {
               <div className="grid grid-cols-2 gap-6">
                 {/* 第一个图表：不含PG */}
                 <div className="relative bg-blue-50 rounded-lg p-6 border border-blue-200">
-                  <div className="text-center mb-4">
-                    <h5 className="text-sm font-semibold text-gray-800">不含PG</h5>
-                  </div>
-
+                  
                   {/* 图表区域 */}
                   <div className="mx-8 h-64 relative">
                     <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-600">
@@ -90,16 +87,13 @@ export const Direction3SystemStrategies = () => {
 
                   {/* X轴标签（图表外） */}
                   <div className="mx-8 mt-3 text-center">
-                    <div className="text-sm text-gray-600">100单</div>
+                    <div className="text-sm text-gray-600">100单（不含PG）</div>
                   </div>
                 </div>
 
                 {/* 第二个图表：包含PG */}
                 <div className="relative bg-blue-50 rounded-lg p-6 border border-blue-200">
-                  <div className="text-center mb-4">
-                    <h5 className="text-sm font-semibold text-gray-800">包含PG</h5>
-                  </div>
-
+                
                   {/* 图表区域 */}
                   <div className="mx-8 h-64 relative">
                     <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-600">
@@ -250,7 +244,7 @@ export const Direction3SystemStrategies = () => {
 
                 {/* X轴标签（图表外） */}
                 <div className="mx-12 mt-3 text-center">
-                  <div className="text-sm text-gray-600">100</div>
+                  <div className="text-sm text-gray-600">100（包含PG）</div>
                 </div>
               </div>
                             
