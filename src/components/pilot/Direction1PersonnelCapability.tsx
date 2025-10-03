@@ -3,7 +3,7 @@ import React from 'react';
 export const Direction1PersonnelCapability = () => {
   return (
     <>
-      <div className="bg-white rounded-xl p-8 mb-8 border border-blue-200 shadow-md">
+      <div className="bg-white rounded-xl p-8 mb-8">
           
      {/* 云盾分数分布图表 */}
         <div className="mb-12">
