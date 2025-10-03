@@ -312,7 +312,7 @@ export const Direction3SystemStrategies = () => {
              <h3 className="text-xl font-semibold text-gray-800">风控工具集合</h3>
            </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">1</div>
               <div>
