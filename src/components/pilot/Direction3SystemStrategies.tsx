@@ -216,7 +216,7 @@ export const Direction3SystemStrategies = () => {
             <div className="space-y-3">
               <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-800">1、整体表现：</span>现有模型已具备初步拦截能力；随机样本<span className="font-bold text-blue-600">100</span>单中，<span className="font-bold text-green-600">52</span>单经人工复核确有问题，其中<span className="font-bold text-red-600">9</span>单拒付、<span className="font-bold text-yellow-600">43</span>单放行，但存在警告、扣款出款、出款禁用等不同程度处理。
+                  <span className="font-semibold text-gray-800">1、整体表现：</span>现有模型已具备初步拦截能力；随机样本<span className="font-bold text-blue-600">100</span>单中，<span className="font-bold text-green-600">52</span>单经人工复核确有问题，其中<span className="font-bold text-red-600">9</span>单拒付、<span className="font-bold text-yellow-600">43</span>单虽放行，存在警告、扣款出款、出款禁用等不同程度处理。
                 </p>
               </div>
 
