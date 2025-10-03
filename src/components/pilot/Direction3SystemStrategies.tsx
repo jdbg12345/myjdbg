@@ -9,7 +9,7 @@ export const Direction3SystemStrategies = () => {
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">1.1</span>
+                <span className="text-white font-medium text-sm">1</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">电子策略</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
@@ -169,7 +169,7 @@ export const Direction3SystemStrategies = () => {
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">1.2</span>
+                <span className="text-white font-medium text-sm">2</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">真人策略</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
@@ -275,7 +275,7 @@ export const Direction3SystemStrategies = () => {
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">1.3</span>
+                <span className="text-white font-medium text-sm">3</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">体育策略</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">开发中</span>
@@ -303,7 +303,7 @@ export const Direction3SystemStrategies = () => {
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">1.4</span>
+                <span className="text-white font-medium text-sm">4</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">棋牌策略</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">开发中</span>
@@ -330,7 +330,7 @@ export const Direction3SystemStrategies = () => {
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">1.5</span>
+                <span className="text-white font-medium text-sm">5</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">彩票策略</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">开发中</span>
@@ -361,7 +361,7 @@ export const Direction3SystemStrategies = () => {
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">2.1</span>
+                <span className="text-white font-medium text-sm">1</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">关联下注工具</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
@@ -410,7 +410,7 @@ export const Direction3SystemStrategies = () => {
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-medium text-sm">2.2</span>
+                <span className="text-white font-medium text-sm">2</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">体育打水工具</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
@@ -456,7 +456,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">2.3</span>
+                  <span className="text-white font-medium text-sm">3</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">提款流水工具</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">待开发</span>
