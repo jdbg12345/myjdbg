@@ -248,7 +248,7 @@ export const Direction1PersonnelCapability = () => {
                <p className="text-gray-700 text-sm leading-relaxed">2、与此同时，总部一审的订单量由 <span className="font-bold">25,161</span> 单增长至 <span className="font-bold">135,259</span> 单，提升了 <span className="font-bold text-green-600">437.57%</span>；其审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.51%</span>，下降了 <span className="font-bold text-green-600">19.05%</span>，审核质量明显提升，符合预期。
 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
-3、进一步分析发现，尽管外包与远程订单量大幅减少，且审核难度降低，其错误率却在分别提升了<span className="font-bold text-red-600">43.71%、36.40%</span>，不符合预期；反映出其在能力及态度方面存在较大短板。<span className="text-blue-600">后续加强人员培训力度、优化考核淘汰机制，并持续强化过程管控，目标逐步降低比重，直到可随时去掉</span></p>
+3、进一步分析发现，尽管外包与远程订单量大幅减少，且审核难度降低，其错误率却在分别提升了<span className="font-bold text-red-600">43.71%、36.40%</span>，不符合预期；反映出其在能力及态度方面存在较大短板。<span className="text-red-600">后续加强人员培训力度、优化考核淘汰机制，并持续强化过程管控，目标逐步降低比重，直到可随时去掉</span></p>
           </div>
             
             {/* 图表模块 */}
