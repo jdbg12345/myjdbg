@@ -64,9 +64,10 @@ export const Direction3SystemStrategies = () => {
             
             {/* 电子策略图表 */}
             <div className="mt-8">
-              <div className="relative h-80 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
-                
-                <div className="mx-12 h-full relative">
+              <div className="relative mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
+
+                {/* 图表区域 */}
+                <div className="mx-12 h-80 relative">
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
                     <span>500</span>
                     <span>375</span>
@@ -89,12 +90,12 @@ export const Direction3SystemStrategies = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-0">
+                  <div className="absolute left-12 right-12 bottom-0 top-0 flex items-end justify-center">
                     <div className="flex flex-col items-center relative">
                       <div className="w-20 bg-blue-500 rounded-t" style={{ height: '200px' }}></div>
-                      
+
                       {/* 准确率数据点 */}
-                      <div 
+                      <div
                         className="absolute w-5 h-5 bg-blue-600 rounded-full border-2 border-white"
                         style={{top: `${100 - 25 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
                       >
@@ -102,12 +103,13 @@ export const Direction3SystemStrategies = () => {
                           25%
                         </div>
                       </div>
-                      
-                      <div className="text-center mt-2">
-                        <div className="text-sm text-gray-600">400单 (25%)</div>
-                      </div>
                     </div>
                   </div>
+                </div>
+
+                {/* X轴标签（图表外） */}
+                <div className="mx-12 mt-3 text-center">
+                  <div className="text-sm text-gray-600">400单 (25%)</div>
                 </div>
               </div>
                             
@@ -166,9 +168,10 @@ export const Direction3SystemStrategies = () => {
             
             {/* 真人策略图表 */}
             <div className="mt-8">
-              <div className="relative h-80 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
-                          
-                <div className="mx-12 h-full relative">
+              <div className="relative mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
+
+                {/* 图表区域 */}
+                <div className="mx-12 h-80 relative">
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
                     <span>150</span>
                     <span>100</span>
@@ -189,25 +192,26 @@ export const Direction3SystemStrategies = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-0">
+                  <div className="absolute left-12 right-12 bottom-0 top-0 flex items-end justify-center">
                     <div className="flex flex-col items-center relative">
-                      <div className="w-20 bg-blue-500 rounded-t" style={{ height: `${(100 / 150) * 250}px` }}></div>
-                      
+                      <div className="w-20 bg-blue-500 rounded-t" style={{ height: `${(100 / 150) * 320}px` }}></div>
+
                       {/* 准确率数据点 */}
-                      <div 
+                      <div
                         className="absolute w-5 h-5 bg-blue-600 rounded-full border-2 border-white"
-                        style={{bottom: `${(52 / 75) * 250}px`, left: '50%', transform: 'translateX(-50%)'}}
+                        style={{bottom: `${(52 / 75) * 320}px`, left: '50%', transform: 'translateX(-50%)'}}
                       >
                         <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded text-xs font-medium whitespace-nowrap">
                           52%
                         </div>
                       </div>
-                      
-                      <div className="text-center mt-2">
-                        <div className="text-sm text-gray-600">随机抽取100单</div>
-                      </div>
                     </div>
                   </div>
+                </div>
+
+                {/* X轴标签（图表外） */}
+                <div className="mx-12 mt-3 text-center">
+                  <div className="text-sm text-gray-600">随机抽取100单</div>
                 </div>
               </div>
                             
@@ -363,7 +367,7 @@ export const Direction3SystemStrategies = () => {
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点    </span>"关联下注查询\"工具，支持基于核心关联特征<span className="text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
+                  提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点    </span>"关联下注查询\"工具，支持基于核心关联特征<span className=\"text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
               </div>
               
               <div className="bg-blue-50 rounded-lg p-6">

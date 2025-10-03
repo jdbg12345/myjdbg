@@ -3,10 +3,9 @@ import React from 'react';
 export const Direction1PersonnelCapability = () => {
   return (
     <>
-      <div className="bg-white rounded-xl p-8 mb-8">
           
      {/* 云盾分数分布图表 */}
-        <div className="mb-12">
+        <div className="mb-8">
           <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -104,8 +103,7 @@ export const Direction1PersonnelCapability = () => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center relative"
-              style={{ width: '100px' }}
+              className="flex flex-col items-center relative flex-1"
             >
               <div className="w-full flex items-end">
                 <div className="relative w-full">
@@ -175,7 +173,7 @@ export const Direction1PersonnelCapability = () => {
           "301-400分\n(1.54%)",
           "401-及以上\n(0.25%)",
         ].map((label, index) => (
-          <div key={index} className="text-center" style={{ width: '100px' }}>
+          <div key={index} className="text-center flex-1">
             <div className="text-xs text-gray-800 font-medium whitespace-pre-line leading-tight">
               {label}
             </div>
@@ -371,7 +369,7 @@ export const Direction1PersonnelCapability = () => {
                       { name: '远程一审', before: 82773, after: 29431 },
                       { name: '总部一审', before: 25161, after: 135259 }
                     ].map((item, index) => (
-                      <div key={index} className="text-center">
+                      <div key={index} className="text-center flex-1">
                         <div className="text-sm text-gray-800 font-medium whitespace-nowrap">{item.name}</div>
                         <div className="text-xs text-gray-600 mt-1">{item.before}/{item.after}</div>
                       </div>
@@ -444,7 +442,6 @@ export const Direction1PersonnelCapability = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 };
