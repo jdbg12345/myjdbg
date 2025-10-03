@@ -255,23 +255,45 @@ export const Direction1PersonnelCapability = () => {
             </div>
 
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
-              <h4 className="font-medium text-green-700 mb-3 flex items-center">
+              <h4 className="font-medium text-green-700 mb-4 flex items-center">
                 <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
                   洞察分析
               </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">通过派单机制的调整，整体实现了外包和远程等低效渠道订单量的显著压缩，整体审核质量提了xx，符合预期；<span className="text-blue-600">后续加强人员培训、优化淘汰机制，强化过程管控，目标逐步降低比重，直到可随时剔除</span></p>
 
-                          <p className="text-gray-700 text-sm leading-relaxed">1、外包一审的订单量由 <span className="font-bold">66,423</span> 单降至 <span className="font-bold">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；其审核错误率由 <span className="font-bold">0.99%</span> 降至 <span className="font-bold">0.92%</span>，下降了 <span className="font-bold text-green-600">7.21%</span>，审核质量小幅提升，符合预期。
-</p>
+              <div className="space-y-3">
+                <div className="bg-white border-l-4 border-green-500 p-3 rounded">
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <span className="font-semibold text-gray-800">整体效果：</span>通过派单机制的调整，整体实现了外包和远程等低效渠道订单量的<span className="font-bold text-green-600">显著压缩</span>，整体审核质量<span className="font-bold text-green-600">明显提升</span>，符合预期。
+                  </p>
+                  <p className="text-sm text-blue-700 font-medium mt-2">
+                    → 后续加强人员培训、优化淘汰机制，强化过程管控，目标逐步降低比重，直到可随时剔除。
+                  </p>
+                </div>
 
-                          <p className="text-gray-700 text-sm leading-relaxed">2、远程一审的订单量由 <span className="font-bold">82,733</span> 单降至 <span className="font-bold">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>；其审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.30%</span>，下降了 <span className="font-bold text-green-600">23.14%</span>，审核质量明显提升，符合预期。
-</p>
+                <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <span className="font-semibold text-gray-800">1、外包一审：</span>订单量由 <span className="font-bold text-blue-600">66,423</span> 单降至 <span className="font-bold text-blue-600">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；审核错误率由 <span className="font-bold">0.99%</span> 降至 <span className="font-bold">0.92%</span>，下降了 <span className="font-bold text-green-600">7.21%</span>，审核质量小幅提升，符合预期。
+                  </p>
+                </div>
 
-               <p className="text-gray-700 text-sm leading-relaxed">3、总部一审的订单量由 <span className="font-bold">25,161</span> 单增长至 <span className="font-bold">135,259</span> 单，提升了 <span className="font-bold text-green-600">1.08%</span>；其审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.30%</span>，下降了 <span className="font-bold text-green-600">51.73%</span>，审核质量显著提升，符合预期。
-</p>
-                     <p className="text-gray-700 text-sm leading-relaxed">4、总部二审的订单量由 <span className="font-bold">14,472</span> 单增长至 <span className="font-bold">14,628</span> 单，提升了 <span className="font-bold text-green-600">437.57%</span>；其审核错误率由 <span className="font-bold">0.13%</span> 降至 <span className="font-bold">0.12%</span>，下降了 <span className="font-bold text-green-600">6.27%</span>，审核质量小幅提升，符合预期。
-</p>
-  
+                <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <span className="font-semibold text-gray-800">2、远程一审：</span>订单量由 <span className="font-bold text-blue-600">82,733</span> 单降至 <span className="font-bold text-blue-600">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>；审核错误率由 <span className="font-bold">0.76%</span> 降至 <span className="font-bold">0.59%</span>，下降了 <span className="font-bold text-green-600">22.37%</span>，审核质量明显提升，符合预期。
+                  </p>
+                </div>
+
+                <div className="bg-white border-l-4 border-green-500 p-3 rounded">
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <span className="font-semibold text-gray-800">3、总部一审：</span>订单量由 <span className="font-bold text-blue-600">25,161</span> 单增长至 <span className="font-bold text-blue-600">135,259</span> 单，提升了 <span className="font-bold text-green-600">437.57%</span>；审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.30%</span>，下降了 <span className="font-bold text-green-600">52.38%</span>，审核质量显著提升，符合预期。
+                  </p>
+                </div>
+
+                <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <span className="font-semibold text-gray-800">4、总部二审：</span>订单量由 <span className="font-bold text-blue-600">14,472</span> 单增长至 <span className="font-bold text-blue-600">14,628</span> 单，提升了 <span className="font-bold text-green-600">1.08%</span>；审核错误率由 <span className="font-bold">0.13%</span> 降至 <span className="font-bold">0.12%</span>，下降了 <span className="font-bold text-green-600">7.69%</span>，审核质量小幅提升，符合预期。
+                  </p>
+                </div>
+              </div>
           </div>
             
             {/* 图表模块 */}
@@ -303,7 +325,7 @@ export const Direction1PersonnelCapability = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-20 right-12 bottom-0 top-0 flex items-end justify-around">
+                  <div className="absolute left-12 right-12 bottom-0 top-0 flex items-end justify-around">
                     {[
                       { name: '外包一审', before: 66423, after: 24511, beforeRate: 0.99, afterRate: 0.92 },
                       { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.76, afterRate: 0.59 },
@@ -355,7 +377,7 @@ export const Direction1PersonnelCapability = () => {
                   </div>
 
                   {/* 问题率连线 */}
-                  <svg className="absolute left-20 right-12 top-0 bottom-0 pointer-events-none" width="100%" height="100%">
+                  <svg className="absolute left-12 right-12 top-0 bottom-0 pointer-events-none z-20" width="100%" height="100%">
                     <path
                       d={`M 16.67% ${100 - (0.99 / 2) * 100}% L 50% ${100 - (0.76 / 2) * 100}% L 83.33% ${100 - (0.63 / 2) * 100}%`}
                       stroke="#3B82F6"
