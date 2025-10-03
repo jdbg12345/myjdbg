@@ -363,7 +363,7 @@ export const Direction1PersonnelCapability = () => {
                     {[
                       { name: '外包一审', before: 66423, after: 24511 },
                       { name: '远程一审', before: 82773, after: 29431 },
-                      { name: '总部一审', before: 25161, after: 135259 }
+                      { name: '总部一审', before: 25161, after: 135259 },
                       { name: '总部二审', before: 14472, after: 145628 }
                     ].map((item, index) => (
                       <div key={index} className="text-center" style={{ width: '160px' }}>
