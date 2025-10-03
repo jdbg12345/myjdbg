@@ -3,38 +3,7 @@ import React from 'react';
 export const Direction3SystemStrategies = () => {
   return (
     <>
-      {/* 系统审核策略 */}
-      <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
-          <div className="bg-blue-50 rounded-lg p-8 mb-6 border border-blue-200">
-           <div className="flex items-center space-x-3 mb-6">
-             <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
-           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">1</div>
-              <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">精准策略</span>：按游戏类型提取并建模典型套利特征</h4>
-                <p className="text-sm text-gray-600">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">2</div>
-              <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">防御策略</span>：基于套利特征构建兜底式组合识别策略</h4>
-                <p className="text-sm text-gray-600">如玩家/代理的关联、红利金额/比例、流水比例、存款比例等</p>
-              </div>
-            </div>
-       
-          </div>
-          </div>
-        </div>
-      </div>
-
-                   <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
-
-
+      <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
       {/* 1. 电子策略 */}
       <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
@@ -383,32 +352,9 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
 
-      {/* 风控工具集合 */}
-      <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
-          <div className="bg-blue-50 rounded-lg p-8 mb-6 border border-blue-200">
-           <div className="flex items-center space-x-3 mb-6">
-             <h3 className="text-xl font-semibold text-gray-800">风控工具集合</h3>
-           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">1</div>
-              <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">一键查询</span>：有无经验都可以，只需要查询结果即可</h4>
-              </div>
-            </div>
-           
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">2</div>
-              <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">跨多站点</span>：打通Y/B跨站点关联特征及下注数据</h4>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
+      {/* 1. 风控工具集合 */}
+
+      <h3 className="text-xl font-semibold text-gray-800">风控工具集合</h3>
 
       {/* 1. 关联下注工具 */}
       <div className="mb-8">
