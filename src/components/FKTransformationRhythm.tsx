@@ -205,7 +205,7 @@ export const FKTransformationRhythm = () => {
                   <span className="text-blue-600 font-bold text-lg">2</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">提供丰富的风控工具库</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-3">提供标准化的风控工具</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
                     将风控中的高频操作、费时费力的场景，通过提供关联工具、对打工具、流水工具等工具集，实现技能熟练度提升，提高效率和准确性，同时帮助新人快速上手。
                   </p>
