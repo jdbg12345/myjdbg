@@ -65,7 +65,7 @@ export const AgentControlOverview = () => {
             {/* 高危代理 */}
             <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
               <div className="text-gray-700 font-semibold mb-2">如:综合分数低代理</div>
-              <div className="text-sm text-gray-600">打分低于xx分，但是得到高扶持 </div>
+              <div className="text-sm text-gray-600">综合打分低于xx分，但是得到高扶持 </div>
             </div>
 
             {/* 箭头 */}
