@@ -186,7 +186,7 @@ export const AgentControlOverview = () => {
             <span className="text-white font-bold text-sm">📊</span>
           </div>
           <h3 className="text-2xl font-bold text-gray-800">代理质量分析模型示意</h3>
-          <span className="text-gray-600 text-lg">通过多维数据自动评估代理贡献，快速区分优质与低效代理，实现精准监控与佣金管理</span>
+          <span className="text-gray-600 text-lg">多维数据自动评估代理质量，快速区分优质与低效代理，实现精准监控与佣金管理</span>
         </div>
 
         <div className="grid grid-cols-4 gap-6">
