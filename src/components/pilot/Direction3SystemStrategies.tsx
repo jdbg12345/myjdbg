@@ -541,22 +541,19 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">+1</div>
               <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">一键查询</span>：按游戏类型提取并建模典型套利特征</h4>
-                <p className="text-sm text-gray-600">如电子卡免费、真人对打、体育打水、彩票全包、棋牌移分等</p>
+                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">一键查询</span>：无需经验丰富，只需要一键查询结果</h4>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">+2</div>
               <div>
                 <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">实时返回</span>：基于套利特征构建兜底式组合识别策略</h4>
-                <p className="text-sm text-gray-600">如玩家/代理的关联、红利金额/比例、流水比例、存款比例等</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">+3</div>
               <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">降低门槛</span>：打通Y/B跨站点及B/C端系统链路</h4>
-                <p className="text-sm text-gray-600">实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</p>
+                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">跨多站点</span>：打通Y/B跨站点及B/C端系统链路</h4>
               </div>
             </div>
           </div>
