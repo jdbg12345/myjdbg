@@ -37,8 +37,8 @@ export const FKSystemOverview = () => {
           </div>
         </div>
 
-        <div className="bg-gray-50 rounded p-0 border-0 border-gray-200">
-          <div className="flex justify-center p-4">
+        <div className="bg-gray-50 rounded border border-gray-200">
+          <div className="flex justify-center p-2">
             <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[600px]">
               <defs>
                 <marker id="arrowhead-gray" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto">
@@ -195,7 +195,7 @@ export const FKSystemOverview = () => {
       </div>
 
       {/* FK能力变化 */}
-      <div className="mb-8">
+      <div className="mb-8 border border-blue-200 rounded-lg p-8">
         <div className="flex items-center space-x-4 mb-8">
           <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
             <Shield className="w-6 h-6 text-white" />
@@ -477,18 +477,20 @@ export const FKSystemOverview = () => {
         </div>
       </div>
 
-      <div className="flex items-center space-x-4 mb-8">
-          <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-            <BarChart3 className="w-6 h-6 text-white" />
-          </div>
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900">变化详细说明</h2>
-            <span className="text-gray-700 text-xl">从<span className="text-blue-600">派单策略、审核流程、拦截策略、风控工具、极端情况</span>等方向进行全面升级</span>
-          </div>
+      <div className="border border-blue-200 rounded-lg p-8 mb-8">
+        <div className="flex items-center space-x-4 mb-8">
+            <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
+              <BarChart3 className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900">变化详细说明</h2>
+              <span className="text-gray-700 text-xl">从<span className="text-blue-600">派单策略、审核流程、拦截策略、风控工具、极端情况</span>等方向进行全面升级</span>
+            </div>
+        </div>
+
+        {/* 优化 */}
+        <Direction1PersonnelCapability />
       </div>
-      
-      {/* 优化 */}
-      <Direction1PersonnelCapability />
       
        {/* 内控问题优化 */}
       <Direction3SystemStrategies />

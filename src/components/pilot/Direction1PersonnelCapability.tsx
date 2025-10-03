@@ -53,7 +53,7 @@ export const Direction1PersonnelCapability = () => {
 
         {/* 云盾分数分布图表 */}
 <div className="mt-8">
-  <div className="relative h-96 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
+  <div className="relative h-[450px] mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
     <div className="mx-12 h-full relative">
       {/* 左侧数量刻度 */}
       <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
@@ -85,7 +85,7 @@ export const Direction1PersonnelCapability = () => {
       </div>
 
       {/* 柱状体和绿点 */}
-      <div className="absolute left-12 right-12 h-full flex items-end justify-between pb-0 gap-2">
+      <div className="absolute left-12 right-12 bottom-12 top-0 flex items-end justify-between gap-4">
         {[
           { name: "1-100分（55.46%）", count: 140916, rate: 2.57 },
           { name: "101-200分（35.25%）", count: 89585, rate: 3.64 },
@@ -96,13 +96,14 @@ export const Direction1PersonnelCapability = () => {
           const maxCount = 160000;
           const maxRate = 20;
 
-          const barHeight = (item.count / maxCount) * 280;
-          const greenBottom = (item.rate / maxRate) * 280;
+          const barHeight = (item.count / maxCount) * 320;
+          const greenBottom = (item.rate / maxRate) * 320;
 
           return (
             <div
               key={index}
-              className="flex flex-col items-center relative flex-1"
+              className="flex flex-col items-center relative"
+              style={{ width: '100px' }}
             >
               <div className="w-full flex items-end">
                 <div className="relative w-full">
@@ -126,22 +127,32 @@ export const Direction1PersonnelCapability = () => {
                   {item.rate}%
                 </div>
               </div>
-
-              {/* 底部标签 */}
-              <div className="text-center mt-2">
-                <div className="text-xs text-gray-800 font-medium whitespace-pre-line leading-tight">
-                  {item.name}
-                </div>
-              </div>
             </div>
           );
         })}
       </div>
 
+      {/* X轴标签 */}
+      <div className="absolute left-12 right-12 bottom-0 h-12 flex items-start justify-between gap-4">
+        {[
+          "1-100分\n(55.46%)",
+          "101-200分\n(35.25%)",
+          "201-300分\n(7.51%)",
+          "301-400分\n(1.54%)",
+          "401-及以上\n(0.25%)",
+        ].map((label, index) => (
+          <div key={index} className="text-center" style={{ width: '100px' }}>
+            <div className="text-xs text-gray-800 font-medium whitespace-pre-line leading-tight">
+              {label}
+            </div>
+          </div>
+        ))}
+      </div>
+
       {/* 风控拒单率连线 */}
       <svg
-        className="absolute left-12 right-12 bottom-0 pointer-events-none"
-        style={{ width: 'calc(100% - 6rem)', height: '280px' }}
+        className="absolute left-12 right-12 bottom-12 pointer-events-none"
+        style={{ width: 'calc(100% - 6rem)', height: '320px' }}
         preserveAspectRatio="none"
       >
         <polyline
@@ -157,7 +168,8 @@ export const Direction1PersonnelCapability = () => {
               9.81,
               17.03,
             ].map((rate, index) => {
-              const x = (index / 4) * 100;
+              const totalBars = 5;
+              const x = ((index + 0.5) / totalBars) * 100;
               const y = 100 - (rate / 20) * 100;
               return `${x}%,${y}%`;
             }).join(" ")
@@ -193,7 +205,7 @@ export const Direction1PersonnelCapability = () => {
       
       
         {/* 新派单规则效果图表 */}
-        <div className="mb-12">
+        <div className="mb-8">
           {/* 整合的内容和图表模块 */}
           <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
@@ -245,9 +257,9 @@ export const Direction1PersonnelCapability = () => {
             
             {/* 图表模块 */}
             <div className="mt-8">
-              <div className="relative h-80 mb-6 bg-blue-50 rounded-lg p-8 border border-blue-200">
+              <div className="relative h-[400px] mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
                 
-                <div className="mx-12 h-full relative">
+                <div className="mx-12 h-full relative pb-12">
                   {/* Y轴刻度 */}
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
                     <span>160000</span>
@@ -271,7 +283,7 @@ export const Direction1PersonnelCapability = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-20 right-12 h-full flex items-end justify-around pb-0">
+                  <div className="absolute left-20 right-12 bottom-12 top-0 flex items-end justify-around">
                     {[
                       { name: '外包一审', before: 66423, after: 24511, beforeRate: 0.99, afterRate: 1.43 },
                       { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.76, afterRate: 1.04 },
@@ -320,13 +332,22 @@ export const Direction1PersonnelCapability = () => {
                           </div>
                         </div>
 
-                        {/* 底部标签 */}
-                        <div className="text-center mt-2">
-                          <div className="text-sm text-gray-800 font-medium whitespace-nowrap">{item.name}</div>
-                          <div className="text-xs text-gray-600 mt-1">{item.before}/{item.after}</div>
-                        </div>
                       </div>
                     )})}
+                  </div>
+
+                  {/* X轴标签 */}
+                  <div className="absolute left-20 right-12 bottom-0 h-12 flex items-start justify-around">
+                    {[
+                      { name: '外包一审', before: 66423, after: 24511 },
+                      { name: '远程一审', before: 82773, after: 29431 },
+                      { name: '总部一审', before: 25161, after: 135259 }
+                    ].map((item, index) => (
+                      <div key={index} className="text-center">
+                        <div className="text-sm text-gray-800 font-medium whitespace-nowrap">{item.name}</div>
+                        <div className="text-xs text-gray-600 mt-1">{item.before}/{item.after}</div>
+                      </div>
+                    ))}
                   </div>
                   
                   {/* 问题率连线 */}
@@ -377,7 +398,7 @@ export const Direction1PersonnelCapability = () => {
       
 
         {/* 出款强制查看标签备注 */}
-        <div className="mb-12">
+        <div className="mb-8">
           <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">

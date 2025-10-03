@@ -38,24 +38,33 @@ export const QuarterlyPreventionData = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
           {/* 左侧：防范金额图表 */}
-          <div className="bg-white rounded-lg p-6 border border-blue-200">
+          <div className="bg-white rounded-lg p-5 border border-blue-200">
             <div className="bg-blue-600 text-white text-center py-3 rounded-lg mb-6">
               <h3 className="text-xl font-bold">二季度总防范金额：3.77E</h3>
             </div>
             
-            <div className="flex items-end justify-between h-80 mb-4 relative">
-              {/* Y轴基线 */}
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
-              {preventionData.map((item, index) => (
-                <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
-                  <div className="absolute -top-6 text-sm font-semibold text-blue-600">{item.amount}</div>
-                  <div
-                    className="bg-blue-500 w-full rounded-t"
-                    style={{ height: `${(item.amount / maxAmount) * 280}px` }}
-                  ></div>
-                  <div className="text-sm text-gray-600 mt-2 whitespace-nowrap">{item.month}</div>
-                </div>
-              ))}
+            <div className="h-80 mb-4 relative">
+              <div className="flex items-end justify-between h-[280px]">
+                {/* Y轴基线 */}
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
+                {preventionData.map((item, index) => (
+                  <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
+                    <div className="absolute -top-6 text-sm font-semibold text-blue-600">{item.amount}</div>
+                    <div
+                      className="bg-blue-500 w-full rounded-t"
+                      style={{ height: `${(item.amount / maxAmount) * 280}px` }}
+                    ></div>
+                  </div>
+                ))}
+              </div>
+              {/* X轴标签 */}
+              <div className="flex items-center justify-between mt-2">
+                {preventionData.map((item, index) => (
+                  <div key={index} className="flex-1 text-center">
+                    <div className="text-sm text-gray-600 whitespace-nowrap">{item.month}</div>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center">
@@ -66,44 +75,53 @@ export const QuarterlyPreventionData = () => {
           </div>
 
           {/* 右侧：人工单量与时效图表 */}
-          <div className="bg-white rounded-lg p-6 border border-blue-200">
+          <div className="bg-white rounded-lg p-5 border border-blue-200">
             <div className="bg-blue-600 text-white text-center py-3 rounded-lg mb-6">
               <h3 className="text-xl font-bold">二季度总平均审核时长:  06:41</h3>
             </div>
             
-            <div className="flex items-end justify-between h-80 mb-4 relative">
-              {/* Y轴基线 */}
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
-              {manualData.map((item, index) => {
-                const barHeight = (item.volume / maxVolume) * 280;
-                return (
-                <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
-                  <div className="absolute text-sm font-semibold text-blue-600" style={{ top: `-${barHeight + 24}px` }}>{item.volume}</div>
-                  <div
-                    className="bg-blue-500 w-full rounded-t transition-all duration-300"
-                    style={{ height: `${barHeight}px` }}
-                  ></div>
-                  <div className="absolute w-full flex justify-center" style={{ bottom: `${barHeight * 0.6}px` }}>
-                    <div className="bg-red-300 w-3 h-3 rounded-full z-10"></div>
-                    <div className="text-xs text-red-400 ml-1 bg-white px-1 rounded shadow whitespace-nowrap z-10">{item.efficiency}</div>
+            <div className="h-80 mb-4 relative">
+              <div className="flex items-end justify-between h-[280px] relative">
+                {/* Y轴基线 */}
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
+                {manualData.map((item, index) => {
+                  const barHeight = (item.volume / maxVolume) * 280;
+                  return (
+                  <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
+                    <div className="absolute text-sm font-semibold text-blue-600" style={{ top: `-${barHeight + 24}px` }}>{item.volume}</div>
+                    <div
+                      className="bg-blue-500 w-full rounded-t transition-all duration-300"
+                      style={{ height: `${barHeight}px` }}
+                    ></div>
+                    <div className="absolute w-full flex justify-center" style={{ bottom: `${barHeight * 0.6}px` }}>
+                      <div className="bg-red-300 w-3 h-3 rounded-full z-10"></div>
+                      <div className="text-xs text-red-400 ml-1 bg-white px-1 rounded shadow whitespace-nowrap z-10">{item.efficiency}</div>
+                    </div>
                   </div>
-                  <div className="text-sm text-gray-600 mt-2 whitespace-nowrap">{item.month}</div>
-                </div>
-              )})}
-              {/* 连接红点的折线 */}
-              <svg className="absolute bottom-0 left-0 w-full h-80 pointer-events-none z-0">
-                <polyline
-                  fill="none"
-                  stroke="#fca5a5"
-                  strokeWidth="2"
-                  points={manualData.map((item, index) => {
-                    const x = (index + 0.5) * (100 / manualData.length);
-                    const barHeight = (item.volume / maxVolume) * 280;
-                    const y = 320 - barHeight * 0.6;
-                    return `${x}%,${y}px`;
-                  }).join(' ')}
-                />
-              </svg>
+                )})}
+                {/* 连接红点的折线 */}
+                <svg className="absolute bottom-0 left-0 w-full h-[280px] pointer-events-none z-0">
+                  <polyline
+                    fill="none"
+                    stroke="#fca5a5"
+                    strokeWidth="2"
+                    points={manualData.map((item, index) => {
+                      const x = (index + 0.5) * (100 / manualData.length);
+                      const barHeight = (item.volume / maxVolume) * 280;
+                      const y = 280 - barHeight * 0.6;
+                      return `${x}%,${y}px`;
+                    }).join(' ')}
+                  />
+                </svg>
+              </div>
+              {/* X轴标签 */}
+              <div className="flex items-center justify-between mt-2">
+                {manualData.map((item, index) => (
+                  <div key={index} className="flex-1 text-center">
+                    <div className="text-sm text-gray-600 whitespace-nowrap">{item.month}</div>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="text-center space-x-4">
               <div className="flex items-center justify-center space-x-6">
