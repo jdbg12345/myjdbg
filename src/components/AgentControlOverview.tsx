@@ -231,11 +231,11 @@ export const AgentControlOverview = () => {
             <div className="grid grid-cols-3 gap-2">
               <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
                 <div className="text-sm font-semibold text-blue-700">一次性会员</div>
-                <div className="text-xs text-gray-600 mt-1">-xx%</div>
+                <div className="text-xs text-gray-600 mt-1">xx%</div>
               </div>
               <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
                 <div className="text-sm font-semibold text-blue-700">贡献集中度</div>
-                <div className="text-xs text-gray-600 mt-1">-xx%</div>
+                <div className="text-xs text-gray-600 mt-1">xx%</div>
               </div>
               <div className="bg-blue-50 p-3 rounded border border-blue-200 text-center">
                 <div className="text-sm font-semibold text-blue-700">新客贡献度</div>
