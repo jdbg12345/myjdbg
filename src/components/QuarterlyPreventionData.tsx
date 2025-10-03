@@ -42,9 +42,10 @@ export const QuarterlyPreventionData = () => {
             <div className="bg-blue-600 text-white text-center py-3 rounded-lg mb-6">
               <h3 className="text-xl font-bold">二季度总防范金额：3.77E</h3>
             </div>
-            
-            <div className="h-80 mb-4 relative">
-              <div className="flex items-end justify-between h-[280px]">
+
+            {/* 图表区域 */}
+            <div className="h-[280px] mb-2 relative">
+              <div className="flex items-end justify-between h-full">
                 {/* Y轴基线 */}
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
                 {preventionData.map((item, index) => (
@@ -57,14 +58,15 @@ export const QuarterlyPreventionData = () => {
                   </div>
                 ))}
               </div>
-              {/* X轴标签 */}
-              <div className="flex items-center justify-between mt-2">
-                {preventionData.map((item, index) => (
-                  <div key={index} className="flex-1 text-center">
-                    <div className="text-sm text-gray-600 whitespace-nowrap">{item.month}</div>
-                  </div>
-                ))}
-              </div>
+            </div>
+
+            {/* X轴标签（图表外） */}
+            <div className="flex items-center justify-between mt-2">
+              {preventionData.map((item, index) => (
+                <div key={index} className="flex-1 text-center">
+                  <div className="text-sm text-gray-600 whitespace-nowrap">{item.month}</div>
+                </div>
+              ))}
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center">
@@ -79,9 +81,10 @@ export const QuarterlyPreventionData = () => {
             <div className="bg-blue-600 text-white text-center py-3 rounded-lg mb-6">
               <h3 className="text-xl font-bold">二季度总平均审核时长:  06:41</h3>
             </div>
-            
-            <div className="h-80 mb-4 relative">
-              <div className="flex items-end justify-between h-[280px] relative">
+
+            {/* 图表区域 */}
+            <div className="h-[280px] mb-2 relative">
+              <div className="flex items-end justify-between h-full relative">
                 {/* Y轴基线 */}
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
                 {manualData.map((item, index) => {
@@ -100,7 +103,7 @@ export const QuarterlyPreventionData = () => {
                   </div>
                 )})}
                 {/* 连接红点的折线 */}
-                <svg className="absolute bottom-0 left-0 w-full h-[280px] pointer-events-none z-0">
+                <svg className="absolute bottom-0 left-0 w-full h-full pointer-events-none z-0">
                   <polyline
                     fill="none"
                     stroke="#fca5a5"
@@ -114,14 +117,15 @@ export const QuarterlyPreventionData = () => {
                   />
                 </svg>
               </div>
-              {/* X轴标签 */}
-              <div className="flex items-center justify-between mt-2">
-                {manualData.map((item, index) => (
-                  <div key={index} className="flex-1 text-center">
-                    <div className="text-sm text-gray-600 whitespace-nowrap">{item.month}</div>
-                  </div>
-                ))}
-              </div>
+            </div>
+
+            {/* X轴标签（图表外） */}
+            <div className="flex items-center justify-between mt-2">
+              {manualData.map((item, index) => (
+                <div key={index} className="flex-1 text-center">
+                  <div className="text-sm text-gray-600 whitespace-nowrap">{item.month}</div>
+                </div>
+              ))}
             </div>
             <div className="text-center space-x-4">
               <div className="flex items-center justify-center space-x-6">

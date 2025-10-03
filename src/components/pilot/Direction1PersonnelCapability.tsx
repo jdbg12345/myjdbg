@@ -53,8 +53,9 @@ export const Direction1PersonnelCapability = () => {
 
         {/* 云盾分数分布图表 */}
 <div className="mt-8">
-  <div className="relative h-[450px] mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
-    <div className="mx-12 h-full relative">
+  <div className="relative mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
+    {/* 图表区域 */}
+    <div className="mx-12 h-80 relative">
       {/* 左侧数量刻度 */}
       <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
         <span>160000</span>
@@ -85,7 +86,7 @@ export const Direction1PersonnelCapability = () => {
       </div>
 
       {/* 柱状体和绿点 */}
-      <div className="absolute left-12 right-12 bottom-12 top-0 flex items-end justify-between gap-4">
+      <div className="absolute left-12 right-12 bottom-0 top-0 flex items-end justify-between gap-4">
         {[
           { name: "1-100分（55.46%）", count: 140916, rate: 2.57 },
           { name: "101-200分（35.25%）", count: 89585, rate: 3.64 },
@@ -96,8 +97,9 @@ export const Direction1PersonnelCapability = () => {
           const maxCount = 160000;
           const maxRate = 20;
 
-          const barHeight = (item.count / maxCount) * 320;
-          const greenBottom = (item.rate / maxRate) * 320;
+          const chartHeight = 320;
+          const barHeight = (item.count / maxCount) * chartHeight;
+          const greenBottom = (item.rate / maxRate) * chartHeight;
 
           return (
             <div
@@ -132,26 +134,9 @@ export const Direction1PersonnelCapability = () => {
         })}
       </div>
 
-      {/* X轴标签 */}
-      <div className="absolute left-12 right-12 bottom-0 h-12 flex items-start justify-between gap-4">
-        {[
-          "1-100分\n(55.46%)",
-          "101-200分\n(35.25%)",
-          "201-300分\n(7.51%)",
-          "301-400分\n(1.54%)",
-          "401-及以上\n(0.25%)",
-        ].map((label, index) => (
-          <div key={index} className="text-center" style={{ width: '100px' }}>
-            <div className="text-xs text-gray-800 font-medium whitespace-pre-line leading-tight">
-              {label}
-            </div>
-          </div>
-        ))}
-      </div>
-
       {/* 风控拒单率连线 */}
       <svg
-        className="absolute left-12 right-12 bottom-12 pointer-events-none"
+        className="absolute left-12 right-12 bottom-0 pointer-events-none"
         style={{ width: 'calc(100% - 6rem)', height: '320px' }}
         preserveAspectRatio="none"
       >
@@ -169,14 +154,34 @@ export const Direction1PersonnelCapability = () => {
               17.03,
             ].map((rate, index) => {
               const totalBars = 5;
+              const chartHeight = 320;
               const x = ((index + 0.5) / totalBars) * 100;
-              const y = 100 - (rate / 20) * 100;
+              const y = ((chartHeight - (rate / 20) * chartHeight) / chartHeight) * 100;
               return `${x}%,${y}%`;
             }).join(" ")
           }
           vectorEffect="non-scaling-stroke"
         />
       </svg>
+    </div>
+
+    {/* X轴标签（图表外） */}
+    <div className="mx-12 mt-3">
+      <div className="flex items-start justify-between gap-4">
+        {[
+          "1-100分\n(55.46%)",
+          "101-200分\n(35.25%)",
+          "201-300分\n(7.51%)",
+          "301-400分\n(1.54%)",
+          "401-及以上\n(0.25%)",
+        ].map((label, index) => (
+          <div key={index} className="text-center" style={{ width: '100px' }}>
+            <div className="text-xs text-gray-800 font-medium whitespace-pre-line leading-tight">
+              {label}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 
@@ -257,9 +262,10 @@ export const Direction1PersonnelCapability = () => {
             
             {/* 图表模块 */}
             <div className="mt-8">
-              <div className="relative h-[400px] mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="relative mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
                 
-                <div className="mx-12 h-full relative pb-12">
+                {/* 图表区域 */}
+                <div className="mx-12 h-80 relative">
                   {/* Y轴刻度 */}
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
                     <span>160000</span>
@@ -283,7 +289,7 @@ export const Direction1PersonnelCapability = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-20 right-12 bottom-12 top-0 flex items-end justify-around">
+                  <div className="absolute left-20 right-12 bottom-0 top-0 flex items-end justify-around">
                     {[
                       { name: '外包一审', before: 66423, after: 24511, beforeRate: 0.99, afterRate: 1.43 },
                       { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.76, afterRate: 1.04 },
@@ -291,10 +297,11 @@ export const Direction1PersonnelCapability = () => {
                     ].map((item, index) => {
                       const maxCount = 160000;
                       const maxRate = 2;
-                      const barHeightBefore = (item.before / maxCount) * 280;
-                      const barHeightAfter = (item.after / maxCount) * 280;
-                      const rateBottomBefore = (item.beforeRate / maxRate) * 280;
-                      const rateBottomAfter = (item.afterRate / maxRate) * 280;
+                      const chartHeight = 320;
+                      const barHeightBefore = (item.before / maxCount) * chartHeight;
+                      const barHeightAfter = (item.after / maxCount) * chartHeight;
+                      const rateBottomBefore = (item.beforeRate / maxRate) * chartHeight;
+                      const rateBottomAfter = (item.afterRate / maxRate) * chartHeight;
 
                       return (
                       <div key={index} className="flex flex-col items-center relative">
@@ -336,8 +343,29 @@ export const Direction1PersonnelCapability = () => {
                     )})}
                   </div>
 
-                  {/* X轴标签 */}
-                  <div className="absolute left-20 right-12 bottom-0 h-12 flex items-start justify-around">
+                  {/* 问题率连线 */}
+                  <svg className="absolute left-20 right-12 top-0 bottom-0 pointer-events-none" width="100%" height="100%">
+                    <path
+                      d={`M 16.67% ${100 - (0.99 / 2) * 100}% L 50% ${100 - (0.76 / 2) * 100}% L 83.33% ${100 - (0.63 / 2) * 100}%`}
+                      stroke="#3B82F6"
+                      strokeWidth="3"
+                      fill="none"
+                      strokeDasharray="6,4"
+                      opacity="0.8"
+                    />
+                    <path
+                      d={`M 16.67% ${100 - (1.43 / 2) * 100}% L 50% ${100 - (1.04 / 2) * 100}% L 83.33% ${100 - (0.51 / 2) * 100}%`}
+                      stroke="#60A5FA"
+                      strokeWidth="3"
+                      fill="none"
+                      opacity="0.8"
+                    />
+                  </svg>
+                </div>
+
+                {/* X轴标签（图表外） */}
+                <div className="mx-12 mt-3">
+                  <div className="flex items-start justify-around">
                     {[
                       { name: '外包一审', before: 66423, after: 24511 },
                       { name: '远程一审', before: 82773, after: 29431 },
@@ -349,25 +377,6 @@ export const Direction1PersonnelCapability = () => {
                       </div>
                     ))}
                   </div>
-                  
-                  {/* 问题率连线 */}
-                  <svg className="absolute left-20 right-12 top-0 bottom-8 pointer-events-none" width="100%" height="100%">
-                    <path
-                      d={`M 16.67% ${100 - (4.0 / 5) * 80}% L 50% ${100 - (3.5 / 5) * 80}% L 83.33% ${100 - (2.2 / 5) * 80}%`}
-                      stroke="#3B82F6"
-                      strokeWidth="3"
-                      fill="none"
-                      strokeDasharray="6,4"
-                      opacity="0.8"
-                    />
-                    <path
-                      d={`M 16.67% ${100 - (3.0 / 5) * 80}% L 50% ${100 - (2.8 / 5) * 80}% L 83.33% ${100 - (1.5 / 5) * 80}%`}
-                      stroke="#60A5FA"
-                      strokeWidth="3"
-                      fill="none"
-                      opacity="0.8"
-                    />
-                  </svg>
                 </div>
               </div>
                             

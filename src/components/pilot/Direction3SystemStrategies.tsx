@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Direction3SystemStrategies = () => {
   return (
-    <div className="bg-white rounded-xl p-8 mb-8">
+    <>
       {/* 系统审核策略 */}
       <div className="bg-white rounded-lg p-8 mb-8 mt-0">
         <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
@@ -363,7 +363,7 @@ export const Direction3SystemStrategies = () => {
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点    </span>"关联下注查询"工具，支持基于核心关联特征<span className="text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
+                  提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点    </span>"关联下注查询\"工具，支持基于核心关联特征<span className="text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
               </div>
               
               <div className="bg-blue-50 rounded-lg p-6">
@@ -686,6 +686,6 @@ export const Direction3SystemStrategies = () => {
             </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
