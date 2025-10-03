@@ -325,7 +325,7 @@ export const Direction3SystemStrategies = () => {
                 <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">一键查询</span>：有无经验都可以，只需要查询结果即可</h4>
               </div>
             </div>
-            <div className="flex items-start space-x-4">
+           
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">3</div>
               <div>
