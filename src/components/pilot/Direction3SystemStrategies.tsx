@@ -3,11 +3,11 @@ import React from 'react';
 export const Direction3SystemStrategies = () => {
   return (
     <div className="bg-white rounded-xl p-8 mb-8">
-      {/* 系统提款审核策略 */}
+      {/* 系统审核策略 */}
       <div className="bg-white rounded-lg p-8 mb-8">
         <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
-             <h3 className="text-xl font-semibold text-gray-800">系统提款审核策略</h3>
+             <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
            </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -25,12 +25,7 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-sm text-gray-600">如玩家/代理的关联、红利金额/比例、流水比例、存款比例等</p>
               </div>
             </div>
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">3</div>
-              <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">基础建设</span>：打通Y/B跨站点及B/C端系统链路</h4>
-                <p className="text-sm text-gray-600">实现数据与策略协同，提升审核的准确性与时效性，降低直接出款错误</p>
-              </div>
+          
             </div>
           </div>
         </div>
