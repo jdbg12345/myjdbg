@@ -272,14 +272,13 @@ export const AgentControlOverview = () => {
  
       </div>
 
-                   {/* 有效贡献度呈现效果展示 */}
+     {/* 有效贡献度呈现效果展示 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">📊</span>
           </div>
           <h3 className="text-2xl font-bold text-gray-800">代理有效贡献度呈现示意</h3>
-          <span className="text-gray-600 text-lg">快速区分优质代理与劣质代理，实现精准监控与管理</span>
         </div>
 
         {/* 代理列表 */}
