@@ -249,10 +249,10 @@ export const Direction1PersonnelCapability = () => {
               </h4>
             <p className="text-gray-700 text-sm leading-relaxed">1、通过派单机制的调整，整体实现了外包和远程等低效渠道订单量的显著压缩，整体审核质量提了xx，符合预期；<span className="text-blue-600">后续加强人员培训、优化淘汰机制，强化过程管控，目标逐步降低比重，直到可随时剔除</span></p>
 
-                          <p className="text-gray-700 text-sm leading-relaxed">2、外包的订单量由 <span className="font-bold">66,423</span> 单降至 <span className="font-bold">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；其审核错误率由 <span className="font-bold">0.99%</span> 降至 <span className="font-bold">0.92%</span>，下降了 <span className="font-bold text-green-600">7.21%</span>，审核质量明显提升，符合预期。
+                          <p className="text-gray-700 text-sm leading-relaxed">2、外包一审的订单量由 <span className="font-bold">66,423</span> 单降至 <span className="font-bold">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；其审核错误率由 <span className="font-bold">0.99%</span> 降至 <span className="font-bold">0.92%</span>，下降了 <span className="font-bold text-green-600">7.21%</span>，审核质量明显提升，符合预期。
 </p>
 
-                          <p className="text-gray-700 text-sm leading-relaxed">3、远程的订单量由 <span className="font-bold">82,733</span> 单降至 <span className="font-bold">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>；其审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.30%</span>，下降了 <span className="font-bold text-green-600">23.14%</span>，审核质量明显提升，符合预期。
+                          <p className="text-gray-700 text-sm leading-relaxed">3、远程一审的订单量由 <span className="font-bold">82,733</span> 单降至 <span className="font-bold">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>；其审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.30%</span>，下降了 <span className="font-bold text-green-600">23.14%</span>，审核质量明显提升，符合预期。
 </p>
 
                <p className="text-gray-700 text-sm leading-relaxed">4、总部一审的订单量由 <span className="font-bold">25,161</span> 单增长至 <span className="font-bold">135,259</span> 单，提升了 <span className="font-bold text-green-600">1.08%</span>；其审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.30%</span>，下降了 <span className="font-bold text-green-600">51.73%</span>，审核质量明显提升，符合预期。
