@@ -362,7 +362,7 @@ export const FKSystemOverview = () => {
                 <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-sm">1</span>
                 </div>
-                <h4 className="font-semibold text-blue-700">游戏套利类（更精准）</h4>
+                <h4 className="font-semibold text-blue-700">游戏套利类（更加精准）</h4>
               </div>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex justify-between items-center">
@@ -415,7 +415,7 @@ export const FKSystemOverview = () => {
                 <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-sm">2</span>
                 </div>
-                <h4 className="font-semibold text-blue-700">红利活动类（兜底）</h4>
+                <h4 className="font-semibold text-blue-700">红利活动类（辅助兜底）</h4>
               </div>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex justify-between items-center">
