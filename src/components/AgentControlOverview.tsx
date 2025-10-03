@@ -249,7 +249,7 @@ export const AgentControlOverview = () => {
             {/* 第一行：标题 */}
             <div className="bg-blue-600 text-white p-4 rounded text-center border-r border-gray-200">
               <div className="text-base font-semibold">风险评估</div>
-              <div className="text-sm opacity-90">-35%权重</div>
+              <div className="text-sm opacity-90">xx权重</div>
             </div>
             {/* 第二行：子指标 */}
             <div className="grid grid-cols-3 gap-2">
