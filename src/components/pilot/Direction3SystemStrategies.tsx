@@ -32,6 +32,9 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
 
+                   <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
+
+
       {/* 1. 电子策略 */}
       <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
