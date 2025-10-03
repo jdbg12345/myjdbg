@@ -347,7 +347,7 @@ export const FKSystemOverview = () => {
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">2</span>
             </div>
-            <h3 className="text-2xl font-bold text-gray-800">套利/作弊类型规则</h3>
+            <h3 className="text-2xl font-bold text-gray-800">套利/作弊型规则</h3>
           </div>
           
           <div className="mb-6">
