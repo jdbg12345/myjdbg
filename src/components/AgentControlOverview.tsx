@@ -104,7 +104,7 @@ export const AgentControlOverview = () => {
             {/* 异常风险 */}
             <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
               <div className="text-gray-700 font-semibold mb-2">如：风险系数高代理</div>
-              <div className="text-sm text-gray-600">命中红利、打负、调整等风控策略</div>
+              <div className="text-sm text-gray-600">命中红利/打负等策略，佣金比例异常</div>
             </div>
 
             {/* 箭头 */}
