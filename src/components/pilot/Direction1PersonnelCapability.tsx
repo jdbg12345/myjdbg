@@ -85,7 +85,7 @@ export const Direction1PersonnelCapability = () => {
       </div>
 
       {/* 柱状体和绿点 */}
-      <div className="absolute left-12 right-12 bottom-0 top-0 flex items-end justify-between gap-4">
+      <div className="absolute left-12 right-12 bottom-0 top-0 flex items-end justify-around">
         {[
           { name: "1-100分（55.46%）", count: 140916, rate: 2.57 },
           { name: "101-200分（35.25%）", count: 89585, rate: 3.64 },
@@ -103,15 +103,14 @@ export const Direction1PersonnelCapability = () => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center relative flex-1"
+              className="flex flex-col items-center relative"
+              style={{ width: '80px' }}
             >
-              <div className="w-full flex items-end">
-                <div className="relative w-full">
-                  <div
-                    className="w-full bg-blue-500 rounded-t"
-                    style={{ height: `${barHeight}px` }}
-                  ></div>
-                </div>
+              <div className="flex items-end justify-center w-full">
+                <div
+                  className="bg-blue-500 rounded-t"
+                  style={{ height: `${barHeight}px`, width: '80px' }}
+                ></div>
               </div>
 
               {/* 风控拒单率点 */}
@@ -134,15 +133,14 @@ export const Direction1PersonnelCapability = () => {
 
       {/* 风控拒单率连线 */}
       <svg
-        className="absolute left-12 right-12 bottom-0 pointer-events-none"
+        className="absolute left-12 right-12 bottom-0 pointer-events-none z-20"
         style={{ width: 'calc(100% - 6rem)', height: '320px' }}
         preserveAspectRatio="none"
       >
         <polyline
           fill="none"
           stroke="#16a34a"
-          strokeWidth="3"
-          opacity="0.8"
+          strokeWidth="2"
           points={
             [
               2.57,
@@ -158,14 +156,13 @@ export const Direction1PersonnelCapability = () => {
               return `${x}%,${y}%`;
             }).join(" ")
           }
-          vectorEffect="non-scaling-stroke"
         />
       </svg>
     </div>
 
     {/* X轴标签（图表外） */}
     <div className="mx-12 mt-3">
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex items-start justify-around">
         {[
           "1-100分\n(55.46%)",
           "101-200分\n(35.25%)",
@@ -173,7 +170,7 @@ export const Direction1PersonnelCapability = () => {
           "301-400分\n(1.54%)",
           "401-及以上\n(0.25%)",
         ].map((label, index) => (
-          <div key={index} className="text-center flex-1">
+          <div key={index} className="text-center" style={{ width: '80px' }}>
             <div className="text-xs text-gray-800 font-medium whitespace-pre-line leading-tight">
               {label}
             </div>
@@ -302,26 +299,22 @@ export const Direction1PersonnelCapability = () => {
                       const rateBottomAfter = (item.afterRate / maxRate) * chartHeight;
 
                       return (
-                      <div key={index} className="flex flex-col items-center relative">
-                        <div className="flex items-end space-x-2">
-                          <div className="relative">
-                            <div
-                              className="w-20 bg-blue-500 rounded-t"
-                              style={{ height: `${barHeightBefore}px` }}
-                            ></div>
-                          </div>
-                          <div className="relative">
-                            <div
-                              className="w-20 bg-blue-400 rounded-t"
-                              style={{ height: `${barHeightAfter}px` }}
-                            ></div>
-                          </div>
+                      <div key={index} className="flex flex-col items-center relative" style={{ width: '160px' }}>
+                        <div className="flex items-end justify-center space-x-2">
+                          <div
+                            className="bg-blue-500 rounded-t"
+                            style={{ height: `${barHeightBefore}px`, width: '40px' }}
+                          ></div>
+                          <div
+                            className="bg-blue-400 rounded-t"
+                            style={{ height: `${barHeightAfter}px`, width: '40px' }}
+                          ></div>
                         </div>
 
                         {/* 问题率点 */}
                         <div
                           className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white z-10"
-                          style={{bottom: `${rateBottomBefore}px`, left: '30px'}}
+                          style={{bottom: `${rateBottomBefore}px`, left: '50%', marginLeft: '-21px'}}
                         >
                           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
                             {item.beforeRate}%
@@ -330,7 +323,7 @@ export const Direction1PersonnelCapability = () => {
 
                         <div
                           className="absolute w-4 h-4 bg-blue-400 rounded-full border-2 border-white z-10"
-                          style={{bottom: `${rateBottomAfter}px`, right: '30px'}}
+                          style={{bottom: `${rateBottomAfter}px`, left: '50%', marginLeft: '21px'}}
                         >
                           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
                             {item.afterRate}%
@@ -369,7 +362,7 @@ export const Direction1PersonnelCapability = () => {
                       { name: '远程一审', before: 82773, after: 29431 },
                       { name: '总部一审', before: 25161, after: 135259 }
                     ].map((item, index) => (
-                      <div key={index} className="text-center flex-1">
+                      <div key={index} className="text-center" style={{ width: '160px' }}>
                         <div className="text-sm text-gray-800 font-medium whitespace-nowrap">{item.name}</div>
                         <div className="text-xs text-gray-600 mt-1">{item.before}/{item.after}</div>
                       </div>

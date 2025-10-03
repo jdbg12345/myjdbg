@@ -4,8 +4,9 @@ export const Direction3SystemStrategies = () => {
   return (
     <>
       {/* 系统审核策略 */}
-      <div className="bg-white rounded-lg p-8 mb-8 mt-0">
-        <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="mb-8">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+          <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
              <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
            </div>
@@ -27,9 +28,12 @@ export const Direction3SystemStrategies = () => {
             </div>
        
           </div>
+          </div>
         </div>
-    
-        {/* 1. 电子策略 */}
+      </div>
+
+      {/* 1. 电子策略 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -127,8 +131,10 @@ export const Direction3SystemStrategies = () => {
               <div className="text-right text-sm text-gray-500 mt-6">统计口径：2025-04-01 ~ 2025-06-30</div>
             </div>
         </div>
+      </div>
 
-        {/* 2. 真人策略 */}
+      {/* 2. 真人策略 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -229,8 +235,10 @@ export const Direction3SystemStrategies = () => {
               <div className="text-right text-sm text-gray-500 mt-6">统计口径：2025年9月17日至9月30日期间，随机选取了100笔命了该风控策略的提款订单</div>
             </div>
         </div>
+      </div>
 
-        {/* 3. 体育策略 */}
+      {/* 3. 体育策略 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -255,8 +263,10 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
         </div>
+      </div>
 
-        {/* 4. 棋牌策略 */}
+      {/* 4. 棋牌策略 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -280,8 +290,10 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
         </div>
+      </div>
 
-        {/* 5. 彩票策略 */}
+      {/* 5. 彩票策略 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -306,12 +318,11 @@ export const Direction3SystemStrategies = () => {
             </div>
         </div>
       </div>
-      
 
       {/* 风控工具集合 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-
-        <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="mb-8">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+          <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
              <h3 className="text-xl font-semibold text-gray-800">风控工具集合</h3>
            </div>
@@ -331,9 +342,12 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
           </div>
+          </div>
         </div>
-       
-        {/* 1. 关联下注工具 */}
+      </div>
+
+      {/* 1. 关联下注工具 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -379,8 +393,10 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
         </div>
+      </div>
 
-        {/* 2. 体育打水工具 */}
+      {/* 2. 体育打水工具 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -422,8 +438,10 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
         </div>
+      </div>
 
-        {/* 3. 提款流水工具 */}
+      {/* 3. 提款流水工具 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3">
@@ -523,9 +541,9 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 极端异常预防 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-
-        <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="mb-8">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+          <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
              <h3 className="text-xl font-semibold text-gray-800">极端异常预防</h3>
            </div>
@@ -544,9 +562,12 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
           </div>
-        </div>   
-        
-        {/* 中心钱包多钱 */}
+          </div>
+        </div>
+      </div>
+
+      {/* 中心钱包多钱 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -581,8 +602,10 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
         </div>
+      </div>
 
-        {/* 场馆钱包多钱 */}
+      {/* 场馆钱包多钱 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -617,8 +640,10 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
         </div>
+      </div>
 
-        {/* 盈利监控预警 */}
+      {/* 盈利监控预警 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -653,8 +678,10 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
         </div>
+      </div>
 
-        {/* 沉睡用户活跃 */}
+      {/* 沉睡用户活跃 */}
+      <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
