@@ -265,10 +265,10 @@ export const AgentControlOverview = () => {
                 <div className="text-sm font-semibold text-blue-700">下级风险度</div>
                 <div className="text-xs text-gray-600 mt-1">-xx%</div>
               </div>
-            </div>
-            
+            </div>          
           </div>
-     {/* 代理列表 */}
+
+             {/* 代理列表 */}
         <div className="space-y-4">
           {[
             {
