@@ -525,7 +525,21 @@ export const Direction3SystemStrategies = () => {
            <div className="flex items-center space-x-3 mb-6">
              <h3 className="text-xl font-semibold text-gray-800">极端异常预防</h3>
            </div>
-          
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">1</div>
+              <div>
+                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">一键查询</span>：有无经验都可以，只需要查询结果即可</h4>
+              </div>
+            </div>
+           
+            <div className="flex items-start space-x-4">
+              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">2</div>
+              <div>
+                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">跨多站点</span>：打通Y/B跨站点关联特征及下注数据</h4>
+              </div>
+            </div>
+          </div>
         </div>   
         
         {/* 中心钱包多钱 */}
