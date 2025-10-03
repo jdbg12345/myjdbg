@@ -49,7 +49,7 @@ export const Direction3SystemStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">卡免费是最典型的<span className="text-blue-600">套利或藏分</span>手段。目前系统在自动出款及人工审核环节中对此识别不足</p>
+                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">卡免费</span>是最典型的<span className="text-blue-600">套利或藏分</span>手段。目前系统在自动出款及人工审核环节中对此识别不足</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
