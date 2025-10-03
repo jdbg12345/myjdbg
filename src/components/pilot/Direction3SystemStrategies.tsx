@@ -38,7 +38,7 @@ export const Direction3SystemStrategies = () => {
                      
             <p className="text-gray-700 text-sm leading-relaxed">1、不含PG：现有模型已具备极高的拦截能力；随机样本<span className="font-bold">100</span>单中，<span className="font-bold">90</span>单是符合电子卡免费的行为；</p>
                      
-            <p className="text-gray-700 text-sm leading-relaxed">2、包含PG：经过注单数据回溯，发现PG电子在麻将来了等类似有一次下注多次旋转的注单结构与其他电子场馆不同，且还出现大量用户，出现有多次旋转的时候，突然停下来超过2分钟，才继续开始的反常行为；所以出现了非卡免费行为，但是被误拦截</p>
+            <p className="text-gray-700 text-sm leading-relaxed">2、包含PG：随机样本<span className="font-bold">100</span>单中，<span className="font-bold">45</span>单是符合电子卡免费的行为；另外的55单，经过注单数据回溯，发现PG电子在《麻将来了》游戏中，存在下注一次却触发多次旋转的现象，这种注单结构与其他电子场馆不同；同时，大量用户在下注命中后，出现多次旋转之间停顿超过2分钟的反常行为，导致系统误判为卡免费行为，进而被拦截</p>
 
             
             {/* 电子策略图表 */}
