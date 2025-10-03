@@ -1,6 +1,5 @@
 import React from 'react';
 import { SmartNavigation } from './components/shared/SmartNavigation';
-import { Breadcrumb } from './components/shared/Breadcrumb';
 import { CoverPage } from './components/CoverPage';
 import { OrganizationalStructure } from './components/OrganizationalStructure';
 import { OverallData } from './components/OverallData';
@@ -36,9 +35,8 @@ import { RiskReview } from './components/RiskReview';
 function App() {
   return (
     <div className="min-h-screen bg-white">
-      <Breadcrumb />
       <SmartNavigation />
-      <div className="max-w-7xl mx-auto p-5 pt-20">
+      <div className="max-w-7xl mx-auto p-5">
         {/* 封面 */}
         <div data-section="cover">
           <CoverPage />

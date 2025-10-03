@@ -177,7 +177,7 @@ export const Direction1PersonnelCapability = () => {
     </div>
 
     {/* X轴标签（图表外） */}
-    <div className="mx-12 mt-3 relative" style={{ height: '40px' }}>
+    <div className="relative mt-3" style={{ height: '40px', marginLeft: '3rem', marginRight: '3rem' }}>
       {[
         "1-100分\n(55.46%)",
         "101-200分\n(35.25%)",
@@ -439,7 +439,7 @@ export const Direction1PersonnelCapability = () => {
                 </div>
 
                 {/* X轴标签（图表外） */}
-                <div className="mx-12 mt-3 relative" style={{ height: '45px' }}>
+                <div className="relative mt-3" style={{ height: '45px', marginLeft: '3rem', marginRight: '3rem' }}>
                   {[
                     { name: '外包一审', before: 66423, after: 24511 },
                     { name: '远程一审', before: 82773, after: 29431 },
