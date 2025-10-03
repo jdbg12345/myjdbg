@@ -33,7 +33,7 @@ export const FKSystemOverview = () => {
           </div>
           <div>
             <h2 className="text-3xl font-bold text-gray-900">会员FK流程变化概览</h2>
-            <span className="text-gray-700 text-xl"><span className="text-blue-600">单人可出款 → 派单策略+工具支持+出款监控+内控抽检，想违规出款，会非常难且风险大</span></span>
+            <span className="text-gray-700 text-xl"><span className="text-blue-600">单人可出款 → 派单策略+工具支持+拦截策略+出款监控+内控抽检，想违规出款，会非常难且风险大</span></span>
           </div>
         </div>
 
