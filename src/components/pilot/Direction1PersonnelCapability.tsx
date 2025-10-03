@@ -234,7 +234,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">错误率降低<span className="font-medium text-blue-600">15%-20%</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed">合适订单给到合适的人审核，提升整体审核质量</p>
               </div>
             </div>
 
