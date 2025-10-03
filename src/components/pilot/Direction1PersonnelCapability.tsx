@@ -288,10 +288,10 @@ export const Direction1PersonnelCapability = () => {
                   
                   <div className="absolute left-20 right-12 bottom-0 top-0 flex items-end justify-around">
                     {[
-                      { name: '外包一审', before: 66423, after: 24511, beforeRate: 0.99, afterRate: 1.43 },
-                      { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.76, afterRate: 1.04 },
+                      { name: '外包一审', before: 66423, after: 24511, beforeRate: 0.99, afterRate: 0.92 },
+                      { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.76, afterRate: 0.59 },
                       { name: '总部一审', before: 25161, after: 135259, beforeRate: 0.63, afterRate: 0.30},
-                      { name: '总部二审', before: 25161, after: 135259, beforeRate: 0.63, afterRate: 0.30}
+                      { name: '总部二审', before: 14472, after: 14628, beforeRate: 0.13, afterRate: 0.12}
                     ].map((item, index) => {
                       const maxCount = 160000;
                       const maxRate = 2;
