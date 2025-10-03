@@ -202,7 +202,7 @@ export const FKSystemOverview = () => {
           </div>
           <div>
             <h2 className="text-3xl font-bold text-gray-900">会员FK能力变化概览</h2>
-            <span className="text-gray-700 text-xl">会员侧：<span className="text-blue-600">防御型策略 → 多维度策略（防御+套利+作弊）</span>，降低系统直接出款风险；内控侧：<span className="text-blue-600">增强了违规管控能力</span></span>
+            <span className="text-gray-700 text-xl">会员侧:<span className="text-blue-600">防御型策略 → 多维度策略（防御+套利+作弊）</span>，降低系统直接出款风险；内控侧:<span className="text-blue-600">增强了违规管控能力</span></span>
           </div>
         </div>
 
