@@ -30,7 +30,7 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
 
-                   <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
             <h4 className="font-medium text-green-700 mb-3 flex items-center">
               <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
               洞察分析
