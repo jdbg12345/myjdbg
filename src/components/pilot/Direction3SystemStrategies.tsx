@@ -326,11 +326,6 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">2</div>
-              <div>
-                <h4 className="font-medium text-gray-800 text-base mb-2"><span className="text-blue-600">实时返回</span>：基于套利特征构建兜底式组合识别策略</h4>
-              </div>
-            </div>
             <div className="flex items-start space-x-4">
               <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-medium flex-shrink-0">3</div>
               <div>
