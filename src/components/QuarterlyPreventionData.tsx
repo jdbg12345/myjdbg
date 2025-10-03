@@ -43,13 +43,15 @@ export const QuarterlyPreventionData = () => {
               <h3 className="text-xl font-bold">二季度总防范金额：3.77E</h3>
             </div>
             
-            <div className="flex items-end justify-between h-80 mb-4">
+            <div className="flex items-end justify-between h-80 mb-4 relative">
+              {/* Y轴基线 */}
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
               {preventionData.map((item, index) => (
-                <div key={index} className="flex flex-col items-center flex-1 mx-1">
-                  <div className="text-sm font-semibold text-blue-600 mb-2">{item.amount}</div>
-                  <div 
+                <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
+                  <div className="absolute -top-6 text-sm font-semibold text-blue-600">{item.amount}</div>
+                  <div
                     className="bg-blue-500 w-full rounded-t"
-                    style={{ height: `${(item.amount / maxAmount) * 250}px` }}
+                    style={{ height: `${(item.amount / maxAmount) * 280}px` }}
                   ></div>
                   <div className="text-sm text-gray-600 mt-2 whitespace-nowrap">{item.month}</div>
                 </div>
@@ -70,29 +72,34 @@ export const QuarterlyPreventionData = () => {
             </div>
             
             <div className="flex items-end justify-between h-80 mb-4 relative">
-              {manualData.map((item, index) => (
+              {/* Y轴基线 */}
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
+              {manualData.map((item, index) => {
+                const barHeight = (item.volume / maxVolume) * 280;
+                return (
                 <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
-                  <div className="text-sm font-semibold text-blue-600 mb-2">{item.volume}</div>
-                  <div 
+                  <div className="absolute text-sm font-semibold text-blue-600" style={{ top: `-${barHeight + 24}px` }}>{item.volume}</div>
+                  <div
                     className="bg-blue-500 w-full rounded-t transition-all duration-300"
-                    style={{ height: `${(item.volume / maxVolume) * 250}px` }}
+                    style={{ height: `${barHeight}px` }}
                   ></div>
-                  <div className="absolute w-full flex justify-center" style={{ top: `${125 + (item.volume / maxVolume) * 125}px` }}>
+                  <div className="absolute w-full flex justify-center" style={{ bottom: `${barHeight * 0.6}px` }}>
                     <div className="bg-red-300 w-3 h-3 rounded-full z-10"></div>
                     <div className="text-xs text-red-400 ml-1 bg-white px-1 rounded shadow whitespace-nowrap z-10">{item.efficiency}</div>
                   </div>
                   <div className="text-sm text-gray-600 mt-2 whitespace-nowrap">{item.month}</div>
                 </div>
-              ))}
+              )})}
               {/* 连接红点的折线 */}
-              <svg className="absolute top-0 left-0 w-full h-80 pointer-events-none z-0">
+              <svg className="absolute bottom-0 left-0 w-full h-80 pointer-events-none z-0">
                 <polyline
                   fill="none"
                   stroke="#fca5a5"
                   strokeWidth="2"
                   points={manualData.map((item, index) => {
                     const x = (index + 0.5) * (100 / manualData.length);
-                    const y = 125 + (item.volume / maxVolume) * 125;
+                    const barHeight = (item.volume / maxVolume) * 280;
+                    const y = 320 - barHeight * 0.6;
                     return `${x}%,${y}px`;
                   }).join(' ')}
                 />

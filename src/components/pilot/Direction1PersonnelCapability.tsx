@@ -85,10 +85,7 @@ export const Direction1PersonnelCapability = () => {
       </div>
 
       {/* 柱状体和绿点 */}
-      <div
-        className="absolute left-20 right-12 h-full flex items-end justify-between pb-0"
-        style={{ width: "420px" }}
-      >
+      <div className="absolute left-12 right-12 h-full flex items-end justify-between pb-0 gap-2">
         {[
           { name: "1-100分（55.46%）", count: 140916, rate: 2.57 },
           { name: "101-200分（35.25%）", count: 89585, rate: 3.64 },
@@ -96,22 +93,21 @@ export const Direction1PersonnelCapability = () => {
           { name: "301-400分（1.54%）", count: 3923, rate: 9.81 },
           { name: "401-及以上（0.25%）", count: 634, rate: 17.03 },
         ].map((item, index) => {
-          const maxCount = 140000;
+          const maxCount = 160000;
           const maxRate = 20;
 
-          const barHeight = (item.count / maxCount) * 250;
-          const greenBottom = (item.rate / maxRate) * 250;
+          const barHeight = (item.count / maxCount) * 280;
+          const greenBottom = (item.rate / maxRate) * 280;
 
           return (
             <div
               key={index}
-              className="flex flex-col items-center relative"
-              style={{ width: 80 }}
+              className="flex flex-col items-center relative flex-1"
             >
-              <div className="flex items-end space-x-1">
-                <div className="relative">
+              <div className="w-full flex items-end">
+                <div className="relative w-full">
                   <div
-                    className="w-20 bg-blue-500 rounded-t"
+                    className="w-full bg-blue-500 rounded-t"
                     style={{ height: `${barHeight}px` }}
                   ></div>
                 </div>
@@ -119,7 +115,7 @@ export const Direction1PersonnelCapability = () => {
 
               {/* 风控拒单率点 */}
               <div
-                className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white"
+                className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white z-10"
                 style={{
                   bottom: `${greenBottom}px`,
                   left: "50%",
@@ -132,8 +128,8 @@ export const Direction1PersonnelCapability = () => {
               </div>
 
               {/* 底部标签 */}
-              <div className="text-center mt-4">
-                <div className="text-sm text-gray-800 font-medium whitespace-pre-line">
+              <div className="text-center mt-2">
+                <div className="text-xs text-gray-800 font-medium whitespace-pre-line leading-tight">
                   {item.name}
                 </div>
               </div>
@@ -144,12 +140,9 @@ export const Direction1PersonnelCapability = () => {
 
       {/* 风控拒单率连线 */}
       <svg
-        className="absolute left-20 bottom-8 pointer-events-none"
-        width={420}
-        height={250}
-        viewBox="0 0 420 250"
+        className="absolute left-12 right-12 bottom-0 pointer-events-none"
+        style={{ width: 'calc(100% - 6rem)', height: '280px' }}
         preserveAspectRatio="none"
-        style={{ top: 0 }}
       >
         <polyline
           fill="none"
@@ -164,13 +157,12 @@ export const Direction1PersonnelCapability = () => {
               9.81,
               17.03,
             ].map((rate, index) => {
-              const barWidth = 80;
-              const gap = 0; // justify-between让间距自动分配，所以gap是0
-              const x = (barWidth + gap) * index + barWidth / 2;
-              const y = 250 - (rate / 20) * 250;
-              return `${x},${y}`;
+              const x = (index / 4) * 100;
+              const y = 100 - (rate / 20) * 100;
+              return `${x}%,${y}%`;
             }).join(" ")
           }
+          vectorEffect="non-scaling-stroke"
         />
       </svg>
     </div>
@@ -284,49 +276,57 @@ export const Direction1PersonnelCapability = () => {
                       { name: '外包一审', before: 66423, after: 24511, beforeRate: 0.99, afterRate: 1.43 },
                       { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.76, afterRate: 1.04 },
                       { name: '总部一审', before: 25161, after: 135259, beforeRate: 0.63, afterRate: 0.51 }
-                    ].map((item, index) => (
+                    ].map((item, index) => {
+                      const maxCount = 160000;
+                      const maxRate = 2;
+                      const barHeightBefore = (item.before / maxCount) * 280;
+                      const barHeightAfter = (item.after / maxCount) * 280;
+                      const rateBottomBefore = (item.beforeRate / maxRate) * 280;
+                      const rateBottomAfter = (item.afterRate / maxRate) * 280;
+
+                      return (
                       <div key={index} className="flex flex-col items-center relative">
-                        <div className="flex items-end space-x-1">
+                        <div className="flex items-end space-x-2">
                           <div className="relative">
-                            <div 
+                            <div
                               className="w-20 bg-blue-500 rounded-t"
-                              style={{ height: `${(item.before / 160000) * 200}px` }}
+                              style={{ height: `${barHeightBefore}px` }}
                             ></div>
                           </div>
                           <div className="relative">
-                            <div 
+                            <div
                               className="w-20 bg-blue-400 rounded-t"
-                              style={{ height: `${(item.after / 160000) * 200}px` }}
+                              style={{ height: `${barHeightAfter}px` }}
                             ></div>
                           </div>
                         </div>
-                        
+
                         {/* 问题率点 */}
-                        <div 
-                          className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white"
-                          style={{bottom: `${(item.beforeRate / 5) * 200}px`, left: '30px'}}
+                        <div
+                          className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white z-10"
+                          style={{bottom: `${rateBottomBefore}px`, left: '30px'}}
                         >
                           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
                             {item.beforeRate}%
                           </div>
                         </div>
-                        
-                        <div 
-                          className="absolute w-4 h-4 bg-blue-400 rounded-full border-2 border-white"
-                          style={{bottom: `${(item.afterRate / 5) * 200}px`, right: '30px'}}
+
+                        <div
+                          className="absolute w-4 h-4 bg-blue-400 rounded-full border-2 border-white z-10"
+                          style={{bottom: `${rateBottomAfter}px`, right: '30px'}}
                         >
                           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
                             {item.afterRate}%
                           </div>
                         </div>
-                        
+
                         {/* 底部标签 */}
-                        <div className="text-center mt-4">
+                        <div className="text-center mt-2">
                           <div className="text-sm text-gray-800 font-medium whitespace-nowrap">{item.name}</div>
                           <div className="text-xs text-gray-600 mt-1">{item.before}/{item.after}</div>
                         </div>
                       </div>
-                    ))}
+                    )})}
                   </div>
                   
                   {/* 问题率连线 */}

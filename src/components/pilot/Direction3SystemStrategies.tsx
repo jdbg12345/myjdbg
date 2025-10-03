@@ -89,7 +89,7 @@ export const Direction3SystemStrategies = () => {
                     ))}
                   </div>
                   
-                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-8">
+                  <div className="absolute left-12 right-12 h-full flex items-end justify-center pb-0">
                     <div className="flex flex-col items-center relative">
                       <div className="w-20 bg-blue-500 rounded-t" style={{ height: '200px' }}></div>
                       
@@ -103,8 +103,8 @@ export const Direction3SystemStrategies = () => {
                         </div>
                       </div>
                       
-                      <div className="text-center mt-4">
-                        <div className="text-sm text-gray-600 mt-1">400单 (25%)</div>
+                      <div className="text-center mt-2">
+                        <div className="text-sm text-gray-600">400单 (25%)</div>
                       </div>
                     </div>
                   </div>
@@ -203,8 +203,8 @@ export const Direction3SystemStrategies = () => {
                         </div>
                       </div>
                       
-                      <div className="text-center mt-4">
-                        <div className="text-sm text-gray-600 mt-1">随机抽取100单</div>
+                      <div className="text-center mt-2">
+                        <div className="text-sm text-gray-600">随机抽取100单</div>
                       </div>
                     </div>
                   </div>
@@ -305,7 +305,7 @@ export const Direction3SystemStrategies = () => {
       
 
       {/* 风控工具集合 */}
-      <div className="bg-white rounded-lg p-8 mb-8">
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
 
         <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
@@ -363,7 +363,7 @@ export const Direction3SystemStrategies = () => {
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点    </span>"关联下注查询"工具，支持基于核心关联特征<span className="text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
+                  提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点    </span>"关联下注查询\"工具，支持基于核心关联特征<span className="text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
               </div>
               
               <div className="bg-blue-50 rounded-lg p-6">
@@ -519,7 +519,7 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 极端异常预防 */}
-      <div className="bg-white rounded-lg p-8 mb-8">
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
 
         <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
