@@ -73,10 +73,10 @@ export const Direction3SystemStrategies = () => {
                 {/* 图表区域 */}
                 <div className="mx-12 h-80 relative">
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
-                    <span>100</span>
-                    <span>80</span>
-                    <span>40</span>
-                    <span>20</span>
+                    <span>120</span>
+                    <span>90</span>
+                    <span>60</span>
+                    <span>30</span>
                     <span>0</span>
                   </div>
                   
@@ -179,16 +179,18 @@ export const Direction3SystemStrategies = () => {
                 {/* 图表区域 */}
                 <div className="mx-12 h-80 relative">
                   <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
-                    <span>150</span>
-                    <span>100</span>
-                    <span>50</span>
+                    <span>120</span>
+                    <span>90</span>
+                    <span>60</span>
+                    <span>30</span>
                     <span>0</span>
                   </div>
                   
                   <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
-                    <span>75%</span>
-                    <span>50%</span>
-                    <span>25%</span>
+                    <span>60%</span>
+                    <span>45%</span>
+                    <span>30%</span>
+                    <span>15%</span>
                     <span>0%</span>
                   </div>
                   
