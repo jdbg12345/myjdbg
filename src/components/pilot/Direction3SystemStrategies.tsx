@@ -40,11 +40,9 @@ export const Direction3SystemStrategies = () => {
                      
             <p className="text-gray-700 text-sm leading-relaxed">2、包含PG：随机样本<span className="font-bold">100</span>单中，<span className="font-bold">45</span>单是符合电子卡免费的行为；另外的<span className="font-bold">55</span>单，经过注单数据回溯，发现PG电子在《麻将来了》游戏中，存在下注一次却触发多次旋转的现象，这种注单结构与其他电子场馆不同；同时，大量用户在下注命中后，出现多次旋转之间停顿超过2分钟的反常行为，导致系统误判为卡免费行为，进而被拦截；<span className="text-blue-600">后续需要针对PG电子特殊场景进行特征识别的重新设计，提升系统的识别精度</span></p>
 
-            <p className="text-gray-700 text-sm leading-relaxed">卡免费行为和提款被风控并不完全相等，风控主要需要考虑是否存在实际影响，比如是否涉及红利申请等。然而，出现这种行为的用户确实属于异常用户，因为正常用户通常不会做出这种操作</p>
+            <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">卡免费行为和提款被风控并不完全相等</span>，风控主要需要考虑是否存在实际影响，比如是否涉及红利申请等。然而，出现这种行为的用户确实属于异常用户，因为正常用户通常不会做出这种操作</p>
 
-          
             </div>
-
 
             {/* 电子策略图表 */}
             <div className="mt-8">
