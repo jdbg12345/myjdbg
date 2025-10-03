@@ -104,7 +104,7 @@ export const Direction3SystemStrategies = () => {
                         style={{top: `${100 - 25 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
                       >
                         <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded text-xs font-medium whitespace-nowrap">
-                          25%
+                          90%
                         </div>
                       </div>
                     </div>
