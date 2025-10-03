@@ -266,8 +266,9 @@ export const AgentControlOverview = () => {
                 <div className="text-xs text-gray-600 mt-1">-xx%</div>
               </div>
             </div>
-
-                 {/* 代理列表 */}
+            
+          </div>
+     {/* 代理列表 */}
         <div className="space-y-4">
           {[
             {
@@ -396,8 +397,7 @@ export const AgentControlOverview = () => {
             </div>
           ))}
         </div>
-            
-          </div>
+          
         </div>
  
       </div>
