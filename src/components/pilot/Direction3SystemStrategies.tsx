@@ -36,8 +36,7 @@ export const Direction3SystemStrategies = () => {
         </div>
     
         {/* 1. 电子策略 */}
-        <div className="mb-8">
-          <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">1.1</span>
@@ -131,12 +130,10 @@ export const Direction3SystemStrategies = () => {
               
               <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025-04-01 ~ 2025-06-30</div>
             </div>
-          </div>
         </div>
 
         {/* 2. 真人策略 */}
-        <div className="mb-8">
-          <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">1.2</span>
@@ -233,12 +230,10 @@ export const Direction3SystemStrategies = () => {
               
               <div className="text-right text-sm text-gray-500 mt-6">统计周期：2025年9月17日至9月30日期间，随机选取了100笔命了该风控策略的提款订单</div>
             </div>
-          </div>
         </div>
 
         {/* 3. 体育策略 */}
-        <div className="mb-8">
-          <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">1.3</span>
@@ -261,13 +256,10 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">识别准确率：70%+</p>
               </div>
             </div>
-        
-          </div>
         </div>
 
         {/* 4. 棋牌策略 */}
-        <div className="mb-8">
-          <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">1.4</span>
@@ -289,12 +281,10 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">识别准确率：60%+</p>
               </div>
             </div>
-            </div>
         </div>
 
         {/* 5. 彩票策略 */}
-        <div className="mb-8">
-          <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">1.5</span>
@@ -316,8 +306,6 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">识别准确率：90%+</p>
               </div>
             </div>
-
-          </div>
         </div>
       </div>
       
@@ -353,8 +341,7 @@ export const Direction3SystemStrategies = () => {
         </div>
        
         {/* 1. 关联下注工具 */}
-        <div className="mb-8">
-          <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">2.1</span>
@@ -387,7 +374,7 @@ export const Direction3SystemStrategies = () => {
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点    </span>"关联下注查询\"工具，支持基于核心关联特征<span className="text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
+                  提供面向<span className="text-blue-600">真人、彩票及体育（开发中）</span>等多类游戏的<span className="text-blue-600">一键跨站点    </span>"关联下注查询\"工具，支持基于核心关联特征<span className=\"text-blue-600">（IP、设备指纹、虚拟币地址、姓名、手机号、注册域名等）</span>的数据聚合与可视化展示，快速生成完整的关联链路与下注明细</p>
               </div>
               
               <div className="bg-blue-50 rounded-lg p-6">
@@ -398,12 +385,10 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">关联</span>在日常风控中占比极高，该工具可<span className="text-blue-600">一键筛选</span>并展示所有关联用户的下注行为，极大增强风险识别能力，<span className="text-blue-600">不仅提升风控效率，更是摆脱对人的经验依赖</span></p>
               </div>
             </div>
-          </div>
         </div>
 
         {/* 2. 体育打水工具 */}
-        <div className="mb-8">
-          <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">2.2</span>
@@ -443,12 +428,10 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">节省成本，提升效率</p>
               </div>
             </div>
-          </div>
         </div>
 
         {/* 3. 提款流水工具 */}
-        <div className="mb-8">
-          <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -543,7 +526,6 @@ export const Direction3SystemStrategies = () => {
                 </table>
               </div>
             </div>
-          </div>
         </div>
       </div>
 
@@ -581,8 +563,7 @@ export const Direction3SystemStrategies = () => {
         </div>   
         
         {/* 中心钱包多钱 */}
-        <div className="mb-12">
-          <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -615,12 +596,10 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">预防极端情况，尽早发现</p>
               </div>
             </div>
-          </div>
         </div>
 
         {/* 场馆钱包多钱 */}
-        <div className="mb-12">
-          <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -653,12 +632,10 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">受限于转账钱包模式和注单延迟，目前策略最多可在<span className="text-blue-600">多钱情况发生后约15–30分钟内发现异常</span></p>
               </div>
             </div>
-          </div>
         </div>
 
         {/* 盈利监控预警 */}
-        <div className="mb-12">
-          <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -691,12 +668,10 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">可第一时间进行预警，然后由专人跟进处理</p>
               </div>
             </div>
-          </div>
         </div>
-    
+
         {/* 沉睡用户活跃 */}
-        <div className="mb-8">
-          <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -729,7 +704,6 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">有效防范账号盗用/违规风险</p>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
