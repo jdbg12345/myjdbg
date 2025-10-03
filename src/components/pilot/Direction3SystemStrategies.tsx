@@ -31,16 +31,33 @@ export const Direction3SystemStrategies = () => {
             </div>
 
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
-            <h4 className="font-medium text-green-700 mb-3 flex items-center">
+            <h4 className="font-medium text-green-700 mb-4 flex items-center">
               <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
               洞察分析
             </h4>
-                     
-            <p className="text-gray-700 text-sm leading-relaxed">1、不含PG：随机样本<span className="font-bold">100</span>单中，<span className="font-bold">90</span>单是符合电子卡免费的行为，现有模型已具备极高的拦截能力；</p>
-                     
-            <p className="text-gray-700 text-sm leading-relaxed">2、包含PG：随机样本<span className="font-bold">100</span>单中，<span className="font-bold">45</span>单是符合电子卡免费的行为；另外的<span className="font-bold">55</span>单，经过注单数据回溯，发现PG电子在《麻将来了》游戏中，存在下注一次却触发多次旋转的现象，这种注单结构与其他电子场馆不同；同时，大量用户在下注命中后，出现多次旋转之间停顿超过2分钟的反常行为，导致系统误判为卡免费行为，进而被拦截；<span className="text-blue-600">后续需要针对PG电子特殊场景进行特征识别的重新设计，提升系统的识别精度</span></p>
 
-            <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">备注：卡免费行为和提款被风控并不完全相等</span>，风控主要需要考虑是否存在实际影响，比如是否涉及红利申请等。然而，出现这种行为的用户确实属于异常用户，因为正常用户通常不会做出这种操作</p>
+            <div className="space-y-3">
+              <div className="bg-white border-l-4 border-green-500 p-3 rounded">
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <span className="font-semibold text-gray-800">1、不含PG：</span>随机样本<span className="font-bold text-blue-600">100</span>单中，<span className="font-bold text-green-600">90</span>单是符合电子卡免费的行为，现有模型已具备<span className="font-bold text-green-600">极高的拦截能力</span>。
+                </p>
+              </div>
+
+              <div className="bg-white border-l-4 border-yellow-500 p-3 rounded">
+                <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                  <span className="font-semibold text-gray-800">2、包含PG：</span>随机样本<span className="font-bold text-blue-600">100</span>单中，<span className="font-bold text-green-600">45</span>单是符合电子卡免费的行为；另外的<span className="font-bold text-red-600">55</span>单，经过注单数据回溯，发现PG电子在《麻将来了》游戏中，存在下注一次却触发多次旋转的现象，这种注单结构与其他电子场馆不同；同时，大量用户在下注命中后，出现多次旋转之间停顿超过<span className="font-bold text-red-600">2分钟</span>的反常行为，导致系统误判为卡免费行为，进而被拦截。
+                </p>
+                <p className="text-sm text-blue-700 font-medium">
+                  → 后续需要针对PG电子特殊场景进行特征识别的重新设计，提升系统的识别精度。
+                </p>
+              </div>
+
+              <div className="bg-white border-l-4 border-gray-400 p-3 rounded">
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <span className="font-semibold text-gray-800">备注：</span>卡免费行为和提款被风控并不完全相等，风控主要需要考虑是否存在实际影响，比如是否涉及红利申请等。然而，出现这种行为的用户确实属于异常用户，因为正常用户通常不会做出这种操作。
+                </p>
+              </div>
+            </div>
 
             </div>
 
@@ -76,14 +93,14 @@ export const Direction3SystemStrategies = () => {
 
                     <div className="absolute left-8 right-8 bottom-0 top-0 flex items-end justify-center">
                       <div className="flex flex-col items-center relative">
-                        <div className="w-16 bg-blue-500 rounded-t" style={{ height: `${(100 / 100) * 256}px` }}></div>
+                        <div className="bg-blue-500 rounded-t" style={{ height: `${(100 / 100) * 256}px`, width: '80px' }}></div>
 
                         {/* 准确率数据点 */}
                         <div
-                          className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white"
+                          className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white z-10"
                           style={{bottom: `${(90 / 100) * 256}px`, left: '50%', transform: 'translateX(-50%)'}}
                         >
-                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
                             90%
                           </div>
                         </div>
@@ -99,7 +116,6 @@ export const Direction3SystemStrategies = () => {
 
                 {/* 第二个图表：包含PG */}
                 <div className="relative bg-blue-50 rounded-lg p-6 border border-blue-200">
-                
                   {/* 图表区域 */}
                   <div className="mx-8 h-64 relative">
                     <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-600">
@@ -126,14 +142,14 @@ export const Direction3SystemStrategies = () => {
 
                     <div className="absolute left-8 right-8 bottom-0 top-0 flex items-end justify-center">
                       <div className="flex flex-col items-center relative">
-                        <div className="w-16 bg-blue-500 rounded-t" style={{ height: `${(100 / 100) * 256}px` }}></div>
+                        <div className="bg-blue-500 rounded-t" style={{ height: `${(100 / 100) * 256}px`, width: '80px' }}></div>
 
                         {/* 准确率数据点 */}
                         <div
-                          className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white"
+                          className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white z-10"
                           style={{bottom: `${(45 / 100) * 256}px`, left: '50%', transform: 'translateX(-50%)'}}
                         >
-                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
                             45%
                           </div>
                         </div>
@@ -154,11 +170,11 @@ export const Direction3SystemStrategies = () => {
                   <span className="text-gray-700">拦截订单数</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
+                  <div className="w-4 h-4 bg-green-600 rounded-full"></div>
                   <span className="text-gray-700">准确率</span>
                 </div>
               </div>
-              
+
               <div className="text-right text-sm text-gray-500 mt-6">统计口径：2025年9月20以后日至9月30日期间</div>
             </div>
         </div>
@@ -192,14 +208,33 @@ export const Direction3SystemStrategies = () => {
             </div>
 
                 <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 mt-8">
-            <h4 className="font-medium text-green-700 mb-3 flex items-center">
+            <h4 className="font-medium text-green-700 mb-4 flex items-center">
               <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
                 洞察分析
             </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">1、现有模型已具备初步拦截能力；随机样本<span className="font-bold">100</span>单中，<span className="font-bold">52</span>单经人工复核确有问题，<span className="font-bold">9</span>单拒付、<span className="font-bold">43</span>单放行，但是存在警告、扣款出款、出款禁用等不同程度处理；</p>
 
-            <p className="text-gray-700 text-sm leading-relaxed">2、其中<span className="font-bold">17</span>单定位为“跨平台对压”，是过往很难发现的</p>
-            <p className="text-gray-700 text-sm leading-relaxed">3、另外的<span className="font-bold">48</span>单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理；<span className="font-bold text-green-600">后续需要继续迭代，目标准确率在80%；</span></p>
+            <div className="space-y-3">
+              <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <span className="font-semibold text-gray-800">1、整体表现：</span>现有模型已具备初步拦截能力；随机样本<span className="font-bold text-blue-600">100</span>单中，<span className="font-bold text-green-600">52</span>单经人工复核确有问题，其中<span className="font-bold text-red-600">9</span>单拒付、<span className="font-bold text-yellow-600">43</span>单放行但存在警告、扣款出款、出款禁用等不同程度处理。
+                </p>
+              </div>
+
+              <div className="bg-white border-l-4 border-green-500 p-3 rounded">
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <span className="font-semibold text-gray-800">2、重点突破：</span>其中<span className="font-bold text-green-600">17</span>单定位为“<span className="font-bold text-green-600">跨平台对压</span>”，是过往很难发现的高价值问题。
+                </p>
+              </div>
+
+              <div className="bg-white border-l-4 border-gray-400 p-3 rounded">
+                <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                  <span className="font-semibold text-gray-800">3、待优化：</span>另外的<span className="font-bold text-blue-600">48</span>单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理。
+                </p>
+                <p className="text-sm text-green-700 font-medium">
+                  → 后续需要继续迭代，目标准确率在<span className="font-bold">80%</span>。
+                </p>
+              </div>
+            </div>
 
           </div>
             
@@ -233,14 +268,14 @@ export const Direction3SystemStrategies = () => {
                   
                   <div className="absolute left-12 right-12 bottom-0 top-0 flex items-end justify-center">
                     <div className="flex flex-col items-center relative">
-                      <div className="w-20 bg-blue-500 rounded-t" style={{ height: `${(100 / 150) * 320}px` }}></div>
+                      <div className="bg-blue-500 rounded-t" style={{ height: `${(100 / 150) * 320}px`, width: '80px' }}></div>
 
                       {/* 准确率数据点 */}
                       <div
-                        className="absolute w-5 h-5 bg-blue-600 rounded-full border-2 border-white"
+                        className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white z-10"
                         style={{bottom: `${(52 / 75) * 320}px`, left: '50%', transform: 'translateX(-50%)'}}
                       >
-                        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded text-xs font-medium whitespace-nowrap">
+                        <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
                           52%
                         </div>
                       </div>
@@ -260,11 +295,11 @@ export const Direction3SystemStrategies = () => {
                   <span className="text-gray-700">拦截订单数</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
+                  <div className="w-4 h-4 bg-green-600 rounded-full"></div>
                   <span className="text-gray-700">准确率</span>
                 </div>
               </div>
-              
+
               <div className="text-right text-sm text-gray-500 mt-6">统计口径：2025年9月17日至9月30日期间，随机选取了100笔命了该风控策略的提款订单</div>
             </div>
         </div>
