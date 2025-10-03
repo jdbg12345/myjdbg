@@ -35,8 +35,12 @@ export const Direction3SystemStrategies = () => {
               <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
               洞察分析
             </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">现有模型已具备初步拦截能力；随机样本<span className="font-bold">100</span>单中，<span className="font-bold">52</span>单经人工复核确有问题，其中<span className="font-bold">17</span>单定位为“跨平台对压”；<span className="font-bold">9</span>单拒付、<span className="font-bold">43</span>单放行，但是存在警告、扣款出款、出款禁用等不同程度处理；另外的<span className="font-bold">48</span>单，有对打、机器等行为痕迹，但是占比及金额较低，所以FK实际暂时不处理；<span className="font-bold text-green-600">后续需要继续迭代，目标准确率在80%；</span></p>
-          </div>
+                     
+            <p className="text-gray-700 text-sm leading-relaxed">1、不含PG：现有模型已具备极高的拦截能力；随机样本<span className="font-bold">100</span>单中，<span className="font-bold">90</span>单是符合电子卡免费的行为；</p>
+                     
+            <p className="text-gray-700 text-sm leading-relaxed">1、包含PG：现有模型已具备极高的拦截能力；随机样本<span className="font-bold">100</span>单中，<span className="font-bold">90</span>单是符合电子卡免费的行为；</p>
+
+
             
             {/* 电子策略图表 */}
             <div className="mt-8">
