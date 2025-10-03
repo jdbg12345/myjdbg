@@ -50,7 +50,7 @@ export const Direction1PersonnelCapability = () => {
             <div className="space-y-3">
               <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-800">1、核心发现：</span>现有模型评分已具备初步区分能力，<span className="font-bold text-blue-600">风险分数越高的订单数量越少</span>，但<span className="font-bold text-red-600">风控率越高</span>。
+                  <span className="font-semibold text-gray-800">1、核心发现：</span>风险分数越高的订单数量越少，但风控率相应提高，<span className="font-bold text-blue-600">现有模型评分已具备初步的区分能力</span>
                 </p>
               </div>
 
