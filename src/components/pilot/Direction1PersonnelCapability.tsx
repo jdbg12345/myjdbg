@@ -66,144 +66,149 @@ export const Direction1PersonnelCapability = () => {
 <div className="mt-8">
   <div className="relative mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
     {/* 图表区域 */}
-    <div className="mx-12 h-80 relative">
-      {/* 左侧数量刻度 */}
-      <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
-        <span>160000</span>
-        <span>120000</span>
-        <span>80000</span>
-        <span>40000</span>
-        <span>0</span>
-      </div>
+    <div className="flex justify-center">
+      <div className="relative" style={{ width: '800px', height: '320px' }}>
+        {/* 左侧数量刻度 */}
+        <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600" style={{ width: '60px' }}>
+          <span>160000</span>
+          <span>120000</span>
+          <span>80000</span>
+          <span>40000</span>
+          <span>0</span>
+        </div>
 
-      {/* 右侧百分比刻度 */}
-      <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
-        <span>20%</span>
-        <span>15%</span>
-        <span>10%</span>
-        <span>5%</span>
-        <span>0%</span>
-      </div>
+        {/* 右侧百分比刻度 */}
+        <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600" style={{ width: '60px' }}>
+          <span>20%</span>
+          <span>15%</span>
+          <span>10%</span>
+          <span>5%</span>
+          <span>0%</span>
+        </div>
 
-      {/* 背景横线 */}
-      <div className="absolute left-12 right-12 h-full">
-        {[0, 25, 50, 75, 100].map((percent) => (
-          <div
-            key={percent}
-            className="absolute w-full border-t border-gray-300"
-            style={{ bottom: `${percent}%` }}
-          ></div>
-        ))}
-      </div>
+        {/* 图表主区域 */}
+        <div className="absolute" style={{ left: '60px', right: '60px', top: 0, bottom: 0 }}>
+          {/* 背景横线 */}
+          {[0, 25, 50, 75, 100].map((percent) => (
+            <div
+              key={percent}
+              className="absolute w-full border-t border-gray-300"
+              style={{ bottom: `${percent}%` }}
+            ></div>
+          ))}
 
-      {/* 柱状体和绿点 */}
-      <div className="absolute left-12 right-12 bottom-0 top-0">
+          {/* 柱状体和绿点 */}
+          {[
+            { name: "1-100分（55.46%）", count: 140916, rate: 2.57 },
+            { name: "101-200分（35.25%）", count: 89585, rate: 3.64 },
+            { name: "201-300分（7.51%）", count: 19092, rate: 5.57 },
+            { name: "301-400分（1.54%）", count: 3923, rate: 9.81 },
+            { name: "401-及以上（0.25%）", count: 634, rate: 17.03 },
+          ].map((item, index) => {
+            const maxCount = 160000;
+            const maxRate = 20;
+            const totalBars = 5;
+            const chartWidth = 680;
+            const chartHeight = 320;
+
+            const barHeight = (item.count / maxCount) * chartHeight;
+            const greenBottom = (item.rate / maxRate) * chartHeight;
+
+            const barWidth = 80;
+            const spacing = chartWidth / totalBars;
+            const centerX = spacing * index + spacing / 2;
+
+            return (
+              <div key={index}>
+                {/* 柱状图 */}
+                <div
+                  className="absolute bg-blue-500 rounded-t"
+                  style={{
+                    height: `${barHeight}px`,
+                    width: `${barWidth}px`,
+                    bottom: 0,
+                    left: `${centerX - barWidth / 2}px`
+                  }}
+                ></div>
+
+                {/* 风控拒单率点 */}
+                <div
+                  className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white z-10"
+                  style={{
+                    bottom: `${greenBottom}px`,
+                    left: `${centerX}px`,
+                    transform: "translateX(-50%)",
+                  }}
+                >
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-green-700 bg-white px-2 py-1 rounded whitespace-nowrap">
+                    {item.rate}%
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+
+          {/* 风控拒单率连线 */}
+          <svg className="absolute inset-0 pointer-events-none z-20" width="680" height="320">
+            <polyline
+              fill="none"
+              stroke="#16a34a"
+              strokeWidth="2"
+              points={
+                [
+                  { rate: 2.57, index: 0 },
+                  { rate: 3.64, index: 1 },
+                  { rate: 5.57, index: 2 },
+                  { rate: 9.81, index: 3 },
+                  { rate: 17.03, index: 4 }
+                ].map(({ rate, index }) => {
+                  const totalBars = 5;
+                  const chartWidth = 680;
+                  const chartHeight = 320;
+                  const spacing = chartWidth / totalBars;
+                  const x = spacing * index + spacing / 2;
+                  const y = chartHeight - (rate / 20) * chartHeight;
+                  return `${x},${y}`;
+                }).join(" ")
+              }
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    {/* X轴标签（图表外） */}
+    <div className="flex justify-center mt-3">
+      <div className="relative" style={{ width: '680px', height: '40px', marginLeft: '60px' }}>
         {[
-          { name: "1-100分（55.46%）", count: 140916, rate: 2.57 },
-          { name: "101-200分（35.25%）", count: 89585, rate: 3.64 },
-          { name: "201-300分（7.51%）", count: 19092, rate: 5.57 },
-          { name: "301-400分（1.54%）", count: 3923, rate: 9.81 },
-          { name: "401-及以上（0.25%）", count: 634, rate: 17.03 },
-        ].map((item, index) => {
-          const maxCount = 160000;
-          const maxRate = 20;
+          "1-100分\n(55.46%)",
+          "101-200分\n(35.25%)",
+          "201-300分\n(7.51%)",
+          "301-400分\n(1.54%)",
+          "401-及以上\n(0.25%)",
+        ].map((label, index) => {
           const totalBars = 5;
-          const chartHeight = 320;
-
-          const barHeight = (item.count / maxCount) * chartHeight;
-          const greenBottom = (item.rate / maxRate) * chartHeight;
-
-          const barWidth = 80;
-          const centerX = ((index + 0.5) / totalBars) * 100;
+          const chartWidth = 680;
+          const spacing = chartWidth / totalBars;
+          const centerX = spacing * index + spacing / 2;
 
           return (
-            <div key={index}>
-              {/* 柱状图 */}
-              <div
-                className="absolute bg-blue-500 rounded-t"
-                style={{
-                  height: `${barHeight}px`,
-                  width: `${barWidth}px`,
-                  bottom: 0,
-                  left: `calc(${centerX}% - ${barWidth / 2}px)`
-                }}
-              ></div>
-
-              {/* 风控拒单率点 */}
-              <div
-                className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white z-10"
-                style={{
-                  bottom: `${greenBottom}px`,
-                  left: `${centerX}%`,
-                  transform: "translateX(-50%)",
-                }}
-              >
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-green-700 bg-white px-2 py-1 rounded whitespace-nowrap">
-                  {item.rate}%
-                </div>
+            <div
+              key={index}
+              className="absolute text-center"
+              style={{
+                left: `${centerX}px`,
+                transform: 'translateX(-50%)',
+                width: '80px'
+              }}
+            >
+              <div className="text-xs text-gray-800 font-medium whitespace-pre-line leading-tight">
+                {label}
               </div>
             </div>
           );
         })}
       </div>
-
-      {/* 风控拒单率连线 */}
-      <svg
-        className="absolute left-12 right-12 bottom-0 pointer-events-none z-20"
-        style={{ width: 'calc(100% - 6rem)', height: '320px' }}
-        preserveAspectRatio="none"
-      >
-        <polyline
-          fill="none"
-          stroke="#16a34a"
-          strokeWidth="2"
-          points={
-            [
-              2.57,
-              3.64,
-              5.57,
-              9.81,
-              17.03,
-            ].map((rate, index) => {
-              const totalBars = 5;
-              const chartHeight = 320;
-              const x = ((index + 0.5) / totalBars) * 100;
-              const y = ((chartHeight - (rate / 20) * chartHeight) / chartHeight) * 100;
-              return `${x}%,${y}%`;
-            }).join(" ")
-          }
-        />
-      </svg>
-    </div>
-
-    {/* X轴标签（图表外） */}
-    <div className="relative mt-3" style={{ height: '40px', marginLeft: '3rem', marginRight: '3rem' }}>
-      {[
-        "1-100分\n(55.46%)",
-        "101-200分\n(35.25%)",
-        "201-300分\n(7.51%)",
-        "301-400分\n(1.54%)",
-        "401-及以上\n(0.25%)",
-      ].map((label, index) => {
-        const totalBars = 5;
-        const centerX = ((index + 0.5) / totalBars) * 100;
-
-        return (
-          <div
-            key={index}
-            className="absolute text-center"
-            style={{
-              left: `${centerX}%`,
-              transform: 'translateX(-50%)',
-              width: '80px'
-            }}
-          >
-            <div className="text-xs text-gray-800 font-medium whitespace-pre-line leading-tight">
-              {label}
-            </div>
-          </div>
-        );
-      })}
     </div>
   </div>
 
@@ -314,156 +319,197 @@ export const Direction1PersonnelCapability = () => {
             {/* 图表模块 */}
             <div className="mt-8">
               <div className="relative mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
-                
+
                 {/* 图表区域 */}
-                <div className="mx-12 h-80 relative">
-                  {/* Y轴刻度 */}
-                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
-                    <span>160000</span>
-                    <span>120000</span>
-                    <span>800000</span>
-                    <span>400000</span>
-                    <span>0</span>
-                  </div>
-                  
-                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
-                    <span>2%</span>
-                    <span>1.5%</span>
-                    <span>1%</span>
-                    <span>0.5%</span>
-                    <span>0%</span>
-                  </div>
-                  
-                  <div className="absolute left-12 right-12 h-full">
-                    {[0, 25, 50, 75, 100].map((percent) => (
-                      <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
-                    ))}
-                  </div>
-                  
-                  <div className="absolute left-12 right-12 bottom-0 top-0">
-                    {[
-                      { name: '外包一审', before: 66423, after: 24511, beforeRate: 0.99, afterRate: 0.92 },
-                      { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.76, afterRate: 0.59 },
-                      { name: '总部一审', before: 25161, after: 135259, beforeRate: 0.63, afterRate: 0.30},
-                      { name: '总部二审', before: 14472, after: 14628, beforeRate: 0.13, afterRate: 0.12}
-                    ].map((item, index) => {
-                      const maxCount = 160000;
-                      const maxRate = 2;
-                      const totalGroups = 4;
-                      const chartHeight = 320;
-                      const barHeightBefore = (item.before / maxCount) * chartHeight;
-                      const barHeightAfter = (item.after / maxCount) * chartHeight;
-                      const rateBottomBefore = (item.beforeRate / maxRate) * chartHeight;
-                      const rateBottomAfter = (item.afterRate / maxRate) * chartHeight;
+                <div className="flex justify-center">
+                  <div className="relative" style={{ width: '800px', height: '320px' }}>
+                    {/* Y轴刻度 */}
+                    <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600" style={{ width: '60px' }}>
+                      <span>160000</span>
+                      <span>120000</span>
+                      <span>80000</span>
+                      <span>40000</span>
+                      <span>0</span>
+                    </div>
 
-                      const barWidth = 40;
-                      const groupCenterX = ((index + 0.5) / totalGroups) * 100;
-                      const barSpacing = 2;
-                      const beforeBarX = `calc(${groupCenterX}% - ${barWidth + barSpacing / 2}px)`;
-                      const afterBarX = `calc(${groupCenterX}% + ${barSpacing / 2}px)`;
+                    <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600" style={{ width: '60px' }}>
+                      <span>2%</span>
+                      <span>1.5%</span>
+                      <span>1%</span>
+                      <span>0.5%</span>
+                      <span>0%</span>
+                    </div>
 
-                      return (
-                      <div key={index}>
-                        {/* 调整前柱状图 */}
-                        <div
-                          className="absolute bg-blue-500 rounded-t"
-                          style={{
-                            height: `${barHeightBefore}px`,
-                            width: `${barWidth}px`,
-                            bottom: 0,
-                            left: beforeBarX
-                          }}
-                        ></div>
+                    {/* 图表主区域 */}
+                    <div className="absolute" style={{ left: '60px', right: '60px', top: 0, bottom: 0 }}>
+                      {/* 背景横线 */}
+                      {[0, 25, 50, 75, 100].map((percent) => (
+                        <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
+                      ))}
 
-                        {/* 调整后柱状图 */}
-                        <div
-                          className="absolute bg-blue-400 rounded-t"
-                          style={{
-                            height: `${barHeightAfter}px`,
-                            width: `${barWidth}px`,
-                            bottom: 0,
-                            left: afterBarX
-                          }}
-                        ></div>
+                      {/* 柱状图和数据点 */}
+                      {[
+                        { name: '外包一审', before: 66423, after: 24511, beforeRate: 0.99, afterRate: 0.92 },
+                        { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.76, afterRate: 0.59 },
+                        { name: '总部一审', before: 25161, after: 135259, beforeRate: 0.63, afterRate: 0.30},
+                        { name: '总部二审', before: 14472, after: 14628, beforeRate: 0.13, afterRate: 0.12}
+                      ].map((item, index) => {
+                        const maxCount = 160000;
+                        const maxRate = 2;
+                        const totalGroups = 4;
+                        const chartWidth = 680;
+                        const chartHeight = 320;
+                        const barHeightBefore = (item.before / maxCount) * chartHeight;
+                        const barHeightAfter = (item.after / maxCount) * chartHeight;
+                        const rateBottomBefore = (item.beforeRate / maxRate) * chartHeight;
+                        const rateBottomAfter = (item.afterRate / maxRate) * chartHeight;
 
-                        {/* 调整前错误率点 */}
-                        <div
-                          className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white z-10"
-                          style={{
-                            bottom: `${rateBottomBefore}px`,
-                            left: `calc(${groupCenterX}% - ${barWidth / 2 + barSpacing / 2}px)`,
-                            transform: 'translateX(-50%)'
-                          }}
-                        >
-                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
-                            {item.beforeRate}%
+                        const barWidth = 40;
+                        const spacing = chartWidth / totalGroups;
+                        const groupCenterX = spacing * index + spacing / 2;
+                        const barSpacing = 4;
+
+                        return (
+                        <div key={index}>
+                          {/* 调整前柱状图 */}
+                          <div
+                            className="absolute bg-blue-500 rounded-t"
+                            style={{
+                              height: `${barHeightBefore}px`,
+                              width: `${barWidth}px`,
+                              bottom: 0,
+                              left: `${groupCenterX - barWidth - barSpacing / 2}px`
+                            }}
+                          ></div>
+
+                          {/* 调整后柱状图 */}
+                          <div
+                            className="absolute bg-blue-400 rounded-t"
+                            style={{
+                              height: `${barHeightAfter}px`,
+                              width: `${barWidth}px`,
+                              bottom: 0,
+                              left: `${groupCenterX + barSpacing / 2}px`
+                            }}
+                          ></div>
+
+                          {/* 调整前错误率点 */}
+                          <div
+                            className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white z-10"
+                            style={{
+                              bottom: `${rateBottomBefore}px`,
+                              left: `${groupCenterX - barWidth / 2 - barSpacing / 2}px`,
+                              transform: 'translateX(-50%)'
+                            }}
+                          >
+                            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
+                              {item.beforeRate}%
+                            </div>
                           </div>
-                        </div>
 
-                        {/* 调整后错误率点 */}
-                        <div
-                          className="absolute w-4 h-4 bg-blue-400 rounded-full border-2 border-white z-10"
-                          style={{
-                            bottom: `${rateBottomAfter}px`,
-                            left: `calc(${groupCenterX}% + ${barWidth / 2 + barSpacing / 2}px)`,
-                            transform: 'translateX(-50%)'
-                          }}
-                        >
-                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
-                            {item.afterRate}%
+                          {/* 调整后错误率点 */}
+                          <div
+                            className="absolute w-4 h-4 bg-blue-400 rounded-full border-2 border-white z-10"
+                            style={{
+                              bottom: `${rateBottomAfter}px`,
+                              left: `${groupCenterX + barWidth / 2 + barSpacing / 2}px`,
+                              transform: 'translateX(-50%)'
+                            }}
+                          >
+                            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
+                              {item.afterRate}%
+                            </div>
                           </div>
+
                         </div>
+                      )})}
 
-                      </div>
-                    )})}
+                      {/* 问题率连线 */}
+                      <svg className="absolute inset-0 pointer-events-none z-20" width="680" height="320">
+                        {/* 调整前连线 */}
+                        <polyline
+                          fill="none"
+                          stroke="#3B82F6"
+                          strokeWidth="3"
+                          strokeDasharray="6,4"
+                          opacity="0.8"
+                          points={[
+                            { rate: 0.99, index: 0 },
+                            { rate: 0.76, index: 1 },
+                            { rate: 0.63, index: 2 },
+                            { rate: 0.13, index: 3 }
+                          ].map(({ rate, index }) => {
+                            const totalGroups = 4;
+                            const chartWidth = 680;
+                            const chartHeight = 320;
+                            const spacing = chartWidth / totalGroups;
+                            const groupCenterX = spacing * index + spacing / 2;
+                            const barWidth = 40;
+                            const barSpacing = 4;
+                            const x = groupCenterX - barWidth / 2 - barSpacing / 2;
+                            const y = chartHeight - (rate / 2) * chartHeight;
+                            return `${x},${y}`;
+                          }).join(" ")}
+                        />
+                        {/* 调整后连线 */}
+                        <polyline
+                          fill="none"
+                          stroke="#60A5FA"
+                          strokeWidth="3"
+                          opacity="0.8"
+                          points={[
+                            { rate: 0.92, index: 0 },
+                            { rate: 0.59, index: 1 },
+                            { rate: 0.30, index: 2 },
+                            { rate: 0.12, index: 3 }
+                          ].map(({ rate, index }) => {
+                            const totalGroups = 4;
+                            const chartWidth = 680;
+                            const chartHeight = 320;
+                            const spacing = chartWidth / totalGroups;
+                            const groupCenterX = spacing * index + spacing / 2;
+                            const barWidth = 40;
+                            const barSpacing = 4;
+                            const x = groupCenterX + barWidth / 2 + barSpacing / 2;
+                            const y = chartHeight - (rate / 2) * chartHeight;
+                            return `${x},${y}`;
+                          }).join(" ")}
+                        />
+                      </svg>
+                    </div>
                   </div>
-
-                  {/* 问题率连线 */}
-                  <svg className="absolute left-12 right-12 top-0 bottom-0 pointer-events-none z-20" width="100%" height="100%">
-                    <path
-                      d={`M 16.67% ${100 - (0.99 / 2) * 100}% L 50% ${100 - (0.76 / 2) * 100}% L 83.33% ${100 - (0.63 / 2) * 100}%`}
-                      stroke="#3B82F6"
-                      strokeWidth="3"
-                      fill="none"
-                      strokeDasharray="6,4"
-                      opacity="0.8"
-                    />
-                    <path
-                      d={`M 16.67% ${100 - (1.43 / 2) * 100}% L 50% ${100 - (1.04 / 2) * 100}% L 83.33% ${100 - (0.51 / 2) * 100}%`}
-                      stroke="#60A5FA"
-                      strokeWidth="3"
-                      fill="none"
-                      opacity="0.8"
-                    />
-                  </svg>
                 </div>
 
                 {/* X轴标签（图表外） */}
-                <div className="relative mt-3" style={{ height: '45px', marginLeft: '3rem', marginRight: '3rem' }}>
-                  {[
-                    { name: '外包一审', before: 66423, after: 24511 },
-                    { name: '远程一审', before: 82773, after: 29431 },
-                    { name: '总部一审', before: 25161, after: 135259 },
-                    { name: '总部二审', before: 14472, after: 14628 }
-                  ].map((item, index) => {
-                    const totalGroups = 4;
-                    const groupCenterX = ((index + 0.5) / totalGroups) * 100;
+                <div className="flex justify-center mt-3">
+                  <div className="relative" style={{ width: '680px', height: '45px', marginLeft: '60px' }}>
+                    {[
+                      { name: '外包一审', before: 66423, after: 24511 },
+                      { name: '远程一审', before: 82773, after: 29431 },
+                      { name: '总部一审', before: 25161, after: 135259 },
+                      { name: '总部二审', before: 14472, after: 14628 }
+                    ].map((item, index) => {
+                      const totalGroups = 4;
+                      const chartWidth = 680;
+                      const spacing = chartWidth / totalGroups;
+                      const groupCenterX = spacing * index + spacing / 2;
 
-                    return (
-                      <div
-                        key={index}
-                        className="absolute text-center"
-                        style={{
-                          left: `${groupCenterX}%`,
-                          transform: 'translateX(-50%)',
-                          width: '160px'
-                        }}
-                      >
-                        <div className="text-sm text-gray-800 font-medium whitespace-nowrap">{item.name}</div>
-                        <div className="text-xs text-gray-600 mt-1">{item.before}/{item.after}</div>
-                      </div>
-                    );
-                  })}
+                      return (
+                        <div
+                          key={index}
+                          className="absolute text-center"
+                          style={{
+                            left: `${groupCenterX}px`,
+                            transform: 'translateX(-50%)',
+                            width: '160px'
+                          }}
+                        >
+                          <div className="text-sm text-gray-800 font-medium whitespace-nowrap">{item.name}</div>
+                          <div className="text-xs text-gray-600 mt-1">{item.before}/{item.after}</div>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
                             
