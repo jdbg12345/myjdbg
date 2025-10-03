@@ -247,11 +247,16 @@ export const Direction1PersonnelCapability = () => {
                 <span className="w-3 h-3 bg-green-600 rounded mr-3"></span>
                   洞察分析
               </h4>
-            <p className="text-gray-700 text-sm leading-relaxed">1、通过派单机制的调整，外包的订单量由 <span className="font-bold">66,423</span> 单降至 <span className="font-bold">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；远程的订单量由 <span className="font-bold">82,733</span> 单降至 <span className="font-bold">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>，整体实现了低效渠道订单量的显著压缩，符合预期</p>
+            <p className="text-gray-700 text-sm leading-relaxed">1、通过派单机制的调整，整体实现了外包和远程等低效渠道订单量的显著压缩，整体审核质量提了xx，符合预期</p>
 
-               <p className="text-gray-700 text-sm leading-relaxed">2、总部一审的订单量由 <span className="font-bold">25,161</span> 单增长至 <span className="font-bold">135,259</span> 单，提升了 <span className="font-bold text-green-600">437.57%</span>；其审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.51%</span>，下降了 <span className="font-bold text-green-600">19.05%</span>，审核质量明显提升，符合预期。
+                          <p className="text-gray-700 text-sm leading-relaxed">2、外包的订单量由 <span className="font-bold">66,423</span> 单降至 <span className="font-bold">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；远程的订单量由 <span className="font-bold">82,733</span> 单降至 <span className="font-bold">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>，整体实现了低效渠道订单量的显著压缩，符合预期</p>
+
+                          <p className="text-gray-700 text-sm leading-relaxed">3、远程的订单量由 <span className="font-bold">66,423</span> 单降至 <span className="font-bold">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；远程的订单量由 <span className="font-bold">82,733</span> 单降至 <span className="font-bold">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>，整体实现了低效渠道订单量的显著压缩，符合预期</p>
+
+
+               <p className="text-gray-700 text-sm leading-relaxed">4、总部一审的订单量由 <span className="font-bold">25,161</span> 单增长至 <span className="font-bold">135,259</span> 单，提升了 <span className="font-bold text-green-600">1.08%</span>；其审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.30%</span>，下降了 <span className="font-bold text-green-600">51.73%</span>，审核质量明显提升，符合预期。
 </p>
-                     <p className="text-gray-700 text-sm leading-relaxed">3、总部二审的订单量由 <span className="font-bold">25,161</span> 单增长至 <span className="font-bold">135,259</span> 单，提升了 <span className="font-bold text-green-600">437.57%</span>；其审核错误率由 <span className="font-bold">0.63%</span> 降至 <span className="font-bold">0.51%</span>，下降了 <span className="font-bold text-green-600">19.05%</span>，审核质量明显提升，符合预期。
+                     <p className="text-gray-700 text-sm leading-relaxed">5、总部二审的订单量由 <span className="font-bold">14,472</span> 单增长至 <span className="font-bold">14,628</span> 单，提升了 <span className="font-bold text-green-600">437.57%</span>；其审核错误率由 <span className="font-bold">0.13%</span> 降至 <span className="font-bold">0.12%</span>，下降了 <span className="font-bold text-green-600">6.27%</span>，审核质量明显提升，符合预期。
 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
 4、进一步分析发现，尽管外包与远程订单量大幅减少，且审核难度降低，其错误率却提升了<span className="font-bold text-red-600">43.71%、36.40%</span>，不符合预期；反映出其在能力及态度方面存在较大短板，也存在安全隐患。<span className="text-blue-600">后续加强人员培训、优化淘汰机制，强化过程管控，目标逐步降低比重，直到可随时剔除</span></p>
