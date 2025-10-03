@@ -113,7 +113,7 @@ export const Direction3SystemStrategies = () => {
 
                 {/* X轴标签（图表外） */}
                 <div className="mx-12 mt-3 text-center">
-                  <div className="text-sm text-gray-600">100单</div>
+                  <div className="text-sm text-gray-600">100</div>
                 </div>
               </div>
                             
