@@ -313,15 +313,15 @@ export const AgentControlOverview = () => {
               gradeColor: 'text-green-600 bg-green-50'
             }
           ].map((agent, index) => (
-            <div key={index} className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-md transition-shadow">
+            <div key={index} className="bg-gradient-to-r from-blue-50 to-white rounded-lg p-6 border-2 border-blue-200 hover:shadow-lg transition-all duration-200">
               {/* 顶部信息 */}
-              <div className="flex items-start justify-between mb-6">
+              <div className="flex items-start justify-between mb-6 pb-4 border-b-2 border-blue-100">
                 <div className="flex items-center space-x-6">
-                  <span className="text-xl font-bold text-gray-800">{agent.id}</span>
-                  <span className="text-gray-600 text-lg">{agent.site}</span>
-                  <div className="flex items-center space-x-6 text-base text-gray-600">
-                    <span>贡献盈利: <span className="font-semibold text-gray-800">{agent.contributionProfit}</span></span>
-                    <span>累计存款: <span className="font-semibold text-gray-800">{agent.totalDeposit}</span></span>
+                  <span className="text-xl font-bold text-blue-700">{agent.id}</span>
+                  <span className="px-3 py-1 bg-blue-600 text-white rounded-full text-sm font-medium">{agent.site}</span>
+                  <div className="flex items-center space-x-6 text-sm text-gray-700">
+                    <span>贡献盈利: <span className="font-bold text-blue-600">{agent.contributionProfit}</span></span>
+                    <span>累计存款: <span className="font-bold text-gray-800">{agent.totalDeposit}</span></span>
                     <span>下级人数: <span className="font-semibold text-gray-800">{agent.activeUsers}</span></span>
                   </div>
                 </div>
@@ -331,78 +331,78 @@ export const AgentControlOverview = () => {
               </div>
 
               {/* 主体：四列布局 */}
-              <div className="grid grid-cols-4 gap-8">
+              <div className="grid grid-cols-4 gap-6">
                 {/* 第一列：综合分数 */}
-                <div className="flex flex-col items-center justify-center border-r border-gray-200 pr-6">
-                  <div className="text-5xl font-extrabold text-blue-600 mb-3">{agent.totalScore}</div>
-                  <div className="text-base text-gray-600 mb-4">综合分数</div>
-                  <span className={`inline-block px-4 py-2 rounded-full text-base font-semibold ${agent.gradeColor}`}>
+                <div className="flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-4">
+                  <div className="text-6xl font-extrabold text-blue-600 mb-2">{agent.totalScore}</div>
+                  <div className="text-sm text-gray-600 mb-3">综合分数</div>
+                  <span className={`inline-block px-4 py-1.5 rounded-full text-sm font-bold shadow-sm ${agent.gradeColor}`}>
                     {agent.grade}
                   </span>
                 </div>
 
                 {/* 第二列：盈利贡献 */}
-                <div className="border-r border-gray-200 pr-6">
-                  <div className="text-center mb-4">
-                    <div className="text-base text-gray-500 mb-2">盈利贡献</div>
+                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                  <div className="text-center mb-4 pb-3 border-b border-gray-200">
+                    <div className="text-xs text-gray-500 mb-1">盈利贡献</div>
                     <div className="text-3xl font-bold text-blue-600">{agent.businessScore}</div>
                   </div>
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">贡献净盈利</span>
-                      <span className="font-semibold text-gray-800">{agent.contributionProfit}</span>
+                  <div className="space-y-2.5">
+                    <div className="flex justify-between items-center bg-blue-50 px-3 py-2 rounded">
+                      <span className="text-xs text-gray-600">贡献净盈利</span>
+                      <span className="font-bold text-sm text-gray-800">{agent.contributionProfit}</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">投入产出比</span>
-                      <span className="font-semibold text-gray-800">120%</span>
+                    <div className="flex justify-between items-center bg-blue-50 px-3 py-2 rounded">
+                      <span className="text-xs text-gray-600">投入产出比</span>
+                      <span className="font-bold text-sm text-gray-800">120%</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">贡献持续度</span>
-                      <span className="font-semibold text-gray-800">85%</span>
+                    <div className="flex justify-between items-center bg-blue-50 px-3 py-2 rounded">
+                      <span className="text-xs text-gray-600">贡献持续度</span>
+                      <span className="font-bold text-sm text-gray-800">85%</span>
                     </div>
                   </div>
                 </div>
 
                 {/* 第三列：下级质量 */}
-                <div className="border-r border-gray-200 pr-6">
-                  <div className="text-center mb-4">
-                    <div className="text-base text-gray-500 mb-2">下级质量</div>
+                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                  <div className="text-center mb-4 pb-3 border-b border-gray-200">
+                    <div className="text-xs text-gray-500 mb-1">下级质量</div>
                     <div className="text-3xl font-bold text-blue-600">{agent.userQuality}</div>
                   </div>
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">一次性会员</span>
-                      <span className="font-semibold text-gray-800">15%</span>
+                  <div className="space-y-2.5">
+                    <div className="flex justify-between items-center bg-blue-50 px-3 py-2 rounded">
+                      <span className="text-xs text-gray-600">一次性会员</span>
+                      <span className="font-bold text-sm text-gray-800">15%</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">贡献集中度</span>
-                      <span className="font-semibold text-gray-800">25%</span>
+                    <div className="flex justify-between items-center bg-blue-50 px-3 py-2 rounded">
+                      <span className="text-xs text-gray-600">贡献集中度</span>
+                      <span className="font-bold text-sm text-gray-800">25%</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">新客贡献度</span>
-                      <span className="font-semibold text-gray-800">70%</span>
+                    <div className="flex justify-between items-center bg-blue-50 px-3 py-2 rounded">
+                      <span className="text-xs text-gray-600">新客贡献度</span>
+                      <span className="font-bold text-sm text-gray-800">70%</span>
                     </div>
                   </div>
                 </div>
 
                 {/* 第四列：风险评估 */}
-                <div>
-                  <div className="text-center mb-4">
-                    <div className="text-base text-gray-500 mb-2">风险评估</div>
+                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                  <div className="text-center mb-4 pb-3 border-b border-gray-200">
+                    <div className="text-xs text-gray-500 mb-1">风险评估</div>
                     <div className="text-3xl font-bold text-blue-600">{agent.riskControl}</div>
                   </div>
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">多关联风险</span>
-                      <span className="font-semibold text-gray-800">5%</span>
+                  <div className="space-y-2.5">
+                    <div className="flex justify-between items-center bg-blue-50 px-3 py-2 rounded">
+                      <span className="text-xs text-gray-600">多关联风险</span>
+                      <span className="font-bold text-sm text-gray-800">5%</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">负盈利风险</span>
-                      <span className="font-semibold text-gray-800">10%</span>
+                    <div className="flex justify-between items-center bg-blue-50 px-3 py-2 rounded">
+                      <span className="text-xs text-gray-600">负盈利风险</span>
+                      <span className="font-bold text-sm text-gray-800">10%</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">下级风险度</span>
-                      <span className="font-semibold text-gray-800">8%</span>
+                    <div className="flex justify-between items-center bg-blue-50 px-3 py-2 rounded">
+                      <span className="text-xs text-gray-600">下级风险度</span>
+                      <span className="font-bold text-sm text-gray-800">8%</span>
                     </div>
                   </div>
                 </div>

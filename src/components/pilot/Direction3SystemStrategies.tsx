@@ -5,8 +5,8 @@ export const Direction3SystemStrategies = () => {
     <>
       {/* 系统审核策略 */}
       <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-          <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
+          <div className="bg-blue-50 rounded-lg p-8 mb-6 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
              <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
            </div>
@@ -68,52 +68,111 @@ export const Direction3SystemStrategies = () => {
             
             {/* 电子策略图表 */}
             <div className="mt-8">
-              <div className="relative mb-6 bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="grid grid-cols-2 gap-6">
+                {/* 第一个图表：不含PG */}
+                <div className="relative bg-blue-50 rounded-lg p-6 border border-blue-200">
+                  <div className="text-center mb-4">
+                    <h5 className="text-sm font-semibold text-gray-800">不含PG</h5>
+                  </div>
 
-                {/* 图表区域 */}
-                <div className="mx-12 h-80 relative">
-                  <div className="absolute left-0 h-full flex flex-col justify-between text-sm text-gray-600">
-                    <span>120</span>
-                    <span>90</span>
-                    <span>60</span>
-                    <span>30</span>
-                    <span>0</span>
-                  </div>
-                  
-                  <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600">
-                    <span>100%</span>
-                    <span>75%</span>
-                    <span>50%</span>
-                    <span>25%</span>
-                    <span>0%</span>
-                  </div>
-                  
-                  <div className="absolute left-12 right-12 h-full">
-                    {[0, 25, 50, 75, 100].map((percent) => (
-                      <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
-                    ))}
-                  </div>
-                  
-                  <div className="absolute left-12 right-12 bottom-0 top-0 flex items-end justify-center">
-                    <div className="flex flex-col items-center relative">
-                      <div className="w-20 bg-blue-500 rounded-t" style={{ height: '200px' }}></div>
+                  {/* 图表区域 */}
+                  <div className="mx-8 h-64 relative">
+                    <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-600">
+                      <span>100</span>
+                      <span>75</span>
+                      <span>50</span>
+                      <span>25</span>
+                      <span>0</span>
+                    </div>
 
-                      {/* 准确率数据点 */}
-                      <div
-                        className="absolute w-5 h-5 bg-blue-600 rounded-full border-2 border-white"
-                        style={{top: `${100 - 25 - 10}%`, left: '50%', transform: 'translateX(-50%)'}}
-                      >
-                        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded text-xs font-medium whitespace-nowrap">
-                          90%
+                    <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-blue-600">
+                      <span>100%</span>
+                      <span>75%</span>
+                      <span>50%</span>
+                      <span>25%</span>
+                      <span>0%</span>
+                    </div>
+
+                    <div className="absolute left-8 right-8 h-full">
+                      {[0, 25, 50, 75, 100].map((percent) => (
+                        <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
+                      ))}
+                    </div>
+
+                    <div className="absolute left-8 right-8 bottom-0 top-0 flex items-end justify-center">
+                      <div className="flex flex-col items-center relative">
+                        <div className="w-16 bg-blue-500 rounded-t" style={{ height: `${(100 / 100) * 256}px` }}></div>
+
+                        {/* 准确率数据点 */}
+                        <div
+                          className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white"
+                          style={{bottom: `${(90 / 100) * 256}px`, left: '50%', transform: 'translateX(-50%)'}}
+                        >
+                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                            90%
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
+                  {/* X轴标签（图表外） */}
+                  <div className="mx-8 mt-3 text-center">
+                    <div className="text-sm text-gray-600">100单</div>
+                  </div>
                 </div>
 
-                {/* X轴标签（图表外） */}
-                <div className="mx-12 mt-3 text-center">
-                  <div className="text-sm text-gray-600">100</div>
+                {/* 第二个图表：包含PG */}
+                <div className="relative bg-blue-50 rounded-lg p-6 border border-blue-200">
+                  <div className="text-center mb-4">
+                    <h5 className="text-sm font-semibold text-gray-800">包含PG</h5>
+                  </div>
+
+                  {/* 图表区域 */}
+                  <div className="mx-8 h-64 relative">
+                    <div className="absolute left-0 h-full flex flex-col justify-between text-xs text-gray-600">
+                      <span>100</span>
+                      <span>75</span>
+                      <span>50</span>
+                      <span>25</span>
+                      <span>0</span>
+                    </div>
+
+                    <div className="absolute right-0 h-full flex flex-col justify-between text-xs text-blue-600">
+                      <span>100%</span>
+                      <span>75%</span>
+                      <span>50%</span>
+                      <span>25%</span>
+                      <span>0%</span>
+                    </div>
+
+                    <div className="absolute left-8 right-8 h-full">
+                      {[0, 25, 50, 75, 100].map((percent) => (
+                        <div key={percent} className="absolute w-full border-t border-gray-300" style={{bottom: `${percent}%`}}></div>
+                      ))}
+                    </div>
+
+                    <div className="absolute left-8 right-8 bottom-0 top-0 flex items-end justify-center">
+                      <div className="flex flex-col items-center relative">
+                        <div className="w-16 bg-blue-500 rounded-t" style={{ height: `${(100 / 100) * 256}px` }}></div>
+
+                        {/* 准确率数据点 */}
+                        <div
+                          className="absolute w-4 h-4 bg-blue-600 rounded-full border-2 border-white"
+                          style={{bottom: `${(45 / 100) * 256}px`, left: '50%', transform: 'translateX(-50%)'}}
+                        >
+                          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
+                            45%
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* X轴标签（图表外） */}
+                  <div className="mx-8 mt-3 text-center">
+                    <div className="text-sm text-gray-600">100单</div>
+                  </div>
                 </div>
               </div>
                             
@@ -323,8 +382,8 @@ export const Direction3SystemStrategies = () => {
 
       {/* 风控工具集合 */}
       <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-          <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
+          <div className="bg-blue-50 rounded-lg p-8 mb-6 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
              <h3 className="text-xl font-semibold text-gray-800">风控工具集合</h3>
            </div>
@@ -544,8 +603,8 @@ export const Direction3SystemStrategies = () => {
 
       {/* 极端异常预防 */}
       <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-          <div className="bg-blue-50 rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 border border-blue-200">
+          <div className="bg-blue-50 rounded-lg p-8 mb-6 border border-blue-200">
            <div className="flex items-center space-x-3 mb-6">
              <h3 className="text-xl font-semibold text-gray-800">极端异常预防</h3>
            </div>
