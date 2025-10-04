@@ -9,7 +9,7 @@ interface NavigationItem {
 
 const navigationItems: NavigationItem[] = [
   { id: 'cover', title: 'Q3 REPORT' },
-  { id: 'org', title: '1. 组织情况（待更新）' },
+  { id: 'org', title: '1. ZZ情况（待更新）' },
   {
     id: 'data',
     title: '2. 数据情况（待更新）',
