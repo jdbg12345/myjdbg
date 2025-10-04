@@ -127,12 +127,7 @@ function App() {
         <div data-section="agent-control-overview">
           <AgentControlOverview />
         </div>
-        
-        
-        {/* 4. B端事故问题汇总 */}
-        <div data-section="risk-review">
-          <RiskReview />
-        </div>
+
       </div>
     </div>
   );
