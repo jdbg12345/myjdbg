@@ -7,7 +7,7 @@ export interface Section {
 export const sections: Section[] = [
   { id: 'cover', title: '封面', nextTitle: '目录' },
   { id: 'toc', title: '目录', nextTitle: '组织情况' },
-  { id: 'org', title: '1. 组织情况', nextTitle: '整体数据' },
+  { id: 'org', title: '1. 组织情况', nextTitle: '数据情况' },
   { id: 'data', title: '2. 数据情况', nextTitle: '防范单量与金额' },
   { id: 'prevention-data', title: '2.1 防范单量与金额', nextTitle: '站点类型占比' },
   { id: 'prevention-category', title: '2.2 站点类型占比', nextTitle: 'Y4明细' },
