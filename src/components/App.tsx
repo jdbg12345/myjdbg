@@ -27,7 +27,7 @@ import { EndPage } from './components/EndPage';
           <InternalControlOverview />
         </div>
         
-        {/* 3.4 代理风控说明 */}
+        {/* 3.4 DL风控说明 */}
         <div data-section="agent-control-overview">
           <AgentControlOverview />
         </div>
