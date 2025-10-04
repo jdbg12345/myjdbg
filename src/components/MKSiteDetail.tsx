@@ -129,7 +129,7 @@ export const MKSiteDetail = () => {
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <div className="text-sm text-blue-700">
                 <div className="font-semibold mb-2">数据说明：</div>
-                <div><span className="font-semibold">DL类：</span>佣金拦截（为"DL本身"佣金&DL人头费套利），红利拦截（为"DL线下会员"活动套利）</div>
+                <div><span className="font-semibold">DL类：</span>YJ拦截（为"DL本身"佣金&DL人头费套利），红利拦截（为"DL线下会员"活动套利）</div>
                 <div className="mt-2"><span className="font-semibold">TG类：</span>DL类（为额度代存套利）</div>
               </div>
             </div>
