@@ -161,12 +161,7 @@ const siteData = [
               <span className="text-blue-600 mr-2">●</span>
               <span>站点方面：4，9，XK等站点占比三个季度保持整体较高占比，MK站在本季度数据提升明显，原因为发展数据提升，同步拦截提升，其中代理拦截金额占比提升较大</span>
             </div>
-            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-              <div className="text-sm text-blue-700">
-                <div className="font-semibold mb-2">数据说明：</div>
-                <div>其他类：涵盖（其余场馆刷子等其他套利）</div>
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>
