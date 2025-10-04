@@ -332,40 +332,6 @@ export const Direction4InternalCollusion = () => {
                 </div>
               </div>
 
-              {/* 买卖号测试 */}
-              <div className="bg-white rounded-lg p-6 border-2 border-yellow-200 shadow-sm">
-                <div className="flex items-center justify-between mb-4">
-                  <h5 className="text-lg font-semibold text-gray-800">买卖号测试：持续推进</h5>
-                  <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-700">进行中</span>
-                </div>
-
-                <div className="bg-yellow-50 rounded-lg p-5 border-2 border-yellow-200">
-                  <h6 className="font-semibold text-yellow-800 mb-3">最新前置要求：</h6>
-                  <div className="grid grid-cols-2 gap-3 mb-4">
-                    <div className="bg-white rounded p-3 border border-yellow-300">
-                      <span className="text-yellow-600 font-bold mr-2">①</span>
-                      <span className="text-gray-700"><span className="font-semibold text-yellow-700">V4以上</span>且注册时间<span className="font-semibold">&gt;6个月</span></span>
-                    </div>
-                    <div className="bg-white rounded p-3 border border-yellow-300">
-                      <span className="text-yellow-600 font-bold mr-2">②</span>
-                      <span className="text-gray-700">负盈利<span className="font-semibold text-yellow-700">20w++</span></span>
-                    </div>
-                    <div className="bg-white rounded p-3 border border-yellow-300">
-                      <span className="text-yellow-600 font-bold mr-2">③</span>
-                      <span className="text-gray-700"><span className="font-semibold text-yellow-700">IP干净</span>且已完成实名</span>
-                    </div>
-                    <div className="bg-white rounded p-3 border border-yellow-300">
-                      <span className="text-yellow-600 font-bold mr-2">④</span>
-                      <span className="text-gray-700">无<span className="font-semibold text-yellow-700">任何标签</span>的优势账号</span>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded p-3 border-2 border-yellow-300">
-                    <span className="font-semibold text-yellow-700">原因：</span>
-                    <span className="text-gray-700 text-sm">存款和活动优势大，出款容易，高V和负盈利可避开FK严查</span>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             {/* 2️⃣ 详细案件记录 */}
             <div className="bg-gradient-to-br from-gray-50 via-white to-gray-50 rounded-xl p-8 border-2 border-gray-300 shadow-lg">
