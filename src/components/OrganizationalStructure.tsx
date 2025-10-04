@@ -548,7 +548,7 @@ export const OrganizationalStructure = () => {
             <div className="bg-white rounded-xl p-6 border-2 border-blue-300 mb-8 mx-auto max-w-2xl">
               <div className="flex items-center justify-center space-x-8">
                 <div className="text-center">
-                  <div className="text-lg text-gray-600 mb-2">合计人数（含远程外包）</div>
+                  <div className="text-lg text-gray-600 mb-2">合计（含远程外包）</div>
                   <div className="text-4xl font-bold text-red-600">{totalPersonnelWithOutsource}</div>
                 </div>
 
@@ -571,7 +571,7 @@ export const OrganizationalStructure = () => {
 
                 <div className="w-px h-16 bg-gray-300"></div>
                 <div className="text-center">
-                  <div className="text-lg text-gray-600 mb-2">合计人数（非远程外包）</div>
+                  <div className="text-lg text-gray-600 mb-2">合计（非远程外包）</div>
                   <div className="text-4xl font-bold text-blue-600">{totalPersonnelNoOutsource}</div>
                 </div>
                 <div className="w-px h-16 bg-gray-300"></div>
