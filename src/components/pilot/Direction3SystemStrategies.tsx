@@ -595,7 +595,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">待开发</span>
               </div>
               <div className="text-blue-600 font-medium text-sm bg-blue-50 px-4 py-2 rounded border border-blue-200">
-                目前该问题在技术层面反馈，暂时无法实现彻底解决，需进一步讨论
+                目前该问题在技术层面反馈，暂时无法实现彻底解决，需进一步讨论，
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -611,7 +611,7 @@ export const Direction3SystemStrategies = () => {
                   </div>
                   <div className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
-                    <span><span className="font-medium text-blue-600">人工计算错误</span>：由于系统计算流水不可用，风控人员<span className="text-blue-600">只能依赖手动计算</span>。但由于规则复杂，且涉及到多个页面及数据，实际执行存在较大差异，不仅耗时繁琐，导致<span className="text-blue-600">每月约1万笔订单因流水错误引发出款错误问题</span></span>
+                    <span><span className="font-medium text-blue-600">人工计算错误</span>：由于系统计算流水不可用，风控人员<span className="text-blue-600">只能依赖手动计算</span>。但由于规则复杂，且涉及到多个页面及数据，实际执行存在较大差异，不仅耗时繁琐，导致<span className="text-blue-600">每月约1万笔订单，占比约5%，因流水错误引发出款损失金额约50万</span></span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
