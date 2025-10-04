@@ -132,11 +132,23 @@ const siteData = [
           <div className="space-y-3 text-gray-700">
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span>整体拦截金额对比上季度减少12%，多数站点对比上季度呈现减少，Y4及Y6+9为主共计减少4249w</span>
+              <span>整体拦截金额对比上季度增加5%，较多站点对比上季度呈现增加，站4及MK增加明显共计3829w</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span>代理，体育，红利为本季度主要拦截里面部分，占比分别达到40%，32%，16%。总计约占整体88%占比</span>
+              <span>代理，体育为本季度主要拦截里面部分，占比分别约达到38%，35%。总计约占整体73%占比</span>
+            </div>
+             <div className="flex items-start">
+              <span className="text-blue-600 mr-2">●</span>
+              <span>红利拦截：以场馆首存及投注豪礼为主，总计占红利分类占比64%</span>
+            </div>
+             <div className="flex items-start">
+              <span className="text-blue-600 mr-2">●</span>
+              <span>其他拦截：以电竞彩票棋牌刷子为主，总计占其他分类占比78%</span>
+            </div>
+              <div className="flex items-start">
+              <span className="text-blue-600 mr-2">●</span>
+              <span>站点方面：4，9，XK等站点占比三个季度保持整体较高占比，MK站在本季度数据提升明显，原因为发展数据提升，同步拦截提升，其中代理拦截金额占比提升较大</span>
             </div>
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <div className="text-sm text-blue-700">
