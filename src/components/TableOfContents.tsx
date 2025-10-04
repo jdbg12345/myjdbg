@@ -26,7 +26,7 @@ export const TableOfContents = () => {
               { num: "2.3", title: "防范金突出站点-4明细" },
               { num: "2.4", title: "防范金突出站点-BD+XK明细" },
               { num: "2.5", title: "防范金突出站点-6+9明细" },
-              { num: "2.6", title: "防范金突出站点-8" },
+              { num: "2.6", title: "防范金突出站点-8明细" },
               { num: "2.7", title: "DL活动防犯" },
               { num: "2.8", title: "体育拦截分类明细" },
               { num: "2.9", title: "体育整体杀率明细" },
