@@ -250,7 +250,7 @@ export const Direction4InternalCollusion = () => {
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">6</span>
               </div>
-              <h4 className="text-lg font-semibold text-gray-800">稽查效果</h4>
+              <h4 className="text-lg font-semibold text-gray-800">稽查成果</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">持续进行中</span>
             </div>
           </div>
