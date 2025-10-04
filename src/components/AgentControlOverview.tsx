@@ -7,7 +7,7 @@ export const AgentControlOverview = () => {
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center justify-between border-b-4 border-blue-600 pb-4 mb-4">
-          <h1 className="text-5xl font-bold text-gray-800">3.4 DL风控变化说明</h1>
+          <h1 className="text-5xl font-bold text-gray-800">3.4 DL变化说明</h1>
         </div>
         <div className="text-gray-600 text-lg">
           <p className="text-gray-700 text-lg leading-relaxed font-semibold">Q4会从<span className="text-blue-600">YJ审核流程、DL质量分析</span>等方向进行重点优化</p>
