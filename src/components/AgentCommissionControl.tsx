@@ -38,7 +38,6 @@ export const AgentCommissionControl = () => {
             <tr>
               <th className="p-6 text-left font-semibold">需求名称</th>
               <th className="p-6 text-left font-semibold">需求简述</th>
-              <th className="p-6 text-center font-semibold w-32">当前状态</th>
               <th className="p-6 text-center font-semibold w-32">预期时间</th>
               <th className="p-6 text-left font-semibold w-48">预期收益</th>
             </tr>
@@ -50,9 +49,6 @@ export const AgentCommissionControl = () => {
               <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                 <td className="p-6 font-semibold">{row.name}</td>
                 <td className="p-6">{row.desc}</td>
-                <td className="p-6 text-center">
-                  <span className={`px-4 py-2 rounded-full text-sm font-semibold ${row.statusColor}`}>{row.status}</span>
-                </td>
                 <td className="p-6 text-center">{row.time}</td>
                 <td className="p-6">{row.benefit}</td>
               </tr>
