@@ -3,7 +3,7 @@ import { Shield } from 'lucide-react';
 
 export const AgentControlOverview = () => {
   return (
-    <div className="bg-white rounded-lg p-10 mb-6 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 relative">
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center justify-between border-b-4 border-blue-600 pb-4 mb-4">
@@ -17,7 +17,7 @@ export const AgentControlOverview = () => {
 
          {/* YJ审核 */}
         <div className="mb-12">
-          <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
+          <div className="bg-white rounded-lg p-4 mb-3 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -63,7 +63,7 @@ export const AgentControlOverview = () => {
         </p>
 
         <div className="flex items-center justify-center mt-6">
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-6">
             {/* 高危DL */}
             <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
               <div className="text-gray-700 font-semibold mb-2">如:综合分数低DL</div>
@@ -71,27 +71,42 @@ export const AgentControlOverview = () => {
             </div>
 
             {/* 箭头 */}
-            <div className="bg-gray-600 rounded-full p-3">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-600 rounded-full p-2">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+
+            {/* 随机派单 */}
+            <div className="bg-white border border-purple-200 rounded-lg p-6 text-center min-w-40">
+              <svg className="w-8 h-8 text-purple-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              <div className="text-purple-700 font-semibold mb-2">随机派单</div>
+            </div>
+
+            {/* 箭头 */}
+            <div className="bg-gray-600 rounded-full p-2">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </div>
 
             {/* 复审抽检 */}
-            <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-48">
+            <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-40">
               <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
               <div className="text-blue-700 font-semibold mb-2">复审抽检</div>
             </div>
 
             {/* 箭头 */}
-            <div className="bg-gray-600 rounded-full p-3">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-600 rounded-full p-2">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </div>
 
             {/* 复审不通过 */}
-            <div className="bg-white border border-red-200 rounded-lg p-6 text-center min-w-48">
+            <div className="bg-white border border-red-200 rounded-lg p-6 text-center min-w-40">
               <svg className="w-8 h-8 text-red-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
@@ -102,7 +117,7 @@ export const AgentControlOverview = () => {
         </div>
 
         <div className="flex items-center justify-center mt-6">
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-6">
             {/* 异常风险 */}
             <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
               <div className="text-gray-700 font-semibold mb-2">如：风险系数高DL</div>
@@ -110,27 +125,42 @@ export const AgentControlOverview = () => {
             </div>
 
             {/* 箭头 */}
-            <div className="bg-gray-600 rounded-full p-3">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-600 rounded-full p-2">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+
+            {/* 随机派单 */}
+            <div className="bg-white border border-purple-200 rounded-lg p-6 text-center min-w-40">
+              <svg className="w-8 h-8 text-purple-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              <div className="text-purple-700 font-semibold mb-2">随机派单</div>
+            </div>
+
+            {/* 箭头 */}
+            <div className="bg-gray-600 rounded-full p-2">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </div>
 
             {/* 复审抽检 */}
-            <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-48">
+            <div className="bg-white border border-blue-200 rounded-lg p-6 text-center min-w-40">
               <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
               <div className="text-blue-700 font-semibold mb-2">复审抽检</div>
             </div>
 
             {/* 箭头 */}
-            <div className="bg-gray-600 rounded-full p-3">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gray-600 rounded-full p-2">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </div>
 
             {/* 抽检通过 */}
-            <div className="bg-white border border-green-200 rounded-lg p-6 text-center min-w-48">
+            <div className="bg-white border border-green-200 rounded-lg p-6 text-center min-w-40">
               <svg className="w-8 h-8 text-green-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
@@ -146,7 +176,7 @@ export const AgentControlOverview = () => {
 
         {/* DL质量分析 */}
         <div className="mb-12">
-          <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
+          <div className="bg-white rounded-lg p-4 mb-3 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -182,8 +212,8 @@ export const AgentControlOverview = () => {
             </div>
 
              {/* DL质量分析模型 */}
-      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200 mt-12">
-        <div className="flex items-center space-x-3 mb-6">
+      <div className="bg-white rounded-lg p-4 mb-3 border border-blue-200 mt-12">
+        <div className="flex items-center space-x-3 mb-4">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">📊</span>
           </div>
@@ -199,7 +229,7 @@ export const AgentControlOverview = () => {
           </div>
 
           {/* 第二列：盈利贡献 */}
-          <div className="space-y-3">
+          <div className="space-y-2">
             {/* 第一行：标题 */}
             <div className="bg-blue-600 text-white p-4 rounded text-center border-r border-gray-200">
               <div className="text-base font-semibold">盈利贡献</div>
@@ -223,7 +253,7 @@ export const AgentControlOverview = () => {
           </div>
 
           {/* 第三列：下级质量 */}
-          <div className="space-y-3">
+          <div className="space-y-2">
             {/* 第一行：标题 */}
             <div className="bg-blue-600 text-white p-4 rounded text-center border-r border-gray-200">
               <div className="text-base font-semibold">下级质量</div>
@@ -247,7 +277,7 @@ export const AgentControlOverview = () => {
           </div>
 
           {/* 第四列：风险评估 */}
-          <div className="space-y-3">
+          <div className="space-y-2">
             {/* 第一行：标题 */}
             <div className="bg-blue-600 text-white p-4 rounded text-center border-r border-gray-200">
               <div className="text-base font-semibold">风险评估</div>
@@ -275,8 +305,8 @@ export const AgentControlOverview = () => {
       </div>
 
      {/* 有效贡献度呈现效果展示 */}
-      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
+      <div className="bg-white rounded-lg p-4 mb-3 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-4">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">📊</span>
           </div>
@@ -284,7 +314,7 @@ export const AgentControlOverview = () => {
         </div>
 
         {/* DL列表 */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           {[
             {
               id: '3Y218350',

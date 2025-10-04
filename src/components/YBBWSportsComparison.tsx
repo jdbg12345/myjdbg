@@ -25,9 +25,9 @@ export const YBBWSportsComparison = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg p-10 mb-6 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 relative">
       {/* Header */}
-      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-3 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.11 Y/B/BW的对比分析</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -36,8 +36,8 @@ export const YBBWSportsComparison = () => {
       </div>
 
       {/* 1. 主要球类Y/B/BW占比 */}
-      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
+      <div className="bg-white rounded-lg p-4 mb-3 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-4">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <BarChart3 className="w-5 h-5 text-white" />
           </div>
@@ -71,7 +71,7 @@ export const YBBWSportsComparison = () => {
         </div>
 
         {/* 数据说明 */}
-        <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+        <div className="mt-4 p-3 bg-blue-50 rounded-lg">
           <div className="text-sm text-gray-700">
             <div className="font-semibold mb-2 text-blue-800">数据说明：</div>
             <div className="space-y-1">
@@ -84,8 +84,8 @@ export const YBBWSportsComparison = () => {
       </div>
 
       {/* 2. 熊猫体育流水Y/B/BW占比 */}
-      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
+      <div className="bg-white rounded-lg p-4 mb-3 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-4">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <TrendingUp className="w-5 h-5 text-white" />
           </div>
@@ -118,7 +118,7 @@ export const YBBWSportsComparison = () => {
         </div>
 
         {/* 数据说明 */}
-        <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+        <div className="mt-4 p-3 bg-blue-50 rounded-lg">
           <div className="text-sm text-gray-700">
             <div className="font-semibold mb-2 text-blue-800">数据说明：</div>
             <div className="space-y-1">

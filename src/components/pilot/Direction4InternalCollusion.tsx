@@ -633,7 +633,7 @@ export const Direction4InternalCollusion = () => {
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
                       <div><span className="font-semibold text-gray-700">场地人员：</span>班次组长管理安全盾，规避检查风险。</div>
-                      <div><span className="font-semibold text-gray-700">远程人员：</span>账号权限收至最低标准。盾由场地管理提报且仅虚拟机使用。</div>
+                      <div><span className="font-semibold text-gray-700">YC人员：</span>账号权限收至最低标准。盾由场地管理提报且仅虚拟机使用。</div>
                       <div><span className="font-semibold text-gray-700">居家人员：</span>不发U盾、全部放在场地人员、统一由场地人员告知验证码。</div>
                     </div>
                   </td>
@@ -650,7 +650,7 @@ export const Direction4InternalCollusion = () => {
                     <div className="space-y-2">
                       <div>• 权限修改至仅查看单会员数据，用于日常排查</div>
                       <div>• <span className="font-semibold text-gray-700">主管级账号：</span>能导出且帐密仅主管查看</div>
-                      <div>• <span className="font-semibold text-gray-700">外包、远程、一审等较低职位：</span>不让使用三方后台</div>
+                      <div>• <span className="font-semibold text-gray-700">WB、YC、一审等较低职位：</span>不让使用三方后台</div>
                     </div>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">

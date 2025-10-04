@@ -9,8 +9,8 @@ export const OrganizationalStructure = () => {
       DB: { current: 0, planned: 0, isMain: true }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '远程': { current: 0, planned: 0, isMain: false }, 
-      '外包': { current: 0, planned: 0, isMain: false }, 
+      'YC': { current: 0, planned: 0, isMain: false }, 
+      'WB': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
     '体育审核组': {
@@ -18,8 +18,8 @@ export const OrganizationalStructure = () => {
       DB: { current: 2, planned: 0, isMain: false },
       SLK: { current: 18, planned: 0, isMain: false },
       KJY: { current: 1, planned: 0, isMain: false }, 
-      '远程': { current: 0, planned: 0, isMain: false }, 
-      '外包': { current: 0, planned: 0, isMain: false }, 
+      'YC': { current: 0, planned: 0, isMain: false }, 
+      'WB': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
     '日常出单组': {
@@ -27,8 +27,8 @@ export const OrganizationalStructure = () => {
       DB: { current: 72, planned: 15, isMain: true },
       SLK: { current: 45, planned: 0, isMain: true },
       KJY: { current: 20, planned: 20, isMain: true }, 
-      '远程': { current: 0, planned: 0, isMain: false }, 
-      '外包': { current: 0, planned: 0, isMain: false }, 
+      'YC': { current: 0, planned: 0, isMain: false }, 
+      'WB': { current: 0, planned: 0, isMain: false }, 
       manager: '主管6人' 
     },
     '支持部': {
@@ -36,8 +36,8 @@ export const OrganizationalStructure = () => {
       DB: { current: 2, planned: 0, isMain: false },
       SLK: { current: 6, planned: 0, isMain: true },
       KJY: { current: 2, planned: 0, isMain: false }, 
-      '远程': { current: 0, planned: 0, isMain: false }, 
-      '外包': { current: 0, planned: 0, isMain: false }, 
+      'YC': { current: 0, planned: 0, isMain: false }, 
+      'WB': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
     '安全稽查部': {
@@ -45,8 +45,8 @@ export const OrganizationalStructure = () => {
       DB: { current: 1, planned: 5, isMain: true },
       SLK: { current: 0, planned: 0, isMain: false },
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '远程': { current: 0, planned: 0, isMain: false }, 
-      '外包': { current: 0, planned: 0, isMain: false }, 
+      'YC': { current: 0, planned: 0, isMain: false }, 
+      'WB': { current: 0, planned: 0, isMain: false }, 
       manager: '稽查经理1人' 
     },
     '研发部': {
@@ -54,8 +54,8 @@ export const OrganizationalStructure = () => {
       DB: { current: 0, planned: 0, isMain: false },
       SLK: { current: 4, planned: 7, isMain: true },
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '远程': { current: 0, planned: 0, isMain: false }, 
-      '外包': { current: 0, planned: 0, isMain: false }, 
+      'YC': { current: 0, planned: 0, isMain: false }, 
+      'WB': { current: 0, planned: 0, isMain: false }, 
       manager: '研发主管1人' 
     },
     '内控部': {
@@ -63,26 +63,26 @@ export const OrganizationalStructure = () => {
       DB: { current: 1, planned: 15, isMain: false },
       SLK: { current: 0, planned: 15, isMain: true },
       KJY: { current: 4, planned: 15, isMain: false }, 
-      '远程': { current: 0, planned: 0, isMain: false }, 
-      '外包': { current: 0, planned: 0, isMain: false }, 
+      'YC': { current: 0, planned: 0, isMain: false }, 
+      'WB': { current: 0, planned: 0, isMain: false }, 
       manager: '内控经理1人' 
     },
-    '远程': { 
+    'YC': { 
       TH: { current: 0, planned: 0, isMain: false }, 
       DB: { current: 0, planned: 0, isMain: false }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '远程': { current: 131, planned: 0, isMain: true }, 
-      '外包': { current: 0, planned: 0, isMain: false }, 
+      'YC': { current: 131, planned: 0, isMain: true }, 
+      'WB': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
-    '外包': { 
+    'WB': { 
       TH: { current: 0, planned: 0, isMain: false }, 
       DB: { current: 0, planned: 0, isMain: false }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '远程': { current: 0, planned: 0, isMain: false }, 
-      '外包': { current: 133, planned: 0, isMain: true }, 
+      'YC': { current: 0, planned: 0, isMain: false }, 
+      'WB': { current: 133, planned: 0, isMain: true }, 
       manager: '经理1人' 
     }
   };
@@ -93,8 +93,8 @@ export const OrganizationalStructure = () => {
     DB: Object.values(departmentData).reduce((sum, dept) => sum + dept.DB.current, 0),
     SLK: Object.values(departmentData).reduce((sum, dept) => sum + dept.SLK.current, 0),
     KJY: Object.values(departmentData).reduce((sum, dept) => sum + dept.KJY.current, 0),
-    '远程': Object.values(departmentData).reduce((sum, dept) => sum + dept['远程'].current, 0),
-    '外包': Object.values(departmentData).reduce((sum, dept) => sum + dept['外包'].current, 0)
+    'YC': Object.values(departmentData).reduce((sum, dept) => sum + dept['YC'].current, 0),
+    'WB': Object.values(departmentData).reduce((sum, dept) => sum + dept['WB'].current, 0)
   };
 
   // 计算各场地计划新增人数
@@ -103,13 +103,13 @@ export const OrganizationalStructure = () => {
     DB: Object.values(departmentData).reduce((sum, dept) => sum + dept.DB.planned, 0),
     SLK: Object.values(departmentData).reduce((sum, dept) => sum + dept.SLK.planned, 0),
     KJY: Object.values(departmentData).reduce((sum, dept) => sum + dept.KJY.planned, 0),
-    '远程': 0,
-    '外包': 0
+    'YC': 0,
+    'WB': 0
   };
 
-  // 总人数计算：含外包 = 386，非外包 = 386 - 133 = 253
-  const totalPersonnelWithOutsource = 509; // 含外包
-  const totalPersonnelNoOutsource = 245; // 非外包
+  // 总人数计算：含WB = 386，非WB = 386 - 133 = 253
+  const totalPersonnelWithOutsource = 509; // 含WB
+  const totalPersonnelNoOutsource = 245; // 非WB
   const totalPlannedPersonnel = 92;
 
   // 场地转移计划数据
@@ -324,9 +324,9 @@ export const OrganizationalStructure = () => {
   }, []);
 
   return (
-    <div className="bg-white rounded-lg p-10 mb-6 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 relative">
       {/* Header */}
-      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-3 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">1. 组织情况</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -548,7 +548,7 @@ export const OrganizationalStructure = () => {
             <div className="bg-white rounded-xl p-6 border-2 border-blue-300 mb-8 mx-auto max-w-2xl">
               <div className="flex items-center justify-center space-x-8">
                 <div className="text-center">
-                  <div className="text-lg text-gray-600 mb-2">合计（含远程外包）</div>
+                  <div className="text-lg text-gray-600 mb-2">合计（含YCWB）</div>
                   <div className="text-4xl font-bold text-red-600">{totalPersonnelWithOutsource}</div>
                 </div>
 
@@ -571,7 +571,7 @@ export const OrganizationalStructure = () => {
 
                 <div className="w-px h-16 bg-gray-300"></div>
                 <div className="text-center">
-                  <div className="text-lg text-gray-600 mb-2">合计（非远程外包）</div>
+                  <div className="text-lg text-gray-600 mb-2">合计（非YCWB）</div>
                   <div className="text-4xl font-bold text-blue-600">{totalPersonnelNoOutsource}</div>
                 </div>
                 <div className="w-px h-16 bg-gray-300"></div>
@@ -700,41 +700,41 @@ export const OrganizationalStructure = () => {
             </div>
           </div>
 
-          {/* 远程场地 */}
+          {/* YC场地 */}
           <div className="bg-white rounded-xl p-4 border-2 border-blue-500">
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2 mb-3">
                 <Wifi className="w-5 h-5 text-blue-600" />
-                <h3 className="text-xl font-bold text-gray-800">远程</h3>
+                <h3 className="text-xl font-bold text-gray-800">YC</h3>
               </div>
               <div className="w-full h-px bg-gray-200 mb-4"></div>
               
               <div className="mb-4">
-                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals['远程']}</div>
+                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals['YC']}</div>
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
               
-              {locationPlannedTotals['远程'] > 0 && (
+              {locationPlannedTotals['YC'] > 0 && (
                 <div>
-                  <div className="text-lg font-bold text-green-600 mb-1">+{locationPlannedTotals['远程']}</div>
+                  <div className="text-lg font-bold text-green-600 mb-1">+{locationPlannedTotals['YC']}</div>
                   <div className="text-gray-500 text-sm">计划分配</div>
                 </div>
               )}
             </div>
           </div>
 
-          {/* 外包场地 */}
+          {/* WB场地 */}
           <div className="bg-white rounded-xl p-4 border-2 border-blue-500">
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2 mb-3">
                 <Wifi className="w-5 h-5 text-blue-600" />
-                <h3 className="text-xl font-bold text-gray-800">外包</h3>
+                <h3 className="text-xl font-bold text-gray-800">WB</h3>
               </div>
               <div className="w-full h-px bg-gray-200 mb-4"></div>
               
               <div className="mb-4">
-                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals['外包']}</div>
+                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals['WB']}</div>
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>

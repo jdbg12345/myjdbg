@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ManualReview = () => {
   return (
-    <div className="bg-white rounded-lg p-10 mb-6 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 relative">
       <h2 className="text-5xl font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-4">3.4.4 会员出款风控 - 事中（人工审核）</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">

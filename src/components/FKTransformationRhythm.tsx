@@ -34,9 +34,9 @@ export const FKTransformationRhythm = () => {
   ];
 
   return (
-    <div className="bg-white rounded-lg p-10 mb-6 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 relative">
       {/* Header */}
-      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-3 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">3.1 全局说明</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -67,7 +67,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">审核问题-质量较差</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    人员能力参差不齐，新人及外包远程团队错误率高；审核未严格遵循SOP；时间考核压力导致无法充分审核。
+                    人员能力参差不齐，新人及WBYC团队错误率高；审核未严格遵循SOP；时间考核压力导致无法充分审核。
                   </p>
                 </div>
               </div>

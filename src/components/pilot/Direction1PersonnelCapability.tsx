@@ -256,7 +256,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">以金额作为分单依据，未考虑订单难度、问题集中度以及人员能力匹配，导致部分高风险订单被分配至远程或外包，而其<span className="text-blue-600">差错率较总部高出约2～3倍</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed">以金额作为分单依据，未考虑订单难度、问题集中度以及人员能力匹配，导致部分高风险订单被分配至YC或WB，而其<span className="text-blue-600">差错率较总部高出约2～3倍</span></p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
@@ -283,7 +283,7 @@ export const Direction1PersonnelCapability = () => {
               <div className="space-y-3">
                 <div className="bg-white border-l-4 border-green-500 p-3 rounded">
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">第一阶段调整：</span>通过派单机制的调整，整体<span className="font-bold text-green-600">实现了外包和远程等低效渠道订单量的显著压缩</span>，符合预期；但远程和外包的单量虽然有所减少，难度也有所降低，但其错误率却上升，暴露出<span className="font-bold text-red-600">能力不足和责任心缺失的问题，同时也存在潜在的管理安全隐患</span>。为此，后续应加强人员培训、优化淘汰机制，并强化过程管控，<span className="font-bold text-red-600">逐步减少外包远程比重及优秀人员场地迁移工作，预计Q4继续优化1/3，最终实现能够随时剔除；但由于总部一审的可承载订单量有限，因此该调整将分阶段逐步实施；</span>
+                    <span className="font-semibold text-gray-800">第一阶段调整：</span>通过派单机制的调整，整体<span className="font-bold text-green-600">实现了WB和YC等低效渠道订单量的显著压缩</span>，符合预期；但YC和WB的单量虽然有所减少，难度也有所降低，但其错误率却上升，暴露出<span className="font-bold text-red-600">能力不足和责任心缺失的问题，同时也存在潜在的管理安全隐患</span>。为此，后续应加强人员培训、优化淘汰机制，并强化过程管控，<span className="font-bold text-red-600">逐步减少WBYC比重及优秀人员场地迁移工作，预计Q4继续优化1/3，最终实现能够随时剔除；但由于总部一审的可承载订单量有限，因此该调整将分阶段逐步实施；</span>
                   </p>
               
                 </div>
@@ -296,20 +296,20 @@ export const Direction1PersonnelCapability = () => {
                 
                 <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">2、外包一审：</span>订单量由 <span className="font-bold text-blue-600">66,423</span> 单降至 <span className="font-bold text-blue-600">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；审核错误率由 <span className="font-bold">1.07%</span> 升至 <span className="font-bold">1.39%</span>，上升了 <span className="font-bold text-red-600">29.97%</span>，不符合预期。
+                    <span className="font-semibold text-gray-800">2、WB一审：</span>订单量由 <span className="font-bold text-blue-600">66,423</span> 单降至 <span className="font-bold text-blue-600">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；审核错误率由 <span className="font-bold">1.07%</span> 升至 <span className="font-bold">1.39%</span>，上升了 <span className="font-bold text-red-600">29.97%</span>，不符合预期。
                   </p>
                  
                 </div>
 
                 <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">3、远程一审：</span>订单量由 <span className="font-bold text-blue-600">82,733</span> 单降至 <span className="font-bold text-blue-600">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>；审核错误率由 <span className="font-bold">0.82%</span> 升至 <span className="font-bold">0.95%</span>，上升了 <span className="font-bold text-red-600">15.88%</span>，不符合预期。
+                    <span className="font-semibold text-gray-800">3、YC一审：</span>订单量由 <span className="font-bold text-blue-600">82,733</span> 单降至 <span className="font-bold text-blue-600">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>；审核错误率由 <span className="font-bold">0.82%</span> 升至 <span className="font-bold">0.95%</span>，上升了 <span className="font-bold text-red-600">15.88%</span>，不符合预期。
                   </p>
                 </div>
 
                  <div className="bg-white border-l-4 border-green-500 p-3 rounded">
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">第二阶段调整：</span>通过数据分析发现，<span className="font-bold text-red-600">被风控用户中约70%集中在低V值和低金额特征群体，这些用户在派单时通常优先分配远程和外包任务</span>。然而，由于其能力、态度及考核监管方面的不足，导致审核质量未得到有效提升；<span className="font-bold text-green-600">针对这些特征的订单，将进行分配权重的进一步调整。</span>
+                    <span className="font-semibold text-gray-800">第二阶段调整：</span>通过数据分析发现，<span className="font-bold text-red-600">被风控用户中约70%集中在低V值和低金额特征群体，这些用户在派单时通常优先分配YC和WB任务</span>。然而，由于其能力、态度及考核监管方面的不足，导致审核质量未得到有效提升；<span className="font-bold text-green-600">针对这些特征的订单，将进行分配权重的进一步调整。</span>
                   </p>             
                 </div>
                
@@ -349,8 +349,8 @@ export const Direction1PersonnelCapability = () => {
 
                       {/* 柱状图和数据点 */}
                       {[
-                        { name: '外包一审', before: 66423, after: 24511, beforeRate: 1.07, afterRate: 1.39 },
-                        { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.82, afterRate: 0.95 },
+                        { name: 'WB一审', before: 66423, after: 24511, beforeRate: 1.07, afterRate: 1.39 },
+                        { name: 'YC一审', before: 82773, after: 29431, beforeRate: 0.82, afterRate: 0.95 },
                         { name: '总部一审', before: 25161, after: 135259, beforeRate: 0.67, afterRate: 0.49},
                       ].map((item, index) => {
                         const maxCount = 160000;
@@ -431,8 +431,8 @@ export const Direction1PersonnelCapability = () => {
                 <div className="flex justify-center mt-3">
                   <div className="relative" style={{ width: '680px', height: '45px', marginLeft: '0px' }}>
                     {[
-                      { name: '外包一审', before: 66423, after: 24511 },
-                      { name: '远程一审', before: 82773, after: 29431 },
+                      { name: 'WB一审', before: 66423, after: 24511 },
+                      { name: 'YC一审', before: 82773, after: 29431 },
                       { name: '总部一审', before: 25161, after: 135259 },
                     ].map((item, index) => {
                       const totalGroups = 3;

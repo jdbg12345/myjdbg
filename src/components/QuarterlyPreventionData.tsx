@@ -36,9 +36,9 @@ export const QuarterlyPreventionData = () => {
   const maxVolume = Math.max(...manualData.map(d => d.volume));
 
   return (
-    <div className="bg-white rounded-lg p-10 mb-6 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 relative">
       {/* Header */}
-      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-3 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.1 防范单量与金额</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -47,7 +47,7 @@ export const QuarterlyPreventionData = () => {
       </div>
 
       {/* 第三季度防范单量与金额 */}
-      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
+      <div className="bg-white rounded-lg p-4 mb-3 border border-blue-200">
       
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
@@ -164,7 +164,7 @@ export const QuarterlyPreventionData = () => {
             text: '整体人工审核单量在<span class="font-semibold text-blue-600">606.7笔</span>，对比上季度<span class="font-semibold text-red-600">减少6%</span>，本季度对比上季度呈现下降趋势。此部分原因为大部分站点单量均存在下降趋势。'
           },
           {
-            text: '整体人工审核时效在<span class="font-semibold text-blue-600">06:49</span>，整体环比上一季度，人工审核效率因9月导致下降，原因为外包远程部门提高准确率进行策略单量导流，总部单量增加时效有所延长，后续持续发展优化此项时长。'
+            text: '整体人工审核时效在<span class="font-semibold text-blue-600">06:49</span>，整体环比上一季度，人工审核效率因9月导致下降，原因为WBYC部门提高准确率进行策略单量导流，总部单量增加时效有所延长，后续持续发展优化此项时长。'
           },
           {
             text: '整体拦截金额为<span class="font-semibold text-green-600">3.95</span>，本季度环比上一季度<span class="font-semibold text-green-600">提升5%</span>，此部分原因为8月DL部分人头费拦截增多导致。'

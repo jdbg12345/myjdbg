@@ -2,7 +2,7 @@ import React from 'react';
 
 export const SystemDispatch = () => {
   return (
-    <div className="bg-white rounded-lg p-10 mb-6 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 relative">
       <h2 className="text-5xl font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-4">3.4.3 会员出款风控 - 事中（系统派单）</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -29,7 +29,7 @@ export const SystemDispatch = () => {
       </div>
 
       {/* Intelligent Dispatch Mechanism - Matching the Image Exactly */}
-      <div className="bg-white rounded-lg p-6 mb-6">
+      <div className="bg-white rounded-lg p-4 mb-3">
         <div className="flex items-center mb-8">
           <div className="bg-blue-600 rounded-lg p-3 mr-4">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,7 +51,7 @@ export const SystemDispatch = () => {
               分数定义分为2个维度：当会员提款时，将此会员命中的所有策略及标签的分数进行累加（也为后续风控体系合理性做了铺垫）
             </p>
             
-            <div className="space-y-3">
+            <div className="space-y-2">
               <div className="flex items-start">
                 <div className="w-3 h-3 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
                 <div>
@@ -80,7 +80,7 @@ export const SystemDispatch = () => {
               设定分数和金额的区间对应的可审核人员，当订单来了，基于金额和分数，会落到对应区间，由相应人员进行审核
             </p>
             
-            <div className="space-y-3">
+            <div className="space-y-2">
               <div className="bg-white border-l-4 border-green-600 p-4 rounded border border-green-200">
                 <span className="text-green-700 font-medium">例：分数0-10且金额≤1万 → 初级审核员</span>
               </div>

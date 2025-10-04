@@ -32,9 +32,9 @@ const siteData = [
   const totalPercentages = [37.90, 35.21, 14.96, 11.93]; // 排除100%的数字
 
   return (
-    <div className="bg-white rounded-lg p-10 mb-6 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 relative">
       {/* Header */}
-      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-3 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.2 防范金类型占比</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -43,7 +43,7 @@ const siteData = [
       </div>
 
       {/* 第三季度防范金额（各大类站点占比） */}
-      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
+      <div className="bg-white rounded-lg p-4 mb-3 border border-blue-200">
         <div>
           <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
             <thead className="bg-blue-600 text-white">

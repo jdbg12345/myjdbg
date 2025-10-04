@@ -6,7 +6,7 @@ import { Direction4InternalCollusion } from './pilot/Direction4InternalCollusion
 
 export const PilotResults = () => {
   return (
-    <div className="bg-white rounded-lg p-10 mb-6 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 relative">
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-5xl font-bold text-gray-800 border-b-4 border-blue-600 pb-4 mb-4">3.3 成果说明</h1>

@@ -33,9 +33,9 @@ export const SportsKillRateAnalysis = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg p-10 mb-6 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 relative">
       {/* Header */}
-      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-3 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.10 主要玩法杀率分析</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -44,10 +44,10 @@ export const SportsKillRateAnalysis = () => {
       </div>
 
       {/* 4个分析表格 */}
-      <div className="space-y-3">
+      <div className="space-y-2">
         {/* 1. DB整体主要玩法的表现 */}
         <div className="bg-white rounded-lg p-4 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center space-x-3 mb-4">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
             </div>
@@ -80,7 +80,7 @@ export const SportsKillRateAnalysis = () => {
 
         {/* 2. 熊猫整体主要玩法的表现 */}
         <div className="bg-white rounded-lg p-4 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center space-x-3 mb-4">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
             </div>
@@ -113,7 +113,7 @@ export const SportsKillRateAnalysis = () => {
 
         {/* 3. 熊猫B系主要玩法的表现 */}
         <div className="bg-white rounded-lg p-4 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center space-x-3 mb-4">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
             </div>
@@ -146,7 +146,7 @@ export const SportsKillRateAnalysis = () => {
 
         {/* 4. 熊猫在BW的表现-主要玩法的表现 */}
         <div className="bg-white rounded-lg p-4 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center space-x-3 mb-4">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
             </div>
@@ -180,7 +180,7 @@ export const SportsKillRateAnalysis = () => {
 
       {/* 数据解读 */}
       <div className="bg-white rounded-lg p-8 mt-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
+        <div className="flex items-center space-x-3 mb-4">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <TrendingUp className="w-5 h-5 text-white" />
           </div>
