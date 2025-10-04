@@ -418,6 +418,129 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
+      {/* 信息安全管理&应急管理方案 */}
+      <div className="mb-8">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
+              <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
+                <span className="text-white font-medium text-sm">8</span>
+              </div>
+              <h4 className="text-lg font-semibold text-gray-800">信息安全管理&应急管理方案</h4>
+            </div>
+          </div>
+
+          {/* 安全措施列表 */}
+          <div className="space-y-4">
+            {/* 措施1 - U盾管理 */}
+            <div className="bg-blue-50 rounded-lg p-5 border border-blue-200">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                  <span className="text-white font-bold text-sm">1</span>
+                </div>
+                <div className="flex-1">
+                  <h6 className="font-semibold text-gray-800 mb-2">U盾管理制度</h6>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    居家人员不会发放U盾、全部放在场地工作人员、统一由场地人员告知验证码
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 措施2 - 纸飞机安全 */}
+            <div className="bg-blue-50 rounded-lg p-5 border border-blue-200">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                  <span className="text-white font-bold text-sm">2</span>
+                </div>
+                <div className="flex-1">
+                  <h6 className="font-semibold text-gray-800 mb-2">纸飞机安全设置</h6>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    纸飞机安全设置及使用，全部按照公司标准落实执行
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 措施3 - 护照管理 */}
+            <div className="bg-blue-50 rounded-lg p-5 border border-blue-200">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                  <span className="text-white font-bold text-sm">3</span>
+                </div>
+                <div className="flex-1">
+                  <h6 className="font-semibold text-gray-800 mb-2">护照集中保管</h6>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    场地人员护照全部交由公司保存
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 措施4 - 文档加密 */}
+            <div className="bg-blue-50 rounded-lg p-5 border border-blue-200">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                  <span className="text-white font-bold text-sm">4</span>
+                </div>
+                <div className="flex-1">
+                  <h6 className="font-semibold text-gray-800 mb-2">文档安全管理</h6>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    所有文档按照标准进行脱敏并加密使用
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 措施5 - Zoom会议安全 */}
+            <div className="bg-blue-50 rounded-lg p-5 border border-blue-200">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                  <span className="text-white font-bold text-sm">5</span>
+                </div>
+                <div className="flex-1">
+                  <h6 className="font-semibold text-gray-800 mb-2">Zoom会议安全规范</h6>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    zoom会议严格按照公司要求设置，<span className="font-semibold text-red-600">禁止录屏录音</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 措施6 - 应急管理 */}
+            <div className="bg-green-50 rounded-lg p-5 border border-green-200">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                  <span className="text-white font-bold text-sm">6</span>
+                </div>
+                <div className="flex-1">
+                  <h6 className="font-semibold text-gray-800 mb-2">多场地应急方案</h6>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    多场地组建团队，目前还有部分待转移的人在泰，<span className="font-semibold text-green-600">某个场地出现问题会临时调整为另一个场地的人顶上来</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 措施7 - 日常管理 */}
+            <div className="bg-green-50 rounded-lg p-5 border border-green-200">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                  <span className="text-white font-bold text-sm">7</span>
+                </div>
+                <div className="flex-1">
+                  <h6 className="font-semibold text-gray-800 mb-2">日常监督管理</h6>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    每天都会有<span className="font-semibold text-blue-600">班前会议</span>以及<span className="font-semibold text-blue-600">文字交接班内容</span>，以及<span className="font-semibold text-blue-600">随机抽查</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </>
   );
 };
