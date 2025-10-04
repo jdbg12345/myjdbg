@@ -59,11 +59,6 @@ export const TableOfContents = () => {
             ))}
           </div>
 
-          {/* 4. B端问题汇总 */}
-          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6 hover:shadow-lg transition-all">
-            <span className="text-2xl font-bold text-blue-600 mr-4">4.</span>
-            <span className="text-xl font-semibold text-gray-800">B端问题汇总</span>
-          </div>
         </div>
       </div>
 
