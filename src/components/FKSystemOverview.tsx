@@ -484,7 +484,7 @@ export const FKSystemOverview = () => {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-gray-900">变化详细说明</h2>
-              <span className="text-gray-700 text-xl">从<span className="text-blue-600">审核机制、拦截策略、风控工具、极端监控</span>等方向进行全面升级</span>
+              <span className="text-gray-700 text-xl">从<span className="text-blue-600">审核机制、系统策略、风控工具、极端监控</span>等方向进行全面升级</span>
             </div>
         </div>
 
