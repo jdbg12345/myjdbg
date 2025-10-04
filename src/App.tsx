@@ -9,6 +9,7 @@ import { Y4SiteDetail } from './components/Y4SiteDetail';
 import { BDXKSiteDetail } from './components/BDXKSiteDetail';
 import { Y6Y9SiteDetail } from './components/Y6Y9SiteDetail';
 import { MKSiteDetail } from './components/MKSiteDetail';
+import { DLCommissionActivity } from './components/DLCommissionActivity';
 import { SportsInterceptionCategory } from './components/SportsInterceptionCategory';
 import { SportsOverallKillRate } from './components/SportsOverallKillRate';
 import { PandaSportsKillRate } from './components/PandaSportsKillRate';
@@ -89,7 +90,12 @@ function App() {
           <MKSiteDetail />
         </div>
 
-        {/* 2.6 体育拦截分类明细 */}
+        {/* 2.5.2 DL佣金活动 */}
+        <div data-section="dl-commission">
+          <DLCommissionActivity />
+        </div>
+
+        {/* 2.6 体育拦截a分类明细 */}
         <div data-section="sports-interception">
           <SportsInterceptionCategory />
         </div>
