@@ -863,7 +863,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                 <p className="text-gray-700 text-sm leading-relaxed">B端可能存在<span className="text-blue-600">赔率溢出、内部玩法错配、盘口方向错误/盘口错开、赔率更新慢</span>等问题。虽然赔率异常或错误是小概率事件，但一旦发生，可能严重影响用户体验、平台信任度和平台利益。目前，C端主要依靠人工方式来发现这些问题，存在反应迟缓、覆盖不全的问题，且一些错误可能已经造成损失，却未能及时发现</p>
+                 <p className="text-gray-700 text-sm leading-relaxed">B端可能存在<span className="text-blue-600">赔率溢出、内部玩法错配、盘口方向错误/盘口错开、赔率更新慢</span>等问题。虽然赔率异常或错误是小概率事件，但一旦发生，可能严重影响<span className="text-blue-600">用户体验、平台信任度和平台利益</span>。依靠人工方式来发现这些问题，存在反应迟缓、覆盖不全的问题，且一些错误可能已经造成损失，却未能及时发现</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
