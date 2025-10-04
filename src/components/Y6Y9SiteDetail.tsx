@@ -16,7 +16,7 @@ export const Y6Y9SiteDetail = () => {
 
   // Y6+Y9站点明细数据
   const y6y9DetailData = [
-    { type: '代理类', zkAmount: 0.00, zkPercent: 0.00, dlAmount: 1319.42, dlPercent: 57.82, tgAmount: 15.90, tgPercent: 2.33 },
+    { type: 'DL类', zkAmount: 0.00, zkPercent: 0.00, dlAmount: 1319.42, dlPercent: 57.82, tgAmount: 15.90, tgPercent: 2.33 },
     { type: '体育类', zkAmount: 451.56, zkPercent: 30.46, dlAmount: 553.62, dlPercent: 24.26, tgAmount: 469.04, tgPercent: 68.86 },
     { type: '红利类', zkAmount: 923.61, zkPercent: 62.30, dlAmount: 262.08, dlPercent: 11.48, tgAmount: 100.62, tgPercent: 14.77 },
     { type: '其他类', zkAmount: 151.63, zkPercent: 7.24, dlAmount: 195.10, dlPercent: 6.44, tgAmount: 131.11, tgPercent: 14.04 }
@@ -116,7 +116,7 @@ export const Y6Y9SiteDetail = () => {
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold text-red-600">DL用户（含代理）拦截占比达到最高为51%</span>，主要为佣金拦截占<span className="font-semibold text-red-600">57%</span></span>
+              <span><span className="font-semibold text-red-600">DL用户（含DL）拦截占比达到最高为51%</span>，主要为佣金拦截占<span className="font-semibold text-red-600">57%</span></span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
@@ -124,13 +124,13 @@ export const Y6Y9SiteDetail = () => {
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">问题：</span><span className="font-semibold text-red-600">DL拦截占比整体较高</span>（占比：基础<span className="font-semibold text-blue-600">19%</span>，额外<span className="font-semibold text-blue-600">27%</span>，人头费<span className="font-semibold text-blue-600">34%</span>）；<span className="font-semibold">结论：</span>新代理额外佣金及人头费拦截占主要组成部分，<span className="font-semibold text-green-600">8月调整后，人头费当月占比降至28%</span></span>
+              <span><span className="font-semibold">问题：</span><span className="font-semibold text-red-600">DL拦截占比整体较高</span>（占比：基础<span className="font-semibold text-blue-600">19%</span>，额外<span className="font-semibold text-blue-600">27%</span>，人头费<span className="font-semibold text-blue-600">34%</span>）；<span className="font-semibold">结论：</span>新DL额外佣金及人头费拦截占主要组成部分，<span className="font-semibold text-green-600">8月调整后，人头费当月占比降至28%</span></span>
             </div>
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <div className="text-sm text-blue-700">
                 <div className="font-semibold mb-2">数据说明：</div>
-                <div><span className="font-semibold">DL类：</span>佣金拦截（为"代理本身"佣金&代理人头费套利），红利拦截（为"代理线下会员"活动套利）</div>
-                <div className="mt-2"><span className="font-semibold">TG类：</span>代理类（为额度代存套利）</div>
+                <div><span className="font-semibold">DL类：</span>佣金拦截（为"DL本身"佣金&DL人头费套利），红利拦截（为"DL线下会员"活动套利）</div>
+                <div className="mt-2"><span className="font-semibold">TG类：</span>DL类（为额度代存套利）</div>
               </div>
             </div>
           </div>
