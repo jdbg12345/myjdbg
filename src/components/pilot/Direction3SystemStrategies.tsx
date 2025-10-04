@@ -664,7 +664,7 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
 
-      {/* 盈利监控预警 */}
+      {/* 杀率监控预警 */}
       <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
@@ -672,7 +672,7 @@ export const Direction3SystemStrategies = () => {
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                   <span className="text-white font-medium text-sm">3</span>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-800">盈利监控预警</h4>
+                <h4 className="text-lg font-semibold text-gray-800">杀率监控预警</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
               </div>
             </div>
