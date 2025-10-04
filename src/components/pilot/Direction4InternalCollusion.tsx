@@ -355,6 +355,12 @@ export const Direction4InternalCollusion = () => {
                   <h6 className="font-semibold text-gray-800 mb-3 text-sm">NO1. 新人入职培训</h6>
 
                   <div className="space-y-3">
+                     <div className="bg-blue-50 rounded p-3">
+                      <div className="text-sm">
+                        <span className="font-semibold text-gray-800">目标：</span>
+                        <span className="text-gray-700">提升末尾人员 / 质检高频错误点提升 / 业务知识点更新培训 / 等等</span>
+                      </div>
+                    </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-blue-50 rounded p-3 text-center">
                         <div className="text-xs text-gray-600 mb-1">第三季度培训</div>
