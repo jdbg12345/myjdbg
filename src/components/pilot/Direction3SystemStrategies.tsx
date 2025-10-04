@@ -532,7 +532,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">关联</span>在日常风控中占比极高，该工具可<span className="text-blue-600">一键筛选</span>并展示所有关联用户的下注行为，极大增强风险识别能力，<span className="text-blue-600">不仅提升风控效率，更是摆脱对人的经验依赖</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">关联</span>在日常风控中占比50%+，该工具可<span className="text-blue-600">一键筛选</span>并展示所有跨站点的关联用户的下注行为，<span className="text-blue-600">不仅提升风控效率，更是摆脱对人的经验依赖</span></p>
               </div>
             </div>
         </div>
