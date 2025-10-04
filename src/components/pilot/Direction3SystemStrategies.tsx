@@ -840,7 +840,7 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
         </div>
-      </div>
+     
 
       {/* Q3事故统计概览 */}
       <div className="mt-12 mb-8">
@@ -919,6 +919,7 @@ export const Direction3SystemStrategies = () => {
           </div>
         </div>
       </div>
+         </div>
     </>
   );
 };
