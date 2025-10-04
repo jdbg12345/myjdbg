@@ -135,7 +135,7 @@ export const AgentControlOverview = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
               <div className="text-green-700 font-semibold mb-2">复审通过</div>
-              <div className="text-sm text-green-600">佣金结算</div>
+              <div className="text-sm text-green-600">YJ结算</div>
             </div>
           </div>
         </div>
