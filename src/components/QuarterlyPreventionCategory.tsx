@@ -55,9 +55,9 @@ const siteData = [
                 <th colSpan="8" className="p-2 text-center font-semibold">第3季度分类明细</th>
               </tr>
               <tr>
-                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
-                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
-                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs"></th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs"></th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs"></th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">DL类</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">体育类</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">红利类</th>
