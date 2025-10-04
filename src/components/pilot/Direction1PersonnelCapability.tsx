@@ -433,10 +433,9 @@ export const Direction1PersonnelCapability = () => {
                           strokeDasharray="6,4"
                           opacity="0.8"
                           points={[
-                            { rate: 0.99, index: 0 },
-                            { rate: 0.76, index: 1 },
-                            { rate: 0.63, index: 2 },
-                            { rate: 0.13, index: 3 }
+                            { rate: 1.07, index: 0 },
+                            { rate: 0.82, index: 1 },
+                            { rate: 0.67, index: 2 }
                           ].map(({ rate, index }) => {
                             const totalGroups = 4;
                             const chartWidth = 680;
@@ -457,10 +456,9 @@ export const Direction1PersonnelCapability = () => {
                           strokeWidth="3"
                           opacity="0.8"
                           points={[
-                            { rate: 0.92, index: 0 },
-                            { rate: 0.59, index: 1 },
-                            { rate: 0.30, index: 2 },
-                            { rate: 0.12, index: 3 }
+                            { rate: 1.39, index: 0 },
+                            { rate: 0.95, index: 1 },
+                            { rate: 0.49, index: 2 }
                           ].map(({ rate, index }) => {
                             const totalGroups = 4;
                             const chartWidth = 680;
