@@ -839,7 +839,6 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">可第一时间进行预警，然后由专人跟进处理</p>
               </div>
             </div>
-        </div>
      
 
       {/* Q3事故统计概览 */}
@@ -920,6 +919,8 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
          </div>
+                </div>
+
     </>
   );
 };
