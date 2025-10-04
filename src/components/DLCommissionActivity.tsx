@@ -160,7 +160,7 @@ export const DLCommissionActivity = () => {
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold text-blue-600">人头费：</span>因<span className="font-semibold text-blue-600">6月</span>进行整改上调，<span className="font-semibold text-blue-600">8月</span>优化更改活动参与有效新增定义，所以拦截金额在<span className="font-semibold text-blue-600">6/7/8月</span>呈现由上至下趋势。由于新增定义整改，<span className="font-semibold text-green-600">后续季度此拦截会持续减少</span>。</span>
+              <span><span className="font-semibold text-blue-600">人头费：</span>因<span className="font-semibold text-blue-600">6月</span>进行整改上调，<span className="font-semibold text-blue-600">8月</span>更改活动参与有效新增定义，所以拦截金额在<span className="font-semibold text-blue-600">6/7/8月</span>呈现由上至下趋势。由于新增定义整改，<span className="font-semibold text-green-600">后续季度此拦截会持续减少</span>。</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
