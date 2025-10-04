@@ -509,7 +509,7 @@ export const Direction3SystemStrategies = () => {
                 <div className="text-gray-700 text-sm leading-relaxed space-y-2">
                   <div className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
-                    <span><span className="font-medium">依赖个人经验</span>：完全依靠人工基于个人经验发掘关联下注（如对打），操作效率低，新人门槛高</span>
+                    <span><span className="font-medium">依赖个人经验</span>：完全依靠人工基于经验发掘关联下注（如对打、批量套利），操作效率低，新人门槛高</span>
                   </div>
                   <div className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
