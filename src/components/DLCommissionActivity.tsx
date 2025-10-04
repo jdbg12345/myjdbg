@@ -147,24 +147,24 @@ export const DLCommissionActivity = () => {
         <div className="bg-white rounded-lg p-6">
           <div className="space-y-3 text-gray-700">
             <div className="flex items-start">
-              <span className="text-blue-600 mr-2">Ø</span>
-              <span>基础佣金以及额外佣金拦截，两者总计占比达整体<span className="font-semibold text-blue-600">43.2%</span>，主要为扶持降低派发拦截。</span>
+              <span className="text-blue-600 mr-2">●</span>
+              <span><span className="font-semibold text-blue-600">基础佣金</span>以及<span className="font-semibold text-blue-600">额外佣金</span>拦截，两者总计占比达整体<span className="font-semibold text-blue-600">43.2%</span>，主要为扶持降低派发拦截。</span>
             </div>
             <div className="flex items-start">
-              <span className="text-blue-600 mr-2">Ø</span>
-              <span>代理活动拦截主要以人头费以及流水返利拦截金为主，两者总计占比占整体<span className="font-semibold text-blue-600">46.2%</span>。</span>
+              <span className="text-blue-600 mr-2">●</span>
+              <span>代理活动拦截主要以<span className="font-semibold text-blue-600">人头费</span>以及<span className="font-semibold text-blue-600">流水返利</span>拦截金为主，两者总计占比占整体<span className="font-semibold text-blue-600">46.2%</span>。</span>
             </div>
             <div className="flex items-start">
-              <span className="text-blue-600 mr-2">Ø</span>
-              <span><span className="font-semibold">老代理流水返利：</span>因世俱杯6月上线，刺激代理流水发展项目，8月赛事结束后，活动门槛调整。拦截同步下降。</span>
+              <span className="text-blue-600 mr-2">●</span>
+              <span><span className="font-semibold text-blue-600">老代理流水返利：</span>因世俱杯<span className="font-semibold text-blue-600">6月</span>上线，刺激代理流水发展项目，<span className="font-semibold text-blue-600">8月</span>赛事结束后，活动门槛调整。<span className="font-semibold text-green-600">拦截同步下降</span>。</span>
             </div>
             <div className="flex items-start">
-              <span className="text-blue-600 mr-2">Ø</span>
-              <span><span className="font-semibold">人头费：</span>因6月进行整改上调，8月优化更改活动参与有效新增定义，所以拦截金额在678月呈现由上至下趋势。由于新增定义整改，后续季度此拦截会持续减少。</span>
+              <span className="text-blue-600 mr-2">●</span>
+              <span><span className="font-semibold text-blue-600">人头费：</span>因<span className="font-semibold text-blue-600">6月</span>进行整改上调，<span className="font-semibold text-blue-600">8月</span>优化更改活动参与有效新增定义，所以拦截金额在<span className="font-semibold text-blue-600">6/7/8月</span>呈现由上至下趋势。由于新增定义整改，<span className="font-semibold text-green-600">后续季度此拦截会持续减少</span>。</span>
             </div>
             <div className="flex items-start">
-              <span className="text-blue-600 mr-2">Ø</span>
-              <span><span className="font-semibold">首复存：</span>为会员活动，整体拦截占比约占<span className="font-semibold text-blue-600">10%</span>。</span>
+              <span className="text-blue-600 mr-2">●</span>
+              <span><span className="font-semibold text-blue-600">首复存：</span>为会员活动，整体拦截占比约占<span className="font-semibold text-blue-600">10%</span>。</span>
             </div>
           </div>
         </div>
