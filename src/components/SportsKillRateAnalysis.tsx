@@ -191,23 +191,26 @@ export const SportsKillRateAnalysis = () => {
           <div className="space-y-3 text-gray-700">
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">DB整体：</span>全场大小玩法杀率<span className="font-semibold text-blue-600">4.75%</span>，占注单<span className="font-semibold text-blue-600">32.07%</span>及流水<span className="font-semibold text-blue-600">32.26%</span>，为主要盈利来源。全场让球杀率<span className="font-semibold text-blue-600">1.71%</span>，占比相对较低。</span>
+              <span>熊猫第3季度杀率只有3.74%与上半年差不多，较整体低2.04%，属B系较为严重只有2.81%。</span>
+            </div>
+              <div className="flex items-start">
+              <span className="text-blue-600 mr-2">●</span>
+              <span>问题点：1、全场让球一直是打水账号主要套利的玩法，熊猫基数较小没好客互补会照成亏水的状况尤为明显。2、B系主要玩法被打水较为严重，拦截比率17.5%高于流水占比15%。
+</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">熊猫整体：</span>全场大小杀率<span className="font-semibold text-blue-600">2.70%</span>，表现稳定。全场让球杀率仅<span className="font-semibold text-blue-600">0.11%</span>，接近打平状态，需要关注风控。</span>
+              <span><span className="font-semibold">已执行的风控流程：1、9月份上线风控降水、延迟设置会自动同步熊猫，解决利用未风控场馆继续打水的问题。2、9月份B系后台上线场馆合拼，能给于风控专员快速直观判断。3、进行中，后台导出数据格式全站统一，方便风控专员快速整理数据并发现异常状况。
+</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">熊猫B系：</span>全场大小杀率<span className="font-semibold text-blue-600">3.51%</span>表现较好。<span className="font-semibold text-red-400">全场让球为负杀率-1.72%</span>，存在亏损风险，需要加强风控策略调整。</span>
+              <span>需优化方案：1、全场让球常年杀率低于1.8%，让B端操盘加强对主要赔率盘口的精确掌控，系统化排查打水账号并给予风控及时反馈。2、增大对打水账号的风控力度，对可疑与竞品赔率对冲的新号、租号、卖号进行扣盈利、红利处理。
+</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">熊猫BW：</span>表现最优，全场大小杀率达<span className="font-semibold text-blue-600">5.95%</span>，全场让球杀率<span className="font-semibold text-blue-600">2.66%</span>，两个主要玩法均表现良好。</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">整体建议：</span>全场大小玩法整体表现优于全场让球，建议优化让球玩法的赔率策略，特别关注熊猫B系的让球负杀率情况，及时调整风控参数。</span>
+              <span>熊猫在BW的表现长期属于较优越的，第3季度达到5.3%；熊猫在BW全场让球流水占比较低，接近抽水期望值；熊猫在BW的篮球流水高于Y系、B系，杀率也会拉高一些</span>
             </div>
           </div>
         </div>
