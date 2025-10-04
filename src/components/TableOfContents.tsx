@@ -10,7 +10,7 @@ export const TableOfContents = () => {
           {/* 1. 组织情况 */}
           <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6">
             <span className="text-2xl font-bold text-blue-600 mr-4">1.</span>
-            <span className="text-xl font-semibold text-gray-800">组织情况</span>
+            <span className="text-xl font-semibold text-gray-800">ZZ情况</span>
           </div>
 
           {/* 2. 数据情况 */}
