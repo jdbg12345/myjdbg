@@ -23,7 +23,7 @@ export const FKSystemOverview = () => {
         <h1 className="text-5xl font-bold text-gray-800">3.2 会员风控变化说明</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
-          <span className="font-medium ml-2">内控风控说明</span>
+          <span className="font-medium ml-2">内控风控变化说明</span>
         </div>
       </div>
 
