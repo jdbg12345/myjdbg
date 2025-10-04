@@ -161,19 +161,16 @@ export const QuarterlyPreventionData = () => {
             <div className="flex items-start">
 
               <span className="text-blue-600 mr-2">▶</span>
-              <span>整体人工审核单量在643.7笔，本季度对比上季度呈现下降，降低1.8%</span>
+              <span>整体人工审核单量在606.7笔，对比上季度减少6%，本季度对比上季度呈现下降趋势。次部分原因为大部分站点单量均存在下降趋势。
+</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">▶</span>
-              <span>整体人工审核时效在06：42整体环比上一季度，人工审核效率有所提升。后续持续发展优化此项时长</span>
+              <span>整体人工审核时效在06:49，整体环比上一季度，人工审核效率 因9月导致下降，原因为外包远程部门提高准确率进行策略单量导流，总部单量增加时效有所延长，后续持续发展优化此项时长</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">▶</span>
-              <span>此部分原因为：JN+BD站点执行迁移事项，会员数量减少较低，单量进行金额分配后故有所提升</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">▶</span>
-              <span>整体拦截金额为3.77E，本季度环比上一季度有所下降，减少12%。次部分原因为1月整体数据拉高1季度金额占比导致，春节后波动平稳</span>
+              <span>整体拦截金额为3.95E，本季度环比上一季度提升5%，此部分原因为8月代理部分人头费拦截增多导致</span>
             </div>
           </div>
         </div>
