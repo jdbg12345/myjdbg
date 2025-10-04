@@ -555,7 +555,19 @@ export const Direction4InternalCollusion = () => {
                 <tr className="hover:bg-blue-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">Notion账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
-                    下发控制权限，统一账号管理，按需下发账号并及时回收账号，定期清理内容
+                    1. 空间创建与账号分配
+
+只有管理员有权限：创建 Notion 工作空间和分配账号（邀请成员加入工作空间）
+
+2. 默认权限隔离
+
+每个账号（成员）：只能看到自己创建的页面/链接（Notion 页面）；即使同属一个部门，其他人也默认无权查看（包括子页面）；所有页面默认是私有状态。
+
+3. 访问控制
+
+页面要对他人可见，必须由管理员或页面创建者手动授权，通过：分享页面给指定用户
+                    4.定期归档删除
+                    需求上线完成后，1个月内删除；
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
