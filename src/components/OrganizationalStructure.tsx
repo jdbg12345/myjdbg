@@ -575,10 +575,7 @@ export const OrganizationalStructure = () => {
                   <div className="text-4xl font-bold text-blue-600">{totalPersonnel}</div>
                 </div>
                 <div className="w-px h-16 bg-gray-300"></div>
-                <div className="text-center">
-                  <div className="text-lg text-gray-600 mb-2">计划招聘</div>
-                  <div className="text-4xl font-bold text-green-600">+{totalPlannedPersonnel}</div>
-                </div>
+          
               </div>
             </div>
             
@@ -630,13 +627,7 @@ export const OrganizationalStructure = () => {
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
-              
-              {locationPlannedTotals.TH > 0 && (
-                <div>
-                  <div className="text-lg font-bold text-green-600 mb-1">+{locationPlannedTotals.TH}</div>
-                  <div className="text-gray-500 text-sm">计划招聘</div>
-                </div>
-              )}
+            
             </div>
           </div>
 
@@ -664,13 +655,7 @@ export const OrganizationalStructure = () => {
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
-              
-              {locationPlannedTotals.DB > 0 && (
-                <div>
-                  <div className="text-lg font-bold text-green-600 mb-1">+{locationPlannedTotals.DB}</div>
-                  <div className="text-gray-500 text-sm">计划招聘</div>
-                </div>
-              )}
+        
             </div>
           </div>
 
@@ -698,13 +683,7 @@ export const OrganizationalStructure = () => {
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
-              
-              {locationPlannedTotals.SLK > 0 && (
-                <div>
-                  <div className="text-lg font-bold text-green-600 mb-1">+{locationPlannedTotals.SLK}</div>
-                  <div className="text-gray-500 text-sm">计划招聘</div>
-                </div>
-              )}
+        
             </div>
           </div>
 
@@ -723,13 +702,7 @@ export const OrganizationalStructure = () => {
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
-              
-              {locationPlannedTotals.KJY > 0 && (
-                <div>
-                  <div className="text-lg font-bold text-green-600 mb-1">+{locationPlannedTotals.KJY}</div>
-                  <div className="text-gray-500 text-sm">计划招聘</div>
-                </div>
-              )}
+        
             </div>
           </div>
 
@@ -773,13 +746,7 @@ export const OrganizationalStructure = () => {
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
-              
-              {locationPlannedTotals['外包'] > 0 && (
-                <div>
-                  <div className="text-lg font-bold text-green-600 mb-1">+{locationPlannedTotals['外包']}</div>
-                  <div className="text-gray-500 text-sm">计划招聘</div>
-                </div>
-              )}
+            
             </div>
           </div>
         </div>
