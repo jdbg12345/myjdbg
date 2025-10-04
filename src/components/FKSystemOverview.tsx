@@ -20,10 +20,10 @@ export const FKSystemOverview = () => {
     <div className="bg-white rounded-lg p-6 mb-4 relative">
       {/* Header */}
       <div className="mb-3 flex items-center justify-between border-b-4 border-blue-600 pb-4">
-        <h1 className="text-5xl font-bold text-gray-800">3.2 会员风控变化说明</h1>
+        <h1 className="text-5xl font-bold text-gray-800">3.2 会员变化说明</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
-          <span className="font-medium ml-2">内控风控变化说明</span>
+          <span className="font-medium ml-2">内控变化说明</span>
         </div>
       </div>
 
