@@ -28,7 +28,7 @@ export const SportsKillRateAnalysis = () => {
 
   // 辅助函数：获取杀率样式（负数绿色，正数默认）
   const getKillRateClass = (value: number) => {
-    if (value < 0) return 'text-green-500 font-semibold';
+    if (value < 0) return 'text-red-500 font-semibold';
     return '';
   };
 
