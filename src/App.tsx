@@ -13,10 +13,7 @@ import { DLCommissionActivity } from './components/DLCommissionActivity';
 import { SportsInterceptionCategory } from './components/SportsInterceptionCategory';
 import { SportsOverallKillRate } from './components/SportsOverallKillRate';
 import { SportsKillRateAnalysis } from './components/SportsKillRateAnalysis';
-import { PandaSportsKillRate } from './components/PandaSportsKillRate';
-import { BSportsKillRate } from './components/BSportsKillRate';
-import { DBSportsKillRate } from './components/DBSportsKillRate';
-import { AirplaneData } from './components/AirplaneData';
+import { YBBWSportsComparison } from './components/YBBWSportsComparison';
 import { FKTransformationRhythm } from './components/FKTransformationRhythm';
 import { FKSystemOverview } from './components/FKSystemOverview';
 import { InternalControlOverview } from './components/InternalControlOverview';
@@ -111,26 +108,11 @@ function App() {
           <SportsKillRateAnalysis />
         </div>
 
-        {/* 2.8 熊猫体育杀率明细 */}
-        <div data-section="panda-sports">
-          <PandaSportsKillRate />
+        {/* 2.8 Y/B/BW体育对比分析 */}
+        <div data-section="ybbw-sports-comparison">
+          <YBBWSportsComparison />
         </div>
 
-        {/* 2.9 B系体育杀率明细 */}
-        <div data-section="b-sports">
-          <BSportsKillRate />
-        </div>
-
-        {/* 2.10 DB体育杀率明细 */}
-        <div data-section="db-sports">
-          <DBSportsKillRate />
-        </div>
-        
-        {/* 2.11 飞机数据 */}
-        <div data-section="airplane-data">
-          <AirplaneData />
-        </div>
-        
         {/* 3. FK工作情况 */}
         {/* 3.1 FK整体说明 */}
         <div data-section="fk-transformation">
