@@ -309,7 +309,7 @@ export const Direction1PersonnelCapability = () => {
 
                  <div className="bg-white border-l-4 border-green-500 p-3 rounded">
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">第二阶段调整：</span>通过数据分析发现，<span className="font-bold text-red-600">风控用户主要集中在低V值和低金额特征群体，这些用户在派单时通常优先分配远程和外包任务</span>。然而，由于其能力、态度及考核监管方面的不足，导致审核质量未得到有效提升；<span className="font-bold text-green-600">针对这些特征的订单，将进行分配权重的进一步调整。</span>
+                    <span className="font-semibold text-gray-800">第二阶段调整：</span>通过数据分析发现，<span className="font-bold text-red-600">被风控用户中～70%集中在低V值和低金额特征群体，这些用户在派单时通常优先分配远程和外包任务</span>。然而，由于其能力、态度及考核监管方面的不足，导致审核质量未得到有效提升；<span className="font-bold text-green-600">针对这些特征的订单，将进行分配权重的进一步调整。</span>
                   </p>             
                 </div>
                
