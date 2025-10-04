@@ -111,15 +111,19 @@ export const MKSiteDetail = () => {
 
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>ZK用户拦截占比9.93%，主要组成部分为体育套利占比51.87%</span>
+              <span>ZK用户拦截占比9%，主要组成部分为体育套利占比51%</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>DL用户（含代理）拦截占比达到最高为86.61%，主要为佣金拦截占81.66%</span>
+              <span>DL用户（含代理）拦截占比达到最高为86%，主要为代理拦截占81%</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>TG用户拦截占比3.46%，主要为体育套利占比63.79%</span>
+              <span>TG用户拦截占比3%，主要为体育套利占比63%</span>
+            </div>
+              <div className="flex items-start">
+              <span className="text-blue-600 mr-2">•</span>
+              <span> 问题；DL拦截占比整体较高（占比：基础3%，额外6%，人头费74%）；结论：新代理额外佣金及人头费拦截占主要组成部分，8月调整后，人头费当月占比下降至42%</span>
             </div>
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <div className="text-sm text-blue-700">
