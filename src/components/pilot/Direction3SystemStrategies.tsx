@@ -237,7 +237,7 @@ export const Direction3SystemStrategies = () => {
 
                <div className="bg-white border-l-4 border-gray-400 p-3 rounded">
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  <span className="font-semibold text-gray-800">备注：</span>卡免费行为和提款被风控并不完全相等，风控主要需要考虑是否存在实际影响，比如是否涉及红利申请等。然而，出现这种行为的用户确实属于异常用户，因为正常用户通常不会做出这种操作。
+                  <span className="font-semibold text-gray-800">备注：</span>真人对打/算牌/机器等行为和提款被风控并不完全相等，风控主要需要考虑是否存在实际影响，比如是否涉及红利申请、输赢情况等。然而，出现这种行为的用户确实属于异常用户，因为正常用户通常不会做出这种操作。
                 </p>
               </div>
               
