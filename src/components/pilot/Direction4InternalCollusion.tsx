@@ -236,7 +236,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="text-white font-medium text-sm">6</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">稽查效果</h4>
-              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
+              <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">持续进行中</span>
             </div>
           </div>
           
