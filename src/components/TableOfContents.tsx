@@ -51,7 +51,7 @@ export const TableOfContents = () => {
               { num: "3.1", title: "FK全局说明" },
               { num: "3.2", title: "FK会员说明" },
               { num: "3.3", title: "FK内控说明" },
-              { num: "3.4", title: "FK代理说明" }
+              { num: "3.4", title: "FKDL说明" }
             ].map((item, index) => (
               <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-4">
                 <span className="text-lg font-bold text-gray-600 mr-3">{item.num}</span>
