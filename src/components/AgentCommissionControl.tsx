@@ -3,22 +3,22 @@ import React from 'react';
 export const AgentCommissionControl = () => {
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
-      <h2 className="text-5xl font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-4">3.4.8 代理佣金风控</h2>
+      <h2 className="text-5xl font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-4">3.4.8 DL佣金风控</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
         <div className="border-l-4 border-blue-600 bg-white rounded-lg p-8 min-h-32 flex flex-col">
           <h4 className="text-blue-600 font-semibold text-lg mb-4 whitespace-nowrap">核心问题</h4>
-          <p className="text-gray-600 flex-1 flex items-center leading-relaxed text-sm">过度依赖人工识别，系统功能弱，缺跨站点分析，异常检测不足，刷量识别未完善。存在代理刷活跃、凑负盈利和伪造新增用户作弊。</p>
+          <p className="text-gray-600 flex-1 flex items-center leading-relaxed text-sm">过度依赖人工识别，系统功能弱，缺跨站点分析，异常检测不足，刷量识别未完善。存在DL刷活跃、凑负盈利和伪造新增用户作弊。</p>
         </div>
         
         <div className="border-l-4 border-blue-600 bg-white rounded-lg p-8 min-h-32 flex flex-col">
           <h4 className="text-blue-600 font-semibold text-lg mb-4 whitespace-nowrap">解决策略</h4>
-          <p className="text-gray-600 flex-1 flex items-center leading-relaxed text-sm">构建代理行为分析模型，优化佣金审核机制，建立异常预警系统，实现刷量识别，强化关联检测和监控</p>
+          <p className="text-gray-600 flex-1 flex items-center leading-relaxed text-sm">构建DL行为分析模型，优化佣金审核机制，建立异常预警系统，实现刷量识别，强化关联检测和监控</p>
         </div>
         
         <div className="border-l-4 border-blue-600 bg-white rounded-lg p-8 min-h-32 flex flex-col">
           <h4 className="text-blue-600 font-semibold text-lg mb-4 whitespace-nowrap">整体收益</h4>
-          <p className="text-gray-600 flex-1 flex items-center leading-relaxed text-sm">减少80%代理刷量行为损失，提高佣金发放准确性和安全性。</p>
+          <p className="text-gray-600 flex-1 flex items-center leading-relaxed text-sm">减少80%DL刷量行为损失，提高佣金发放准确性和安全性。</p>
         </div>
         
         <div className="border-l-4 border-blue-600 bg-white rounded-lg p-8 min-h-32 flex flex-col">
@@ -44,7 +44,7 @@ export const AgentCommissionControl = () => {
           </thead>
           <tbody>
             {[
-              { name: "代理佣金审核预警", desc: "建立代理佣金计算和发放的审核预警机制，监控异常佣金申请和发放行为，防范代理刷量和虚假活跃等风险行为，包括代理行为建模、关联关系分析、异常模式识别等功能", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "降低代理佣金风险，提升佣金发放准确性和安全性，预计降低代理损失80%" }
+              { name: "DL佣金审核预警", desc: "建立DL佣金计算和发放的审核预警机制，监控异常佣金申请和发放行为，防范DL刷量和虚假活跃等风险行为，包括DL行为建模、关联关系分析、异常模式识别等功能", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "降低DL佣金风险，提升佣金发放准确性和安全性，预计降低DL损失80%" }
             ].map((row, index) => (
               <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
