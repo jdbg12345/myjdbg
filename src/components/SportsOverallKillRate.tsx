@@ -49,7 +49,7 @@ export const SportsOverallKillRate = () => {
         <h1 className="text-5xl font-bold text-gray-800">2.9 体育整体杀率明细</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
-          <span className="font-medium ml-2">熊猫体育杀率明细</span>
+          <span className="font-medium ml-2">主要玩法杀率分析</span>
         </div>
       </div>
 
