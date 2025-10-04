@@ -383,15 +383,12 @@ export const Direction4InternalCollusion = () => {
                       </td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-2">
-                          <div>内部员工协助外部团队查询备注信息</div>
-                          <div className="bg-blue-50 rounded p-2 border border-blue-200">
-                            <span className="font-semibold text-blue-600">价格：</span>每条10U
-                          </div>
-                          <div>JC全员投入钓鱼执法</div>
+                          <div>内部员工协助外部团队查询备注信息，价格：每条10U</div>
+              
                         </div>
                       </td>
                       <td className="border border-gray-300 px-4 py-4">
-                        <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600 inline-block">全部查获，逐一处置</span>
+                        <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600 inline-block">逐一处置</span>
                       </td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="bg-gray-50 rounded p-2 border border-gray-300">
