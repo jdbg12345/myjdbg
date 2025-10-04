@@ -112,16 +112,24 @@ export const Y4SiteDetail = () => {
 
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>ZK用户拦截占比28%，主要组成部分为体育套利占比64%</span>
+              <span>ZK用户拦截占比31.81%，主要组成部分为体育套利占比72%</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>DL用户（含代理）拦截占比达到最高为52%，主要为佣金拦截占55.17%</span>
+              <span>DL用户（含代理）拦截占比达到最高为55%，主要为佣金拦截占53%</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>TG用户拦截占比18%，主要为体育套利占比54%</span>
+              <span>TG用户拦截占比12%，主要为体育套利占比62%</span>
             </div>
+             <div className="flex items-start">
+              <span className="text-blue-600 mr-2">•</span>
+              <span> DL拦截占比整体较高
+详细占比：基础17%，额外24%，人头费23%
+结论：新代理额外佣金及人头费拦截占主要组成部分，8月调整后，人头费当月占比降至16%。
+</span>
+            </div>
+           
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <div className="text-sm text-blue-700">
                 <div className="font-semibold mb-2">数据说明：</div>
