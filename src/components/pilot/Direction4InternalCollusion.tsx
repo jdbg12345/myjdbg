@@ -141,7 +141,9 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 解决策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">一些关键参数的修改会触发实时预警，并有人专门跟进处理</p>
+              <p className="text-gray-700 text-sm leading-relaxed">1、一些关键参数的修改会触发实时预警，并有人专门跟进处理</p>
+              <p className="text-gray-700 text-sm leading-relaxed">2、权限梳理： 各角色权限进行梳理，分化功能，达到权限层级分明，如风控标签查看进行上下级优化展示，达到信息安全把控目的</p>
+
             </div>
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
