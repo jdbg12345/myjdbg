@@ -332,6 +332,8 @@ export const Direction4InternalCollusion = () => {
                 </div>
               </div>
 
+    
+            </div>
 
             {/* 2️⃣ 详细案件记录 */}
             <div className="bg-gradient-to-br from-gray-50 via-white to-gray-50 rounded-xl p-8 border-2 border-gray-300 shadow-lg">
