@@ -6,7 +6,7 @@ export const InternalControlOverview = () => {
   return (
     <div className="bg-white rounded-lg p-6 mb-4 relative">
       {/* Header */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="flex items-center justify-between border-b-4 border-blue-600 pb-4 mb-4">
           <h1 className="text-5xl font-bold text-gray-800">3.3 内控变化说明</h1>
           <div className="text-gray-500 text-base">
@@ -23,7 +23,7 @@ export const InternalControlOverview = () => {
       <Direction4InternalCollusion />
       
       {/* Footer */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
         <div className="text-gray-400 text-sm">Q3 REPORT</div>
       </div>
     </div>

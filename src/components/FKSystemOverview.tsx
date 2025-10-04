@@ -28,8 +28,8 @@ export const FKSystemOverview = () => {
       </div>
 
       {/* FK流程变化 */}
-      <div className="mb-16">
-        <div className="flex items-center space-x-4 mb-8">
+      <div className="mb-6">
+        <div className="flex items-center space-x-4 mb-4">
           <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
             <BarChart3 className="w-6 h-6 text-white" />
           </div>
@@ -39,7 +39,7 @@ export const FKSystemOverview = () => {
           </div>
         </div>
 
-        <div className="mb-4 border border-blue-200 rounded-lg p-8">
+        <div className="mb-4 border border-blue-200 rounded-lg p-4">
           <div className="flex justify-center p-2">
             <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[600px]">
               <defs>
@@ -197,8 +197,8 @@ export const FKSystemOverview = () => {
       </div>
 
       {/* FK能力变化 */}
-      <div className="mb-4 border border-blue-200 rounded-lg p-8">
-        <div className="flex items-center space-x-4 mb-8">
+      <div className="mb-4 border border-blue-200 rounded-lg p-4">
+        <div className="flex items-center space-x-4 mb-4">
           <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
             <Shield className="w-6 h-6 text-white" />
           </div>
@@ -224,7 +224,7 @@ export const FKSystemOverview = () => {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-sm">1</span>
@@ -270,7 +270,7 @@ export const FKSystemOverview = () => {
               </ul>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-sm">2</span>
@@ -309,7 +309,7 @@ export const FKSystemOverview = () => {
               </ul>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-sm">3</span>
@@ -359,7 +359,7 @@ export const FKSystemOverview = () => {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-sm">1</span>
@@ -412,7 +412,7 @@ export const FKSystemOverview = () => {
               </ul>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-sm">2</span>
@@ -444,7 +444,7 @@ export const FKSystemOverview = () => {
               </ul>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-sm">3</span>
@@ -479,8 +479,8 @@ export const FKSystemOverview = () => {
         </div>
       </div>
 
-      <div className="border border-blue-200 rounded-lg p-8 mb-8">
-        <div className="flex items-center space-x-4 mb-8">
+      <div className="border border-blue-200 rounded-lg p-4 mb-4">
+        <div className="flex items-center space-x-4 mb-4">
             <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
               <BarChart3 className="w-6 h-6 text-white" />
             </div>
@@ -498,7 +498,7 @@ export const FKSystemOverview = () => {
       </div>
 
         {/* Footer */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
         <div className="text-gray-400 text-sm">Q3 REPORT</div>
       </div>
       

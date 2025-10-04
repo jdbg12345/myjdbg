@@ -96,9 +96,9 @@ export const Direction3SystemStrategies = () => {
     <>
       <h3 className="text-xl font-semibold text-gray-800">系统审核策略</h3>
       {/* 1. 电子策略 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-3 mb-3">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">1</span>
               </div>
@@ -106,7 +106,7 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">Y、B</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">卡免费</span>是最典型的<span className="text-blue-600">套利或藏分</span>手段。目前系统在自动出款及人工审核环节中对此无识别</p>
@@ -272,9 +272,9 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 2. 真人策略 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-3 mb-3">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">2</span>
               </div>
@@ -283,7 +283,7 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">Y</span>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">突破：B/C端系统打通，解决实效性极差、无法跨商户、风控无联动等关键问题</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">对打、机器下注和算牌</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足</p>
@@ -404,9 +404,9 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 3. 体育策略 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-3 mb-3">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">3</span>
               </div>
@@ -414,7 +414,7 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">开发中</span>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">突破：B/C端系统打通，解决实效性极差、无法跨商户、风控无联动等关键问题</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">打水、协议球、卡危险球、出货、蛇货、拉赛、机器下注</span>等是最常见的套利与作弊手段。当前系统在自动出款与人工审核环节对此类行为的识别尚不充分，尤其是体育赛类场景复杂、多变，对审核人员经验依赖高，导致漏判与误判并存，带来较大风控盲区与损失风险</p>
@@ -432,16 +432,16 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 4. 棋牌策略 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-3 mb-3">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">4</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">棋牌策略</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">开发中</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">移分</span>等是最常见的套利及作弊手段。当前系统在自动出款和人工审核环节对此识别不足，存在较多遗漏 </p>
@@ -459,16 +459,16 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 5. 彩票策略 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-3 mb-3">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">5</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">彩票策略</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">开发中</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">核心问题</h5>
                 <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">全包行为</span>是最常见的套利与作弊手段；目前系统在自动出款及人工审核环节中对此无识别</p>
@@ -490,9 +490,9 @@ export const Direction3SystemStrategies = () => {
       <h3 className="text-xl font-semibold text-gray-800">风控工具集合</h3>
 
       {/* 1. 关联下注工具 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-3 mb-3">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">1</span>
               </div>
@@ -500,7 +500,7 @@ export const Direction3SystemStrategies = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">突破：实现跨 Y+B 全站点的核心关联特征打通，解决了绝大多数关联识别难题</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -539,16 +539,16 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 2. 体育打水工具 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-3 mb-3">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">2</span>
               </div>
               <h4 className="text-lg font-semibold text-gray-800">体育打水工具</h4>
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600">已上线</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -584,7 +584,7 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 3. 提款流水工具 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3">
@@ -598,7 +598,7 @@ export const Direction3SystemStrategies = () => {
                 目前该问题在技术层面反馈，暂时无法实现彻底解决，需进一步讨论
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -688,7 +688,7 @@ export const Direction3SystemStrategies = () => {
       <h3 className="text-xl font-semibold text-gray-800">异常情况监控</h3>
       
       {/* 中心钱包多钱 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -700,7 +700,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">C端</span>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -728,7 +728,7 @@ export const Direction3SystemStrategies = () => {
 
          
       {/* 沉睡用户活跃 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -740,7 +740,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">C端</span>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -767,7 +767,7 @@ export const Direction3SystemStrategies = () => {
       </div>
       
       {/* 场馆钱包多钱 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -779,7 +779,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">B端</span>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -806,7 +806,7 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 杀率监控预警 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -818,7 +818,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">B端</span>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -848,7 +848,7 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 体育赔率预警 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -861,7 +861,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">世界杯前重点推进优化</span>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -890,7 +890,7 @@ export const Direction3SystemStrategies = () => {
       {/* 事故统计概览 */}
       <div className="mt-12 mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center space-x-3 mb-3">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <AlertTriangle className="w-5 h-5 text-white" />
             </div>
@@ -913,9 +913,9 @@ export const Direction3SystemStrategies = () => {
       </div>
 
       {/* 事故详细记录 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-6">
+          <div className="flex items-center space-x-3 mb-3">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <Calendar className="w-5 h-5 text-white" />
             </div>

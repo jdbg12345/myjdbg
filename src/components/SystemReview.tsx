@@ -75,7 +75,7 @@ export const SystemReview = () => {
       </div>
       
       {/* Footer */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
         <div className="text-gray-400 text-sm">Q3 REPORT</div>
       </div>
     </div>

@@ -7,7 +7,7 @@ export const CoverPage = () => {
       <div className="text-2xl text-gray-600 font-medium">2025年10月05日</div>
       
       {/* Footer */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
       </div>
     </div>
   );

@@ -45,7 +45,7 @@ export const FKTransformationRhythm = () => {
       </div>
 
       {/* 核心问题 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex items-center space-x-3 mb-3">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
@@ -53,11 +53,11 @@ export const FKTransformationRhythm = () => {
             </div>
             <h2 className="text-3xl font-bold text-gray-900">核心问题</h2>
           </div>
-          <div className="mb-8">
+          <div className="mb-4">
             <span className="text-gray-700 text-xl">问题虽多，但已逐步明确解决路径，并按计划有序推进</span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* 问题1 */}
             <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
               <div className="flex items-start space-x-4">
@@ -107,7 +107,7 @@ export const FKTransformationRhythm = () => {
       </div>
 
       {/* 面对困难 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex items-center space-x-3 mb-3">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
@@ -115,11 +115,11 @@ export const FKTransformationRhythm = () => {
             </div>
             <h2 className="text-3xl font-bold text-gray-900">面对挑战</h2>
           </div>
-          <div className="mb-8">
+          <div className="mb-4">
             <span className="text-gray-700 text-xl">推进过程中，人员、系统与风险管理都面临较大挑战</span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* 困难1 */}
             <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600 flex-1">
               <div className="flex items-start space-x-4">
@@ -169,7 +169,7 @@ export const FKTransformationRhythm = () => {
       </div>
 
       {/* 核心目标 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex items-center space-x-3 mb-3">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
@@ -177,14 +177,14 @@ export const FKTransformationRhythm = () => {
             </div>
             <h2 className="text-3xl font-bold text-gray-900">核心目标</h2>
           </div>
-          <div className="mb-8">
+          <div className="mb-4">
             <span className="text-gray-700 text-xl">
               构建以<span className="text-blue-600">系统为核心、人工为辅助</span>的防护体系，实现全流程自动化风险识别与控制
             </span>
           </div>
 
           {/* 核心目标下的三个模块 */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* 模块1 */}
             <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
               <div className="flex items-start space-x-4">
@@ -234,7 +234,7 @@ export const FKTransformationRhythm = () => {
       </div>
 
       {/* 推进节奏 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex items-center space-x-3 mb-3">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
@@ -242,7 +242,7 @@ export const FKTransformationRhythm = () => {
             </div>
             <h2 className="text-3xl font-bold text-gray-900">推进节奏</h2>
           </div>
-          <div className="mb-8">
+          <div className="mb-4">
             <span className="text-gray-700 text-xl">由于变革会存在较大影响及风险，将采取<span className="text-blue-600">分阶段推进方式</span>，在<span className="text-blue-600">风险可控和有效的前提下</span>完成体系变革。</span>
           </div>
 
@@ -286,7 +286,7 @@ export const FKTransformationRhythm = () => {
       </div>
       
       {/* Footer */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
         <div className="text-gray-400 text-sm">Q3 REPORT</div>
       </div>
     </div>

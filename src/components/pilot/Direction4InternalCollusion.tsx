@@ -4,7 +4,7 @@ export const Direction4InternalCollusion = () => {
   return (
     <>
       {/* 风控标签和备注独立权限 */}
-      <div className="mb-12">
+      <div className="mb-6">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
@@ -16,8 +16,8 @@ export const Direction4InternalCollusion = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Y</span>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 核心问题
@@ -25,7 +25,7 @@ export const Direction4InternalCollusion = () => {
               <p className="text-gray-700 text-sm leading-relaxed">风控的标签和备注权限未独立管理，大部分部门均可查看，敏感信息易泄露</p>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 解决策略
@@ -34,7 +34,7 @@ export const Direction4InternalCollusion = () => {
               <p className="text-gray-700 text-sm leading-relaxed">2、同时，部门进行各类套利场景统计，标签明确化便于部门清晰复盘带来的市场动向明确，同时针对常规，特殊，特殊频发案例进行培训手册纳入提高新人成长，完成闭环</p>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 预期收益
@@ -47,7 +47,7 @@ export const Direction4InternalCollusion = () => {
       </div>
 
       {/* 会员禁用流程升级 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
@@ -58,8 +58,8 @@ export const Direction4InternalCollusion = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 核心问题
@@ -67,7 +67,7 @@ export const Direction4InternalCollusion = () => {
               <p className="text-gray-700 text-sm leading-relaxed">当前会员禁用流程由单人操作完成，缺乏线上分级审批机制，<span className="text-blue-600">存在高V被误禁，及问题用户被违规启用的风险 </span></p>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 解决策略
@@ -77,7 +77,7 @@ export const Direction4InternalCollusion = () => {
               
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 预期收益
@@ -90,7 +90,7 @@ export const Direction4InternalCollusion = () => {
           <div className="mt-8">
             <h5 className="text-lg font-semibold text-gray-800 mb-6">VIP不同等级的启禁流程<span className="text-blue-600">支持后台自定义配置：下图为示例</span></h5>
             <div className="bg-blue-50 rounded-lg p-8 border border-blue-200">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="text-center">
                   <div className="bg-blue-100 border-2 border-blue-400 rounded-lg p-6 mb-4">
                     <div className="text-blue-800 font-medium text-lg">VIP 0-2</div>
@@ -121,7 +121,7 @@ export const Direction4InternalCollusion = () => {
       </div>
       
       {/* 敏感高危参数修改监控 */}
-      <div className="mb-12">
+      <div className="mb-6">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
@@ -133,9 +133,9 @@ export const Direction4InternalCollusion = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Y、B</span>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 核心问题
@@ -143,7 +143,7 @@ export const Direction4InternalCollusion = () => {
               <p className="text-gray-700 text-sm leading-relaxed">高危参数<span className="text-blue-600">（如DLYJ、存提费率、场馆费率、VIP体系）缺乏实时监控</span>，存在被误操作、滥用或配置异常导致的重大风险。</p>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 解决策略
@@ -153,7 +153,7 @@ export const Direction4InternalCollusion = () => {
 
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 预期收益
@@ -165,7 +165,7 @@ export const Direction4InternalCollusion = () => {
       </div>
 
       {/* 敏感查询使用密文查询 */}
-      <div className="mb-12">
+      <div className="mb-6">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
@@ -176,9 +176,9 @@ export const Direction4InternalCollusion = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 核心问题
@@ -186,14 +186,14 @@ export const Direction4InternalCollusion = () => {
               <p className="text-gray-700 text-sm leading-relaxed">部分关键查询参数以<span className="text-blue-600">玩家明文（姓名、银行卡号、虚拟货币地址等）直接操作，存在敏感信息泄露风险</span></p>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 解决策略
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">支持<span className="text-blue-600">密文查询</span></p>
             </div>
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 预期收益
@@ -205,7 +205,7 @@ export const Direction4InternalCollusion = () => {
       </div>
 
       {/* 风控策略参数变化机制 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
@@ -216,22 +216,22 @@ export const Direction4InternalCollusion = () => {
               <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 核心问题
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">现有<span className="text-blue-600">风控策略参数固定，易被外部摸清规律或通过内外勾结泄露</span>；市场上已出现针对该规律<span className="text-blue-600">故意规避和绕过的套利提款行为</span></p>
             </div>
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 解决策略
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">建立<span className="text-blue-600">动态参数调整机制</span>，使<span className="text-blue-600">表面显示参数与实际执行参数不完全一致</span>，从而增加外界预测难度并降低内外勾结被泄漏风险。</p>
             </div>
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 预期收益
@@ -243,7 +243,7 @@ export const Direction4InternalCollusion = () => {
       </div>
 
       {/* 稽查成果 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
@@ -256,7 +256,7 @@ export const Direction4InternalCollusion = () => {
           </div>
           
           {/* 稽查成果详细内容 */}
-          <div className="space-y-8">
+          <div className="space-y-4">
 
             {/* 调查成果总览 */}
             <div className="bg-gray-50 rounded-lg p-6 border border-gray-300">
@@ -444,7 +444,7 @@ export const Direction4InternalCollusion = () => {
       </div>
 
       {/* 内控业务培训 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-gray-300">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
@@ -456,7 +456,7 @@ export const Direction4InternalCollusion = () => {
           </div>
 
           {/* 回群组专项进展 */}
-          <div className="mb-8">
+          <div className="mb-4">
             <div className="bg-gray-50 rounded-lg p-6 border border-gray-300">
               <div className="flex items-center justify-between mb-4">
                 <h5 className="text-base font-semibold text-gray-800">1. 回群组专项进展</h5>
@@ -559,7 +559,7 @@ export const Direction4InternalCollusion = () => {
       </div>
 
       {/* 信息安全管理&应急管理方案 */}
-      <div className="mb-8">
+      <div className="mb-4">
         <div className="bg-white rounded-lg p-8 mb-8 border border-gray-300">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">

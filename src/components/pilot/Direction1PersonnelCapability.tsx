@@ -5,7 +5,7 @@ export const Direction1PersonnelCapability = () => {
     <>
     <h3 className="text-xl font-semibold text-gray-800">审核机制变革</h3>     
      {/* 云盾分数分布图表 */}
-        <div className="mb-8">
+        <div className="mb-4">
           <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -17,7 +17,7 @@ export const Direction1PersonnelCapability = () => {
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Y1、2、3、5、7、9</span>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -237,7 +237,7 @@ export const Direction1PersonnelCapability = () => {
       
       
         {/* 新派单规则效果图表 */}
-        <div className="mb-8">
+        <div className="mb-4">
           {/* 整合的内容和图表模块 */}
           <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
@@ -250,7 +250,7 @@ export const Direction1PersonnelCapability = () => {
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Y1、2、3、5、7、9</span>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -486,7 +486,7 @@ export const Direction1PersonnelCapability = () => {
       
 
         {/* 出款强制查看标签备注 */}
-        <div className="mb-8">
+        <div className="mb-4">
           <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
@@ -498,7 +498,7 @@ export const Direction1PersonnelCapability = () => {
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Y</span>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
