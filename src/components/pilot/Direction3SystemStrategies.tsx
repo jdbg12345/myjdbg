@@ -918,9 +918,9 @@ export const Direction3SystemStrategies = () => {
           </div>
         </div>
       </div>
-         </div>
-                </div>
-
+         
+        </div>         
+      </div>
     </>
   );
 };
