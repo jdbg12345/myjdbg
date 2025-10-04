@@ -837,7 +837,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">可第一时间进行预警，然后由专人跟进处理</p>
+                <p className="text-gray-700 text-sm leading-relaxed">第一时间预警，然后由专人跟进处理</p>
               </div>
             </div>
         </div>
@@ -877,7 +877,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">可第一时间进行预警，然后由专人跟进处理</p>
+                <p className="text-gray-700 text-sm leading-relaxed">第一时间预警，然后由专人跟进处理</p>
               </div>
             </div>
      
