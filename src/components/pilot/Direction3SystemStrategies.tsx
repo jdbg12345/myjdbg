@@ -611,7 +611,8 @@ export const Direction3SystemStrategies = () => {
                   </div>
                   <div className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
-                    <span><span className="font-medium text-blue-600">人工计算错误</span>：由于系统计算流水不可用，风控人员<span className="text-blue-600">只能依赖手动计算</span>。但由于规则复杂，且涉及到多个页面及数据，实际执行存在较大差异，不仅耗时繁琐，导致<span className="text-blue-600">每月约1万笔订单，占比约5%，因流水错误引发出款损失金额约50万</span></span>
+                    <span><span className="font-medium text-blue-600">人工计算错误</span>：由于系统计算流水不可用，风控人员<span className="text-blue-600">只能依赖手动计算</span>。但由于规则复杂且涉及多个页面和数据，实际操作中差异较大，既耗时繁琐，又导致<span className="text-red-600">每月约1万笔订单（约占5%）因流水错误引发出款损失，金额约为50万元</span></span>
+            
                   </div>
                   <div className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
