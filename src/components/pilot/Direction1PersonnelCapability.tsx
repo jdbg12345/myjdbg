@@ -283,7 +283,7 @@ export const Direction1PersonnelCapability = () => {
               <div className="space-y-3">
                 <div className="bg-white border-l-4 border-green-500 p-3 rounded">
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">第一阶段调整：</span>通过派单机制的调整，整体<span className="font-bold text-green-600">实现了外包和远程等低效渠道订单量的显著压缩</span>，符合预期；但远程和外包的单量虽然有所减少，难度也有所降低，但其错误率却上升，暴露出能力不足和责任心缺失的问题，同时也存在潜在的管理安全隐患。为此，后续应加强人员培训、优化淘汰机制，并强化过程管控，<span className="font-bold text-red-600">逐步减少外包远程比重及优秀人员场地迁移工作，预计Q4继续优化1/3，最终实现能够随时剔除；但由于总部一审的可承载订单量有限，因此该调整将分阶段逐步实施；</span>
+                    <span className="font-semibold text-gray-800">第一阶段调整：</span>通过派单机制的调整，整体<span className="font-bold text-green-600">实现了外包和远程等低效渠道订单量的显著压缩</span>，符合预期；但远程和外包的单量虽然有所减少，难度也有所降低，但其错误率却上升，暴露出<span className="font-bold text-red-600">能力不足和责任心缺失的问题，同时也存在潜在的管理安全隐患</span>。为此，后续应加强人员培训、优化淘汰机制，并强化过程管控，<span className="font-bold text-red-600">逐步减少外包远程比重及优秀人员场地迁移工作，预计Q4继续优化1/3，最终实现能够随时剔除；但由于总部一审的可承载订单量有限，因此该调整将分阶段逐步实施；</span>
                   </p>
               
                 </div>
