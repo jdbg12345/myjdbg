@@ -326,15 +326,8 @@ export const Direction4InternalCollusion = () => {
               <div className="space-y-3">
                 <div className="bg-white rounded-lg p-4 border border-blue-100">
                   <div className="text-sm">
-                    <span className="font-semibold text-gray-800">目标：</span>
-                    <span className="text-gray-700">回群组人力招聘培训及团队搭建</span>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-lg p-4 border border-blue-100">
-                  <div className="text-sm">
                     <span className="font-semibold text-gray-800">内容：</span>
-                    <span className="text-gray-700">承接全部FK&WH对接群</span>
+                    <span className="text-gray-700">承接全部FK&WH咨询，缓解一线出单人员的压力</span>
                   </div>
                 </div>
 
