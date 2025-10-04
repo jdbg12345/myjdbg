@@ -30,10 +30,10 @@ const navigationItems: NavigationItem[] = [
     id: 'fk-summary',
     title: '3. 工作情况',
     children: [
-      { id: 'fk-transformation', title: '3.1 FK全局说明' },
-      { id: 'fk-system-overview', title: '3.2 FK会员说明' },
-      { id: 'internal-control-overview', title: '3.3 FK内控说明' },
-      { id: 'agent-control-overview', title: '3.4 FKDL说明' }
+      { id: 'fk-transformation', title: '3.1 全局说明' },
+      { id: 'fk-system-overview', title: '3.2 会员说明' },
+      { id: 'internal-control-overview', title: '3.3 内控说明' },
+      { id: 'agent-control-overview', title: '3.4 DL说明' }
     ]
   }
 ];
