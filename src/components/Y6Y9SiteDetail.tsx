@@ -32,7 +32,7 @@ export const Y6Y9SiteDetail = () => {
         <h1 className="text-5xl font-bold text-gray-800">2.5 防范金突出站点-Y6+Y9明细</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
-          <span className="font-medium ml-2">体育拦截分类明细</span>
+          <span className="font-medium ml-2">MK明细</span>
         </div>
       </div>
 
