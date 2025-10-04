@@ -14,29 +14,29 @@ export const OverallData = () => {
       </div>
 
       {/* 1. 整体数据 */}
-      <div className="bg-white rounded-lg p-4 mb-3 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-4">
+      <div className="bg-white rounded-lg p-3 mb-3 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-3">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <BarChart3 className="w-5 h-5 text-white" />
           </div>
           <h2 className="text-3xl font-bold text-gray-800">一、防范情况</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          
-          <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+          <div className="bg-white rounded-lg p-4 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">防范单量与金额</div>
           </div>
-          
-          <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
+
+          <div className="bg-white rounded-lg p-4 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">防范金类型占比</div>
           </div>
-          
-          <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
+
+          <div className="bg-white rounded-lg p-4 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">防范金突出站点</div>
           </div>
-          
-           <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
+
+           <div className="bg-white rounded-lg p-4 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">DLYJ活动防犯</div>
           </div>
           
@@ -44,29 +44,29 @@ export const OverallData = () => {
       </div>
 
       {/* 2. 体育数据 */}
-      <div className="bg-white rounded-lg p-4 mb-3 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-4">
+      <div className="bg-white rounded-lg p-3 mb-3 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-3">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <TrendingUp className="w-5 h-5 text-white" />
           </div>
           <h2 className="text-3xl font-bold text-gray-800">二、体育数据</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          
-        <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+        <div className="bg-white rounded-lg p-4 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">体育拦截分析</div>
         </div>
-          
-          <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
+
+          <div className="bg-white rounded-lg p-4 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">体育整体杀率</div>
           </div>
-          
-          <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
+
+          <div className="bg-white rounded-lg p-4 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">主要玩法分析</div>
           </div>
 
-          <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
+          <div className="bg-white rounded-lg p-4 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">体育站点对比</div>
           </div>
           
