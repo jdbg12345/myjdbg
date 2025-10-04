@@ -309,15 +309,10 @@ export const Direction1PersonnelCapability = () => {
 
                  <div className="bg-white border-l-4 border-green-500 p-3 rounded">
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">第二阶段调整：</span>通过派单机制的调整，整体实现了外包和远程等低效渠道订单量的<span className="font-bold text-green-600">显著压缩</span>，符合预期。
+                    <span className="font-semibold text-gray-800">第二阶段调整：</span>通过数据分析发现，风控用户主要集中在低V值和低金额特征群体，这些用户在派单时通常优先分配远程和外包任务。然而，由于其能力、态度及考核监管方面的不足，导致审核质量未得到有效提升；<span className="font-bold text-green-600">后续针对这些特征的订单进行优化分配</span>
                   </p>             
                 </div>
                 
-                  <div className="bg-white border-l-4 border-blue-500 p-3 rounded">       
-                   <p className="text-sm text-blue-700 font-medium mt-2">
-                    → 远程和外包的单量虽然有所减少，难度也有所降低，但其错误率却上升，暴露出能力不足和责任心缺失的问题，同时也存在潜在的管理安全隐患。为此，后续应加强人员培训、优化淘汰机制，并强化过程管控，<span className="font-bold text-red-600">逐步减少外包远程比重，最终实现能够随时剔除</span>
-                  </p>
-                </div>
               </div>
           </div>
             
