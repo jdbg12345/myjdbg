@@ -373,7 +373,7 @@ export const OrganizationalStructure = () => {
             {/* Row 1: 技术 - 系统组 - 系统组核心职责 */}
             <div className="bg-white rounded-lg p-4">
               <div id="tech-dept" className="bg-white border border-gray-300 p-3 text-center rounded-lg hover:shadow-md transition-shadow cursor-pointer w-full">
-                <div className="font-semibold text-gray-700 flex items-center justify-center h-full text-sm">技术</div>
+                <div className="font-semibold text-gray-700 flex items-center justify-center h-full text-sm">JS</div>
               </div>
             </div>
 
