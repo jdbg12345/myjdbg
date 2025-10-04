@@ -2,18 +2,18 @@ import React from 'react';
 import { BarChart3 } from 'lucide-react';
 
 export const SportsInterceptionCategory = () => {
-  // 体育拦截分类数据
+  // 体育拦截分类数据（删除其他打水列，数据顺移）
   const categoryData = [
-    { site: '1', sportAmount: 596.9, sportPercent: 7, batchAmount: 226.5, batchPercent: 13, negativeAmount: 138.1, negativePercent: 10, otherWaterAmount: 189.1, otherWaterPercent: 13, shipmentAmount: 6.6, shipmentPercent: 3, chickenAmount: 0.7, chickenPercent: 0, sandwichAmount: 5.4, sandwichPercent: 11 },
-    { site: '2', sportAmount: 606.3, sportPercent: 7, batchAmount: 76.4, batchPercent: 4, negativeAmount: 49.2, negativePercent: 4, otherWaterAmount: 15.4, otherWaterPercent: 1, shipmentAmount: 18.3, shipmentPercent: 8, chickenAmount: 9.6, chickenPercent: 5, sandwichAmount: 2.2, sandwichPercent: 5 },
-    { site: '3', sportAmount: 481.3, sportPercent: 5, batchAmount: 182.4, batchPercent: 10, negativeAmount: 84.7, negativePercent: 6, otherWaterAmount: 43.1, otherWaterPercent: 3, shipmentAmount: 6.2, shipmentPercent: 3, chickenAmount: 0.2, chickenPercent: 0, sandwichAmount: 2.9, sandwichPercent: 6 },
-    { site: '4', sportAmount: 2984.2, sportPercent: 33, batchAmount: 534.4, batchPercent: 30, negativeAmount: 513.4, negativePercent: 39, otherWaterAmount: 683.7, otherWaterPercent: 48, shipmentAmount: 63.3, shipmentPercent: 27, chickenAmount: 38.8, chickenPercent: 21, sandwichAmount: 13.2, sandwichPercent: 27 },
-    { site: '5', sportAmount: 87.4, sportPercent: 1, batchAmount: 22.9, batchPercent: 1, negativeAmount: 17.3, negativePercent: 1, otherWaterAmount: 9.7, otherWaterPercent: 1, shipmentAmount: 2.1, shipmentPercent: 1, chickenAmount: 0.0, chickenPercent: 0, sandwichAmount: 1.0, sandwichPercent: 2 },
-    { site: '7', sportAmount: 740.6, sportPercent: 8, batchAmount: 180.8, batchPercent: 10, negativeAmount: 146.0, negativePercent: 11, otherWaterAmount: 116.9, otherWaterPercent: 8, shipmentAmount: 2.2, shipmentPercent: 1, chickenAmount: 4.8, chickenPercent: 3, sandwichAmount: 2.3, sandwichPercent: 5 },
-    { site: '8', sportAmount: 378.6, sportPercent: 4, batchAmount: 66.2, batchPercent: 4, negativeAmount: 90.5, negativePercent: 7, otherWaterAmount: 46.6, otherWaterPercent: 3, shipmentAmount: 3.8, shipmentPercent: 2, chickenAmount: 0.4, chickenPercent: 0, sandwichAmount: 0.2, sandwichPercent: 0 },
-    { site: '6+9', sportAmount: 1040.0, sportPercent: 12, batchAmount: 157.1, batchPercent: 9, negativeAmount: 130.4, negativePercent: 10, otherWaterAmount: 96.6, otherWaterPercent: 7, shipmentAmount: 41.5, shipmentPercent: 18, chickenAmount: 6.6, chickenPercent: 4, sandwichAmount: 2.0, sandwichPercent: 4 },
-    { site: 'BD+XK', sportAmount: 932.2, sportPercent: 10, batchAmount: 163.4, batchPercent: 9, negativeAmount: 86.8, negativePercent: 7, otherWaterAmount: 163.4, otherWaterPercent: 12, shipmentAmount: 45.6, shipmentPercent: 19, chickenAmount: 114.0, chickenPercent: 61, sandwichAmount: 7.5, sandwichPercent: 16 },
-    { site: '综合', sportAmount: 1085.3, sportPercent: 12, batchAmount: 162.6, batchPercent: 9, negativeAmount: 62.5, negativePercent: 5, otherWaterAmount: 52.3, otherWaterPercent: 4, shipmentAmount: 44.6, shipmentPercent: 19, chickenAmount: 10.4, chickenPercent: 6, sandwichAmount: 11.4, sandwichPercent: 24 }
+    { site: '1', sportAmount: 596.9, sportPercent: 7, batchAmount: 226.5, batchPercent: 13, negativeAmount: 138.1, negativePercent: 10, shipmentAmount: 189.1, shipmentPercent: 13, chickenAmount: 6.6, chickenPercent: 3, sandwichAmount: 0.7, sandwichPercent: 0 },
+    { site: '2', sportAmount: 606.3, sportPercent: 7, batchAmount: 76.4, batchPercent: 4, negativeAmount: 49.2, negativePercent: 4, shipmentAmount: 15.4, shipmentPercent: 1, chickenAmount: 18.3, chickenPercent: 8, sandwichAmount: 9.6, sandwichPercent: 5 },
+    { site: '3', sportAmount: 481.3, sportPercent: 5, batchAmount: 182.4, batchPercent: 10, negativeAmount: 84.7, negativePercent: 6, shipmentAmount: 43.1, shipmentPercent: 3, chickenAmount: 6.2, chickenPercent: 3, sandwichAmount: 0.2, sandwichPercent: 0 },
+    { site: '4', sportAmount: 2984.2, sportPercent: 33, batchAmount: 534.4, batchPercent: 30, negativeAmount: 513.4, negativePercent: 39, shipmentAmount: 683.7, shipmentPercent: 48, chickenAmount: 63.3, chickenPercent: 27, sandwichAmount: 38.8, sandwichPercent: 21 },
+    { site: '5', sportAmount: 87.4, sportPercent: 1, batchAmount: 22.9, batchPercent: 1, negativeAmount: 17.3, negativePercent: 1, shipmentAmount: 9.7, shipmentPercent: 1, chickenAmount: 2.1, chickenPercent: 1, sandwichAmount: 0.0, sandwichPercent: 0 },
+    { site: '7', sportAmount: 740.6, sportPercent: 8, batchAmount: 180.8, batchPercent: 10, negativeAmount: 146.0, negativePercent: 11, shipmentAmount: 116.9, shipmentPercent: 8, chickenAmount: 2.2, chickenPercent: 1, sandwichAmount: 4.8, sandwichPercent: 3 },
+    { site: '8', sportAmount: 378.6, sportPercent: 4, batchAmount: 66.2, batchPercent: 4, negativeAmount: 90.5, negativePercent: 7, shipmentAmount: 46.6, shipmentPercent: 3, chickenAmount: 3.8, chickenPercent: 2, sandwichAmount: 0.4, sandwichPercent: 0 },
+    { site: '6+9', sportAmount: 1040.0, sportPercent: 12, batchAmount: 157.1, batchPercent: 9, negativeAmount: 130.4, negativePercent: 10, shipmentAmount: 96.6, shipmentPercent: 7, chickenAmount: 41.5, chickenPercent: 18, sandwichAmount: 6.6, sandwichPercent: 4 },
+    { site: 'BD+XK', sportAmount: 932.2, sportPercent: 10, batchAmount: 163.4, batchPercent: 9, negativeAmount: 86.8, negativePercent: 7, shipmentAmount: 163.4, shipmentPercent: 12, chickenAmount: 45.6, chickenPercent: 19, sandwichAmount: 114.0, sandwichPercent: 61 },
+    { site: '综合', sportAmount: 1085.3, sportPercent: 12, batchAmount: 162.6, batchPercent: 9, negativeAmount: 62.5, negativePercent: 5, shipmentAmount: 52.3, shipmentPercent: 4, chickenAmount: 44.6, chickenPercent: 19, sandwichAmount: 10.4, sandwichPercent: 6 }
   ];
 
   // 小计数据
@@ -21,10 +21,9 @@ export const SportsInterceptionCategory = () => {
     sportTotal: 8932.9,
     batchTotal: 1772.7,
     negativeTotal: 1318.9,
-    otherWaterTotal: 1416.6,
-    shipmentTotal: 234.2,
-    chickenTotal: 185.6,
-    sandwichTotal: 48.0
+    shipmentTotal: 1416.6,
+    chickenTotal: 234.2,
+    sandwichTotal: 185.6
   };
 
   // 总计占比
@@ -32,10 +31,9 @@ export const SportsInterceptionCategory = () => {
     sportPercent: 64.22,
     batchPercent: 12.75,
     negativePercent: 9.48,
-    otherWaterPercent: 10.18,
-    shipmentPercent: 1.68,
-    chickenPercent: 1.33,
-    sandwichPercent: 0.34
+    shipmentPercent: 10.18,
+    chickenPercent: 1.68,
+    sandwichPercent: 1.33
   };
 
   return (
@@ -57,27 +55,24 @@ export const SportsInterceptionCategory = () => {
               {/* 第1行：分类、打水分类、出货分类、快咨询、其他 */}
               <tr>
                 <th rowSpan="3" className="p-2 text-center font-semibold border-r border-blue-500 align-middle">分类</th>
-                <th colSpan="8" className="p-2 text-center font-semibold border-r border-blue-500">打水分类</th>
+                <th colSpan="6" className="p-2 text-center font-semibold border-r border-blue-500">打水分类</th>
                 <th colSpan="4" className="p-2 text-center font-semibold border-r border-blue-500">出货分类</th>
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">快咨询</th>
                 <th rowSpan="3" className="p-2 text-center font-semibold align-middle">其他</th>
               </tr>
 
-              {/* 第2行：体育打水、批量打水、打负（租卖号）、其他打水、出货、野鸡（协议球）、夹盘（卡进球）、其他 */}
+              {/* 第2行：体育打水、批量打水、打负、出货、野鸡、夹盘 */}
               <tr>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">体育打水</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">批量打水</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">打负</th>
-                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">其他打水</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">出货</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">野鸡</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">夹盘</th>
               </tr>
 
-              {/* 第3行：站点、所有的金额和占比 */}
+              {/* 第3行：所有的金额和占比 */}
               <tr>
-                <th className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">金额</th>
-                <th className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">占比</th>
                 <th className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">金额</th>
                 <th className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">占比</th>
                 <th className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">金额</th>
@@ -102,8 +97,6 @@ export const SportsInterceptionCategory = () => {
                   <td className="p-2 text-center">{row.batchPercent}%</td>
                   <td className="p-2 text-center">{row.negativeAmount}</td>
                   <td className="p-2 text-center">{row.negativePercent}%</td>
-                  <td className="p-2 text-center">{row.otherWaterAmount}</td>
-                  <td className="p-2 text-center">{row.otherWaterPercent}%</td>
                   <td className="p-2 text-center">{row.shipmentAmount}</td>
                   <td className="p-2 text-center">{row.shipmentPercent}%</td>
                   <td className="p-2 text-center">{row.chickenAmount}</td>
@@ -123,8 +116,6 @@ export const SportsInterceptionCategory = () => {
                 <td className="p-2 text-center font-semibold">100%</td>
                 <td className="p-2 text-center font-semibold">{subtotalData.negativeTotal}</td>
                 <td className="p-2 text-center font-semibold">100%</td>
-                <td className="p-2 text-center font-semibold">{subtotalData.otherWaterTotal}</td>
-                <td className="p-2 text-center font-semibold">100%</td>
                 <td className="p-2 text-center font-semibold">{subtotalData.shipmentTotal}</td>
                 <td className="p-2 text-center font-semibold">100%</td>
                 <td className="p-2 text-center font-semibold">{subtotalData.chickenTotal}</td>
@@ -140,7 +131,6 @@ export const SportsInterceptionCategory = () => {
                 <td className="p-2 text-center font-semibold text-red-400" colSpan="2">{totalPercentData.sportPercent}%</td>
                 <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.batchPercent}%</td>
                 <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.negativePercent}%</td>
-                <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.otherWaterPercent}%</td>
                 <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.shipmentPercent}%</td>
                 <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.chickenPercent}%</td>
                 <td className="p-2 text-center font-semibold" colSpan="3">{totalPercentData.sandwichPercent}%</td>
@@ -162,7 +152,7 @@ export const SportsInterceptionCategory = () => {
           <div className="space-y-3 text-gray-700">
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span>体育打水为主要占比，达到<span className="font-semibold text-blue-600">64.22%</span>，其次为批量打水占比为<span className="font-semibold text-blue-600">12.75%</span>，其他打水以及打负占比分别为<span className="font-semibold text-blue-600">10.18%</span>和<span className="font-semibold text-blue-600">9.48%</span>。</span>
+              <span>体育打水为主要占比，达到<span className="font-semibold text-blue-600">64.22%</span>，其次为批量打水占比为<span className="font-semibold text-blue-600">12.75%</span>，出货以及打负占比分别为<span className="font-semibold text-blue-600">10.18%</span>和<span className="font-semibold text-blue-600">9.48%</span>。</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
