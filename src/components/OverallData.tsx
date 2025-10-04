@@ -68,22 +68,7 @@ export const OverallData = () => {
           </div>
         </div>
       </div>
-
-      {/* 3. 飞机数据 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-            <Target className="w-5 h-5 text-white" />
-          </div>
-          <h2 className="text-3xl font-bold text-gray-800">三、飞投数据</h2>
-        </div>
-
-        <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
-          <div className="text-blue-600 text-lg font-semibold mb-2">飞机提款数据</div>
-          <div className="text-gray-600 text-sm">提款人数、订单量、审核时效统计</div>
-        </div>
-      </div>
-      
+ 
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="text-gray-400 text-sm">FKZX Q3 REPORT</div>
