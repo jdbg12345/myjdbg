@@ -37,7 +37,7 @@ export const OverallData = () => {
           </div>
 
            <div className="bg-white rounded-lg p-4 border border-blue-200 text-center">
-            <div className="text-blue-600 text-lg font-semibold mb-2">DLYJ活动防犯</div>
+            <div className="text-blue-600 text-lg font-semibold mb-2">DL的YJ活动防犯</div>
           </div>
           
         </div>
