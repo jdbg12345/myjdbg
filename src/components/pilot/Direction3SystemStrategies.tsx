@@ -117,7 +117,7 @@ export const Direction3SystemStrategies = () => {
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">拦截率：95%+</p>
+                <p className="text-gray-700 text-sm leading-relaxed">拦截率：90%+</p>
               </div>
             </div>
 
