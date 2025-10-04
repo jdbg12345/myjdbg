@@ -870,7 +870,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">降低赔率类异常导致的损失，平推动B端<span className="text-blue-600">提升数据商质量；</span>给出明确<span className="text-blue-600">赔率错误类型及规则，在关键环节——如任意盘口变化后的第一单、结算前的再次校验及提款拦截——实施全方位监控与预警</span>，确保每个步骤的准确性和及时性。<</p>
+                <p className="text-gray-700 text-sm leading-relaxed">降低赔率类异常导致的损失，平推动B端<span className="text-blue-600">提升数据商质量；</span>给出明确<span className="text-blue-600">赔率错误类型及规则，在关键环节——如任意盘口变化后的第一单、结算前的再次校验及提款拦截——实施全方位监控与预警</span>，确保每个步骤的准确性和及时性。</p>
                 
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
