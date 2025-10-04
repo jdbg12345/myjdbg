@@ -15,7 +15,6 @@ import { FKTransformationRhythm } from './components/FKTransformationRhythm';
 import { FKSystemOverview } from './components/FKSystemOverview';
 import { InternalControlOverview } from './components/InternalControlOverview';
 import { AgentControlOverview } from './components/AgentControlOverview';
-import { RiskReview } from './components/RiskReview';
 
         {/* 3.2 FK变化说明 */}
         <div data-section="fk-system-overview">
@@ -30,9 +29,4 @@ import { RiskReview } from './components/RiskReview';
         {/* 3.4 代理风控说明 */}
         <div data-section="agent-control-overview">
           <AgentControlOverview />
-        </div>
-        
-        {/* 4. B端事故问题汇总 */}
-        <div data-section="risk-review">
-          <RiskReview />
         </div>

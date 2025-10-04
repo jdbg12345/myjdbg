@@ -4,43 +4,83 @@ import { AlertTriangle, Calendar } from 'lucide-react';
 export const Direction3SystemStrategies = () => {
   const incidentData = [
     {
-      date: '4月8日',
-      venue: 'JDB电子',
-      incident: '免费旋转功能异常',
-      description: '异常为三方后台账号：hwpusdtmgr进行"免费旋转游戏下发"站点异常金额派发导致亏损。',
-      cause: '三方人员',
-      impact: '74.41w',
-      status: '商务沟通三方承担，后续无异常',
-      statusColor: 'bg-green-100 text-green-600'
+      date: '7月6日 ~ 7月8日',
+      venue: 'DBTY',
+      incident: 'VS-PANDA独家机房漏洞',
+      description: 'VS-PANDA独家欧欧数据联网表单-一天出现异常区域注册的新账户签订，B端访问数据的问题并且即下下载优化',
+      cause: '机器漏洞',
+      impact: '29.22w',
+      status: '后续暂时无发现异常',
+      statusColor: 'bg-blue-100 text-blue-600'
     },
     {
-      date: '4月28日～5月10日',
+      date: '7月29日 ~ 8月22日',
       venue: 'DBTY',
-      incident: '15分钟进球玩法异常',
-      description: '独赢进球后赔率没更新和大小没按时间调整赔率，被套了超过500%以上的赔付额。',
+      incident: '总进球4-6异常路率1.07以上',
+      description: '90分钟需要进两个环球会输，有些80分钟进球需要才3球才会输',
+      cause: '账单数据漏洞',
+      impact: '226.42w',
+      status: '后续暂时无发现异常',
+      statusColor: 'bg-blue-100 text-blue-600'
+    },
+    {
+      date: '9月5日',
+      venue: 'DBTY',
+      incident: '体育盘口异常错误',
+      description: '世界杯2026南美洲决赛，阿根廷 vs 巴西瑞士，除角球、犯规以外，所有体育数据会出现错位，直接导致出票量要减少。因赛事延期入口数据错误，导致参考数据错误。',
+      cause: '账单数据漏洞',
+      impact: '23.08w',
+      status: '8月尾开始校验数据发现异常盘口异常',
+      statusColor: 'bg-yellow-100 text-yellow-600'
+    },
+    {
+      date: '9月14日',
+      venue: 'DBTY',
+      incident: '体育盘口异常错误',
+      description: '日本J联赛，山形山神 v 富山铳球，大盘口异常出现错误，直接与足球自身盘口重要数据错位',
+      cause: '账单数据漏洞',
+      impact: '60.58w',
+      status: '8月尾开始校验数据发现异常盘口异常',
+      statusColor: 'bg-yellow-100 text-yellow-600'
+    },
+    {
+      date: '9月19日',
+      venue: 'DBTY',
+      incident: '事件源返退下发',
+      description: '乌克兰足球比赛异常体育卡推送，事件源返回数据错误',
+      cause: '数据源返退',
+      impact: '13.01w',
+      status: '后续暂时无发现异常',
+      statusColor: 'bg-blue-100 text-blue-600'
+    },
+    {
+      date: '9月21日',
+      venue: 'DBTY',
+      incident: '体育盘口异常错误',
+      description: '西班牙足球数据回源，两个场次演算体育盘口错误出现重要数据，导致系统无法显示相关盘口，进球数据出现错乱',
+      cause: '账单数据漏洞',
+      impact: '36.19w',
+      status: '8月尾开始校验数据发现异常盘口异常',
+      statusColor: 'bg-yellow-100 text-yellow-600'
+    },
+    {
+      date: '9月24日',
+      venue: 'DBTY',
+      incident: '体育盘口异常错误',
+      description: '意大利利瓦、AC米兰 v 拉齐奥，出现显著偏差大盘口 3/3.5 支持2.5/3人流预报。',
+      cause: '人为疏忽',
+      impact: '12.37w',
+      status: '后续校验数据出现盘口异常',
+      statusColor: 'bg-yellow-100 text-yellow-600'
+    },
+    {
+      date: '9月25日',
+      venue: 'DBTY',
+      incident: 'VS-PANDA进球事件延迟下发',
+      description: 'VS-PANDA进球事件AEFC24，场景赛事出现进球事件延迟下发。数据返回延迟问题',
       cause: '系统漏洞',
-      impact: '135.1w',
-      status: '后续暂无异常',
-      statusColor: 'bg-blue-100 text-blue-600'
-    },
-    {
-      date: '5月22日～5月31日',
-      venue: 'DBTY',
-      incident: '同队伍、玩法选项串关',
-      description: '利用梦幻赛事同队伍玩法能串关，利用接近3倍的异常赔付额套利。',
-      cause: '操盘失误',
-      impact: '369.2w',
-      status: '后续暂无异常',
-      statusColor: 'bg-blue-100 text-blue-600'
-    },
-    {
-      date: '6月13日～6月16日',
-      venue: 'DBTY',
-      incident: '危险进球期间确认注单',
-      description: '本应危险球拒单的成了确认投注成功。',
-      cause: '三方技术',
-      impact: '2.5w',
-      status: '后续暂无异常',
+      impact: '65.70w',
+      status: '后续暂时无发现异常',
       statusColor: 'bg-blue-100 text-blue-600'
     }
   ];
