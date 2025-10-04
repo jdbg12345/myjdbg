@@ -157,7 +157,7 @@ export const SportsInterceptionCategory = () => {
             text: '体育打水为主要占比，达到<span class="font-semibold text-blue-600">64.22%</span>，其次为批量打水占比为<span class="font-semibold text-blue-600">12.75%</span>，出货以及打负占比分别为<span class="font-semibold text-blue-600">10.18%</span>和<span class="font-semibold text-blue-600">9.48%</span>。'
           },
           {
-            text: '站点分布主要为<span class="font-semibold text-blue-600">4、6+9、综合</span>为主要，占比合计约占整体<span class="font-semibold text-blue-600">55%</span>。'
+            text: '站点分布主要为<span class="font-semibold text-blue-600">4、6+9、XK</span>为主要，占比合计约占整体<span class="font-semibold text-blue-600">55%</span>。'
           },
           {
             text: '<span class="font-semibold">套利手段：</span>主要通过盘口水位优势进行打水及红利套利，同时部分职业玩家集中在小联赛进行打水。'
