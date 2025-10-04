@@ -358,7 +358,7 @@ export const Direction4InternalCollusion = () => {
                      <div className="bg-blue-50 rounded p-3">
                       <div className="text-sm">
                         <span className="font-semibold text-gray-800">目标：</span>
-                        <span className="text-gray-700">快速让新人可以上手工作等</span>
+                        <span className="text-gray-700">通过平均培训周期8-15天的课程快速让新人可以上手工作</span>
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
@@ -371,13 +371,6 @@ export const Direction4InternalCollusion = () => {
                         <div className="text-xs text-gray-600 mb-1">第二季度培训</div>
                         <div className="text-2xl font-bold text-gray-600">40人</div>
                         <div className="text-xs text-gray-600 mt-1">对比参考</div>
-                      </div>
-                    </div>
-
-                    <div className="bg-gray-50 rounded p-3">
-                      <div className="text-sm text-gray-700">
-                        <span className="font-semibold">平均培训周期：</span>
-                        <span className="font-bold text-blue-600">8-15天</span>
                       </div>
                     </div>
 
