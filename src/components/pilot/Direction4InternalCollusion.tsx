@@ -392,7 +392,7 @@ export const Direction4InternalCollusion = () => {
                     <tr className="hover:bg-gray-50 ">
                       <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">7-9月</td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">安插外部测试</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">安插人员加入套利团队</td>
+                      <td className="border border-gray-300 px-3 py-2 text-gray-700">安插人员进入套利团队</td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
                         <div className="space-y-2">
                           <div>支付学习费1500U，以借用他人账号进行手法学习</div>
