@@ -48,7 +48,7 @@ export const QuarterlyPreventionData = () => {
           {/* 左侧：防范金额图表 */}
           <div className="bg-white rounded-lg p-5 border border-blue-200">
             <div className="bg-blue-600 text-white text-center py-3 rounded-lg mb-6">
-              <h3 className="text-white text-xl font-bold">三季度总防范金额：{formatNumber(totalAmount, 3)}亿</h3>
+              <h3 className="text-white text-xl font-bold">三季度总防范金额：3.95</h3>
             </div>
 
             {/* 图表区域 */}
