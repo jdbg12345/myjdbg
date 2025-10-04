@@ -315,7 +315,7 @@ export const AgentControlOverview = () => {
               gradeColor: 'text-green-600 bg-green-50'
             }
           ].map((agent, index) => (
-            <div key={index} className="bg-gradient-to-r from-blue-50 to-white rounded-lg p-6 border-2 border-blue-200 hover:shadow-lg">
+            <div key={index} className="bg-gradient-to-r from-blue-50 to-white rounded-lg p-6 border-2 border-blue-200 ">
               {/* 顶部信息 */}
               <div className="flex items-start justify-between mb-6 pb-4 border-b-2 border-blue-100">
                 <div className="flex items-center space-x-6">

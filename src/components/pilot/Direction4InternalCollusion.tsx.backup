@@ -292,38 +292,38 @@ export const Direction4InternalCollusion = () => {
                 <table className="w-full border-collapse">
                   <thead>
                     <tr className="bg-gray-700">
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">月份</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">稽查类型</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">涉及人员</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">违规行为</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">处置结果</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">备注</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">月份</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">稽查类型</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">涉及人员</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">违规行为</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">处置结果</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">备注</th>
                     </tr>
                   </thead>
                   <tbody>
                     {/* 7月份 - 账号销售测试 */}
-                    <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50">7月份</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">账号销售测试</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-gray-700 bg-gray-50">7月份</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">账号销售测试</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">
                         <div className="space-y-1">
                           <div>• Rob*****V7（等级V7）</div>
                           <div>• 另售出1个V1账号</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-2">
                           <div>按计划卖至外部团队，跟踪记录操作手法。</div>
                           <div className="text-gray-600">V1账号因等级过低未被使用。</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-1">
                           <div>✓ 已同步BM防范</div>
                           <div>⚠ V1账号持续关注</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="bg-gray-50 rounded p-2 border border-gray-300">
                           <div className="font-semibold text-gray-700 mb-1">买卖号前置要求：</div>
                           <div className="space-y-1 text-xs">
@@ -338,10 +338,10 @@ export const Direction4InternalCollusion = () => {
                     </tr>
 
                     {/* 8月份 - YH对外协作 */}
-                    <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50">8月份</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">YH对外协作</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-gray-700 bg-gray-50">8月份</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">YH对外协作</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-1">
                           <div>• 583** Iva****</div>
                           <div>• 536** Waf*****</div>
@@ -351,32 +351,32 @@ export const Direction4InternalCollusion = () => {
                           <div>• Uby******</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">与外部合作，协助查询账号备注内容并外发</td>
-                      <td className="border border-gray-300 px-3 py-2">
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">与外部合作，协助查询账号备注内容并外发</td>
+                      <td className="border border-gray-300 px-4 py-4">
                         <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600 inline-block">即刻开除</span>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-center text-gray-400">—</td>
+                      <td className="border border-gray-300 px-4 py-4 text-center text-gray-400">—</td>
                     </tr>
 
                     {/* 2-9月 - 内部泄密/钓鱼执法 */}
-                    <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50">8月-9月</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">内部泄密/钓鱼执法</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-gray-700 bg-gray-50">8月-9月</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">内部泄密/钓鱼执法</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">
                         <div className="space-y-2">
                           <div className="font-semibold text-gray-800">共计14人，YH占90%</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-2">
                           <div>内部员工协助外部团队查询备注信息，价格：每条10U</div>
               
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2">
+                      <td className="border border-gray-300 px-4 py-4">
                         <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600 inline-block">逐一处置</span>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="bg-gray-50 rounded p-2 border border-gray-300">
                           <div className="font-semibold text-gray-700 mb-1">内幕信息：</div>
                           <div className="space-y-1 text-xs">
@@ -389,32 +389,32 @@ export const Direction4InternalCollusion = () => {
                     </tr>
 
                     {/* 7-9月 - 安插外部测试 */}
-                    <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50">7-9月</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">安插外部测试</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">安插人员加入套利团队</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-gray-700 bg-gray-50">7-9月</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">安插外部测试</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">安插人员加入套利团队</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-2">
                           <div>支付学习费<span className="font-semibold text-blue-600">1500U</span></div>
                           <div>以借用他人账号进行手法学习</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">
                         <div className="space-y-1 text-sm">
                           <div>✓ 获取投注套利手法</div>
                           <div>✓ 获取出黑款模式</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2">
+                      <td className="border border-gray-300 px-4 py-4">
                         <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">持续推进，收集中</span>
                       </td>
                     </tr>
 
                     {/* 8月份 - 内部违规人员调查 */}
-                    <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50">8月份</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">内部违规人员调查</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-gray-700 bg-gray-50">8月份</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">内部违规人员调查</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">
                         <div className="space-y-1 text-sm">
                           <div><span className="font-semibold">英文名：</span>Ge*</div>
                           <div><span className="font-semibold">验证码：</span>TJ0**</div>
@@ -422,17 +422,17 @@ export const Direction4InternalCollusion = () => {
                           <div><span className="font-semibold">最后在岗：</span>2025/8/21</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-2">
                           <div>与代理、会员同伙；因出款纠纷报复悬赏GS宿舍地址</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-1">
                           <div className="text-blue-600 font-semibold">ZG已介入处理</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-center text-gray-400">—</td>
+                      <td className="border border-gray-300 px-4 py-4 text-center text-gray-400">—</td>
                     </tr>
                   </tbody>
                 </table>
@@ -585,7 +585,7 @@ export const Direction4InternalCollusion = () => {
         
 
                 {/* 纸飞机安全 */}
-                <tr className="hover:bg-gray-50 ">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">纸飞机安全设置</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     纸飞机安全设置及使用，全部按照公司标准落实执行
@@ -596,7 +596,7 @@ export const Direction4InternalCollusion = () => {
                 </tr>
 
                 {/* 护照管理 */}
-                <tr className="hover:bg-gray-50 ">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">护照集中保管</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     场地人员护照全部交由公司保存
@@ -607,7 +607,7 @@ export const Direction4InternalCollusion = () => {
                 </tr>
 
                 {/* 文档加密 */}
-                <tr className="hover:bg-gray-50 ">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">文档安全管理</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     所有文档按照标准进行脱敏并加密使用
@@ -618,7 +618,7 @@ export const Direction4InternalCollusion = () => {
                 </tr>
 
                 {/* Zoom会议安全 */}
-                <tr className="hover:bg-gray-50 ">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">Zoom会议安全规范</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     zoom会议严格按照公司要求设置，<span className="font-semibold text-red-600">禁止录屏录音</span>
@@ -629,7 +629,7 @@ export const Direction4InternalCollusion = () => {
                 </tr>
 
                  {/* U盾管理 */}
-                <tr className="hover:bg-gray-50 ">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">U盾管理制度</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
@@ -645,7 +645,7 @@ export const Direction4InternalCollusion = () => {
 
 
                 {/* 三方后台账号 */}
-                <tr className="hover:bg-gray-50 ">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">三方后台账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
@@ -660,7 +660,7 @@ export const Direction4InternalCollusion = () => {
                 </tr>
 
                 {/* 谷歌账号 */}
-                <tr className="hover:bg-gray-50 ">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">谷歌账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
@@ -675,7 +675,7 @@ export const Direction4InternalCollusion = () => {
                 </tr>
 
                 {/* Notion账号 */}
-                <tr className="hover:bg-gray-50 ">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">Notion账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-3">
