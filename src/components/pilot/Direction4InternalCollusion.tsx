@@ -242,7 +242,7 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
-      {/* 稽查效果 */}
+      {/* 稽查成果 */}
       <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
           <div className="flex items-center justify-between mb-6">
