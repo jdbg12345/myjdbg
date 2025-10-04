@@ -261,45 +261,12 @@ export const Direction4InternalCollusion = () => {
             {/* 1️⃣ 调查成果总览 */}
             <div className="bg-gradient-to-br from-blue-50 via-white to-blue-50 rounded-xl p-8 border-2 border-blue-300 shadow-lg">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
-                  <span className="text-white font-bold text-xl">1️⃣</span>
-                </div>
                 <h4 className="text-2xl font-bold text-gray-800">调查成果总览</h4>
-              </div>
+              </div>   
 
-              {/* 调查案件总数 */}
-              <div className="bg-white rounded-lg p-6 mb-6 border-2 border-blue-200 shadow-sm">
-                <div className="flex items-center justify-between mb-4">
-                  <h5 className="text-lg font-semibold text-gray-800">调查案件总数</h5>
-                  <div className="text-5xl font-bold text-blue-600">5</div>
-                </div>
-                <div className="grid grid-cols-5 gap-3 mt-4">
-                  <div className="bg-blue-50 rounded p-3 text-center border border-blue-200">
-                    <div className="text-xs text-gray-600 mb-1">账号销售测试</div>
-                    <div className="text-sm font-semibold text-blue-600">✓</div>
-                  </div>
-                  <div className="bg-blue-50 rounded p-3 text-center border border-blue-200">
-                    <div className="text-xs text-gray-600 mb-1">YH对外协作</div>
-                    <div className="text-sm font-semibold text-blue-600">✓</div>
-                  </div>
-                  <div className="bg-blue-50 rounded p-3 text-center border border-blue-200">
-                    <div className="text-xs text-gray-600 mb-1">内部泄密与钓鱼执法</div>
-                    <div className="text-sm font-semibold text-blue-600">✓</div>
-                  </div>
-                  <div className="bg-blue-50 rounded p-3 text-center border border-blue-200">
-                    <div className="text-xs text-gray-600 mb-1">安插外部测试</div>
-                    <div className="text-sm font-semibold text-blue-600">✓</div>
-                  </div>
-                  <div className="bg-blue-50 rounded p-3 text-center border border-blue-200">
-                    <div className="text-xs text-gray-600 mb-1">内部违规人员调查</div>
-                    <div className="text-sm font-semibold text-blue-600">✓</div>
-                  </div>
-                </div>
-              </div>
-
-              {/* 违规人员处置 */}
+              {/* 稽查违规人员 */}
               <div className="bg-white rounded-lg p-6 mb-6 border-2 border-orange-200 shadow-sm">
-                <h5 className="text-lg font-semibold text-gray-800 mb-4">违规人员处置</h5>
+                <h5 className="text-lg font-semibold text-gray-800 mb-4">稽查违规人员</h5>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-red-50 rounded-lg p-4 border-2 border-red-200">
                     <div className="flex items-center justify-between">
@@ -322,13 +289,6 @@ export const Direction4InternalCollusion = () => {
                     </div>
                     <div className="text-xs text-gray-600 mt-2">Ge*，不发奖金与底薪，ZG介入</div>
                   </div>
-                  <div className="bg-green-50 rounded-lg p-4 border-2 border-green-200">
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-700 font-medium">持续关注</span>
-                      <span className="text-3xl font-bold text-green-600">1个</span>
-                    </div>
-                    <div className="text-xs text-gray-600 mt-2">V1账号（账号销售测试）</div>
-                  </div>
                 </div>
               </div>
 
@@ -338,9 +298,7 @@ export const Direction4InternalCollusion = () => {
             {/* 2️⃣ 详细案件记录 */}
             <div className="bg-gradient-to-br from-gray-50 via-white to-gray-50 rounded-xl p-8 border-2 border-gray-300 shadow-lg">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mr-4">
-                  <span className="text-white font-bold text-xl">2️⃣</span>
-                </div>
+  
                 <h4 className="text-2xl font-bold text-gray-800">详细案件记录</h4>
               </div>
 
