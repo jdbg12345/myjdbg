@@ -475,7 +475,7 @@ export const Direction3SystemStrategies = () => {
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">解决策略</h5>
-                <p className="text-gray-700 text-sm leading-relaxed">针对对全包行为进行预警和拦截</p>
+                <p className="text-gray-700 text-sm leading-relaxed">针对对<span className="text-blue-600">全包行为特征</span>进行预警和拦截</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
                 <h5 className="font-medium text-blue-700 mb-2 text-sm">预期收益</h5>
