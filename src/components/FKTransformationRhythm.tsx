@@ -144,7 +144,7 @@ export const FKTransformationRhythm = () => {
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-900 mb-3">系统挑战</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
-                    系统处于初级，底层升级、跨站融合、策略升级等需投入资源和时间，不仅难度大，短期难显成效，需要足够的韧性
+                    系统的底层升级、跨站融合、策略升级等需投入资源，不仅难度大，短期难显成效，需要足够的韧性
                   </p>
                 </div>
               </div>
