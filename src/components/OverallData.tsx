@@ -25,17 +25,14 @@ export const OverallData = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">防范单量与金额</div>
-            <div className="text-gray-600 text-sm">防范金额趋势分析</div>
           </div>
           
           <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
-            <div className="text-blue-600 text-lg font-semibold mb-2">各大类型占比</div>
-            <div className="text-gray-600 text-sm">站点类型分布统计</div>
+            <div className="text-blue-600 text-lg font-semibold mb-2">防范金类型占比</div>
           </div>
           
           <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
-            <div className="text-blue-600 text-lg font-semibold mb-2">突出站点分析</div>
-            <div className="text-gray-600 text-sm">Y4、BD+XK、Y6+Y9、MK</div>
+            <div className="text-blue-600 text-lg font-semibold mb-2">防范金突出站点</div>
           </div>
         </div>
       </div>
