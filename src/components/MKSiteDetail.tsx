@@ -1,5 +1,6 @@
 import React from 'react';
 import { BarChart3, TrendingUp } from 'lucide-react';
+import { DataInsights } from './shared/DataInsights';
 
 export const MKSiteDetail = () => {
   // 辅助函数：获取最大值最小值的样式类
@@ -111,28 +112,25 @@ export const MKSiteDetail = () => {
 
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>ZK用户拦截占比9%，主要组成部分为体育套利占比51%</span>
+              <span><span className="font-semibold text-blue-600">ZK用户</span>拦截占比<span className="font-semibold text-blue-600">9%</span>，主要组成部分为体育套利占比<span className="font-semibold text-blue-600">51%</span></span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>DL用户（含代理）拦截占比达到最高为86%，主要为代理拦截占81%</span>
+              <span><span className="font-semibold text-red-600">DL用户（含代理）拦截占比达到最高为86%</span>，主要为代理拦截占<span className="font-semibold text-red-600">81%</span></span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>TG用户拦截占比3%，主要为体育套利占比63%</span>
+              <span><span className="font-semibold text-blue-600">TG用户</span>拦截占比<span className="font-semibold text-blue-600">3%</span>，主要为体育套利占比<span className="font-semibold text-blue-600">63%</span></span>
             </div>
               <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span> 问题；DL拦截占比整体较高（占比：基础3%，额外6%，人头费74%）；结论：新代理额外佣金及人头费拦截占主要组成部分，8月调整后，人头费当月占比下降至42%</span>
+              <span><span className="font-semibold">问题：</span><span className="font-semibold text-red-600">DL拦截占比整体较高</span>（占比：基础<span className="font-semibold text-blue-600">3%</span>，额外<span className="font-semibold text-blue-600">6%</span>，人头费<span className="font-semibold text-blue-600">74%</span>）；<span className="font-semibold">结论：</span>新代理额外佣金及人头费拦截占主要组成部分，<span className="font-semibold text-green-600">8月调整后，人头费当月占比下降至42%</span></span>
             </div>
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <div className="text-sm text-blue-700">
                 <div className="font-semibold mb-2">数据说明：</div>
-                <div>DL类：</div>
-                <div>佣金拦截（为"代理本身"佣金&代理人头费套利）</div>
-                <div>红利拦截（为"代理线下会员"活动套利）</div>
-                <div className="mt-2">TG类：</div>
-                <div>代理类（为额度代存套利）</div>
+                <div><span className="font-semibold">DL类：</span>佣金拦截（为"代理本身"佣金&代理人头费套利），红利拦截（为"代理线下会员"活动套利）</div>
+                <div className="mt-2"><span className="font-semibold">TG类：</span>代理类（为额度代存套利）</div>
               </div>
             </div>
           </div>

@@ -116,24 +116,21 @@ export const Y6Y9SiteDetail = () => {
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>DL用户（含代理）拦截占比达到最高为51%，主要为佣金拦截占57%</span>
+              <span><span className="font-semibold text-red-600">DL用户（含代理）拦截占比达到最高为51%</span>，主要为佣金拦截占<span className="font-semibold text-red-600">57%</span></span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>TG用户拦截占比15%，主要为体育套利占比68%</span>
+              <span><span className="font-semibold text-blue-600">TG用户</span>拦截占比<span className="font-semibold text-blue-600">15%</span>，主要为体育套利占比<span className="font-semibold text-blue-600">68%</span></span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>问题：DL拦截占比整体较高（占比：基础19%，额外27%，人头费34%）；结论：新代理额外佣金及人头费拦截占主要组成部分，8月调整后，人头费当月占比降至28%</span>
+              <span><span className="font-semibold">问题：</span><span className="font-semibold text-red-600">DL拦截占比整体较高</span>（占比：基础<span className="font-semibold text-blue-600">19%</span>，额外<span className="font-semibold text-blue-600">27%</span>，人头费<span className="font-semibold text-blue-600">34%</span>）；<span className="font-semibold">结论：</span>新代理额外佣金及人头费拦截占主要组成部分，<span className="font-semibold text-green-600">8月调整后，人头费当月占比降至28%</span></span>
             </div>
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <div className="text-sm text-blue-700">
                 <div className="font-semibold mb-2">数据说明：</div>
-                <div>DL类：</div>
-                <div>佣金拦截（为“代理本身”佣金&代理人头费套利）</div>
-                <div>红利拦截（为“代理线下会员”活动套利）</div>
-                <div className="mt-2">TG类：</div>
-                <div>代理类（为额度代存套利）</div>
+                <div><span className="font-semibold">DL类：</span>佣金拦截（为"代理本身"佣金&代理人头费套利），红利拦截（为"代理线下会员"活动套利）</div>
+                <div className="mt-2"><span className="font-semibold">TG类：</span>代理类（为额度代存套利）</div>
               </div>
             </div>
           </div>
