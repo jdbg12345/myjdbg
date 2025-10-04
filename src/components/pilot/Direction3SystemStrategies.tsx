@@ -595,7 +595,7 @@ export const Direction3SystemStrategies = () => {
                 <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600">待开发</span>
               </div>
               <div className="text-blue-600 font-medium text-sm bg-blue-50 px-4 py-2 rounded border border-blue-200">
-                目前该问题在技术层面反馈，暂时无法实现彻底解决，需进一步讨论，
+                目前该问题在技术层面反馈，暂时无法实现彻底解决，需进一步讨论
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
