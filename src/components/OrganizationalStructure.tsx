@@ -622,7 +622,7 @@ export const OrganizationalStructure = () => {
               <div className="w-full h-px bg-gray-200 mb-4"></div>
               
               <div className="mb-4">
-                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals.TH}</div>
+                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals.T}</div>
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
