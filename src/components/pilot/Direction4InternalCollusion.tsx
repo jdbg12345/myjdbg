@@ -395,8 +395,7 @@ export const Direction4InternalCollusion = () => {
                       <td className="border border-gray-300 px-3 py-2 text-gray-700">安插人员加入套利团队</td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
                         <div className="space-y-2">
-                          <div>支付学习费<span className="font-semibold text-blue-600">1500U</span></div>
-                          <div>以借用他人账号进行手法学习</div>
+                          <div>支付学习费1500U，以借用他人账号进行手法学习</div>
                         </div>
                       </td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700">
