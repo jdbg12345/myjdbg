@@ -26,8 +26,8 @@ export const FKTransformationRhythm = () => {
     },
     {
       time: "Q4",
-      stage: "全面推广",
-      work: "完成全面部署，实现人工审核向系统审核的根本性转变",
+      stage: "开始推广",
+      work: "将过往已经验证有效的策略、流程、规则等开始推全",
       result: "待开始",
       status: "pending"
     }
