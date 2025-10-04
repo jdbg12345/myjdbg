@@ -58,7 +58,7 @@ export const DLCommissionActivity = () => {
                 <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">人头费</th>
                 <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">首复存</th>
                 <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">流水返利</th>
-                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">老代理流水返利</th>
+                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">老DL流水返利</th>
                 <th colSpan="2" className="p-3 text-center font-semibold">其他</th>
               </tr>
               <tr>
@@ -152,11 +152,11 @@ export const DLCommissionActivity = () => {
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span>代理活动拦截主要以<span className="font-semibold text-blue-600">人头费</span>以及<span className="font-semibold text-blue-600">流水返利</span>拦截金为主，两者总计占比占整体<span className="font-semibold text-blue-600">46.2%</span>。</span>
+              <span>DL活动拦截主要以<span className="font-semibold text-blue-600">人头费</span>以及<span className="font-semibold text-blue-600">流水返利</span>拦截金为主，两者总计占比占整体<span className="font-semibold text-blue-600">46.2%</span>。</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold text-blue-600">老代理流水返利：</span>因世俱杯<span className="font-semibold text-blue-600">6月</span>上线，刺激代理流水发展项目，<span className="font-semibold text-blue-600">8月</span>赛事结束后，活动门槛调整。<span className="font-semibold text-green-600">拦截同步下降</span>。</span>
+              <span><span className="font-semibold text-blue-600">老DL流水返利：</span>因世俱杯<span className="font-semibold text-blue-600">6月</span>上线，刺激DL流水发展项目，<span className="font-semibold text-blue-600">8月</span>赛事结束后，活动门槛调整。<span className="font-semibold text-green-600">拦截同步下降</span>。</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
