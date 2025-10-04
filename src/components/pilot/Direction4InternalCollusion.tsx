@@ -456,17 +456,7 @@ export const Direction4InternalCollusion = () => {
                 </tr>
               </thead>
               <tbody>
-                {/* U盾管理 */}
-                <tr className="hover:bg-blue-50 transition-colors">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">U盾管理制度</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
-                    居家人员不会发放U盾、全部放在场地工作人员、统一由场地人员告知验证码；场地人员：班次组长管理安全盾，规避检查风险。
-远程人员：账号权限收至最低标准。盾由场地管理提报且仅虚拟机使用。
-                  </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
-                  </td>
-                </tr>
+        
 
                 {/* 纸飞机安全 */}
                 <tr className="hover:bg-blue-50 transition-colors">
@@ -512,17 +502,18 @@ export const Direction4InternalCollusion = () => {
                   </td>
                 </tr>
 
-
-                {/* 管理后台账号 */}
+                 {/* U盾管理 */}
                 <tr className="hover:bg-blue-50 transition-colors">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">管理后台账号</td>
+                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">U盾管理制度</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
-                    下发控制权限，统一账号管理，按需下发账号并及时回收账号，定期清理内容
+                    场地人员：班次组长管理安全盾，规避检查风险。
+远程人员：账号权限收至最低标准。盾由场地管理提报且仅虚拟机使用。居家人员：不会发放U盾、全部放在场地工作人员、统一由场地人员告知验证码；
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
+
 
                 {/* 三方后台账号 */}
                 <tr className="hover:bg-blue-50 transition-colors">
