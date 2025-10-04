@@ -260,7 +260,6 @@ export const Direction4InternalCollusion = () => {
 
             {/* 调查成果总览 */}
             <div className="bg-gray-50 rounded-lg p-6 border border-gray-300">
-              <h5 className="text-lg font-semibold text-gray-800 mb-4">调查成果总览</h5>
               <div className="grid grid-cols-3 gap-4">
                 <div className="bg-white rounded-lg p-4 border border-gray-300 text-center">
                   <div className="text-3xl font-bold text-blue-600 mb-1">6人</div>
