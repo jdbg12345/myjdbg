@@ -826,13 +826,14 @@ export const Direction3SystemStrategies = () => {
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">针对盈利类监控不完整，无法做到全方位、及时性的发现潜在问题</p>
               </div>
+              
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">1、已覆盖<span className="text-blue-600">场馆、游戏、单笔、长期</span>等<span className="text-blue-600">日、周、月</span>的盈利进行监控</p>
-                <p className="text-gray-700 text-sm leading-relaxed"> 2、人工：1. 每周、每月从场馆的杀率、流水占比->游戏->玩法的杀率、流水占比去评估异常程度。2. 每周、每月从站点->场馆的净利率(包含红利返水)->游戏->玩法去评估异常程度。</p>
+                <p className="text-gray-700 text-sm leading-relaxed"> 2、人工：1每周、每月从场馆的杀率、流水占比->游戏->玩法的杀率、流水占比去评估异常程度。2. 每周、每月从站点->场馆的净利率(包含红利返水)->游戏->玩法去评估异常程度</p>
                 
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
