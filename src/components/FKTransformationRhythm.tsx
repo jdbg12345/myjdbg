@@ -6,7 +6,7 @@ export const FKTransformationRhythm = () => {
     {
       time: "Q1",
       stage: "梳理规划",
-      work: "对业务和组织现状梳理，识别问题并制定针对性解决策略",
+      work: "对业务和组织梳理，识别问题并制定针对性解决策略",
       result: "已完成",
       status: "completed"
     },
@@ -20,7 +20,7 @@ export const FKTransformationRhythm = () => {
     {
       time: "Q3",
       stage: "试点验证",
-      work: "选择核心业务场景进行试点，验证新机制的有效性和可行性",
+      work: "选择核心场景进行试点，验证新机制的有效性和可行性",
       result: "进行中",
       status: "current"
     },
