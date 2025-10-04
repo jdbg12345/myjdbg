@@ -380,7 +380,7 @@ export const OrganizationalStructure = () => {
             <div className="bg-white rounded-lg p-4">
               <div id="system-dept" className="bg-gradient-to-r from-blue-500 to-blue-600 border-2 border-blue-600 rounded-lg h-full flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-lg font-bold text-white">系统组</div>
+                  <div className="text-lg font-bold text-white">XT</div>
                   <div className="text-sm mt-1 text-blue-100">需求管理 & 系统优化</div>
                 </div>
               </div>
@@ -493,7 +493,7 @@ export const OrganizationalStructure = () => {
             <div className="bg-white rounded-lg p-4">
               <div id="internal-control" className="bg-gradient-to-r from-blue-500 to-blue-600 border-2 border-blue-600 rounded-lg h-full flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-lg font-bold text-white">内控组</div>
+                  <div className="text-lg font-bold text-white">NK</div>
                   <div className="text-sm mt-1 text-blue-100">内部培训 & 出单抽检</div>
                 </div>
               </div>
@@ -513,7 +513,7 @@ export const OrganizationalStructure = () => {
             <div className="bg-white rounded-lg p-4" style={{ gridColumn: '1 / span 2' }}>
               <div className="bg-gradient-to-r from-blue-500 to-blue-600 border-2 border-blue-600 rounded-lg h-full flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-lg font-bold text-white">稽查组</div>
+                  <div className="text-lg font-bold text-white">JC</div>
                   <div className="text-sm mt-1 text-blue-100">风险稽查&游戏研究</div>
                 </div>
               </div>
