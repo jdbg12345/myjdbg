@@ -664,7 +664,7 @@ export const Direction4InternalCollusion = () => {
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">谷歌账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
-                      <div>• <span className="font-semibold text-gray-700">大蚂蚁zimbra：</span>已全员关闭</div>
+                      <div>• <span className="font-semibold text-gray-700">zimbra：</span>已全员关闭</div>
                       <div>• <span className="font-semibold text-gray-700">目前邮箱：</span>均为zobu888，由人资管理</div>
                       <div>• <span className="font-semibold text-gray-700">人员离职处理：</span>由对接人接管相关邮箱权限，确保工作连续性</div>
                     </div>
