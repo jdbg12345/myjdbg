@@ -40,7 +40,7 @@ export const FKTransformationRhythm = () => {
         <h1 className="text-5xl font-bold text-gray-800">3.1 全局说明</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
-          <span className="font-medium ml-2">会员风控变化说明</span>
+          <span className="font-medium ml-2">会员变化说明</span>
         </div>
       </div>
 
