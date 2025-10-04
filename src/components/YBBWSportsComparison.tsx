@@ -125,7 +125,6 @@ export const YBBWSportsComparison = () => {
               <div>● Y系在熊猫体育中占据绝对主导地位，流水占比<span className="font-semibold text-red-400">80.73%</span>，拦截占比<span className="font-semibold text-red-400">78.93%</span></div>
               <div>● B系次之，流水占比15.04%，拦截占比17.50%，拦截占比略高于流水占比</div>
               <div>● BW占比最小，流水占比<span className="font-semibold text-green-500">4.23%</span>，拦截占比<span className="font-semibold text-green-500">3.57%</span></div>
-              <div>● B系的拦截占比（17.50%）高于流水占比（15.04%），说明B系风控力度相对较强</div>
             </div>
           </div>
         </div>
