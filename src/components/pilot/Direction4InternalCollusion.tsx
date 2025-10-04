@@ -353,7 +353,7 @@ export const Direction4InternalCollusion = () => {
                       </td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700">与外部合作，协助查询账号备注内容并外发</td>
                       <td className="border border-gray-300 px-3 py-2">
-                        <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600 inline-block">即刻开除</span>
+                        <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-blue-600 inline-block">即刻开除</span>
                       </td>
                       <td className="border border-gray-300 px-3 py-2 text-center text-gray-400">—</td>
                     </tr>
