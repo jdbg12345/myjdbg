@@ -689,13 +689,12 @@ export const OrganizationalStructure = () => {
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2 mb-3">
                 <MapPin className="w-5 h-5 text-blue-600" />
-                <h3 className="text-xl font-bold text-gray-800">KJY</h3>
+                <h3 className="text-xl font-bold text-gray-800">K</h3>
               </div>
               <div className="w-full h-px bg-gray-200 mb-4"></div>
               
               <div className="mb-4">
                 <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals.KJY}</div>
-                <div className="text-gray-600 text-sm">当前人数</div>
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
@@ -739,7 +738,6 @@ export const OrganizationalStructure = () => {
               
               <div className="mb-4">
                 <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals['外包']}</div>
-                <div className="text-gray-600 text-sm">当前人数</div>
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
