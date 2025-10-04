@@ -130,42 +130,7 @@ export const YBBWSportsComparison = () => {
           </div>
         </div>
       </div>
-
-      {/* 综合数据解读 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-            <TrendingUp className="w-5 h-5 text-white" />
-          </div>
-          <h2 className="text-3xl font-bold text-gray-800">综合数据解读</h2>
-        </div>
-
-        <div className="bg-white rounded-lg p-6">
-          <div className="space-y-3 text-gray-700">
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">球类分布特征：</span>足球作为全球第一运动，在各系统中均占主导地位（61-67%），篮球作为第二大球类稳定在28-30%区间，两大球类合计占比接近90%。</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">系统差异分析：</span>B系足球占比最高（66.62%），显示B系用户对足球的偏好度更强；BW的篮球占比略高于其他系统，可能与用户群体特征相关。</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">熊猫平台特征：</span>Y系在熊猫体育中一家独大，占据超过<span className="font-semibold text-blue-600">80%</span>的流水份额，说明Y系是熊猫体育的核心用户群体。</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">风控效果评估：</span>B系拦截占比（17.50%）高于流水占比（15.04%），反映出B系风控识别能力较强，能够有效拦截套利行为。</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">运营建议：</span>建议针对不同系统的球类偏好制定差异化运营策略，重点关注Y系用户体验优化；加强BW渠道推广，提升其在熊猫平台的占比。</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="text-gray-400 text-sm">FKZX Q3 REPORT</div>
