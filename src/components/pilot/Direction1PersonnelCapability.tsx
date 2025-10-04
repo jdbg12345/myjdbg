@@ -298,13 +298,13 @@ export const Direction1PersonnelCapability = () => {
                 
                 <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">2、外包一审：</span>订单量由 <span className="font-bold text-blue-600">66,423</span> 单降至 <span className="font-bold text-blue-600">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；审核错误率由 <span className="font-bold">1.07%</span> 降至 <span className="font-bold">1.39%</span>，上升了 <span className="font-bold text-green-600">29.97%</span>，不符合预期。
+                    <span className="font-semibold text-gray-800">2、外包一审：</span>订单量由 <span className="font-bold text-blue-600">66,423</span> 单降至 <span className="font-bold text-blue-600">24,511</span> 单，下降了 <span className="font-bold text-green-600">63.10%</span>；审核错误率由 <span className="font-bold">1.07%</span> 降至 <span className="font-bold">1.39%</span>，上升了 <span className="font-bold text-red-600">29.97%</span>，不符合预期。
                   </p>
                 </div>
 
                 <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">3、远程一审：</span>订单量由 <span className="font-bold text-blue-600">82,733</span> 单降至 <span className="font-bold text-blue-600">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>；审核错误率由 <span className="font-bold">0.82%</span> 降至 <span className="font-bold">0.95%</span>，上升了 <span className="font-bold text-green-600">15.88%</span>，不符合预期。
+                    <span className="font-semibold text-gray-800">3、远程一审：</span>订单量由 <span className="font-bold text-blue-600">82,733</span> 单降至 <span className="font-bold text-blue-600">29,431</span> 单，下降了 <span className="font-bold text-green-600">64.44%</span>；审核错误率由 <span className="font-bold">0.82%</span> 降至 <span className="font-bold">0.95%</span>，上升了 <span className="font-bold text-red-600">15.88%</span>，不符合预期。
                   </p>
                 </div>
                 
