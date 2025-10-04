@@ -292,8 +292,8 @@ export const Direction4InternalCollusion = () => {
                 <table className="w-full border-collapse">
                   <thead>
                     <tr className="bg-gray-700">
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">月份</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">稽查类型</th>
+                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm whitespace-nowrap">月份</th>
+                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm whitespace-nowrap">稽查类型</th>
                       <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">涉及人员</th>
                       <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">违规行为</th>
                       <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">处置结果</th>
@@ -303,8 +303,8 @@ export const Direction4InternalCollusion = () => {
                   <tbody>
                     {/* 7月份 - 账号销售测试 */}
                     <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50">7月份</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">账号销售测试</td>
+                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">7月份</td>
+                      <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">账号销售测试</td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700">
                         <div className="space-y-1">
                           <div>• Rob*****V7（等级V7）</div>
@@ -339,8 +339,8 @@ export const Direction4InternalCollusion = () => {
 
                     {/* 8月份 - YH对外协作 */}
                     <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50">8月份</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">YH对外协作</td>
+                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">8月份</td>
+                      <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">YH对外协作</td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
                         <div className="space-y-1">
                           <div>• 583** Iva****</div>
@@ -360,8 +360,8 @@ export const Direction4InternalCollusion = () => {
 
                     {/* 2-9月 - 内部泄密/钓鱼执法 */}
                     <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50">8月-9月</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">内部泄密/钓鱼执法</td>
+                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">8月-9月</td>
+                      <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">内部泄密/钓鱼执法</td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700">
                         <div className="space-y-2">
                           <div className="font-semibold text-gray-800">共计14人，YH占90%</div>
@@ -390,8 +390,8 @@ export const Direction4InternalCollusion = () => {
 
                     {/* 7-9月 - 安插外部测试 */}
                     <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50">7-9月</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">安插外部测试</td>
+                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">7-9月</td>
+                      <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">安插外部测试</td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700">安插人员加入套利团队</td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
                         <div className="space-y-2">
@@ -411,8 +411,8 @@ export const Direction4InternalCollusion = () => {
 
                     {/* 8月份 - 内部违规人员调查 */}
                     <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50">8月份</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">内部违规人员调查</td>
+                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">8月份</td>
+                      <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">内部违规人员调查</td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700">
                         <div className="space-y-1 text-sm">
                           <div><span className="font-semibold">英文名：</span>Ge*</div>

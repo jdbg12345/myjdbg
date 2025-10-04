@@ -26,6 +26,12 @@ export const QuarterlyPreventionData = () => {
     { month: '2025/9', volume: 203.26, efficiency: '07:02' }
   ];
 
+  // Format volume to 2 decimal places
+  const formattedManualData = manualData.map(item => ({
+    ...item,
+    volume: parseFloat(item.volume.toFixed(2))
+  }));
+
   const maxAmount = Math.max(...preventionData.map(d => d.amount));
   const maxVolume = Math.max(...manualData.map(d => d.volume));
 
@@ -95,11 +101,11 @@ export const QuarterlyPreventionData = () => {
               <div className="flex items-end justify-between h-full relative">
                 {/* Y轴基线 */}
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
-                {manualData.map((item, index) => {
+                {formattedManualData.map((item, index) => {
                   const barHeight = (item.volume / maxVolume) * 280;
                   return (
                   <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
-                    <div className="absolute text-sm font-semibold text-blue-600" style={{ bottom: `${barHeight + 4}px` }}>{formatNumber(item.volume, 3)}</div>
+                    <div className="absolute text-sm font-semibold text-blue-600" style={{ bottom: `${barHeight + 4}px` }}>{item.volume.toFixed(2)}</div>
                     <div
                       className="bg-blue-500 w-full rounded-t"
                       style={{ height: `${barHeight}px` }}
@@ -116,7 +122,7 @@ export const QuarterlyPreventionData = () => {
                     fill="none"
                     stroke="#fca5a5"
                     strokeWidth="2"
-                    points={manualData.map((item, index) => {
+                    points={formattedManualData.map((item, index) => {
                       const x = (index + 0.5) * (100 / manualData.length);
                       const barHeight = (item.volume / maxVolume) * 280;
                       const y = 280 - barHeight * 0.6;
@@ -129,7 +135,7 @@ export const QuarterlyPreventionData = () => {
 
             {/* X轴标签（图表外） */}
             <div className="flex items-center justify-between mt-2">
-              {manualData.map((item, index) => (
+              {formattedManualData.map((item, index) => (
                 <div key={index} className="flex-1 text-center">
                   <div className="text-sm text-gray-600 whitespace-nowrap">{item.month}</div>
                 </div>
