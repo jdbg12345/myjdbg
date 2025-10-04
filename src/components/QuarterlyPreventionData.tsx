@@ -4,22 +4,22 @@ import { BarChart3, TrendingUp } from 'lucide-react';
 export const QuarterlyPreventionData = () => {
   // 第三季度防范单量与金额数据
   const preventionData = [
-    { month: '2025/1', amount: 1.647 },
-    { month: '2025/2', amount: 1.225 },
-    { month: '2025/3', amount: 1.337 },
     { month: '2025/4', amount: 1.327 },
     { month: '2025/5', amount: 1.309 },
-    { month: '2025/6', amount: 1.126 }
+    { month: '2025/6', amount: 1.126 },
+    { month: '2025/7', amount: 1.346 },
+    { month: '2025/8', amount: 1.483 },
+    { month: '2025/9', amount: 1.121 }
   ];
 
   // 人工单量与时效数据
   const manualData = [
-    { month: '2025/1', volume: 228.8, efficiency: '06:50' },
-    { month: '2025/2', volume: 206.8, efficiency: '05:30' },
-    { month: '2025/3', volume: 220.3, efficiency: '08:20' },
-    { month: '2025/4', volume: 220.5, efficiency: '06:54' },
-    { month: '2025/5', volume: 205.8, efficiency: '06:38' },
-    { month: '2025/6', volume: 217.4, efficiency: '06:32' }
+    { month: '2025/4', volume: 220.51, efficiency: '06:54' },
+    { month: '2025/5', volume: 205.81, efficiency: '06:34' },
+    { month: '2025/6', volume: 217.38, efficiency: '06:32' },
+    { month: '2025/7', volume: 202.72, efficiency: '06:34' },
+    { month: '2025/8', volume: 200.68, efficiency: '06:50' },
+    { month: '2025/9', volume: 203.26, efficiency: '07:02' }
   ];
 
   const maxAmount = Math.max(...preventionData.map(d => d.amount));
