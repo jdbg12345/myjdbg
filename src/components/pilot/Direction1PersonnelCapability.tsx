@@ -311,7 +311,12 @@ export const Direction1PersonnelCapability = () => {
                     → 后续加强人员培训、优化淘汰机制，强化过程管控，目标逐步降低比重，直到可随时剔除。
                   </p>
                 </div>
-                
+
+                  <div className="bg-white border-l-4 border-blue-500 p-3 rounded">       
+                   <p className="text-sm text-blue-700 font-medium mt-2">
+                    → 后续加强人员培训、优化淘汰机制，强化过程管控，目标逐步降低比重，直到可随时剔除。
+                  </p>
+                </div>
               </div>
           </div>
             
