@@ -23,13 +23,15 @@ export const TableOfContents = () => {
             {[
               { num: "2.1", title: "防范单量与金额" },
               { num: "2.2", title: "防范金类型占比" },
-              { num: "2.3", title: "Y4明细" },
-              { num: "2.4", title: "BD+XK明细" },
-              { num: "2.5", title: "Y6+Y9明细" },
-              { num: "2.6", title: "体育拦截分析" },
-              { num: "2.7", title: "体育整体杀率" },
-              { num: "2.8", title: "主要玩法分析" },
-              { num: "2.9", title: "体育站点对比" }
+              { num: "2.3", title: "防范金突出站点-Y4明细" },
+              { num: "2.4", title: "防范金突出站点-BD+XK明细" },
+              { num: "2.5", title: "防范金突出站点-Y6+Y9明细" },
+              { num: "2.6", title: "防范金突出站点-MK" },
+              { num: "2.7", title: "DL佣金活动防犯" },
+              { num: "2.8", title: "体育拦截分类明细" },
+              { num: "2.9", title: "体育整体杀率明细" },
+              { num: "2.10", title: "主要玩法杀率分析" },
+              { num: "2.11", title: "Y/B/BW对比分析" }
             ].map((item, index) => (
               <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-4">
                 <span className="text-lg font-bold text-gray-600 mr-3">{item.num}</span>
