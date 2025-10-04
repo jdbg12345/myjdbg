@@ -243,7 +243,7 @@ export const FKTransformationRhythm = () => {
             <h2 className="text-3xl font-bold text-gray-900">推进节奏</h2>
           </div>
           <div className="mb-8">
-            <span className="text-gray-700 text-xl">由于变革会存在较大影响及风险，将采取<span className="text-blue-600">分阶段推进方式</span>，在风险可控和有效的前提下完成体系变革。</span>
+            <span className="text-gray-700 text-xl">由于变革会存在较大影响及风险，将采取<span className="text-blue-600">分阶段推进方式</span>，在<span className="text-blue-600">风险可控和有效的前提下</span>完成体系变革。</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
