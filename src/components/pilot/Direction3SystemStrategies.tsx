@@ -781,9 +781,7 @@ export const Direction3SystemStrategies = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">可第一时间进行预警，然后由专人跟进处理</p>
               </div>
             </div>
-        </div>
-
-           {/* 事故详细列表 */}
+   {/* 事故详细列表 */}
       <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
@@ -829,7 +827,9 @@ export const Direction3SystemStrategies = () => {
           </table>
         </div>
       </div>
-        
+          
+        </div>
+
       </div>
    
     </>
