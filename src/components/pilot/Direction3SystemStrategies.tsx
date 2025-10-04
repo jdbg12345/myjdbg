@@ -782,6 +782,54 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
         </div>
+
+           {/* 事故详细列表 */}
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <Calendar className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">事故详细记录</h2>
+        </div>
+
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
+            <thead className="bg-blue-600 text-white">
+              <tr>
+                <th className="p-4 text-left font-semibold w-32">日期</th>
+                <th className="p-4 text-left font-semibold w-24">场馆</th>
+                <th className="p-4 text-left font-semibold w-40">异常事件</th>
+                <th className="p-4 text-left font-semibold">问题描述</th>
+                <th className="p-4 text-center font-semibold w-24">问题原因</th>
+                <th className="p-4 text-center font-semibold w-24">问题影响</th>
+                <th className="p-4 text-center font-semibold w-40">当前状态</th>
+              </tr>
+            </thead>
+            <tbody>
+              {incidentData.map((incident, index) => (
+                <tr key={index} className="border-b border-gray-100">
+                  <td className="p-4 font-semibold text-blue-600">{incident.date}</td>
+                  <td className="p-4 font-semibold">{incident.venue}</td>
+                  <td className="p-4 font-semibold">{incident.incident}</td>
+                  <td className="p-4 text-gray-700">{incident.description}</td>
+                  <td className="p-4 text-center">
+                    <span className="px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-600">
+                      {incident.cause}
+                    </span>
+                  </td>
+                  <td className="p-4 text-center font-bold text-red-600">{incident.impact}</td>
+                  <td className="p-4 text-center">
+                    <span className={`px-3 py-1 rounded-full text-sm font-semibold ${incident.statusColor}`}>
+                      {incident.status}
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+        
       </div>
    
     </>
