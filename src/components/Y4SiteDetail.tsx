@@ -124,10 +124,7 @@ export const Y4SiteDetail = () => {
             </div>
              <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span> DL拦截占比整体较高
-详细占比：基础17%，额外24%，人头费23%
-结论：新代理额外佣金及人头费拦截占主要组成部分，8月调整后，人头费当月占比降至16%。
-</span>
+              <span> DL拦截占比整体较高（详细占比：基础17%，额外24%，人头费23%），结论：新代理额外佣金及人头费拦截占主要组成部分，8月调整后，人头费当月占比降至16%。</span>
             </div>
            
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
