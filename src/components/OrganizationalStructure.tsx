@@ -669,12 +669,10 @@ export const OrganizationalStructure = () => {
                 {locationTotals.SLK > 0 ? (
                   <>
                     <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals.SLK}</div>
-                    <div className="text-gray-600 text-sm">当前人数</div>
                   </>
                 ) : (
                   <>
                     <div className="text-3xl font-bold text-gray-300 mb-1">-</div>
-                    <div className="text-gray-400 text-sm">当前人数</div>
                   </>
                 )}
                 {/* 添加弱弱的横线 */}
