@@ -892,7 +892,7 @@ export const Direction3SystemStrategies = () => {
             <h4 className="text-lg font-semibold text-gray-800">Q3事故统计概览</h4>
           </div>
 
-          <div className="grid grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-2 gap-8 mb-8">
             <div className="bg-white rounded-lg p-6 text-center border border-blue-200">
               <div className="text-4xl font-bold text-blue-600 mb-3">{totalIncidents}</div>
               <div className="text-gray-600 font-medium text-lg">事故总数</div>
