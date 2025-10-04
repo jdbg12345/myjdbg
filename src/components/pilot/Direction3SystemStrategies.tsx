@@ -833,7 +833,7 @@ export const Direction3SystemStrategies = () => {
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">1、已覆盖<span className="text-blue-600">场馆、游戏、单笔、长期</span>等<span className="text-blue-600">日、周、月</span>的盈利进行监控</p>
-                <p className="text-gray-700 text-sm leading-relaxed"> 2、人工:1.每周、每月从场馆的杀率、流水占比->游戏->玩法的杀率、流水占比去评估异常程度。2.每周、每月从站点场馆的净利率(包含红利返水)/游戏/玩法去评估异常程度</p>
+                <p className="text-gray-700 text-sm leading-relaxed">2、人工:1.每周、每月从场馆的杀率、流水占比/游戏/玩法的杀率、流水占比去评估异常程度。2.每周、每月从站点场馆的净利率(包含红利返水)/游戏/玩法去评估异常程度</p>
                 
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
