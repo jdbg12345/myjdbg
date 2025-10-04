@@ -270,7 +270,7 @@ export const Direction4InternalCollusion = () => {
                   <div className="bg-white rounded-lg p-4 border border-gray-300">
                     <div className="flex items-center justify-between">
                       <span className="text-gray-700 font-medium">开除</span>
-                      <span className="text-3xl font-bold text-red-600">6人</span>
+                      <span className="text-3xl font-bold text-blue-600">6人</span>
                     </div>
                     <div className="text-xs text-gray-600 mt-2">8月份YH对外协作6人</div>
                   </div>
