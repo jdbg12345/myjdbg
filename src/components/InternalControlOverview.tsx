@@ -15,7 +15,7 @@ export const InternalControlOverview = () => {
           </div>
         </div>
         <div className="text-gray-600 text-lg">
-          <p className="text-gray-700 text-lg leading-relaxed font-semibold">内控问题主要从<span className="text-blue-600">信息安全、违规操作</span>方向进行优化</p>
+          <p className="text-gray-700 text-lg leading-relaxed font-semibold">内控问题主要从<span className="text-blue-600">信息安全、违规操作、内部培训</span>方向进行优化</p>
         </div>
       </div>   
 
