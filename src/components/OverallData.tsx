@@ -34,6 +34,11 @@ export const OverallData = () => {
           <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">防范金突出站点</div>
           </div>
+          
+           <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
+            <div className="text-blue-600 text-lg font-semibold mb-2">DL活动防犯分析</div>
+          </div>
+          
         </div>
       </div>
 
