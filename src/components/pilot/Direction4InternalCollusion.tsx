@@ -303,6 +303,129 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
+      {/* 内控培训 */}
+      <div className="mb-8">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center space-x-3 flex-1">
+              <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
+                <span className="text-white font-medium text-sm">7</span>
+              </div>
+              <h4 className="text-lg font-semibold text-gray-800">内控培训</h4>
+            </div>
+          </div>
+
+          {/* 回群组专项进展 */}
+          <div className="mb-8">
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="flex items-center justify-between mb-4">
+                <h5 className="text-base font-semibold text-gray-800">1. 回群组专项进展</h5>
+                <span className="px-3 py-1 rounded text-sm font-semibold bg-green-100 text-green-600">已完成</span>
+              </div>
+
+              <div className="space-y-3">
+                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                  <div className="text-sm">
+                    <span className="font-semibold text-gray-800">目标：</span>
+                    <span className="text-gray-700">回群组人力招聘培训及团队搭建</span>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                  <div className="text-sm">
+                    <span className="font-semibold text-gray-800">内容：</span>
+                    <span className="text-gray-700">承接全部FK&WH对接群</span>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                  <div className="text-sm">
+                    <span className="font-semibold text-gray-800">进度：</span>
+                    <span className="text-gray-700">按二季度目标，三季度已完成覆盖24小时，目前回群组共计<span className="font-bold text-blue-600">29人</span>，<span className="font-bold text-blue-600">4名</span>新人在学习中，<span className="font-bold text-green-600">25人</span>排班制全面覆盖，后续保持团队持续进行运作。</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 培训组业务进展 */}
+          <div className="mb-6">
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="flex items-center justify-between mb-4">
+                <h5 className="text-base font-semibold text-gray-800">2. 培训组业务进展</h5>
+                <span className="px-3 py-1 rounded text-sm font-semibold bg-blue-100 text-blue-600">持续进行中</span>
+              </div>
+
+              {/* NO1. 新人入职培训 */}
+              <div className="mb-6">
+                <div className="bg-white rounded-lg p-5 border border-blue-100 mb-4">
+                  <h6 className="font-semibold text-gray-800 mb-3 text-sm">NO1. 新人入职培训</h6>
+
+                  <div className="space-y-3">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="bg-blue-50 rounded p-3 text-center">
+                        <div className="text-xs text-gray-600 mb-1">第三季度培训</div>
+                        <div className="text-2xl font-bold text-blue-600">36人</div>
+                        <div className="text-xs text-gray-600 mt-1">内控22人 | 一审12人 | 产品2人</div>
+                      </div>
+                      <div className="bg-gray-50 rounded p-3 text-center">
+                        <div className="text-xs text-gray-600 mb-1">第二季度培训</div>
+                        <div className="text-2xl font-bold text-gray-600">40人</div>
+                        <div className="text-xs text-gray-600 mt-1">对比参考</div>
+                      </div>
+                    </div>
+
+                    <div className="bg-gray-50 rounded p-3">
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">平均培训周期：</span>
+                        <span className="font-bold text-blue-600">8-15天</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-green-50 rounded p-3 border border-green-200">
+                      <div className="text-sm text-gray-700">
+                        现在新人培训流程已经稳步进行，三季度在二季度基础上做了一些细项及课件优化
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* NO2. 在岗人员业务培训 */}
+              <div>
+                <div className="bg-white rounded-lg p-5 border border-blue-100">
+                  <h6 className="font-semibold text-gray-800 mb-3 text-sm">NO2. 在岗人员业务培训</h6>
+
+                  <div className="space-y-3">
+                    <div className="bg-blue-50 rounded p-3">
+                      <div className="text-sm">
+                        <span className="font-semibold text-gray-800">目标：</span>
+                        <span className="text-gray-700">提升末尾人员 / 质检高频错误点提升 / 业务知识点更新培训 / 等等</span>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="bg-blue-50 rounded p-4 text-center">
+                        <div className="text-xs text-gray-600 mb-1">开设课程数量</div>
+                        <div className="text-3xl font-bold text-blue-600">4场</div>
+                        <div className="text-xs text-gray-600 mt-1">在岗人员培训</div>
+                      </div>
+                      <div className="bg-green-50 rounded p-4 text-center border border-green-200">
+                        <div className="text-xs text-gray-600 mb-1">培训总人数</div>
+                        <div className="text-3xl font-bold text-green-600">244人</div>
+                        <div className="text-xs text-gray-600 mt-1">Q3累计</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </>
   );
 };
