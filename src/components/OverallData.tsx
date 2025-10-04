@@ -35,7 +35,7 @@ export const OverallData = () => {
           
           <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">突出站点分析</div>
-            <div className="text-gray-600 text-sm">Y4、BD+XK、Y6+Y9明细</div>
+            <div className="text-gray-600 text-sm">Y4、BD+XK、Y6+Y9、MK</div>
           </div>
         </div>
       </div>
