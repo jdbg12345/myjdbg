@@ -307,12 +307,7 @@ export const Direction1PersonnelCapability = () => {
                     <span className="font-semibold text-gray-800">3、总部一审：</span>订单量由 <span className="font-bold text-blue-600">25,161</span> 单增长至 <span className="font-bold text-blue-600">135,259</span> 单，提升了 <span className="font-bold text-green-600">437.57%</span>；审核错误率由 <span className="font-bold">0.67%</span> 降至 <span className="font-bold">0.49%</span>，下降了 <span className="font-bold text-green-600">26.69%</span>，审核质量显著提升，符合预期。
                   </p>
                 </div>
-
-                <div className="bg-white border-l-4 border-blue-500 p-3 rounded">
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">4、总部二审：</span>订单量由 <span className="font-bold text-blue-600">14,472</span> 单增长至 <span className="font-bold text-blue-600">14,628</span> 单，提升了 <span className="font-bold text-green-600">1.08%</span>；审核错误率由 <span className="font-bold">0.13%</span> 降至 <span className="font-bold">0.12%</span>，下降了 <span className="font-bold text-green-600">7.69%</span>，审核质量小幅提升，符合预期。
-                  </p>
-                </div>
+                
               </div>
           </div>
             
