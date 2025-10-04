@@ -23,6 +23,7 @@ export const OverallData = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          
           <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">防范单量与金额</div>
           </div>
@@ -52,7 +53,8 @@ export const OverallData = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
+          
+        <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">体育拦截分析</div>
         </div>
           
