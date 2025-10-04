@@ -266,7 +266,7 @@ export const Direction4InternalCollusion = () => {
 
               {/* 稽查违规人员 */}
               <div className="bg-white rounded-lg p-6 mb-6 border-2 border-orange-200 shadow-sm">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-3 gap-4">
                   <div className="bg-red-50 rounded-lg p-4 border-2 border-red-200">
                     <div className="flex items-center justify-between">
                       <span className="text-gray-700 font-medium">开除</span>
