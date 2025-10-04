@@ -47,7 +47,7 @@ export const SportsKillRateAnalysis = () => {
       <div className="space-y-2">
         {/* 1. DB整体主要玩法的表现 */}
         <div className="bg-white rounded-lg p-4 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-4">
+          <div className="flex items-center space-x-3 mb-3">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
             </div>
@@ -80,7 +80,7 @@ export const SportsKillRateAnalysis = () => {
 
         {/* 2. 熊猫整体主要玩法的表现 */}
         <div className="bg-white rounded-lg p-4 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-4">
+          <div className="flex items-center space-x-3 mb-3">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
             </div>
@@ -113,7 +113,7 @@ export const SportsKillRateAnalysis = () => {
 
         {/* 3. 熊猫B系主要玩法的表现 */}
         <div className="bg-white rounded-lg p-4 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-4">
+          <div className="flex items-center space-x-3 mb-3">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
             </div>
@@ -146,7 +146,7 @@ export const SportsKillRateAnalysis = () => {
 
         {/* 4. 熊猫在BW的表现-主要玩法的表现 */}
         <div className="bg-white rounded-lg p-4 border border-blue-200">
-          <div className="flex items-center space-x-3 mb-4">
+          <div className="flex items-center space-x-3 mb-3">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
             </div>
@@ -179,16 +179,16 @@ export const SportsKillRateAnalysis = () => {
       </div>
 
       {/* 数据解读 */}
-      <div className="bg-white rounded-lg p-8 mt-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-4">
+      <div className="bg-white rounded-lg p-3 mb-3 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-3">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <TrendingUp className="w-5 h-5 text-white" />
           </div>
           <h2 className="text-3xl font-bold text-gray-800">数据解读</h2>
         </div>
 
-        <div className="bg-white rounded-lg p-6">
-          <div className="space-y-3 text-gray-700">
+        <div className="bg-white rounded-lg p-3">
+          <div className="space-y-2 text-gray-700">
             
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
