@@ -8,6 +8,7 @@ import { QuarterlyPreventionCategory } from './components/QuarterlyPreventionCat
 import { Y4SiteDetail } from './components/Y4SiteDetail';
 import { BDXKSiteDetail } from './components/BDXKSiteDetail';
 import { Y6Y9SiteDetail } from './components/Y6Y9SiteDetail';
+import { SportsInterceptionCategory } from './components/SportsInterceptionCategory';
 import { SportsOverallKillRate } from './components/SportsOverallKillRate';
 import { PandaSportsKillRate } from './components/PandaSportsKillRate';
 import { BSportsKillRate } from './components/BSportsKillRate';
@@ -81,28 +82,33 @@ function App() {
         <div data-section="y6y9-detail">
           <Y6Y9SiteDetail />
         </div>
-        
-        {/* 2.6 体育整体杀率明细 */}
+
+        {/* 2.6 体育拦截分类明细 */}
+        <div data-section="sports-interception">
+          <SportsInterceptionCategory />
+        </div>
+
+        {/* 2.7 体育整体杀率明细 */}
         <div data-section="sports-overall">
           <SportsOverallKillRate />
         </div>
-        
-        {/* 2.7 熊猫体育杀率明细 */}
+
+        {/* 2.8 熊猫体育杀率明细 */}
         <div data-section="panda-sports">
           <PandaSportsKillRate />
         </div>
-        
-        {/* 2.8 B系体育杀率明细 */}
+
+        {/* 2.9 B系体育杀率明细 */}
         <div data-section="b-sports">
           <BSportsKillRate />
         </div>
-        
-        {/* 2.9 DB体育杀率明细 */}
+
+        {/* 2.10 DB体育杀率明细 */}
         <div data-section="db-sports">
           <DBSportsKillRate />
         </div>
         
-        {/* 2.9 飞机数据 */}
+        {/* 2.11 飞机数据 */}
         <div data-section="airplane-data">
           <AirplaneData />
         </div>

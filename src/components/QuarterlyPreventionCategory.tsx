@@ -15,19 +15,19 @@ export const QuarterlyPreventionCategory = () => {
 
   // 各大类站点占比数据 - 完整更新数据
 const siteData = [
-    { site: 'Y1', q1Amount: 3188.40, q1Percent: 7.57, q2Amount: 3569.31, q2Percent: 9.49, agentAmount: 1756.24, agentPercent: 11.47, sportsAmount: 661.19, sportsPercent: 5.44, bonusAmount: 886.96, bonusPercent: 14.82, otherAmount: 264.92, otherPercent: 6.34 },
-    { site: 'Y2', q1Amount: 3016.20, q1Percent: 7.16, q2Amount: 3012.55, q2Percent: 8.01, agentAmount: 1571.45, agentPercent: 10.26, sportsAmount: 778.78, sportsPercent: 6.41, bonusAmount: 485.00, bonusPercent: 8.11, otherAmount: 177.31, otherPercent: 4.24 },
-    { site: 'Y3', q1Amount: 3889.30, q1Percent: 9.24, q2Amount: 3017.89, q2Percent: 8.02, agentAmount: 1510.45, agentPercent: 9.86, sportsAmount: 800.91, sportsPercent: 6.59, bonusAmount: 504.50, bonusPercent: 8.43, otherAmount: 202.04, otherPercent: 4.83 },
-    { site: 'Y4', q1Amount: 12397.80, q1Percent: 29.45, q2Amount: 9856.62, q2Percent: 26.20, agentAmount: 2949.60, agentPercent: 19.26, sportsAmount: 4091.23, sportsPercent: 33.69, bonusAmount: 1668.41, bonusPercent: 27.89, otherAmount: 1147.38, otherPercent: 27.45 },
-    { site: 'Y5', q1Amount: 317.10, q1Percent: 0.75, q2Amount: 154.52, q2Percent: 0.41, agentAmount: 43.31, agentPercent: 0.28, sportsAmount: 56.70, sportsPercent: 0.47, bonusAmount: 8.54, bonusPercent: 0.14, otherAmount: 45.97, otherPercent: 1.10 },
-    { site: 'Y7', q1Amount: 3731.40, q1Percent: 8.86, q2Amount: 3178.58, q2Percent: 8.45, agentAmount: 1114.24, agentPercent: 7.28, sportsAmount: 944.61, sportsPercent: 7.78, bonusAmount: 679.86, bonusPercent: 11.36, otherAmount: 439.86, otherPercent: 10.52 },
-    { site: 'Y8', q1Amount: 868.40, q1Percent: 2.06, q2Amount: 450.25, q2Percent: 1.20, agentAmount: 136.25, agentPercent: 0.89, sportsAmount: 127.32, sportsPercent: 1.05, bonusAmount: 97.75, bonusPercent: 1.63, otherAmount: 88.92, otherPercent: 2.13 },
-    { site: 'Y6+Y9', q1Amount: 6520.70, q1Percent: 15.49, q2Amount: 4812.13, q2Percent: 12.79, agentAmount: 2109.91, agentPercent: 13.78, sportsAmount: 1519.76, sportsPercent: 12.51, bonusAmount: 746.99, bonusPercent: 12.48, otherAmount: 435.48, otherPercent: 10.42 },
-    { site: 'BD+XK', q1Amount: 4025.30, q1Percent: 9.56, q2Amount: 4759.03, q2Percent: 12.65, agentAmount: 1982.10, agentPercent: 12.94, sportsAmount: 1529.91, sportsPercent: 12.60, bonusAmount: 510.79, bonusPercent: 8.54, otherAmount: 736.22, otherPercent: 17.61 },
-    { site: '综合', q1Amount: 4143.10, q1Percent: 9.84, q2Amount: 4812.89, q2Percent: 12.79, agentAmount: 2141.37, agentPercent: 13.98, sportsAmount: 1634.99, sportsPercent: 13.46, bonusAmount: 394.37, bonusPercent: 6.59, otherAmount: 642.17, otherPercent: 15.36 }
+    { site: '1', q1Amount: 3188, q1Percent: 7.57, q2Amount: 3569, q2Percent: 9.49, q3Amount: 3611, q3Percent: 9.14, agentAmount: 1400, agentPercent: 9.35, sportsAmount: 1163, sportsPercent: 8.36, bonusAmount: 721, bonusPercent: 12.20, otherAmount: 327, otherPercent: 6.93 },
+    { site: '2', q1Amount: 3016, q1Percent: 7.16, q2Amount: 3013, q2Percent: 8.01, q3Amount: 2090, q3Percent: 5.29, agentAmount: 660, agentPercent: 4.41, sportsAmount: 777, sportsPercent: 5.59, bonusAmount: 418, bonusPercent: 7.07, otherAmount: 235, otherPercent: 4.99 },
+    { site: '3', q1Amount: 3889, q1Percent: 9.24, q2Amount: 3018, q2Percent: 8.02, q3Amount: 3127, q3Percent: 7.91, agentAmount: 1477, agentPercent: 9.86, sportsAmount: 801, sportsPercent: 5.76, bonusAmount: 569, bonusPercent: 9.63, otherAmount: 279, otherPercent: 5.93 },
+    { site: '4', q1Amount: 12398, q1Percent: 29.45, q2Amount: 9857, q2Percent: 26.20, q3Amount: 10853, q3Percent: 27.47, agentAmount: 3167, agentPercent: 21.15, sportsAmount: 4831, sportsPercent: 34.73, bonusAmount: 1076, bonusPercent: 18.20, otherAmount: 1779, otherPercent: 37.74 },
+    { site: '5', q1Amount: 317, q1Percent: 0.75, q2Amount: 155, q2Percent: 0.41, q3Amount: 256, q3Percent: 0.65, agentAmount: 38, agentPercent: 0.25, sportsAmount: 140, sportsPercent: 1.01, bonusAmount: 27, bonusPercent: 0.46, otherAmount: 50, otherPercent: 1.06 },
+    { site: '7', q1Amount: 3731, q1Percent: 8.86, q2Amount: 3179, q2Percent: 8.45, q3Amount: 3198, q3Percent: 8.09, agentAmount: 962, agentPercent: 6.42, sportsAmount: 1194, sportsPercent: 8.58, bonusAmount: 676, bonusPercent: 11.44, otherAmount: 366, otherPercent: 7.77 },
+    { site: '8', q1Amount: 868, q1Percent: 2.06, q2Amount: 450, q2Percent: 1.20, q3Amount: 3282, q3Percent: 8.31, agentAmount: 2325, agentPercent: 15.53, sportsAmount: 586, sportsPercent: 4.22, bonusAmount: 226, bonusPercent: 3.83, otherAmount: 145, otherPercent: 3.07 },
+    { site: '6+9', q1Amount: 6521, q1Percent: 15.49, q2Amount: 4812, q2Percent: 12.79, q3Amount: 4574, q3Percent: 11.58, agentAmount: 1335, agentPercent: 8.92, sportsAmount: 1474, sportsPercent: 10.60, bonusAmount: 1286, bonusPercent: 21.76, otherAmount: 478, otherPercent: 10.14 },
+    { site: 'BD+XK', q1Amount: 4025, q1Percent: 9.56, q2Amount: 4759, q2Percent: 12.65, q3Amount: 4083, q3Percent: 10.33, agentAmount: 1767, agentPercent: 11.80, sportsAmount: 1513, sportsPercent: 10.88, bonusAmount: 377, bonusPercent: 6.37, otherAmount: 426, otherPercent: 9.04 },
+    { site: '综合', q1Amount: 4143, q1Percent: 9.84, q2Amount: 4813, q2Percent: 12.79, q3Amount: 4432, q3Percent: 11.22, agentAmount: 1841, agentPercent: 12.29, sportsAmount: 1429, sportsPercent: 10.28, bonusAmount: 534, bonusPercent: 9.03, otherAmount: 629, otherPercent: 13.34 }
 ];
   // 总计占比行的数据（用于最大值最小值高亮）
-  const totalPercentages = [40.71, 32.28, 15.90, 11.11]; // 排除100%的数字
+  const totalPercentages = [37.90, 35.21, 14.96, 11.93]; // 排除100%的数字
 
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
@@ -46,15 +46,24 @@ const siteData = [
           <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
             <thead className="bg-blue-600 text-white">
               <tr>
-                <th rowSpan="2" className="p-3 text-center font-semibold border-r border-blue-500 w-20">分类</th>
-                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">第1季度总计(万)</th>
-                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">第2季度总计(万)</th>
-                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">代理类</th>
-                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">体育类</th>
-                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">红利类</th>
-                <th colSpan="2" className="p-3 text-center font-semibold">其他类</th>
+                <th rowSpan="3" className="p-3 text-center font-semibold border-r border-blue-500 w-16">站点</th>
+                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">第1季度总计</th>
+                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">第2季度总计</th>
+                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">第3季度总计</th>
+                <th colSpan="8" className="p-3 text-center font-semibold">第3季度分类明细</th>
               </tr>
               <tr>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">代理类</th>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">体育类</th>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">红利类</th>
+                <th colSpan="2" className="p-2 text-center font-semibold text-xs">其他类</th>
+              </tr>
+              <tr>
+                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
+                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
                 <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
                 <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
                 <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
@@ -77,6 +86,8 @@ const siteData = [
                   <td className="p-2 text-center text-xs">{row.q1Percent}%</td>
                   <td className="p-2 text-center text-xs">{row.q2Amount}</td>
                   <td className="p-2 text-center text-xs">{row.q2Percent}%</td>
+                  <td className="p-2 text-center text-xs">{row.q3Amount}</td>
+                  <td className="p-2 text-center text-xs">{row.q3Percent}%</td>
                   <td className="p-2 text-center text-xs">{row.agentAmount}</td>
                   <td className="p-2 text-center text-xs">{row.agentPercent}%</td>
                   <td className="p-2 text-center text-xs">{row.sportsAmount}</td>
@@ -89,31 +100,31 @@ const siteData = [
               ))}
              
               <tr className="bg-blue-50 border-b border-gray-100">
-                <td className="p-2 font-semibold text-center text-sm">小计占比</td>
-                <td className="p-2 text-center font-semibold text-xs"></td>
-                <td className="p-2 text-center font-semibold text-xs"></td>
-                <td className="p-2 text-center font-semibold text-xs"></td>
-                <td className="p-2 text-center font-semibold text-xs"></td>
-                <td className="p-2 text-center font-semibold text-xs">15314.92</td>
+                <td className="p-2 font-semibold text-center text-sm">小计|占比</td>
+                <td className="p-2 text-center font-semibold text-xs" colSpan="2"></td>
+                <td className="p-2 text-center font-semibold text-xs" colSpan="2"></td>
+                <td className="p-2 text-center font-semibold text-xs" colSpan="2"></td>
+                <td className="p-2 text-center font-semibold text-xs">14972</td>
                 <td className="p-2 text-center font-semibold text-xs">100%</td>
-                <td className="p-2 text-center font-semibold text-xs">12145.41</td>
+                <td className="p-2 text-center font-semibold text-xs">13909</td>
                 <td className="p-2 text-center font-semibold text-xs">100%</td>
-                <td className="p-2 text-center font-semibold text-xs">5983.16</td>
+                <td className="p-2 text-center font-semibold text-xs">5910</td>
                 <td className="p-2 text-center font-semibold text-xs">100%</td>
-                <td className="p-2 text-center font-semibold text-xs">4180.28</td>
+                <td className="p-2 text-center font-semibold text-xs">4714</td>
                 <td className="p-2 text-center font-semibold text-xs">100%</td>
               </tr>
               <tr className="bg-gray-200">
-                <td className="p-2 font-semibold text-center text-sm">总计占比</td>
-                <td className="p-2 text-center font-semibold text-xs" colSpan="1">42097.60</td>
-                                <td className="p-2 text-center font-semibold text-xs" colSpan="1">100%</td>
-                <td className="p-2 text-center font-semibold text-xs" colSpan="1">37623.77</td>
-
-                <td className="p-2 text-center font-semibold text-xs" colSpan="1">100%</td>
-                <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(40.71, totalPercentages)}`} colSpan="2">40.71%</td>
-                <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(32.28, totalPercentages)}`} colSpan="2">32.28%</td>
-                <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(15.90, totalPercentages)}`} colSpan="2">15.90%</td>
-                <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(11.11, totalPercentages)}`} colSpan="2">11.11%</td>
+                <td className="p-2 font-semibold text-center text-sm">总计|占比</td>
+                <td className="p-2 text-center font-semibold text-xs">42098</td>
+                <td className="p-2 text-center font-semibold text-xs">100%</td>
+                <td className="p-2 text-center font-semibold text-xs">37624</td>
+                <td className="p-2 text-center font-semibold text-xs">100%</td>
+                <td className="p-2 text-center font-semibold text-xs">39505</td>
+                <td className="p-2 text-center font-semibold text-xs">100%</td>
+                <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(37.90, totalPercentages)}`} colSpan="2">37.90%</td>
+                <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(35.21, totalPercentages)}`} colSpan="2">35.21%</td>
+                <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(14.96, totalPercentages)}`} colSpan="2">14.96%</td>
+                <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(11.93, totalPercentages)}`} colSpan="2">11.93%</td>
               </tr>
             </tbody>
           </table>
