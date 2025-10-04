@@ -702,7 +702,7 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
 
-      {/* B端监控预警 */}
+      {/* 体育赔率预警 */}
       <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
