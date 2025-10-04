@@ -310,7 +310,7 @@ export const Direction1PersonnelCapability = () => {
 
                   <div className="bg-white border-l-4 border-blue-500 p-3 rounded">       
                    <p className="text-sm text-blue-700 font-medium mt-2">
-                    → 远程和外包的单量减少、难度降低，但是其错误率却反而提升，反映出其存在的能力差、不负责的问题，且还存在安全隐患；后续加强人员培训、优化淘汰机制，强化过程管控，目标逐步降低比重，直到可随时剔除。
+                    → 远程和外包的单量虽然有所减少，难度也有所降低，但其错误率却上升，暴露出能力不足和责任心缺失的问题，同时也存在潜在的管理安全隐患。为此，后续应加强人员培训、优化淘汰机制，并强化过程管控，<span className="font-bold text-red-600">逐步减少外包远程比重，最终实现能够随时剔除</span>
                   </p>
                 </div>
               </div>
