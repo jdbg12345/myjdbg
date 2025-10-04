@@ -442,13 +442,11 @@ export const Direction4InternalCollusion = () => {
                       </td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-2">
-                          <div>与代理、会员同伙</div>
-                          <div className="text-red-600">因出款纠纷报复悬赏GS宿舍地址</div>
+                          <div>与代理、会员同伙；因出款纠纷报复悬赏GS宿舍地址</div>
                         </div>
                       </td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-1">
-                          <div className="text-red-600 font-semibold">不发放奖金和底薪</div>
                           <div className="text-blue-600 font-semibold">ZG已介入处理</div>
                         </div>
                       </td>
