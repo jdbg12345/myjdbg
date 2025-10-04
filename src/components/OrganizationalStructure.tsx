@@ -538,7 +538,7 @@ export const OrganizationalStructure = () => {
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
               <Building2 className="w-8 h-8 text-blue-600" />
-              <h2 className="text-3xl font-bold text-gray-800">场地分布统计</h2>
+              <h2 className="text-3xl font-bold text-gray-800">ZD分布统计</h2>
             </div>
           </div>
           
@@ -748,7 +748,7 @@ export const OrganizationalStructure = () => {
       <div className="bg-white rounded-xl p-8 mb-8 border border-gray-200">
         <div className="flex items-center space-x-4 mb-6">
           <ArrowRight className="w-8 h-8 text-orange-600" />
-          <h2 className="text-3xl font-bold text-gray-800">场地转移计划</h2>
+          <h2 className="text-3xl font-bold text-gray-800">ZD转移计划</h2>
         </div>
         
         <div className="bg-white rounded-lg overflow-hidden">
