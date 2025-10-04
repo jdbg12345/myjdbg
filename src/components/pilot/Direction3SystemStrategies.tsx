@@ -692,7 +692,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">4</span>
+                  <span className="text-white font-medium text-sm">2</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">沉睡用户活跃</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
@@ -731,7 +731,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">2</span>
+                  <span className="text-white font-medium text-sm">3</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">场馆钱包多钱</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
@@ -770,7 +770,7 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">3</span>
+                  <span className="text-white font-medium text-sm">4</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">杀率监控预警</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
@@ -809,11 +809,12 @@ export const Direction3SystemStrategies = () => {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
-                  <span className="text-white font-medium text-sm">3</span>
+                  <span className="text-white font-medium text-sm">5</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">赔率监控预警</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">B端（DB体育）</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">DB体育</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">世界杯前重点推进优化</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
