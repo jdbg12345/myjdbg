@@ -72,8 +72,7 @@ export const SportsInterceptionCategory = () => {
                 <th rowSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">金额</th>
                 <th rowSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">占比</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">批量打水</th>
-                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">打负、租卖号</th>
-                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">其他打水</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">打负、租卖号、其他打水</th>
                 <th rowSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">金额</th>
                 <th rowSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">占比</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">野鸡、协议球</th>
