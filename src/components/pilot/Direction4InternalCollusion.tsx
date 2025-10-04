@@ -281,40 +281,7 @@ export const Direction4InternalCollusion = () => {
               <div className="text-gray-600">持续推进中</div>
             </div>
           </div>
-          
-          {/* 稽查时间线 */}
-          <div className="mt-8">
-            <h5 className="text-lg font-semibold text-gray-800 mb-6">Q2稽查时间线</h5>
-            <div className="bg-blue-50 rounded-lg p-8 border border-blue-200">
-              <div className="relative">
-                {/* 时间线 */}
-                <div className="absolute left-8 top-0 bottom-0 w-1 bg-blue-600"></div>
-                
-                <div className="space-y-8">
-                  {[
-                    { month: '4月份', case: 'YH对外协作', result: '3人即刻开除' },
-                    { month: '5月份', case: '账号销售测试', result: '1人持续关注' },
-                    { month: '6月份', case: 'YH对外协作', result: '2人即刻开除' }
-                  ].map((item, index) => (
-                    <div key={index} className="relative pl-16">
-                      <div className="absolute left-6 w-4 h-4 rounded-full border-2 border-white bg-blue-600"></div>
-                      <div className="bg-white rounded-lg p-4 border border-blue-200">
-                        <div className="flex justify-between items-center">
-                          <div>
-                            <div className="font-medium text-gray-800">{item.month}</div>
-                            <div className="text-gray-600 text-sm">{item.case}</div>
-                          </div>
-                          <div className="px-3 py-1 rounded text-sm font-medium bg-blue-100 text-blue-600">
-                            {item.result}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+                   
         </div>
       </div>
 
