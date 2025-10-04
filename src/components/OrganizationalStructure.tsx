@@ -330,7 +330,7 @@ export const OrganizationalStructure = () => {
         <h1 className="text-5xl font-bold text-gray-800">1. 组织情况</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
-          <span className="font-medium ml-2">整体数据</span>
+          <span className="font-medium ml-2">数据情况</span>
         </div>
       </div>
 
