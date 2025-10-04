@@ -3,7 +3,7 @@ import { Shield } from 'lucide-react';
 
 export const InternalControlSampling = () => {
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       <h2 className="text-5xl font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-4">3.4.5 会员出款风控 - 事中（内控抽检）</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">

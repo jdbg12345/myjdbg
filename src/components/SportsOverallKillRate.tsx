@@ -44,8 +44,8 @@ export const SportsOverallKillRate = () => {
   const pandaTotalRates = [3.89, 2.42, 4.90, 3.74];
 
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
-      <div className="mb-8 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
+      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.9 体育整体杀率明细</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -53,7 +53,7 @@ export const SportsOverallKillRate = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
         <div className="space-y-8 mb-8">
           {/* 整体表格 */}
           <div className="overflow-x-auto">
@@ -80,11 +80,11 @@ export const SportsOverallKillRate = () => {
                 {overallData.map((row, index) => (
                   <tr key={index} className="border-b border-gray-100">
                     <td className="p-3 text-center font-semibold">{row.month}</td>
-                    <td className="p-3 text-center">{formatPercent(row.bRate, 2)}</td>
-                    <td className="p-3 text-center">{formatPercent(row.yRate, 2)}</td>
-                    <td className="p-3 text-center">{formatPercent(row.bwRate, 2)}</td>
-                    <td className="p-3 text-center">{formatPercent(row.imRate, 2)}</td>
-                    <td className="p-3 text-center">{formatPercent(row.totalRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.bRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.yRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.bwRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.imRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.totalRate, 2)}</td>
                   </tr>
                 ))}
                 <tr className="bg-blue-50 border-b border-gray-100">
@@ -124,11 +124,11 @@ export const SportsOverallKillRate = () => {
                 {crownedMonthlyData.map((row, index) => (
                   <tr key={index} className="border-b border-gray-100">
                     <td className="p-3 text-center font-semibold">{row.month}</td>
-                    <td className="p-3 text-center">{formatPercent(row.bRate, 2)}</td>
-                    <td className="p-3 text-center">{formatPercent(row.yRate, 2)}</td>
-                    <td className="p-3 text-center">{formatPercent(row.bwRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.bRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.yRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.bwRate, 2)}</td>
                     <td className="p-3 text-center text-gray-400">-</td>
-                    <td className="p-3 text-center">{formatPercent(row.totalRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.totalRate, 2)}</td>
                   </tr>
                 ))}
                 <tr className="bg-blue-50 border-b border-gray-100">
@@ -168,11 +168,11 @@ export const SportsOverallKillRate = () => {
                 {pandaMonthlyData.map((row, index) => (
                   <tr key={index} className="border-b border-gray-100">
                     <td className="p-3 text-center font-semibold">{row.month}</td>
-                    <td className="p-3 text-center">{formatPercent(row.bRate, 2)}</td>
-                    <td className="p-3 text-center">{formatPercent(row.yRate, 2)}</td>
-                    <td className="p-3 text-center">{formatPercent(row.bwRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.bRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.yRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.bwRate, 2)}</td>
                     <td className="p-3 text-center text-gray-400">-</td>
-                    <td className="p-3 text-center">{formatPercent(row.totalRate, 2)}</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{formatPercent(row.totalRate, 2)}</td>
                   </tr>
                 ))}
                 <tr className="bg-blue-50 border-b border-gray-100">
@@ -190,7 +190,7 @@ export const SportsOverallKillRate = () => {
       </div>
 
       {/* 数据解读 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <TrendingUp className="w-5 h-5 text-white" />

@@ -3,7 +3,7 @@ import { CheckCircle } from 'lucide-react';
 
 export const EndPage = () => {
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative min-h-screen flex items-center justify-center">
+    <div className="bg-white rounded-lg p-10 mb-6 relative min-h-screen flex items-center justify-center">
       <div className="text-center">
         <div className="flex justify-center mb-8">
           <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center">
@@ -22,7 +22,7 @@ export const EndPage = () => {
 
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-gray-400 text-sm">FKZX Q3 REPORT</div>
+        <div className="text-gray-400 text-sm">Q3 REPORT</div>
       </div>
     </div>
   );

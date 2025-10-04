@@ -24,7 +24,7 @@ export const TableOfContents = () => {
               { num: "2.1", title: "防范单量与金额" },
               { num: "2.2", title: "防范金类型占比" },
               { num: "2.3", title: "防范金突出站点-4明细" },
-              { num: "2.4", title: "防范金突出站点-BD+XK明细" },
+              { num: "2.4", title: "防范金突出站点-B+X明细" },
               { num: "2.5", title: "防范金突出站点-6+9明细" },
               { num: "2.6", title: "防范金突出站点-8明细" },
               { num: "2.7", title: "DL活动防犯" },

@@ -2,7 +2,7 @@ import React from 'react';
 
 export const InternalSecurityControl = () => {
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       <h2 className="text-5xl font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-4">3.4.7 内控安全风控</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -61,7 +61,7 @@ export const InternalSecurityControl = () => {
       
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-gray-400 text-sm">FKZX Q3 REPORT</div>
+        <div className="text-gray-400 text-sm">Q3 REPORT</div>
       </div>
     </div>
   );

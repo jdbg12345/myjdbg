@@ -34,9 +34,9 @@ export const FKTransformationRhythm = () => {
   ];
 
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">3.1 全局说明</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -287,7 +287,7 @@ export const FKTransformationRhythm = () => {
       
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-gray-400 text-sm">FKZX Q3 REPORT</div>
+        <div className="text-gray-400 text-sm">Q3 REPORT</div>
       </div>
     </div>
   );

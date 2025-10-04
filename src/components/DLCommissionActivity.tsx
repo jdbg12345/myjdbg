@@ -2,7 +2,7 @@ import React from 'react';
 import { BarChart3, TrendingUp } from 'lucide-react';
 
 export const DLCommissionActivity = () => {
-  // DL佣金活动数据
+  // DLYJ活动数据
   const activityData = [
     { month: '4月', baseAmount: 1138.7, basePercent: 20, extraAmount: 1517.6, extraPercent: 21, headAmount: 1633.3, headPercent: 16, firstAmount: 1277.9, firstPercent: 43, flowAmount: 395.6, flowPercent: 27, oldAmount: null, oldPercent: 0, otherAmount: 23.8, otherPercent: 22 },
     { month: '5月', baseAmount: 1380.9, basePercent: 24, extraAmount: 1459.3, extraPercent: 20, headAmount: 1376.4, headPercent: 13, firstAmount: 495.2, firstPercent: 17, flowAmount: 407.0, flowPercent: 28, oldAmount: null, oldPercent: 0, otherAmount: 25.1, otherPercent: 23 },
@@ -36,9 +36,9 @@ export const DLCommissionActivity = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.7 DLYJ活动防犯</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -46,8 +46,8 @@ export const DLCommissionActivity = () => {
         </div>
       </div>
 
-      {/* DL佣金活动表格 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      {/* DLYJ活动表格 */}
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
         <div className="overflow-x-auto">
           <table className="w-full border-collapse bg-white rounded-lg overflow-hidden text-xs">
             <thead className="bg-blue-600 text-white">
@@ -82,20 +82,20 @@ export const DLCommissionActivity = () => {
               {activityData.map((row, index) => (
                 <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
                   <td className="p-2 font-semibold text-center">{row.month}</td>
-                  <td className="p-2 text-center">{row.baseAmount}</td>
-                  <td className="p-2 text-center">{row.basePercent}%</td>
-                  <td className="p-2 text-center">{row.extraAmount}</td>
-                  <td className="p-2 text-center">{row.extraPercent}%</td>
-                  <td className="p-2 text-center">{row.headAmount}</td>
-                  <td className="p-2 text-center">{row.headPercent}%</td>
-                  <td className="p-2 text-center">{row.firstAmount}</td>
-                  <td className="p-2 text-center">{row.firstPercent}%</td>
-                  <td className="p-2 text-center">{row.flowAmount}</td>
-                  <td className="p-2 text-center">{row.flowPercent}%</td>
-                  <td className="p-2 text-center">{row.oldAmount || '-'}</td>
-                  <td className="p-2 text-center">{row.oldPercent}%</td>
-                  <td className="p-2 text-center">{row.otherAmount}</td>
-                  <td className="p-2 text-center">{row.otherPercent}%</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.baseAmount}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.basePercent}%</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.extraAmount}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.extraPercent}%</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.headAmount}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.headPercent}%</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.firstAmount}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.firstPercent}%</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.flowAmount}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.flowPercent}%</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.oldAmount || '-'}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.oldPercent}%</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.otherAmount}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{row.otherPercent}%</td>
                 </tr>
               ))}
 
@@ -136,7 +136,7 @@ export const DLCommissionActivity = () => {
       </div>
 
       {/* 数据解读 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <TrendingUp className="w-5 h-5 text-white" />

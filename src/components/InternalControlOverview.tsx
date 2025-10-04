@@ -4,7 +4,7 @@ import { Direction4InternalCollusion } from './pilot/Direction4InternalCollusion
 
 export const InternalControlOverview = () => {
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center justify-between border-b-4 border-blue-600 pb-4 mb-4">

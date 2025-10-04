@@ -3,7 +3,7 @@ import { Shield } from 'lucide-react';
 
 export const AgentControlOverview = () => {
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center justify-between border-b-4 border-blue-600 pb-4 mb-4">
@@ -15,9 +15,9 @@ export const AgentControlOverview = () => {
       </div>   
 
 
-         {/* 佣金审核 */}
+         {/* YJ审核 */}
         <div className="mb-12">
-          <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+          <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -34,21 +34,21 @@ export const AgentControlOverview = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">系统工具支持不足、核心流程依赖线下，缺乏有效管控<span className="text-blue-600">易导致佣金发放不合理，甚至内外串联</span>，直接影响平台利益</p>
+                <p className="text-gray-700 text-sm leading-relaxed">系统工具支持不足、核心流程依赖线下，缺乏有效管控<span className="text-blue-600">易导致YJ发放不合理，甚至内外串联</span>，直接影响平台利益</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">针对<span className="text-blue-600">综合分数低、风险系数高的DL等情况设定策略</span>，触发则进入<span className="text-blue-600">复审机制</span>来控制违规行为，提升佣金有效性</p>
+                <p className="text-gray-700 text-sm leading-relaxed">针对<span className="text-blue-600">综合分数低、风险系数高的DL等情况设定策略</span>，触发则进入<span className="text-blue-600">复审机制</span>来控制违规行为，提升YJ有效性</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">提升佣金合理性，有效避免内外串联</p>
+                <p className="text-gray-700 text-sm leading-relaxed">提升YJ合理性，有效避免内外串联</p>
               </div>
             </div>
 
@@ -59,7 +59,7 @@ export const AgentControlOverview = () => {
         </div>
         
         <p className="text-gray-600 mb-6">
-          复审是一个新增的流程，作为最后一道防线，确保高风险DL和可疑操作得到充分审核，有效降低错误佣金发放风险，提升整体风控质量。
+          复审是一个新增的流程，作为最后一道防线，确保高风险DL和可疑操作得到充分审核，有效降低错误YJ发放风险，提升整体风控质量。
         </p>
 
         <div className="flex items-center justify-center mt-6">
@@ -106,7 +106,7 @@ export const AgentControlOverview = () => {
             {/* 异常风险 */}
             <div className="bg-white rounded-lg p-6 text-center min-w-48 border border-gray-200">
               <div className="text-gray-700 font-semibold mb-2">如：风险系数高DL</div>
-              <div className="text-sm text-gray-600">红利/打负/调线等策略，佣金比例异常</div>
+              <div className="text-sm text-gray-600">红利/打负/调线等策略，YJ比例异常</div>
             </div>
 
             {/* 箭头 */}
@@ -146,7 +146,7 @@ export const AgentControlOverview = () => {
 
         {/* DL质量分析 */}
         <div className="mb-12">
-          <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+          <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -177,18 +177,18 @@ export const AgentControlOverview = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">优化DL管理及运营能力，提升佣金ROI</p>
+                <p className="text-gray-700 text-sm leading-relaxed">优化DL管理及运营能力，提升YJROI</p>
               </div>
             </div>
 
              {/* DL质量分析模型 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200 mt-12">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200 mt-12">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">📊</span>
           </div>
           <h3 className="text-2xl font-bold text-gray-800">DL质量分析模型示意</h3>
-          <span className="text-gray-600 text-lg">多维数据自动评估DL质量，快速区分优质与低效DL，实现精准监控与佣金管理</span>
+          <span className="text-gray-600 text-lg">多维数据自动评估DL质量，快速区分优质与低效DL，实现精准监控与YJ管理</span>
         </div>
 
         <div className="grid grid-cols-4 gap-6">
@@ -275,7 +275,7 @@ export const AgentControlOverview = () => {
       </div>
 
      {/* 有效贡献度呈现效果展示 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-sm">📊</span>

@@ -68,27 +68,27 @@ function App() {
           <QuarterlyPreventionCategory />
         </div>
         
-        {/* 2.3 第三季度防范金（Y4明细） */}
+        {/* 2.3 第三季度防范金（4明细） */}
         <div data-section="y4-detail">
           <Y4SiteDetail />
         </div>
         
-        {/* 2.4 第三季度防范金（BD+XK明细） */}
-        <div data-section="bdxk-detail">
+        {/* 2.4 第三季度防范金（B+X明细） */}
+        <div data-section="BX-detail">
           <BDXKSiteDetail />
         </div>
         
-        {/* 2.5 第三季度防范金（Y6+Y9明细） */}
+        {/* 2.5 第三季度防范金（6+9明细） */}
         <div data-section="y6y9-detail">
           <Y6Y9SiteDetail />
         </div>
 
-        {/* 2.5.1 MK明细 */}
+        {/* 2.5.1 8明细 */}
         <div data-section="mk-detail">
           <MKSiteDetail />
         </div>
 
-        {/* 2.5.2 DL佣金活动 */}
+        {/* 2.5.2 DLYJ活动 */}
         <div data-section="dl-commission">
           <DLCommissionActivity />
         </div>

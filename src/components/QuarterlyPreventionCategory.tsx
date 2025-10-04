@@ -25,25 +25,25 @@ const siteData = [
     { site: '7', q1Amount: 3731, q1Percent: 8.86, q2Amount: 3179, q2Percent: 8.45, q3Amount: 3198, q3Percent: 8.09, agentAmount: 962, agentPercent: 6.42, sportsAmount: 1194, sportsPercent: 8.58, bonusAmount: 676, bonusPercent: 11.44, otherAmount: 366, otherPercent: 7.77 },
     { site: '8', q1Amount: 868, q1Percent: 2.06, q2Amount: 450, q2Percent: 1.20, q3Amount: 3282, q3Percent: 8.31, agentAmount: 2325, agentPercent: 15.53, sportsAmount: 586, sportsPercent: 4.22, bonusAmount: 226, bonusPercent: 3.83, otherAmount: 145, otherPercent: 3.07 },
     { site: '6+9', q1Amount: 6521, q1Percent: 15.49, q2Amount: 4812, q2Percent: 12.79, q3Amount: 4574, q3Percent: 11.58, agentAmount: 1335, agentPercent: 8.92, sportsAmount: 1474, sportsPercent: 10.60, bonusAmount: 1286, bonusPercent: 21.76, otherAmount: 478, otherPercent: 10.14 },
-    { site: 'BD+XK', q1Amount: 4025, q1Percent: 9.56, q2Amount: 4759, q2Percent: 12.65, q3Amount: 4083, q3Percent: 10.33, agentAmount: 1767, agentPercent: 11.80, sportsAmount: 1513, sportsPercent: 10.88, bonusAmount: 377, bonusPercent: 6.37, otherAmount: 426, otherPercent: 9.04 },
+    { site: 'B+X', q1Amount: 4025, q1Percent: 9.56, q2Amount: 4759, q2Percent: 12.65, q3Amount: 4083, q3Percent: 10.33, agentAmount: 1767, agentPercent: 11.80, sportsAmount: 1513, sportsPercent: 10.88, bonusAmount: 377, bonusPercent: 6.37, otherAmount: 426, otherPercent: 9.04 },
     { site: '综合', q1Amount: 4143, q1Percent: 9.84, q2Amount: 4813, q2Percent: 12.79, q3Amount: 4432, q3Percent: 11.22, agentAmount: 1841, agentPercent: 12.29, sportsAmount: 1429, sportsPercent: 10.28, bonusAmount: 534, bonusPercent: 9.03, otherAmount: 629, otherPercent: 13.34 }
 ];
   // 总计占比行的数据（用于最大值最小值高亮）
   const totalPercentages = [37.90, 35.21, 14.96, 11.93]; // 排除100%的数字
 
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.2 防范金类型占比</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
-          <span className="font-medium ml-2">Y4明细</span>
+          <span className="font-medium ml-2">4明细</span>
         </div>
       </div>
 
       {/* 第三季度防范金额（各大类站点占比） */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
         <div>
           <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
             <thead className="bg-blue-600 text-white">
@@ -58,7 +58,7 @@ const siteData = [
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
-                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">代理类</th>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">DL类</th>
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">体育类</th>
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">红利类</th>
                 <th colSpan="2" className="p-2 text-center font-semibold text-xs">其他类</th>
@@ -137,7 +137,7 @@ const siteData = [
       <DataInsights
         insights={[
           {
-            text: '整体拦截金额对比上季度<span class="font-semibold text-green-600">增加5%</span>，较多站点对比上季度呈现增加，站<span class="font-semibold text-blue-600">4</span>及<span class="font-semibold text-blue-600">MK</span>增加明显共计<span class="font-semibold text-green-600">3,829万</span>'
+            text: '整体拦截金额对比上季度<span class="font-semibold text-green-600">增加5%</span>，较多站点对比上季度呈现增加，站<span class="font-semibold text-blue-600">4</span>及<span class="font-semibold text-blue-600">8</span>增加明显共计<span class="font-semibold text-green-600">3,829万</span>'
           },
           {
             text: '<span class="font-semibold text-blue-600">DL、体育</span>为本季度主要拦截里面部分，占比分别约达到<span class="font-semibold text-blue-600">38%</span>、<span class="font-semibold text-blue-600">35%</span>。总计约占整体<span class="font-semibold text-blue-600">73%</span>占比'
@@ -149,14 +149,14 @@ const siteData = [
             text: '<span class="font-semibold">其他拦截：</span>以电竞彩票棋牌刷子为主，总计占其他分类占比<span class="font-semibold text-blue-600">78%</span>'
           },
           {
-            text: '<span class="font-semibold">站点方面：</span><span class="font-semibold text-blue-600">4、9、XK</span>等站点占比三个季度保持整体较高占比，<span class="font-semibold text-green-600">MK站在本季度数据提升明显</span>，原因为发展数据提升，同步拦截提升，其中代理拦截金额占比提升较大'
+            text: '<span class="font-semibold">站点方面：</span><span class="font-semibold text-blue-600">4、9、X</span>等站点占比三个季度保持整体较高占比，<span class="font-semibold text-green-600">8站在本季度数据提升明显</span>，原因为发展数据提升，同步拦截提升，其中DL拦截金额占比提升较大'
           }
         ]}
       />
       
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-gray-400 text-sm">FKZX Q3 REPORT</div>
+        <div className="text-gray-400 text-sm">Q3 REPORT</div>
       </div>
     </div>
   );

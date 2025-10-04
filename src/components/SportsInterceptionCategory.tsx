@@ -14,7 +14,7 @@ export const SportsInterceptionCategory = () => {
     { site: '7', sportAmount: 740.6, sportPercent: 8, batchAmount: 180.8, batchPercent: 10, negativeAmount: 146.0, negativePercent: 11, shipmentAmount: 116.9, shipmentPercent: 8, chickenAmount: 2.2, chickenPercent: 1, sandwichAmount: 4.8, sandwichPercent: 3, otherAmount: 2.3, otherPercent: 5 },
     { site: '8', sportAmount: 378.6, sportPercent: 4, batchAmount: 66.2, batchPercent: 4, negativeAmount: 90.5, negativePercent: 7, shipmentAmount: 46.6, shipmentPercent: 3, chickenAmount: 3.8, chickenPercent: 2, sandwichAmount: 0.4, sandwichPercent: 0, otherAmount: 0.2, otherPercent: 0 },
     { site: '6+9', sportAmount: 1040.0, sportPercent: 12, batchAmount: 157.1, batchPercent: 9, negativeAmount: 130.4, negativePercent: 10, shipmentAmount: 96.6, shipmentPercent: 7, chickenAmount: 41.5, chickenPercent: 18, sandwichAmount: 6.6, sandwichPercent: 4, otherAmount: 2.0, otherPercent: 4 },
-    { site: 'BD+XK', sportAmount: 932.2, sportPercent: 10, batchAmount: 163.4, batchPercent: 9, negativeAmount: 86.8, negativePercent: 7, shipmentAmount: 163.4, shipmentPercent: 12, chickenAmount: 45.6, chickenPercent: 19, sandwichAmount: 114.0, sandwichPercent: 61, otherAmount: 7.5, otherPercent: 16 },
+    { site: 'B+X', sportAmount: 932.2, sportPercent: 10, batchAmount: 163.4, batchPercent: 9, negativeAmount: 86.8, negativePercent: 7, shipmentAmount: 163.4, shipmentPercent: 12, chickenAmount: 45.6, chickenPercent: 19, sandwichAmount: 114.0, sandwichPercent: 61, otherAmount: 7.5, otherPercent: 16 },
     { site: '综合', sportAmount: 1085.3, sportPercent: 12, batchAmount: 162.6, batchPercent: 9, negativeAmount: 62.5, negativePercent: 5, shipmentAmount: 52.3, shipmentPercent: 4, chickenAmount: 44.6, chickenPercent: 19, sandwichAmount: 10.4, sandwichPercent: 6, otherAmount: 11.4, otherPercent: 24 }
   ];
 
@@ -41,9 +41,9 @@ export const SportsInterceptionCategory = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.8 体育拦截分类明细</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -52,7 +52,7 @@ export const SportsInterceptionCategory = () => {
       </div>
 
       {/* 体育拦截分类表格 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
         <div className="overflow-x-auto">
           <table className="w-full border-collapse bg-white rounded-lg overflow-hidden text-xs">
             <thead className="bg-blue-600 text-white">
@@ -98,20 +98,20 @@ export const SportsInterceptionCategory = () => {
               {categoryData.map((row, index) => (
                 <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
                   <td className="p-2 font-semibold text-center">{row.site}</td>
-                  <td className="p-2 text-center">{formatNumber(row.sportAmount, 1)}</td>
-                  <td className="p-2 text-center">{formatPercent(row.sportPercent, 0)}</td>
-                  <td className="p-2 text-center">{formatNumber(row.batchAmount, 1)}</td>
-                  <td className="p-2 text-center">{formatPercent(row.batchPercent, 0)}</td>
-                  <td className="p-2 text-center">{formatNumber(row.negativeAmount, 1)}</td>
-                  <td className="p-2 text-center">{formatPercent(row.negativePercent, 0)}</td>
-                  <td className="p-2 text-center">{formatNumber(row.shipmentAmount, 1)}</td>
-                  <td className="p-2 text-center">{formatPercent(row.shipmentPercent, 0)}</td>
-                  <td className="p-2 text-center">{formatNumber(row.chickenAmount, 1)}</td>
-                  <td className="p-2 text-center">{formatPercent(row.chickenPercent, 0)}</td>
-                  <td className="p-2 text-center">{formatNumber(row.sandwichAmount, 1)}</td>
-                  <td className="p-2 text-center">{formatPercent(row.sandwichPercent, 0)}</td>
-                  <td className="p-2 text-center">{formatNumber(row.otherAmount, 1)}</td>
-                  <td className="p-2 text-center">{formatPercent(row.otherPercent, 0)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatNumber(row.sportAmount, 1)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatPercent(row.sportPercent, 0)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatNumber(row.batchAmount, 1)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatPercent(row.batchPercent, 0)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatNumber(row.negativeAmount, 1)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatPercent(row.negativePercent, 0)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatNumber(row.shipmentAmount, 1)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatPercent(row.shipmentPercent, 0)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatNumber(row.chickenAmount, 1)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatPercent(row.chickenPercent, 0)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatNumber(row.sandwichAmount, 1)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatPercent(row.sandwichPercent, 0)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatNumber(row.otherAmount, 1)}</td>
+                  <td className="p-1 text-center font-semibold border-r border-gray-200">{formatPercent(row.otherPercent, 0)}</td>
                 </tr>
               ))}
 
@@ -157,7 +157,7 @@ export const SportsInterceptionCategory = () => {
             text: '体育打水为主要占比，达到<span class="font-semibold text-blue-600">64.22%</span>，其次为批量打水占比为<span class="font-semibold text-blue-600">12.75%</span>，出货以及打负占比分别为<span class="font-semibold text-blue-600">10.18%</span>和<span class="font-semibold text-blue-600">9.48%</span>。'
           },
           {
-            text: '站点分布主要为<span class="font-semibold text-blue-600">4、6+9、XK</span>为主要，占比合计约占整体<span class="font-semibold text-blue-600">55%</span>。'
+            text: '站点分布主要为<span class="font-semibold text-blue-600">4、6+9、X</span>为主要，占比合计约占整体<span class="font-semibold text-blue-600">55%</span>。'
           },
           {
             text: '<span class="font-semibold">套利手段：</span>主要通过盘口水位优势进行打水及红利套利，同时部分职业玩家集中在小联赛进行打水。'

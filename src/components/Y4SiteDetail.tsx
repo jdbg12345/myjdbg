@@ -13,7 +13,7 @@ export const Y4SiteDetail = () => {
     return '';
   };
 
-  // Y4站点明细数据
+  // 4站点明细数据
   const y4DetailData = [
     { type: 'DL类', zkAmount: 0.00, zkPercent: 0.00, dlAmount: 3159.66, dlPercent: 53.23, tgAmount: 7.26, tgPercent: 0.60 },
     { type: '体育类', zkAmount: 2217.25, zkPercent: 72.67, dlAmount: 1855.88, dlPercent: 31.26, tgAmount: 757.93, tgPercent: 62.97 },
@@ -25,18 +25,18 @@ export const Y4SiteDetail = () => {
   const totalPercentages = [31.81, 55.87, 12.31];
 
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.3 防范金突出站点-4明细</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
-          <span className="font-medium ml-2">BD+XK明细</span>
+          <span className="font-medium ml-2">B+X明细</span>
         </div>
       </div>
 
-      {/* Y4站点明细 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      {/* 4站点明细 */}
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
        
 
         <div className="overflow-x-auto">
@@ -65,12 +65,12 @@ export const Y4SiteDetail = () => {
                   {y4DetailData.map((row, index) => (
                     <tr key={index} className="border-b border-gray-100">
                       <td className="p-3 font-semibold text-center">{row.type}</td>
-                      <td className="p-3 text-center">{row.zkAmount}</td>
-                      <td className="p-3 text-center">{row.zkPercent}%</td>
-                      <td className="p-3 text-center">{row.dlAmount}</td>
-                      <td className="p-3 text-center">{row.dlPercent}%</td>
-                      <td className="p-3 text-center">{row.tgAmount}</td>
-                      <td className="p-3 text-center">{row.tgPercent}%</td>
+                      <td className="p-2 text-center font-semibold border-r border-gray-200">{row.zkAmount}</td>
+                      <td className="p-2 text-center font-semibold border-r border-gray-200">{row.zkPercent}%</td>
+                      <td className="p-2 text-center font-semibold border-r border-gray-200">{row.dlAmount}</td>
+                      <td className="p-2 text-center font-semibold border-r border-gray-200">{row.dlPercent}%</td>
+                      <td className="p-2 text-center font-semibold border-r border-gray-200">{row.tgAmount}</td>
+                      <td className="p-2 text-center font-semibold border-r border-gray-200">{row.tgPercent}%</td>
                     </tr>
                   ))}
                   <tr className="bg-blue-50 border-b border-gray-100">
@@ -99,7 +99,7 @@ export const Y4SiteDetail = () => {
       </div>
 
       {/* 数据解读 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <TrendingUp className="w-5 h-5 text-white" />
@@ -115,7 +115,7 @@ export const Y4SiteDetail = () => {
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold text-red-600">DL用户（含DL）拦截占比达到最高为55%</span>，主要为佣金拦截占<span className="font-semibold text-red-600">53%</span></span>
+              <span><span className="font-semibold text-red-600">DL用户（含DL）拦截占比达到最高为55%</span>，主要为YJ拦截占<span className="font-semibold text-red-600">53%</span></span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
@@ -123,12 +123,12 @@ export const Y4SiteDetail = () => {
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">问题：</span><span className="font-semibold text-red-600">DL拦截占比整体较高</span>（占比：基础<span className="font-semibold text-blue-600">17%</span>，额外<span className="font-semibold text-blue-600">24%</span>，人头费<span className="font-semibold text-blue-600">23%</span>）；<span className="font-semibold">结论：</span>新DL额外佣金及人头费拦截占主要组成部分，<span className="font-semibold text-green-600">8月调整后，人头费当月占比降至16%</span></span>
+              <span><span className="font-semibold">问题：</span><span className="font-semibold text-red-600">DL拦截占比整体较高</span>（占比：基础<span className="font-semibold text-blue-600">17%</span>，额外<span className="font-semibold text-blue-600">24%</span>，人头费<span className="font-semibold text-blue-600">23%</span>）；<span className="font-semibold">结论：</span>新DL额外YJ及人头费拦截占主要组成部分，<span className="font-semibold text-green-600">8月调整后，人头费当月占比降至16%</span></span>
             </div>
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <div className="text-sm text-blue-700">
                 <div className="font-semibold mb-2">数据说明：</div>
-                <div><span className="font-semibold">DL类：</span>佣金拦截（为"DL本身"佣金&DL人头费套利），红利拦截（为"DL线下会员"活动套利）</div>
+                <div><span className="font-semibold">DL类：</span>YJ拦截（为"DL本身"YJ&DL人头费套利），红利拦截（为"DL线下会员"活动套利）</div>
                 <div className="mt-2"><span className="font-semibold">TG类：</span>DL类（为额度代存套利）</div>
               </div>
             </div>

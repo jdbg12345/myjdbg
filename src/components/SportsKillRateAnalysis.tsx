@@ -15,7 +15,7 @@ export const SportsKillRateAnalysis = () => {
   ];
 
   // 熊猫B系主要玩法数据
-  const pandaBData = [
+  const pandaBata = [
     { gameplay: '全场大小', killRate: 3.51, orderPercent: 30.11, flowPercent: 35.76 },
     { gameplay: '全场让球', killRate: -1.72, orderPercent: 16.31, flowPercent: 17.98 }
   ];
@@ -33,9 +33,9 @@ export const SportsKillRateAnalysis = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.10 主要玩法杀率分析</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -44,7 +44,7 @@ export const SportsKillRateAnalysis = () => {
       </div>
 
       {/* 4个分析表格 */}
-      <div className="space-y-8">
+      <div className="space-y-4">
         {/* 1. DB整体主要玩法的表现 */}
         <div className="bg-white rounded-lg p-8 border border-blue-200">
           <div className="flex items-center space-x-3 mb-6">
@@ -69,8 +69,8 @@ export const SportsKillRateAnalysis = () => {
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
                     <td className="p-4 text-center font-semibold">{row.gameplay}</td>
                     <td className={`p-4 text-center ${getKillRateClass(row.killRate)}`}>{row.killRate}%</td>
-                    <td className="p-4 text-center">{row.orderPercent}%</td>
-                    <td className="p-4 text-center">{row.flowPercent}%</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.orderPercent}%</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.flowPercent}%</td>
                   </tr>
                 ))}
               </tbody>
@@ -102,8 +102,8 @@ export const SportsKillRateAnalysis = () => {
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
                     <td className="p-4 text-center font-semibold">{row.gameplay}</td>
                     <td className={`p-4 text-center ${getKillRateClass(row.killRate)}`}>{row.killRate}%</td>
-                    <td className="p-4 text-center">{row.orderPercent}%</td>
-                    <td className="p-4 text-center">{row.flowPercent}%</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.orderPercent}%</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.flowPercent}%</td>
                   </tr>
                 ))}
               </tbody>
@@ -131,12 +131,12 @@ export const SportsKillRateAnalysis = () => {
                 </tr>
               </thead>
               <tbody>
-                {pandaBData.map((row, index) => (
+                {pandaBata.map((row, index) => (
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
                     <td className="p-4 text-center font-semibold">{row.gameplay}</td>
                     <td className={`p-4 text-center ${getKillRateClass(row.killRate)}`}>{row.killRate}%</td>
-                    <td className="p-4 text-center">{row.orderPercent}%</td>
-                    <td className="p-4 text-center">{row.flowPercent}%</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.orderPercent}%</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.flowPercent}%</td>
                   </tr>
                 ))}
               </tbody>
@@ -168,8 +168,8 @@ export const SportsKillRateAnalysis = () => {
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
                     <td className="p-4 text-center font-semibold">{row.gameplay}</td>
                     <td className={`p-4 text-center ${getKillRateClass(row.killRate)}`}>{row.killRate}%</td>
-                    <td className="p-4 text-center">{row.orderPercent}%</td>
-                    <td className="p-4 text-center">{row.flowPercent}%</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.orderPercent}%</td>
+                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.flowPercent}%</td>
                   </tr>
                 ))}
               </tbody>

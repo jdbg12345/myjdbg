@@ -14,7 +14,7 @@ export const MKSiteDetail = () => {
     return '';
   };
 
-  // MK站点明细数据
+  // 8站点明细数据
   const mkDetailData = [
     { type: 'DL类', zkAmount: 0.00, zkPercent: 0.00, dlAmount: 2321.48, dlPercent: 81.66, tgAmount: 3.79, tgPercent: 3.33 },
     { type: '体育类', zkAmount: 169.02, zkPercent: 51.87, dlAmount: 344.81, dlPercent: 12.13, tgAmount: 72.49, tgPercent: 63.79 },
@@ -26,9 +26,9 @@ export const MKSiteDetail = () => {
   const totalPercentages = [9.93, 86.61, 3.46];
 
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.6 防范金突出站点-8</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -36,8 +36,8 @@ export const MKSiteDetail = () => {
         </div>
       </div>
 
-      {/* MK站点明细 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      {/* 8站点明细 */}
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
 
         <div className="overflow-x-auto">
               <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
@@ -99,7 +99,7 @@ export const MKSiteDetail = () => {
       </div>
 
       {/* 数据解读 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <TrendingUp className="w-5 h-5 text-white" />
@@ -129,7 +129,7 @@ export const MKSiteDetail = () => {
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <div className="text-sm text-blue-700">
                 <div className="font-semibold mb-2">数据说明：</div>
-                <div><span className="font-semibold">DL类：</span>YJ拦截（为"DL本身"佣金&DL人头费套利），红利拦截（为"DL线下会员"活动套利）</div>
+                <div><span className="font-semibold">DL类：</span>YJ拦截（为"DL本身"YJ&DL人头费套利），红利拦截（为"DL线下会员"活动套利）</div>
                 <div className="mt-2"><span className="font-semibold">TG类：</span>DL类（为额度代存套利）</div>
               </div>
             </div>
@@ -139,7 +139,7 @@ export const MKSiteDetail = () => {
 
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-gray-400 text-sm">FKZX Q3 REPORT</div>
+        <div className="text-gray-400 text-sm">Q3 REPORT</div>
       </div>
     </div>
   );

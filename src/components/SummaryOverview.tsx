@@ -106,9 +106,9 @@ export const SummaryOverview = () => {
   const additionalRequirementsLiveCount = calculateAdditionalRequirementsCount();
 
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">3.4.0 会员出款风控</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -117,7 +117,7 @@ export const SummaryOverview = () => {
       </div>
 
       {/* Current Status */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-blue-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
             <AlertTriangle className="w-5 h-5 text-white" />
@@ -165,7 +165,7 @@ export const SummaryOverview = () => {
       </div>
 
       {/* Cause Analysis - 修复标题换行问题，使用原来的icon，字体下一号 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-gray-200">
+      <div className="bg-white rounded-lg p-6 mb-6 border border-gray-200">
         <div className="flex items-center space-x-3 mb-6">
           <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
             <Search className="w-5 h-5 text-white" />

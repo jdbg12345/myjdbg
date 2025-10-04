@@ -2,7 +2,7 @@ import React from 'react';
 
 export const SystemDispatch = () => {
   return (
-    <div className="bg-white rounded-lg p-16 mb-10 relative">
+    <div className="bg-white rounded-lg p-10 mb-6 relative">
       <h2 className="text-5xl font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-4">3.4.3 会员出款风控 - 事中（系统派单）</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -29,7 +29,7 @@ export const SystemDispatch = () => {
       </div>
 
       {/* Intelligent Dispatch Mechanism - Matching the Image Exactly */}
-      <div className="bg-white rounded-lg p-8 mb-8">
+      <div className="bg-white rounded-lg p-6 mb-6">
         <div className="flex items-center mb-8">
           <div className="bg-blue-600 rounded-lg p-3 mr-4">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

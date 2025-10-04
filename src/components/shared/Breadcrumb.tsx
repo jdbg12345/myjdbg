@@ -8,7 +8,7 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  { id: 'cover', title: 'FKZX Q3 REPORT' },
+  { id: 'cover', title: 'Q3 REPORT' },
   { id: 'org', title: '1. 组织情况' },
   {
     id: 'data',
@@ -16,9 +16,9 @@ const navigationItems: NavigationItem[] = [
     children: [
       { id: 'prevention-data', title: '2.1 防范单量与金额' },
       { id: 'prevention-category', title: '2.2 站点类型占比' },
-      { id: 'y4-detail', title: '2.3 Y4明细' },
-      { id: 'bdxk-detail', title: '2.4 BD+XK明细' },
-      { id: 'y6y9-detail', title: '2.5 Y6+Y9明细' },
+      { id: 'y4-detail', title: '2.3 4明细' },
+      { id: 'BX-detail', title: '2.4 B+X明细' },
+      { id: 'y6y9-detail', title: '2.5 6+9明细' },
       { id: 'sports-overall', title: '2.6 体育整体杀率明细' },
       { id: 'panda-sports', title: '2.7 熊猫体育杀率' },
       { id: 'b-sports', title: '2.8 B系体育杀率明细' },
