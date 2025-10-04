@@ -59,7 +59,7 @@ export const OrganizationalStructure = () => {
       manager: '研发主管1人' 
     },
     '内控部': { 
-      TH: { current: 6, planned: 0, isMain: false }, 
+      TH: { current: 15, planned: 0, isMain: false }, 
       DB: { current: 1, planned: 15, isMain: false }, 
       SLK: { current: 4, planned: 15, isMain: true }, 
       KJY: { current: 14, planned: 15, isMain: false }, 
