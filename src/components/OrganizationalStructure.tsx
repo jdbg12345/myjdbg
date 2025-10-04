@@ -358,7 +358,7 @@ export const OrganizationalStructure = () => {
               <h2 className="text-xl font-bold border-b-3 border-gray-400 pb-3 text-gray-700">协作部门</h2>
             </div>
             <div className="text-center">
-              <h2 className="text-xl font-bold border-b-3 border-blue-600 pb-3 text-blue-700">FKZX</h2>
+              <h2 className="text-xl font-bold border-b-3 border-blue-600 pb-3 text-blue-700">BM</h2>
             </div>
             <div className="text-center">
               <h2 className="text-xl font-bold border-b-3 border-gray-400 pb-3 text-gray-700">核心职责</h2>
