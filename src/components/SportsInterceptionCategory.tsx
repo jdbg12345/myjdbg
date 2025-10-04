@@ -1,5 +1,7 @@
 import React from 'react';
 import { BarChart3 } from 'lucide-react';
+import { formatNumber, formatPercent } from '../utils/formatters';
+import { DataInsights } from './shared/DataInsights';
 
 export const SportsInterceptionCategory = () => {
   // 体育拦截分类数据（删除其他打水列，数据顺移）
@@ -96,52 +98,52 @@ export const SportsInterceptionCategory = () => {
               {categoryData.map((row, index) => (
                 <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
                   <td className="p-2 font-semibold text-center">{row.site}</td>
-                  <td className="p-2 text-center">{row.sportAmount}</td>
-                  <td className="p-2 text-center">{row.sportPercent}%</td>
-                  <td className="p-2 text-center">{row.batchAmount}</td>
-                  <td className="p-2 text-center">{row.batchPercent}%</td>
-                  <td className="p-2 text-center">{row.negativeAmount}</td>
-                  <td className="p-2 text-center">{row.negativePercent}%</td>
-                  <td className="p-2 text-center">{row.shipmentAmount}</td>
-                  <td className="p-2 text-center">{row.shipmentPercent}%</td>
-                  <td className="p-2 text-center">{row.chickenAmount}</td>
-                  <td className="p-2 text-center">{row.chickenPercent}%</td>
-                  <td className="p-2 text-center">{row.sandwichAmount}</td>
-                  <td className="p-2 text-center">{row.sandwichPercent}%</td>
-                  <td className="p-2 text-center">{row.otherAmount}</td>
-                  <td className="p-2 text-center">{row.otherPercent}%</td>
+                  <td className="p-2 text-center">{formatNumber(row.sportAmount, 1)}</td>
+                  <td className="p-2 text-center">{formatPercent(row.sportPercent, 0)}</td>
+                  <td className="p-2 text-center">{formatNumber(row.batchAmount, 1)}</td>
+                  <td className="p-2 text-center">{formatPercent(row.batchPercent, 0)}</td>
+                  <td className="p-2 text-center">{formatNumber(row.negativeAmount, 1)}</td>
+                  <td className="p-2 text-center">{formatPercent(row.negativePercent, 0)}</td>
+                  <td className="p-2 text-center">{formatNumber(row.shipmentAmount, 1)}</td>
+                  <td className="p-2 text-center">{formatPercent(row.shipmentPercent, 0)}</td>
+                  <td className="p-2 text-center">{formatNumber(row.chickenAmount, 1)}</td>
+                  <td className="p-2 text-center">{formatPercent(row.chickenPercent, 0)}</td>
+                  <td className="p-2 text-center">{formatNumber(row.sandwichAmount, 1)}</td>
+                  <td className="p-2 text-center">{formatPercent(row.sandwichPercent, 0)}</td>
+                  <td className="p-2 text-center">{formatNumber(row.otherAmount, 1)}</td>
+                  <td className="p-2 text-center">{formatPercent(row.otherPercent, 0)}</td>
                 </tr>
               ))}
 
               {/* 小计行 */}
               <tr className="bg-blue-50 border-b border-gray-100">
                 <td className="p-2 font-semibold text-center">小计|占比</td>
-                <td className="p-2 text-center font-semibold">{subtotalData.sportTotal}</td>
+                <td className="p-2 text-center font-semibold">{formatNumber(subtotalData.sportTotal, 1)}</td>
                 <td className="p-2 text-center font-semibold">100%</td>
-                <td className="p-2 text-center font-semibold">{subtotalData.batchTotal}</td>
+                <td className="p-2 text-center font-semibold">{formatNumber(subtotalData.batchTotal, 1)}</td>
                 <td className="p-2 text-center font-semibold">100%</td>
-                <td className="p-2 text-center font-semibold">{subtotalData.negativeTotal}</td>
+                <td className="p-2 text-center font-semibold">{formatNumber(subtotalData.negativeTotal, 1)}</td>
                 <td className="p-2 text-center font-semibold">100%</td>
-                <td className="p-2 text-center font-semibold">{subtotalData.shipmentTotal}</td>
+                <td className="p-2 text-center font-semibold">{formatNumber(subtotalData.shipmentTotal, 1)}</td>
                 <td className="p-2 text-center font-semibold">100%</td>
-                <td className="p-2 text-center font-semibold">{subtotalData.chickenTotal}</td>
+                <td className="p-2 text-center font-semibold">{formatNumber(subtotalData.chickenTotal, 1)}</td>
                 <td className="p-2 text-center font-semibold">100%</td>
-                <td className="p-2 text-center font-semibold">{subtotalData.sandwichTotal}</td>
+                <td className="p-2 text-center font-semibold">{formatNumber(subtotalData.sandwichTotal, 1)}</td>
                 <td className="p-2 text-center font-semibold">100%</td>
-                <td className="p-2 text-center font-semibold">{subtotalData.otherTotal}</td>
+                <td className="p-2 text-center font-semibold">{formatNumber(subtotalData.otherTotal, 1)}</td>
                 <td className="p-2 text-center font-semibold">100%</td>
               </tr>
 
               {/* 总计占比行 */}
               <tr className="bg-gray-200">
                 <td className="p-2 font-semibold text-center">总计|占比</td>
-                <td className="p-2 text-center font-semibold text-red-400" colSpan="2">{totalPercentData.sportPercent}%</td>
-                <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.batchPercent}%</td>
-                <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.negativePercent}%</td>
-                <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.shipmentPercent}%</td>
-                <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.chickenPercent}%</td>
-                <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.sandwichPercent}%</td>
-                <td className="p-2 text-center font-semibold" colSpan="2">{totalPercentData.otherPercent}%</td>
+                <td className="p-2 text-center font-semibold text-blue-600" colSpan="2">{formatPercent(totalPercentData.sportPercent, 2)}</td>
+                <td className="p-2 text-center font-semibold" colSpan="2">{formatPercent(totalPercentData.batchPercent, 2)}</td>
+                <td className="p-2 text-center font-semibold" colSpan="2">{formatPercent(totalPercentData.negativePercent, 2)}</td>
+                <td className="p-2 text-center font-semibold" colSpan="2">{formatPercent(totalPercentData.shipmentPercent, 2)}</td>
+                <td className="p-2 text-center font-semibold" colSpan="2">{formatPercent(totalPercentData.chickenPercent, 2)}</td>
+                <td className="p-2 text-center font-semibold" colSpan="2">{formatPercent(totalPercentData.sandwichPercent, 2)}</td>
+                <td className="p-2 text-center font-semibold" colSpan="2">{formatPercent(totalPercentData.otherPercent, 2)}</td>
               </tr>
             </tbody>
           </table>
@@ -149,38 +151,30 @@ export const SportsInterceptionCategory = () => {
       </div>
 
       {/* 数据解读 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-            <BarChart3 className="w-5 h-5 text-white" />
-          </div>
-          <h2 className="text-3xl font-bold text-gray-800">数据解读</h2>
-        </div>
-        <div className="bg-white rounded-lg p-6">
-          <div className="space-y-3 text-gray-700">
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span>体育打水为主要占比，达到<span className="font-semibold text-blue-600">64.22%</span>，其次为批量打水占比为<span className="font-semibold text-blue-600">12.75%</span>，出货以及打负占比分别为<span className="font-semibold text-blue-600">10.18%</span>和<span className="font-semibold text-blue-600">9.48%</span>。</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span>站点分布主要为<span className="font-semibold text-blue-600">4、6+9、综合</span>为主要，占比合计约占整体<span className="font-semibold text-blue-600">55%</span>。</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">套利手段：</span>主要通过盘口水位优势进行打水及红利套利，同时部分职业玩家集中在小联赛进行打水。</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">发现方式：</span>主要通过提款审核、批量团体，账户关联分析、提前预警排查、三方反馈和预警群等渠道识别玩家套利行为。</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">处置措施：</span>针对问题玩家，依据风险程度采取降水、延迟处理、单笔警告、扣款或终止合作等手段。</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <DataInsights
+        insights={[
+          {
+            text: '体育打水为主要占比，达到<strong class="text-blue-600">64.22%</strong>，其次为批量打水占比为<strong class="text-blue-600">12.75%</strong>，出货以及打负占比分别为<strong class="text-blue-600">10.18%</strong>和<strong class="text-blue-600">9.48%</strong>。',
+            type: 'default'
+          },
+          {
+            text: '站点分布主要为<strong class="text-blue-600">4、6+9、综合</strong>为主要，占比合计约占整体<strong class="text-blue-600">55%</strong>。',
+            type: 'info'
+          },
+          {
+            text: '<strong>套利手段：</strong>主要通过盘口水位优势进行打水及红利套利，同时部分职业玩家集中在小联赛进行打水。',
+            type: 'warning'
+          },
+          {
+            text: '<strong>发现方式：</strong>主要通过提款审核、批量团体，账户关联分析、提前预警排查、三方反馈和预警群等渠道识别玩家套利行为。',
+            type: 'info'
+          },
+          {
+            text: '<strong>处置措施：</strong>针对问题玩家，依据风险程度采取降水、延迟处理、单笔警告、扣款或终止合作等手段。',
+            type: 'success'
+          }
+        ]}
+      />
     </div>
   );
 };

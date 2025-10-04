@@ -1,8 +1,10 @@
 import React from 'react';
 import { BarChart3, TrendingUp } from 'lucide-react';
+import { formatNumber } from '../utils/formatters';
+import { DataInsights } from './shared/DataInsights';
 
 export const QuarterlyPreventionData = () => {
-  // 第三季度防范单量与金额数据
+  // 第三季度防范单量与金额数据（亿元）
   const preventionData = [
     { month: '2025/4', amount: 1.327 },
     { month: '2025/5', amount: 1.309 },
@@ -11,6 +13,8 @@ export const QuarterlyPreventionData = () => {
     { month: '2025/8', amount: 1.483 },
     { month: '2025/9', amount: 1.121 }
   ];
+
+  const totalAmount = preventionData.reduce((sum, item) => sum + item.amount, 0);
 
   // 人工单量与时效数据
   const manualData = [
@@ -44,7 +48,7 @@ export const QuarterlyPreventionData = () => {
           {/* 左侧：防范金额图表 */}
           <div className="bg-white rounded-lg p-5 border border-blue-200">
             <div className="bg-blue-600 text-white text-center py-3 rounded-lg mb-6">
-              <h3 className="text-white text-xl font-bold">三季度总防范金额：3.95</h3>
+              <h3 className="text-white text-xl font-bold">三季度总防范金额：{formatNumber(totalAmount, 2)}亿</h3>
             </div>
 
             {/* 图表区域 */}
@@ -54,7 +58,7 @@ export const QuarterlyPreventionData = () => {
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
                 {preventionData.map((item, index) => (
                   <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
-                    <div className="absolute -top-6 text-sm font-semibold text-blue-600">{item.amount}</div>
+                    <div className="absolute -top-6 text-sm font-semibold text-blue-600">{formatNumber(item.amount, 2)}</div>
                     <div
                       className="bg-blue-500 w-full rounded-t"
                       style={{ height: `${(item.amount / maxAmount) * 280}px` }}
@@ -95,7 +99,7 @@ export const QuarterlyPreventionData = () => {
                   const barHeight = (item.volume / maxVolume) * 280;
                   return (
                   <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
-                    <div className="absolute text-sm font-semibold text-blue-600" style={{ bottom: `${barHeight + 4}px` }}>{item.volume}</div>
+                    <div className="absolute text-sm font-semibold text-blue-600" style={{ bottom: `${barHeight + 4}px` }}>{formatNumber(item.volume, 2)}</div>
                     <div
                       className="bg-blue-500 w-full rounded-t"
                       style={{ height: `${barHeight}px` }}
@@ -148,33 +152,22 @@ export const QuarterlyPreventionData = () => {
       </div>
 
       {/* 数据解读 */}
-      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-        <div className="flex items-center space-x-3 mb-6">
-          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-            <TrendingUp className="w-5 h-5 text-white" />
-          </div>
-          <h2 className="text-3xl font-bold text-gray-800">数据解读</h2>
-        </div>
-
-        <div className="bg-white rounded-lg p-6">
-          <div className="space-y-3 text-gray-700">
-            <div className="flex items-start">
-
-              <span className="text-blue-600 mr-2">▶</span>
-              <span>整体人工审核单量在606.7笔，对比上季度减少6%，本季度对比上季度呈现下降趋势。次部分原因为大部分站点单量均存在下降趋势。
-</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">▶</span>
-              <span>整体人工审核时效在06:49，整体环比上一季度，人工审核效率 因9月导致下降，原因为外包远程部门提高准确率进行策略单量导流，总部单量增加时效有所延长，后续持续发展优化此项时长</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">▶</span>
-              <span>整体拦截金额为3.95E，本季度环比上一季度提升5%，此部分原因为8月代理部分人头费拦截增多导致</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <DataInsights
+        insights={[
+          {
+            text: '整体人工审核单量在<strong class="text-blue-600">606.7笔</strong>，对比上季度<strong class="text-red-600">减少6%</strong>，本季度对比上季度呈现下降趋势。此部分原因为大部分站点单量均存在下降趋势。',
+            type: 'warning'
+          },
+          {
+            text: '整体人工审核时效在<strong class="text-blue-600">06:49</strong>，整体环比上一季度，人工审核效率因9月导致下降，原因为外包远程部门提高准确率进行策略单量导流，总部单量增加时效有所延长，后续持续发展优化此项时长。',
+            type: 'info'
+          },
+          {
+            text: '整体拦截金额为<strong class="text-green-600">3.95亿</strong>，本季度环比上一季度<strong class="text-green-600">提升5%</strong>，此部分原因为8月代理部分人头费拦截增多导致。',
+            type: 'success'
+          }
+        ]}
+      />
       
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
