@@ -284,7 +284,7 @@ export const Direction4InternalCollusion = () => {
             <div className="bg-white rounded-lg p-8 border border-gray-300 mt-6">
               <div className="flex items-center mb-6">
   
-                <h4 className="text-2xl font-bold text-gray-800">详细案件记录</h4>
+                <h4 className="text-2xl font-bold text-gray-800">稽查记录</h4>
               </div>
 
               {/* 表格 */}
