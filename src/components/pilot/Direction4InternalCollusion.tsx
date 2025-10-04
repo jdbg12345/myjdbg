@@ -140,7 +140,7 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 核心问题
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">高危参数<span className="text-blue-600">（如代理佣金、存提费率、场馆费率、VIP体系）缺乏实时监控</span>，存在被误操作、滥用或配置异常导致的重大风险。</p>
+              <p className="text-gray-700 text-sm leading-relaxed">高危参数<span className="text-blue-600">（如DL佣金、存提费率、场馆费率、VIP体系）缺乏实时监控</span>，存在被误操作、滥用或配置异常导致的重大风险。</p>
             </div>
             
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
@@ -424,7 +424,7 @@ export const Direction4InternalCollusion = () => {
                       </td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
                         <div className="space-y-2">
-                          <div>与代理、会员同伙；因出款纠纷报复悬赏GS宿舍地址</div>
+                          <div>与DL、会员同伙；因出款纠纷报复悬赏GS宿舍地址</div>
                         </div>
                       </td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
