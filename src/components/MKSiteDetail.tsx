@@ -60,7 +60,7 @@ export const MKSiteDetail = () => {
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-100">
-                    <td rowSpan="5" className="p-4 font-semibold text-center bg-blue-50">MK</td>
+                    <td rowSpan="5" className="p-4 font-semibold text-center bg-blue-50">8</td>
                   </tr>
                   {mkDetailData.map((row, index) => (
                     <tr key={index} className="border-b border-gray-100">
