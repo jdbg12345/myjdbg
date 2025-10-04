@@ -333,10 +333,10 @@ export const Direction1PersonnelCapability = () => {
                     </div>
 
                     <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600" style={{ width: '60px' }}>
-                      <span>1%</span>
-                      <span>0.75%</span>
-                      <span>0.5%</span>
-                      <span>0.25%</span>
+                      <span>1.2%</span>
+                      <span>0.9%</span>
+                      <span>0.6%</span>
+                      <span>0.3%</span>
                       <span>0%</span>
                     </div>
 
@@ -355,7 +355,7 @@ export const Direction1PersonnelCapability = () => {
                         { name: '总部二审', before: 14472, after: 14628, beforeRate: 0.13, afterRate: 0.12}
                       ].map((item, index) => {
                         const maxCount = 160000;
-                        const maxRate = 1;
+                        const maxRate = 1.2;
                         const totalGroups = 4;
                         const chartWidth = 680;
                         const chartHeight = 320;
