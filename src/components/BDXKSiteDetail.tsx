@@ -70,7 +70,7 @@ export const BDXKSiteDetail = () => {
                       <td className="p-3 text-center">{row.dlAmount}</td>
                       <td className="p-3 text-center">{row.dlPercent}%</td>
                       <td className="p-3 text-center">{row.tgAmount}</td>
-                      <td className="p-3 text-center">{row.tgPercent}</td>
+                      <td className="p-3 text-center">{row.tgPercent}%</td>
                     </tr>
                   ))}
                   <tr className="bg-blue-50 border-b border-gray-100">
