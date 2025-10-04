@@ -425,30 +425,6 @@ export const Direction1PersonnelCapability = () => {
 
                       {/* 问题率连线 */}
                       <svg className="absolute inset-0 pointer-events-none z-20" width="680" height="320">
-                        {/* 调整前连线 */}
-                        <polyline
-                          fill="none"
-                          stroke="#3B82F6"
-                          strokeWidth="3"
-                          strokeDasharray="6,4"
-                          opacity="0.8"
-                          points={[
-                            { rate: 1.07, index: 0 },
-                            { rate: 0.82, index: 1 },
-                            { rate: 0.67, index: 2 }
-                          ].map(({ rate, index }) => {
-                            const totalGroups = 4;
-                            const chartWidth = 680;
-                            const chartHeight = 320;
-                            const spacing = chartWidth / totalGroups;
-                            const groupCenterX = spacing * index + spacing / 2;
-                            const barWidth = 40;
-                            const barSpacing = 4;
-                            const x = groupCenterX - barWidth / 2 - barSpacing / 2;
-                            const y = chartHeight - (rate / 2) * chartHeight;
-                            return `${x},${y}`;
-                          }).join(" ")}
-                        />
                         {/* 调整后连线 */}
                         <polyline
                           fill="none"
