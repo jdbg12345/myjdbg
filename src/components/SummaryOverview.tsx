@@ -108,8 +108,12 @@ export const SummaryOverview = () => {
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">3.4.0 会员出款风控</h1>
+      <div className="mb-8 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+        <h1 className="text-5xl font-bold text-gray-800">3.4.0 会员出款风控</h1>
+        <div className="text-gray-500 text-base">
+          <span>下一节：</span>
+          <span className="font-medium ml-2">风险预警</span>
+        </div>
       </div>
 
       {/* Current Status */}

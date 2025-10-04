@@ -76,6 +76,9 @@ export const RiskReview = () => {
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-5xl font-bold text-gray-800 mb-4 border-b-4 border-blue-600 pb-4">4. B端事故问题汇总</h1>
+        <div className="text-gray-500 text-sm italic">
+          注：Q2事故统计概览和事故详细记录已迁移至【3.4.1 会员出款风控 - 事前（风险预警）】模块
+        </div>
       </div>
 
       {/* 统计概览 */}
