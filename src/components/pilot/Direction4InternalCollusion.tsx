@@ -364,7 +364,7 @@ export const Direction4InternalCollusion = () => {
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">内部泄密/钓鱼执法</td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700">
                         <div className="space-y-2">
-                          <div className="font-semibold text-gray-800">共计14人，YH占90%</div>
+                          <div className="font-semibold text-gray-800">共计14人（YH占90%）</div>
                         </div>
                       </td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
