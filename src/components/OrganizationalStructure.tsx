@@ -711,7 +711,6 @@ export const OrganizationalStructure = () => {
               
               <div className="mb-4">
                 <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals['远程']}</div>
-                <div className="text-gray-600 text-sm">当前人数</div>
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
