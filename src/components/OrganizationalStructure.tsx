@@ -456,7 +456,7 @@ export const OrganizationalStructure = () => {
                   </div>
 
                   <div id="agent-audit" className="bg-gradient-to-r from-blue-400 to-blue-500 border-2 border-blue-500 p-3 text-center rounded-lg">
-                    <div className="font-semibold text-white text-sm">佣金审核组</div>
+                    <div className="font-semibold text-white text-sm">YJ审核组</div>
                   </div>
                 </div>
               </div>
@@ -467,7 +467,7 @@ export const OrganizationalStructure = () => {
               
               <div className="text-xs space-y-1 text-gray-700 leading-relaxed">
                 <div className="font-semibold text-blue-600">1、会员出款审核</div>
-                <div className="font-semibold text-blue-600">2、DL佣金审核</div>
+                <div className="font-semibold text-blue-600">2、DLYJ审核</div>
                 <div className="font-semibold text-blue-600">3、账户与资料处理</div>
                 <div className="ml-3">- 虚拟币账户/手机</div>
                 <div className="ml-3">- 证件提交审核</div>
@@ -552,7 +552,7 @@ export const OrganizationalStructure = () => {
                   <div className="text-4xl font-bold text-red-600">{totalPersonnelWithOutsource}</div>
                 </div>
 
-          {/* 质检部门到DL佣金审核组的连线 */}
+          {/* 质检部门到DLYJ审核组的连线 */}
           <svg className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
             <defs>
               <marker id="arrowhead-quality-commission" markerWidth="10" markerHeight="7" 
