@@ -48,10 +48,10 @@ export const TableOfContents = () => {
 
           <div className="ml-12 space-y-3">
             {[
-              { num: "3.1", title: "FK全局说明" },
-              { num: "3.2", title: "FK会员说明" },
-              { num: "3.3", title: "FK内控说明" },
-              { num: "3.4", title: "FKDL说明" }
+              { num: "3.1", title: "全局说明" },
+              { num: "3.2", title: "会员说明" },
+              { num: "3.3", title: "内控说明" },
+              { num: "3.4", title: "DL说明" }
             ].map((item, index) => (
               <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-4">
                 <span className="text-lg font-bold text-gray-600 mr-3">{item.num}</span>
