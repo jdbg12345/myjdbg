@@ -1,5 +1,6 @@
 import React from 'react';
 import { BarChart3, TrendingUp } from 'lucide-react';
+import { DataInsights } from './shared/DataInsights';
 
 export const Y6Y9SiteDetail = () => {
   // 辅助函数：获取最大值最小值的样式类
@@ -111,7 +112,7 @@ export const Y6Y9SiteDetail = () => {
 
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>ZK用户拦截占比33%，主要组成部分为红利套利占比62%</span>
+              <span><span className="font-semibold text-blue-600">ZK用户</span>拦截占比<span className="font-semibold text-blue-600">33%</span>，主要组成部分为红利套利占比<span className="font-semibold text-blue-600">62%</span></span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
