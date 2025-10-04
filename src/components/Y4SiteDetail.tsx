@@ -15,14 +15,14 @@ export const Y4SiteDetail = () => {
 
   // Y4站点明细数据
   const y4DetailData = [
-    { type: '代理类', zkAmount: 0.00, zkPercent: 0.00, dlAmount: 2878.04, dlPercent: 55.17, tgAmount: 71.56, tgPercent: 3.94 },
-    { type: '体育类', zkAmount: 1819.84, zkPercent: 64.48, dlAmount: 1283.51, dlPercent: 24.60, tgAmount: 987.88, tgPercent: 54.35 },
-    { type: '红利类', zkAmount: 421.44, zkPercent: 14.93, dlAmount: 793.94, dlPercent: 15.22, tgAmount: 453.03, tgPercent: 24.93 },
-    { type: '其他类', zkAmount: 580.97, zkPercent: 20.59, dlAmount: 261.32, dlPercent: 5.01, tgAmount: 305.09, tgPercent: 16.79 }
+    { type: '代理类', zkAmount: 0.00, zkPercent: 0.00, dlAmount: 3159.66, dlPercent: 53.23, tgAmount: 7.26, tgPercent: 0.60 },
+    { type: '体育类', zkAmount: 2217.25, zkPercent: 72.67, dlAmount: 1855.88, dlPercent: 31.26, tgAmount: 757.93, tgPercent: 62.97 },
+    { type: '红利类', zkAmount: 381.54, zkPercent: 12.51, dlAmount: 439.90, dlPercent: 7.41, tgAmount: 254.49, tgPercent: 21.14 },
+    { type: '其他类', zkAmount: 853.88, zkPercent: 14.82, dlAmount: 608.41, dlPercent: 8.10, tgAmount: 316.81, tgPercent: 15.29 }
   ];
 
   // 累计占比行的数据（用于最大值最小值高亮）
-  const totalPercentages = [28.63, 52.93, 18.44];
+  const totalPercentages = [31.81, 55.87, 12.31];
 
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
@@ -75,24 +75,23 @@ export const Y4SiteDetail = () => {
                   ))}
                   <tr className="bg-blue-50 border-b border-gray-100">
                     <td className="p-3 font-semibold text-center">小计 | 占比</td>
-                                        <td className="p-3 text-center font-semibold">9856.62</td>
-
-                    <td className="p-3 text-center font-semibold">2822.25</td>
+                    <td className="p-3 text-center font-semibold">10853.00</td>
+                    <td className="p-3 text-center font-semibold">3452.66</td>
                     <td className="p-3 text-center font-semibold">100%</td>
-                    <td className="p-3 text-center font-semibold">5216.81</td>
+                    <td className="p-3 text-center font-semibold">6063.85</td>
                     <td className="p-3 text-center font-semibold">100%</td>
-                    <td className="p-3 text-center font-semibold">1817.56</td>
+                    <td className="p-3 text-center font-semibold">1336.48</td>
                     <td className="p-3 text-center font-semibold">100%</td>
                   </tr>
                   <tr className="bg-gray-100">
-                    <td className="p-3 font-semibold text-center">累计 | 占比</td>
+                    <td className="p-3 font-semibold text-center">总计 | 占比</td>
                     <td className="p-3 text-center font-semibold">100%</td>
                     <td className="p-3 text-center font-semibold"></td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(28.63, totalPercentages)}`}>28.63%</td>
+                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(31.81, totalPercentages)}`}>31.81%</td>
                     <td className="p-3 text-center font-semibold"></td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(52.93, totalPercentages)}`}>52.93%</td>
+                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(55.87, totalPercentages)}`}>55.87%</td>
                     <td className="p-3 text-center font-semibold"></td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(18.44, totalPercentages)}`}>18.44%</td>
+                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(12.31, totalPercentages)}`}>12.31%</td>
                   </tr>
                 </tbody>
               </table>
