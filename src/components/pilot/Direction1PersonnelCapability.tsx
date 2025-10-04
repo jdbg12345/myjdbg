@@ -333,10 +333,10 @@ export const Direction1PersonnelCapability = () => {
                     </div>
 
                     <div className="absolute right-0 h-full flex flex-col justify-between text-sm text-blue-600" style={{ width: '60px' }}>
-                      <span>2%</span>
-                      <span>1.5%</span>
                       <span>1%</span>
+                      <span>0.75%</span>
                       <span>0.5%</span>
+                      <span>0.25%</span>
                       <span>0%</span>
                     </div>
 
