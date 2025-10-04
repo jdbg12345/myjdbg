@@ -655,7 +655,7 @@ export const Direction4InternalCollusion = () => {
                     <div className="space-y-2">
                       <div><span className="font-semibold text-gray-700">场地人员：</span>班次组长管理安全盾，规避检查风险。</div>
                       <div><span className="font-semibold text-gray-700">远程人员：</span>账号权限收至最低标准。盾由场地管理提报且仅虚拟机使用。</div>
-                      <div><span className="font-semibold text-gray-700">居家人员：</span>不会发放U盾、全部放在场地工作人员、统一由场地人员告知验证码。</div>
+                      <div><span className="font-semibold text-gray-700">居家人员：</span>不发U盾、全部放在场地人员、统一由场地人员告知验证码。</div>
                     </div>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
