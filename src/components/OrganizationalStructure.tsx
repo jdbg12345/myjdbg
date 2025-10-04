@@ -14,7 +14,7 @@ export const OrganizationalStructure = () => {
       manager: '主管1人' 
     },
     '体育审核组': {
-      TH: { current: 18, planned: 0, isMain: false },
+      TH: { current: 20, planned: 0, isMain: false },
       DB: { current: 2, planned: 0, isMain: false },
       SLK: { current: 18, planned: 0, isMain: false },
       KJY: { current: 1, planned: 0, isMain: false }, 
@@ -23,7 +23,7 @@ export const OrganizationalStructure = () => {
       manager: '主管1人' 
     },
     '日常出单组': {
-      TH: { current: 12, planned: 0, isMain: false },
+      TH: { current: 30, planned: 0, isMain: false },
       DB: { current: 72, planned: 15, isMain: true },
       SLK: { current: 45, planned: 0, isMain: true },
       KJY: { current: 20, planned: 20, isMain: true }, 
@@ -32,7 +32,7 @@ export const OrganizationalStructure = () => {
       manager: '主管6人' 
     },
     '支持部': {
-      TH: { current: 6, planned: 0, isMain: false },
+      TH: { current: 8, planned: 0, isMain: false },
       DB: { current: 2, planned: 0, isMain: false },
       SLK: { current: 6, planned: 0, isMain: true },
       KJY: { current: 2, planned: 0, isMain: false }, 
@@ -41,7 +41,7 @@ export const OrganizationalStructure = () => {
       manager: '主管1人' 
     },
     '安全稽查部': {
-      TH: { current: 2, planned: 0, isMain: false },
+      TH: { current: 4, planned: 0, isMain: false },
       DB: { current: 1, planned: 5, isMain: true },
       SLK: { current: 0, planned: 0, isMain: false },
       KJY: { current: 0, planned: 0, isMain: false }, 
@@ -59,7 +59,7 @@ export const OrganizationalStructure = () => {
       manager: '研发主管1人' 
     },
     '内控部': {
-      TH: { current: 3, planned: 0, isMain: false },
+      TH: { current: 4, planned: 0, isMain: false },
       DB: { current: 1, planned: 15, isMain: false },
       SLK: { current: 0, planned: 15, isMain: true },
       KJY: { current: 4, planned: 15, isMain: false }, 
@@ -107,13 +107,15 @@ export const OrganizationalStructure = () => {
     '外包': 0
   };
 
-  // 更新总人数为361，计划新增为7
-  const totalPersonnel = 361;
+  // 总人数计算：含外包 = 386，非外包 = 386 - 133 = 253
+  const totalPersonnelWithOutsource = 386; // 含外包
+  const totalPersonnelNoOutsource = 253; // 非外包
   const totalPlannedPersonnel = 92;
 
   // 场地转移计划数据
   const transferPlan = [
-    { from: 'TH', to: 'SLK', currentCount: 42, count: 42, timing: 'Q4完成', note: 'Q3已转移56人，剩余签证办理中，预计第四季度迁移完毕' }
+    { from: 'TH', to: 'SLK', currentCount: 42, count: 42, timing: 'Q4完成', note: 'Q3已转移56人，剩余签证办理中，预计第四季度迁移完毕' },
+    { from: '招聘', to: 'KJY', currentCount: 27, count: '30-50', timing: 'Q4完成', note: 'KJY为主要招聘地区，四季度目标扩张人员至30～50人' }
   ];
 
   // 计算转移计划的合计当前人数
@@ -547,7 +549,7 @@ export const OrganizationalStructure = () => {
               <div className="flex items-center justify-center space-x-8">
                 <div className="text-center">
                   <div className="text-lg text-gray-600 mb-2">合计人数（含外包）</div>
-                  <div className="text-4xl font-bold text-red-600">{Object.values(locationTotals).reduce((sum, count) => sum + count, 0)}</div>
+                  <div className="text-4xl font-bold text-red-600">{totalPersonnelWithOutsource}</div>
                 </div>
 
           {/* 质检部门到代理佣金审核组的连线 */}
@@ -570,7 +572,7 @@ export const OrganizationalStructure = () => {
                 <div className="w-px h-16 bg-gray-300"></div>
                 <div className="text-center">
                   <div className="text-lg text-gray-600 mb-2">合计人数（非外包）</div>
-                  <div className="text-4xl font-bold text-blue-600">{totalPersonnel}</div>
+                  <div className="text-4xl font-bold text-blue-600">{totalPersonnelNoOutsource}</div>
                 </div>
                 <div className="w-px h-16 bg-gray-300"></div>
           
@@ -806,13 +808,14 @@ export const OrganizationalStructure = () => {
                 <td className="p-6 text-gray-800">合计</td>
                 <td className="p-6 text-center">
                   <span className="text-xl font-bold text-blue-600">
-                    {transferPlan.reduce((sum, transfer) => sum + (transfer.currentCount || transfer.count), 0)}
+                    {transferPlan.reduce((sum, transfer) => {
+                      const count = typeof transfer.currentCount === 'number' ? transfer.currentCount : 0;
+                      return sum + count;
+                    }, 0)}
                   </span>
                 </td>
                 <td className="p-6 text-center">
-                  <span className="text-2xl font-bold text-red-600">
-                    {transferPlan.reduce((sum, transfer) => sum + transfer.count, 0)}
-                  </span>
+                  <span className="text-2xl font-bold text-red-600">-</span>
                 </td>
                 <td className="p-6 text-center text-gray-600"></td>
                 <td className="p-6 text-center text-gray-600"></td>
