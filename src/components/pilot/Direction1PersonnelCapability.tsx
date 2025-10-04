@@ -408,7 +408,7 @@ export const Direction1PersonnelCapability = () => {
 
                           {/* 调整后错误率点 */}
                           <div
-                            className="absolute w-4 h-4 bg-green-400 rounded-full border-2 border-white z-10"
+                            className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white z-10"
                             style={{
                               bottom: `${rateBottomAfter}px`,
                               left: `${groupCenterX + barWidth / 2 + barSpacing / 2}px`,
