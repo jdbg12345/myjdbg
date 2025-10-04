@@ -366,7 +366,7 @@ export const Direction4InternalCollusion = () => {
                       <div className="bg-blue-50 rounded p-3 text-center">
                         <div className="text-xs text-gray-600 mb-1">第三季度培训</div>
                         <div className="text-2xl font-bold text-blue-600">36人</div>
-                        <div className="text-xs text-gray-600 mt-1">内控22人 | 一审12人 | 产品2人</div>
+                        <div className="text-xs text-gray-600 mt-1">内控22人 | 一审12人 | 系统2人</div>
                       </div>
                       <div className="bg-gray-50 rounded p-3 text-center">
                         <div className="text-xs text-gray-600 mb-1">第二季度培训</div>
