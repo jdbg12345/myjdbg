@@ -44,7 +44,7 @@ export const SportsOverallKillRate = () => {
   const pandaTotalRates = [3.89, 2.42, 4.90, 3.74];
 
   return (
-    <div className="bg-white rounded-lg p-6 mb-4 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 pb-16 relative">
       <div className="mb-3 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.9 体育整体杀率明细</h1>
         <div className="text-gray-500 text-base">

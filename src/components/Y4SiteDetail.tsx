@@ -25,7 +25,7 @@ export const Y4SiteDetail = () => {
   const totalPercentages = [31.81, 55.87, 12.31];
 
   return (
-    <div className="bg-white rounded-lg p-6 mb-4 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 pb-16 relative">
       {/* Header */}
       <div className="mb-3 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.3 防范金突出站点-4明细</h1>
