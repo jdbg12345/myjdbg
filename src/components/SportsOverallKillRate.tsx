@@ -1,7 +1,6 @@
 import React from 'react';
 import { BarChart3, TrendingUp } from 'lucide-react';
 import { formatPercent } from '../utils/formatters';
-import { DataInsights } from './shared/DataInsights';
 
 export const SportsOverallKillRate = () => {
   const getMinMaxClass = (value: number, values: number[]) => {
@@ -190,19 +189,32 @@ export const SportsOverallKillRate = () => {
         </div>
       </div>
 
-      <DataInsights
-        insights={[
-          {
-            text: '<span class="font-semibold text-red-600">DB体育场馆是含有大量内嵌真人、彩票订单，此杀率数据已排除内嵌真人与彩票</span>'
-          },
-          {
-            text: '熊猫第3季度杀率只有<span class="font-semibold text-red-600">3.74%</span>与上半年差不多，较整体<span class="font-semibold text-red-600">低2.04%</span>，属B系较为严重只有<span class="font-semibold text-red-600">2.81%</span>'
-          },
-          {
-            text: '熊猫在BW的表现长期较为优越的，第3季度达到<span class="font-semibold text-green-600">5.3%</span>'
-          }
-        ]}
-      />
+      {/* 数据解读 */}
+      <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <TrendingUp className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">数据解读</h2>
+        </div>
+
+        <div className="bg-white rounded-lg p-6">
+          <div className="space-y-3 text-gray-700">
+            <div className="flex items-start">
+              <span className="text-blue-600 mr-2">●</span>
+              <span><span className="font-semibold text-red-600">DB体育场馆是含有大量内嵌真人、彩票订单，此杀率数据已排除内嵌真人与彩票</span></span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-blue-600 mr-2">●</span>
+              <span><span className="font-semibold text-blue-600">熊猫第3季度</span>杀率只有<span className="font-semibold text-red-600">3.74%</span>与上半年差不多，较整体<span className="font-semibold text-red-600">低2.04%</span>，属<span className="font-semibold text-red-600">B系较为严重</span>只有<span className="font-semibold text-red-600">2.81%</span></span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-blue-600 mr-2">●</span>
+              <span><span className="font-semibold text-green-600">熊猫在BW的表现长期较为优越的</span>，第3季度达到<span className="font-semibold text-green-600">5.3%</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="text-gray-400 text-sm">FKZX Q3 REPORT</div>

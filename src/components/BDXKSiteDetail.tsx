@@ -1,6 +1,5 @@
 import React from 'react';
 import { BarChart3, TrendingUp } from 'lucide-react';
-import { DataInsights } from './shared/DataInsights';
 
 export const BDXKSiteDetail = () => {
   // 辅助函数：获取最大值最小值的样式类
@@ -123,9 +122,9 @@ export const BDXKSiteDetail = () => {
               <span className="text-blue-600 mr-2">●</span>
               <span><span className="font-semibold text-blue-600">TG用户</span>拦截占比<span className="font-semibold text-blue-600">7%</span>，主要为体育套利占比<span className="font-semibold text-blue-600">52%</span></span>
             </div>
-             <div className="flex items-start">
+            <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold text-red-600">DL拦截占比整体较高</span>（占比：基础<span className="font-semibold text-blue-600">18%</span>，额外<span className="font-semibold text-blue-600">26%</span>，人头费<span className="font-semibold text-blue-600">34%</span>）；<span className="font-semibold">结论：</span>新代理额外佣金及人头费拦截占主要组成部分，<span className="font-semibold text-green-600">8月调整后，人头费当月占比降至10%</span></span>
+              <span><span className="font-semibold">问题：</span><span className="font-semibold text-red-600">DL拦截占比整体较高</span>（占比：基础<span className="font-semibold text-blue-600">18%</span>，额外<span className="font-semibold text-blue-600">26%</span>，人头费<span className="font-semibold text-blue-600">34%</span>）；<span className="font-semibold">结论：</span>新代理额外佣金及人头费拦截占主要组成部分，<span className="font-semibold text-green-600">8月调整后，人头费当月占比降至10%</span></span>
             </div>
 
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
