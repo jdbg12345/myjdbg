@@ -256,252 +256,287 @@ export const Direction4InternalCollusion = () => {
           </div>
           
           {/* 稽查成果详细内容 */}
-          <div className="space-y-6">
+          <div className="space-y-8">
 
-            {/* 7月份 */}
-            <div className="bg-gradient-to-r from-blue-50 to-white rounded-lg p-6 border border-blue-200">
-              <div className="flex items-center mb-4">
-                <div className="w-20 h-10 bg-blue-600 rounded flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold">7月份</span>
+            {/* 1️⃣ 调查成果总览 */}
+            <div className="bg-gradient-to-br from-blue-50 via-white to-blue-50 rounded-xl p-8 border-2 border-blue-300 shadow-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-xl">1️⃣</span>
                 </div>
-                <h5 className="text-lg font-semibold text-gray-800">卖出账号测试</h5>
+                <h4 className="text-2xl font-bold text-gray-800">调查成果总览</h4>
               </div>
-              <div className="pl-6 space-y-3 text-gray-700 leading-relaxed">
-                <div><span className="font-semibold text-blue-600">卖出账号：</span>Rob*****V7，按照计划成功卖至外部团队，而后根据其操作手法进行了记录（总结在第10页）。并同步了对应BM，做好防范措施。</div>
-              </div>
-            </div>
 
-            {/* 8月份 */}
-            <div className="bg-gradient-to-r from-orange-50 to-white rounded-lg p-6 border border-orange-200">
-              <div className="flex items-center mb-4">
-                <div className="w-20 h-10 bg-orange-600 rounded flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold">8月份</span>
+              {/* 调查案件总数 */}
+              <div className="bg-white rounded-lg p-6 mb-6 border-2 border-blue-200 shadow-sm">
+                <div className="flex items-center justify-between mb-4">
+                  <h5 className="text-lg font-semibold text-gray-800">调查案件总数</h5>
+                  <div className="text-5xl font-bold text-blue-600">5</div>
                 </div>
-                <h5 className="text-lg font-semibold text-gray-800">账号备注泄露事件</h5>
-              </div>
-              <div className="pl-6 space-y-3 text-gray-700 leading-relaxed">
-                <div>
-                  <span className="font-semibold text-orange-600">账号备注内容：</span>YH 6人: 583** Iva****、536** Waf*****、555** Sub****、584** Mak****、Ysah****、Uby******与外部合作，协助查询账号备注内容后外发。
-                </div>
-                <div>
-                  <span className="font-semibold text-red-600">处置结果：</span>即刻开除。
-                </div>
-              </div>
-            </div>
-
-            {/* 监控录屏 */}
-            <div className="bg-gradient-to-r from-red-50 to-white rounded-lg p-6 border border-red-200">
-              <div className="flex items-center mb-4">
-                <div className="w-28 h-10 bg-red-600 rounded flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold">监控录屏</span>
-                </div>
-                <h5 className="text-lg font-semibold text-gray-800">钓鱼执法成果</h5>
-              </div>
-              <div className="pl-6 space-y-3 text-gray-700 leading-relaxed">
-                <div>通过安插在外部套利团队的员工得知，查询账号备注信息一个可得<span className="font-semibold text-blue-600">10U</span>，在7月得知外部团队已获得大量GS内部人员的协助，此后JC内部调动人员，全员投入钓鱼执法和查询录屏。</div>
-                <div className="bg-white rounded p-3 border border-red-200">
-                  <span className="font-semibold text-red-600">2-9月份总计：</span><span className="text-2xl font-bold text-red-600 mx-2">23名</span>违规人员
-                </div>
-                <div className="bg-white rounded p-3 border border-red-200">
-                  <span className="font-semibold text-red-600">8-9月份：</span>共有<span className="text-2xl font-bold text-red-600 mx-2">14名</span>GS员工被逮获（<span className="font-semibold">YH占90%</span>）
-                </div>
-              </div>
-            </div>
-
-            {/* 内幕信息 */}
-            <div className="bg-gradient-to-r from-purple-50 to-white rounded-lg p-6 border border-purple-200">
-              <div className="flex items-center mb-4">
-                <div className="w-28 h-10 bg-purple-600 rounded flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold">内幕信息</span>
-                </div>
-                <h5 className="text-lg font-semibold text-gray-800">外部套利团队情况</h5>
-              </div>
-              <div className="pl-6 space-y-3 text-gray-700 leading-relaxed">
-                <div>外部套利团队里部分是从咱<span className="font-semibold text-blue-600">GS离职出去的</span>。其团队中有<span className="font-semibold text-purple-600">JS出身和FK出身的老油条</span>，熟悉BC行业所有细节流程。</div>
-                <div className="bg-white rounded p-3 border border-purple-200">
-                  <div className="font-semibold text-purple-600 mb-2">近几个月主要业务：</div>
-                  <div className="space-y-1 pl-4">
-                    <div>• 查询账号备注信息</div>
-                    <div>• 协助出黑款业务</div>
-                    <div>• 买号业务已暂缓（因针对账号的要求较高）</div>
+                <div className="grid grid-cols-5 gap-3 mt-4">
+                  <div className="bg-blue-50 rounded p-3 text-center border border-blue-200">
+                    <div className="text-xs text-gray-600 mb-1">账号销售测试</div>
+                    <div className="text-sm font-semibold text-blue-600">✓</div>
+                  </div>
+                  <div className="bg-blue-50 rounded p-3 text-center border border-blue-200">
+                    <div className="text-xs text-gray-600 mb-1">YH对外协作</div>
+                    <div className="text-sm font-semibold text-blue-600">✓</div>
+                  </div>
+                  <div className="bg-blue-50 rounded p-3 text-center border border-blue-200">
+                    <div className="text-xs text-gray-600 mb-1">内部泄密与钓鱼执法</div>
+                    <div className="text-sm font-semibold text-blue-600">✓</div>
+                  </div>
+                  <div className="bg-blue-50 rounded p-3 text-center border border-blue-200">
+                    <div className="text-xs text-gray-600 mb-1">安插外部测试</div>
+                    <div className="text-sm font-semibold text-blue-600">✓</div>
+                  </div>
+                  <div className="bg-blue-50 rounded p-3 text-center border border-blue-200">
+                    <div className="text-xs text-gray-600 mb-1">内部违规人员调查</div>
+                    <div className="text-sm font-semibold text-blue-600">✓</div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* 已卖出V1账号 */}
-            <div className="bg-gradient-to-r from-green-50 to-white rounded-lg p-6 border border-green-200">
-              <div className="flex items-center mb-4">
-                <div className="w-32 h-10 bg-green-600 rounded flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold">已卖出V1账号</span>
+              {/* 违规人员处置 */}
+              <div className="bg-white rounded-lg p-6 mb-6 border-2 border-orange-200 shadow-sm">
+                <h5 className="text-lg font-semibold text-gray-800 mb-4">违规人员处置</h5>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-red-50 rounded-lg p-4 border-2 border-red-200">
+                    <div className="flex items-center justify-between">
+                      <span className="text-gray-700 font-medium">开除</span>
+                      <span className="text-3xl font-bold text-red-600">6人</span>
+                    </div>
+                    <div className="text-xs text-gray-600 mt-2">8月份YH对外协作6人</div>
+                  </div>
+                  <div className="bg-orange-50 rounded-lg p-4 border-2 border-orange-200">
+                    <div className="flex items-center justify-between">
+                      <span className="text-gray-700 font-medium">查获并处置</span>
+                      <span className="text-3xl font-bold text-orange-600">23人</span>
+                    </div>
+                    <div className="text-xs text-gray-600 mt-2">内部泄密/钓鱼执法</div>
+                  </div>
+                  <div className="bg-purple-50 rounded-lg p-4 border-2 border-purple-200">
+                    <div className="flex items-center justify-between">
+                      <span className="text-gray-700 font-medium">特殊处理</span>
+                      <span className="text-3xl font-bold text-purple-600">1人</span>
+                    </div>
+                    <div className="text-xs text-gray-600 mt-2">Ge*，不发奖金与底薪，ZG介入</div>
+                  </div>
+                  <div className="bg-green-50 rounded-lg p-4 border-2 border-green-200">
+                    <div className="flex items-center justify-between">
+                      <span className="text-gray-700 font-medium">持续关注</span>
+                      <span className="text-3xl font-bold text-green-600">1个</span>
+                    </div>
+                    <div className="text-xs text-gray-600 mt-2">V1账号（账号销售测试）</div>
+                  </div>
                 </div>
-                <h5 className="text-lg font-semibold text-gray-800">测试结果</h5>
               </div>
-              <div className="pl-6 space-y-3 text-gray-700 leading-relaxed">
-                <div>对方于外部群发布大量收取账号，主动与其联系并出售了<span className="font-semibold text-blue-600">1个账号（7月份）</span>。但之后并无任何存提甚至投注行为直至今日。</div>
-                <div className="bg-white rounded p-3 border border-green-200">
-                  <span className="font-semibold text-green-600">试探性询问后得知：</span>账号等级较低不好操作，新的买号要求是更高等级的号。但<span className="font-semibold text-red-600">高V的号市场上几乎买不到</span>。
-                </div>
-              </div>
-            </div>
 
-            {/* 安插人员加入套利团队 */}
-            <div className="bg-gradient-to-r from-indigo-50 to-white rounded-lg p-6 border border-indigo-200">
-              <div className="flex items-center mb-4">
-                <div className="w-40 h-10 bg-indigo-600 rounded flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold text-sm">安插人员学习手法</span>
+              {/* 买卖号测试 */}
+              <div className="bg-white rounded-lg p-6 border-2 border-yellow-200 shadow-sm">
+                <div className="flex items-center justify-between mb-4">
+                  <h5 className="text-lg font-semibold text-gray-800">买卖号测试：持续推进</h5>
+                  <span className="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-700">进行中</span>
                 </div>
-                <h5 className="text-lg font-semibold text-gray-800">渗透调查</h5>
-              </div>
-              <div className="pl-6 space-y-3 text-gray-700 leading-relaxed">
-                <div>与其取得信任后介绍了"朋友"给他并向他学习，收费<span className="font-semibold text-blue-600">1,500U</span>，但为避免受骗，前期告知借用他人的账号来实验，不提款。</div>
-                <div className="bg-white rounded p-3 border border-indigo-200">
-                  <span className="font-semibold text-indigo-600">目的：</span>要知道手法而不是被FK。并得知其投注手法。
-                </div>
-              </div>
-            </div>
 
-            {/* 买卖号前置要求 */}
-            <div className="bg-gradient-to-r from-yellow-50 to-white rounded-lg p-6 border border-yellow-300">
-              <div className="flex items-center mb-4">
-                <div className="w-40 h-10 bg-yellow-600 rounded flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold">买卖号前置要求</span>
-                </div>
-                <h5 className="text-lg font-semibold text-gray-800">最新要求标准</h5>
-              </div>
-              <div className="pl-6 space-y-4">
-                <div className="bg-white rounded-lg p-4 border-2 border-yellow-300">
-                  <div className="grid grid-cols-2 gap-4 mb-3">
-                    <div className="flex items-start">
+                <div className="bg-yellow-50 rounded-lg p-5 border-2 border-yellow-200">
+                  <h6 className="font-semibold text-yellow-800 mb-3">最新前置要求：</h6>
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="bg-white rounded p-3 border border-yellow-300">
                       <span className="text-yellow-600 font-bold mr-2">①</span>
-                      <span className="text-gray-700"><span className="font-semibold text-yellow-600">V4以上</span>且注册时间超过<span className="font-semibold">6个月</span></span>
+                      <span className="text-gray-700"><span className="font-semibold text-yellow-700">V4以上</span>且注册时间<span className="font-semibold">&gt;6个月</span></span>
                     </div>
-                    <div className="flex items-start">
+                    <div className="bg-white rounded p-3 border border-yellow-300">
                       <span className="text-yellow-600 font-bold mr-2">②</span>
-                      <span className="text-gray-700">负盈利<span className="font-semibold text-yellow-600">20w++</span></span>
+                      <span className="text-gray-700">负盈利<span className="font-semibold text-yellow-700">20w++</span></span>
                     </div>
-                    <div className="flex items-start">
+                    <div className="bg-white rounded p-3 border border-yellow-300">
                       <span className="text-yellow-600 font-bold mr-2">③</span>
-                      <span className="text-gray-700"><span className="font-semibold text-yellow-600">IP干净</span>且已通过前期实名的用户</span>
+                      <span className="text-gray-700"><span className="font-semibold text-yellow-700">IP干净</span>且已完成实名</span>
                     </div>
-                    <div className="flex items-start">
+                    <div className="bg-white rounded p-3 border border-yellow-300">
                       <span className="text-yellow-600 font-bold mr-2">④</span>
-                      <span className="text-gray-700">没有被打上<span className="font-semibold text-yellow-600">任何标签</span>的优势账号</span>
+                      <span className="text-gray-700">无<span className="font-semibold text-yellow-700">任何标签</span>的优势账号</span>
                     </div>
                   </div>
-                  <div className="bg-yellow-50 rounded p-3 border border-yellow-200">
-                    <div className="font-semibold text-yellow-700 mb-1">原因：</div>
-                    <div className="text-sm text-gray-700">存款和活动优势较大，出款容易，加上高V和负盈利的记录，可避开FK严查。</div>
-                  </div>
-                </div>
-                <div className="bg-red-50 rounded p-3 border border-red-200">
-                  <span className="font-semibold text-red-600">注：</span>暂无渠道收购以上要求的账号
-                </div>
-              </div>
-            </div>
-
-            {/* 出黑款业务 */}
-            <div className="bg-gradient-to-r from-pink-50 to-white rounded-lg p-6 border border-pink-200">
-              <div className="flex items-center mb-4">
-                <div className="w-32 h-10 bg-pink-600 rounded flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold">出黑款业务</span>
-                </div>
-                <h5 className="text-lg font-semibold text-gray-800">替代方案</h5>
-              </div>
-              <div className="pl-6 space-y-3 text-gray-700 leading-relaxed">
-                <div>若账号并不满足以上要求，团队亦可协助出款业务，但<span className="font-semibold text-red-600">并非100%成功</span>，但凡成功即收取<span className="font-semibold text-pink-600">最高50%费用</span>（分多笔操作）。</div>
-                <div className="bg-white rounded p-3 border border-pink-200">
-                  <span className="font-semibold text-pink-600">要求：</span>账号内必须要有<span className="font-semibold">较高的余额</span>。
-                </div>
-              </div>
-            </div>
-
-            {/* 结论分析 */}
-            <div className="bg-gradient-to-r from-gray-100 to-white rounded-lg p-6 border-2 border-gray-400">
-              <div className="flex items-center mb-4">
-                <div className="w-28 h-10 bg-gray-700 rounded flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold">结论分析</span>
-                </div>
-                <h5 className="text-lg font-semibold text-gray-800">JC建议调整方案</h5>
-              </div>
-              <div className="pl-6 space-y-4">
-                <div className="bg-white rounded p-4 border border-gray-300">
-                  <div className="font-semibold text-gray-700 mb-2">针对该账号的行为分析：</div>
-                  <div className="text-gray-700 leading-relaxed pl-4">
-                    <div>• 主要都是以投注手法试图套利，考验FK的机制和能力</div>
-                    <div>• 其次是各类的福利奖金优势大</div>
-                  </div>
-                </div>
-
-                <div className="bg-blue-50 rounded-lg p-4 border-2 border-blue-300">
-                  <div className="font-semibold text-blue-700 mb-3">若要彻底杜绝买卖号行为实属困难，JC的建议调整如下：</div>
-                  <div className="space-y-3">
-                    <div className="bg-white rounded p-3 border border-blue-200">
-                      <span className="font-semibold text-blue-600">① 福利调整：</span>
-                      <span className="text-gray-700">各类福利彩金适当减少/提高倍数和更多限制</span>
-                    </div>
-                    <div className="bg-white rounded p-3 border border-blue-200">
-                      <span className="font-semibold text-blue-600">② 新增流程：</span>
-                      <span className="text-gray-700">每当FK审批出款之时但凡觉得有异常的账号，出款前同步至WH，由WH去联系会员核实基础信息是否为本人，核实无误后才给予出款，减少被套利团队钻漏洞。</span>
-                    </div>
+                  <div className="bg-white rounded p-3 border-2 border-yellow-300">
+                    <span className="font-semibold text-yellow-700">原因：</span>
+                    <span className="text-gray-700 text-sm">存款和活动优势大，出款容易，高V和负盈利可避开FK严查</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* ③ 其它特殊工作事项 */}
-            <div className="bg-gradient-to-r from-red-50 to-white rounded-lg p-6 border-2 border-red-300">
-              <div className="flex items-center mb-4">
-                <div className="w-48 h-10 bg-red-600 rounded flex items-center justify-center mr-4">
-                  <span className="text-white font-semibold">③ 其它特殊工作事项</span>
+            {/* 2️⃣ 详细案件记录 */}
+            <div className="bg-gradient-to-br from-gray-50 via-white to-gray-50 rounded-xl p-8 border-2 border-gray-300 shadow-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-white font-bold text-xl">2️⃣</span>
                 </div>
-                <h5 className="text-lg font-semibold text-gray-800">悬赏事件调查</h5>
+                <h4 className="text-2xl font-bold text-gray-800">详细案件记录</h4>
               </div>
-              <div className="pl-6 space-y-4">
-                <div className="bg-white rounded-lg p-4 border-2 border-red-200">
-                  <div className="font-semibold text-red-600 mb-3">调查结果：</div>
-                  <div className="text-gray-700 mb-3">根据该名称初步判断为GS内部人员，最终联系到所负责的部长Mil得知：</div>
-                  <div className="grid grid-cols-2 gap-3 mb-3">
-                    <div className="bg-red-50 rounded p-2 border border-red-200">
-                      <span className="font-semibold text-gray-700">英文名：</span><span className="text-red-600">Ge*</span>
-                    </div>
-                    <div className="bg-red-50 rounded p-2 border border-red-200">
-                      <span className="font-semibold text-gray-700">验证码：</span><span className="text-red-600">TJ0**</span>
-                    </div>
-                    <div className="bg-red-50 rounded p-2 border border-red-200">
-                      <span className="font-semibold text-gray-700">入职日期：</span>2025年4月28日
-                    </div>
-                    <div className="bg-red-50 rounded p-2 border border-red-200">
-                      <span className="font-semibold text-gray-700">最后在岗日期：</span>2025年8月21日
-                    </div>
-                  </div>
-                </div>
 
-                <div className="bg-white rounded-lg p-4 border-2 border-orange-200">
-                  <div className="font-semibold text-orange-600 mb-2">原因：</div>
-                  <div className="text-gray-700">Ge*所发展代理因FK不予出款，最终出本金扣3w盈利，扣除盈利后伙同代理、会员报复悬赏。</div>
-                  <div className="bg-orange-50 rounded p-3 mt-2 border border-orange-200">
-                    <div className="text-sm text-gray-700">
-                      <span className="font-semibold">资金流水：</span>存：21,450 / 提：51,007.00
-                    </div>
-                  </div>
-                </div>
+              {/* 表格 */}
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-gray-700">
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">月份</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">案件类型</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">涉及人员</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">违规行为</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">处置结果</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">备注</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {/* 7月份 - 账号销售测试 */}
+                    <tr className="hover:bg-blue-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-blue-600 bg-blue-50">7月份</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">账号销售测试</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">
+                        <div className="space-y-1">
+                          <div>• Rob*****V7（等级V7）</div>
+                          <div>• 另售出1个V1账号</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
+                        <div className="space-y-2">
+                          <div>按计划卖至外部团队，跟踪记录操作手法。</div>
+                          <div className="text-orange-600">V1账号因等级过低未被使用。</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
+                        <div className="space-y-1">
+                          <div>✓ 已同步BM防范</div>
+                          <div>⚠ V1账号持续关注</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
+                        <div className="bg-yellow-50 rounded p-2 border border-yellow-200">
+                          <div className="font-semibold text-yellow-700 mb-1">买卖号前置要求：</div>
+                          <div className="space-y-1 text-xs">
+                            <div>① V4+ 且注册&gt;6个月</div>
+                            <div>② 负盈利20w++</div>
+                            <div>③ IP干净+实名</div>
+                            <div>④ 无标签账号</div>
+                          </div>
+                          <div className="mt-2 text-xs text-gray-600">原因：存款/活动优势大，出款容易，高V+负盈利可避开FK严查。</div>
+                        </div>
+                      </td>
+                    </tr>
 
-                <div className="bg-white rounded-lg p-4 border-2 border-purple-200">
-                  <div className="font-semibold text-purple-600 mb-2">处理：</div>
-                  <div className="text-gray-700 space-y-2">
-                    <div>事发后认为这个同事是和代理、会员一伙的。套公司佣金，被扣盈利后举报GS宿舍。</div>
-                    <div>所以决定<span className="font-semibold text-red-600">不发未发放的奖金和底薪</span>，最终导致这个员工继续悬赏GS宿舍地址。</div>
-                    <div className="bg-purple-50 rounded p-2 border border-purple-200">
-                      <span className="font-semibold text-purple-600">后续跟进：</span>Mil上级已经安排<span className="font-semibold text-blue-600">ZG介入处理</span>。
-                    </div>
-                  </div>
-                </div>
+                    {/* 8月份 - YH对外协作 */}
+                    <tr className="hover:bg-orange-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-orange-600 bg-orange-50">8月份</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">YH对外协作</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
+                        <div className="space-y-1">
+                          <div>• 583** Iva****</div>
+                          <div>• 536** Waf*****</div>
+                          <div>• 555** Sub****</div>
+                          <div>• 584** Mak****</div>
+                          <div>• Ysah****</div>
+                          <div>• Uby******</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">与外部合作，协助查询账号备注内容并外发</td>
+                      <td className="border border-gray-300 px-4 py-4">
+                        <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600 inline-block">即刻开除</span>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-center text-gray-400">—</td>
+                    </tr>
+
+                    {/* 2-9月 - 内部泄密/钓鱼执法 */}
+                    <tr className="hover:bg-red-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-red-600 bg-red-50">2-9月</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">内部泄密/钓鱼执法</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">
+                        <div className="space-y-2">
+                          <div className="font-semibold text-red-600">共计23人</div>
+                          <div className="text-sm">其中8-9月14人</div>
+                          <div className="text-sm text-orange-600">YH占90%</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
+                        <div className="space-y-2">
+                          <div>内部员工协助外部团队查询备注信息</div>
+                          <div className="bg-blue-50 rounded p-2 border border-blue-200">
+                            <span className="font-semibold text-blue-600">价格：</span>每条10U
+                          </div>
+                          <div>JC全员投入钓鱼执法</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4">
+                        <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600 inline-block">全部查获，逐一处置</span>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
+                        <div className="bg-purple-50 rounded p-2 border border-purple-200">
+                          <div className="font-semibold text-purple-600 mb-1">内幕信息：</div>
+                          <div className="space-y-1 text-xs">
+                            <div>• 外部套利团队部分为GS离职人员</div>
+                            <div>• 含JS与FK出身的老油条</div>
+                            <div>• 熟悉BC行业流程</div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    {/* 7-9月 - 安插外部测试 */}
+                    <tr className="hover:bg-indigo-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-indigo-600 bg-indigo-50">7-9月</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">安插外部测试</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">安插人员加入套利团队</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
+                        <div className="space-y-2">
+                          <div>支付学习费<span className="font-semibold text-blue-600">1500U</span></div>
+                          <div>以借用他人账号进行手法学习</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">
+                        <div className="space-y-1 text-sm">
+                          <div>✓ 获取投注套利手法</div>
+                          <div>✓ 获取出黑款模式</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4">
+                        <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">持续推进，收集中</span>
+                      </td>
+                    </tr>
+
+                    {/* 8月份 - 内部违规人员调查 */}
+                    <tr className="hover:bg-purple-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-purple-600 bg-purple-50">8月份</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">内部违规人员调查</td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700">
+                        <div className="space-y-1 text-sm">
+                          <div><span className="font-semibold">英文名：</span>Ge*</div>
+                          <div><span className="font-semibold">验证码：</span>TJ0**</div>
+                          <div><span className="font-semibold">入职：</span>2025/4/28</div>
+                          <div><span className="font-semibold">最后在岗：</span>2025/8/21</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
+                        <div className="space-y-2">
+                          <div>与代理、会员同伙</div>
+                          <div className="text-red-600">因出款纠纷报复悬赏GS宿舍地址</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
+                        <div className="space-y-1">
+                          <div className="text-red-600 font-semibold">不发放奖金和底薪</div>
+                          <div className="text-blue-600 font-semibold">ZG已介入处理</div>
+                        </div>
+                      </td>
+                      <td className="border border-gray-300 px-4 py-4 text-center text-gray-400">—</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
 
           </div>
-                   
+
         </div>
       </div>
 
