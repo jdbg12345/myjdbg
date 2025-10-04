@@ -338,7 +338,7 @@ export const OrganizationalStructure = () => {
       <div className="bg-white rounded-xl p-8 mb-12 border border-gray-200 relative">
         <div className="flex items-center space-x-4 mb-8">
           <Network className="w-8 h-8 text-blue-600" />
-          <h2 className="text-3xl font-bold text-gray-800">ZZ</h2>
+          <h2 className="text-3xl font-bold text-gray-800">BM</h2>
     
         </div>
         
