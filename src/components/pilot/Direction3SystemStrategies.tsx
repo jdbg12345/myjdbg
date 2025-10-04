@@ -927,7 +927,6 @@ export const Direction3SystemStrategies = () => {
                   <th className="p-4 text-left font-semibold">问题描述</th>
                   <th className="p-4 text-center font-semibold w-24 whitespace-nowrap">问题原因</th>
                   <th className="p-4 text-center font-semibold w-24 whitespace-nowrap">问题影响</th>
-                  <th className="p-4 text-center font-semibold w-40">当前状态</th>
                 </tr>
               </thead>
               <tbody>
@@ -943,11 +942,7 @@ export const Direction3SystemStrategies = () => {
                       </span>
                     </td>
                     <td className="p-4 text-center font-bold text-red-600 whitespace-nowrap">{incident.impact}</td>
-                    <td className="p-4 text-center">
-                      <span className={`px-3 py-1 rounded-full text-sm font-semibold ${incident.statusColor}`}>
-                        {incident.status}
-                      </span>
-                    </td>
+              
                   </tr>
                 ))}
               </tbody>
