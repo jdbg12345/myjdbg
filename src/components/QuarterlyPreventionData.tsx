@@ -32,7 +32,7 @@ export const QuarterlyPreventionData = () => {
         <h1 className="text-5xl font-bold text-gray-800">2.1 防范单量与金额</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
-          <span className="font-medium ml-2">防范金额各站点类型占比</span>
+          <span className="font-medium ml-2">防范金类型占比</span>
         </div>
       </div>
 
