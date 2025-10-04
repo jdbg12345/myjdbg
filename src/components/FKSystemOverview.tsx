@@ -320,14 +320,14 @@ export const FKSystemOverview = () => {
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
                     <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-增强</span>
-                    <span>前几次提款需要人工</span>
+                    <span>前几次提款优化</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">开发中</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
                     <span className="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-600">Q3-增强</span>
-                    <span>多次不经过人工</span>
+                    <span>多次不经过人工优化</span>
                   </div>
                   <span className="px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">开发中</span>
                 </li>
