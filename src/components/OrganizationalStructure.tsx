@@ -403,19 +403,19 @@ export const OrganizationalStructure = () => {
                   <div className="font-semibold text-gray-700 text-xs">B端</div>
                 </div>
                 <div id="user-dept" className="bg-white border border-gray-300 p-2 text-center rounded-lg hover:shadow-md transition-shadow cursor-pointer relative">
-                  <div className="font-semibold text-gray-700 text-xs">用维</div>
+                  <div className="font-semibold text-gray-700 text-xs">WH</div>
                   <div className="absolute -top-2 -right-2 w-5 h-5 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
                 </div>
                 <div id="operation-dept" className="bg-white border border-gray-300 p-2 text-center rounded-lg hover:shadow-md transition-shadow cursor-pointer relative">
-                  <div className="font-semibold text-gray-700 text-xs">运营</div>
+                  <div className="font-semibold text-gray-700 text-xs">YY</div>
                   <div className="absolute -top-2 -right-2 w-5 h-5 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
                 </div>
                 <div id="finance-dept" className="bg-white border border-gray-300 p-2 text-center rounded-lg hover:shadow-md transition-shadow cursor-pointer relative">
-                  <div className="font-semibold text-gray-700 text-xs">财务</div>
+                  <div className="font-semibold text-gray-700 text-xs">CW</div>
                   <div className="absolute -top-2 -right-2 w-5 h-5 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
                 </div>
                 <div id="quality-control" className="bg-white border border-gray-300 p-2 text-center rounded-lg hover:shadow-md transition-shadow cursor-pointer relative">
-                  <div className="font-semibold text-gray-700 text-xs">质检</div>
+                  <div className="font-semibold text-gray-700 text-xs">ZJ</div>
                   <div className="absolute -top-2 -right-2 w-5 h-5 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
                 </div>
                 <div className="text-center flex items-center justify-center">
@@ -433,30 +433,30 @@ export const OrganizationalStructure = () => {
             <div className="bg-white rounded-lg p-4">
               <div id="audit-groups" className="border-3 border-blue-600 rounded-lg bg-gradient-to-b from-blue-100 to-blue-200 p-4 h-full">
                 <div className="text-center mb-4">
-                  <h3 className="text-lg font-bold text-blue-800">审核组</h3>
+                  <h3 className="text-lg font-bold text-blue-800">SH组</h3>
                   <div className="w-16 h-0.5 bg-blue-600 mx-auto mt-1"></div>
                 </div>
                 
                 {/* Vertical layout for audit groups with more spacing */}
                 <div className="h-full flex flex-col justify-between space-y-4" style={{ height: 'calc(100% - 60px)' }}>
                   <div id="sports-audit" className="bg-gradient-to-r from-blue-400 to-blue-500 border-2 border-blue-500 p-3 text-center rounded-lg">
-                    <div className="font-semibold text-white text-sm">体育审核组</div>
+                    <div className="font-semibold text-white text-sm">TY-SH组</div>
                   </div>
 
                   <div id="activity-audit" className="bg-gradient-to-r from-blue-400 to-blue-500 border-2 border-blue-500 p-3 text-center rounded-lg">
-                    <div className="font-semibold text-white text-sm">活动审核组</div>
+                    <div className="font-semibold text-white text-sm">HD-SH组</div>
                   </div>
 
                   <div id="daily-audit" className="bg-gradient-to-r from-blue-400 to-blue-500 border-2 border-blue-500 p-3 text-center rounded-lg">
-                    <div className="font-semibold text-white text-sm">日常出单组</div>
+                    <div className="font-semibold text-white text-sm">RC-SH组</div>
                   </div>
 
                   <div id="data-audit" className="bg-gradient-to-r from-blue-400 to-blue-500 border-2 border-blue-500 p-3 text-center rounded-lg">
-                    <div className="font-semibold text-white text-sm">资料审核组</div>
+                    <div className="font-semibold text-white text-sm">ZL-SH组</div>
                   </div>
 
                   <div id="agent-audit" className="bg-gradient-to-r from-blue-400 to-blue-500 border-2 border-blue-500 p-3 text-center rounded-lg">
-                    <div className="font-semibold text-white text-sm">YJ审核组</div>
+                    <div className="font-semibold text-white text-sm">YJ-SH组</div>
                   </div>
                 </div>
               </div>
