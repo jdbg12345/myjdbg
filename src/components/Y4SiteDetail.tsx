@@ -107,7 +107,7 @@ export const Y4SiteDetail = () => {
           <h2 className="text-3xl font-bold text-gray-800">数据解读</h2>
         </div>
 
-        <div className="bg-white rounded-lg p-2">
+        <div className="p-2">
           <div className="space-y-1.5 text-gray-700">
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>

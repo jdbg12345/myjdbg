@@ -533,9 +533,9 @@ export const OrganizationalStructure = () => {
       </div>
 
       {/* 场地分布统计 */}
-      <div className="bg-white rounded-xl p-8 mb-12 border border-gray-200">
-        <div className="mb-8">
-          <div className="flex items-center justify-between mb-8">
+      <div className="bg-white rounded-xl p-6 mb-8 border border-gray-200">
+        <div className="mb-6">
+          <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-4">
               <Building2 className="w-8 h-8 text-blue-600" />
               <h2 className="text-3xl font-bold text-gray-800">CD分布统计</h2>
@@ -545,7 +545,7 @@ export const OrganizationalStructure = () => {
           {/* 汇总数据区域 */}
           <div className="relative">
             {/* 总人数和计划新增 - 汇总框，添加弱弱的横线 */}
-            <div className="bg-white rounded-xl p-6 border-2 border-blue-300 mb-8 mx-auto max-w-2xl">
+            <div className="bg-white rounded-xl p-4 border-2 border-blue-300 mb-6 mx-auto max-w-2xl">
               <div className="flex items-center justify-center space-x-8">
                 <div className="text-center">
                   <div className="text-lg text-gray-600 mb-2">合计（含YCWB）</div>
@@ -745,8 +745,8 @@ export const OrganizationalStructure = () => {
       </div>
 
       {/* 场地转移计划表格 */}
-      <div className="bg-white rounded-xl p-8 mb-8 border border-gray-200">
-        <div className="flex items-center space-x-4 mb-6">
+      <div className="bg-white rounded-xl p-6 mb-8 border border-gray-200">
+        <div className="flex items-center space-x-4 mb-4">
           <ArrowRight className="w-8 h-8 text-orange-600" />
           <h2 className="text-3xl font-bold text-gray-800">CD转移计划</h2>
         </div>
@@ -755,50 +755,50 @@ export const OrganizationalStructure = () => {
           <table className="w-full border-collapse">
             <thead className="bg-gray-600 text-white">
               <tr>
-                <th className="p-6 text-left font-semibold whitespace-nowrap">转出</th>
-                <th className="p-6 text-center font-semibold whitespace-nowrap">当前</th>
-                <th className="p-6 text-center font-semibold whitespace-nowrap">转移</th>
-                <th className="p-6 text-left font-semibold whitespace-nowrap">转入</th>
-                <th className="p-6 text-center font-semibold whitespace-nowrap">预计时间</th>
-                <th className="p-6 text-left font-semibold">备注</th>
+                <th className="p-4 text-left font-semibold whitespace-nowrap">转出</th>
+                <th className="p-4 text-center font-semibold whitespace-nowrap">当前</th>
+                <th className="p-4 text-center font-semibold whitespace-nowrap">转移</th>
+                <th className="p-4 text-left font-semibold whitespace-nowrap">转入</th>
+                <th className="p-4 text-center font-semibold whitespace-nowrap">预计时间</th>
+                <th className="p-4 text-left font-semibold">备注</th>
               </tr>
             </thead>
             <tbody>
               {transferPlan.map((transfer, index) => (
                 <tr key={index} className="border-b border-gray-100 hover:bg-white transition-colors">
-                  <td className="p-4">
+                  <td className="p-3">
                     <div className="flex items-center space-x-3">
                       <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
                       <span className="font-semibold text-gray-800">{transfer.from}</span>
                     </div>
                   </td>
-                  <td className="p-6 text-center">
+                  <td className="p-3 text-center">
                     <span className="text-xl font-bold text-blue-600">{transfer.currentCount || transfer.count}</span>
                   </td>
-                  <td className="p-6 text-center">
+                  <td className="p-3 text-center">
                     <span className="text-2xl font-bold text-orange-600">{transfer.count}</span>
                   </td>
-                  <td className="p-4">
+                  <td className="p-3">
                     <div className="flex items-center space-x-3">
                       <ArrowRight className="w-5 h-5 text-gray-400" />
                       <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
                       <span className="font-semibold text-gray-800">{transfer.to}</span>
                     </div>
                   </td>
-                  <td className="p-6 text-center">
+                  <td className="p-3 text-center">
                     <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">
                       {transfer.timing}
                     </span>
                   </td>
-                  <td className="p-6 text-gray-600">
+                  <td className="p-3 text-gray-600">
                     {transfer.note || 'KJY为主要招聘地区，三季度目标扩张人员至30～50人；TH人员主迁移区，后续为主要招聘地区；DB后续视场地数量进行后续人员规'}
                   </td>
 
                 </tr>
               ))}
               <tr className="bg-white font-bold">
-                <td className="p-6 text-gray-800">合计</td>
-                <td className="p-6 text-center">
+                <td className="p-3 text-gray-800">合计</td>
+                <td className="p-3 text-center">
                   <span className="text-xl font-bold text-blue-600">
                     {transferPlan.reduce((sum, transfer) => {
                       const count = typeof transfer.currentCount === 'number' ? transfer.currentCount : 0;
@@ -806,12 +806,12 @@ export const OrganizationalStructure = () => {
                     }, 0)}
                   </span>
                 </td>
-                <td className="p-6 text-center">
+                <td className="p-3 text-center">
                   <span className="text-2xl font-bold text-red-600">-</span>
                 </td>
-                <td className="p-6 text-center text-gray-600"></td>
-                <td className="p-6 text-center text-gray-600"></td>
-                <td className="p-6 text-gray-600"></td>
+                <td className="p-3 text-center text-gray-600"></td>
+                <td className="p-3 text-center text-gray-600"></td>
+                <td className="p-3 text-gray-600"></td>
               </tr>
             </tbody>
           </table>

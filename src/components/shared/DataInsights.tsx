@@ -19,7 +19,7 @@ export const DataInsights: React.FC<DataInsightsProps> = ({ insights, title = 'æ
         </div>
         <h2 className="text-3xl font-bold text-gray-800">{title}</h2>
       </div>
-      <div className="bg-white rounded-lg p-2">
+      <div className="p-2">
         <div className="space-y-1.5 text-gray-700">
           {insights.map((insight, index) => (
             <div key={index} className="flex items-start">

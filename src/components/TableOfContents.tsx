@@ -2,24 +2,24 @@ import React from 'react';
 
 export const TableOfContents = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white p-16 mb-10 relative">
+    <div className="min-h-screen flex items-center justify-center bg-white p-12 mb-10 relative">
       <div className="max-w-5xl w-full">
-        <h1 className="text-6xl font-bold text-center text-gray-800 mb-16 border-b-4 border-blue-600 pb-6">目录</h1>
+        <h1 className="text-6xl font-bold text-center text-gray-800 mb-12 border-b-4 border-blue-600 pb-4">目录</h1>
 
-        <div className="space-y-5">
+        <div className="space-y-3">
           {/* 1. 组织情况 */}
-          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6">
+          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-4">
             <span className="text-2xl font-bold text-blue-600 mr-4">1.</span>
             <span className="text-xl font-semibold text-gray-800">BM情况</span>
           </div>
 
           {/* 2. 数据情况 */}
-          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6">
+          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-4">
             <span className="text-2xl font-bold text-blue-600 mr-4">2.</span>
             <span className="text-xl font-semibold text-gray-800">数据情况</span>
           </div>
 
-          <div className="ml-12 space-y-3">
+          <div className="ml-12 space-y-2">
             {[
               { num: "2.1", title: "防范单量与金额" },
               { num: "2.2", title: "防范金类型占比" },
@@ -33,7 +33,7 @@ export const TableOfContents = () => {
               { num: "2.10", title: "主要玩法杀率分析" },
               { num: "2.11", title: "Y/B/BW对比分析" }
             ].map((item, index) => (
-              <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-4">
+              <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-3">
                 <span className="text-lg font-bold text-gray-600 mr-3">{item.num}</span>
                 <span className="text-lg text-gray-700">{item.title}</span>
               </div>
@@ -41,19 +41,19 @@ export const TableOfContents = () => {
           </div>
 
           {/* 3. 工作情况 */}
-          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6">
+          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-4">
             <span className="text-2xl font-bold text-blue-600 mr-4">3.</span>
             <span className="text-xl font-semibold text-gray-800">工作情况</span>
           </div>
 
-          <div className="ml-12 space-y-3">
+          <div className="ml-12 space-y-2">
             {[
               { num: "3.1", title: "全局说明" },
               { num: "3.2", title: "会员说明" },
               { num: "3.3", title: "内控说明" },
               { num: "3.4", title: "DL说明" }
             ].map((item, index) => (
-              <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-4">
+              <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-3">
                 <span className="text-lg font-bold text-gray-600 mr-3">{item.num}</span>
                 <span className="text-lg text-gray-700">{item.title}</span>
               </div>

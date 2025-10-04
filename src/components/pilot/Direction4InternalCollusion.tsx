@@ -280,8 +280,8 @@ export const Direction4InternalCollusion = () => {
             </div>
 
             {/* 详细案件记录 */}
-            <div className="bg-white rounded-lg p-8 border border-gray-300 mt-6">
-              <div className="flex items-center mb-6">
+            <div className="bg-white rounded-lg p-4 border border-gray-300 mt-4">
+              <div className="flex items-center mb-4">
   
                 <h4 className="text-2xl font-bold text-gray-800">稽查记录</h4>
               </div>
@@ -291,38 +291,38 @@ export const Direction4InternalCollusion = () => {
                 <table className="w-full border-collapse">
                   <thead>
                     <tr className="bg-gray-700">
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm whitespace-nowrap">月份</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm whitespace-nowrap">稽查类型</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">涉及人员</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">违规行为</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">处置结果</th>
-                      <th className="border border-gray-600 px-3 py-2 text-left text-white font-semibold text-sm">备注</th>
+                      <th className="border border-gray-600 px-2 py-1.5 text-left text-white font-semibold text-sm whitespace-nowrap">月份</th>
+                      <th className="border border-gray-600 px-2 py-1.5 text-left text-white font-semibold text-sm whitespace-nowrap">稽查类型</th>
+                      <th className="border border-gray-600 px-2 py-1.5 text-left text-white font-semibold text-sm">涉及人员</th>
+                      <th className="border border-gray-600 px-2 py-1.5 text-left text-white font-semibold text-sm">违规行为</th>
+                      <th className="border border-gray-600 px-2 py-1.5 text-left text-white font-semibold text-sm">处置结果</th>
+                      <th className="border border-gray-600 px-2 py-1.5 text-left text-white font-semibold text-sm">备注</th>
                     </tr>
                   </thead>
                   <tbody>
                     {/* 7月份 - 账号销售测试 */}
                     <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">7月份</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">账号销售测试</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">
+                      <td className="border border-gray-300 px-2 py-1.5 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">7月份</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 whitespace-nowrap">账号销售测试</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700">
                         <div className="space-y-1">
                           <div>• Rob*****V7（等级V7）</div>
                           <div>• 另售出1个V1账号</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm">
                         <div className="space-y-2">
                           <div>按计划卖至外部团队，跟踪记录操作手法。</div>
                           <div className="text-gray-600">V1账号因等级过低未被使用。</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm">
                         <div className="space-y-1">
                           <div>✓ 已同步BM防范</div>
                           <div>⚠ V1账号持续关注</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm">
                         <div className="bg-gray-50 rounded p-2 border border-gray-300">
                           <div className="font-semibold text-gray-700 mb-1">买卖号前置要求：</div>
                           <div className="space-y-1 text-xs">
@@ -338,9 +338,9 @@ export const Direction4InternalCollusion = () => {
 
                     {/* 8月份 - YH对外协作 */}
                     <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">8月份</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">YH对外协作</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-2 py-1.5 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">8月份</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 whitespace-nowrap">YH对外协作</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm">
                         <div className="space-y-1">
                           <div>• 583** Iva****</div>
                           <div>• 536** Waf*****</div>
@@ -350,32 +350,32 @@ export const Direction4InternalCollusion = () => {
                           <div>• Uby******</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">与外部合作，协助查询账号备注内容并外发</td>
-                      <td className="border border-gray-300 px-3 py-2">
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700">与外部合作，协助查询账号备注内容并外发</td>
+                      <td className="border border-gray-300 px-2 py-1.5">
                         <span className="px-3 py-1 rounded-full text-sm font-semibold text-blue-600 inline-block">即刻开除</span>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-center text-gray-400">—</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-center text-gray-400">—</td>
                     </tr>
 
                     {/* 2-9月 - 内部泄密/钓鱼执法 */}
                     <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">8月-9月</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">内部泄密/钓鱼执法</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">
+                      <td className="border border-gray-300 px-2 py-1.5 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">8月-9月</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 whitespace-nowrap">内部泄密/钓鱼执法</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700">
                         <div className="space-y-2">
                           <div className="font-semibold text-gray-800">14人（YH占90%）</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm">
                         <div className="space-y-2">
                           <div>内部员工协助外部团队查询备注信息，价格：每条10U</div>
               
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2">
+                      <td className="border border-gray-300 px-2 py-1.5">
                         <span className="px-3 py-1 rounded-full text-sm font-semibold text-blue-600 inline-block">逐一处置</span>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm">
                         <div className="bg-gray-50 rounded p-2 border border-gray-300">
                           <div className="font-semibold text-gray-700 mb-1">内幕信息：</div>
                           <div className="space-y-1 text-xs">
@@ -389,30 +389,30 @@ export const Direction4InternalCollusion = () => {
 
                     {/* 7-9月 - 安插外部测试 */}
                     <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">7-9月</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">安插外部测试</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">安插人进入套利团队</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-2 py-1.5 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">7-9月</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 whitespace-nowrap">安插外部测试</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700">安插人进入套利团队</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm">
                         <div className="space-y-2">
                           <div>支付学习费1500U，以借用他人账号进行手法学习</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700">
                         <div className="space-y-1 text-sm">
                           <div>✓ 获取投注套利手法</div>
                           <div>✓ 获取出黑款模式</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2">
+                      <td className="border border-gray-300 px-2 py-1.5">
                         <span className="px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">持续推进，收集中</span>
                       </td>
                     </tr>
 
                     {/* 8月份 - 内部违规人员调查 */}
                     <tr className="hover:bg-gray-50 ">
-                      <td className="border border-gray-300 px-3 py-2 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">8月份</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 whitespace-nowrap">内部违规人员调查</td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700">
+                      <td className="border border-gray-300 px-2 py-1.5 font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">8月份</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 whitespace-nowrap">内部违规人员调查</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700">
                         <div className="space-y-1 text-sm">
                           <div><span className="font-semibold">英文名：</span>Ge*</div>
                           <div><span className="font-semibold">验证码：</span>TJ0**</div>
@@ -420,17 +420,17 @@ export const Direction4InternalCollusion = () => {
                           <div><span className="font-semibold">最后在岗：</span>2025/8/21</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm">
                         <div className="space-y-2">
                           <div>与DL、会员同伙；因出款纠纷报复悬赏GS宿舍地址</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
+                      <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm">
                         <div className="space-y-1">
                           <div className="text-blue-600 font-semibold">ZG介入处理</div>
                         </div>
                       </td>
-                      <td className="border border-gray-300 px-3 py-2 text-center text-gray-400">—</td>
+                      <td className="border border-gray-300 px-2 py-1.5 text-center text-gray-400">—</td>
                     </tr>
                   </tbody>
                 </table>
@@ -444,7 +444,7 @@ export const Direction4InternalCollusion = () => {
 
       {/* 内控业务培训 */}
       <div className="mb-4">
-        <div className="bg-white rounded-lg p-8 mb-8 border border-gray-300">
+        <div className="bg-white rounded-lg p-4 mb-4 border border-gray-300">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -559,7 +559,7 @@ export const Direction4InternalCollusion = () => {
 
       {/* 信息安全管理&应急管理方案 */}
       <div className="mb-4">
-        <div className="bg-white rounded-lg p-8 mb-8 border border-gray-300">
+        <div className="bg-white rounded-lg p-4 mb-4 border border-gray-300">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -574,9 +574,9 @@ export const Direction4InternalCollusion = () => {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="bg-gray-700">
-                  <th className="border border-gray-600 px-6 py-4 text-left text-white font-semibold text-base w-1/4">条目</th>
-                  <th className="border border-gray-600 px-6 py-4 text-left text-white font-semibold text-base w-1/2">处理方案</th>
-                  <th className="border border-gray-600 px-6 py-4 text-center text-white font-semibold text-base w-1/4">状态</th>
+                  <th className="border border-gray-600 px-2 py-1.5 text-left text-white font-semibold text-base w-1/4">条目</th>
+                  <th className="border border-gray-600 px-2 py-1.5 text-left text-white font-semibold text-base w-1/2">处理方案</th>
+                  <th className="border border-gray-600 px-2 py-1.5 text-center text-white font-semibold text-base w-1/4">状态</th>
                 </tr>
               </thead>
               <tbody>
@@ -584,59 +584,59 @@ export const Direction4InternalCollusion = () => {
 
                 {/* 纸飞机安全 */}
                 <tr className="hover:bg-gray-50 ">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">纸飞机安全设置</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
+                  <td className="border border-gray-300 px-2 py-1.5 font-medium text-gray-800">纸飞机安全设置</td>
+                  <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm leading-relaxed">
                     纸飞机安全设置及使用，全部按照公司标准落实执行
                   </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
+                  <td className="border border-gray-300 px-2 py-1.5 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                 {/* 护照管理 */}
                 <tr className="hover:bg-gray-50 ">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">护照集中保管</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
+                  <td className="border border-gray-300 px-2 py-1.5 font-medium text-gray-800">护照集中保管</td>
+                  <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm leading-relaxed">
                     场地人员护照全部交由公司保存
                   </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
+                  <td className="border border-gray-300 px-2 py-1.5 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                 {/* 文档加密 */}
                 <tr className="hover:bg-gray-50 ">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">文档安全管理</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
+                  <td className="border border-gray-300 px-2 py-1.5 font-medium text-gray-800">文档安全管理</td>
+                  <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm leading-relaxed">
                     所有文档按照标准进行脱敏并加密使用
                   </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
+                  <td className="border border-gray-300 px-2 py-1.5 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                 {/* Zoom会议安全 */}
                 <tr className="hover:bg-gray-50 ">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">Zoom会议安全规范</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
+                  <td className="border border-gray-300 px-2 py-1.5 font-medium text-gray-800">Zoom会议安全规范</td>
+                  <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm leading-relaxed">
                     zoom会议严格按照公司要求设置，<span className="font-semibold text-red-600">禁止录屏录音</span>
                   </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
+                  <td className="border border-gray-300 px-2 py-1.5 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                  {/* U盾管理 */}
                 <tr className="hover:bg-gray-50 ">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">U盾管理制度</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
+                  <td className="border border-gray-300 px-2 py-1.5 font-medium text-gray-800">U盾管理制度</td>
+                  <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
                       <div><span className="font-semibold text-gray-700">场地人员：</span>班次组长管理安全盾，规避检查风险。</div>
                       <div><span className="font-semibold text-gray-700">YC人员：</span>账号权限收至最低标准。盾由场地管理提报且仅虚拟机使用。</div>
                       <div><span className="font-semibold text-gray-700">居家人员：</span>不发U盾、全部放在场地人员、统一由场地人员告知验证码。</div>
                     </div>
                   </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
+                  <td className="border border-gray-300 px-2 py-1.5 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
@@ -644,38 +644,38 @@ export const Direction4InternalCollusion = () => {
 
                 {/* 三方后台账号 */}
                 <tr className="hover:bg-gray-50 ">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">三方后台账号</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
+                  <td className="border border-gray-300 px-2 py-1.5 font-medium text-gray-800">三方后台账号</td>
+                  <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
                       <div>• 权限修改至仅查看单会员数据，用于日常排查</div>
                       <div>• <span className="font-semibold text-gray-700">主管级账号：</span>能导出且帐密仅主管查看</div>
                       <div>• <span className="font-semibold text-gray-700">WB、YC、一审等较低职位：</span>不让使用三方后台</div>
                     </div>
                   </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
+                  <td className="border border-gray-300 px-2 py-1.5 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                 {/* 谷歌账号 */}
                 <tr className="hover:bg-gray-50 ">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">谷歌账号</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
+                  <td className="border border-gray-300 px-2 py-1.5 font-medium text-gray-800">谷歌账号</td>
+                  <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
                       <div>• <span className="font-semibold text-gray-700">zimbra：</span>已全员关闭</div>
                       <div>• <span className="font-semibold text-gray-700">目前邮箱：</span>均为zobu888，由人资管理</div>
                       <div>• <span className="font-semibold text-gray-700">人员离职处理：</span>由对接人接管相关邮箱权限，确保工作连续性</div>
                     </div>
                   </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
+                  <td className="border border-gray-300 px-2 py-1.5 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                 {/* Notion账号 */}
                 <tr className="hover:bg-gray-50 ">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">Notion账号</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
+                  <td className="border border-gray-300 px-2 py-1.5 font-medium text-gray-800">Notion账号</td>
+                  <td className="border border-gray-300 px-2 py-1.5 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-3">
                       <div>
                         <div className="font-semibold text-gray-700 mb-1">1. 空间创建与账号分配</div>
@@ -697,7 +697,7 @@ export const Direction4InternalCollusion = () => {
                       </div>
                     </div>
                   </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
+                  <td className="border border-gray-300 px-2 py-1.5 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
