@@ -355,7 +355,7 @@ export const Direction1PersonnelCapability = () => {
                         { name: '总部二审', before: 14472, after: 14628, beforeRate: 0.13, afterRate: 0.12}
                       ].map((item, index) => {
                         const maxCount = 160000;
-                        const maxRate = 2;
+                        const maxRate = 1;
                         const totalGroups = 4;
                         const chartWidth = 680;
                         const chartHeight = 320;
