@@ -9,7 +9,7 @@ export const OrganizationalStructure = () => {
       DB: { current: 1, planned: 0, isMain: true }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '孵化部': { current: 0, planned: 0, isMain: false }, 
+      '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
@@ -18,7 +18,7 @@ export const OrganizationalStructure = () => {
       DB: { current: 2, planned: 0, isMain: false }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 1, planned: 0, isMain: false }, 
-      '孵化部': { current: 0, planned: 0, isMain: false }, 
+      '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
@@ -27,7 +27,7 @@ export const OrganizationalStructure = () => {
       DB: { current: 82, planned: 15, isMain: true }, 
       SLK: { current: 37, planned: 0, isMain: true }, 
       KJY: { current: 6, planned: 20, isMain: true }, 
-      '孵化部': { current: 0, planned: 0, isMain: false }, 
+      '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '主管6人' 
     },
@@ -36,7 +36,7 @@ export const OrganizationalStructure = () => {
       DB: { current: 2, planned: 0, isMain: false }, 
       SLK: { current: 0, planned: 0, isMain: true }, 
       KJY: { current: 2, planned: 0, isMain: false }, 
-      '孵化部': { current: 0, planned: 0, isMain: false }, 
+      '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
@@ -45,7 +45,7 @@ export const OrganizationalStructure = () => {
       DB: { current: 0, planned: 5, isMain: true }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '孵化部': { current: 0, planned: 0, isMain: false }, 
+      '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '稽查经理1人' 
     },
@@ -54,7 +54,7 @@ export const OrganizationalStructure = () => {
       DB: { current: 0, planned: 0, isMain: false }, 
       SLK: { current: 3, planned: 7, isMain: true }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '孵化部': { current: 0, planned: 0, isMain: false }, 
+      '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '研发主管1人' 
     },
@@ -63,16 +63,16 @@ export const OrganizationalStructure = () => {
       DB: { current: 1, planned: 15, isMain: false }, 
       SLK: { current: 4, planned: 15, isMain: true }, 
       KJY: { current: 14, planned: 15, isMain: false }, 
-      '孵化部': { current: 0, planned: 0, isMain: false }, 
+      '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '内控经理1人' 
     },
-    '孵化部': { 
+    '远程': { 
       TH: { current: 0, planned: 0, isMain: false }, 
       DB: { current: 0, planned: 0, isMain: false }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '孵化部': { current: 145, planned: 0, isMain: true }, 
+      '远程': { current: 145, planned: 0, isMain: true }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
@@ -81,7 +81,7 @@ export const OrganizationalStructure = () => {
       DB: { current: 0, planned: 0, isMain: false }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '孵化部': { current: 0, planned: 0, isMain: false }, 
+      '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 132, planned: 0, isMain: true }, 
       manager: '经理1人' 
     }
@@ -93,7 +93,7 @@ export const OrganizationalStructure = () => {
     DB: Object.values(departmentData).reduce((sum, dept) => sum + dept.DB.current, 0),
     SLK: Object.values(departmentData).reduce((sum, dept) => sum + dept.SLK.current, 0),
     KJY: Object.values(departmentData).reduce((sum, dept) => sum + dept.KJY.current, 0),
-    '孵化部': Object.values(departmentData).reduce((sum, dept) => sum + dept['孵化部'].current, 0),
+    '远程': Object.values(departmentData).reduce((sum, dept) => sum + dept['远程'].current, 0),
     '外包': Object.values(departmentData).reduce((sum, dept) => sum + dept['外包'].current, 0)
   };
 
@@ -103,7 +103,7 @@ export const OrganizationalStructure = () => {
     DB: Object.values(departmentData).reduce((sum, dept) => sum + dept.DB.planned, 0),
     SLK: Object.values(departmentData).reduce((sum, dept) => sum + dept.SLK.planned, 0),
     KJY: Object.values(departmentData).reduce((sum, dept) => sum + dept.KJY.planned, 0),
-    '孵化部': 0,
+    '远程': 0,
     '外包': 0
   };
 
@@ -733,25 +733,25 @@ export const OrganizationalStructure = () => {
             </div>
           </div>
 
-          {/* 孵化部场地 */}
+          {/* 远程场地 */}
           <div className="bg-white rounded-xl p-4 border-2 border-blue-500">
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2 mb-3">
                 <Wifi className="w-5 h-5 text-blue-600" />
-                <h3 className="text-xl font-bold text-gray-800">孵化部</h3>
+                <h3 className="text-xl font-bold text-gray-800">远程</h3>
               </div>
               <div className="w-full h-px bg-gray-200 mb-4"></div>
               
               <div className="mb-4">
-                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals['孵化部']}</div>
+                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals['远程']}</div>
                 <div className="text-gray-600 text-sm">当前人数</div>
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
               
-              {locationPlannedTotals['孵化部'] > 0 && (
+              {locationPlannedTotals['远程'] > 0 && (
                 <div>
-                  <div className="text-lg font-bold text-green-600 mb-1">+{locationPlannedTotals['孵化部']}</div>
+                  <div className="text-lg font-bold text-green-600 mb-1">+{locationPlannedTotals['远程']}</div>
                   <div className="text-gray-500 text-sm">计划分配</div>
                 </div>
               )}
