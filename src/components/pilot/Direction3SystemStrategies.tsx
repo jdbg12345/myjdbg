@@ -136,7 +136,7 @@ export const Direction3SystemStrategies = () => {
 
               <div className="bg-white border-l-4 border-yellow-500 p-3 rounded">
                 <p className="text-gray-700 text-sm leading-relaxed mb-2">
-                  <span className="font-semibold text-gray-800">2、包含PG：</span>随机样本<span className="font-bold text-blue-600">100</span>单中，<span className="font-bold text-green-600">45</span>单是符合电子卡免费的行为；另外的<span className="font-bold text-red-600">55</span>单，经过注单数据回溯，发现PG电子在《麻将来了》游戏中，存在下注一次却触发多次旋转的现象，这种注单结构与其他电子场馆不同；同时，大量用户在下注命中后，出现多次旋转之间停顿超过<span className="font-bold text-red-600">2分钟</span>的反常行为，导致系统误判为卡免费行为，进而被拦截。
+                  <span className="font-semibold text-gray-800">2、包含PG：</span>随机样本<span className="font-bold text-blue-600">100</span>单中，<span className="font-bold text-green-600">45</span>单是符合电子卡免费的行为；另外的<span className="font-bold text-red-600">55</span>单，经过注单数据回溯，发现PG电子在《麻将来了》游戏中，存在下注一次却触发多次旋转的现象，但这种注单结构与免费旋转相同；同时，大量用户在下注命中后，出现多次旋转之间停顿超过<span className="font-bold text-red-600">2分钟</span>的反常行为，导致系统误判为卡免费行为，进而被拦截。
                 </p>
                 <p className="text-sm text-blue-700 font-medium">
                   → 后续需要针对PG电子特殊场景进行特征识别的重新设计，提升系统的识别精度。
