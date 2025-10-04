@@ -344,10 +344,9 @@ export const Direction1PersonnelCapability = () => {
 
                       {/* 柱状图和数据点 */}
                       {[
-                        { name: '外包一审', before: 66423, after: 24511, beforeRate: 0.99, afterRate: 0.92 },
-                        { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.76, afterRate: 0.59 },
-                        { name: '总部一审', before: 25161, after: 135259, beforeRate: 0.63, afterRate: 0.30},
-                        { name: '总部二审', before: 14472, after: 14628, beforeRate: 0.13, afterRate: 0.12}
+                        { name: '外包一审', before: 66423, after: 24511, beforeRate: 1.07, afterRate: 1.39 },
+                        { name: '远程一审', before: 82773, after: 29431, beforeRate: 0.82, afterRate: 0.95 },
+                        { name: '总部一审', before: 25161, after: 135259, beforeRate: 0.67, afterRate: 0.49},
                       ].map((item, index) => {
                         const maxCount = 160000;
                         const maxRate = 2;
