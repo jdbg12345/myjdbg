@@ -637,7 +637,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="text-white font-medium text-sm">4</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">沉睡用户活跃</h4>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>、
+                <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">开发中</span>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-gray-100 text-gray-600 ml-4">C端</span>
               </div>
             </div>
