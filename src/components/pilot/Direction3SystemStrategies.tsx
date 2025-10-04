@@ -903,10 +903,6 @@ export const Direction3SystemStrategies = () => {
               <div className="text-gray-600 font-medium text-lg">总影响金额</div>
             </div>
 
-            <div className="bg-white rounded-lg p-6 text-center border border-blue-200">
-              <div className="text-4xl font-bold text-blue-600 mb-3">{venueCount}</div>
-              <div className="text-gray-600 font-medium text-lg">涉及场馆</div>
-            </div>
           </div>
         </div>
       </div>
@@ -926,7 +922,6 @@ export const Direction3SystemStrategies = () => {
               <thead className="bg-blue-600 text-white">
                 <tr>
                   <th className="p-4 text-left font-semibold w-32">日期</th>
-                  <th className="p-4 text-left font-semibold w-24">场馆</th>
                   <th className="p-4 text-left font-semibold w-40">异常事件</th>
                   <th className="p-4 text-left font-semibold">问题描述</th>
                   <th className="p-4 text-center font-semibold w-24">问题原因</th>
@@ -938,7 +933,6 @@ export const Direction3SystemStrategies = () => {
                 {incidentData.map((incident, index) => (
                   <tr key={index} className="border-b border-gray-100">
                     <td className="p-4 font-semibold text-blue-600">{incident.date}</td>
-                    <td className="p-4 font-semibold">{incident.venue}</td>
                     <td className="p-4 font-semibold">{incident.incident}</td>
                     <td className="p-4 text-gray-700">{incident.description}</td>
                     <td className="p-4 text-center">
