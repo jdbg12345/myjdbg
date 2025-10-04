@@ -585,8 +585,8 @@ export const Direction3SystemStrategies = () => {
         </div>
       </div>
 
-      {/* 极端异常预防 */}
-      <h3 className="text-xl font-semibold text-gray-800">极端异常预防</h3>
+      {/* 异常监控 */}
+      <h3 className="text-xl font-semibold text-gray-800">异常情况监控</h3>
       
       {/* 中心钱包多钱 */}
       <div className="mb-8">
