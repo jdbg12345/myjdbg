@@ -48,9 +48,9 @@ export const AgentCommissionControl = () => {
             ].map((row, index) => (
               <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
-                <td className="p-6">{row.desc}</td>
+                <td className="p-4">{row.desc}</td>
                 <td className="p-6 text-center">{row.time}</td>
-                <td className="p-6">{row.benefit}</td>
+                <td className="p-4">{row.benefit}</td>
               </tr>
             ))}
           </tbody>

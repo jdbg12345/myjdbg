@@ -35,7 +35,7 @@ export const SportsKillRateAnalysis = () => {
   return (
     <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.10 主要玩法杀率分析</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -44,9 +44,9 @@ export const SportsKillRateAnalysis = () => {
       </div>
 
       {/* 4个分析表格 */}
-      <div className="space-y-4">
+      <div className="space-y-3">
         {/* 1. DB整体主要玩法的表现 */}
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-4 border border-blue-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
@@ -58,19 +58,19 @@ export const SportsKillRateAnalysis = () => {
             <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
               <thead className="bg-blue-600 text-white">
                 <tr>
-                  <th className="p-4 text-center font-semibold">玩法</th>
-                  <th className="p-4 text-center font-semibold">杀率</th>
-                  <th className="p-4 text-center font-semibold">注单占比</th>
-                  <th className="p-4 text-center font-semibold">流水占比</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">玩法</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">杀率</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">注单占比</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">流水占比</th>
                 </tr>
               </thead>
               <tbody>
                 {dbOverallData.map((row, index) => (
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
-                    <td className="p-4 text-center font-semibold">{row.gameplay}</td>
-                    <td className={`p-4 text-center ${getKillRateClass(row.killRate)}`}>{row.killRate}%</td>
-                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.orderPercent}%</td>
-                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.flowPercent}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.gameplay}</td>
+                    <td className={`p-1 text-center font-bold ${getKillRateClass(row.killRate)} border-r border-gray-200`}>{row.killRate}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.orderPercent}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.flowPercent}%</td>
                   </tr>
                 ))}
               </tbody>
@@ -79,7 +79,7 @@ export const SportsKillRateAnalysis = () => {
         </div>
 
         {/* 2. 熊猫整体主要玩法的表现 */}
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-4 border border-blue-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
@@ -91,19 +91,19 @@ export const SportsKillRateAnalysis = () => {
             <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
               <thead className="bg-blue-600 text-white">
                 <tr>
-                  <th className="p-4 text-center font-semibold">玩法</th>
-                  <th className="p-4 text-center font-semibold">杀率</th>
-                  <th className="p-4 text-center font-semibold">注单占比</th>
-                  <th className="p-4 text-center font-semibold">流水占比</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">玩法</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">杀率</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">注单占比</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">流水占比</th>
                 </tr>
               </thead>
               <tbody>
                 {pandaOverallData.map((row, index) => (
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
-                    <td className="p-4 text-center font-semibold">{row.gameplay}</td>
-                    <td className={`p-4 text-center ${getKillRateClass(row.killRate)}`}>{row.killRate}%</td>
-                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.orderPercent}%</td>
-                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.flowPercent}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.gameplay}</td>
+                    <td className={`p-1 text-center font-bold ${getKillRateClass(row.killRate)} border-r border-gray-200`}>{row.killRate}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.orderPercent}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.flowPercent}%</td>
                   </tr>
                 ))}
               </tbody>
@@ -112,7 +112,7 @@ export const SportsKillRateAnalysis = () => {
         </div>
 
         {/* 3. 熊猫B系主要玩法的表现 */}
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-4 border border-blue-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
@@ -124,19 +124,19 @@ export const SportsKillRateAnalysis = () => {
             <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
               <thead className="bg-blue-600 text-white">
                 <tr>
-                  <th className="p-4 text-center font-semibold">玩法</th>
-                  <th className="p-4 text-center font-semibold">杀率</th>
-                  <th className="p-4 text-center font-semibold">注单占比</th>
-                  <th className="p-4 text-center font-semibold">流水占比</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">玩法</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">杀率</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">注单占比</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">流水占比</th>
                 </tr>
               </thead>
               <tbody>
                 {pandaBata.map((row, index) => (
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
-                    <td className="p-4 text-center font-semibold">{row.gameplay}</td>
-                    <td className={`p-4 text-center ${getKillRateClass(row.killRate)}`}>{row.killRate}%</td>
-                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.orderPercent}%</td>
-                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.flowPercent}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.gameplay}</td>
+                    <td className={`p-1 text-center font-bold ${getKillRateClass(row.killRate)} border-r border-gray-200`}>{row.killRate}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.orderPercent}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.flowPercent}%</td>
                   </tr>
                 ))}
               </tbody>
@@ -145,7 +145,7 @@ export const SportsKillRateAnalysis = () => {
         </div>
 
         {/* 4. 熊猫在BW的表现-主要玩法的表现 */}
-        <div className="bg-white rounded-lg p-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-4 border border-blue-200">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-white" />
@@ -157,19 +157,19 @@ export const SportsKillRateAnalysis = () => {
             <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
               <thead className="bg-blue-600 text-white">
                 <tr>
-                  <th className="p-4 text-center font-semibold">玩法</th>
-                  <th className="p-4 text-center font-semibold">杀率</th>
-                  <th className="p-4 text-center font-semibold">注单占比</th>
-                  <th className="p-4 text-center font-semibold">流水占比</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">玩法</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">杀率</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">注单占比</th>
+                  <th className="p-2 text-center font-semibold border-r border-blue-500">流水占比</th>
                 </tr>
               </thead>
               <tbody>
                 {pandaBWData.map((row, index) => (
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
-                    <td className="p-4 text-center font-semibold">{row.gameplay}</td>
-                    <td className={`p-4 text-center ${getKillRateClass(row.killRate)}`}>{row.killRate}%</td>
-                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.orderPercent}%</td>
-                    <td className="p-2 text-center font-semibold border-r border-gray-200">{row.flowPercent}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.gameplay}</td>
+                    <td className={`p-1 text-center font-bold ${getKillRateClass(row.killRate)} border-r border-gray-200`}>{row.killRate}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.orderPercent}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.flowPercent}%</td>
                   </tr>
                 ))}
               </tbody>

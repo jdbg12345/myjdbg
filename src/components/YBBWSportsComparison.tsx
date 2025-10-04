@@ -27,7 +27,7 @@ export const YBBWSportsComparison = () => {
   return (
     <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.11 Y/B/BW的对比分析</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -48,10 +48,10 @@ export const YBBWSportsComparison = () => {
           <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
             <thead className="bg-blue-600 text-white">
               <tr>
-                <th className="p-4 text-center font-semibold">主要球类</th>
-                <th className="p-4 text-center font-semibold">Y系</th>
-                <th className="p-4 text-center font-semibold">B系</th>
-                <th className="p-4 text-center font-semibold">BW</th>
+                <th className="p-2 text-center font-semibold border-r border-blue-500">主要球类</th>
+                <th className="p-2 text-center font-semibold border-r border-blue-500">Y系</th>
+                <th className="p-2 text-center font-semibold border-r border-blue-500">B系</th>
+                <th className="p-2 text-center font-semibold border-r border-blue-500">BW</th>
               </tr>
             </thead>
             <tbody>
@@ -59,10 +59,10 @@ export const YBBWSportsComparison = () => {
                 const values = [row.yPercent, row.bPercent, row.bwPercent];
                 return (
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
-                    <td className="p-4 text-center font-semibold">{row.sport}</td>
-                    <td className={`p-4 text-center ${getMinMaxClass(row.yPercent, values)}`}>{row.yPercent}%</td>
-                    <td className={`p-4 text-center ${getMinMaxClass(row.bPercent, values)}`}>{row.bPercent}%</td>
-                    <td className={`p-4 text-center ${getMinMaxClass(row.bwPercent, values)}`}>{row.bwPercent}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.sport}</td>
+                    <td className={`p-1 text-center font-bold ${getMinMaxClass(row.yPercent, values)}`}>{row.yPercent}%</td>
+                    <td className={`p-1 text-center font-bold ${getMinMaxClass(row.bPercent, values)}`}>{row.bPercent}%</td>
+                    <td className={`p-1 text-center font-bold ${getMinMaxClass(row.bwPercent, values)}`}>{row.bwPercent}%</td>
                   </tr>
                 );
               })}
@@ -96,9 +96,9 @@ export const YBBWSportsComparison = () => {
           <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
             <thead className="bg-blue-600 text-white">
               <tr>
-                <th className="p-4 text-center font-semibold">站点分类</th>
-                <th className="p-4 text-center font-semibold">流水</th>
-                <th className="p-4 text-center font-semibold">拦截</th>
+                <th className="p-2 text-center font-semibold border-r border-blue-500">站点分类</th>
+                <th className="p-2 text-center font-semibold border-r border-blue-500">流水</th>
+                <th className="p-2 text-center font-semibold border-r border-blue-500">拦截</th>
               </tr>
             </thead>
             <tbody>
@@ -107,9 +107,9 @@ export const YBBWSportsComparison = () => {
                 const interceptValues = pandaFlowData.map(r => r.interceptPercent);
                 return (
                   <tr key={index} className="border-b border-gray-100 hover:bg-blue-50 transition-colors">
-                    <td className="p-4 text-center font-semibold">{row.category}</td>
-                    <td className={`p-4 text-center ${getMinMaxClass(row.flowPercent, flowValues)}`}>{row.flowPercent}%</td>
-                    <td className={`p-4 text-center ${getMinMaxClass(row.interceptPercent, interceptValues)}`}>{row.interceptPercent}%</td>
+                    <td className="p-1 text-center font-bold text-gray-700 border-r border-gray-200">{row.category}</td>
+                    <td className={`p-1 text-center font-bold ${getMinMaxClass(row.flowPercent, flowValues)}`}>{row.flowPercent}%</td>
+                    <td className={`p-1 text-center font-bold ${getMinMaxClass(row.interceptPercent, interceptValues)}`}>{row.interceptPercent}%</td>
                   </tr>
                 );
               })}

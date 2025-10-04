@@ -326,7 +326,7 @@ export const OrganizationalStructure = () => {
   return (
     <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">1. 组织情况</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -766,7 +766,7 @@ export const OrganizationalStructure = () => {
             <tbody>
               {transferPlan.map((transfer, index) => (
                 <tr key={index} className="border-b border-gray-100 hover:bg-white transition-colors">
-                  <td className="p-6">
+                  <td className="p-4">
                     <div className="flex items-center space-x-3">
                       <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
                       <span className="font-semibold text-gray-800">{transfer.from}</span>
@@ -778,7 +778,7 @@ export const OrganizationalStructure = () => {
                   <td className="p-6 text-center">
                     <span className="text-2xl font-bold text-orange-600">{transfer.count}</span>
                   </td>
-                  <td className="p-6">
+                  <td className="p-4">
                     <div className="flex items-center space-x-3">
                       <ArrowRight className="w-5 h-5 text-gray-400" />
                       <div className="w-4 h-4 bg-blue-500 rounded-full"></div>

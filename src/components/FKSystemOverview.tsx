@@ -19,7 +19,7 @@ export const FKSystemOverview = () => {
   return (
     <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">3.2 会员风控变化说明</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -39,7 +39,7 @@ export const FKSystemOverview = () => {
           </div>
         </div>
 
-        <div className="mb-6 border border-blue-200 rounded-lg p-8">
+        <div className="mb-4 border border-blue-200 rounded-lg p-8">
           <div className="flex justify-center p-2">
             <svg viewBox="0 0 1600 550" className="w-full max-w-6xl h-[600px]">
               <defs>
@@ -197,7 +197,7 @@ export const FKSystemOverview = () => {
       </div>
 
       {/* FK能力变化 */}
-      <div className="mb-6 border border-blue-200 rounded-lg p-8">
+      <div className="mb-4 border border-blue-200 rounded-lg p-8">
         <div className="flex items-center space-x-4 mb-8">
           <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
             <Shield className="w-6 h-6 text-white" />
@@ -217,7 +217,7 @@ export const FKSystemOverview = () => {
             <h3 className="text-2xl font-bold text-gray-800">防御型规则</h3>
           </div>
           
-          <div className="mb-6">
+          <div className="mb-4">
             <p className="text-gray-700 text-base leading-relaxed">
               基于盈利、红利等数据阈值触发，无论玩家是否存在实际问题，只要达到设定标准即进行拦截，但仍可能被有意规避的玩家绕过
             </p>
@@ -352,7 +352,7 @@ export const FKSystemOverview = () => {
             <h3 className="text-2xl font-bold text-gray-800">套利/作弊型规则</h3>
           </div>
           
-          <div className="mb-6">
+          <div className="mb-4">
             <p className="text-gray-700 text-base leading-relaxed">
               针对各类套利与作弊行为的策略是风控的核心，旨在最大限度减少问题玩家绕过人工审核导致的漏洞和风险      
             </p>

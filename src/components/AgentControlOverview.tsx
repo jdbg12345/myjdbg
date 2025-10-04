@@ -284,7 +284,7 @@ export const AgentControlOverview = () => {
         </div>
 
         {/* DL列表 */}
-        <div className="space-y-4">
+        <div className="space-y-3">
           {[
             {
               id: '3Y218350',

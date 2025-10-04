@@ -34,7 +34,7 @@ const siteData = [
   return (
     <div className="bg-white rounded-lg p-10 mb-6 relative">
       {/* Header */}
-      <div className="mb-6 flex items-center justify-between border-b-4 border-blue-600 pb-4">
+      <div className="mb-4 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">2.2 防范金类型占比</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
@@ -48,81 +48,81 @@ const siteData = [
           <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
             <thead className="bg-blue-600 text-white">
               <tr>
-                <th rowSpan="3" className="p-3 text-center font-semibold border-r border-blue-500 w-16">站点</th>
-                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">第1季度总计</th>
-                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">第2季度总计</th>
-                <th colSpan="2" className="p-3 text-center font-semibold border-r border-blue-500">第3季度总计</th>
-                <th colSpan="8" className="p-3 text-center font-semibold">第3季度分类明细</th>
+                <th rowSpan="3" className="p-2 text-center font-semibold border-r border-blue-500 w-16">站点</th>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">第1季度总计</th>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">第2季度总计</th>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">第3季度总计</th>
+                <th colSpan="8" className="p-2 text-center font-semibold">第3季度分类明细</th>
               </tr>
               <tr>
-                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
-                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
-                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
-                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">DL类</th>
-                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">体育类</th>
-                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500 text-xs">红利类</th>
-                <th colSpan="2" className="p-2 text-center font-semibold text-xs">其他类</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">(万)</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">DL类</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">体育类</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-xs">红利类</th>
+                <th colSpan="2" className="p-1 text-center font-semibold text-xs">其他类</th>
               </tr>
               <tr>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
-                <th className="p-2 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
-                <th className="p-2 text-center font-semibold text-xs">占比</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">占比</th>
+                <th className="p-1 text-center font-semibold border-r border-blue-500 text-xs">金额</th>
+                <th className="p-1 text-center font-semibold text-xs">占比</th>
               </tr>
             </thead>
             <tbody>
               {siteData.map((row, index) => (
                 <tr key={index} className="border-b border-gray-100">
-                  <td className="p-2 font-semibold text-center text-sm">{row.site}</td>
-                  <td className="p-2 text-center text-xs">{row.q1Amount}</td>
-                  <td className="p-2 text-center text-xs">{row.q1Percent}%</td>
-                  <td className="p-2 text-center text-xs">{row.q2Amount}</td>
-                  <td className="p-2 text-center text-xs">{row.q2Percent}%</td>
-                  <td className="p-2 text-center text-xs">{row.q3Amount}</td>
-                  <td className="p-2 text-center text-xs">{row.q3Percent}%</td>
-                  <td className="p-2 text-center text-xs">{row.agentAmount}</td>
-                  <td className="p-2 text-center text-xs">{row.agentPercent}%</td>
-                  <td className="p-2 text-center text-xs">{row.sportsAmount}</td>
-                  <td className="p-2 text-center text-xs">{row.sportsPercent}%</td>
-                  <td className="p-2 text-center text-xs">{row.bonusAmount}</td>
-                  <td className="p-2 text-center text-xs">{row.bonusPercent}%</td>
-                  <td className="p-2 text-center text-xs">{row.otherAmount}</td>
-                  <td className="p-2 text-center text-xs">{row.otherPercent}%</td>
+                  <td className="p-1 font-bold text-center text-sm border-r border-gray-200">{row.site}</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.q1Amount}</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.q1Percent}%</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.q2Amount}</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.q2Percent}%</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.q3Amount}</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.q3Percent}%</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.agentAmount}</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.agentPercent}%</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.sportsAmount}</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.sportsPercent}%</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.bonusAmount}</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.bonusPercent}%</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700 border-r border-gray-200">{row.otherAmount}</td>
+                  <td className="p-1 text-center text-xs font-bold text-gray-700">{row.otherPercent}%</td>
                 </tr>
               ))}
              
               <tr className="bg-blue-50 border-b border-gray-100">
-                <td className="p-2 font-semibold text-center text-sm">小计</td>
-                <td className="p-2 text-center font-semibold text-xs" colSpan="2"></td>
-                <td className="p-2 text-center font-semibold text-xs" colSpan="2"></td>
-                <td className="p-2 text-center font-semibold text-xs" colSpan="2"></td>
-                <td className="p-2 text-center font-semibold text-xs">14972</td>
-                <td className="p-2 text-center font-semibold text-xs">100%</td>
-                <td className="p-2 text-center font-semibold text-xs">13909</td>
-                <td className="p-2 text-center font-semibold text-xs">100%</td>
-                <td className="p-2 text-center font-semibold text-xs">5910</td>
-                <td className="p-2 text-center font-semibold text-xs">100%</td>
-                <td className="p-2 text-center font-semibold text-xs">4714</td>
-                <td className="p-2 text-center font-semibold text-xs">100%</td>
+                <td className="p-1 font-bold text-center text-sm border-r border-gray-200">小计</td>
+                <td className="p-1 text-center font-bold text-xs border-r border-gray-200" colSpan="2"></td>
+                <td className="p-1 text-center font-bold text-xs border-r border-gray-200" colSpan="2"></td>
+                <td className="p-1 text-center font-bold text-xs border-r border-gray-200" colSpan="2"></td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">14972</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">100%</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">13909</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">100%</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">5910</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">100%</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">4714</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700">100%</td>
               </tr>
               <tr className="bg-gray-200">
-                <td className="p-2 font-semibold text-center text-sm">总计</td>
-                <td className="p-2 text-center font-semibold text-xs">42098</td>
-                <td className="p-2 text-center font-semibold text-xs">100%</td>
-                <td className="p-2 text-center font-semibold text-xs">37624</td>
-                <td className="p-2 text-center font-semibold text-xs">100%</td>
-                <td className="p-2 text-center font-semibold text-xs">39505</td>
-                <td className="p-2 text-center font-semibold text-xs">100%</td>
+                <td className="p-1 font-bold text-center text-sm border-r border-gray-200">总计</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">42098</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">100%</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">37624</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">100%</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">39505</td>
+                <td className="p-1 text-center font-bold text-xs text-gray-700 border-r border-gray-200">100%</td>
                 <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(37.90, totalPercentages)}`} colSpan="2">37.90%</td>
                 <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(35.21, totalPercentages)}`} colSpan="2">35.21%</td>
                 <td className={`p-2 text-center font-semibold text-xs ${getMinMaxClass(14.96, totalPercentages)}`} colSpan="2">14.96%</td>

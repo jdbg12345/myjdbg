@@ -51,7 +51,7 @@ export const SystemDispatch = () => {
               分数定义分为2个维度：当会员提款时，将此会员命中的所有策略及标签的分数进行累加（也为后续风控体系合理性做了铺垫）
             </p>
             
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div className="flex items-start">
                 <div className="w-3 h-3 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
                 <div>
@@ -80,7 +80,7 @@ export const SystemDispatch = () => {
               设定分数和金额的区间对应的可审核人员，当订单来了，基于金额和分数，会落到对应区间，由相应人员进行审核
             </p>
             
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div className="bg-white border-l-4 border-green-600 p-4 rounded border border-green-200">
                 <span className="text-green-700 font-medium">例：分数0-10且金额≤1万 → 初级审核员</span>
               </div>
@@ -110,12 +110,12 @@ export const SystemDispatch = () => {
             ].map((row, index) => (
               <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
-                <td className="p-6">{row.desc}</td>
+                <td className="p-4">{row.desc}</td>
                 <td className="p-6 text-center">
                   <span className={`px-4 py-2 rounded-full text-sm font-semibold ${row.statusColor}`}>{row.status}</span>
                 </td>
                 <td className="p-6 text-center">{row.time}</td>
-                <td className="p-6">{row.benefit}</td>
+                <td className="p-4">{row.benefit}</td>
               </tr>
             ))}
           </tbody>
