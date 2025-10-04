@@ -15,38 +15,38 @@ export const SportsOverallKillRate = () => {
 
   // 整体体育杀率分析数据
   const overallData = [
-    { month: '2025 1', yRate: 5.46, bRate: 4.79, bwRate: 4.47, ybRate: 5.36, ybBwRate: 5.31, imRate: 5.74 },
-    { month: '2025 2', yRate: 5.75, bRate: 4.90, bwRate: 5.99, ybRate: 5.62, ybBwRate: 5.64, imRate: 5.99 },
-    { month: '2025 3', yRate: 5.50, bRate: 4.82, bwRate: 4.95, ybRate: 5.39, ybBwRate: 5.37, imRate: 6.06 },
-    { month: '2025 4', yRate: 5.54, bRate: 4.68, bwRate: 4.93, ybRate: 5.40, ybBwRate: 5.38, imRate: 5.16 },
-    { month: '2025 5', yRate: 5.55, bRate: 4.56, bwRate: 5.46, ybRate: 5.39, ybBwRate: 5.39, imRate: 5.87 },
-    { month: '2025 6', yRate: 5.79, bRate: 5.60, bwRate: 5.71, ybRate: 5.76, ybBwRate: 5.76, imRate: 5.73 }
+    { month: '2025 4', yRate: 5.54, bRate: 4.68, bwRate: 4.93, imRate: 5.16, totalRate: 5.08 },
+    { month: '2025 5', yRate: 5.55, bRate: 4.56, bwRate: 5.46, imRate: 5.87, totalRate: 5.36 },
+    { month: '2025 6', yRate: 5.79, bRate: 5.60, bwRate: 5.71, imRate: 5.73, totalRate: 5.71 },
+    { month: '2025 7', yRate: 5.98, bRate: 5.42, bwRate: 6.20, imRate: 6.06, totalRate: 5.92 },
+    { month: '2025 8', yRate: 5.96, bRate: 5.67, bwRate: 5.59, imRate: 6.26, totalRate: 5.87 },
+    { month: '2025 9', yRate: 5.54, bRate: 5.48, bwRate: 5.34, imRate: 5.93, totalRate: 5.57 }
   ];
 
   // 冠名月份数据
   const crownedMonthlyData = [
-    { month: '2025 1', yRate: 5.53, bRate: 4.81, bwRate: 4.45, ybRate: 5.42, ybBwRate: 5.37 },
-    { month: '2025 2', yRate: 5.85, bRate: 5.04, bwRate: 6.07, ybRate: 5.72, ybBwRate: 5.74 },
-    { month: '2025 3', yRate: 5.61, bRate: 4.96, bwRate: 5.01, ybRate: 5.51, ybBwRate: 5.48 },
-    { month: '2025 4', yRate: 5.67, bRate: 4.78, bwRate: 5.12, ybRate: 5.52, ybBwRate: 5.50 },
-    { month: '2025 5', yRate: 5.66, bRate: 4.80, bwRate: 5.53, ybRate: 5.52, ybBwRate: 5.52 },
-    { month: '2025 6', yRate: 5.82, bRate: 5.73, bwRate: 5.69, ybRate: 5.81, ybBwRate: 5.81 }
+    { month: '2025 4', yRate: 5.67, bRate: 4.78, bwRate: 5.12, totalRate: 5.19 },
+    { month: '2025 5', yRate: 5.66, bRate: 4.80, bwRate: 5.53, totalRate: 5.33 },
+    { month: '2025 6', yRate: 5.82, bRate: 5.73, bwRate: 5.69, totalRate: 5.75 },
+    { month: '2025 7', yRate: 6.05, bRate: 5.59, bwRate: 6.18, totalRate: 5.94 },
+    { month: '2025 8', yRate: 6.01, bRate: 5.80, bwRate: 5.49, totalRate: 5.77 },
+    { month: '2025 9', yRate: 5.62, bRate: 5.59, bwRate: 5.24, totalRate: 5.48 }
   ];
 
   // 熊猫月份数据
   const pandaMonthlyData = [
-    { month: '2025 1', yRate: 4.24, bRate: 4.36, bwRate: 4.74, ybRate: 4.26, ybBwRate: 4.29 },
-    { month: '2025 2', yRate: 3.93, bRate: 2.24, bwRate: 4.96, ybRate: 3.68, ybBwRate: 3.77 },
-    { month: '2025 3', yRate: 3.48, bRate: 1.94, bwRate: 4.15, ybRate: 3.26, ybBwRate: 3.31 },
-    { month: '2025 4', yRate: 3.31, bRate: 2.62, bwRate: 2.69, ybRate: 3.20, ybBwRate: 3.17 },
-    { month: '2025 5', yRate: 3.58, bRate: 0.39, bwRate: 4.61, ybRate: 3.07, ybBwRate: 3.16 },
-    { month: '2025 6', yRate: 5.10, bRate: 3.13, bwRate: 5.86, ybRate: 4.86, ybBwRate: 4.93 }
+    { month: '2025 4', yRate: 3.31, bRate: 2.62, bwRate: 2.69, totalRate: 2.87 },
+    { month: '2025 5', yRate: 3.58, bRate: 0.39, bwRate: 4.61, totalRate: 2.86 },
+    { month: '2025 6', yRate: 5.10, bRate: 3.13, bwRate: 5.86, totalRate: 4.70 },
+    { month: '2025 7', yRate: 4.08, bRate: 2.09, bwRate: 6.19, totalRate: 4.12 },
+    { month: '2025 8', yRate: 4.01, bRate: 3.59, bwRate: 5.73, totalRate: 4.44 },
+    { month: '2025 9', yRate: 3.28, bRate: 2.69, bwRate: 4.31, totalRate: 3.43 }
   ];
 
   // 总计行的数据（用于最大值最小值高亮）
-  const overallTotalRates = [5.59, 4.85, 5.20, 5.48, 5.46, 5.76];
-  const crownedTotalRates = [5.68, 4.98, 5.25, 5.58, 5.56];
-  const pandaTotalRates = [3.91, 2.36, 4.46, 3.69, 3.74];
+  const overallTotalRates = [5.72, 5.23, 5.54, 5.84, 5.58];
+  const crownedTotalRates = [5.81, 5.38, 5.54, 5.58];
+  const pandaTotalRates = [3.89, 2.42, 4.90, 3.74];
 
   return (
     <div className="bg-white rounded-lg p-16 mb-10 relative">
@@ -67,35 +67,32 @@ export const SportsOverallKillRate = () => {
             <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
               <thead className="bg-blue-600 text-white">
                 <tr>
-                  <th className="p-3 text-center font-semibold">整体｜月份</th>
-                  <th className="p-3 text-center font-semibold">Y系</th>
+                  <th className="p-3 text-center font-semibold">日期</th>
                   <th className="p-3 text-center font-semibold">B系</th>
+                  <th className="p-3 text-center font-semibold">Y系</th>
                   <th className="p-3 text-center font-semibold">BW</th>
-                  <th className="p-3 text-center font-semibold">Y/B系</th>
-                  <th className="p-3 text-center font-semibold">Y/B/BW</th>
-                  <th className="p-3 text-center font-semibold">IM体育</th>
+                  <th className="p-3 text-center font-semibold">IM</th>
+                  <th className="p-3 text-center font-semibold">合计</th>
                 </tr>
               </thead>
               <tbody>
                 {overallData.map((row, index) => (
                   <tr key={index} className="border-b border-gray-100">
                     <td className="p-3 text-center font-semibold">{row.month}</td>
-                    <td className="p-3 text-center">{row.yRate}%</td>
                     <td className="p-3 text-center">{row.bRate}%</td>
+                    <td className="p-3 text-center">{row.yRate}%</td>
                     <td className="p-3 text-center">{row.bwRate}%</td>
-                    <td className="p-3 text-center">{row.ybRate}%</td>
-                    <td className="p-3 text-center">{row.ybBwRate}%</td>
                     <td className="p-3 text-center">{row.imRate}%</td>
+                    <td className="p-3 text-center">{row.totalRate}%</td>
                   </tr>
                 ))}
                 <tr className="bg-blue-50 border-b border-gray-100">
-                  <td className="p-3 text-center font-semibold">总计</td>
-                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.59, overallTotalRates)}`}>5.59%</td>
-                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(4.85, overallTotalRates)}`}>4.85%</td>
-                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.20, overallTotalRates)}`}>5.20%</td>
-                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.48, overallTotalRates)}`}>5.48%</td>
-                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.46, overallTotalRates)}`}>5.46%</td>
-                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.76, overallTotalRates)}`}>5.76%</td>
+                  <td className="p-3 text-center font-semibold">合计</td>
+                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.23, overallTotalRates)}`}>5.23%</td>
+                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.72, overallTotalRates)}`}>5.72%</td>
+                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.54, overallTotalRates)}`}>5.54%</td>
+                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.84, overallTotalRates)}`}>5.84%</td>
+                  <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.58, overallTotalRates)}`}>5.58%</td>
                 </tr>
               </tbody>
             </table>
@@ -107,32 +104,29 @@ export const SportsOverallKillRate = () => {
               <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
                 <thead className="bg-blue-600 text-white">
                   <tr>
-                    <th className="p-3 text-center font-semibold">冠名｜月份</th>
-                    <th className="p-3 text-center font-semibold">Y系</th>
+                    <th className="p-3 text-center font-semibold">冠名</th>
                     <th className="p-3 text-center font-semibold">B系</th>
+                    <th className="p-3 text-center font-semibold">Y系</th>
                     <th className="p-3 text-center font-semibold">BW</th>
-                    <th className="p-3 text-center font-semibold">Y、B系</th>
-                    <th className="p-3 text-center font-semibold">Y/B/BW</th>
+                    <th className="p-3 text-center font-semibold">合计</th>
                   </tr>
                 </thead>
                 <tbody>
                   {crownedMonthlyData.map((row, index) => (
                     <tr key={index} className="border-b border-gray-100">
                       <td className="p-3 text-center font-semibold">{row.month}</td>
-                      <td className="p-3 text-center">{row.yRate}%</td>
                       <td className="p-3 text-center">{row.bRate}%</td>
+                      <td className="p-3 text-center">{row.yRate}%</td>
                       <td className="p-3 text-center">{row.bwRate}%</td>
-                      <td className="p-3 text-center">{row.ybRate}%</td>
-                      <td className="p-3 text-center">{row.ybBwRate}%</td>
+                      <td className="p-3 text-center">{row.totalRate}%</td>
                     </tr>
                   ))}
                   <tr className="bg-blue-50 border-b border-gray-100">
-                    <td className="p-3 text-center font-semibold">总计</td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.68, crownedTotalRates)}`}>5.68%</td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(4.98, crownedTotalRates)}`}>4.98%</td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.25, crownedTotalRates)}`}>5.25%</td>
+                    <td className="p-3 text-center font-semibold">合计</td>
+                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.38, crownedTotalRates)}`}>5.38%</td>
+                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.81, crownedTotalRates)}`}>5.81%</td>
+                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.54, crownedTotalRates)}`}>5.54%</td>
                     <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.58, crownedTotalRates)}`}>5.58%</td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(5.56, crownedTotalRates)}`}>5.56%</td>
                   </tr>
                 </tbody>
               </table>
@@ -145,31 +139,28 @@ export const SportsOverallKillRate = () => {
               <table className="w-full border-collapse bg-white rounded-lg overflow-hidden">
                 <thead className="bg-blue-600 text-white">
                   <tr>
-                    <th className="p-3 text-center font-semibold">熊猫｜月份</th>
-                    <th className="p-3 text-center font-semibold">Y系</th>
+                    <th className="p-3 text-center font-semibold">熊猫</th>
                     <th className="p-3 text-center font-semibold">B系</th>
+                    <th className="p-3 text-center font-semibold">Y系</th>
                     <th className="p-3 text-center font-semibold">BW</th>
-                    <th className="p-3 text-center font-semibold">Y、B系</th>
-                    <th className="p-3 text-center font-semibold">Y/B/BW</th>
+                    <th className="p-3 text-center font-semibold">合计</th>
                   </tr>
                 </thead>
                 <tbody>
                   {pandaMonthlyData.map((row, index) => (
                     <tr key={index} className="border-b border-gray-100">
                       <td className="p-3 text-center font-semibold">{row.month}</td>
-                      <td className="p-3 text-center">{row.yRate}%</td>
                       <td className="p-3 text-center">{row.bRate}%</td>
+                      <td className="p-3 text-center">{row.yRate}%</td>
                       <td className="p-3 text-center">{row.bwRate}%</td>
-                      <td className="p-3 text-center">{row.ybRate}%</td>
-                      <td className="p-3 text-center">{row.ybBwRate}%</td>
+                      <td className="p-3 text-center">{row.totalRate}%</td>
                     </tr>
                   ))}
                   <tr className="bg-blue-50 border-b border-gray-100">
-                    <td className="p-3 text-center font-semibold">总计</td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(3.91, pandaTotalRates)}`}>3.91%</td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(2.36, pandaTotalRates)}`}>2.36%</td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(4.46, pandaTotalRates)}`}>4.46%</td>
-                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(3.69, pandaTotalRates)}`}>3.69%</td>
+                    <td className="p-3 text-center font-semibold">合计</td>
+                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(2.42, pandaTotalRates)}`}>2.42%</td>
+                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(3.89, pandaTotalRates)}`}>3.89%</td>
+                    <td className={`p-3 text-center font-semibold ${getMinMaxClass(4.90, pandaTotalRates)}`}>4.90%</td>
                     <td className={`p-3 text-center font-semibold ${getMinMaxClass(3.74, pandaTotalRates)}`}>3.74%</td>
                   </tr>
                 </tbody>

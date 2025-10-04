@@ -8,6 +8,7 @@ import { QuarterlyPreventionCategory } from './components/QuarterlyPreventionCat
 import { Y4SiteDetail } from './components/Y4SiteDetail';
 import { BDXKSiteDetail } from './components/BDXKSiteDetail';
 import { Y6Y9SiteDetail } from './components/Y6Y9SiteDetail';
+import { MKSiteDetail } from './components/MKSiteDetail';
 import { SportsInterceptionCategory } from './components/SportsInterceptionCategory';
 import { SportsOverallKillRate } from './components/SportsOverallKillRate';
 import { PandaSportsKillRate } from './components/PandaSportsKillRate';
@@ -81,6 +82,11 @@ function App() {
         {/* 2.5 第三季度防范金（Y6+Y9明细） */}
         <div data-section="y6y9-detail">
           <Y6Y9SiteDetail />
+        </div>
+
+        {/* 2.5.1 MK明细 */}
+        <div data-section="mk-detail">
+          <MKSiteDetail />
         </div>
 
         {/* 2.6 体育拦截分类明细 */}
