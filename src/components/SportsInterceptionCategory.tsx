@@ -57,8 +57,8 @@ export const SportsInterceptionCategory = () => {
               {/* 第1行：分类、打水分类、出货分类、快咨询、其他 */}
               <tr>
                 <th rowSpan="3" className="p-2 text-center font-semibold border-r border-blue-500 align-middle">分类</th>
-                <th colSpan="6" className="p-2 text-center font-semibold border-r border-blue-500">打水分类</th>
-                <th colSpan="4" className="p-2 text-center font-semibold border-r border-blue-500">出货分类</th>
+                <th colSpan="6" className="p-2 text-center font-semibold border-r border-blue-500">打水</th>
+                <th colSpan="4" className="p-2 text-center font-semibold border-r border-blue-500">出货</th>
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">快咨询</th>
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">其他</th>
               </tr>
@@ -67,10 +67,10 @@ export const SportsInterceptionCategory = () => {
               <tr>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">体育打水</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">批量打水</th>
-                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">打负</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">打负、租卖号、其他打水</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">出货</th>
-                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">野鸡</th>
-                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">夹盘</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">野鸡、协议球、其他出货</th>
+                <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">夹盘、卡进球</th>
                 <th colSpan="2" className="p-1 text-center font-semibold border-r border-blue-500 text-[10px]">其他</th>
               </tr>
 
