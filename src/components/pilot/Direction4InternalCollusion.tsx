@@ -258,33 +258,33 @@ export const Direction4InternalCollusion = () => {
           {/* 稽查成果详细内容 */}
           <div className="space-y-8">
 
-            {/* 1️⃣ 调查成果总览 */}
-            <div className="bg-gradient-to-br from-blue-50 via-white to-blue-50 rounded-xl p-8 border-2 border-blue-300 shadow-lg">
+            {/* 调查成果总览 */}
+            <div className="bg-white rounded-lg p-8 border border-gray-300">
               <div className="flex items-center mb-6">
                 <h4 className="text-2xl font-bold text-gray-800">调查成果总览</h4>
               </div>   
 
               {/* 稽查违规人员 */}
-              <div className="bg-white rounded-lg p-6 mb-6 border-2 border-orange-200 shadow-sm">
+              <div className="bg-gray-50 rounded-lg p-6 mb-6 border border-gray-300">
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="bg-red-50 rounded-lg p-4 border-2 border-red-200">
+                  <div className="bg-white rounded-lg p-4 border border-gray-300">
                     <div className="flex items-center justify-between">
                       <span className="text-gray-700 font-medium">开除</span>
                       <span className="text-3xl font-bold text-red-600">6人</span>
                     </div>
                     <div className="text-xs text-gray-600 mt-2">8月份YH对外协作6人</div>
                   </div>
-                  <div className="bg-orange-50 rounded-lg p-4 border-2 border-orange-200">
+                  <div className="bg-white rounded-lg p-4 border border-gray-300">
                     <div className="flex items-center justify-between">
                       <span className="text-gray-700 font-medium">查获并处置</span>
-                      <span className="text-3xl font-bold text-orange-600">23人</span>
+                      <span className="text-3xl font-bold text-blue-600">23人</span>
                     </div>
                     <div className="text-xs text-gray-600 mt-2">内部泄密/钓鱼执法</div>
                   </div>
-                  <div className="bg-purple-50 rounded-lg p-4 border-2 border-purple-200">
+                  <div className="bg-white rounded-lg p-4 border border-gray-300">
                     <div className="flex items-center justify-between">
                       <span className="text-gray-700 font-medium">特殊处理</span>
-                      <span className="text-3xl font-bold text-purple-600">1人</span>
+                      <span className="text-3xl font-bold text-blue-600">1人</span>
                     </div>
                     <div className="text-xs text-gray-600 mt-2">Ge*，不发奖金与底薪，ZG介入</div>
                   </div>
@@ -294,8 +294,8 @@ export const Direction4InternalCollusion = () => {
     
             </div>
 
-            {/* 2️⃣ 详细案件记录 */}
-            <div className="bg-gradient-to-br from-gray-50 via-white to-gray-50 rounded-xl p-8 border-2 border-gray-300 shadow-lg">
+            {/* 详细案件记录 */}
+            <div className="bg-white rounded-lg p-8 border border-gray-300 mt-6">
               <div className="flex items-center mb-6">
   
                 <h4 className="text-2xl font-bold text-gray-800">详细案件记录</h4>
@@ -316,8 +316,8 @@ export const Direction4InternalCollusion = () => {
                   </thead>
                   <tbody>
                     {/* 7月份 - 账号销售测试 */}
-                    <tr className="hover:bg-blue-50 transition-colors">
-                      <td className="border border-gray-300 px-4 py-4 font-semibold text-blue-600 bg-blue-50">7月份</td>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-gray-700 bg-gray-50">7月份</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">账号销售测试</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">
                         <div className="space-y-1">
@@ -328,7 +328,7 @@ export const Direction4InternalCollusion = () => {
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-2">
                           <div>按计划卖至外部团队，跟踪记录操作手法。</div>
-                          <div className="text-orange-600">V1账号因等级过低未被使用。</div>
+                          <div className="text-gray-600">V1账号因等级过低未被使用。</div>
                         </div>
                       </td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
@@ -338,8 +338,8 @@ export const Direction4InternalCollusion = () => {
                         </div>
                       </td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
-                        <div className="bg-yellow-50 rounded p-2 border border-yellow-200">
-                          <div className="font-semibold text-yellow-700 mb-1">买卖号前置要求：</div>
+                        <div className="bg-gray-50 rounded p-2 border border-gray-300">
+                          <div className="font-semibold text-gray-700 mb-1">买卖号前置要求：</div>
                           <div className="space-y-1 text-xs">
                             <div>① V4+ 且注册&gt;6个月</div>
                             <div>② 负盈利20w++</div>
@@ -352,8 +352,8 @@ export const Direction4InternalCollusion = () => {
                     </tr>
 
                     {/* 8月份 - YH对外协作 */}
-                    <tr className="hover:bg-orange-50 transition-colors">
-                      <td className="border border-gray-300 px-4 py-4 font-semibold text-orange-600 bg-orange-50">8月份</td>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-gray-700 bg-gray-50">8月份</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">YH对外协作</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
                         <div className="space-y-1">
@@ -373,13 +373,13 @@ export const Direction4InternalCollusion = () => {
                     </tr>
 
                     {/* 2-9月 - 内部泄密/钓鱼执法 */}
-                    <tr className="hover:bg-red-50 transition-colors">
-                      <td className="border border-gray-300 px-4 py-4 font-semibold text-red-600 bg-red-50">8月-9月</td>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-gray-700 bg-gray-50">8月-9月</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">内部泄密/钓鱼执法</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">
                         <div className="space-y-2">
-                          <div className="font-semibold text-red-600">共计14人</div>
-                          <div className="text-sm text-orange-600">YH占90%</div>
+                          <div className="font-semibold text-gray-800">共计14人</div>
+                          <div className="text-sm text-gray-600">YH占90%</div>
                         </div>
                       </td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
@@ -395,8 +395,8 @@ export const Direction4InternalCollusion = () => {
                         <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600 inline-block">全部查获，逐一处置</span>
                       </td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
-                        <div className="bg-purple-50 rounded p-2 border border-purple-200">
-                          <div className="font-semibold text-purple-600 mb-1">内幕信息：</div>
+                        <div className="bg-gray-50 rounded p-2 border border-gray-300">
+                          <div className="font-semibold text-gray-700 mb-1">内幕信息：</div>
                           <div className="space-y-1 text-xs">
                             <div>• 外部套利团队部分为GS离职人员</div>
                             <div>• 含JS与FK出身的老油条</div>
@@ -407,8 +407,8 @@ export const Direction4InternalCollusion = () => {
                     </tr>
 
                     {/* 7-9月 - 安插外部测试 */}
-                    <tr className="hover:bg-indigo-50 transition-colors">
-                      <td className="border border-gray-300 px-4 py-4 font-semibold text-indigo-600 bg-indigo-50">7-9月</td>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-gray-700 bg-gray-50">7-9月</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">安插外部测试</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">安插人员加入套利团队</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700 text-sm">
@@ -429,8 +429,8 @@ export const Direction4InternalCollusion = () => {
                     </tr>
 
                     {/* 8月份 - 内部违规人员调查 */}
-                    <tr className="hover:bg-purple-50 transition-colors">
-                      <td className="border border-gray-300 px-4 py-4 font-semibold text-purple-600 bg-purple-50">8月份</td>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-gray-700 bg-gray-50">8月份</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">内部违规人员调查</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">
                         <div className="space-y-1 text-sm">
@@ -466,7 +466,7 @@ export const Direction4InternalCollusion = () => {
 
       {/* 内控业务培训 */}
       <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-gray-300">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -478,24 +478,24 @@ export const Direction4InternalCollusion = () => {
 
           {/* 回群组专项进展 */}
           <div className="mb-8">
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-gray-50 rounded-lg p-6 border border-gray-300">
               <div className="flex items-center justify-between mb-4">
                 <h5 className="text-base font-semibold text-gray-800">1. 回群组专项进展</h5>
                 <span className="px-3 py-1 rounded text-sm font-semibold bg-blue-100 text-blue-600">持续进行中</span>
               </div>
 
               <div className="space-y-3">
-                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
                   <div className="text-sm">
                     <span className="font-semibold text-gray-800">内容：</span>
-                    <span className="text-gray-700">承接全部FK&WH咨询，<span className="font-bold text-green-600">缓解一线出单人员的压力</span></span>
+                    <span className="text-gray-700">承接全部FK&WH咨询，<span className="font-bold text-gray-800">缓解一线出单人员的压力</span></span>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                <div className="bg-white rounded-lg p-4 border border-gray-200">
                   <div className="text-sm">
                     <span className="font-semibold text-gray-800">进度：</span>
-                    <span className="text-gray-700">按二季度目标，三季度已完成覆盖24小时，目前回群组共计<span className="font-bold text-blue-600">29人</span>，<span className="font-bold text-blue-600">4名</span>新人在学习中，<span className="font-bold text-green-600">25人</span>排班制全面覆盖，后续保持团队持续进行运作。</span>
+                    <span className="text-gray-700">按二季度目标，三季度已完成覆盖24小时，目前回群组共计<span className="font-bold text-gray-800">29人</span>，<span className="font-bold text-gray-800">4名</span>新人在学习中，<span className="font-bold text-gray-800">25人</span>排班制全面覆盖，后续保持团队持续进行运作。</span>
                   </div>
                 </div>
               </div>
@@ -504,7 +504,7 @@ export const Direction4InternalCollusion = () => {
 
           {/* 培训组业务进展 */}
           <div className="mb-6">
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <div className="bg-gray-50 rounded-lg p-6 border border-gray-300">
               <div className="flex items-center justify-between mb-4">
                 <h5 className="text-base font-semibold text-gray-800">2. 培训组业务进展</h5>
                 <span className="px-3 py-1 rounded text-sm font-semibold bg-blue-100 text-blue-600">持续进行中</span>
@@ -512,18 +512,18 @@ export const Direction4InternalCollusion = () => {
 
               {/* NO1. 新人入职培训 */}
               <div className="mb-6">
-                <div className="bg-white rounded-lg p-5 border border-blue-100 mb-4">
+                <div className="bg-white rounded-lg p-5 border border-gray-200 mb-4">
                   <h6 className="font-semibold text-gray-800 mb-3 text-sm">NO1. 新人入职培训</h6>
 
                   <div className="space-y-3">
-                     <div className="bg-blue-50 rounded p-3">
+                     <div className="bg-gray-50 rounded p-3">
                       <div className="text-sm">
                         <span className="font-semibold text-gray-800">目标：</span>
                         <span className="text-gray-700">通过平均培训周期8-15天的课程快速让新人可以上手工作</span>
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-blue-50 rounded p-3 text-center">
+                      <div className="bg-gray-50 rounded p-3 text-center border border-gray-200">
                         <div className="text-xs text-gray-600 mb-1">第三季度培训</div>
                         <div className="text-2xl font-bold text-blue-600">36人</div>
                         <div className="text-xs text-gray-600 mt-1">内控22人 | 一审12人 | 系统2人</div>
@@ -535,7 +535,7 @@ export const Direction4InternalCollusion = () => {
                       </div>
                     </div>
 
-                    <div className="bg-green-50 rounded p-3 border border-green-200">
+                    <div className="bg-gray-50 rounded p-3 border border-gray-200">
                       <div className="text-sm text-gray-700">
                         现在新人培训流程已经稳步进行，三季度在二季度基础上做了一些细项及课件优化
                       </div>
@@ -546,11 +546,11 @@ export const Direction4InternalCollusion = () => {
 
               {/* NO2. 在岗人员业务培训 */}
               <div>
-                <div className="bg-white rounded-lg p-5 border border-blue-100">
+                <div className="bg-white rounded-lg p-5 border border-gray-200">
                   <h6 className="font-semibold text-gray-800 mb-3 text-sm">NO2. 在岗人员业务培训</h6>
 
                   <div className="space-y-3">
-                    <div className="bg-blue-50 rounded p-3">
+                    <div className="bg-gray-50 rounded p-3">
                       <div className="text-sm">
                         <span className="font-semibold text-gray-800">目标：</span>
                         <span className="text-gray-700">提升末尾人员 / 质检高频错误点提升 / 业务知识点更新培训 / 等</span>
@@ -558,14 +558,14 @@ export const Direction4InternalCollusion = () => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-blue-50 rounded p-4 text-center">
+                      <div className="bg-gray-50 rounded p-4 text-center border border-gray-200">
                         <div className="text-xs text-gray-600 mb-1">开设课程数量</div>
                         <div className="text-3xl font-bold text-blue-600">4场</div>
                         <div className="text-xs text-gray-600 mt-1">在岗人员培训</div>
                       </div>
-                      <div className="bg-green-50 rounded p-4 text-center border border-green-200">
+                      <div className="bg-gray-50 rounded p-4 text-center border border-gray-200">
                         <div className="text-xs text-gray-600 mb-1">培训总人数</div>
-                        <div className="text-3xl font-bold text-green-600">244人</div>
+                        <div className="text-3xl font-bold text-blue-600">244人</div>
                         <div className="text-xs text-gray-600 mt-1">Q3累计</div>
                       </div>
                     </div>
@@ -581,7 +581,7 @@ export const Direction4InternalCollusion = () => {
 
       {/* 信息安全管理&应急管理方案 */}
       <div className="mb-8">
-        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-8 mb-8 border border-gray-300">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center space-x-3 flex-1">
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
@@ -595,133 +595,133 @@ export const Direction4InternalCollusion = () => {
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
-                <tr className="bg-blue-600">
-                  <th className="border border-blue-700 px-6 py-4 text-left text-white font-semibold text-base w-1/4">条目</th>
-                  <th className="border border-blue-700 px-6 py-4 text-left text-white font-semibold text-base w-1/2">处理方案</th>
-                  <th className="border border-blue-700 px-6 py-4 text-center text-white font-semibold text-base w-1/4">状态</th>
+                <tr className="bg-gray-700">
+                  <th className="border border-gray-600 px-6 py-4 text-left text-white font-semibold text-base w-1/4">条目</th>
+                  <th className="border border-gray-600 px-6 py-4 text-left text-white font-semibold text-base w-1/2">处理方案</th>
+                  <th className="border border-gray-600 px-6 py-4 text-center text-white font-semibold text-base w-1/4">状态</th>
                 </tr>
               </thead>
               <tbody>
         
 
                 {/* 纸飞机安全 */}
-                <tr className="hover:bg-blue-50 transition-colors">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">纸飞机安全设置</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     纸飞机安全设置及使用，全部按照公司标准落实执行
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
+                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                 {/* 护照管理 */}
-                <tr className="hover:bg-blue-50 transition-colors">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">护照集中保管</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     场地人员护照全部交由公司保存
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
+                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                 {/* 文档加密 */}
-                <tr className="hover:bg-blue-50 transition-colors">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">文档安全管理</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     所有文档按照标准进行脱敏并加密使用
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
+                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                 {/* Zoom会议安全 */}
-                <tr className="hover:bg-blue-50 transition-colors">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">Zoom会议安全规范</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     zoom会议严格按照公司要求设置，<span className="font-semibold text-red-600">禁止录屏录音</span>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
+                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                  {/* U盾管理 */}
-                <tr className="hover:bg-blue-50 transition-colors">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">U盾管理制度</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
-                      <div><span className="font-semibold text-blue-600">场地人员：</span>班次组长管理安全盾，规避检查风险。</div>
-                      <div><span className="font-semibold text-blue-600">远程人员：</span>账号权限收至最低标准。盾由场地管理提报且仅虚拟机使用。</div>
-                      <div><span className="font-semibold text-blue-600">居家人员：</span>不会发放U盾、全部放在场地工作人员、统一由场地人员告知验证码。</div>
+                      <div><span className="font-semibold text-gray-700">场地人员：</span>班次组长管理安全盾，规避检查风险。</div>
+                      <div><span className="font-semibold text-gray-700">远程人员：</span>账号权限收至最低标准。盾由场地管理提报且仅虚拟机使用。</div>
+                      <div><span className="font-semibold text-gray-700">居家人员：</span>不会发放U盾、全部放在场地工作人员、统一由场地人员告知验证码。</div>
                     </div>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
+                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
 
                 {/* 三方后台账号 */}
-                <tr className="hover:bg-blue-50 transition-colors">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">三方后台账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
                       <div>• 权限修改至仅查看单会员数据，用于日常排查</div>
-                      <div>• <span className="font-semibold text-blue-600">主管级账号：</span>能导出且帐密仅主管查看</div>
-                      <div>• <span className="font-semibold text-blue-600">外包、远程、一审等较低职位：</span>不让使用三方后台</div>
+                      <div>• <span className="font-semibold text-gray-700">主管级账号：</span>能导出且帐密仅主管查看</div>
+                      <div>• <span className="font-semibold text-gray-700">外包、远程、一审等较低职位：</span>不让使用三方后台</div>
                     </div>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
+                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                 {/* 谷歌账号 */}
-                <tr className="hover:bg-blue-50 transition-colors">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">谷歌账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-2">
-                      <div>• <span className="font-semibold text-blue-600">大蚂蚁zimbra：</span>已全员关闭</div>
-                      <div>• <span className="font-semibold text-blue-600">目前邮箱：</span>均为zobu888，由人资管理</div>
-                      <div>• <span className="font-semibold text-blue-600">风控支持部邮箱：</span>均予以保留，用于后续记录查询</div>
-                      <div>• <span className="font-semibold text-blue-600">人员离职处理：</span>由对接人接管相关邮箱权限，确保工作连续性</div>
+                      <div>• <span className="font-semibold text-gray-700">大蚂蚁zimbra：</span>已全员关闭</div>
+                      <div>• <span className="font-semibold text-gray-700">目前邮箱：</span>均为zobu888，由人资管理</div>
+                      <div>• <span className="font-semibold text-gray-700">风控支持部邮箱：</span>均予以保留，用于后续记录查询</div>
+                      <div>• <span className="font-semibold text-gray-700">人员离职处理：</span>由对接人接管相关邮箱权限，确保工作连续性</div>
                     </div>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
+                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
 
                 {/* Notion账号 */}
-                <tr className="hover:bg-blue-50 transition-colors">
+                <tr className="hover:bg-gray-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">Notion账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
                     <div className="space-y-3">
                       <div>
-                        <div className="font-semibold text-blue-600 mb-1">1. 空间创建与账号分配</div>
+                        <div className="font-semibold text-gray-700 mb-1">1. 空间创建与账号分配</div>
                         <div className="pl-4">• 只有管理员有权限创建 Notion 工作空间和分配账号（邀请成员加入工作空间）</div>
                       </div>
                       <div>
-                        <div className="font-semibold text-blue-600 mb-1">2. 默认权限隔离</div>
+                        <div className="font-semibold text-gray-700 mb-1">2. 默认权限隔离</div>
                         <div className="pl-4">• 每个账号（成员）只能看到自己创建的页面/链接（Notion 页面）</div>
                         <div className="pl-4">• 即使同属一个部门，其他人也默认无权查看（包括子页面）</div>
                         <div className="pl-4">• 所有页面默认是私有状态</div>
                       </div>
                       <div>
-                        <div className="font-semibold text-blue-600 mb-1">3. 访问控制</div>
+                        <div className="font-semibold text-gray-700 mb-1">3. 访问控制</div>
                         <div className="pl-4">• 页面要对他人可见，必须由管理员或页面创建者手动授权，通过分享页面给指定用户</div>
                       </div>
                       <div>
-                        <div className="font-semibold text-blue-600 mb-1">4. 定期归档删除</div>
+                        <div className="font-semibold text-gray-700 mb-1">4. 定期归档删除</div>
                         <div className="pl-4">• 需求上线完成后，1个月内删除</div>
                       </div>
                     </div>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
+                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-600 inline-block">已完成排查</span>
                   </td>
                 </tr>
               </tbody>
