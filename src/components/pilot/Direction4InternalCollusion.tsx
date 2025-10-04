@@ -428,7 +428,7 @@ export const Direction4InternalCollusion = () => {
                       </td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
                         <div className="space-y-1">
-                          <div className="text-blue-600 font-semibold">ZG已介入处理</div>
+                          <div className="text-blue-600 font-semibold">ZG介入处理</div>
                         </div>
                       </td>
                       <td className="border border-gray-300 px-3 py-2 text-center text-gray-400">—</td>
