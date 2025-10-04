@@ -50,7 +50,7 @@ export const OrganizationalStructure = () => {
       manager: '稽查经理1人' 
     },
     '研发部': { 
-      TH: { current: 3, planned: 0, isMain: false }, 
+      TH: { current: 15, planned: 0, isMain: false }, 
       DB: { current: 1, planned: 0, isMain: false }, 
       SLK: { current: 0, planned: 7, isMain: true }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
@@ -60,9 +60,9 @@ export const OrganizationalStructure = () => {
     },
     '内控部': { 
       TH: { current: 6, planned: 0, isMain: false }, 
-      DB: { current: 2, planned: 15, isMain: false }, 
-      SLK: { current: 0, planned: 15, isMain: true }, 
-      KJY: { current: 5, planned: 15, isMain: false }, 
+      DB: { current: 1, planned: 15, isMain: false }, 
+      SLK: { current: 4, planned: 15, isMain: true }, 
+      KJY: { current: 14, planned: 15, isMain: false }, 
       '孵化部': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '内控经理1人' 
