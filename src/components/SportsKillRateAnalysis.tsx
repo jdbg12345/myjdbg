@@ -39,7 +39,7 @@ export const SportsKillRateAnalysis = () => {
         <h1 className="text-5xl font-bold text-gray-800">2.10 主要玩法杀率分析</h1>
         <div className="text-gray-500 text-base">
           <span>下一节：</span>
-          <span className="font-medium ml-2">冠名体育杀率</span>
+          <span className="font-medium ml-2">Y/B/BW的对比分析</span>
         </div>
       </div>
 
