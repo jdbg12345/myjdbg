@@ -12,6 +12,7 @@ import { MKSiteDetail } from './components/MKSiteDetail';
 import { DLCommissionActivity } from './components/DLCommissionActivity';
 import { SportsInterceptionCategory } from './components/SportsInterceptionCategory';
 import { SportsOverallKillRate } from './components/SportsOverallKillRate';
+import { SportsKillRateAnalysis } from './components/SportsKillRateAnalysis';
 import { PandaSportsKillRate } from './components/PandaSportsKillRate';
 import { BSportsKillRate } from './components/BSportsKillRate';
 import { DBSportsKillRate } from './components/DBSportsKillRate';
@@ -103,6 +104,11 @@ function App() {
         {/* 2.7 体育整体杀率明细 */}
         <div data-section="sports-overall">
           <SportsOverallKillRate />
+        </div>
+
+        {/* 2.7.1 体育杀率分析明细 */}
+        <div data-section="sports-kill-rate-analysis">
+          <SportsKillRateAnalysis />
         </div>
 
         {/* 2.8 熊猫体育杀率明细 */}
