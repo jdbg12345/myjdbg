@@ -15,10 +15,10 @@ export const BDXKSiteDetail = () => {
 
   // BD+XK站点明细数据
   const bdxkDetailData = [
-    { type: '代理类', zkAmount: 0.00, zkPercent: 0.00, dlAmount: 1741.59, dlPercent: 65.36, tgAmount: 25.35, tgPercent: null },
-    { type: '体育类', zkAmount: 723.10, zkPercent: 73.78, dlAmount: 638.37, dlPercent: 24.15, tgAmount: 151.42, tgPercent: null },
-    { type: '红利类', zkAmount: 139.69, zkPercent: 14.16, dlAmount: 164.50, dlPercent: 6.29, tgAmount: 72.32, tgPercent: null },
-    { type: '其他类', zkAmount: 199.31, zkPercent: 12.07, dlAmount: 164.95, dlPercent: 4.20, tgAmount: 61.90, tgPercent: null }
+    { type: '代理类', zkAmount: 0.00, zkPercent: 0.00, dlAmount: 1741.59, dlPercent: 65.36, tgAmount: 25.35, tgPercent: 8.71 },
+    { type: '体育类', zkAmount: 723.10, zkPercent: 73.78, dlAmount: 638.37, dlPercent: 24.15, tgAmount: 151.42, tgPercent: 52.05 },
+    { type: '红利类', zkAmount: 139.69, zkPercent: 14.16, dlAmount: 164.50, dlPercent: 6.29, tgAmount: 72.32, tgPercent: 26.14 },
+    { type: '其他类', zkAmount: 199.31, zkPercent: 12.07, dlAmount: 164.95, dlPercent: 4.20, tgAmount: 61.90, tgPercent: 13.10 }
   ];
 
   // 累计占比行的数据（用于最大值最小值高亮）
@@ -81,12 +81,12 @@ export const BDXKSiteDetail = () => {
                     <td className="p-3 text-center font-semibold">2709.42</td>
                     <td className="p-3 text-center font-semibold">100%</td>
                     <td className="p-3 text-center font-semibold">310.99</td>
-                    <td className="p-3 text-center font-semibold">-</td>
+                    <td className="p-3 text-center font-semibold">100%</td>
                   </tr>
                   <tr className="bg-gray-100">
                     <td className="p-3 font-semibold text-center">总计 | 占比</td>
                     <td className="p-3 text-center font-semibold">100%</td>
-                    <td className="p-3 text-center font-semibold">-</td>
+                    <td className="p-3 text-center font-semibold"></td>
                     <td className={`p-3 text-center font-semibold ${getMinMaxClass(25.44, totalPercentages)}`}>25.44%</td>
                     <td className="p-3 text-center font-semibold"></td>
                     <td className={`p-3 text-center font-semibold ${getMinMaxClass(67.26, totalPercentages)}`}>67.26%</td>
