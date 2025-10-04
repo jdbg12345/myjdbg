@@ -102,7 +102,7 @@ const siteData = [
               ))}
              
               <tr className="bg-blue-50 border-b border-gray-100">
-                <td className="p-2 font-semibold text-center text-sm">小计|占比</td>
+                <td className="p-2 font-semibold text-center text-sm">小计</td>
                 <td className="p-2 text-center font-semibold text-xs" colSpan="2"></td>
                 <td className="p-2 text-center font-semibold text-xs" colSpan="2"></td>
                 <td className="p-2 text-center font-semibold text-xs" colSpan="2"></td>
@@ -116,7 +116,7 @@ const siteData = [
                 <td className="p-2 text-center font-semibold text-xs">100%</td>
               </tr>
               <tr className="bg-gray-200">
-                <td className="p-2 font-semibold text-center text-sm">总计|占比</td>
+                <td className="p-2 font-semibold text-center text-sm">总计</td>
                 <td className="p-2 text-center font-semibold text-xs">42098</td>
                 <td className="p-2 text-center font-semibold text-xs">100%</td>
                 <td className="p-2 text-center font-semibold text-xs">37624</td>
