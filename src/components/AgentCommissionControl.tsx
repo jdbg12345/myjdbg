@@ -44,7 +44,7 @@ export const AgentCommissionControl = () => {
           </thead>
           <tbody>
             {[
-              { name: "DL佣金审核预警", desc: "建立DL佣金计算和发放的审核预警机制，监控异常佣金申请和发放行为，防范DL刷量和虚假活跃等风险行为，包括DL行为建模、关联关系分析、异常模式识别等功能", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "降低DL佣金风险，提升佣金发放准确性和安全性，预计降低DL损失80%" }
+              { name: "DLYJ审核预警", desc: "建立DL佣金计算和发放的审核预警机制，监控异常佣金申请和发放行为，防范DL刷量和虚假活跃等风险行为，包括DL行为建模、关联关系分析、异常模式识别等功能", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "降低DL佣金风险，提升佣金发放准确性和安全性，预计降低DL损失80%" }
             ].map((row, index) => (
               <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
