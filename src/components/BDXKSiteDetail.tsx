@@ -112,16 +112,21 @@ export const BDXKSiteDetail = () => {
  
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>ZK用户拦截占比27%，主要组成部分为体育套利占比55%</span>
+              <span>ZK用户拦截占比25%，主要组成部分为体育套利占比73%</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span> DL用户（含代理）拦截占比达到最高为64%，主要为佣金拦截占63%</span>
+              <span>DL用户（含代理）拦截占比达到最高为67%，主要为佣金拦截占65%</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
-              <span>TG用户拦截占比15%，主要为体育套利占比47%</span>
+              <span>TG用户拦截占比7%，主要为体育套利占比52%</span>
             </div>
+             <div className="flex items-start">
+              <span className="text-blue-600 mr-2">•</span>
+              <span>DL拦截占比整体较高（占比：基础18%，额外26%，人头费34%）；结论：新代理额外佣金及人头费拦截占主要组成部分，8月调整后，人头费当月占比降至10%</span>
+            </div>
+          
             <div className="mt-6 p-4 bg-blue-50 rounded-lg">
               <div className="text-sm text-blue-700">
                 <div className="font-semibold mb-2">数据说明：</div>
