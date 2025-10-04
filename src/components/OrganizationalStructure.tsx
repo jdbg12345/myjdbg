@@ -755,10 +755,10 @@ export const OrganizationalStructure = () => {
           <table className="w-full border-collapse">
             <thead className="bg-gray-600 text-white">
               <tr>
-                <th className="p-6 text-left font-semibold whitespace-nowrap">转出场地</th>
-                <th className="p-6 text-center font-semibold whitespace-nowrap">当前人数</th>
-                <th className="p-6 text-center font-semibold whitespace-nowrap">转移人数</th>
-                <th className="p-6 text-left font-semibold whitespace-nowrap">转入场地</th>
+                <th className="p-6 text-left font-semibold whitespace-nowrap">转出</th>
+                <th className="p-6 text-center font-semibold whitespace-nowrap">当前</th>
+                <th className="p-6 text-center font-semibold whitespace-nowrap">转移</th>
+                <th className="p-6 text-left font-semibold whitespace-nowrap">转入</th>
                 <th className="p-6 text-center font-semibold whitespace-nowrap">预计时间</th>
                 <th className="p-6 text-left font-semibold">备注</th>
               </tr>
@@ -821,7 +821,7 @@ export const OrganizationalStructure = () => {
       
       {/* Footer */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="text-gray-400 text-sm">FKZX Q3 REPORT</div>
+        <div className="text-gray-400 text-sm">Q3 REPORT</div>
       </div>
     </div>
   );
