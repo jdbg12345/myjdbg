@@ -22,7 +22,7 @@ export const TableOfContents = () => {
           <div className="ml-12 space-y-3">
             {[
               { num: "2.1", title: "防范单量与金额" },
-              { num: "2.2", title: "站点类型占比" },
+              { num: "2.2", title: "防范金类型占比" },
               { num: "2.3", title: "Y4明细" },
               { num: "2.4", title: "BD+XK明细" },
               { num: "2.5", title: "Y6+Y9明细" },
