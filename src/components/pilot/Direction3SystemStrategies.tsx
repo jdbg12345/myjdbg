@@ -611,12 +611,12 @@ export const Direction3SystemStrategies = () => {
                   </div>
                   <div className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
-                    <span><span className="font-medium text-blue-600">人工计算错误</span>：由于系统计算流水不可用，风控人员<span className="text-blue-600">只能依赖手动计算</span>。但由于规则复杂且涉及多个页面和数据，实际操作中差异较大，既耗时繁琐，又导致<span className="text-red-600">每月约1万笔订单（约占5%）因流水错误引发出款损失，金额约为50万元</span></span>
+                    <span><span className="font-medium text-blue-600">人工计算错误</span>：由于系统计算流水不可用，风控人员<span className="text-blue-600">只能依赖手动计算</span>。但由于规则复杂且涉及多个页面和数据，实际操作中差异较大，<span className="text-red-600">既耗时繁琐，又导致每月约1万笔订单（约占5%）因流水错误引发出款损失，金额约为50万元</span></span>
             
                   </div>
                   <div className="flex items-start">
                     <span className="text-blue-600 mr-2">•</span>
-                    <span><span className="font-medium text-blue-600">用户体验落后</span>：流水咨询形成<span className="text-blue-600">冗长的沟通链路</span>（如，用户-客服-运营-风控-运营-客服-用户），消耗大量时间，运行效率极低，用户体验明显落后</span>
+                    <span><span className="font-medium text-blue-600">用户体验落后</span>：流水咨询形成<span className="text-blue-600">冗长的沟通链路（用户-客服-运营-风控-运营-客服-用户）</span>，<span className="text-red-600">消耗大量时间，运行效率极低，用户体验明显落后</span></span>
                   </div>
                 </div>
               </div>
