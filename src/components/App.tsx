@@ -15,6 +15,7 @@ import { FKTransformationRhythm } from './components/FKTransformationRhythm';
 import { FKSystemOverview } from './components/FKSystemOverview';
 import { InternalControlOverview } from './components/InternalControlOverview';
 import { AgentControlOverview } from './components/AgentControlOverview';
+import { EndPage } from './components/EndPage';
 
         {/* 3.2 FK变化说明 */}
         <div data-section="fk-system-overview">
@@ -29,4 +30,9 @@ import { AgentControlOverview } from './components/AgentControlOverview';
         {/* 3.4 代理风控说明 */}
         <div data-section="agent-control-overview">
           <AgentControlOverview />
+        </div>
+
+        {/* 结束页 */}
+        <div data-section="end-page">
+          <EndPage />
         </div>

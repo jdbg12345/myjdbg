@@ -12,12 +12,112 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'tnum' 1; /* Tabular numbers for better alignment */
   letter-spacing: -0.01em; /* Tighter letter spacing for cleaner look */
+  color: #1f2937; /* Consistent dark gray for text */
 }
 
 /* Disable all animations and transitions */
 * {
   animation: none !important;
   transition: none !important;
+}
+
+/* Unified minimalist style - Numbers */
+@layer utilities {
+  /* Bold numbers */
+  .number {
+    @apply font-bold tabular-nums;
+  }
+
+  /* Positive/Good numbers - Green */
+  .number-positive {
+    @apply font-bold tabular-nums text-green-600;
+  }
+
+  /* Negative/Bad numbers - Red */
+  .number-negative {
+    @apply font-bold tabular-nums text-red-600;
+  }
+
+  /* Neutral numbers - Blue */
+  .number-neutral {
+    @apply font-bold tabular-nums text-blue-600;
+  }
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111827;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Table styling improvements */
+table {
+  font-feature-settings: 'tnum' 1;
+}
+
+table thead {
+  font-weight: 600;
+}
+
+table tbody {
+  font-weight: 400;
+}
+
+table tbody td {
+  line-height: 1.5;
+}
+
+/* Number emphasis in tables */
+table td .font-bold,
+table td strong {
+  font-weight: 700;
+  font-feature-settings: 'tnum' 1;
+}
+
+/* Card and section styling */
+.bg-blue-50 {
+  background-color: #eff6ff;
+}
+
+.border-blue-200 {
+  border-color: #bfdbfe;
+}
+
+/* Clean, minimal focus on content */
+.text-gray-600 {
+  color: #4b5563;
+  font-weight: 400;
+}
+
+.text-gray-700 {
+  color: #374151;
+  font-weight: 500;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+  font-weight: 600;
 }
 
 /* Print styles for PDF export */
