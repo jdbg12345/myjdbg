@@ -56,10 +56,10 @@ export const SportsInterceptionCategory = () => {
             <thead className="bg-blue-600 text-white">
               <tr>
                 <th rowSpan="3" className="p-2 text-center font-semibold border-r border-blue-500">站点</th>
-                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">体育打水</th>
-                <th colSpan="4" className="p-2 text-center font-semibold border-r border-blue-500">体育打水明细</th>
+                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">打水</th>
+                <th colSpan="6" className="p-2 text-center font-semibold border-r border-blue-500">体育打水</th>
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">出货</th>
-                <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">出货明细</th>
+                <th colSpan="4" className="p-2 text-center font-semibold border-r border-blue-500">出货</th>
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">快咨询</th>
                 <th colSpan="2" className="p-2 text-center font-semibold border-r border-blue-500">快咨询明细</th>
                 <th rowSpan="3" className="p-2 text-center font-semibold">其他</th>
