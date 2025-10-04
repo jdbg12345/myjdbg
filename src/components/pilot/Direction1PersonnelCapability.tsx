@@ -283,7 +283,7 @@ export const Direction1PersonnelCapability = () => {
               <div className="space-y-3">
                 <div className="bg-white border-l-4 border-green-500 p-3 rounded">
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <span className="font-semibold text-gray-800">整体效果：</span>通过派单机制的调整，整体实现了外包和远程等低效渠道订单量的<span className="font-bold text-green-600">显著压缩</span>，整体审核质量<span className="font-bold text-green-600">明显提升</span>，符合预期。
+                    <span className="font-semibold text-gray-800"></span>通过派单机制的调整，整体实现了外包和远程等低效渠道订单量的<span className="font-bold text-green-600">显著压缩</span>，符合预期。
                   </p>
                   <p className="text-sm text-blue-700 font-medium mt-2">
                     → 后续加强人员培训、优化淘汰机制，强化过程管控，目标逐步降低比重，直到可随时剔除。
