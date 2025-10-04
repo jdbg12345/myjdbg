@@ -60,7 +60,7 @@ export const Y4SiteDetail = () => {
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-100">
-                    <td rowSpan="5" className="p-4 font-semibold text-center bg-blue-50">Y4</td>
+                    <td rowSpan="5" className="p-4 font-semibold text-center bg-blue-50">4</td>
                   </tr>
                   {y4DetailData.map((row, index) => (
                     <tr key={index} className="border-b border-gray-100">
