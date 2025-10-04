@@ -30,7 +30,7 @@ export const Direction4InternalCollusion = () => {
                 解决策略
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">1、风控的标签备注独立权限</p>
-              <p className="text-gray-700 text-sm leading-relaxed">2、各类套利场景统计，标签明确化便于部门清晰复盘带来的市场动向明确，同时针对常规，特殊，特殊频发案例进行培训手册纳入提高新人成长，完成闭环</p>
+              <p className="text-gray-700 text-sm leading-relaxed">2、同时，部门进行各类套利场景统计，标签明确化便于部门清晰复盘带来的市场动向明确，同时针对常规，特殊，特殊频发案例进行培训手册纳入提高新人成长，完成闭环</p>
             </div>
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
