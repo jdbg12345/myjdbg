@@ -108,8 +108,8 @@ export const OrganizationalStructure = () => {
   };
 
   // 总人数计算：含外包 = 386，非外包 = 386 - 133 = 253
-  const totalPersonnelWithOutsource = 386; // 含外包
-  const totalPersonnelNoOutsource = 253; // 非外包
+  const totalPersonnelWithOutsource = 509; // 含外包
+  const totalPersonnelNoOutsource = 245; // 非外包
   const totalPlannedPersonnel = 92;
 
   // 场地转移计划数据
