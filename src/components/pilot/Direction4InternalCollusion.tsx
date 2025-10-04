@@ -358,7 +358,7 @@ export const Direction4InternalCollusion = () => {
                      <div className="bg-blue-50 rounded p-3">
                       <div className="text-sm">
                         <span className="font-semibold text-gray-800">目标：</span>
-                        <span className="text-gray-700">提升末尾人员 / 质检高频错误点提升 / 业务知识点更新培训 / 等等</span>
+                        <span className="text-gray-700">快速让新人可以上手工作等</span>
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
@@ -399,7 +399,7 @@ export const Direction4InternalCollusion = () => {
                     <div className="bg-blue-50 rounded p-3">
                       <div className="text-sm">
                         <span className="font-semibold text-gray-800">目标：</span>
-                        <span className="text-gray-700">提升末尾人员 / 质检高频错误点提升 / 业务知识点更新培训 / 等等</span>
+                        <span className="text-gray-700">提升末尾人员 / 质检高频错误点提升 / 业务知识点更新培训 / 等</span>
                       </div>
                     </div>
 
