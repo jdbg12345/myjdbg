@@ -192,7 +192,7 @@ export const SportsKillRateAnalysis = () => {
             
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span>熊猫第3季度杀率只有3.74%与上半年差不多，较整体低2.04%，属B系较为严重只有2.81%。</span>
+              <span>熊猫第3季度杀率只有3.74%与上半年差不多，较整体低2.04%，属B系较为严重只有2.81%</span>
             </div>
             
               
@@ -203,7 +203,7 @@ export const SportsKillRateAnalysis = () => {
             
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold">已执行的风控流程：1、9月份上线风控降水、延迟设置会自动同步熊猫，解决利用未风控场馆继续打水的问题。2、9月份B系后台上线场馆合拼，能给于风控专员快速直观判断。3、进行中，后台导出数据格式全站统一，方便风控专员快速整理数据并发现异常状况。</span>
+              <span>已执行的风控流程：1、9月份上线风控降水、延迟设置会自动同步熊猫，解决利用未风控场馆继续打水的问题。2、9月份B系后台上线场馆合拼，能给于风控专员快速直观判断。3、进行中，后台导出数据格式全站统一，方便风控专员快速整理数据并发现异常状况。</span>
             </div>
               
             <div className="flex items-start">
