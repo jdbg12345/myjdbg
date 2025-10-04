@@ -154,24 +154,19 @@ export const SportsInterceptionCategory = () => {
       <DataInsights
         insights={[
           {
-            text: '体育打水为主要占比，达到<strong class="text-blue-600">64.22%</strong>，其次为批量打水占比为<strong class="text-blue-600">12.75%</strong>，出货以及打负占比分别为<strong class="text-blue-600">10.18%</strong>和<strong class="text-blue-600">9.48%</strong>。',
-            type: 'default'
+            text: '体育打水为主要占比，达到<span class="font-semibold text-blue-600">64.22%</span>，其次为批量打水占比为<span class="font-semibold text-blue-600">12.75%</span>，出货以及打负占比分别为<span class="font-semibold text-blue-600">10.18%</span>和<span class="font-semibold text-blue-600">9.48%</span>。'
           },
           {
-            text: '站点分布主要为<strong class="text-blue-600">4、6+9、综合</strong>为主要，占比合计约占整体<strong class="text-blue-600">55%</strong>。',
-            type: 'info'
+            text: '站点分布主要为<span class="font-semibold text-blue-600">4、6+9、综合</span>为主要，占比合计约占整体<span class="font-semibold text-blue-600">55%</span>。'
           },
           {
-            text: '<strong>套利手段：</strong>主要通过盘口水位优势进行打水及红利套利，同时部分职业玩家集中在小联赛进行打水。',
-            type: 'warning'
+            text: '<span class="font-semibold">套利手段：</span>主要通过盘口水位优势进行打水及红利套利，同时部分职业玩家集中在小联赛进行打水。'
           },
           {
-            text: '<strong>发现方式：</strong>主要通过提款审核、批量团体，账户关联分析、提前预警排查、三方反馈和预警群等渠道识别玩家套利行为。',
-            type: 'info'
+            text: '<span class="font-semibold">发现方式：</span>主要通过提款审核、批量团体，账户关联分析、提前预警排查、三方反馈和预警群等渠道识别玩家套利行为。'
           },
           {
-            text: '<strong>处置措施：</strong>针对问题玩家，依据风险程度采取降水、延迟处理、单笔警告、扣款或终止合作等手段。',
-            type: 'success'
+            text: '<span class="font-semibold">处置措施：</span>针对问题玩家，依据风险程度采取降水、延迟处理、单笔警告、扣款或终止合作等手段。'
           }
         ]}
       />
