@@ -8,10 +8,10 @@ export const InternalControlOverview = () => {
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center justify-between border-b-4 border-blue-600 pb-4 mb-4">
-          <h1 className="text-5xl font-bold text-gray-800">3.3 内控风控说明</h1>
+          <h1 className="text-5xl font-bold text-gray-800">3.3 内控风控变化说明</h1>
           <div className="text-gray-500 text-base">
             <span>下一节：</span>
-            <span className="font-medium ml-2">代理风控说明</span>
+            <span className="font-medium ml-2">代理风控变化说明</span>
           </div>
         </div>
         <div className="text-gray-600 text-lg">
