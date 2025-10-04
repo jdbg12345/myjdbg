@@ -148,7 +148,7 @@ export const DLCommissionActivity = () => {
           <div className="space-y-3 text-gray-700">
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
-              <span><span className="font-semibold text-blue-600">基础佣金</span>以及<span className="font-semibold text-blue-600">额外佣金</span>拦截，两者总计占比达整体<span className="font-semibold text-blue-600">43.2%</span>，主要为扶持降低派发拦截。</span>
+              <span><span className="font-semibold text-blue-600">基础YJ</span>以及<span className="font-semibold text-blue-600">额外YJ</span>拦截，两者总计占比达整体<span className="font-semibold text-blue-600">43.2%</span>，主要为扶持降低派发拦截。</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">●</span>
