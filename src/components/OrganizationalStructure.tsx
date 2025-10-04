@@ -114,8 +114,8 @@ export const OrganizationalStructure = () => {
 
   // 场地转移计划数据
   const transferPlan = [
-    { from: 'TH', to: 'SLK', currentCount: 42, count: 42, timing: 'Q4完成', note: 'Q3转移56人，剩余签证办理中，预计Q4完毕' },
-    { from: '招聘', to: 'KJY', currentCount:27, count: '30+', timing: 'Q4完成', note: 'KJY为主要招聘地区，Q4人员至30～50人' }
+    { from: 'T', to: 'S', currentCount: 42, count: 42, timing: 'Q4完成', note: 'Q3转移56人，剩余签证办理中，预计Q4完毕' },
+    { from: '招聘', to: 'K', currentCount:27, count: '30+', timing: 'Q4完成', note: 'K为主要招聘地区，Q4人员至30～50人' }
   ];
 
   // 计算转移计划的合计当前人数
@@ -622,7 +622,7 @@ export const OrganizationalStructure = () => {
               <div className="w-full h-px bg-gray-200 mb-4"></div>
               
               <div className="mb-4">
-                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals.T}</div>
+                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals.TH}</div>
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
