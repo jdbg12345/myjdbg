@@ -823,14 +823,14 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">B端包括赔率溢出、内部玩法错配、盘口方向错误/盘口错开、赔率更新慢等问题。尽管赔率异常或错误是小概率事件，但一旦发生，可能对用户体验、平台信任度以及平台利益造成重大影响。目前，C端主要依靠人工方式来发现这些问题，存在反应慢、覆盖范围有限以及过度依赖个人经验等缺陷。此外，还存在幸存者偏差——某些错误可能已经造成损失，却未被及时发现。</p>
+                <p className="text-gray-700 text-sm leading-relaxed">针对盈利类监控不完整，无法做到全方位、及时性的发现潜在问题</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">降低赔率类异常导致的损失，平推动B端<span className="text-blue-600">提升数据商质量；</span><span className="text-blue-600">给出明确赔率错误类型及规则，并在关键环节——如任意盘口变化后的第一单、结算前的再次校验及提款拦截——实施全方位监控与预警</span>，确保每个步骤的准确性和及时性。</span></p>
+                <p className="text-gray-700 text-sm leading-relaxed">已覆盖<span className="text-blue-600">场馆、游戏、单笔、长期</span>等<span className="text-blue-600">日、周、月</span>的盈利进行监控</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
@@ -852,7 +852,7 @@ export const Direction3SystemStrategies = () => {
                   <span className="text-white font-medium text-sm">5</span>
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">赔率监控预警</h4>
-                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">已上线</span>
+                <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">开发中</span>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">DB体育</span>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">世界杯前重点推进优化</span>
               </div>
@@ -863,14 +863,15 @@ export const Direction3SystemStrategies = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">针对盈利类监控不完整，无法做到全方位、及时性的发现潜在问题</p>
+                 <p className="text-gray-700 text-sm leading-relaxed">B端包括赔率溢出、内部玩法错配、盘口方向错误/盘口错开、赔率更新慢等问题。尽管赔率异常或错误是小概率事件，但一旦发生，可能对用户体验、平台信任度以及平台利益造成重大影响。目前，C端主要依靠人工方式来发现这些问题，存在反应慢、覆盖范围有限以及过度依赖个人经验等缺陷。此外，还存在幸存者偏差——某些错误可能已经造成损失，却未被及时发现。</p>
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">已覆盖<span className="text-blue-600">场馆、游戏、单笔、长期</span>等<span className="text-blue-600">日、周、月</span>的盈利进行监控</p>
+                <p className="text-gray-700 text-sm leading-relaxed"><span className="text-blue-600">降低赔率类异常导致的损失，平推动B端<span className="text-blue-600">提升数据商质量；</span><span className="text-blue-600">给出明确赔率错误类型及规则，并在关键环节——如任意盘口变化后的第一单、结算前的再次校验及提款拦截——实施全方位监控与预警</span>，确保每个步骤的准确性和及时性。</span></p>
+                
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
