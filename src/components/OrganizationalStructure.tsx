@@ -5,7 +5,7 @@ export const OrganizationalStructure = () => {
   // 部门数据结构 - 更新未来主要场地标识
   const departmentData = {
     '活动审核组': {
-      T: { current: 1, planned: 0, isMain: false },
+      TH: { current: 1, planned: 0, isMain: false },
       DB: { current: 0, planned: 0, isMain: true }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
@@ -14,7 +14,7 @@ export const OrganizationalStructure = () => {
       manager: '主管1人' 
     },
     '体育审核组': {
-      T: { current: 20, planned: 0, isMain: false },
+      TH: { current: 20, planned: 0, isMain: false },
       DB: { current: 2, planned: 0, isMain: false },
       SLK: { current: 18, planned: 0, isMain: false },
       KJY: { current: 1, planned: 0, isMain: false }, 
@@ -23,7 +23,7 @@ export const OrganizationalStructure = () => {
       manager: '主管1人' 
     },
     '日常出单组': {
-      T: { current: 30, planned: 0, isMain: false },
+      TH: { current: 30, planned: 0, isMain: false },
       DB: { current: 72, planned: 15, isMain: true },
       SLK: { current: 45, planned: 0, isMain: true },
       KJY: { current: 20, planned: 20, isMain: true }, 
@@ -32,7 +32,7 @@ export const OrganizationalStructure = () => {
       manager: '主管6人' 
     },
     '支持部': {
-      T: { current: 8, planned: 0, isMain: false },
+      TH: { current: 8, planned: 0, isMain: false },
       DB: { current: 2, planned: 0, isMain: false },
       SLK: { current: 6, planned: 0, isMain: true },
       KJY: { current: 2, planned: 0, isMain: false }, 
@@ -41,7 +41,7 @@ export const OrganizationalStructure = () => {
       manager: '主管1人' 
     },
     '安全稽查部': {
-      T: { current: 4, planned: 0, isMain: false },
+      TH: { current: 4, planned: 0, isMain: false },
       DB: { current: 1, planned: 5, isMain: true },
       SLK: { current: 0, planned: 0, isMain: false },
       KJY: { current: 0, planned: 0, isMain: false }, 
@@ -50,7 +50,7 @@ export const OrganizationalStructure = () => {
       manager: '稽查经理1人' 
     },
     '研发部': {
-      T: { current: 0, planned: 0, isMain: false },
+      TH: { current: 0, planned: 0, isMain: false },
       DB: { current: 0, planned: 0, isMain: false },
       SLK: { current: 4, planned: 7, isMain: true },
       KJY: { current: 0, planned: 0, isMain: false }, 
@@ -59,7 +59,7 @@ export const OrganizationalStructure = () => {
       manager: '研发主管1人' 
     },
     '内控部': {
-      T: { current: 4, planned: 0, isMain: false },
+      TH: { current: 4, planned: 0, isMain: false },
       DB: { current: 1, planned: 15, isMain: false },
       SLK: { current: 0, planned: 15, isMain: true },
       KJY: { current: 4, planned: 15, isMain: false }, 
@@ -68,7 +68,7 @@ export const OrganizationalStructure = () => {
       manager: '内控经理1人' 
     },
     '远程': { 
-      T: { current: 0, planned: 0, isMain: false }, 
+      TH: { current: 0, planned: 0, isMain: false }, 
       DB: { current: 0, planned: 0, isMain: false }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
@@ -77,7 +77,7 @@ export const OrganizationalStructure = () => {
       manager: '主管1人' 
     },
     '外包': { 
-      T: { current: 0, planned: 0, isMain: false }, 
+      TH: { current: 0, planned: 0, isMain: false }, 
       DB: { current: 0, planned: 0, isMain: false }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
@@ -89,7 +89,7 @@ export const OrganizationalStructure = () => {
 
   // 计算各场地总人数（在职）
   const locationTotals = {
-    T: Object.values(departmentData).reduce((sum, dept) => sum + dept.T.current, 0),
+    TH: Object.values(departmentData).reduce((sum, dept) => sum + dept.TH.current, 0),
     DB: Object.values(departmentData).reduce((sum, dept) => sum + dept.DB.current, 0),
     SLK: Object.values(departmentData).reduce((sum, dept) => sum + dept.SLK.current, 0),
     KJY: Object.values(departmentData).reduce((sum, dept) => sum + dept.KJY.current, 0),
@@ -99,7 +99,7 @@ export const OrganizationalStructure = () => {
 
   // 计算各场地计划新增人数
   const locationPlannedTotals = {
-    T: Object.values(departmentData).reduce((sum, dept) => sum + dept.T.planned, 0),
+    TH: Object.values(departmentData).reduce((sum, dept) => sum + dept.TH.planned, 0),
     DB: Object.values(departmentData).reduce((sum, dept) => sum + dept.DB.planned, 0),
     SLK: Object.values(departmentData).reduce((sum, dept) => sum + dept.SLK.planned, 0),
     KJY: Object.values(departmentData).reduce((sum, dept) => sum + dept.KJY.planned, 0),
@@ -108,13 +108,13 @@ export const OrganizationalStructure = () => {
   };
 
   // 总人数计算：含外包 = 386，非外包 = 386 - 133 = 253
-  const totalPersonnelWiTOutsource = 509; // 含外包
+  const totalPersonnelWithOutsource = 509; // 含外包
   const totalPersonnelNoOutsource = 245; // 非外包
   const totalPlannedPersonnel = 92;
 
   // 场地转移计划数据
   const transferPlan = [
-    { from: 'T', to: 'SLK', currentCount: 42, count: 42, timing: 'Q4完成', note: 'Q3转移56人，剩余签证办理中，预计Q4完毕' },
+    { from: 'TH', to: 'SLK', currentCount: 42, count: 42, timing: 'Q4完成', note: 'Q3转移56人，剩余签证办理中，预计Q4完毕' },
     { from: '招聘', to: 'KJY', currentCount:27, count: '30+', timing: 'Q4完成', note: 'KJY为主要招聘地区，Q4人员至30～50人' }
   ];
 
@@ -211,7 +211,7 @@ export const OrganizationalStructure = () => {
           // 计算目标节点的连接点分布
           const targetConns = targetConnections[conn.to];
           const connIndex = targetConns.findIndex(c => c.from === conn.from);
-          const totalConns = targetConns.lengT;
+          const totalConns = targetConns.length;
           
           // 计算终点坐标
           let toX, toY;
@@ -241,22 +241,22 @@ export const OrganizationalStructure = () => {
             midX = fromX + (toX - fromX) / 2;
           }
           
-          const paTData = `M ${fromX} ${fromY} L ${midX} ${fromY} L ${midX} ${toY} L ${toX} ${toY}`;
+          const pathData = `M ${fromX} ${fromY} L ${midX} ${fromY} L ${midX} ${toY} L ${toX} ${toY}`;
 
           // 创建路径元素
-          const paT = document.createElementNS('http://www.w3.org/2000/svg', 'paT');
-          paT.setAttribute('d', paTData);
-          paT.setAttribute('stroke', '#3B82F6');
-          paT.setAttribute('stroke-widT', '2');
-          paT.setAttribute('fill', 'none');
-          paT.setAttribute('marker-end', 'url(#arrowhead)');
+          const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          path.setAttribute('d', pathData);
+          path.setAttribute('stroke', '#3B82F6');
+          path.setAttribute('stroke-width', '2');
+          path.setAttribute('fill', 'none');
+          path.setAttribute('marker-end', 'url(#arrowhead)');
 
           // 创建箭头标记 - 缩小至最小合适尺寸
           if (index === 0) {
             const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
             const marker = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
             marker.setAttribute('id', 'arrowhead');
-            marker.setAttribute('markerWidT', '6');
+            marker.setAttribute('markerWidth', '6');
             marker.setAttribute('markerHeight', '4');
             marker.setAttribute('refX', '5');
             marker.setAttribute('refY', '2');
@@ -278,7 +278,7 @@ export const OrganizationalStructure = () => {
           endDot.setAttribute('r', '3');
           endDot.setAttribute('fill', '#EF4444');
           endDot.setAttribute('stroke', 'white');
-          endDot.setAttribute('stroke-widT', '1');
+          endDot.setAttribute('stroke-width', '1');
 
           // 添加编号标注（如果有）- 缩小字体
           if (conn.number) {
@@ -288,7 +288,7 @@ export const OrganizationalStructure = () => {
             numberCircle.setAttribute('r', '6');
             numberCircle.setAttribute('fill', '#3B82F6');
             numberCircle.setAttribute('stroke', 'white');
-            numberCircle.setAttribute('stroke-widT', '1');
+            numberCircle.setAttribute('stroke-width', '1');
 
             const numberText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
             numberText.setAttribute('x', toX + 12);
@@ -304,7 +304,7 @@ export const OrganizationalStructure = () => {
             svg.appendChild(numberText);
           }
 
-          svg.appendChild(paT);
+          svg.appendChild(path);
           svg.appendChild(endDot);
         }
       });
@@ -350,7 +350,7 @@ export const OrganizationalStructure = () => {
         ></svg>
         
         <div className="relative bg-white rounded-lg p-8">
-          {/* Header row wiT section titles */}
+          {/* Header row with section titles */}
           <div className="grid gap-6 mb-8" style={{
             gridTemplateColumns: '1fr 2fr 1fr'
           }}>
@@ -365,7 +365,7 @@ export const OrganizationalStructure = () => {
             </div>
           </div>
 
-          {/* Main content grid wiT gaps between rows */}
+          {/* Main content grid with gaps between rows */}
           <div className="grid gap-6" style={{
             gridTemplateColumns: '1fr 2fr 1fr',
             gridTemplateRows: '120px 420px 120px 120px'
@@ -437,7 +437,7 @@ export const OrganizationalStructure = () => {
                   <div className="w-16 h-0.5 bg-blue-600 mx-auto mt-1"></div>
                 </div>
                 
-                {/* Vertical layout for audit groups wiT more spacing */}
+                {/* Vertical layout for audit groups with more spacing */}
                 <div className="h-full flex flex-col justify-between space-y-4" style={{ height: 'calc(100% - 60px)' }}>
                   <div id="sports-audit" className="bg-gradient-to-r from-blue-400 to-blue-500 border-2 border-blue-500 p-3 text-center rounded-lg">
                     <div className="font-semibold text-white text-sm">体育审核组</div>
@@ -549,21 +549,21 @@ export const OrganizationalStructure = () => {
               <div className="flex items-center justify-center space-x-8">
                 <div className="text-center">
                   <div className="text-lg text-gray-600 mb-2">合计人数（含远程外包）</div>
-                  <div className="text-4xl font-bold text-red-600">{totalPersonnelWiTOutsource}</div>
+                  <div className="text-4xl font-bold text-red-600">{totalPersonnelWithOutsource}</div>
                 </div>
 
           {/* 质检部门到DLYJ审核组的连线 */}
           <svg className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
             <defs>
-              <marker id="arrowhead-quality-commission" markerWidT="10" markerHeight="7" 
+              <marker id="arrowhead-quality-commission" markerWidth="10" markerHeight="7" 
                refX="9" refY="3.5" orient="auto">
                 <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
               </marker>
             </defs>
-            <paT
+            <path
               d="M 50% 20% Q 75% 25% 85% 75%"
               stroke="#3b82f6"
-              strokeWidT="2"
+              strokeWidth="2"
               fill="none"
               markerEnd="url(#arrowhead-quality-commission)"
             />
@@ -581,16 +581,16 @@ export const OrganizationalStructure = () => {
             
             {/* 大括弧 SVG */}
             <div className="absolute top-full left-0 right-0 z-10" style={{ height: '100px' }}>
-              <svg widT="100%" height="100" viewBox="0 0 1440 100" className="overflow-visible">
-                <line x1="600" y1="0" x2="600" y2="40" stroke="#3B82F6" strokeWidT="3"/>
-                <line x1="120" y1="40" x2="1320" y2="40" stroke="#3B82F6" strokeWidT="3"/>
-                <line x1="120" y1="40" x2="120" y2="90" stroke="#3B82F6" strokeWidT="2"/>
-                <line x1="320" y1="40" x2="320" y2="90" stroke="#3B82F6" strokeWidT="2"/>
-                <line x1="520" y1="40" x2="520" y2="90" stroke="#3B82F6" strokeWidT="2"/>
-                <line x1="720" y1="40" x2="720" y2="90" stroke="#3B82F6" strokeWidT="2"/>
-                <line x1="920" y1="40" x2="920" y2="90" stroke="#3B82F6" strokeWidT="2"/>
-                <line x1="1120" y1="40" x2="1120" y2="90" stroke="#3B82F6" strokeWidT="2"/>
-                <line x1="1320" y1="40" x2="1320" y2="90" stroke="#3B82F6" strokeWidT="2"/>
+              <svg width="100%" height="100" viewBox="0 0 1440 100" className="overflow-visible">
+                <line x1="600" y1="0" x2="600" y2="40" stroke="#3B82F6" strokeWidth="3"/>
+                <line x1="120" y1="40" x2="1320" y2="40" stroke="#3B82F6" strokeWidth="3"/>
+                <line x1="120" y1="40" x2="120" y2="90" stroke="#3B82F6" strokeWidth="2"/>
+                <line x1="320" y1="40" x2="320" y2="90" stroke="#3B82F6" strokeWidth="2"/>
+                <line x1="520" y1="40" x2="520" y2="90" stroke="#3B82F6" strokeWidth="2"/>
+                <line x1="720" y1="40" x2="720" y2="90" stroke="#3B82F6" strokeWidth="2"/>
+                <line x1="920" y1="40" x2="920" y2="90" stroke="#3B82F6" strokeWidth="2"/>
+                <line x1="1120" y1="40" x2="1120" y2="90" stroke="#3B82F6" strokeWidth="2"/>
+                <line x1="1320" y1="40" x2="1320" y2="90" stroke="#3B82F6" strokeWidth="2"/>
                 <circle cx="600" cy="40" r="4" fill="#3B82F6"/>
                 <circle cx="120" cy="40" r="3" fill="#3B82F6"/>
                 <circle cx="320" cy="40" r="3" fill="#3B82F6"/>
@@ -612,7 +612,7 @@ export const OrganizationalStructure = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 mt-24">
-          {/* T场地 */}
+          {/* TH场地 */}
           <div className="bg-white rounded-xl p-4 border-2 border-blue-500">
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2 mb-3">
@@ -622,7 +622,7 @@ export const OrganizationalStructure = () => {
               <div className="w-full h-px bg-gray-200 mb-4"></div>
               
               <div className="mb-4">
-                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals.T}</div>
+                <div className="text-3xl font-bold text-blue-600 mb-1">{locationTotals.TH}</div>
                 {/* 添加弱弱的横线 */}
                 <div className="w-full h-px bg-gray-200 my-2"></div>
               </div>
@@ -753,16 +753,16 @@ export const OrganizationalStructure = () => {
         
         <div className="bg-white rounded-lg overflow-hidden">
           <table className="w-full border-collapse">
-            <Tead className="bg-gray-600 text-white">
+            <thead className="bg-gray-600 text-white">
               <tr>
-                <T className="p-6 text-left font-semibold whitespace-nowrap">转出场地</T>
-                <T className="p-6 text-center font-semibold whitespace-nowrap">当前人数</T>
-                <T className="p-6 text-center font-semibold whitespace-nowrap">转移人数</T>
-                <T className="p-6 text-left font-semibold whitespace-nowrap">转入场地</T>
-                <T className="p-6 text-center font-semibold whitespace-nowrap">预计时间</T>
-                <T className="p-6 text-left font-semibold">备注</T>
+                <th className="p-6 text-left font-semibold whitespace-nowrap">转出场地</th>
+                <th className="p-6 text-center font-semibold whitespace-nowrap">当前人数</th>
+                <th className="p-6 text-center font-semibold whitespace-nowrap">转移人数</th>
+                <th className="p-6 text-left font-semibold whitespace-nowrap">转入场地</th>
+                <th className="p-6 text-center font-semibold whitespace-nowrap">预计时间</th>
+                <th className="p-6 text-left font-semibold">备注</th>
               </tr>
-            </Tead>
+            </thead>
             <tbody>
               {transferPlan.map((transfer, index) => (
                 <tr key={index} className="border-b border-gray-100 hover:bg-white transition-colors">
@@ -791,7 +791,7 @@ export const OrganizationalStructure = () => {
                     </span>
                   </td>
                   <td className="p-6 text-gray-600">
-                    {transfer.note || 'KJY为主要招聘地区，三季度目标扩张人员至30～50人；T人员主迁移区，后续为主要招聘地区；DB后续视场地数量进行后续人员规'}
+                    {transfer.note || 'KJY为主要招聘地区，三季度目标扩张人员至30～50人；TH人员主迁移区，后续为主要招聘地区；DB后续视场地数量进行后续人员规'}
                   </td>
 
                 </tr>
