@@ -87,12 +87,12 @@ export const QuarterlyPreventionData = () => {
             </div>
 
             {/* 图表区域 */}
-            <div className="h-[250px] mb-2 relative">
+            <div className="h-[280px] mb-2 relative">
               <div className="flex items-end justify-between h-full relative">
                 {/* Y轴基线 */}
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-300"></div>
                 {manualData.map((item, index) => {
-                  const barHeight = (item.volume / maxVolume) * 250;
+                  const barHeight = (item.volume / maxVolume) * 280;
                   return (
                   <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
                     <div className="absolute text-sm font-semibold text-blue-600" style={{ bottom: `${barHeight + 4}px` }}>{item.volume}</div>
@@ -114,8 +114,8 @@ export const QuarterlyPreventionData = () => {
                     strokeWidth="2"
                     points={manualData.map((item, index) => {
                       const x = (index + 0.5) * (100 / manualData.length);
-                      const barHeight = (item.volume / maxVolume) * 250;
-                      const y = 250 - barHeight * 0.6;
+                      const barHeight = (item.volume / maxVolume) * 280;
+                      const y = 280 - barHeight * 0.6;
                       return `${x}%,${y}px`;
                     }).join(' ')}
                   />

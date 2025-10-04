@@ -254,8 +254,8 @@ export const Direction3SystemStrategies = () => {
                   </div>
                 </div>
               </div>
-                            
-              <div className="flex justify-center space-x-8 text-sm">
+
+              <div className="flex justify-center space-x-8 text-sm mt-6">
                 <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-blue-500 rounded"></div>
                   <span className="text-gray-700">拦截订单数</span>
@@ -266,7 +266,7 @@ export const Direction3SystemStrategies = () => {
                 </div>
               </div>
 
-              <div className="text-right text-sm text-gray-500 mt-6">统计口径：2025年9月20以后日至9月30日期间，随机选取了100笔命了该风控策略的提款订单</div>
+              <div className="text-right text-sm text-gray-500 mt-4">统计口径：2025年9月20日以后至9月30日期间，随机选取了100笔命中了该风控策略的提款订单</div>
             </div>
         </div>
       </div>
@@ -386,8 +386,8 @@ export const Direction3SystemStrategies = () => {
                   <div className="text-sm text-gray-600">100</div>
                 </div>
               </div>
-                            
-              <div className="flex justify-center space-x-8 text-sm">
+
+              <div className="flex justify-center space-x-8 text-sm mt-6">
                 <div className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-blue-500 rounded"></div>
                   <span className="text-gray-700">拦截订单数</span>
@@ -398,7 +398,7 @@ export const Direction3SystemStrategies = () => {
                 </div>
               </div>
 
-              <div className="text-right text-sm text-gray-500 mt-6">统计口径：2025年9月17日至9月30日期间，随机选取了100笔命了该风控策略的提款订单</div>
+              <div className="text-right text-sm text-gray-500 mt-4">统计口径：2025年9月17日至9月30日期间，随机选取了100笔命中了该风控策略的提款订单</div>
             </div>
         </div>
       </div>
