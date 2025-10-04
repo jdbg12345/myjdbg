@@ -234,6 +234,13 @@ export const Direction3SystemStrategies = () => {
                   → 后续需要继续迭代，目标准确率在<span className="font-bold">80%</span>。
                 </p>
               </div>
+
+               <div className="bg-white border-l-4 border-gray-400 p-3 rounded">
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <span className="font-semibold text-gray-800">备注：</span>卡免费行为和提款被风控并不完全相等，风控主要需要考虑是否存在实际影响，比如是否涉及红利申请等。然而，出现这种行为的用户确实属于异常用户，因为正常用户通常不会做出这种操作。
+                </p>
+              </div>
+              
             </div>
 
           </div>
