@@ -22,8 +22,8 @@ export const sections: Section[] = [
   { id: 'fk-summary', title: '3. 工作情况', nextTitle: 'FK全局说明' },
   { id: 'fk-transformation', title: '3.1 FK全局说明', nextTitle: 'FK会员说明' },
   { id: 'fk-system-overview', title: '3.2 FK会员说明', nextTitle: 'FK内控说明' },
-  { id: 'internal-control-overview', title: '3.3 FK内控说明', nextTitle: 'FK代理说明' },
-  { id: 'agent-control-overview', title: '3.4 FK代理说明' }
+  { id: 'internal-control-overview', title: '3.3 FK内控说明', nextTitle: 'FKDL说明' },
+  { id: 'agent-control-overview', title: '3.4 FKDL说明' }
 ];
 
 export const getSectionInfo = (id: string): Section | undefined => {
