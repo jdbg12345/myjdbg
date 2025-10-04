@@ -207,7 +207,7 @@ export const AgentControlOverview = () => {
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
                 </h4>
-                <p className="text-gray-700 text-sm leading-relaxed">优化DL管理及运营能力，提升YJROI</p>
+                <p className="text-gray-700 text-sm leading-relaxed">优化DL管理及运营能力，提升YJ的ROI</p>
               </div>
             </div>
 
