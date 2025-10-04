@@ -303,7 +303,7 @@ export const Direction4InternalCollusion = () => {
         </div>
       </div>
 
-      {/* 内控培训 */}
+      {/* 内控业务培训 */}
       <div className="mb-8">
         <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
           <div className="flex items-center justify-between mb-6">
@@ -311,7 +311,7 @@ export const Direction4InternalCollusion = () => {
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">7</span>
               </div>
-              <h4 className="text-lg font-semibold text-gray-800">内控培训</h4>
+              <h4 className="text-lg font-semibold text-gray-800">内控业务支持</h4>
             </div>
           </div>
 
