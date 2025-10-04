@@ -266,7 +266,7 @@ export const Direction3SystemStrategies = () => {
                 </div>
               </div>
 
-              <div className="text-right text-sm text-gray-500 mt-6">统计口径：2025年9月20以后日至9月30日期间</div>
+              <div className="text-right text-sm text-gray-500 mt-6">统计口径：2025年9月20以后日至9月30日期间，随机选取了100笔命了该风控策略的提款订单</div>
             </div>
         </div>
       </div>
