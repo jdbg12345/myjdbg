@@ -10,7 +10,7 @@ export const AgentControlOverview = () => {
           <h1 className="text-5xl font-bold text-gray-800">3.4 DL风控变化说明</h1>
         </div>
         <div className="text-gray-600 text-lg">
-          <p className="text-gray-700 text-lg leading-relaxed font-semibold">Q4会从<span className="text-blue-600">佣金审核流程、DL质量分析</span>等方向进行重点优化</p>
+          <p className="text-gray-700 text-lg leading-relaxed font-semibold">Q4会从<span className="text-blue-600">YJ审核流程、DL质量分析</span>等方向进行重点优化</p>
         </div>
       </div>   
 
@@ -23,7 +23,7 @@ export const AgentControlOverview = () => {
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                   <span className="text-white font-medium text-sm">1</span>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-800">DL佣金审核流程升级</h4>
+                <h4 className="text-lg font-semibold text-gray-800">DLYJ审核流程升级</h4>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">方案中</span>
                 <span className="px-4 py-2 rounded text-sm font-medium bg-blue-100 text-blue-600 ml-4">Q4重点</span>
               </div>
