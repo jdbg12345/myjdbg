@@ -54,18 +54,12 @@ export const OverallData = () => {
           
           <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
             <div className="text-blue-600 text-lg font-semibold mb-2">熊猫体育杀率</div>
-            <div className="text-gray-600 text-sm">联赛分类与场馆对比</div>
           </div>
           
           <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
-            <div className="text-blue-600 text-lg font-semibold mb-2">B系体育杀率</div>
-            <div className="text-gray-600 text-sm">游戏类型与玩法分析</div>
+            <div className="text-blue-600 text-lg font-semibold mb-2">BW体育杀率</div>
           </div>
           
-          <div className="bg-white rounded-lg p-6 border border-blue-200 text-center">
-            <div className="text-blue-600 text-lg font-semibold mb-2">DB体育杀率</div>
-            <div className="text-gray-600 text-sm">DB与IM对比分析</div>
-          </div>
         </div>
       </div>
  
