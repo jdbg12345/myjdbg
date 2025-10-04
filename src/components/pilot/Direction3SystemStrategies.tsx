@@ -371,7 +371,7 @@ export const Direction3SystemStrategies = () => {
                       {/* 准确率数据点 */}
                       <div
                         className="absolute w-4 h-4 bg-green-600 rounded-full border-2 border-white z-10"
-                        style={{bottom: `${(52 / 100) * 320}px`, left: '50%', transform: 'translateX(-50%)'}}
+                        style={{bottom: `${(52 / 60) * 320}px`, left: '50%', transform: 'translateX(-50%)'}}
                       >
                         <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
                           52%
