@@ -441,7 +441,7 @@ export const Direction4InternalCollusion = () => {
               <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                 <span className="text-white font-medium text-sm">8</span>
               </div>
-              <h4 className="text-lg font-semibold text-gray-800">信息安全管理&应急管理方案</h4>
+              <h4 className="text-lg font-semibold text-gray-800">信息安全管理</h4>
             </div>
           </div>
 
@@ -512,27 +512,6 @@ export const Direction4InternalCollusion = () => {
                   </td>
                 </tr>
 
-                {/* 多场地应急方案 */}
-                <tr className="hover:bg-blue-50 transition-colors">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">多场地应急方案</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
-                    多场地组建团队，目前还有部分待转移的人在泰，某个场地出现问题会临时调整为另一个场地的人顶上来
-                  </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
-                  </td>
-                </tr>
-
-                {/* 日常监督管理 */}
-                <tr className="hover:bg-blue-50 transition-colors">
-                  <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">日常监督管理</td>
-                  <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
-                    每天都会有班前会议以及文字交接班内容，以及随机抽查
-                  </td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">
-                    <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
-                  </td>
-                </tr>
 
                 {/* 管理后台账号 */}
                 <tr className="hover:bg-blue-50 transition-colors">
@@ -560,7 +539,7 @@ export const Direction4InternalCollusion = () => {
                 <tr className="hover:bg-blue-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">谷歌账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
-                    下发控制权限，统一账号管理，按需下发账号并及时回收账号，定期清理内容
+                    大蚂蚁zimbra：已全员关闭。目前均为zobu888，由人资管理；风控支持部的邮箱均予以保留，用于后续记录查询，如有人员离职，将由对接人接管相关邮箱权限，确保工作连续性；
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
