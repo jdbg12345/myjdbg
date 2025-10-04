@@ -161,7 +161,7 @@ export const QuarterlyPreventionData = () => {
             text: '整体人工审核时效在<span class="font-semibold text-blue-600">06:49</span>，整体环比上一季度，人工审核效率因9月导致下降，原因为外包远程部门提高准确率进行策略单量导流，总部单量增加时效有所延长，后续持续发展优化此项时长。'
           },
           {
-            text: '整体拦截金额为<span class="font-semibold text-green-600">3.95</span>，本季度环比上一季度<span class="font-semibold text-green-600">提升5%</span>，此部分原因为8月代理部分人头费拦截增多导致。'
+            text: '整体拦截金额为<span class="font-semibold text-green-600">3.95</span>，本季度环比上一季度<span class="font-semibold text-green-600">提升5%</span>，此部分原因为8月DL部分人头费拦截增多导致。'
           }
         ]}
       />
