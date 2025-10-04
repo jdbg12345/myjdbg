@@ -319,7 +319,7 @@ export const AgentControlOverview = () => {
             {
               id: '3Y218350',
               grade: 'C档 - 一般',
-              site: 'Y8',
+              site: '8',
               joinDate: '2024-08-10',
               totalScore: 56,
               businessScore: 39,
@@ -333,7 +333,7 @@ export const AgentControlOverview = () => {
             {
               id: '3Y123456',
               grade: 'A档 - 优秀',
-              site: 'Y1',
+              site: '1',
               joinDate: '2025-08-10',
               totalScore: 80,
               businessScore: 90,
