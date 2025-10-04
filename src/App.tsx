@@ -130,7 +130,7 @@ function App() {
           <InternalControlOverview />
         </div>
 
-         {/* 3.4 FK代理风控变化说明 */}
+         {/* 3.4 FKDL风控变化说明 */}
         <div data-section="agent-control-overview">
           <AgentControlOverview />
         </div>
