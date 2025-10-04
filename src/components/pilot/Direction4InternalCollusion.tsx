@@ -374,12 +374,11 @@ export const Direction4InternalCollusion = () => {
 
                     {/* 2-9月 - 内部泄密/钓鱼执法 */}
                     <tr className="hover:bg-red-50 transition-colors">
-                      <td className="border border-gray-300 px-4 py-4 font-semibold text-red-600 bg-red-50">2-9月</td>
+                      <td className="border border-gray-300 px-4 py-4 font-semibold text-red-600 bg-red-50">8月-9月</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">内部泄密/钓鱼执法</td>
                       <td className="border border-gray-300 px-4 py-4 text-gray-700">
                         <div className="space-y-2">
-                          <div className="font-semibold text-red-600">共计23人</div>
-                          <div className="text-sm">其中8-9月14人</div>
+                          <div className="font-semibold text-red-600">共计14人</div>
                           <div className="text-sm text-orange-600">YH占90%</div>
                         </div>
                       </td>
