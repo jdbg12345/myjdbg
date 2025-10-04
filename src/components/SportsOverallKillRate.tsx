@@ -183,19 +183,15 @@ export const SportsOverallKillRate = () => {
           <div className="space-y-3 text-gray-700">
             <div className="flex items-start">
               <span className="text-red-600 mr-2">▶</span>
-              <span className="text-red-600 font-semibold"> DB体育场馆是含有大量内嵌真人、彩票订单，此杀率数据已排除内嵌真人与彩票</span>
+              <span className="text-red-600 font-semibold">DB体育场馆是含有大量内嵌真人、彩票订单，此杀率数据已排除内嵌真人与彩票</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">▶</span>
-              <span>熊猫杀率近半年只有3.74%，比整体低1.725%，1月至5月表现差劲，6月份有所好转</span>
+              <span>熊猫第3季度杀率只有3.74%与上半年差不多，较整体低2.04%，属B系较为严重只有2.81%</span>
             </div>
             <div className="flex items-start">
               <span className="text-blue-600 mr-2">▶</span>
-              <span>B系近半年杀率最低只有4.85%，比整体低于整体0.61%</span>
-            </div>
-            <div className="flex items-start">
-              <span className="text-blue-600 mr-2">▶</span>
-              <span>IM体育整体杀率5.76%，要高于DB整体0.29%左右</span>
+              <span>熊猫在BW的表现长期较为优越的，第3季度达到5.3%</span>
             </div>
           </div>
         </div>
