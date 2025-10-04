@@ -4,65 +4,65 @@ import { Users, MapPin, BarChart3, Wifi, Building2, ArrowRight, Info, User, Netw
 export const OrganizationalStructure = () => {
   // 部门数据结构 - 更新未来主要场地标识
   const departmentData = {
-    '活动审核组': { 
-      TH: { current: 0, planned: 0, isMain: false }, 
-      DB: { current: 1, planned: 0, isMain: true }, 
+    '活动审核组': {
+      TH: { current: 1, planned: 0, isMain: false },
+      DB: { current: 0, planned: 0, isMain: true }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
       '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
-    '体育审核组': { 
-      TH: { current: 18, planned: 0, isMain: false }, 
-      DB: { current: 2, planned: 0, isMain: false }, 
-      SLK: { current: 0, planned: 0, isMain: false }, 
+    '体育审核组': {
+      TH: { current: 18, planned: 0, isMain: false },
+      DB: { current: 2, planned: 0, isMain: false },
+      SLK: { current: 18, planned: 0, isMain: false },
       KJY: { current: 1, planned: 0, isMain: false }, 
       '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
-    '日常出单组': { 
-      TH: { current: 27, planned: 0, isMain: false }, 
-      DB: { current: 82, planned: 15, isMain: true }, 
-      SLK: { current: 37, planned: 0, isMain: true }, 
-      KJY: { current: 6, planned: 20, isMain: true }, 
+    '日常出单组': {
+      TH: { current: 12, planned: 0, isMain: false },
+      DB: { current: 72, planned: 15, isMain: true },
+      SLK: { current: 45, planned: 0, isMain: true },
+      KJY: { current: 20, planned: 20, isMain: true }, 
       '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '主管6人' 
     },
-    '支持部': { 
-      TH: { current: 6, planned: 0, isMain: false }, 
-      DB: { current: 2, planned: 0, isMain: false }, 
-      SLK: { current: 0, planned: 0, isMain: true }, 
+    '支持部': {
+      TH: { current: 6, planned: 0, isMain: false },
+      DB: { current: 2, planned: 0, isMain: false },
+      SLK: { current: 6, planned: 0, isMain: true },
       KJY: { current: 2, planned: 0, isMain: false }, 
       '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
-    '安全稽查部': { 
-      TH: { current: 15, planned: 0, isMain: false }, 
-      DB: { current: 0, planned: 5, isMain: true }, 
-      SLK: { current: 0, planned: 0, isMain: false }, 
+    '安全稽查部': {
+      TH: { current: 2, planned: 0, isMain: false },
+      DB: { current: 1, planned: 5, isMain: true },
+      SLK: { current: 0, planned: 0, isMain: false },
       KJY: { current: 0, planned: 0, isMain: false }, 
       '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '稽查经理1人' 
     },
-    '研发部': { 
-      TH: { current: 1, planned: 0, isMain: false }, 
-      DB: { current: 0, planned: 0, isMain: false }, 
-      SLK: { current: 3, planned: 7, isMain: true }, 
+    '研发部': {
+      TH: { current: 0, planned: 0, isMain: false },
+      DB: { current: 0, planned: 0, isMain: false },
+      SLK: { current: 4, planned: 7, isMain: true },
       KJY: { current: 0, planned: 0, isMain: false }, 
       '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '研发主管1人' 
     },
-    '内控部': { 
-      TH: { current: 15, planned: 0, isMain: false }, 
-      DB: { current: 1, planned: 15, isMain: false }, 
-      SLK: { current: 4, planned: 15, isMain: true }, 
-      KJY: { current: 14, planned: 15, isMain: false }, 
+    '内控部': {
+      TH: { current: 3, planned: 0, isMain: false },
+      DB: { current: 1, planned: 15, isMain: false },
+      SLK: { current: 0, planned: 15, isMain: true },
+      KJY: { current: 4, planned: 15, isMain: false }, 
       '远程': { current: 0, planned: 0, isMain: false }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '内控经理1人' 
@@ -72,7 +72,7 @@ export const OrganizationalStructure = () => {
       DB: { current: 0, planned: 0, isMain: false }, 
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
-      '远程': { current: 145, planned: 0, isMain: true }, 
+      '远程': { current: 131, planned: 0, isMain: true }, 
       '外包': { current: 0, planned: 0, isMain: false }, 
       manager: '主管1人' 
     },
@@ -82,7 +82,7 @@ export const OrganizationalStructure = () => {
       SLK: { current: 0, planned: 0, isMain: false }, 
       KJY: { current: 0, planned: 0, isMain: false }, 
       '远程': { current: 0, planned: 0, isMain: false }, 
-      '外包': { current: 132, planned: 0, isMain: true }, 
+      '外包': { current: 133, planned: 0, isMain: true }, 
       manager: '经理1人' 
     }
   };
@@ -113,9 +113,7 @@ export const OrganizationalStructure = () => {
 
   // 场地转移计划数据
   const transferPlan = [
-    { from: 'TH', to: 'DB', count: 5, timing: '9月底' },
-    { from: 'TH', to: 'SLK', count: 70, timing: '9月底' },
-    { from: 'TH', to: 'KJY', count: 0, timing: '9月底' }
+    { from: 'TH', to: 'SLK', currentCount: 42, count: 42, timing: 'Q4完成', note: 'Q3已转移56人，剩余签证办理中，预计第四季度迁移完毕' }
   ];
 
   // 计算转移计划的合计当前人数
@@ -781,7 +779,7 @@ export const OrganizationalStructure = () => {
                     </div>
                   </td>
                   <td className="p-6 text-center">
-                    <span className="text-xl font-bold text-blue-600">{transfer.count}</span>
+                    <span className="text-xl font-bold text-blue-600">{transfer.currentCount || transfer.count}</span>
                   </td>
                   <td className="p-6 text-center">
                     <span className="text-2xl font-bold text-orange-600">{transfer.count}</span>
@@ -799,15 +797,17 @@ export const OrganizationalStructure = () => {
                     </span>
                   </td>
                   <td className="p-6 text-gray-600">
-KJY为主要招聘地区，三季度目标扩张人员至30～50人；TH人员主迁移区，后续为主要招聘地区；DB后续视场地数量进行后续人员规
+                    {transfer.note || 'KJY为主要招聘地区，三季度目标扩张人员至30～50人；TH人员主迁移区，后续为主要招聘地区；DB后续视场地数量进行后续人员规'}
                   </td>
-                
+
                 </tr>
               ))}
               <tr className="bg-white font-bold">
-                <td className="p-6 text-gray-800"></td>
+                <td className="p-6 text-gray-800">合计</td>
                 <td className="p-6 text-center">
-                  <span className="text-xl font-bold text-blue-600">{transferTotalCurrentCount}</span>
+                  <span className="text-xl font-bold text-blue-600">
+                    {transferPlan.reduce((sum, transfer) => sum + (transfer.currentCount || transfer.count), 0)}
+                  </span>
                 </td>
                 <td className="p-6 text-center">
                   <span className="text-2xl font-bold text-red-600">

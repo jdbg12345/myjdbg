@@ -506,8 +506,11 @@ export const Direction4InternalCollusion = () => {
                 <tr className="hover:bg-blue-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">U盾管理制度</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
-                    场地人员：班次组长管理安全盾，规避检查风险。
-远程人员：账号权限收至最低标准。盾由场地管理提报且仅虚拟机使用。居家人员：不会发放U盾、全部放在场地工作人员、统一由场地人员告知验证码；
+                    <div className="space-y-2">
+                      <div><span className="font-semibold text-blue-600">场地人员：</span>班次组长管理安全盾，规避检查风险。</div>
+                      <div><span className="font-semibold text-blue-600">远程人员：</span>账号权限收至最低标准。盾由场地管理提报且仅虚拟机使用。</div>
+                      <div><span className="font-semibold text-blue-600">居家人员：</span>不会发放U盾、全部放在场地工作人员、统一由场地人员告知验证码。</div>
+                    </div>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
@@ -519,7 +522,11 @@ export const Direction4InternalCollusion = () => {
                 <tr className="hover:bg-blue-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">三方后台账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
-                    权限修改至仅查看单会员数据，用于日常排查。主管级账号能导出且帐密仅主管查看；外包，远程，一审等较低职位不让使用三方后台。
+                    <div className="space-y-2">
+                      <div>• 权限修改至仅查看单会员数据，用于日常排查</div>
+                      <div>• <span className="font-semibold text-blue-600">主管级账号：</span>能导出且帐密仅主管查看</div>
+                      <div>• <span className="font-semibold text-blue-600">外包、远程、一审等较低职位：</span>不让使用三方后台</div>
+                    </div>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
@@ -530,7 +537,12 @@ export const Direction4InternalCollusion = () => {
                 <tr className="hover:bg-blue-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">谷歌账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
-                    大蚂蚁zimbra：已全员关闭。目前均为zobu888，由人资管理；风控支持部的邮箱均予以保留，用于后续记录查询，如有人员离职，将由对接人接管相关邮箱权限，确保工作连续性；
+                    <div className="space-y-2">
+                      <div>• <span className="font-semibold text-blue-600">大蚂蚁zimbra：</span>已全员关闭</div>
+                      <div>• <span className="font-semibold text-blue-600">目前邮箱：</span>均为zobu888，由人资管理</div>
+                      <div>• <span className="font-semibold text-blue-600">风控支持部邮箱：</span>均予以保留，用于后续记录查询</div>
+                      <div>• <span className="font-semibold text-blue-600">人员离职处理：</span>由对接人接管相关邮箱权限，确保工作连续性</div>
+                    </div>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
@@ -541,19 +553,26 @@ export const Direction4InternalCollusion = () => {
                 <tr className="hover:bg-blue-50 transition-colors">
                   <td className="border border-gray-300 px-6 py-4 font-medium text-gray-800">Notion账号</td>
                   <td className="border border-gray-300 px-6 py-4 text-gray-700 text-sm leading-relaxed">
-                    1. 空间创建与账号分配
-
-只有管理员有权限：创建 Notion 工作空间和分配账号（邀请成员加入工作空间）
-
-2. 默认权限隔离
-
-每个账号（成员）：只能看到自己创建的页面/链接（Notion 页面）；即使同属一个部门，其他人也默认无权查看（包括子页面）；所有页面默认是私有状态。
-
-3. 访问控制
-
-页面要对他人可见，必须由管理员或页面创建者手动授权，通过：分享页面给指定用户
-                    4.定期归档删除
-                    需求上线完成后，1个月内删除；
+                    <div className="space-y-3">
+                      <div>
+                        <div className="font-semibold text-blue-600 mb-1">1. 空间创建与账号分配</div>
+                        <div className="pl-4">• 只有管理员有权限创建 Notion 工作空间和分配账号（邀请成员加入工作空间）</div>
+                      </div>
+                      <div>
+                        <div className="font-semibold text-blue-600 mb-1">2. 默认权限隔离</div>
+                        <div className="pl-4">• 每个账号（成员）只能看到自己创建的页面/链接（Notion 页面）</div>
+                        <div className="pl-4">• 即使同属一个部门，其他人也默认无权查看（包括子页面）</div>
+                        <div className="pl-4">• 所有页面默认是私有状态</div>
+                      </div>
+                      <div>
+                        <div className="font-semibold text-blue-600 mb-1">3. 访问控制</div>
+                        <div className="pl-4">• 页面要对他人可见，必须由管理员或页面创建者手动授权，通过分享页面给指定用户</div>
+                      </div>
+                      <div>
+                        <div className="font-semibold text-blue-600 mb-1">4. 定期归档删除</div>
+                        <div className="pl-4">• 需求上线完成后，1个月内删除</div>
+                      </div>
+                    </div>
                   </td>
                   <td className="border border-gray-300 px-6 py-4 text-center">
                     <span className="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 text-green-600 inline-block">已完成排查</span>
