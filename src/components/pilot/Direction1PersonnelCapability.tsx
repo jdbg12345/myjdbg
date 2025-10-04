@@ -408,14 +408,14 @@ export const Direction1PersonnelCapability = () => {
 
                           {/* 调整后错误率点 */}
                           <div
-                            className="absolute w-4 h-4 bg-blue-400 rounded-full border-2 border-white z-10"
+                            className="absolute w-4 h-4 bg-green-400 rounded-full border-2 border-white z-10"
                             style={{
                               bottom: `${rateBottomAfter}px`,
                               left: `${groupCenterX + barWidth / 2 + barSpacing / 2}px`,
                               transform: 'translateX(-50%)'
                             }}
                           >
-                            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-blue-700 bg-white px-2 py-1 rounded whitespace-nowrap">
+                            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium text-green-700 bg-white px-2 py-1 rounded whitespace-nowrap">
                               {item.afterRate}%
                             </div>
                           </div>
