@@ -307,7 +307,7 @@ export const Direction4InternalCollusion = () => {
                   <thead>
                     <tr className="bg-gray-700">
                       <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">月份</th>
-                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">案件类型</th>
+                      <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">稽查类型</th>
                       <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">涉及人员</th>
                       <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">违规行为</th>
                       <th className="border border-gray-600 px-4 py-3 text-left text-white font-semibold text-sm">处置结果</th>
