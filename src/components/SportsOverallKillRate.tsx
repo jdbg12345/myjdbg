@@ -117,7 +117,7 @@ export const SportsOverallKillRate = () => {
                 </thead>
                 <tbody>
                   {crownedMonthlyData.map((row, index) => (
-                    <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <tr key={index} className="border-b border-gray-100">
                       <td className="p-3 text-center font-semibold">{row.month}</td>
                       <td className="p-3 text-center">{row.yRate}%</td>
                       <td className="p-3 text-center">{row.bRate}%</td>
@@ -155,7 +155,7 @@ export const SportsOverallKillRate = () => {
                 </thead>
                 <tbody>
                   {pandaMonthlyData.map((row, index) => (
-                    <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <tr key={index} className="border-b border-gray-100">
                       <td className="p-3 text-center font-semibold">{row.month}</td>
                       <td className="p-3 text-center">{row.yRate}%</td>
                       <td className="p-3 text-center">{row.bRate}%</td>

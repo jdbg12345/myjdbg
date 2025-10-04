@@ -49,7 +49,7 @@ export const PlatformReconciliation = () => {
               { name: "提款对账", desc: "站点监听财务提款/下分成功MQ，核对站点记录，核对异常直接预警", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "及时发现提款异常，防范资金风险" },
               { name: "场馆对账", desc: "站点场馆帐变和场馆输赢进行核对，核对异常直接预警", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "及时发现场馆异常，防范资金风险" }
             ].map((row, index) => (
-              <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+              <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold whitespace-nowrap">{row.name}</td>
                 <td className="p-6">{row.desc}</td>
                 <td className="p-6 text-center">

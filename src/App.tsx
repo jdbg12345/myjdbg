@@ -31,6 +31,7 @@ import { PlatformReconciliation } from './components/PlatformReconciliation';
 import { InternalSecurityControl } from './components/InternalSecurityControl';
 import { AgentCommissionControl } from './components/AgentCommissionControl';
 import { RiskReview } from './components/RiskReview';
+import { EndPage } from './components/EndPage';
 
 function App() {
   return (
@@ -126,6 +127,11 @@ function App() {
          {/* 3.4 FK代理风控变化说明 */}
         <div data-section="agent-control-overview">
           <AgentControlOverview />
+        </div>
+
+        {/* 结束页 */}
+        <div data-section="end-page">
+          <EndPage />
         </div>
 
       </div>

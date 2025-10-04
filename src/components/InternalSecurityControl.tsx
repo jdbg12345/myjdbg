@@ -17,7 +17,7 @@ export const InternalSecurityControl = () => {
             {card.progress ? (
               <div className="flex items-center mt-4">
                 <div className="flex-1 bg-gray-200 rounded-full h-4 mr-4">
-                  <div className="bg-blue-600 h-4 rounded-full transition-all duration-300" style={{width: `${card.progress}%`}}></div>
+                  <div className="bg-blue-600 h-4 rounded-full" style={{width: `${card.progress}%`}}></div>
                 </div>
                 <div className="bg-blue-600 h-4 rounded-full" style={{width: `${card.progress}%`}}></div>
               </div>
@@ -45,7 +45,7 @@ export const InternalSecurityControl = () => {
               { name: "会员标签和备注查看权限升级", desc: "对会员标签和备注查看权限进行细化管理，限制敏感信息的访问范围，防止信息泄露", status: "已上线", statusColor: "bg-blue-100 text-blue-600", time: "06月24", benefit: "减少敏感信息泄露风险，加强数据访问控制" },
               { name: "禁用记录查询与禁用权限细分", desc: "建立禁用记录查询机制，对禁用权限进行细分管理，确保权限使用的可追溯性和合规性", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "提升权限管理精细化程度，增强内部安全监控能力" }
             ].map((row, index) => (
-              <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+              <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
                 <td className="p-6">{row.desc}</td>
                 <td className="p-6 text-center">

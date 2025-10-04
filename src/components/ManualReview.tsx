@@ -17,7 +17,7 @@ export const ManualReview = () => {
             {card.progress ? (
               <div className="flex items-center mt-4">
                 <div className="flex-1 bg-gray-200 rounded-full h-4 mr-4">
-                  <div className="bg-blue-600 h-4 rounded-full transition-all duration-300" style={{width: `${card.progress}%`}}></div>
+                  <div className="bg-blue-600 h-4 rounded-full" style={{width: `${card.progress}%`}}></div>
                 </div>
                 <div className="bg-blue-600 h-4 rounded-full" style={{width: `${card.progress}%`}}></div>
               </div>
@@ -50,7 +50,7 @@ export const ManualReview = () => {
               { name: "彩票套利查询工具", desc: "彩票游戏中的全包行为分析工具，识别异常投注模式", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "同比提升审核效率 50%" },
               { name: "云盾报告", desc: "会员风控打分体系，基于模型自动完成风控报告。审核人员只需打开报告进行重点确认，即可确保SOP严格执行，同时提升审核效率", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "同比提升审核效率 50%，且间接提升拦截率" }
             ].map((row, index) => (
-              <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+              <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
                 <td className="p-6">{row.desc}</td>
                 <td className="p-6 text-center">

@@ -18,7 +18,7 @@ export const InternalControlSampling = () => {
             {card.progress ? (
               <div className="flex items-center mt-4">
                 <div className="flex-1 bg-gray-200 rounded-full h-4 mr-4">
-                  <div className="bg-blue-600 h-4 rounded-full transition-all duration-300" style={{width: `${card.progress}%`}}></div>
+                  <div className="bg-blue-600 h-4 rounded-full" style={{width: `${card.progress}%`}}></div>
                 </div>
                 <div className="bg-blue-600 h-4 rounded-full" style={{width: `${card.progress}%`}}></div>
               </div>
@@ -179,7 +179,7 @@ export const InternalControlSampling = () => {
               { name: "新增【会员被同一人出单次数过高】抽检策略", desc: "会员被同一审核人员反复审核且通过出单次数超出正常阈值，可能存在内外勾结的可能，需要进行出单抽检", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "作为内控机制，预防内外勾结的场景" },
               { name: "抽检过程支持管理转单", desc: "无管理转单功能，若人员掉线或者其他原因，后台单量无法正常处理，管理无法介入处理，只能领单本人处理", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "提升抽检流程效率，增强管理灵活性" }
             ].map((row, index) => (
-              <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+              <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
                 <td className="p-6">{row.desc}</td>
                 <td className="p-6 text-center">

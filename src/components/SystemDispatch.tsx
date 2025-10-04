@@ -108,7 +108,7 @@ export const SystemDispatch = () => {
               { name: "派单规则引入当前订单的风险分数作为派单因子", desc: "在派单系统中集成风险评分机制，根据订单风险分数和金额进行智能派单", status: "已上线", statusColor: "bg-blue-100 text-blue-600", time: "6月30", benefit: "降低错误出款风险" },
               { name: "派单规则引入订单风险点与出单人擅长点匹配机制", desc: "基于当前订单的命中策略及标签分布确定其难度，并通过分析出单人历史记录中错误率最低的订单特点来确定其擅长领域，然后据此设置匹配派单权重", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "降低错误出款风险" }
             ].map((row, index) => (
-              <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+              <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
                 <td className="p-6">{row.desc}</td>
                 <td className="p-6 text-center">

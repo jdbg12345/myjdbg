@@ -71,7 +71,7 @@ const siteData = [
             </thead>
             <tbody>
               {siteData.map((row, index) => (
-                <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                <tr key={index} className="border-b border-gray-100">
                   <td className="p-2 font-semibold text-center text-sm">{row.site}</td>
                   <td className="p-2 text-center text-xs">{row.q1Amount}</td>
                   <td className="p-2 text-center text-xs">{row.q1Percent}%</td>

@@ -97,7 +97,7 @@ export const QuarterlyPreventionData = () => {
                   <div key={index} className="flex flex-col items-center flex-1 mx-1 relative">
                     <div className="absolute text-sm font-semibold text-blue-600" style={{ bottom: `${barHeight + 4}px` }}>{item.volume}</div>
                     <div
-                      className="bg-blue-500 w-full rounded-t transition-all duration-300"
+                      className="bg-blue-500 w-full rounded-t"
                       style={{ height: `${barHeight}px` }}
                     ></div>
                     <div className="absolute w-full flex justify-center" style={{ bottom: `${barHeight * 0.6}px` }}>

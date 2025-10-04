@@ -17,7 +17,7 @@ export const RiskWarning = () => {
             {card.progress ? (
               <div className="flex items-center mt-4">
                 <div className="flex-1 bg-gray-200 rounded-full h-4 mr-4">
-                  <div className="bg-blue-600 h-4 rounded-full transition-all duration-300" style={{width: `${card.progress}%`}}></div>
+                  <div className="bg-blue-600 h-4 rounded-full" style={{width: `${card.progress}%`}}></div>
                 </div>
                 <div className="bg-blue-600 h-4 rounded-full" style={{width: `${card.progress}%`}}></div>
               </div>
@@ -61,7 +61,7 @@ export const RiskWarning = () => {
               { name: "BW5对齐Y系预警", desc: "包网目前没有小飞机预警机制，要对标Y逐步完善", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "补充预警维度" },
               { name: "预警流程升级", desc: "对预警后处理情况进行跟进和监督，确保预警后有被关注和处理", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "新增处理监控" }
             ].map((row, index) => (
-              <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+              <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
                 <td className="p-6">{row.desc}</td>
                 <td className="p-6 text-center">

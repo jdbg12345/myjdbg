@@ -102,21 +102,21 @@ export const PandaSportsKillRate = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                  <tr className="border-b border-gray-100">
                     <td className="p-3 text-center font-semibold">冠名</td>
                     <td className="p-3 text-center">1,537.33</td>
                     <td className="p-3 text-center">56.81</td>
                     <td className="p-3 text-center">3.70%</td>
                     <td className="p-3 text-center">0.19%</td>
                   </tr>
-                  <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                  <tr className="border-b border-gray-100">
                     <td className="p-3 text-center font-semibold">熊猫</td>
                     <td className="p-3 text-center">87.05</td>
                     <td className="p-3 text-center">8.80</td>
                     <td className="p-3 text-center">10.11%</td>
                     <td className="p-3 text-center text-red-600 font-semibold">-0.47%</td>
                   </tr>
-                  <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                  <tr className="border-b border-gray-100">
                     <td className="p-3 text-center font-semibold">IM</td>
                     <td className="p-3 text-center">257.03</td>
                     <td className="p-3 text-center">6.03</td>

@@ -355,7 +355,7 @@ export const Direction1PersonnelCapability = () => {
                       ].map((item, index) => {
                         const maxCount = 160000;
                         const maxRate = 2;
-                        const totalGroups = 4;
+                        const totalGroups = 3;
                         const chartWidth = 680;
                         const chartHeight = 320;
                         const barHeightBefore = (item.before / maxCount) * chartHeight;
@@ -435,7 +435,7 @@ export const Direction1PersonnelCapability = () => {
                       { name: '远程一审', before: 82773, after: 29431 },
                       { name: '总部一审', before: 25161, after: 135259 },
                     ].map((item, index) => {
-                      const totalGroups = 4;
+                      const totalGroups = 3;
                       const chartWidth = 680;
                       const spacing = chartWidth / totalGroups;
                       const groupCenterX = spacing * index + spacing / 2;
@@ -473,7 +473,7 @@ export const Direction1PersonnelCapability = () => {
                   <span className="text-gray-700">调整前错误率</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-blue-400 rounded-full"></div>
+                  <div className="w-4 h-4 bg-green-600 rounded-full"></div>
                   <span className="text-gray-700">调整后错误率</span>
                 </div>
               </div>

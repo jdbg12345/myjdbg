@@ -17,7 +17,7 @@ export const SystemReview = () => {
             {card.progress ? (
               <div className="flex items-center mt-4">
                 <div className="flex-1 bg-gray-200 rounded-full h-4 mr-4">
-                  <div className="bg-blue-600 h-4 rounded-full transition-all duration-300" style={{width: `${card.progress}%`}}></div>
+                  <div className="bg-blue-600 h-4 rounded-full" style={{width: `${card.progress}%`}}></div>
                 </div>
                 <div className="bg-blue-600 h-4 rounded-full" style={{width: `${card.progress}%`}}></div>
               </div>
@@ -60,7 +60,7 @@ export const SystemReview = () => {
               { name: "+B端风控(CP)", desc: "为C端提供体彩票游戏提供专业的风控API接口服务", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "作为对C端风控能力的重要补充，特别是在覆盖原有系统盲点的场景中，如其他平台关联" },
               { name: "+B端风控(DZ)", desc: "为老虎机游戏、棋牌、娱乐等电子游戏提供专业的风控API接口服务", status: "开发中", statusColor: "bg-yellow-100 text-yellow-600", time: "09月底", benefit: "作为对C端风控能力的重要补充，特别是在覆盖原有系统盲点的场景中" }
             ].map((row, index) => (
-              <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+              <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
                 <td className="p-6">{row.desc}</td>
                 <td className="p-6 text-center">

@@ -8,13 +8,13 @@ export const TableOfContents = () => {
 
         <div className="space-y-5">
           {/* 1. 组织情况 */}
-          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6 hover:shadow-lg transition-all">
+          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6">
             <span className="text-2xl font-bold text-blue-600 mr-4">1.</span>
             <span className="text-xl font-semibold text-gray-800">组织情况</span>
           </div>
 
           {/* 2. 数据情况 */}
-          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6 hover:shadow-lg transition-all">
+          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6">
             <span className="text-2xl font-bold text-blue-600 mr-4">2.</span>
             <span className="text-xl font-semibold text-gray-800">数据情况</span>
           </div>
@@ -32,7 +32,7 @@ export const TableOfContents = () => {
               { num: "2.9", title: "DB体育杀率明细" },
               { num: "2.10", title: "飞投数据" }
             ].map((item, index) => (
-              <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-4 hover:shadow-md transition-all">
+              <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-4">
                 <span className="text-lg font-bold text-gray-600 mr-3">{item.num}</span>
                 <span className="text-lg text-gray-700">{item.title}</span>
               </div>
@@ -40,7 +40,7 @@ export const TableOfContents = () => {
           </div>
 
           {/* 3. 工作情况 */}
-          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6 hover:shadow-lg transition-all">
+          <div className="bg-white border-l-4 border-blue-600 rounded-lg p-6">
             <span className="text-2xl font-bold text-blue-600 mr-4">3.</span>
             <span className="text-xl font-semibold text-gray-800">工作情况</span>
           </div>
@@ -52,7 +52,7 @@ export const TableOfContents = () => {
               { num: "3.3", title: "FK内控说明" },
               { num: "3.4", title: "FK代理说明" }
             ].map((item, index) => (
-              <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-4 hover:shadow-md transition-all">
+              <div key={index} className="bg-white border-l-4 border-gray-400 rounded-lg p-4">
                 <span className="text-lg font-bold text-gray-600 mr-3">{item.num}</span>
                 <span className="text-lg text-gray-700">{item.title}</span>
               </div>

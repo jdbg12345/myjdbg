@@ -46,7 +46,7 @@ export const AgentCommissionControl = () => {
             {[
               { name: "代理佣金审核预警", desc: "建立代理佣金计算和发放的审核预警机制，监控异常佣金申请和发放行为，防范代理刷量和虚假活跃等风险行为，包括代理行为建模、关联关系分析、异常模式识别等功能", status: "方案中", statusColor: "bg-gray-100 text-gray-600", time: "待定", benefit: "降低代理佣金风险，提升佣金发放准确性和安全性，预计降低代理损失80%" }
             ].map((row, index) => (
-              <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+              <tr key={index} className="border-b border-gray-100">
                 <td className="p-6 font-semibold">{row.name}</td>
                 <td className="p-6">{row.desc}</td>
                 <td className="p-6 text-center">{row.time}</td>

@@ -111,7 +111,7 @@ export const AirplaneData = () => {
                     </thead>
                     <tbody>
                       {mayAbnormalUsers.map((user, index) => (
-                        <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                        <tr key={index} className="border-b border-gray-100">
                           <td className="p-3 text-center text-sm">{user.account}</td>
                           <td className="p-3 text-center text-sm">{user.type}</td>
                           <td className="p-3 text-center text-sm font-semibold">{user.amount}</td>
@@ -136,7 +136,7 @@ export const AirplaneData = () => {
                     </thead>
                     <tbody>
                       {juneAbnormalUsers.map((user, index) => (
-                        <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                        <tr key={index} className="border-b border-gray-100">
                           <td className="p-3 text-center text-sm">{user.account}</td>
                           <td className="p-3 text-center text-sm">{user.type}</td>
                           <td className="p-3 text-center text-sm font-semibold">{user.amount}</td>

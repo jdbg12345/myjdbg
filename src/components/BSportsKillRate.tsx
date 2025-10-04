@@ -148,7 +148,7 @@ export const BSportsKillRate = () => {
                 </thead>
                 <tbody>
                   {footballPlayData.map((row, index) => (
-                    <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <tr key={index} className="border-b border-gray-100">
                       <td className="p-3 text-center font-semibold">{row.playType}</td>
                       <td className={`p-3 text-center ${getMinMaxClass(row.yWater, footballYWaters)}`}>{row.yWater}%</td>
                       <td className={`p-3 text-center ${getMinMaxClass(row.yKill, footballYKills)}`}>{row.yKill}%</td>
@@ -184,7 +184,7 @@ export const BSportsKillRate = () => {
                 </thead>
                 <tbody>
                   {footballMonthlyData.map((row, index) => (
-                    <tr key={index} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <tr key={index} className="border-b border-gray-100">
                       <td className="p-3 text-center font-semibold">{row.month}</td>
                       <td className={`p-3 text-center ${getMinMaxClass(row.yKill, monthlyYKills)}`}>{row.yKill}%</td>
                       <td className={`p-3 text-center ${getMinMaxClass(row.bKill, monthlyBKills)}`}>{row.bKill}%</td>
