@@ -67,7 +67,8 @@ export const Direction4InternalCollusion = () => {
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                 解决策略
               </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">建立<span className="text-blue-600">基于会员等级的禁用/启用分级审批机制，高V的启禁用操作需提供审批人的U盾或谷歌验证码验证；同时，针对高v已禁用用户排查是否存判断异常问题，作业处理有问题人员排查，核心提升审核正确率，减少高v禁用人数</span></p>
+              <p className="text-gray-700 text-sm leading-relaxed">1、建立<span className="text-blue-600">基于会员等级的禁用/启用分级审批机制，高V的启禁用操作需提供审批人的U盾或谷歌验证码验证</span></p>
+                            <p className="text-gray-700 text-sm leading-relaxed">2、同时，针对高v已禁用用户排查是否存判断异常问题，作业处理有问题人员排查，核心提升审核正确率，减少高v禁用人数</p>
               
             </div>
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
