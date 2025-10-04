@@ -34,7 +34,7 @@ export const FKTransformationRhythm = () => {
   ];
 
   return (
-    <div className="bg-white rounded-lg p-6 mb-4 relative">
+    <div className="bg-white rounded-lg p-6 mb-4 pb-16 relative">
       {/* Header */}
       <div className="mb-3 flex items-center justify-between border-b-4 border-blue-600 pb-4">
         <h1 className="text-5xl font-bold text-gray-800">3.1 全局说明</h1>

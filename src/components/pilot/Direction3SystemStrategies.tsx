@@ -849,8 +849,8 @@ export const Direction3SystemStrategies = () => {
 
       {/* 体育赔率预警 */}
       <div className="mb-4">
-        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
-            <div className="flex items-center justify-between mb-6">
+        <div className="bg-white rounded-lg p-4 mb-4 border border-blue-200">
+            <div className="flex items-center justify-between mb-4">
               <div className="flex items-center space-x-3 flex-1">
                 <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center">
                   <span className="text-white font-medium text-sm">5</span>
@@ -862,22 +862,22 @@ export const Direction3SystemStrategies = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="bg-blue-50 rounded-lg p-6">
+              <div className="bg-blue-50 rounded-lg p-4">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   核心问题
                 </h4>
                  <p className="text-gray-700 text-sm leading-relaxed">B端可能存在<span className="text-blue-600">赔率溢出、内部玩法错配、盘口方向错误/盘口错开、赔率更新慢</span>等问题。虽然赔率异常或错误是小概率事件，但一旦发生，可能严重影响<span className="text-blue-600">用户体验、平台信任度和平台利益</span>。依靠人工方式来发现这些问题，存在反应迟缓、覆盖不全的问题，且一些错误可能已经造成损失，却未能及时发现</p>
               </div>
-              <div className="bg-blue-50 rounded-lg p-6">
+              <div className="bg-blue-50 rounded-lg p-4">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   解决策略
                 </h4>
                 <p className="text-gray-700 text-sm leading-relaxed">降低赔率类异常导致的损失，平推动B端<span className="text-blue-600">提升数据商质量；</span>给出明确<span className="text-blue-600">赔率错误类型及规则</span>，在关键环节——如<span className="text-blue-600">任意盘口变化后的第一单、结算前的再次校验及提款拦截——实施全方位监控与预警</span>，确保每个步骤的准确性和及时性。</p>
-                
+
               </div>
-              <div className="bg-blue-50 rounded-lg p-6">
+              <div className="bg-blue-50 rounded-lg p-4">
                 <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                   <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
                   预期收益
@@ -888,8 +888,8 @@ export const Direction3SystemStrategies = () => {
      
 
       {/* 事故统计概览 */}
-      <div className="mt-12 mb-8">
-        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+      <div className="mt-6 mb-4">
+        <div className="bg-white rounded-lg p-4 mb-4 border border-blue-200">
           <div className="flex items-center space-x-3 mb-3">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <AlertTriangle className="w-5 h-5 text-white" />
@@ -897,13 +897,13 @@ export const Direction3SystemStrategies = () => {
             <h4 className="text-lg font-semibold text-gray-800">事故统计概览</h4>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 mb-8">
-            <div className="bg-white rounded-lg p-6 text-center border border-blue-200">
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div className="bg-white rounded-lg p-4 text-center border border-blue-200">
               <div className="text-4xl font-bold text-blue-600 mb-3">{totalIncidents}</div>
               <div className="text-gray-600 font-medium text-lg">事故总数</div>
             </div>
 
-            <div className="bg-white rounded-lg p-6 text-center border border-blue-200">
+            <div className="bg-white rounded-lg p-4 text-center border border-blue-200">
               <div className="text-4xl font-bold text-red-600 mb-3">{totalImpact.toFixed(1)}w</div>
               <div className="text-gray-600 font-medium text-lg">总影响金额</div>
             </div>
@@ -914,7 +914,7 @@ export const Direction3SystemStrategies = () => {
 
       {/* 事故详细记录 */}
       <div className="mb-4">
-        <div className="bg-white rounded-lg p-8 mb-8 border border-blue-200">
+        <div className="bg-white rounded-lg p-4 mb-4 border border-blue-200">
           <div className="flex items-center space-x-3 mb-3">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
               <Calendar className="w-5 h-5 text-white" />
