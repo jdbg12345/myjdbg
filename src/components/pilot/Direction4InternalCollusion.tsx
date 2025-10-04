@@ -24,6 +24,7 @@ export const Direction4InternalCollusion = () => {
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">风控的标签和备注权限未独立管理，大部分部门均可查看，敏感信息易泄露</p>
             </div>
+            
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -32,6 +33,7 @@ export const Direction4InternalCollusion = () => {
               <p className="text-gray-700 text-sm leading-relaxed">1、风控的标签备注独立权限</p>
               <p className="text-gray-700 text-sm leading-relaxed">2、同时，部门进行各类套利场景统计，标签明确化便于部门清晰复盘带来的市场动向明确，同时针对常规，特殊，特殊频发案例进行培训手册纳入提高新人成长，完成闭环</p>
             </div>
+            
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -39,6 +41,7 @@ export const Direction4InternalCollusion = () => {
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">降低敏感信息被泄露风险</p>
             </div>
+            
           </div>
         </div>
       </div>
@@ -63,6 +66,7 @@ export const Direction4InternalCollusion = () => {
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">当前会员禁用流程由单人操作完成，缺乏线上分级审批机制，<span className="text-blue-600">存在高V被误禁，及问题用户被违规启用的风险 </span></p>
             </div>
+            
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -72,6 +76,7 @@ export const Direction4InternalCollusion = () => {
               <p className="text-gray-700 text-sm leading-relaxed">2、同时，针对高v已禁用用户排查是否存判断异常问题，作业处理有问题人员排查，核心提升审核正确率，减少高v禁用人数</p>
               
             </div>
+            
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -129,6 +134,7 @@ export const Direction4InternalCollusion = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -136,6 +142,7 @@ export const Direction4InternalCollusion = () => {
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">高危参数<span className="text-blue-600">（如代理佣金、存提费率、场馆费率、VIP体系）缺乏实时监控</span>，存在被误操作、滥用或配置异常导致的重大风险。</p>
             </div>
+            
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -145,6 +152,7 @@ export const Direction4InternalCollusion = () => {
               <p className="text-gray-700 text-sm leading-relaxed">2、权限梳理： 各角色权限进行梳理，分化功能，达到权限层级分明，如风控标签查看进行上下级优化展示，达到信息安全把控目的</p>
 
             </div>
+            
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -169,6 +177,7 @@ export const Direction4InternalCollusion = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
@@ -176,6 +185,7 @@ export const Direction4InternalCollusion = () => {
               </h4>
               <p className="text-gray-700 text-sm leading-relaxed">部分关键查询参数以<span className="text-blue-600">玩家明文（姓名、银行卡号、虚拟货币地址等）直接操作，存在敏感信息泄露风险</span></p>
             </div>
+            
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
               <h4 className="font-medium text-blue-700 mb-3 flex items-center">
                 <span className="w-3 h-3 bg-blue-600 rounded mr-3"></span>
