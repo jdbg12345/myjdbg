@@ -374,7 +374,7 @@ export const Direction4InternalCollusion = () => {
                         </div>
                       </td>
                       <td className="border border-gray-300 px-3 py-2">
-                        <span className="px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-600 inline-block">逐一处置</span>
+                        <span className="px-3 py-1 rounded-full text-sm font-semibold text-blue-600 inline-block">逐一处置</span>
                       </td>
                       <td className="border border-gray-300 px-3 py-2 text-gray-700 text-sm">
                         <div className="bg-gray-50 rounded p-2 border border-gray-300">
